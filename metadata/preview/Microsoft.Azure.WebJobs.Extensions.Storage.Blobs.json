@@ -1,7 +1,7 @@
 {
   "Name": "Microsoft.Azure.WebJobs.Extensions.Storage.Blobs",
-  "Version": "5.0.0-alpha.20220125.1",
-  "DevVersion": "5.0.0-alpha.20220125.1",
+  "Version": "5.0.0-alpha.20220125.2",
+  "DevVersion": "5.0.0-alpha.20220125.2",
   "DirectoryPath": "sdk/storage/Microsoft.Azure.WebJobs.Extensions.Storage.Blobs",
   "ServiceDirectory": "storage",
   "ReadMePath": "sdk/storage/Microsoft.Azure.WebJobs.Extensions.Storage.Blobs/README.md",

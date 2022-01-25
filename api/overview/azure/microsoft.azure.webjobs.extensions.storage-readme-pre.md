@@ -1,8 +1,8 @@
 ---
 title: Azure WebJobs Storage Blobs and Queues client library for .NET
 keywords: Azure, dotnet, SDK, API, Microsoft.Azure.WebJobs.Extensions.Storage, webjobs
-author: ramya-rao-a
-ms.author: ramyar
+author: tg-msft
+ms.author: tg-msft
 ms.date: 01/25/2022
 ms.topic: reference
 ms.prod: azure
@@ -10,7 +10,7 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: webjobs
 ---
-# Azure WebJobs Storage Blobs and Queues client library for .NET - Version 5.0.0-alpha.20220125.1 
+# Azure WebJobs Storage Blobs and Queues client library for .NET - Version 5.0.0-alpha.20220125.2 
 
 
 This extension provides functionality for accessing Azure Storage Blobs and Queues in Azure Functions. This package is a metapackage created for backwards compatibity. Using `Azure.WebJobs.Extensions.Storage.Blobs` and `Azure.WebJobs.Extensions.Storage.Queues` directly is recommended.

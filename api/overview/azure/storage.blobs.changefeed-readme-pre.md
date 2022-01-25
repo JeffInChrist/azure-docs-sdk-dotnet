@@ -1,8 +1,8 @@
 ---
 title: Azure Storage Blobs Change Feed client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.Storage.Blobs.ChangeFeed, storage
-author: ramya-rao-a
-ms.author: ramyar
+author: tg-msft
+ms.author: tg-msft
 ms.date: 01/25/2022
 ms.topic: reference
 ms.prod: azure
@@ -10,7 +10,7 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: storage
 ---
-# Azure Storage Blobs Change Feed client library for .NET - Version 12.0.0-alpha.20220125.1 
+# Azure Storage Blobs Change Feed client library for .NET - Version 12.0.0-alpha.20220125.2 
 
 
 > Server Version: 2021-02-12, 2020-12-06, 2020-10-02, 2020-08-04, 2020-06-12 2020-04-08, 2020-02-10, and 2019-12-12
