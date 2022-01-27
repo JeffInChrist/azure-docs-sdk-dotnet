@@ -10,7 +10,7 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: storage
 ---
-# Azure Storage Blobs Batch client library for .NET - Version 12.8.0-alpha.20220127.2 
+# Azure Storage Blobs Batch client library for .NET - Version 12.8.0-alpha.20220127.3 
 
 
 > Server Version: 2021-02-12, 2020-12-06, 2020-10-02, 2020-08-04, 2020-06-12, 2020-04-08, 2020-02-10, 2019-12-12, 2019-07-07, and 2019-02-02
@@ -52,7 +52,7 @@ In order to interact with the Azure Blobs Storage service for batch operations, 
 // Create a BlobServiceClient that will authenticate through Active Directory
 Uri accountUri = new Uri("https://MYSTORAGEACCOUNT.blob.core.windows.net/");
 BlobServiceClient client = new BlobServiceClient(accountUri, new DefaultAzureCredential());
-BlobBatchClient batch = service.GetBlobBatchClient();
+BlobBatchClient batch = client.GetBlobBatchClient();
 ```
 
 ## Key concepts

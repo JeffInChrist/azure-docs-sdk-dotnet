@@ -1,7 +1,7 @@
 {
   "Name": "Microsoft.Azure.WebJobs.Extensions.Storage",
-  "Version": "5.0.0-alpha.20220127.2",
-  "DevVersion": "5.0.0-alpha.20220127.2",
+  "Version": "5.0.0-alpha.20220127.3",
+  "DevVersion": "5.0.0-alpha.20220127.3",
   "DirectoryPath": "sdk/storage/Microsoft.Azure.WebJobs.Extensions.Storage",
   "ServiceDirectory": "storage",
   "ReadMePath": "sdk/storage/Microsoft.Azure.WebJobs.Extensions.Storage/README.md",
