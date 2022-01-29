@@ -44,65 +44,69 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ConnectedVMwarevSphere.Models.HostCreateOperation CreateOrUpdate (string hostName, Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostData body = default, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ConnectedVMwarevSphere.Models.HostCreateOperation CreateOrUpdate(string hostName, class Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostData body, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostCollection.CreateOrUpdate(System.String,Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (hostName As String, Optional body As VMwareHostData = Nothing, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As HostCreateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ConnectedVMwarevSphere.Models.HostCreateOperation&#xA;override this.CreateOrUpdate : string * Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ConnectedVMwarevSphere.Models.HostCreateOperation" Usage="vMwareHostCollection.CreateOrUpdate (hostName, body, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ConnectedVMwarevSphere.Models.VMwareHostCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string hostName, Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostData body = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ConnectedVMwarevSphere.Models.VMwareHostCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string hostName, class Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostData body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, hostName As String, Optional body As VMwareHostData = Nothing, Optional cancellationToken As CancellationToken = Nothing) As VMwareHostCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ConnectedVMwarevSphere.Models.VMwareHostCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ConnectedVMwarevSphere.Models.VMwareHostCreateOrUpdateOperation" Usage="vMwareHostCollection.CreateOrUpdate (waitForCompletion, hostName, body, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ConnectedVMwarevSphere</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ConnectedVMwarevSphere.Models.HostCreateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ConnectedVMwarevSphere.Models.VMwareHostCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="hostName" Type="System.String" />
         <Parameter Name="body" Type="Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="hostName"> Name of the host. </param>
         <param name="body"> Request payload. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Create Or Update host. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="hostName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="hostName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.HostCreateOperation&gt; CreateOrUpdateAsync (string hostName, Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostData body = default, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ConnectedVMwarevSphere.Models.HostCreateOperation&gt; CreateOrUpdateAsync(string hostName, class Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostData body, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostCollection.CreateOrUpdateAsync(System.String,Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (hostName As String, Optional body As VMwareHostData = Nothing, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HostCreateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.HostCreateOperation&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.HostCreateOperation&gt;" Usage="vMwareHostCollection.CreateOrUpdateAsync (hostName, body, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VMwareHostCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string hostName, Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostData body = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ConnectedVMwarevSphere.Models.VMwareHostCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string hostName, class Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostData body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, hostName As String, Optional body As VMwareHostData = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VMwareHostCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VMwareHostCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VMwareHostCreateOrUpdateOperation&gt;" Usage="vMwareHostCollection.CreateOrUpdateAsync (waitForCompletion, hostName, body, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ConnectedVMwarevSphere</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.HostCreateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VMwareHostCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="hostName" Type="System.String" />
         <Parameter Name="body" Type="Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="hostName"> Name of the host. </param>
         <param name="body"> Request payload. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Create Or Update host. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="hostName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="hostName" /> is null. </exception>
       </Docs>
@@ -131,6 +135,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="hostName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="hostName" /> is null. </exception>
       </Docs>
@@ -159,6 +165,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="hostName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="hostName" /> is null. </exception>
       </Docs>
@@ -187,6 +195,8 @@
         <summary> Implements host GET method. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="hostName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="hostName" /> is null. </exception>
       </Docs>
@@ -323,6 +333,8 @@
         <summary> Implements host GET method. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="hostName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="hostName" /> is null. </exception>
       </Docs>
@@ -351,6 +363,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="hostName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="hostName" /> is null. </exception>
       </Docs>
@@ -379,6 +393,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="hostName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="hostName" /> is null. </exception>
       </Docs>
@@ -455,26 +471,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.Core.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.Core.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.Core.ResourceType" Usage="Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.ConnectedVMwarevSphere</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.Core.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

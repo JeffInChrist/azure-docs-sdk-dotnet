@@ -18,18 +18,18 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DatabaseAccountCreateUpdateOptions (Azure.ResourceManager.Resources.Models.Location location, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.CosmosDB.Models.DatabaseAccountLocation&gt; locations);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Azure.ResourceManager.Resources.Models.Location location, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.CosmosDB.Models.DatabaseAccountLocation&gt; locations) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.Models.DatabaseAccountCreateUpdateOptions.#ctor(Azure.ResourceManager.Resources.Models.Location,System.Collections.Generic.IEnumerable{Azure.ResourceManager.CosmosDB.Models.DatabaseAccountLocation})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (location As Location, locations As IEnumerable(Of DatabaseAccountLocation))" />
-      <MemberSignature Language="F#" Value="new Azure.ResourceManager.CosmosDB.Models.DatabaseAccountCreateUpdateOptions : Azure.ResourceManager.Resources.Models.Location * seq&lt;Azure.ResourceManager.CosmosDB.Models.DatabaseAccountLocation&gt; -&gt; Azure.ResourceManager.CosmosDB.Models.DatabaseAccountCreateUpdateOptions" Usage="new Azure.ResourceManager.CosmosDB.Models.DatabaseAccountCreateUpdateOptions (location, locations)" />
+      <MemberSignature Language="C#" Value="public DatabaseAccountCreateUpdateOptions (Azure.Core.AzureLocation location, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.CosmosDB.Models.DatabaseAccountLocation&gt; locations);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Azure.Core.AzureLocation location, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.CosmosDB.Models.DatabaseAccountLocation&gt; locations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.Models.DatabaseAccountCreateUpdateOptions.#ctor(Azure.Core.AzureLocation,System.Collections.Generic.IEnumerable{Azure.ResourceManager.CosmosDB.Models.DatabaseAccountLocation})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (location As AzureLocation, locations As IEnumerable(Of DatabaseAccountLocation))" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.CosmosDB.Models.DatabaseAccountCreateUpdateOptions : Azure.Core.AzureLocation * seq&lt;Azure.ResourceManager.CosmosDB.Models.DatabaseAccountLocation&gt; -&gt; Azure.ResourceManager.CosmosDB.Models.DatabaseAccountCreateUpdateOptions" Usage="new Azure.ResourceManager.CosmosDB.Models.DatabaseAccountCreateUpdateOptions (location, locations)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="location" Type="Azure.ResourceManager.Resources.Models.Location" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
         <Parameter Name="locations" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.CosmosDB.Models.DatabaseAccountLocation&gt;" />
       </Parameters>
       <Docs>

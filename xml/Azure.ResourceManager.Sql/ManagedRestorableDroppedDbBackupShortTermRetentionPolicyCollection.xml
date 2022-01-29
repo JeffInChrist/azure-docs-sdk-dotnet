@@ -44,29 +44,29 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPolicyCreateOrUpdateOperation CreateOrUpdate (Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName policyName, Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPolicyCreateOrUpdateOperation CreateOrUpdate(valuetype Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName policyName, class Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedRestorableDroppedDbBackupShortTermRetentionPolicyCollection.CreateOrUpdate(Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName,Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (policyName As ManagedShortTermRetentionPolicyName, parameters As ManagedBackupShortTermRetentionPolicyData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As ManagedRestorableDroppedDatabaseBackupShortTermRetentionPolicyCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName * Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPolicyCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName * Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPolicyCreateOrUpdateOperation" Usage="managedRestorableDroppedDbBackupShortTermRetentionPolicyCollection.CreateOrUpdate (policyName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.ManagedRestorableDroppedDbBackupShortTermRetentionPolicyCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName policyName, Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.ManagedRestorableDroppedDbBackupShortTermRetentionPolicyCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, valuetype Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName policyName, class Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedRestorableDroppedDbBackupShortTermRetentionPolicyCollection.CreateOrUpdate(System.Boolean,Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName,Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, policyName As ManagedShortTermRetentionPolicyName, parameters As ManagedBackupShortTermRetentionPolicyData, Optional cancellationToken As CancellationToken = Nothing) As ManagedRestorableDroppedDbBackupShortTermRetentionPolicyCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName * Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.ManagedRestorableDroppedDbBackupShortTermRetentionPolicyCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName * Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.ManagedRestorableDroppedDbBackupShortTermRetentionPolicyCreateOrUpdateOperation" Usage="managedRestorableDroppedDbBackupShortTermRetentionPolicyCollection.CreateOrUpdate (waitForCompletion, policyName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Sql.Models.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPolicyCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ManagedRestorableDroppedDbBackupShortTermRetentionPolicyCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="policyName" Type="Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="policyName"> The policy name. Should always be "default". </param>
         <param name="parameters"> The short term retention policy info. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Sets a database's short term retention policy. </summary>
         <returns>To be added.</returns>
@@ -76,29 +76,29 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPolicyCreateOrUpdateOperation&gt; CreateOrUpdateAsync (Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName policyName, Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPolicyCreateOrUpdateOperation&gt; CreateOrUpdateAsync(valuetype Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName policyName, class Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedRestorableDroppedDbBackupShortTermRetentionPolicyCollection.CreateOrUpdateAsync(Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName,Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (policyName As ManagedShortTermRetentionPolicyName, parameters As ManagedBackupShortTermRetentionPolicyData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ManagedRestorableDroppedDatabaseBackupShortTermRetentionPolicyCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName * Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPolicyCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName * Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPolicyCreateOrUpdateOperation&gt;" Usage="managedRestorableDroppedDbBackupShortTermRetentionPolicyCollection.CreateOrUpdateAsync (policyName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ManagedRestorableDroppedDbBackupShortTermRetentionPolicyCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName policyName, Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.ManagedRestorableDroppedDbBackupShortTermRetentionPolicyCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, valuetype Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName policyName, class Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ManagedRestorableDroppedDbBackupShortTermRetentionPolicyCollection.CreateOrUpdateAsync(System.Boolean,Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName,Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, policyName As ManagedShortTermRetentionPolicyName, parameters As ManagedBackupShortTermRetentionPolicyData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ManagedRestorableDroppedDbBackupShortTermRetentionPolicyCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName * Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ManagedRestorableDroppedDbBackupShortTermRetentionPolicyCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName * Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ManagedRestorableDroppedDbBackupShortTermRetentionPolicyCreateOrUpdateOperation&gt;" Usage="managedRestorableDroppedDbBackupShortTermRetentionPolicyCollection.CreateOrUpdateAsync (waitForCompletion, policyName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ManagedRestorableDroppedDatabaseBackupShortTermRetentionPolicyCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ManagedRestorableDroppedDbBackupShortTermRetentionPolicyCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="policyName" Type="Azure.ResourceManager.Sql.Models.ManagedShortTermRetentionPolicyName" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.ManagedBackupShortTermRetentionPolicyData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="policyName"> The policy name. Should always be "default". </param>
         <param name="parameters"> The short term retention policy info. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Sets a database's short term retention policy. </summary>
         <returns>To be added.</returns>
@@ -383,26 +383,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.ManagedRestorableDroppedDbBackupShortTermRetentionPolicyCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Sql.ManagedRestorableDroppedDbBackupShortTermRetentionPolicyCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

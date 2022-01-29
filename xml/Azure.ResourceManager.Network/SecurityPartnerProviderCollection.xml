@@ -44,11 +44,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.SecurityPartnerProviderCreateOrUpdateOperation CreateOrUpdate (string securityPartnerProviderName, Azure.ResourceManager.Network.SecurityPartnerProviderData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.SecurityPartnerProviderCreateOrUpdateOperation CreateOrUpdate(string securityPartnerProviderName, class Azure.ResourceManager.Network.SecurityPartnerProviderData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SecurityPartnerProviderCollection.CreateOrUpdate(System.String,Azure.ResourceManager.Network.SecurityPartnerProviderData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (securityPartnerProviderName As String, parameters As SecurityPartnerProviderData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As SecurityPartnerProviderCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.ResourceManager.Network.SecurityPartnerProviderData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.SecurityPartnerProviderCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : string * Azure.ResourceManager.Network.SecurityPartnerProviderData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.SecurityPartnerProviderCreateOrUpdateOperation" Usage="securityPartnerProviderCollection.CreateOrUpdate (securityPartnerProviderName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.SecurityPartnerProviderCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string securityPartnerProviderName, Azure.ResourceManager.Network.SecurityPartnerProviderData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.SecurityPartnerProviderCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string securityPartnerProviderName, class Azure.ResourceManager.Network.SecurityPartnerProviderData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SecurityPartnerProviderCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Network.SecurityPartnerProviderData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, securityPartnerProviderName As String, parameters As SecurityPartnerProviderData, Optional cancellationToken As CancellationToken = Nothing) As SecurityPartnerProviderCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Network.SecurityPartnerProviderData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.SecurityPartnerProviderCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Network.SecurityPartnerProviderData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.SecurityPartnerProviderCreateOrUpdateOperation" Usage="securityPartnerProviderCollection.CreateOrUpdate (waitForCompletion, securityPartnerProviderName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -58,29 +58,31 @@
         <ReturnType>Azure.ResourceManager.Network.Models.SecurityPartnerProviderCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="securityPartnerProviderName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Network.SecurityPartnerProviderData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="securityPartnerProviderName"> The name of the Security Partner Provider. </param>
         <param name="parameters"> Parameters supplied to the create or update Security Partner Provider operation. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates the specified Security Partner Provider. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="securityPartnerProviderName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="securityPartnerProviderName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.SecurityPartnerProviderCreateOrUpdateOperation&gt; CreateOrUpdateAsync (string securityPartnerProviderName, Azure.ResourceManager.Network.SecurityPartnerProviderData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.SecurityPartnerProviderCreateOrUpdateOperation&gt; CreateOrUpdateAsync(string securityPartnerProviderName, class Azure.ResourceManager.Network.SecurityPartnerProviderData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SecurityPartnerProviderCollection.CreateOrUpdateAsync(System.String,Azure.ResourceManager.Network.SecurityPartnerProviderData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (securityPartnerProviderName As String, parameters As SecurityPartnerProviderData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SecurityPartnerProviderCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.ResourceManager.Network.SecurityPartnerProviderData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.SecurityPartnerProviderCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.ResourceManager.Network.SecurityPartnerProviderData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.SecurityPartnerProviderCreateOrUpdateOperation&gt;" Usage="securityPartnerProviderCollection.CreateOrUpdateAsync (securityPartnerProviderName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.SecurityPartnerProviderCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string securityPartnerProviderName, Azure.ResourceManager.Network.SecurityPartnerProviderData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.SecurityPartnerProviderCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string securityPartnerProviderName, class Azure.ResourceManager.Network.SecurityPartnerProviderData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SecurityPartnerProviderCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Network.SecurityPartnerProviderData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, securityPartnerProviderName As String, parameters As SecurityPartnerProviderData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SecurityPartnerProviderCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Network.SecurityPartnerProviderData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.SecurityPartnerProviderCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Network.SecurityPartnerProviderData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.SecurityPartnerProviderCreateOrUpdateOperation&gt;" Usage="securityPartnerProviderCollection.CreateOrUpdateAsync (waitForCompletion, securityPartnerProviderName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -90,19 +92,21 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.SecurityPartnerProviderCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="securityPartnerProviderName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Network.SecurityPartnerProviderData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="securityPartnerProviderName"> The name of the Security Partner Provider. </param>
         <param name="parameters"> Parameters supplied to the create or update Security Partner Provider operation. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates the specified Security Partner Provider. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="securityPartnerProviderName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="securityPartnerProviderName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -131,6 +135,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="securityPartnerProviderName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="securityPartnerProviderName" /> is null. </exception>
       </Docs>
@@ -159,6 +165,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="securityPartnerProviderName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="securityPartnerProviderName" /> is null. </exception>
       </Docs>
@@ -187,6 +195,8 @@
         <summary> Gets the specified Security Partner Provider. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="securityPartnerProviderName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="securityPartnerProviderName" /> is null. </exception>
       </Docs>
@@ -323,6 +333,8 @@
         <summary> Gets the specified Security Partner Provider. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="securityPartnerProviderName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="securityPartnerProviderName" /> is null. </exception>
       </Docs>
@@ -351,6 +363,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="securityPartnerProviderName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="securityPartnerProviderName" /> is null. </exception>
       </Docs>
@@ -379,6 +393,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="securityPartnerProviderName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="securityPartnerProviderName" /> is null. </exception>
       </Docs>
@@ -455,26 +471,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.SecurityPartnerProviderCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Network.SecurityPartnerProviderCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

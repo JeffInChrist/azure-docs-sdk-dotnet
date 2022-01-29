@@ -60,27 +60,23 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected ArmCollection (Azure.ResourceManager.ArmClientOptions options, Azure.Core.TokenCredential credential, Uri baseUri, Azure.Core.Pipeline.HttpPipeline pipeline);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Azure.ResourceManager.ArmClientOptions options, class Azure.Core.TokenCredential credential, class System.Uri baseUri, class Azure.Core.Pipeline.HttpPipeline pipeline) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Core.ArmCollection.#ctor(Azure.ResourceManager.ArmClientOptions,Azure.Core.TokenCredential,System.Uri,Azure.Core.Pipeline.HttpPipeline)" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New (options As ArmClientOptions, credential As TokenCredential, baseUri As Uri, pipeline As HttpPipeline)" />
-      <MemberSignature Language="F#" Value="new Azure.ResourceManager.Core.ArmCollection : Azure.ResourceManager.ArmClientOptions * Azure.Core.TokenCredential * Uri * Azure.Core.Pipeline.HttpPipeline -&gt; Azure.ResourceManager.Core.ArmCollection" Usage="new Azure.ResourceManager.Core.ArmCollection (options, credential, baseUri, pipeline)" />
+      <MemberSignature Language="C#" Value="protected ArmCollection (Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Core.ArmCollection.#ctor(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (client As ArmClient, id As ResourceIdentifier)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.Core.ArmCollection : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Core.ArmCollection" Usage="new Azure.ResourceManager.Core.ArmCollection (client, id)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="options" Type="Azure.ResourceManager.ArmClientOptions" />
-        <Parameter Name="credential" Type="Azure.Core.TokenCredential" />
-        <Parameter Name="baseUri" Type="System.Uri" />
-        <Parameter Name="pipeline" Type="Azure.Core.Pipeline.HttpPipeline" />
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
-        <param name="options"> The options to use. </param>
-        <param name="credential"> The credential to use. </param>
-        <param name="baseUri"> The base uri to use. </param>
-        <param name="pipeline"> The http pipeline policy to use. </param>
+        <param name="client"> The client to copy settings from. </param>
+        <param name="id"> The id of the parent for the collection. </param>
         <summary>
             Initializes a new instance of the <see cref="T:Azure.ResourceManager.Core.ArmCollection" /> class.
             </summary>

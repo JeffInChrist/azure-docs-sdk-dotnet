@@ -44,11 +44,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.AvailabilitySetCreateOrUpdateOperation CreateOrUpdate (string availabilitySetName, Azure.ResourceManager.Compute.AvailabilitySetData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.AvailabilitySetCreateOrUpdateOperation CreateOrUpdate(string availabilitySetName, class Azure.ResourceManager.Compute.AvailabilitySetData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.AvailabilitySetCollection.CreateOrUpdate(System.String,Azure.ResourceManager.Compute.AvailabilitySetData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (availabilitySetName As String, parameters As AvailabilitySetData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As AvailabilitySetCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.ResourceManager.Compute.AvailabilitySetData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.AvailabilitySetCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : string * Azure.ResourceManager.Compute.AvailabilitySetData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.AvailabilitySetCreateOrUpdateOperation" Usage="availabilitySetCollection.CreateOrUpdate (availabilitySetName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.AvailabilitySetCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string availabilitySetName, Azure.ResourceManager.Compute.AvailabilitySetData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.AvailabilitySetCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string availabilitySetName, class Azure.ResourceManager.Compute.AvailabilitySetData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.AvailabilitySetCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Compute.AvailabilitySetData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, availabilitySetName As String, parameters As AvailabilitySetData, Optional cancellationToken As CancellationToken = Nothing) As AvailabilitySetCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.AvailabilitySetData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.AvailabilitySetCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.AvailabilitySetData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.AvailabilitySetCreateOrUpdateOperation" Usage="availabilitySetCollection.CreateOrUpdate (waitForCompletion, availabilitySetName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
@@ -58,29 +58,31 @@
         <ReturnType>Azure.ResourceManager.Compute.Models.AvailabilitySetCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="availabilitySetName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Compute.AvailabilitySetData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="availabilitySetName"> The name of the availability set. </param>
         <param name="parameters"> Parameters supplied to the Create Availability Set operation. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Create or update an availability set. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="availabilitySetName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="availabilitySetName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.AvailabilitySetCreateOrUpdateOperation&gt; CreateOrUpdateAsync (string availabilitySetName, Azure.ResourceManager.Compute.AvailabilitySetData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.AvailabilitySetCreateOrUpdateOperation&gt; CreateOrUpdateAsync(string availabilitySetName, class Azure.ResourceManager.Compute.AvailabilitySetData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.AvailabilitySetCollection.CreateOrUpdateAsync(System.String,Azure.ResourceManager.Compute.AvailabilitySetData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (availabilitySetName As String, parameters As AvailabilitySetData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of AvailabilitySetCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.ResourceManager.Compute.AvailabilitySetData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.AvailabilitySetCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.ResourceManager.Compute.AvailabilitySetData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.AvailabilitySetCreateOrUpdateOperation&gt;" Usage="availabilitySetCollection.CreateOrUpdateAsync (availabilitySetName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.AvailabilitySetCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string availabilitySetName, Azure.ResourceManager.Compute.AvailabilitySetData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.AvailabilitySetCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string availabilitySetName, class Azure.ResourceManager.Compute.AvailabilitySetData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.AvailabilitySetCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Compute.AvailabilitySetData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, availabilitySetName As String, parameters As AvailabilitySetData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of AvailabilitySetCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.AvailabilitySetData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.AvailabilitySetCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.AvailabilitySetData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.AvailabilitySetCreateOrUpdateOperation&gt;" Usage="availabilitySetCollection.CreateOrUpdateAsync (waitForCompletion, availabilitySetName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
@@ -90,19 +92,21 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.AvailabilitySetCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="availabilitySetName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Compute.AvailabilitySetData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="availabilitySetName"> The name of the availability set. </param>
         <param name="parameters"> Parameters supplied to the Create Availability Set operation. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Create or update an availability set. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="availabilitySetName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="availabilitySetName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -131,6 +135,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="availabilitySetName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="availabilitySetName" /> is null. </exception>
       </Docs>
@@ -159,6 +165,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="availabilitySetName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="availabilitySetName" /> is null. </exception>
       </Docs>
@@ -187,6 +195,8 @@
         <summary> Retrieves information about an availability set. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="availabilitySetName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="availabilitySetName" /> is null. </exception>
       </Docs>
@@ -323,6 +333,8 @@
         <summary> Retrieves information about an availability set. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="availabilitySetName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="availabilitySetName" /> is null. </exception>
       </Docs>
@@ -351,6 +363,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="availabilitySetName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="availabilitySetName" /> is null. </exception>
       </Docs>
@@ -379,6 +393,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="availabilitySetName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="availabilitySetName" /> is null. </exception>
       </Docs>
@@ -455,26 +471,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Compute.AvailabilitySetCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Compute.AvailabilitySetCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

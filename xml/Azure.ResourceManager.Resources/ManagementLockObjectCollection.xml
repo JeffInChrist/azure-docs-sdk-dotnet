@@ -44,65 +44,69 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.Models.ManagementLockCreateOrUpdateByScopeOperation CreateOrUpdate (string lockName, Azure.ResourceManager.Resources.ManagementLockObjectData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Models.ManagementLockCreateOrUpdateByScopeOperation CreateOrUpdate(string lockName, class Azure.ResourceManager.Resources.ManagementLockObjectData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ManagementLockObjectCollection.CreateOrUpdate(System.String,Azure.ResourceManager.Resources.ManagementLockObjectData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (lockName As String, parameters As ManagementLockObjectData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As ManagementLockCreateOrUpdateByScopeOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.ResourceManager.Resources.ManagementLockObjectData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Resources.Models.ManagementLockCreateOrUpdateByScopeOperation&#xA;override this.CreateOrUpdate : string * Azure.ResourceManager.Resources.ManagementLockObjectData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Resources.Models.ManagementLockCreateOrUpdateByScopeOperation" Usage="managementLockObjectCollection.CreateOrUpdate (lockName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.Models.ManagementLockObjectCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string lockName, Azure.ResourceManager.Resources.ManagementLockObjectData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Models.ManagementLockObjectCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string lockName, class Azure.ResourceManager.Resources.ManagementLockObjectData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ManagementLockObjectCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Resources.ManagementLockObjectData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, lockName As String, parameters As ManagementLockObjectData, Optional cancellationToken As CancellationToken = Nothing) As ManagementLockObjectCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.ManagementLockObjectData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Resources.Models.ManagementLockObjectCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.ManagementLockObjectData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Resources.Models.ManagementLockObjectCreateOrUpdateOperation" Usage="managementLockObjectCollection.CreateOrUpdate (waitForCompletion, lockName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.ManagementLockCreateOrUpdateByScopeOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.Resources.Models.ManagementLockObjectCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="lockName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Resources.ManagementLockObjectData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="lockName"> The name of lock. </param>
         <param name="parameters"> Create or update management lock parameters. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Create or update a management lock by scope. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="lockName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="lockName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ManagementLockCreateOrUpdateByScopeOperation&gt; CreateOrUpdateAsync (string lockName, Azure.ResourceManager.Resources.ManagementLockObjectData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Resources.Models.ManagementLockCreateOrUpdateByScopeOperation&gt; CreateOrUpdateAsync(string lockName, class Azure.ResourceManager.Resources.ManagementLockObjectData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ManagementLockObjectCollection.CreateOrUpdateAsync(System.String,Azure.ResourceManager.Resources.ManagementLockObjectData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (lockName As String, parameters As ManagementLockObjectData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ManagementLockCreateOrUpdateByScopeOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.ResourceManager.Resources.ManagementLockObjectData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ManagementLockCreateOrUpdateByScopeOperation&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.ResourceManager.Resources.ManagementLockObjectData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ManagementLockCreateOrUpdateByScopeOperation&gt;" Usage="managementLockObjectCollection.CreateOrUpdateAsync (lockName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ManagementLockObjectCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string lockName, Azure.ResourceManager.Resources.ManagementLockObjectData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Resources.Models.ManagementLockObjectCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string lockName, class Azure.ResourceManager.Resources.ManagementLockObjectData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ManagementLockObjectCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Resources.ManagementLockObjectData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, lockName As String, parameters As ManagementLockObjectData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ManagementLockObjectCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.ManagementLockObjectData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ManagementLockObjectCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.ManagementLockObjectData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ManagementLockObjectCreateOrUpdateOperation&gt;" Usage="managementLockObjectCollection.CreateOrUpdateAsync (waitForCompletion, lockName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ManagementLockCreateOrUpdateByScopeOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ManagementLockObjectCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="lockName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Resources.ManagementLockObjectData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="lockName"> The name of lock. </param>
         <param name="parameters"> Create or update management lock parameters. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Create or update a management lock by scope. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="lockName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="lockName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -131,6 +135,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="lockName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="lockName" /> is null. </exception>
       </Docs>
@@ -159,6 +165,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="lockName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="lockName" /> is null. </exception>
       </Docs>
@@ -187,6 +195,8 @@
         <summary> Get a management lock by scope. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="lockName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="lockName" /> is null. </exception>
       </Docs>
@@ -267,6 +277,8 @@
         <summary> Get a management lock by scope. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="lockName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="lockName" /> is null. </exception>
       </Docs>
@@ -295,6 +307,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="lockName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="lockName" /> is null. </exception>
       </Docs>
@@ -323,6 +337,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="lockName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="lockName" /> is null. </exception>
       </Docs>
@@ -399,49 +415,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidateResourceType">
-      <MemberSignature Language="C#" Value="protected override void ValidateResourceType (Azure.ResourceManager.ResourceIdentifier identifier);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ValidateResourceType(class Azure.ResourceManager.ResourceIdentifier identifier) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ManagementLockObjectCollection.ValidateResourceType(Azure.ResourceManager.ResourceIdentifier)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ValidateResourceType (identifier As ResourceIdentifier)" />
-      <MemberSignature Language="F#" Value="override this.ValidateResourceType : Azure.ResourceManager.ResourceIdentifier -&gt; unit" Usage="managementLockObjectCollection.ValidateResourceType identifier" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="identifier" Type="Azure.ResourceManager.ResourceIdentifier" />
-      </Parameters>
-      <Docs>
-        <param name="identifier"> The input resource Id to check. </param>
-        <summary> Verify that the input resource Id is a valid collection for this type. </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.ManagementLockObjectCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Resources.ManagementLockObjectCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

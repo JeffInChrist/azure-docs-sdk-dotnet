@@ -44,65 +44,69 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineTemplateCreateOperation CreateOrUpdate (string virtualMachineTemplateName, Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateData body = default, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineTemplateCreateOperation CreateOrUpdate(string virtualMachineTemplateName, class Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateData body, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateCollection.CreateOrUpdate(System.String,Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (virtualMachineTemplateName As String, Optional body As VirtualMachineTemplateData = Nothing, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineTemplateCreateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineTemplateCreateOperation&#xA;override this.CreateOrUpdate : string * Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineTemplateCreateOperation" Usage="virtualMachineTemplateCollection.CreateOrUpdate (virtualMachineTemplateName, body, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineTemplateCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string virtualMachineTemplateName, Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateData body = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineTemplateCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string virtualMachineTemplateName, class Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateData body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, virtualMachineTemplateName As String, Optional body As VirtualMachineTemplateData = Nothing, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineTemplateCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineTemplateCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineTemplateCreateOrUpdateOperation" Usage="virtualMachineTemplateCollection.CreateOrUpdate (waitForCompletion, virtualMachineTemplateName, body, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ConnectedVMwarevSphere</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineTemplateCreateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineTemplateCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="virtualMachineTemplateName" Type="System.String" />
         <Parameter Name="body" Type="Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="virtualMachineTemplateName"> Name of the virtual machine template resource. </param>
         <param name="body"> Request payload. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Create Or Update virtual machine template. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualMachineTemplateName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualMachineTemplateName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineTemplateCreateOperation&gt; CreateOrUpdateAsync (string virtualMachineTemplateName, Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateData body = default, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineTemplateCreateOperation&gt; CreateOrUpdateAsync(string virtualMachineTemplateName, class Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateData body, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateCollection.CreateOrUpdateAsync(System.String,Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (virtualMachineTemplateName As String, Optional body As VirtualMachineTemplateData = Nothing, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineTemplateCreateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineTemplateCreateOperation&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineTemplateCreateOperation&gt;" Usage="virtualMachineTemplateCollection.CreateOrUpdateAsync (virtualMachineTemplateName, body, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineTemplateCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string virtualMachineTemplateName, Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateData body = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineTemplateCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string virtualMachineTemplateName, class Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateData body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, virtualMachineTemplateName As String, Optional body As VirtualMachineTemplateData = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineTemplateCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineTemplateCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineTemplateCreateOrUpdateOperation&gt;" Usage="virtualMachineTemplateCollection.CreateOrUpdateAsync (waitForCompletion, virtualMachineTemplateName, body, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ConnectedVMwarevSphere</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineTemplateCreateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineTemplateCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="virtualMachineTemplateName" Type="System.String" />
         <Parameter Name="body" Type="Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="virtualMachineTemplateName"> Name of the virtual machine template resource. </param>
         <param name="body"> Request payload. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Create Or Update virtual machine template. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualMachineTemplateName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualMachineTemplateName" /> is null. </exception>
       </Docs>
@@ -131,6 +135,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualMachineTemplateName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualMachineTemplateName" /> is null. </exception>
       </Docs>
@@ -159,6 +165,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualMachineTemplateName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualMachineTemplateName" /> is null. </exception>
       </Docs>
@@ -187,6 +195,8 @@
         <summary> Implements virtual machine template GET method. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualMachineTemplateName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualMachineTemplateName" /> is null. </exception>
       </Docs>
@@ -323,6 +333,8 @@
         <summary> Implements virtual machine template GET method. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualMachineTemplateName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualMachineTemplateName" /> is null. </exception>
       </Docs>
@@ -351,6 +363,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualMachineTemplateName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualMachineTemplateName" /> is null. </exception>
       </Docs>
@@ -379,6 +393,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualMachineTemplateName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualMachineTemplateName" /> is null. </exception>
       </Docs>
@@ -455,26 +471,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.Core.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.Core.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.Core.ResourceType" Usage="Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.ConnectedVMwarevSphere</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.Core.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

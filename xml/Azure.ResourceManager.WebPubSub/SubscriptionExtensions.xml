@@ -17,12 +17,12 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
-    <Member MemberName="CheckNameAvailabilityWebPubSub">
-      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.WebPubSub.Models.NameAvailability&gt; CheckNameAvailabilityWebPubSub (this Azure.ResourceManager.Resources.Subscription subscription, string location, Azure.ResourceManager.WebPubSub.Models.NameAvailabilityParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.WebPubSub.Models.NameAvailability&gt; CheckNameAvailabilityWebPubSub(class Azure.ResourceManager.Resources.Subscription subscription, string location, class Azure.ResourceManager.WebPubSub.Models.NameAvailabilityParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.SubscriptionExtensions.CheckNameAvailabilityWebPubSub(Azure.ResourceManager.Resources.Subscription,System.String,Azure.ResourceManager.WebPubSub.Models.NameAvailabilityParameters,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckNameAvailabilityWebPubSub (subscription As Subscription, location As String, parameters As NameAvailabilityParameters, Optional cancellationToken As CancellationToken = Nothing) As Response(Of NameAvailability)" />
-      <MemberSignature Language="F#" Value="static member CheckNameAvailabilityWebPubSub : Azure.ResourceManager.Resources.Subscription * string * Azure.ResourceManager.WebPubSub.Models.NameAvailabilityParameters * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.WebPubSub.Models.NameAvailability&gt;" Usage="Azure.ResourceManager.WebPubSub.SubscriptionExtensions.CheckNameAvailabilityWebPubSub (subscription, location, parameters, cancellationToken)" />
+    <Member MemberName="CheckWebPubSubNameAvailability">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.WebPubSub.Models.NameAvailability&gt; CheckWebPubSubNameAvailability (this Azure.ResourceManager.Resources.Subscription subscription, string location, Azure.ResourceManager.WebPubSub.Models.NameAvailabilityParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.WebPubSub.Models.NameAvailability&gt; CheckWebPubSubNameAvailability(class Azure.ResourceManager.Resources.Subscription subscription, string location, class Azure.ResourceManager.WebPubSub.Models.NameAvailabilityParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.SubscriptionExtensions.CheckWebPubSubNameAvailability(Azure.ResourceManager.Resources.Subscription,System.String,Azure.ResourceManager.WebPubSub.Models.NameAvailabilityParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckWebPubSubNameAvailability (subscription As Subscription, location As String, parameters As NameAvailabilityParameters, Optional cancellationToken As CancellationToken = Nothing) As Response(Of NameAvailability)" />
+      <MemberSignature Language="F#" Value="static member CheckWebPubSubNameAvailability : Azure.ResourceManager.Resources.Subscription * string * Azure.ResourceManager.WebPubSub.Models.NameAvailabilityParameters * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.WebPubSub.Models.NameAvailability&gt;" Usage="Azure.ResourceManager.WebPubSub.SubscriptionExtensions.CheckWebPubSubNameAvailability (subscription, location, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
@@ -42,19 +42,21 @@
         <param name="location"> the region. </param>
         <param name="parameters"> Parameters supplied to the operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Checks that the resource name is valid and is not already in use. </summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
-    <Member MemberName="CheckNameAvailabilityWebPubSubAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.WebPubSub.Models.NameAvailability&gt;&gt; CheckNameAvailabilityWebPubSubAsync (this Azure.ResourceManager.Resources.Subscription subscription, string location, Azure.ResourceManager.WebPubSub.Models.NameAvailabilityParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.WebPubSub.Models.NameAvailability&gt;&gt; CheckNameAvailabilityWebPubSubAsync(class Azure.ResourceManager.Resources.Subscription subscription, string location, class Azure.ResourceManager.WebPubSub.Models.NameAvailabilityParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.SubscriptionExtensions.CheckNameAvailabilityWebPubSubAsync(Azure.ResourceManager.Resources.Subscription,System.String,Azure.ResourceManager.WebPubSub.Models.NameAvailabilityParameters,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckNameAvailabilityWebPubSubAsync (subscription As Subscription, location As String, parameters As NameAvailabilityParameters, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of NameAvailability))" />
-      <MemberSignature Language="F#" Value="static member CheckNameAvailabilityWebPubSubAsync : Azure.ResourceManager.Resources.Subscription * string * Azure.ResourceManager.WebPubSub.Models.NameAvailabilityParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.WebPubSub.Models.NameAvailability&gt;&gt;" Usage="Azure.ResourceManager.WebPubSub.SubscriptionExtensions.CheckNameAvailabilityWebPubSubAsync (subscription, location, parameters, cancellationToken)" />
+    <Member MemberName="CheckWebPubSubNameAvailabilityAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.WebPubSub.Models.NameAvailability&gt;&gt; CheckWebPubSubNameAvailabilityAsync (this Azure.ResourceManager.Resources.Subscription subscription, string location, Azure.ResourceManager.WebPubSub.Models.NameAvailabilityParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.WebPubSub.Models.NameAvailability&gt;&gt; CheckWebPubSubNameAvailabilityAsync(class Azure.ResourceManager.Resources.Subscription subscription, string location, class Azure.ResourceManager.WebPubSub.Models.NameAvailabilityParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.SubscriptionExtensions.CheckWebPubSubNameAvailabilityAsync(Azure.ResourceManager.Resources.Subscription,System.String,Azure.ResourceManager.WebPubSub.Models.NameAvailabilityParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckWebPubSubNameAvailabilityAsync (subscription As Subscription, location As String, parameters As NameAvailabilityParameters, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of NameAvailability))" />
+      <MemberSignature Language="F#" Value="static member CheckWebPubSubNameAvailabilityAsync : Azure.ResourceManager.Resources.Subscription * string * Azure.ResourceManager.WebPubSub.Models.NameAvailabilityParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.WebPubSub.Models.NameAvailability&gt;&gt;" Usage="Azure.ResourceManager.WebPubSub.SubscriptionExtensions.CheckWebPubSubNameAvailabilityAsync (subscription, location, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
@@ -74,9 +76,11 @@
         <param name="location"> the region. </param>
         <param name="parameters"> Parameters supplied to the operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Checks that the resource name is valid and is not already in use. </summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -107,6 +111,8 @@
         <summary> Lists the SignalRServiceUsages for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -137,6 +143,8 @@
         <summary> Lists the SignalRServiceUsages for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>

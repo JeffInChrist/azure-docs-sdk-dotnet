@@ -297,19 +297,19 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="OsProfile">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ConnectedVMwarevSphere.Models.OsProfile OsProfile { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ConnectedVMwarevSphere.Models.OsProfile OsProfile" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineData.OsProfile" />
-      <MemberSignature Language="VB.NET" Value="Public Property OsProfile As OsProfile" />
-      <MemberSignature Language="F#" Value="member this.OsProfile : Azure.ResourceManager.ConnectedVMwarevSphere.Models.OsProfile with get, set" Usage="Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineData.OsProfile" />
+    <Member MemberName="OSProfile">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ConnectedVMwarevSphere.Models.OSProfile OSProfile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ConnectedVMwarevSphere.Models.OSProfile OSProfile" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineData.OSProfile" />
+      <MemberSignature Language="VB.NET" Value="Public Property OSProfile As OSProfile" />
+      <MemberSignature Language="F#" Value="member this.OSProfile : Azure.ResourceManager.ConnectedVMwarevSphere.Models.OSProfile with get, set" Usage="Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineData.OSProfile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ConnectedVMwarevSphere</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ConnectedVMwarevSphere.Models.OsProfile</ReturnType>
+        <ReturnType>Azure.ResourceManager.ConnectedVMwarevSphere.Models.OSProfile</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> OS properties. </summary>

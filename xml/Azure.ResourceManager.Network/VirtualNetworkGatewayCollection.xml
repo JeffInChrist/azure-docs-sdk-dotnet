@@ -44,11 +44,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.VirtualNetworkGatewayCreateOrUpdateOperation CreateOrUpdate (string virtualNetworkGatewayName, Azure.ResourceManager.Network.VirtualNetworkGatewayData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.VirtualNetworkGatewayCreateOrUpdateOperation CreateOrUpdate(string virtualNetworkGatewayName, class Azure.ResourceManager.Network.VirtualNetworkGatewayData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.VirtualNetworkGatewayCollection.CreateOrUpdate(System.String,Azure.ResourceManager.Network.VirtualNetworkGatewayData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (virtualNetworkGatewayName As String, parameters As VirtualNetworkGatewayData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As VirtualNetworkGatewayCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.ResourceManager.Network.VirtualNetworkGatewayData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.VirtualNetworkGatewayCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : string * Azure.ResourceManager.Network.VirtualNetworkGatewayData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.VirtualNetworkGatewayCreateOrUpdateOperation" Usage="virtualNetworkGatewayCollection.CreateOrUpdate (virtualNetworkGatewayName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.VirtualNetworkGatewayCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string virtualNetworkGatewayName, Azure.ResourceManager.Network.VirtualNetworkGatewayData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.VirtualNetworkGatewayCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string virtualNetworkGatewayName, class Azure.ResourceManager.Network.VirtualNetworkGatewayData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.VirtualNetworkGatewayCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Network.VirtualNetworkGatewayData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, virtualNetworkGatewayName As String, parameters As VirtualNetworkGatewayData, Optional cancellationToken As CancellationToken = Nothing) As VirtualNetworkGatewayCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Network.VirtualNetworkGatewayData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.VirtualNetworkGatewayCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Network.VirtualNetworkGatewayData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.VirtualNetworkGatewayCreateOrUpdateOperation" Usage="virtualNetworkGatewayCollection.CreateOrUpdate (waitForCompletion, virtualNetworkGatewayName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -58,29 +58,31 @@
         <ReturnType>Azure.ResourceManager.Network.Models.VirtualNetworkGatewayCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="virtualNetworkGatewayName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Network.VirtualNetworkGatewayData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="virtualNetworkGatewayName"> The name of the virtual network gateway. </param>
         <param name="parameters"> Parameters supplied to create or update virtual network gateway operation. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates a virtual network gateway in the specified resource group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualNetworkGatewayName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualNetworkGatewayName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VirtualNetworkGatewayCreateOrUpdateOperation&gt; CreateOrUpdateAsync (string virtualNetworkGatewayName, Azure.ResourceManager.Network.VirtualNetworkGatewayData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.VirtualNetworkGatewayCreateOrUpdateOperation&gt; CreateOrUpdateAsync(string virtualNetworkGatewayName, class Azure.ResourceManager.Network.VirtualNetworkGatewayData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.VirtualNetworkGatewayCollection.CreateOrUpdateAsync(System.String,Azure.ResourceManager.Network.VirtualNetworkGatewayData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (virtualNetworkGatewayName As String, parameters As VirtualNetworkGatewayData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualNetworkGatewayCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.ResourceManager.Network.VirtualNetworkGatewayData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VirtualNetworkGatewayCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.ResourceManager.Network.VirtualNetworkGatewayData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VirtualNetworkGatewayCreateOrUpdateOperation&gt;" Usage="virtualNetworkGatewayCollection.CreateOrUpdateAsync (virtualNetworkGatewayName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VirtualNetworkGatewayCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string virtualNetworkGatewayName, Azure.ResourceManager.Network.VirtualNetworkGatewayData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.VirtualNetworkGatewayCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string virtualNetworkGatewayName, class Azure.ResourceManager.Network.VirtualNetworkGatewayData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.VirtualNetworkGatewayCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Network.VirtualNetworkGatewayData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, virtualNetworkGatewayName As String, parameters As VirtualNetworkGatewayData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualNetworkGatewayCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Network.VirtualNetworkGatewayData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VirtualNetworkGatewayCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Network.VirtualNetworkGatewayData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VirtualNetworkGatewayCreateOrUpdateOperation&gt;" Usage="virtualNetworkGatewayCollection.CreateOrUpdateAsync (waitForCompletion, virtualNetworkGatewayName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -90,19 +92,21 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VirtualNetworkGatewayCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="virtualNetworkGatewayName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Network.VirtualNetworkGatewayData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="virtualNetworkGatewayName"> The name of the virtual network gateway. </param>
         <param name="parameters"> Parameters supplied to create or update virtual network gateway operation. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates a virtual network gateway in the specified resource group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualNetworkGatewayName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualNetworkGatewayName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -131,6 +135,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualNetworkGatewayName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualNetworkGatewayName" /> is null. </exception>
       </Docs>
@@ -159,6 +165,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualNetworkGatewayName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualNetworkGatewayName" /> is null. </exception>
       </Docs>
@@ -187,6 +195,8 @@
         <summary> Gets the specified virtual network gateway by resource group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualNetworkGatewayName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualNetworkGatewayName" /> is null. </exception>
       </Docs>
@@ -323,6 +333,8 @@
         <summary> Gets the specified virtual network gateway by resource group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualNetworkGatewayName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualNetworkGatewayName" /> is null. </exception>
       </Docs>
@@ -351,6 +363,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualNetworkGatewayName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualNetworkGatewayName" /> is null. </exception>
       </Docs>
@@ -379,6 +393,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualNetworkGatewayName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualNetworkGatewayName" /> is null. </exception>
       </Docs>
@@ -455,26 +471,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.VirtualNetworkGatewayCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Network.VirtualNetworkGatewayCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

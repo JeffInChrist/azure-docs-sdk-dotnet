@@ -44,11 +44,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.ServiceEndpointPolicyDefinitionCreateOrUpdateOperation CreateOrUpdate (string serviceEndpointPolicyDefinitionName, Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionData serviceEndpointPolicyDefinitions, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.ServiceEndpointPolicyDefinitionCreateOrUpdateOperation CreateOrUpdate(string serviceEndpointPolicyDefinitionName, class Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionData serviceEndpointPolicyDefinitions, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionCollection.CreateOrUpdate(System.String,Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (serviceEndpointPolicyDefinitionName As String, serviceEndpointPolicyDefinitions As ServiceEndpointPolicyDefinitionData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As ServiceEndpointPolicyDefinitionCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.ServiceEndpointPolicyDefinitionCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : string * Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.ServiceEndpointPolicyDefinitionCreateOrUpdateOperation" Usage="serviceEndpointPolicyDefinitionCollection.CreateOrUpdate (serviceEndpointPolicyDefinitionName, serviceEndpointPolicyDefinitions, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.ServiceEndpointPolicyDefinitionCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string serviceEndpointPolicyDefinitionName, Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionData serviceEndpointPolicyDefinitions, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.ServiceEndpointPolicyDefinitionCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string serviceEndpointPolicyDefinitionName, class Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionData serviceEndpointPolicyDefinitions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, serviceEndpointPolicyDefinitionName As String, serviceEndpointPolicyDefinitions As ServiceEndpointPolicyDefinitionData, Optional cancellationToken As CancellationToken = Nothing) As ServiceEndpointPolicyDefinitionCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.ServiceEndpointPolicyDefinitionCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.ServiceEndpointPolicyDefinitionCreateOrUpdateOperation" Usage="serviceEndpointPolicyDefinitionCollection.CreateOrUpdate (waitForCompletion, serviceEndpointPolicyDefinitionName, serviceEndpointPolicyDefinitions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -58,29 +58,31 @@
         <ReturnType>Azure.ResourceManager.Network.Models.ServiceEndpointPolicyDefinitionCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="serviceEndpointPolicyDefinitionName" Type="System.String" />
         <Parameter Name="serviceEndpointPolicyDefinitions" Type="Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="serviceEndpointPolicyDefinitionName"> The name of the service endpoint policy definition name. </param>
         <param name="serviceEndpointPolicyDefinitions"> Parameters supplied to the create or update service endpoint policy operation. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates a service endpoint policy definition in the specified service endpoint policy. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="serviceEndpointPolicyDefinitionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="serviceEndpointPolicyDefinitionName" /> or <paramref name="serviceEndpointPolicyDefinitions" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ServiceEndpointPolicyDefinitionCreateOrUpdateOperation&gt; CreateOrUpdateAsync (string serviceEndpointPolicyDefinitionName, Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionData serviceEndpointPolicyDefinitions, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.ServiceEndpointPolicyDefinitionCreateOrUpdateOperation&gt; CreateOrUpdateAsync(string serviceEndpointPolicyDefinitionName, class Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionData serviceEndpointPolicyDefinitions, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionCollection.CreateOrUpdateAsync(System.String,Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (serviceEndpointPolicyDefinitionName As String, serviceEndpointPolicyDefinitions As ServiceEndpointPolicyDefinitionData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ServiceEndpointPolicyDefinitionCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ServiceEndpointPolicyDefinitionCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ServiceEndpointPolicyDefinitionCreateOrUpdateOperation&gt;" Usage="serviceEndpointPolicyDefinitionCollection.CreateOrUpdateAsync (serviceEndpointPolicyDefinitionName, serviceEndpointPolicyDefinitions, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ServiceEndpointPolicyDefinitionCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string serviceEndpointPolicyDefinitionName, Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionData serviceEndpointPolicyDefinitions, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.ServiceEndpointPolicyDefinitionCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string serviceEndpointPolicyDefinitionName, class Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionData serviceEndpointPolicyDefinitions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, serviceEndpointPolicyDefinitionName As String, serviceEndpointPolicyDefinitions As ServiceEndpointPolicyDefinitionData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ServiceEndpointPolicyDefinitionCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ServiceEndpointPolicyDefinitionCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ServiceEndpointPolicyDefinitionCreateOrUpdateOperation&gt;" Usage="serviceEndpointPolicyDefinitionCollection.CreateOrUpdateAsync (waitForCompletion, serviceEndpointPolicyDefinitionName, serviceEndpointPolicyDefinitions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -90,19 +92,21 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ServiceEndpointPolicyDefinitionCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="serviceEndpointPolicyDefinitionName" Type="System.String" />
         <Parameter Name="serviceEndpointPolicyDefinitions" Type="Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="serviceEndpointPolicyDefinitionName"> The name of the service endpoint policy definition name. </param>
         <param name="serviceEndpointPolicyDefinitions"> Parameters supplied to the create or update service endpoint policy operation. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates a service endpoint policy definition in the specified service endpoint policy. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="serviceEndpointPolicyDefinitionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="serviceEndpointPolicyDefinitionName" /> or <paramref name="serviceEndpointPolicyDefinitions" /> is null. </exception>
       </Docs>
@@ -131,6 +135,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="serviceEndpointPolicyDefinitionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="serviceEndpointPolicyDefinitionName" /> is null. </exception>
       </Docs>
@@ -159,6 +165,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="serviceEndpointPolicyDefinitionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="serviceEndpointPolicyDefinitionName" /> is null. </exception>
       </Docs>
@@ -187,6 +195,8 @@
         <summary> Get the specified service endpoint policy definitions from service endpoint policy. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="serviceEndpointPolicyDefinitionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="serviceEndpointPolicyDefinitionName" /> is null. </exception>
       </Docs>
@@ -263,6 +273,8 @@
         <summary> Get the specified service endpoint policy definitions from service endpoint policy. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="serviceEndpointPolicyDefinitionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="serviceEndpointPolicyDefinitionName" /> is null. </exception>
       </Docs>
@@ -291,6 +303,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="serviceEndpointPolicyDefinitionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="serviceEndpointPolicyDefinitionName" /> is null. </exception>
       </Docs>
@@ -319,6 +333,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="serviceEndpointPolicyDefinitionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="serviceEndpointPolicyDefinitionName" /> is null. </exception>
       </Docs>
@@ -395,26 +411,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Network.ServiceEndpointPolicyDefinitionCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

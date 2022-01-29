@@ -45,6 +45,8 @@
         <summary> Checks whether a domain name in the cloudapp.azure.com zone is available for use. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="domainNameLabel" /> is null. </exception>
       </Docs>
@@ -77,74 +79,80 @@
         <summary> Checks whether a domain name in the cloudapp.azure.com zone is available for use. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="domainNameLabel" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CheckPrivateLinkServiceVisibilityPrivateLinkService">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Network.Models.PrivateLinkServiceCheckPrivateLinkServiceVisibilityOperation CheckPrivateLinkServiceVisibilityPrivateLinkService (this Azure.ResourceManager.Resources.Subscription subscription, string location, Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Network.Models.PrivateLinkServiceCheckPrivateLinkServiceVisibilityOperation CheckPrivateLinkServiceVisibilityPrivateLinkService(class Azure.ResourceManager.Resources.Subscription subscription, string location, class Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.CheckPrivateLinkServiceVisibilityPrivateLinkService(Azure.ResourceManager.Resources.Subscription,System.String,Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckPrivateLinkServiceVisibilityPrivateLinkService (subscription As Subscription, location As String, parameters As CheckPrivateLinkServiceVisibilityRequest, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As PrivateLinkServiceCheckPrivateLinkServiceVisibilityOperation" />
-      <MemberSignature Language="F#" Value="static member CheckPrivateLinkServiceVisibilityPrivateLinkService : Azure.ResourceManager.Resources.Subscription * string * Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.PrivateLinkServiceCheckPrivateLinkServiceVisibilityOperation" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.CheckPrivateLinkServiceVisibilityPrivateLinkService (subscription, location, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityPrivateLinkServiceOperation CheckPrivateLinkServiceVisibilityPrivateLinkService (this Azure.ResourceManager.Resources.Subscription subscription, bool waitForCompletion, string location, Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityPrivateLinkServiceOperation CheckPrivateLinkServiceVisibilityPrivateLinkService(class Azure.ResourceManager.Resources.Subscription subscription, bool waitForCompletion, string location, class Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.CheckPrivateLinkServiceVisibilityPrivateLinkService(Azure.ResourceManager.Resources.Subscription,System.Boolean,System.String,Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckPrivateLinkServiceVisibilityPrivateLinkService (subscription As Subscription, waitForCompletion As Boolean, location As String, parameters As CheckPrivateLinkServiceVisibilityRequest, Optional cancellationToken As CancellationToken = Nothing) As CheckPrivateLinkServiceVisibilityPrivateLinkServiceOperation" />
+      <MemberSignature Language="F#" Value="static member CheckPrivateLinkServiceVisibilityPrivateLinkService : Azure.ResourceManager.Resources.Subscription * bool * string * Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityPrivateLinkServiceOperation" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.CheckPrivateLinkServiceVisibilityPrivateLinkService (subscription, waitForCompletion, location, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Network.Models.PrivateLinkServiceCheckPrivateLinkServiceVisibilityOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityPrivateLinkServiceOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="location" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="location"> The location of the domain name. </param>
         <param name="parameters"> The request body of CheckPrivateLinkService API call. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Checks whether the subscription is visible to private link service. </summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CheckPrivateLinkServiceVisibilityPrivateLinkServiceAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.PrivateLinkServiceCheckPrivateLinkServiceVisibilityOperation&gt; CheckPrivateLinkServiceVisibilityPrivateLinkServiceAsync (this Azure.ResourceManager.Resources.Subscription subscription, string location, Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.PrivateLinkServiceCheckPrivateLinkServiceVisibilityOperation&gt; CheckPrivateLinkServiceVisibilityPrivateLinkServiceAsync(class Azure.ResourceManager.Resources.Subscription subscription, string location, class Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.CheckPrivateLinkServiceVisibilityPrivateLinkServiceAsync(Azure.ResourceManager.Resources.Subscription,System.String,Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckPrivateLinkServiceVisibilityPrivateLinkServiceAsync (subscription As Subscription, location As String, parameters As CheckPrivateLinkServiceVisibilityRequest, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of PrivateLinkServiceCheckPrivateLinkServiceVisibilityOperation)" />
-      <MemberSignature Language="F#" Value="static member CheckPrivateLinkServiceVisibilityPrivateLinkServiceAsync : Azure.ResourceManager.Resources.Subscription * string * Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.PrivateLinkServiceCheckPrivateLinkServiceVisibilityOperation&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.CheckPrivateLinkServiceVisibilityPrivateLinkServiceAsync (subscription, location, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityPrivateLinkServiceOperation&gt; CheckPrivateLinkServiceVisibilityPrivateLinkServiceAsync (this Azure.ResourceManager.Resources.Subscription subscription, bool waitForCompletion, string location, Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityPrivateLinkServiceOperation&gt; CheckPrivateLinkServiceVisibilityPrivateLinkServiceAsync(class Azure.ResourceManager.Resources.Subscription subscription, bool waitForCompletion, string location, class Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.CheckPrivateLinkServiceVisibilityPrivateLinkServiceAsync(Azure.ResourceManager.Resources.Subscription,System.Boolean,System.String,Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckPrivateLinkServiceVisibilityPrivateLinkServiceAsync (subscription As Subscription, waitForCompletion As Boolean, location As String, parameters As CheckPrivateLinkServiceVisibilityRequest, Optional cancellationToken As CancellationToken = Nothing) As Task(Of CheckPrivateLinkServiceVisibilityPrivateLinkServiceOperation)" />
+      <MemberSignature Language="F#" Value="static member CheckPrivateLinkServiceVisibilityPrivateLinkServiceAsync : Azure.ResourceManager.Resources.Subscription * bool * string * Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityPrivateLinkServiceOperation&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.CheckPrivateLinkServiceVisibilityPrivateLinkServiceAsync (subscription, waitForCompletion, location, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.PrivateLinkServiceCheckPrivateLinkServiceVisibilityOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityPrivateLinkServiceOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="location" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="location"> The location of the domain name. </param>
         <param name="parameters"> The request body of CheckPrivateLinkService API call. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Checks whether the subscription is visible to private link service. </summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -174,18 +182,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetApplicationGatewayAvailableWafRuleSetsAsync">
-      <MemberSignature Language="C#" Value="public static Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Network.Models.ApplicationGatewayFirewallRuleSet&gt;&gt; GetApplicationGatewayAvailableWafRuleSetsAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.ResourceManager.Network.Models.ApplicationGatewayFirewallRuleSet&gt;&gt; GetApplicationGatewayAvailableWafRuleSetsAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Network.Models.ApplicationGatewayFirewallRuleSet&gt; GetApplicationGatewayAvailableWafRuleSetsAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Network.Models.ApplicationGatewayFirewallRuleSet&gt; GetApplicationGatewayAvailableWafRuleSetsAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.GetApplicationGatewayAvailableWafRuleSetsAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetApplicationGatewayAvailableWafRuleSetsAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Response(Of IReadOnlyList(Of ApplicationGatewayFirewallRuleSet))" />
-      <MemberSignature Language="F#" Value="static member GetApplicationGatewayAvailableWafRuleSetsAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Network.Models.ApplicationGatewayFirewallRuleSet&gt;&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetApplicationGatewayAvailableWafRuleSetsAsync (subscription, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetApplicationGatewayAvailableWafRuleSetsAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ApplicationGatewayFirewallRuleSet)" />
+      <MemberSignature Language="F#" Value="static member GetApplicationGatewayAvailableWafRuleSetsAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Network.Models.ApplicationGatewayFirewallRuleSet&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetApplicationGatewayAvailableWafRuleSetsAsync (subscription, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Network.Models.ApplicationGatewayFirewallRuleSet&gt;&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Network.Models.ApplicationGatewayFirewallRuleSet&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
@@ -195,23 +203,23 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Lists all available web application firewall rule sets. </summary>
-        <returns>To be added.</returns>
+        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetApplicationGatewayAvailableWafRuleSetsAsyncAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Network.Models.ApplicationGatewayFirewallRuleSet&gt;&gt;&gt; GetApplicationGatewayAvailableWafRuleSetsAsyncAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.ResourceManager.Network.Models.ApplicationGatewayFirewallRuleSet&gt;&gt;&gt; GetApplicationGatewayAvailableWafRuleSetsAsyncAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Network.Models.ApplicationGatewayFirewallRuleSet&gt; GetApplicationGatewayAvailableWafRuleSetsAsyncAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Network.Models.ApplicationGatewayFirewallRuleSet&gt; GetApplicationGatewayAvailableWafRuleSetsAsyncAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.GetApplicationGatewayAvailableWafRuleSetsAsyncAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetApplicationGatewayAvailableWafRuleSetsAsyncAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of IReadOnlyList(Of ApplicationGatewayFirewallRuleSet)))" />
-      <MemberSignature Language="F#" Value="static member GetApplicationGatewayAvailableWafRuleSetsAsyncAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Network.Models.ApplicationGatewayFirewallRuleSet&gt;&gt;&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetApplicationGatewayAvailableWafRuleSetsAsyncAsync (subscription, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetApplicationGatewayAvailableWafRuleSetsAsyncAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ApplicationGatewayFirewallRuleSet)" />
+      <MemberSignature Language="F#" Value="static member GetApplicationGatewayAvailableWafRuleSetsAsyncAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Network.Models.ApplicationGatewayFirewallRuleSet&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetApplicationGatewayAvailableWafRuleSetsAsyncAsync (subscription, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Network.Models.ApplicationGatewayFirewallRuleSet&gt;&gt;&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Network.Models.ApplicationGatewayFirewallRuleSet&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
@@ -221,7 +229,7 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Lists all available web application firewall rule sets. </summary>
-        <returns>To be added.</returns>
+        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -483,6 +491,8 @@
         <summary> Lists the AutoApprovedPrivateLinkServices for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -513,6 +523,8 @@
         <summary> Lists the AutoApprovedPrivateLinkServices for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -543,6 +555,8 @@
         <summary> Lists the AvailableDelegations for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -573,6 +587,8 @@
         <summary> Lists the AvailableDelegations for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -603,6 +619,8 @@
         <summary> Lists the EndpointServiceResults for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -633,6 +651,8 @@
         <summary> Lists the EndpointServiceResults for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -663,6 +683,8 @@
         <summary> Lists the AvailablePrivateEndpointTypes for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -693,23 +715,25 @@
         <summary> Lists the AvailablePrivateEndpointTypes for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetAvailableRequestHeadersApplicationGateways">
-      <MemberSignature Language="C#" Value="public static Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;string&gt;&gt; GetAvailableRequestHeadersApplicationGateways (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;string&gt;&gt; GetAvailableRequestHeadersApplicationGateways(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;string&gt; GetAvailableRequestHeadersApplicationGateways (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;string&gt; GetAvailableRequestHeadersApplicationGateways(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.GetAvailableRequestHeadersApplicationGateways(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAvailableRequestHeadersApplicationGateways (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Response(Of IReadOnlyList(Of String))" />
-      <MemberSignature Language="F#" Value="static member GetAvailableRequestHeadersApplicationGateways : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;string&gt;&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetAvailableRequestHeadersApplicationGateways (subscription, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAvailableRequestHeadersApplicationGateways (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of String)" />
+      <MemberSignature Language="F#" Value="static member GetAvailableRequestHeadersApplicationGateways : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;string&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetAvailableRequestHeadersApplicationGateways (subscription, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;System.String&gt;&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
@@ -719,23 +743,23 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Lists all available request headers. </summary>
-        <returns>To be added.</returns>
+        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAvailableRequestHeadersApplicationGatewaysAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;string&gt;&gt;&gt; GetAvailableRequestHeadersApplicationGatewaysAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;string&gt;&gt;&gt; GetAvailableRequestHeadersApplicationGatewaysAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;string&gt; GetAvailableRequestHeadersApplicationGatewaysAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;string&gt; GetAvailableRequestHeadersApplicationGatewaysAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.GetAvailableRequestHeadersApplicationGatewaysAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAvailableRequestHeadersApplicationGatewaysAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of IReadOnlyList(Of String)))" />
-      <MemberSignature Language="F#" Value="static member GetAvailableRequestHeadersApplicationGatewaysAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;string&gt;&gt;&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetAvailableRequestHeadersApplicationGatewaysAsync (subscription, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAvailableRequestHeadersApplicationGatewaysAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of String)" />
+      <MemberSignature Language="F#" Value="static member GetAvailableRequestHeadersApplicationGatewaysAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;string&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetAvailableRequestHeadersApplicationGatewaysAsync (subscription, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;System.String&gt;&gt;&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
@@ -745,23 +769,23 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Lists all available request headers. </summary>
-        <returns>To be added.</returns>
+        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAvailableResponseHeadersApplicationGateways">
-      <MemberSignature Language="C#" Value="public static Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;string&gt;&gt; GetAvailableResponseHeadersApplicationGateways (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;string&gt;&gt; GetAvailableResponseHeadersApplicationGateways(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;string&gt; GetAvailableResponseHeadersApplicationGateways (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;string&gt; GetAvailableResponseHeadersApplicationGateways(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.GetAvailableResponseHeadersApplicationGateways(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAvailableResponseHeadersApplicationGateways (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Response(Of IReadOnlyList(Of String))" />
-      <MemberSignature Language="F#" Value="static member GetAvailableResponseHeadersApplicationGateways : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;string&gt;&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetAvailableResponseHeadersApplicationGateways (subscription, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAvailableResponseHeadersApplicationGateways (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of String)" />
+      <MemberSignature Language="F#" Value="static member GetAvailableResponseHeadersApplicationGateways : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;string&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetAvailableResponseHeadersApplicationGateways (subscription, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;System.String&gt;&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
@@ -771,23 +795,23 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Lists all available response headers. </summary>
-        <returns>To be added.</returns>
+        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAvailableResponseHeadersApplicationGatewaysAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;string&gt;&gt;&gt; GetAvailableResponseHeadersApplicationGatewaysAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;string&gt;&gt;&gt; GetAvailableResponseHeadersApplicationGatewaysAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;string&gt; GetAvailableResponseHeadersApplicationGatewaysAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;string&gt; GetAvailableResponseHeadersApplicationGatewaysAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.GetAvailableResponseHeadersApplicationGatewaysAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAvailableResponseHeadersApplicationGatewaysAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of IReadOnlyList(Of String)))" />
-      <MemberSignature Language="F#" Value="static member GetAvailableResponseHeadersApplicationGatewaysAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;string&gt;&gt;&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetAvailableResponseHeadersApplicationGatewaysAsync (subscription, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAvailableResponseHeadersApplicationGatewaysAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of String)" />
+      <MemberSignature Language="F#" Value="static member GetAvailableResponseHeadersApplicationGatewaysAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;string&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetAvailableResponseHeadersApplicationGatewaysAsync (subscription, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;System.String&gt;&gt;&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
@@ -797,23 +821,23 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Lists all available response headers. </summary>
-        <returns>To be added.</returns>
+        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAvailableServerVariablesApplicationGateways">
-      <MemberSignature Language="C#" Value="public static Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;string&gt;&gt; GetAvailableServerVariablesApplicationGateways (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;string&gt;&gt; GetAvailableServerVariablesApplicationGateways(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;string&gt; GetAvailableServerVariablesApplicationGateways (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;string&gt; GetAvailableServerVariablesApplicationGateways(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.GetAvailableServerVariablesApplicationGateways(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAvailableServerVariablesApplicationGateways (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Response(Of IReadOnlyList(Of String))" />
-      <MemberSignature Language="F#" Value="static member GetAvailableServerVariablesApplicationGateways : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;string&gt;&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetAvailableServerVariablesApplicationGateways (subscription, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAvailableServerVariablesApplicationGateways (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of String)" />
+      <MemberSignature Language="F#" Value="static member GetAvailableServerVariablesApplicationGateways : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;string&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetAvailableServerVariablesApplicationGateways (subscription, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;System.String&gt;&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
@@ -823,23 +847,23 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Lists all available server variables. </summary>
-        <returns>To be added.</returns>
+        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAvailableServerVariablesApplicationGatewaysAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;string&gt;&gt;&gt; GetAvailableServerVariablesApplicationGatewaysAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;string&gt;&gt;&gt; GetAvailableServerVariablesApplicationGatewaysAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;string&gt; GetAvailableServerVariablesApplicationGatewaysAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;string&gt; GetAvailableServerVariablesApplicationGatewaysAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.GetAvailableServerVariablesApplicationGatewaysAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAvailableServerVariablesApplicationGatewaysAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of IReadOnlyList(Of String)))" />
-      <MemberSignature Language="F#" Value="static member GetAvailableServerVariablesApplicationGatewaysAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;string&gt;&gt;&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetAvailableServerVariablesApplicationGatewaysAsync (subscription, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAvailableServerVariablesApplicationGatewaysAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of String)" />
+      <MemberSignature Language="F#" Value="static member GetAvailableServerVariablesApplicationGatewaysAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;string&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetAvailableServerVariablesApplicationGatewaysAsync (subscription, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;System.String&gt;&gt;&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
@@ -849,7 +873,7 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Lists all available server variables. </summary>
-        <returns>To be added.</returns>
+        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -879,6 +903,8 @@
         <summary> Lists the AvailableServiceAliases for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -909,6 +935,8 @@
         <summary> Lists the AvailableServiceAliases for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -1273,12 +1301,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetCustomIPPrefixes">
-      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Network.CustomIpPrefix&gt; GetCustomIPPrefixes (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Network.CustomIpPrefix&gt; GetCustomIPPrefixes(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.GetCustomIPPrefixes(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomIPPrefixes (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of CustomIpPrefix)" />
-      <MemberSignature Language="F#" Value="static member GetCustomIPPrefixes : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Network.CustomIpPrefix&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetCustomIPPrefixes (subscription, cancellationToken)" />
+    <Member MemberName="GetCustomIpPrefixes">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Network.CustomIpPrefix&gt; GetCustomIpPrefixes (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Network.CustomIpPrefix&gt; GetCustomIpPrefixes(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.GetCustomIpPrefixes(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomIpPrefixes (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of CustomIpPrefix)" />
+      <MemberSignature Language="F#" Value="static member GetCustomIpPrefixes : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Network.CustomIpPrefix&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetCustomIpPrefixes (subscription, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -1294,7 +1322,7 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the CustomIpPrefixes for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
+        <summary>To be added.</summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1363,12 +1391,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetCustomIPPrefixesAsync">
-      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Network.CustomIpPrefix&gt; GetCustomIPPrefixesAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Network.CustomIpPrefix&gt; GetCustomIPPrefixesAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.GetCustomIPPrefixesAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomIPPrefixesAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of CustomIpPrefix)" />
-      <MemberSignature Language="F#" Value="static member GetCustomIPPrefixesAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Network.CustomIpPrefix&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetCustomIPPrefixesAsync (subscription, cancellationToken)" />
+    <Member MemberName="GetCustomIpPrefixesAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Network.CustomIpPrefix&gt; GetCustomIpPrefixesAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Network.CustomIpPrefix&gt; GetCustomIpPrefixesAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.GetCustomIpPrefixesAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCustomIpPrefixesAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of CustomIpPrefix)" />
+      <MemberSignature Language="F#" Value="static member GetCustomIpPrefixesAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Network.CustomIpPrefix&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetCustomIpPrefixesAsync (subscription, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -1384,7 +1412,7 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the CustomIpPrefixes for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
+        <summary>To be added.</summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1854,18 +1882,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetExpressRouteGateways">
-      <MemberSignature Language="C#" Value="public static Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Network.ExpressRouteGateway&gt;&gt; GetExpressRouteGateways (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.ResourceManager.Network.ExpressRouteGateway&gt;&gt; GetExpressRouteGateways(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Network.ExpressRouteGateway&gt; GetExpressRouteGateways (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Network.ExpressRouteGateway&gt; GetExpressRouteGateways(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.GetExpressRouteGateways(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetExpressRouteGateways (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Response(Of IReadOnlyList(Of ExpressRouteGateway))" />
-      <MemberSignature Language="F#" Value="static member GetExpressRouteGateways : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Network.ExpressRouteGateway&gt;&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetExpressRouteGateways (subscription, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetExpressRouteGateways (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ExpressRouteGateway)" />
+      <MemberSignature Language="F#" Value="static member GetExpressRouteGateways : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Network.ExpressRouteGateway&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetExpressRouteGateways (subscription, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Network.ExpressRouteGateway&gt;&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Network.ExpressRouteGateway&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
@@ -1875,7 +1903,7 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Lists ExpressRoute gateways under a given subscription. </summary>
-        <returns>To be added.</returns>
+        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1944,18 +1972,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetExpressRouteGatewaysAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Network.ExpressRouteGateway&gt;&gt;&gt; GetExpressRouteGatewaysAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.ResourceManager.Network.ExpressRouteGateway&gt;&gt;&gt; GetExpressRouteGatewaysAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Network.ExpressRouteGateway&gt; GetExpressRouteGatewaysAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Network.ExpressRouteGateway&gt; GetExpressRouteGatewaysAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.GetExpressRouteGatewaysAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetExpressRouteGatewaysAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of IReadOnlyList(Of ExpressRouteGateway)))" />
-      <MemberSignature Language="F#" Value="static member GetExpressRouteGatewaysAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Network.ExpressRouteGateway&gt;&gt;&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetExpressRouteGatewaysAsync (subscription, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetExpressRouteGatewaysAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ExpressRouteGateway)" />
+      <MemberSignature Language="F#" Value="static member GetExpressRouteGatewaysAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Network.ExpressRouteGateway&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetExpressRouteGatewaysAsync (subscription, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Network.ExpressRouteGateway&gt;&gt;&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Network.ExpressRouteGateway&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
@@ -1965,7 +1993,7 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Lists ExpressRoute gateways under a given subscription. </summary>
-        <returns>To be added.</returns>
+        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3345,12 +3373,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetP2sVpnGateways">
-      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Network.P2SVpnGateway&gt; GetP2sVpnGateways (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Network.P2SVpnGateway&gt; GetP2sVpnGateways(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.GetP2sVpnGateways(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetP2sVpnGateways (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of P2SVpnGateway)" />
-      <MemberSignature Language="F#" Value="static member GetP2sVpnGateways : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Network.P2SVpnGateway&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetP2sVpnGateways (subscription, cancellationToken)" />
+    <Member MemberName="GetP2SVpnGateways">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Network.P2SVpnGateway&gt; GetP2SVpnGateways (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Network.P2SVpnGateway&gt; GetP2SVpnGateways(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.GetP2SVpnGateways(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetP2SVpnGateways (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of P2SVpnGateway)" />
+      <MemberSignature Language="F#" Value="static member GetP2SVpnGateways : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Network.P2SVpnGateway&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetP2SVpnGateways (subscription, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -3366,7 +3394,7 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the P2SVpnGateways for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
+        <summary>To be added.</summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3435,12 +3463,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetP2sVpnGatewaysAsync">
-      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Network.P2SVpnGateway&gt; GetP2sVpnGatewaysAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Network.P2SVpnGateway&gt; GetP2sVpnGatewaysAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.GetP2sVpnGatewaysAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetP2sVpnGatewaysAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of P2SVpnGateway)" />
-      <MemberSignature Language="F#" Value="static member GetP2sVpnGatewaysAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Network.P2SVpnGateway&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetP2sVpnGatewaysAsync (subscription, cancellationToken)" />
+    <Member MemberName="GetP2SVpnGatewaysAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Network.P2SVpnGateway&gt; GetP2SVpnGatewaysAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Network.P2SVpnGateway&gt; GetP2SVpnGatewaysAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.GetP2SVpnGatewaysAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetP2SVpnGatewaysAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of P2SVpnGateway)" />
+      <MemberSignature Language="F#" Value="static member GetP2SVpnGatewaysAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Network.P2SVpnGateway&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetP2SVpnGatewaysAsync (subscription, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -3456,7 +3484,7 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the P2SVpnGateways for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
+        <summary>To be added.</summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4273,32 +4301,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetServiceEndpointPolicies">
-      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Network.ServiceEndpointPolicy&gt; GetServiceEndpointPolicies (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Network.ServiceEndpointPolicy&gt; GetServiceEndpointPolicies(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.GetServiceEndpointPolicies(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetServiceEndpointPolicies (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ServiceEndpointPolicy)" />
-      <MemberSignature Language="F#" Value="static member GetServiceEndpointPolicies : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Network.ServiceEndpointPolicy&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetServiceEndpointPolicies (subscription, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Network.ServiceEndpointPolicy&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
-        <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the ServiceEndpointPolicies for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="GetServiceEndpointPoliciesAsGenericResources">
       <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Resources.GenericResource&gt; GetServiceEndpointPoliciesAsGenericResources (this Azure.ResourceManager.Resources.Subscription subscription, string filter, string expand, int? top, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Resources.GenericResource&gt; GetServiceEndpointPoliciesAsGenericResources(class Azure.ResourceManager.Resources.Subscription subscription, string filter, string expand, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -4363,12 +4365,38 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetServiceEndpointPoliciesAsync">
-      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Network.ServiceEndpointPolicy&gt; GetServiceEndpointPoliciesAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Network.ServiceEndpointPolicy&gt; GetServiceEndpointPoliciesAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.GetServiceEndpointPoliciesAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetServiceEndpointPoliciesAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ServiceEndpointPolicy)" />
-      <MemberSignature Language="F#" Value="static member GetServiceEndpointPoliciesAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Network.ServiceEndpointPolicy&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetServiceEndpointPoliciesAsync (subscription, cancellationToken)" />
+    <Member MemberName="GetServiceEndpointPoliciesByServiceEndpointPolicy">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Network.ServiceEndpointPolicy&gt; GetServiceEndpointPoliciesByServiceEndpointPolicy (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Network.ServiceEndpointPolicy&gt; GetServiceEndpointPoliciesByServiceEndpointPolicy(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.GetServiceEndpointPoliciesByServiceEndpointPolicy(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetServiceEndpointPoliciesByServiceEndpointPolicy (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ServiceEndpointPolicy)" />
+      <MemberSignature Language="F#" Value="static member GetServiceEndpointPoliciesByServiceEndpointPolicy : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Network.ServiceEndpointPolicy&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetServiceEndpointPoliciesByServiceEndpointPolicy (subscription, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Network.ServiceEndpointPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>To be added.</summary>
+        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServiceEndpointPoliciesByServiceEndpointPolicyAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Network.ServiceEndpointPolicy&gt; GetServiceEndpointPoliciesByServiceEndpointPolicyAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Network.ServiceEndpointPolicy&gt; GetServiceEndpointPoliciesByServiceEndpointPolicyAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.GetServiceEndpointPoliciesByServiceEndpointPolicyAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetServiceEndpointPoliciesByServiceEndpointPolicyAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ServiceEndpointPolicy)" />
+      <MemberSignature Language="F#" Value="static member GetServiceEndpointPoliciesByServiceEndpointPolicyAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Network.ServiceEndpointPolicy&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetServiceEndpointPoliciesByServiceEndpointPolicyAsync (subscription, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -4384,7 +4412,7 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the ServiceEndpointPolicies for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
+        <summary>To be added.</summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4415,6 +4443,8 @@
         <summary> Gets a list of service tag information resources. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -4445,6 +4475,8 @@
         <summary> Gets a list of service tag information resources. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -4475,6 +4507,8 @@
         <summary> Lists the Usages for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -4505,6 +4539,8 @@
         <summary> Lists the Usages for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -4973,12 +5009,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetVirtualWans">
-      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Network.VirtualWAN&gt; GetVirtualWans (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Network.VirtualWAN&gt; GetVirtualWans(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.GetVirtualWans(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetVirtualWans (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of VirtualWAN)" />
-      <MemberSignature Language="F#" Value="static member GetVirtualWans : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Network.VirtualWAN&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetVirtualWans (subscription, cancellationToken)" />
+    <Member MemberName="GetVirtualWANs">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Network.VirtualWAN&gt; GetVirtualWANs (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Network.VirtualWAN&gt; GetVirtualWANs(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.GetVirtualWANs(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetVirtualWANs (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of VirtualWAN)" />
+      <MemberSignature Language="F#" Value="static member GetVirtualWANs : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Network.VirtualWAN&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetVirtualWANs (subscription, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -4994,7 +5030,7 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the VirtualWANs for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
+        <summary>To be added.</summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5063,12 +5099,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetVirtualWansAsync">
-      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Network.VirtualWAN&gt; GetVirtualWansAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Network.VirtualWAN&gt; GetVirtualWansAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.GetVirtualWansAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetVirtualWansAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of VirtualWAN)" />
-      <MemberSignature Language="F#" Value="static member GetVirtualWansAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Network.VirtualWAN&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetVirtualWansAsync (subscription, cancellationToken)" />
+    <Member MemberName="GetVirtualWANsAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Network.VirtualWAN&gt; GetVirtualWANsAsync (this Azure.ResourceManager.Resources.Subscription subscription, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Network.VirtualWAN&gt; GetVirtualWANsAsync(class Azure.ResourceManager.Resources.Subscription subscription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.GetVirtualWANsAsync(Azure.ResourceManager.Resources.Subscription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetVirtualWANsAsync (subscription As Subscription, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of VirtualWAN)" />
+      <MemberSignature Language="F#" Value="static member GetVirtualWANsAsync : Azure.ResourceManager.Resources.Subscription * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Network.VirtualWAN&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.GetVirtualWANsAsync (subscription, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -5084,7 +5120,7 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the VirtualWANs for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
+        <summary>To be added.</summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5554,69 +5590,73 @@
       </Docs>
     </Member>
     <Member MemberName="SwapPublicIpAddressesLoadBalancer">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Network.Models.LoadBalancerSwapPublicIpAddressesOperation SwapPublicIpAddressesLoadBalancer (this Azure.ResourceManager.Resources.Subscription subscription, string location, Azure.ResourceManager.Network.Models.LoadBalancerVipSwapRequest parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Network.Models.LoadBalancerSwapPublicIpAddressesOperation SwapPublicIpAddressesLoadBalancer(class Azure.ResourceManager.Resources.Subscription subscription, string location, class Azure.ResourceManager.Network.Models.LoadBalancerVipSwapRequest parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.SwapPublicIpAddressesLoadBalancer(Azure.ResourceManager.Resources.Subscription,System.String,Azure.ResourceManager.Network.Models.LoadBalancerVipSwapRequest,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SwapPublicIpAddressesLoadBalancer (subscription As Subscription, location As String, parameters As LoadBalancerVipSwapRequest, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As LoadBalancerSwapPublicIpAddressesOperation" />
-      <MemberSignature Language="F#" Value="static member SwapPublicIpAddressesLoadBalancer : Azure.ResourceManager.Resources.Subscription * string * Azure.ResourceManager.Network.Models.LoadBalancerVipSwapRequest * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.LoadBalancerSwapPublicIpAddressesOperation" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.SwapPublicIpAddressesLoadBalancer (subscription, location, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Network.Models.SwapPublicIpAddressesLoadBalancerOperation SwapPublicIpAddressesLoadBalancer (this Azure.ResourceManager.Resources.Subscription subscription, bool waitForCompletion, string location, Azure.ResourceManager.Network.Models.LoadBalancerVipSwapRequest parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Network.Models.SwapPublicIpAddressesLoadBalancerOperation SwapPublicIpAddressesLoadBalancer(class Azure.ResourceManager.Resources.Subscription subscription, bool waitForCompletion, string location, class Azure.ResourceManager.Network.Models.LoadBalancerVipSwapRequest parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.SwapPublicIpAddressesLoadBalancer(Azure.ResourceManager.Resources.Subscription,System.Boolean,System.String,Azure.ResourceManager.Network.Models.LoadBalancerVipSwapRequest,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SwapPublicIpAddressesLoadBalancer (subscription As Subscription, waitForCompletion As Boolean, location As String, parameters As LoadBalancerVipSwapRequest, Optional cancellationToken As CancellationToken = Nothing) As SwapPublicIpAddressesLoadBalancerOperation" />
+      <MemberSignature Language="F#" Value="static member SwapPublicIpAddressesLoadBalancer : Azure.ResourceManager.Resources.Subscription * bool * string * Azure.ResourceManager.Network.Models.LoadBalancerVipSwapRequest * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.SwapPublicIpAddressesLoadBalancerOperation" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.SwapPublicIpAddressesLoadBalancer (subscription, waitForCompletion, location, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Network.Models.LoadBalancerSwapPublicIpAddressesOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.Network.Models.SwapPublicIpAddressesLoadBalancerOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="location" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.LoadBalancerVipSwapRequest" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="location"> The region where load balancers are located at. </param>
         <param name="parameters"> Parameters that define which VIPs should be swapped. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Swaps VIPs between two load balancers. </summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="SwapPublicIpAddressesLoadBalancerAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.LoadBalancerSwapPublicIpAddressesOperation&gt; SwapPublicIpAddressesLoadBalancerAsync (this Azure.ResourceManager.Resources.Subscription subscription, string location, Azure.ResourceManager.Network.Models.LoadBalancerVipSwapRequest parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.LoadBalancerSwapPublicIpAddressesOperation&gt; SwapPublicIpAddressesLoadBalancerAsync(class Azure.ResourceManager.Resources.Subscription subscription, string location, class Azure.ResourceManager.Network.Models.LoadBalancerVipSwapRequest parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.SwapPublicIpAddressesLoadBalancerAsync(Azure.ResourceManager.Resources.Subscription,System.String,Azure.ResourceManager.Network.Models.LoadBalancerVipSwapRequest,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SwapPublicIpAddressesLoadBalancerAsync (subscription As Subscription, location As String, parameters As LoadBalancerVipSwapRequest, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of LoadBalancerSwapPublicIpAddressesOperation)" />
-      <MemberSignature Language="F#" Value="static member SwapPublicIpAddressesLoadBalancerAsync : Azure.ResourceManager.Resources.Subscription * string * Azure.ResourceManager.Network.Models.LoadBalancerVipSwapRequest * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.LoadBalancerSwapPublicIpAddressesOperation&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.SwapPublicIpAddressesLoadBalancerAsync (subscription, location, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.SwapPublicIpAddressesLoadBalancerOperation&gt; SwapPublicIpAddressesLoadBalancerAsync (this Azure.ResourceManager.Resources.Subscription subscription, bool waitForCompletion, string location, Azure.ResourceManager.Network.Models.LoadBalancerVipSwapRequest parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.SwapPublicIpAddressesLoadBalancerOperation&gt; SwapPublicIpAddressesLoadBalancerAsync(class Azure.ResourceManager.Resources.Subscription subscription, bool waitForCompletion, string location, class Azure.ResourceManager.Network.Models.LoadBalancerVipSwapRequest parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.SubscriptionExtensions.SwapPublicIpAddressesLoadBalancerAsync(Azure.ResourceManager.Resources.Subscription,System.Boolean,System.String,Azure.ResourceManager.Network.Models.LoadBalancerVipSwapRequest,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SwapPublicIpAddressesLoadBalancerAsync (subscription As Subscription, waitForCompletion As Boolean, location As String, parameters As LoadBalancerVipSwapRequest, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SwapPublicIpAddressesLoadBalancerOperation)" />
+      <MemberSignature Language="F#" Value="static member SwapPublicIpAddressesLoadBalancerAsync : Azure.ResourceManager.Resources.Subscription * bool * string * Azure.ResourceManager.Network.Models.LoadBalancerVipSwapRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.SwapPublicIpAddressesLoadBalancerOperation&gt;" Usage="Azure.ResourceManager.Network.SubscriptionExtensions.SwapPublicIpAddressesLoadBalancerAsync (subscription, waitForCompletion, location, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.LoadBalancerSwapPublicIpAddressesOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.SwapPublicIpAddressesLoadBalancerOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="location" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.LoadBalancerVipSwapRequest" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="location"> The region where load balancers are located at. </param>
         <param name="parameters"> Parameters that define which VIPs should be swapped. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Swaps VIPs between two load balancers. </summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>

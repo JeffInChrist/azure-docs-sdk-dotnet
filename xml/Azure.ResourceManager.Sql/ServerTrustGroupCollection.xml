@@ -44,11 +44,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.ServerTrustGroupCreateOrUpdateOperation CreateOrUpdate (string serverTrustGroupName, Azure.ResourceManager.Sql.ServerTrustGroupData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.ServerTrustGroupCreateOrUpdateOperation CreateOrUpdate(string serverTrustGroupName, class Azure.ResourceManager.Sql.ServerTrustGroupData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerTrustGroupCollection.CreateOrUpdate(System.String,Azure.ResourceManager.Sql.ServerTrustGroupData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (serverTrustGroupName As String, parameters As ServerTrustGroupData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As ServerTrustGroupCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.ResourceManager.Sql.ServerTrustGroupData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.ServerTrustGroupCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : string * Azure.ResourceManager.Sql.ServerTrustGroupData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.ServerTrustGroupCreateOrUpdateOperation" Usage="serverTrustGroupCollection.CreateOrUpdate (serverTrustGroupName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.ServerTrustGroupCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string serverTrustGroupName, Azure.ResourceManager.Sql.ServerTrustGroupData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.ServerTrustGroupCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string serverTrustGroupName, class Azure.ResourceManager.Sql.ServerTrustGroupData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerTrustGroupCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Sql.ServerTrustGroupData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, serverTrustGroupName As String, parameters As ServerTrustGroupData, Optional cancellationToken As CancellationToken = Nothing) As ServerTrustGroupCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Sql.ServerTrustGroupData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.ServerTrustGroupCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Sql.ServerTrustGroupData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.ServerTrustGroupCreateOrUpdateOperation" Usage="serverTrustGroupCollection.CreateOrUpdate (waitForCompletion, serverTrustGroupName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
@@ -58,29 +58,31 @@
         <ReturnType>Azure.ResourceManager.Sql.Models.ServerTrustGroupCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="serverTrustGroupName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.ServerTrustGroupData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="serverTrustGroupName"> The name of the server trust group. </param>
         <param name="parameters"> The server trust group parameters. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates a server trust group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="serverTrustGroupName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="serverTrustGroupName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ServerTrustGroupCreateOrUpdateOperation&gt; CreateOrUpdateAsync (string serverTrustGroupName, Azure.ResourceManager.Sql.ServerTrustGroupData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.ServerTrustGroupCreateOrUpdateOperation&gt; CreateOrUpdateAsync(string serverTrustGroupName, class Azure.ResourceManager.Sql.ServerTrustGroupData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerTrustGroupCollection.CreateOrUpdateAsync(System.String,Azure.ResourceManager.Sql.ServerTrustGroupData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (serverTrustGroupName As String, parameters As ServerTrustGroupData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ServerTrustGroupCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.ResourceManager.Sql.ServerTrustGroupData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ServerTrustGroupCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.ResourceManager.Sql.ServerTrustGroupData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ServerTrustGroupCreateOrUpdateOperation&gt;" Usage="serverTrustGroupCollection.CreateOrUpdateAsync (serverTrustGroupName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ServerTrustGroupCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string serverTrustGroupName, Azure.ResourceManager.Sql.ServerTrustGroupData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.ServerTrustGroupCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string serverTrustGroupName, class Azure.ResourceManager.Sql.ServerTrustGroupData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerTrustGroupCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Sql.ServerTrustGroupData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, serverTrustGroupName As String, parameters As ServerTrustGroupData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ServerTrustGroupCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Sql.ServerTrustGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ServerTrustGroupCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Sql.ServerTrustGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ServerTrustGroupCreateOrUpdateOperation&gt;" Usage="serverTrustGroupCollection.CreateOrUpdateAsync (waitForCompletion, serverTrustGroupName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
@@ -90,19 +92,21 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ServerTrustGroupCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="serverTrustGroupName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.ServerTrustGroupData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="serverTrustGroupName"> The name of the server trust group. </param>
         <param name="parameters"> The server trust group parameters. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates a server trust group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="serverTrustGroupName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="serverTrustGroupName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -131,6 +135,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="serverTrustGroupName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="serverTrustGroupName" /> is null. </exception>
       </Docs>
@@ -159,6 +165,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="serverTrustGroupName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="serverTrustGroupName" /> is null. </exception>
       </Docs>
@@ -187,6 +195,8 @@
         <summary> Gets a server trust group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="serverTrustGroupName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="serverTrustGroupName" /> is null. </exception>
       </Docs>
@@ -323,6 +333,8 @@
         <summary> Gets a server trust group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="serverTrustGroupName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="serverTrustGroupName" /> is null. </exception>
       </Docs>
@@ -351,6 +363,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="serverTrustGroupName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="serverTrustGroupName" /> is null. </exception>
       </Docs>
@@ -379,6 +393,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="serverTrustGroupName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="serverTrustGroupName" /> is null. </exception>
       </Docs>
@@ -455,26 +471,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.ServerTrustGroupCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Sql.ServerTrustGroupCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
