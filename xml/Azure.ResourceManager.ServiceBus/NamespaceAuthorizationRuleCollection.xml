@@ -44,11 +44,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ServiceBus.Models.NamespaceAuthorizationRuleCreateOrUpdateOperation CreateOrUpdate (string authorizationRuleName, Azure.ResourceManager.ServiceBus.ServiceBusAuthorizationRuleData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ServiceBus.Models.NamespaceAuthorizationRuleCreateOrUpdateOperation CreateOrUpdate(string authorizationRuleName, class Azure.ResourceManager.ServiceBus.ServiceBusAuthorizationRuleData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.NamespaceAuthorizationRuleCollection.CreateOrUpdate(System.String,Azure.ResourceManager.ServiceBus.ServiceBusAuthorizationRuleData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (authorizationRuleName As String, parameters As ServiceBusAuthorizationRuleData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As NamespaceAuthorizationRuleCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.ResourceManager.ServiceBus.ServiceBusAuthorizationRuleData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ServiceBus.Models.NamespaceAuthorizationRuleCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : string * Azure.ResourceManager.ServiceBus.ServiceBusAuthorizationRuleData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ServiceBus.Models.NamespaceAuthorizationRuleCreateOrUpdateOperation" Usage="namespaceAuthorizationRuleCollection.CreateOrUpdate (authorizationRuleName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ServiceBus.Models.NamespaceAuthorizationRuleCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string authorizationRuleName, Azure.ResourceManager.ServiceBus.ServiceBusAuthorizationRuleData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ServiceBus.Models.NamespaceAuthorizationRuleCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string authorizationRuleName, class Azure.ResourceManager.ServiceBus.ServiceBusAuthorizationRuleData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.NamespaceAuthorizationRuleCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.ServiceBus.ServiceBusAuthorizationRuleData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, authorizationRuleName As String, parameters As ServiceBusAuthorizationRuleData, Optional cancellationToken As CancellationToken = Nothing) As NamespaceAuthorizationRuleCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.ServiceBus.ServiceBusAuthorizationRuleData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ServiceBus.Models.NamespaceAuthorizationRuleCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.ServiceBus.ServiceBusAuthorizationRuleData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ServiceBus.Models.NamespaceAuthorizationRuleCreateOrUpdateOperation" Usage="namespaceAuthorizationRuleCollection.CreateOrUpdate (waitForCompletion, authorizationRuleName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
@@ -58,29 +58,31 @@
         <ReturnType>Azure.ResourceManager.ServiceBus.Models.NamespaceAuthorizationRuleCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="authorizationRuleName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.ServiceBus.ServiceBusAuthorizationRuleData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="authorizationRuleName"> The authorization rule name. </param>
         <param name="parameters"> The shared access authorization rule. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates an authorization rule for a namespace. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="authorizationRuleName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="authorizationRuleName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ServiceBus.Models.NamespaceAuthorizationRuleCreateOrUpdateOperation&gt; CreateOrUpdateAsync (string authorizationRuleName, Azure.ResourceManager.ServiceBus.ServiceBusAuthorizationRuleData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ServiceBus.Models.NamespaceAuthorizationRuleCreateOrUpdateOperation&gt; CreateOrUpdateAsync(string authorizationRuleName, class Azure.ResourceManager.ServiceBus.ServiceBusAuthorizationRuleData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.NamespaceAuthorizationRuleCollection.CreateOrUpdateAsync(System.String,Azure.ResourceManager.ServiceBus.ServiceBusAuthorizationRuleData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (authorizationRuleName As String, parameters As ServiceBusAuthorizationRuleData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NamespaceAuthorizationRuleCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.ResourceManager.ServiceBus.ServiceBusAuthorizationRuleData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ServiceBus.Models.NamespaceAuthorizationRuleCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.ResourceManager.ServiceBus.ServiceBusAuthorizationRuleData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ServiceBus.Models.NamespaceAuthorizationRuleCreateOrUpdateOperation&gt;" Usage="namespaceAuthorizationRuleCollection.CreateOrUpdateAsync (authorizationRuleName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ServiceBus.Models.NamespaceAuthorizationRuleCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string authorizationRuleName, Azure.ResourceManager.ServiceBus.ServiceBusAuthorizationRuleData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ServiceBus.Models.NamespaceAuthorizationRuleCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string authorizationRuleName, class Azure.ResourceManager.ServiceBus.ServiceBusAuthorizationRuleData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.NamespaceAuthorizationRuleCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.ServiceBus.ServiceBusAuthorizationRuleData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, authorizationRuleName As String, parameters As ServiceBusAuthorizationRuleData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NamespaceAuthorizationRuleCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.ServiceBus.ServiceBusAuthorizationRuleData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ServiceBus.Models.NamespaceAuthorizationRuleCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.ServiceBus.ServiceBusAuthorizationRuleData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ServiceBus.Models.NamespaceAuthorizationRuleCreateOrUpdateOperation&gt;" Usage="namespaceAuthorizationRuleCollection.CreateOrUpdateAsync (waitForCompletion, authorizationRuleName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
@@ -90,19 +92,21 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ServiceBus.Models.NamespaceAuthorizationRuleCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="authorizationRuleName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.ServiceBus.ServiceBusAuthorizationRuleData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="authorizationRuleName"> The authorization rule name. </param>
         <param name="parameters"> The shared access authorization rule. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates an authorization rule for a namespace. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="authorizationRuleName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="authorizationRuleName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -131,6 +135,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="authorizationRuleName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="authorizationRuleName" /> is null. </exception>
       </Docs>
@@ -159,6 +165,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="authorizationRuleName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="authorizationRuleName" /> is null. </exception>
       </Docs>
@@ -187,6 +195,8 @@
         <summary> Gets an authorization rule for a namespace by rule name. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="authorizationRuleName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="authorizationRuleName" /> is null. </exception>
       </Docs>
@@ -263,6 +273,8 @@
         <summary> Gets an authorization rule for a namespace by rule name. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="authorizationRuleName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="authorizationRuleName" /> is null. </exception>
       </Docs>
@@ -291,6 +303,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="authorizationRuleName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="authorizationRuleName" /> is null. </exception>
       </Docs>
@@ -319,6 +333,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="authorizationRuleName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="authorizationRuleName" /> is null. </exception>
       </Docs>
@@ -395,26 +411,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ServiceBus.NamespaceAuthorizationRuleCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.ServiceBus.NamespaceAuthorizationRuleCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
