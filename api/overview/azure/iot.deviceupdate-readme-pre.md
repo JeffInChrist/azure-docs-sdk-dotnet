@@ -3,19 +3,19 @@ title: Azure Device Update for IoT Hub client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.IoT.DeviceUpdate, iotdeviceupdate
 author: dpokluda
 ms.author: dpokluda
-ms.date: 01/26/2022
+ms.date: 02/01/2022
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: iotdeviceupdate
 ---
-# Azure Device Update for IoT Hub client library for .NET - Version 1.0.0-beta.3 
+# Azure Device Update for IoT Hub client library for .NET - Version 1.0.0-alpha.20220201.1 
 
 
 The library provides access to the Device Update for IoT Hub service that enables customers to publish updates for their IoT devices to the cloud, and then deploy these updates to their devices (approve updates to groups of devices managed and provisioned in IoT Hub). 
 
-  [Source code](https://github.com/Azure/azure-sdk-for-net/tree/Azure.IoT.DeviceUpdate_1.0.0-beta.3/sdk/deviceupdate/Azure.IoT.DeviceUpdate/src) | [Package](https://www.nuget.org) | [Product documentation](https://docs.microsoft.com/azure/iot-hub-device-update/understand-device-update)
+  [Source code](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/deviceupdate/Azure.IoT.DeviceUpdate/src) | [Package](https://www.nuget.org) | [Product documentation](https://docs.microsoft.com/azure/iot-hub-device-update/understand-device-update)
 
 
 ## Getting started
@@ -52,7 +52,7 @@ You can learn more about Device Update for IoT Hub by visiting [Device Update fo
 
 ## Examples
 
-You can familiarize yourself with different APIs using [Samples](https://github.com/Azure/azure-sdk-for-net/tree/Azure.IoT.DeviceUpdate_1.0.0-beta.3/sdk/deviceupdate/Azure.IoT.DeviceUpdate/samples).
+You can familiarize yourself with different APIs using [Samples](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/deviceupdate/Azure.IoT.DeviceUpdate/samples).
 
 ## Troubleshooting
 
@@ -75,7 +75,7 @@ catch (RequestFailedException ex) when (ex.Status == (int)HttpStatusCode.NotFoun
 
 ## Next steps
 
-Get started with our [Device Update for IoT Hub samples](https://github.com/Azure/azure-sdk-for-net/tree/Azure.IoT.DeviceUpdate_1.0.0-beta.3/sdk/deviceupdate/Azure.IoT.DeviceUpdate/samples)
+Get started with our [Device Update for IoT Hub samples](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/deviceupdate/Azure.IoT.DeviceUpdate/samples)
 
 ## Contributing
 
