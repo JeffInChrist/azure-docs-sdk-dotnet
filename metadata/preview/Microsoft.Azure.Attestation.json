@@ -1,7 +1,7 @@
 {
   "Name": "Microsoft.Azure.Attestation",
-  "Version": "0.10.0-alpha.20220202.4",
-  "DevVersion": "0.10.0-alpha.20220202.4",
+  "Version": "0.10.0-alpha.20220202.5",
+  "DevVersion": "0.10.0-alpha.20220202.5",
   "DirectoryPath": "sdk/attestation/Microsoft.Azure.Attestation",
   "ServiceDirectory": "attestation",
   "ReadMePath": "",
