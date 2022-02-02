@@ -34,18 +34,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateResourceIdentifier">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ResourceIdentifier CreateResourceIdentifier (string subscriptionId, string resourceGroupName, string gatewayName, string connectionName);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ResourceIdentifier CreateResourceIdentifier(string subscriptionId, string resourceGroupName, string gatewayName, string connectionName) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Core.ResourceIdentifier CreateResourceIdentifier (string subscriptionId, string resourceGroupName, string gatewayName, string connectionName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Core.ResourceIdentifier CreateResourceIdentifier(string subscriptionId, string resourceGroupName, string gatewayName, string connectionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.VpnConnection.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateResourceIdentifier (subscriptionId As String, resourceGroupName As String, gatewayName As String, connectionName As String) As ResourceIdentifier" />
-      <MemberSignature Language="F#" Value="static member CreateResourceIdentifier : string * string * string * string -&gt; Azure.ResourceManager.ResourceIdentifier" Usage="Azure.ResourceManager.Network.VpnConnection.CreateResourceIdentifier (subscriptionId, resourceGroupName, gatewayName, connectionName)" />
+      <MemberSignature Language="F#" Value="static member CreateResourceIdentifier : string * string * string * string -&gt; Azure.Core.ResourceIdentifier" Usage="Azure.ResourceManager.Network.VpnConnection.CreateResourceIdentifier (subscriptionId, resourceGroupName, gatewayName, connectionName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceIdentifier</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscriptionId" Type="System.String" />
@@ -85,10 +85,10 @@
       </Docs>
     </Member>
     <Member MemberName="Delete">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.VpnConnectionDeleteOperation Delete (bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.VpnConnectionDeleteOperation Delete (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.VpnConnectionDeleteOperation Delete(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.VpnConnection.Delete(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As VpnConnectionDeleteOperation" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As VpnConnectionDeleteOperation" />
       <MemberSignature Language="F#" Value="abstract member Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.VpnConnectionDeleteOperation&#xA;override this.Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.VpnConnectionDeleteOperation" Usage="vpnConnection.Delete (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -111,10 +111,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VpnConnectionDeleteOperation&gt; DeleteAsync (bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VpnConnectionDeleteOperation&gt; DeleteAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.VpnConnectionDeleteOperation&gt; DeleteAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.VpnConnection.DeleteAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VpnConnectionDeleteOperation)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VpnConnectionDeleteOperation)" />
       <MemberSignature Language="F#" Value="abstract member DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VpnConnectionDeleteOperation&gt;&#xA;override this.DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VpnConnectionDeleteOperation&gt;" Usage="vpnConnection.DeleteAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -185,18 +185,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetAvailableLocations">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt; GetAvailableLocations (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.Resources.Models.Location&gt; GetAvailableLocations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt; GetAvailableLocations (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt; GetAvailableLocations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.VpnConnection.GetAvailableLocations(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocations (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of Location)" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&#xA;override this.GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;" Usage="vpnConnection.GetAvailableLocations cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocations (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of AzureLocation)" />
+      <MemberSignature Language="F#" Value="abstract member GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;&#xA;override this.GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;" Usage="vpnConnection.GetAvailableLocations cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -209,18 +209,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetAvailableLocationsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt; GetAvailableLocationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.Resources.Models.Location&gt;&gt; GetAvailableLocationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.VpnConnection.GetAvailableLocationsAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocationsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of Location))" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;&#xA;override this.GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;" Usage="vpnConnection.GetAvailableLocationsAsync cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocationsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of AzureLocation))" />
+      <MemberSignature Language="F#" Value="abstract member GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;&#xA;override this.GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;" Usage="vpnConnection.GetAvailableLocationsAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -233,11 +233,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetVpnSiteLinkConnections">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.VpnSiteLinkConnectionCollection GetVpnSiteLinkConnections ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.ResourceManager.Network.VpnSiteLinkConnectionCollection GetVpnSiteLinkConnections() cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.VpnSiteLinkConnectionCollection GetVpnSiteLinkConnections ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.VpnSiteLinkConnectionCollection GetVpnSiteLinkConnections() cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.VpnConnection.GetVpnSiteLinkConnections" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetVpnSiteLinkConnections () As VpnSiteLinkConnectionCollection" />
-      <MemberSignature Language="F#" Value="member this.GetVpnSiteLinkConnections : unit -&gt; Azure.ResourceManager.Network.VpnSiteLinkConnectionCollection" Usage="vpnConnection.GetVpnSiteLinkConnections " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetVpnSiteLinkConnections () As VpnSiteLinkConnectionCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetVpnSiteLinkConnections : unit -&gt; Azure.ResourceManager.Network.VpnSiteLinkConnectionCollection&#xA;override this.GetVpnSiteLinkConnections : unit -&gt; Azure.ResourceManager.Network.VpnSiteLinkConnectionCollection" Usage="vpnConnection.GetVpnSiteLinkConnections " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -274,18 +274,18 @@
       </Docs>
     </Member>
     <Member MemberName="ResourceType">
-      <MemberSignature Language="C#" Value="public static readonly Azure.ResourceManager.ResourceType ResourceType;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Azure.ResourceManager.ResourceType ResourceType" />
+      <MemberSignature Language="C#" Value="public static readonly Azure.Core.ResourceType ResourceType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype Azure.Core.ResourceType ResourceType" />
       <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.Network.VpnConnection.ResourceType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ResourceType As ResourceType " />
-      <MemberSignature Language="F#" Value=" staticval mutable ResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Network.VpnConnection.ResourceType" />
+      <MemberSignature Language="F#" Value=" staticval mutable ResourceType : Azure.Core.ResourceType" Usage="Azure.ResourceManager.Network.VpnConnection.ResourceType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
+        <ReturnType>Azure.Core.ResourceType</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Gets the resource type for the operations. </summary>
@@ -293,11 +293,11 @@
       </Docs>
     </Member>
     <Member MemberName="StartPacketCapture">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.VpnConnectionStartPacketCaptureOperation StartPacketCapture (Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStartParameters parameters = default, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.VpnConnectionStartPacketCaptureOperation StartPacketCapture(class Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStartParameters parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.VpnConnection.StartPacketCapture(Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStartParameters,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartPacketCapture (Optional parameters As VpnConnectionPacketCaptureStartParameters = Nothing, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As VpnConnectionStartPacketCaptureOperation" />
-      <MemberSignature Language="F#" Value="abstract member StartPacketCapture : Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStartParameters * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.VpnConnectionStartPacketCaptureOperation&#xA;override this.StartPacketCapture : Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStartParameters * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.VpnConnectionStartPacketCaptureOperation" Usage="vpnConnection.StartPacketCapture (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.VpnConnectionStartPacketCaptureOperation StartPacketCapture (bool waitForCompletion, Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStartParameters parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.VpnConnectionStartPacketCaptureOperation StartPacketCapture(bool waitForCompletion, class Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStartParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.VpnConnection.StartPacketCapture(System.Boolean,Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStartParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartPacketCapture (waitForCompletion As Boolean, Optional parameters As VpnConnectionPacketCaptureStartParameters = Nothing, Optional cancellationToken As CancellationToken = Nothing) As VpnConnectionStartPacketCaptureOperation" />
+      <MemberSignature Language="F#" Value="abstract member StartPacketCapture : bool * Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStartParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.VpnConnectionStartPacketCaptureOperation&#xA;override this.StartPacketCapture : bool * Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStartParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.VpnConnectionStartPacketCaptureOperation" Usage="vpnConnection.StartPacketCapture (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -307,13 +307,13 @@
         <ReturnType>Azure.ResourceManager.Network.Models.VpnConnectionStartPacketCaptureOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStartParameters" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStartParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Vpn Connection packet capture parameters supplied to start packet capture on gateway connection. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Vpn Connection packet capture parameters supplied to start packet capture on gateway connection. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Starts packet capture on Vpn connection in the specified resource group. </summary>
         <returns>To be added.</returns>
@@ -321,11 +321,11 @@
       </Docs>
     </Member>
     <Member MemberName="StartPacketCaptureAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VpnConnectionStartPacketCaptureOperation&gt; StartPacketCaptureAsync (Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStartParameters parameters = default, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.VpnConnectionStartPacketCaptureOperation&gt; StartPacketCaptureAsync(class Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStartParameters parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.VpnConnection.StartPacketCaptureAsync(Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStartParameters,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartPacketCaptureAsync (Optional parameters As VpnConnectionPacketCaptureStartParameters = Nothing, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VpnConnectionStartPacketCaptureOperation)" />
-      <MemberSignature Language="F#" Value="abstract member StartPacketCaptureAsync : Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStartParameters * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VpnConnectionStartPacketCaptureOperation&gt;&#xA;override this.StartPacketCaptureAsync : Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStartParameters * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VpnConnectionStartPacketCaptureOperation&gt;" Usage="vpnConnection.StartPacketCaptureAsync (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VpnConnectionStartPacketCaptureOperation&gt; StartPacketCaptureAsync (bool waitForCompletion, Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStartParameters parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.VpnConnectionStartPacketCaptureOperation&gt; StartPacketCaptureAsync(bool waitForCompletion, class Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStartParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.VpnConnection.StartPacketCaptureAsync(System.Boolean,Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStartParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartPacketCaptureAsync (waitForCompletion As Boolean, Optional parameters As VpnConnectionPacketCaptureStartParameters = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VpnConnectionStartPacketCaptureOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartPacketCaptureAsync : bool * Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStartParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VpnConnectionStartPacketCaptureOperation&gt;&#xA;override this.StartPacketCaptureAsync : bool * Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStartParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VpnConnectionStartPacketCaptureOperation&gt;" Usage="vpnConnection.StartPacketCaptureAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -335,13 +335,13 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VpnConnectionStartPacketCaptureOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStartParameters" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStartParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Vpn Connection packet capture parameters supplied to start packet capture on gateway connection. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Vpn Connection packet capture parameters supplied to start packet capture on gateway connection. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Starts packet capture on Vpn connection in the specified resource group. </summary>
         <returns>To be added.</returns>
@@ -349,11 +349,11 @@
       </Docs>
     </Member>
     <Member MemberName="StopPacketCapture">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.VpnConnectionStopPacketCaptureOperation StopPacketCapture (Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStopParameters parameters = default, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.VpnConnectionStopPacketCaptureOperation StopPacketCapture(class Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStopParameters parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.VpnConnection.StopPacketCapture(Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStopParameters,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function StopPacketCapture (Optional parameters As VpnConnectionPacketCaptureStopParameters = Nothing, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As VpnConnectionStopPacketCaptureOperation" />
-      <MemberSignature Language="F#" Value="abstract member StopPacketCapture : Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStopParameters * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.VpnConnectionStopPacketCaptureOperation&#xA;override this.StopPacketCapture : Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStopParameters * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.VpnConnectionStopPacketCaptureOperation" Usage="vpnConnection.StopPacketCapture (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.VpnConnectionStopPacketCaptureOperation StopPacketCapture (bool waitForCompletion, Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStopParameters parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.VpnConnectionStopPacketCaptureOperation StopPacketCapture(bool waitForCompletion, class Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStopParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.VpnConnection.StopPacketCapture(System.Boolean,Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStopParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StopPacketCapture (waitForCompletion As Boolean, Optional parameters As VpnConnectionPacketCaptureStopParameters = Nothing, Optional cancellationToken As CancellationToken = Nothing) As VpnConnectionStopPacketCaptureOperation" />
+      <MemberSignature Language="F#" Value="abstract member StopPacketCapture : bool * Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStopParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.VpnConnectionStopPacketCaptureOperation&#xA;override this.StopPacketCapture : bool * Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStopParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.VpnConnectionStopPacketCaptureOperation" Usage="vpnConnection.StopPacketCapture (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -363,13 +363,13 @@
         <ReturnType>Azure.ResourceManager.Network.Models.VpnConnectionStopPacketCaptureOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStopParameters" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStopParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Vpn Connection packet capture parameters supplied to stop packet capture on gateway connection. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Vpn Connection packet capture parameters supplied to stop packet capture on gateway connection. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Stops packet capture on Vpn connection in the specified resource group. </summary>
         <returns>To be added.</returns>
@@ -377,11 +377,11 @@
       </Docs>
     </Member>
     <Member MemberName="StopPacketCaptureAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VpnConnectionStopPacketCaptureOperation&gt; StopPacketCaptureAsync (Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStopParameters parameters = default, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.VpnConnectionStopPacketCaptureOperation&gt; StopPacketCaptureAsync(class Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStopParameters parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.VpnConnection.StopPacketCaptureAsync(Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStopParameters,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function StopPacketCaptureAsync (Optional parameters As VpnConnectionPacketCaptureStopParameters = Nothing, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VpnConnectionStopPacketCaptureOperation)" />
-      <MemberSignature Language="F#" Value="abstract member StopPacketCaptureAsync : Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStopParameters * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VpnConnectionStopPacketCaptureOperation&gt;&#xA;override this.StopPacketCaptureAsync : Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStopParameters * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VpnConnectionStopPacketCaptureOperation&gt;" Usage="vpnConnection.StopPacketCaptureAsync (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VpnConnectionStopPacketCaptureOperation&gt; StopPacketCaptureAsync (bool waitForCompletion, Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStopParameters parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.VpnConnectionStopPacketCaptureOperation&gt; StopPacketCaptureAsync(bool waitForCompletion, class Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStopParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.VpnConnection.StopPacketCaptureAsync(System.Boolean,Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStopParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StopPacketCaptureAsync (waitForCompletion As Boolean, Optional parameters As VpnConnectionPacketCaptureStopParameters = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VpnConnectionStopPacketCaptureOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StopPacketCaptureAsync : bool * Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStopParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VpnConnectionStopPacketCaptureOperation&gt;&#xA;override this.StopPacketCaptureAsync : bool * Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStopParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VpnConnectionStopPacketCaptureOperation&gt;" Usage="vpnConnection.StopPacketCaptureAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -391,36 +391,16 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VpnConnectionStopPacketCaptureOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStopParameters" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.VpnConnectionPacketCaptureStopParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Vpn Connection packet capture parameters supplied to stop packet capture on gateway connection. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Vpn Connection packet capture parameters supplied to stop packet capture on gateway connection. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Stops packet capture on Vpn connection in the specified resource group. </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.VpnConnection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Network.VpnConnection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for the operations. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

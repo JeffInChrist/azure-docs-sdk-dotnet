@@ -44,29 +44,29 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.TransparentDataEncryptionCreateOrUpdateOperation CreateOrUpdate (Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName tdeName, Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.TransparentDataEncryptionCreateOrUpdateOperation CreateOrUpdate(valuetype Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName tdeName, class Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionCollection.CreateOrUpdate(Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName,Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (tdeName As TransparentDataEncryptionName, parameters As LogicalDatabaseTransparentDataEncryptionData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As TransparentDataEncryptionCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName * Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.TransparentDataEncryptionCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName * Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.TransparentDataEncryptionCreateOrUpdateOperation" Usage="logicalDatabaseTransparentDataEncryptionCollection.CreateOrUpdate (tdeName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.LogicalDatabaseTransparentDataEncryptionCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName tdeName, Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.LogicalDatabaseTransparentDataEncryptionCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, valuetype Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName tdeName, class Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionCollection.CreateOrUpdate(System.Boolean,Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName,Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, tdeName As TransparentDataEncryptionName, parameters As LogicalDatabaseTransparentDataEncryptionData, Optional cancellationToken As CancellationToken = Nothing) As LogicalDatabaseTransparentDataEncryptionCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName * Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.LogicalDatabaseTransparentDataEncryptionCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName * Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.LogicalDatabaseTransparentDataEncryptionCreateOrUpdateOperation" Usage="logicalDatabaseTransparentDataEncryptionCollection.CreateOrUpdate (waitForCompletion, tdeName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Sql.Models.TransparentDataEncryptionCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.Sql.Models.LogicalDatabaseTransparentDataEncryptionCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="tdeName" Type="Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="tdeName"> The name of the transparent data encryption configuration. </param>
         <param name="parameters"> The database transparent data encryption. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Updates a logical database's transparent data encryption configuration. </summary>
         <returns>To be added.</returns>
@@ -76,29 +76,29 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryptionCreateOrUpdateOperation&gt; CreateOrUpdateAsync (Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName tdeName, Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.TransparentDataEncryptionCreateOrUpdateOperation&gt; CreateOrUpdateAsync(valuetype Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName tdeName, class Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionCollection.CreateOrUpdateAsync(Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName,Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (tdeName As TransparentDataEncryptionName, parameters As LogicalDatabaseTransparentDataEncryptionData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TransparentDataEncryptionCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName * Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryptionCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName * Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryptionCreateOrUpdateOperation&gt;" Usage="logicalDatabaseTransparentDataEncryptionCollection.CreateOrUpdateAsync (tdeName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.LogicalDatabaseTransparentDataEncryptionCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName tdeName, Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.LogicalDatabaseTransparentDataEncryptionCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, valuetype Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName tdeName, class Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionCollection.CreateOrUpdateAsync(System.Boolean,Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName,Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, tdeName As TransparentDataEncryptionName, parameters As LogicalDatabaseTransparentDataEncryptionData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of LogicalDatabaseTransparentDataEncryptionCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName * Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.LogicalDatabaseTransparentDataEncryptionCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName * Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.LogicalDatabaseTransparentDataEncryptionCreateOrUpdateOperation&gt;" Usage="logicalDatabaseTransparentDataEncryptionCollection.CreateOrUpdateAsync (waitForCompletion, tdeName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.TransparentDataEncryptionCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.LogicalDatabaseTransparentDataEncryptionCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="tdeName" Type="Azure.ResourceManager.Sql.Models.TransparentDataEncryptionName" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="tdeName"> The name of the transparent data encryption configuration. </param>
         <param name="parameters"> The database transparent data encryption. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Updates a logical database's transparent data encryption configuration. </summary>
         <returns>To be added.</returns>
@@ -383,26 +383,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Sql.LogicalDatabaseTransparentDataEncryptionCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

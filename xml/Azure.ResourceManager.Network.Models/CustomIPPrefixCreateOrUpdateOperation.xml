@@ -1,9 +1,9 @@
-<Type Name="CustomIPPrefixCreateOrUpdateOperation" FullName="Azure.ResourceManager.Network.Models.CustomIPPrefixCreateOrUpdateOperation">
-  <TypeSignature Language="C#" Value="public class CustomIPPrefixCreateOrUpdateOperation : Azure.Operation&lt;Azure.ResourceManager.Network.CustomIpPrefix&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CustomIPPrefixCreateOrUpdateOperation extends Azure.Operation`1&lt;class Azure.ResourceManager.Network.CustomIpPrefix&gt;" />
-  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Network.Models.CustomIPPrefixCreateOrUpdateOperation" />
-  <TypeSignature Language="VB.NET" Value="Public Class CustomIPPrefixCreateOrUpdateOperation&#xA;Inherits Operation(Of CustomIpPrefix)" />
-  <TypeSignature Language="F#" Value="type CustomIPPrefixCreateOrUpdateOperation = class&#xA;    inherit Operation&lt;CustomIpPrefix&gt;" />
+<Type Name="CustomIpPrefixCreateOrUpdateOperation" FullName="Azure.ResourceManager.Network.Models.CustomIpPrefixCreateOrUpdateOperation">
+  <TypeSignature Language="C#" Value="public class CustomIpPrefixCreateOrUpdateOperation : Azure.Operation&lt;Azure.ResourceManager.Network.CustomIpPrefix&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CustomIpPrefixCreateOrUpdateOperation extends Azure.Operation`1&lt;class Azure.ResourceManager.Network.CustomIpPrefix&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Network.Models.CustomIpPrefixCreateOrUpdateOperation" />
+  <TypeSignature Language="VB.NET" Value="Public Class CustomIpPrefixCreateOrUpdateOperation&#xA;Inherits Operation(Of CustomIpPrefix)" />
+  <TypeSignature Language="F#" Value="type CustomIpPrefixCreateOrUpdateOperation = class&#xA;    inherit Operation&lt;CustomIpPrefix&gt;" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -21,9 +21,9 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected CustomIPPrefixCreateOrUpdateOperation ();" />
+      <MemberSignature Language="C#" Value="protected CustomIpPrefixCreateOrUpdateOperation ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.Models.CustomIPPrefixCreateOrUpdateOperation.#ctor" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.Models.CustomIpPrefixCreateOrUpdateOperation.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -32,16 +32,16 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary> Initializes a new instance of CustomIPPrefixCreateOrUpdateOperation for mocking. </summary>
+        <summary> Initializes a new instance of CustomIpPrefixCreateOrUpdateOperation for mocking. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRawResponse">
       <MemberSignature Language="C#" Value="public override Azure.Response GetRawResponse ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Azure.Response GetRawResponse() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.Models.CustomIPPrefixCreateOrUpdateOperation.GetRawResponse" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.Models.CustomIpPrefixCreateOrUpdateOperation.GetRawResponse" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetRawResponse () As Response" />
-      <MemberSignature Language="F#" Value="override this.GetRawResponse : unit -&gt; Azure.Response" Usage="customIPPrefixCreateOrUpdateOperation.GetRawResponse " />
+      <MemberSignature Language="F#" Value="override this.GetRawResponse : unit -&gt; Azure.Response" Usage="customIpPrefixCreateOrUpdateOperation.GetRawResponse " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -66,9 +66,9 @@
     <Member MemberName="HasCompleted">
       <MemberSignature Language="C#" Value="public override bool HasCompleted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasCompleted" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.Models.CustomIPPrefixCreateOrUpdateOperation.HasCompleted" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.Models.CustomIpPrefixCreateOrUpdateOperation.HasCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property HasCompleted As Boolean" />
-      <MemberSignature Language="F#" Value="member this.HasCompleted : bool" Usage="Azure.ResourceManager.Network.Models.CustomIPPrefixCreateOrUpdateOperation.HasCompleted" />
+      <MemberSignature Language="F#" Value="member this.HasCompleted : bool" Usage="Azure.ResourceManager.Network.Models.CustomIpPrefixCreateOrUpdateOperation.HasCompleted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -88,9 +88,9 @@
     <Member MemberName="HasValue">
       <MemberSignature Language="C#" Value="public override bool HasValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasValue" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.Models.CustomIPPrefixCreateOrUpdateOperation.HasValue" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.Models.CustomIpPrefixCreateOrUpdateOperation.HasValue" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property HasValue As Boolean" />
-      <MemberSignature Language="F#" Value="member this.HasValue : bool" Usage="Azure.ResourceManager.Network.Models.CustomIPPrefixCreateOrUpdateOperation.HasValue" />
+      <MemberSignature Language="F#" Value="member this.HasValue : bool" Usage="Azure.ResourceManager.Network.Models.CustomIpPrefixCreateOrUpdateOperation.HasValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -110,9 +110,9 @@
     <Member MemberName="Id">
       <MemberSignature Language="C#" Value="public override string Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.Models.CustomIPPrefixCreateOrUpdateOperation.Id" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.Models.CustomIpPrefixCreateOrUpdateOperation.Id" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Id As String" />
-      <MemberSignature Language="F#" Value="member this.Id : string" Usage="Azure.ResourceManager.Network.Models.CustomIPPrefixCreateOrUpdateOperation.Id" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="Azure.ResourceManager.Network.Models.CustomIpPrefixCreateOrUpdateOperation.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -133,9 +133,9 @@
     <Member MemberName="UpdateStatus">
       <MemberSignature Language="C#" Value="public override Azure.Response UpdateStatus (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Azure.Response UpdateStatus(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.Models.CustomIPPrefixCreateOrUpdateOperation.UpdateStatus(System.Threading.CancellationToken)" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.Models.CustomIpPrefixCreateOrUpdateOperation.UpdateStatus(System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function UpdateStatus (Optional cancellationToken As CancellationToken = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="override this.UpdateStatus : System.Threading.CancellationToken -&gt; Azure.Response" Usage="customIPPrefixCreateOrUpdateOperation.UpdateStatus cancellationToken" />
+      <MemberSignature Language="F#" Value="override this.UpdateStatus : System.Threading.CancellationToken -&gt; Azure.Response" Usage="customIpPrefixCreateOrUpdateOperation.UpdateStatus cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -154,16 +154,16 @@
             </summary>
         <returns>The HTTP response received from the server.</returns>
         <remarks>
-            This operation will update the value returned from GetRawResponse and might update HasCompleted, HasValue, and Value.
+            This operation will update the value returned from GetRawResponse and might update HasCompleted.
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateStatusAsync">
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.ValueTask&lt;Azure.Response&gt; UpdateStatusAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;class Azure.Response&gt; UpdateStatusAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.Models.CustomIPPrefixCreateOrUpdateOperation.UpdateStatusAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.Models.CustomIpPrefixCreateOrUpdateOperation.UpdateStatusAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function UpdateStatusAsync (Optional cancellationToken As CancellationToken = Nothing) As ValueTask(Of Response)" />
-      <MemberSignature Language="F#" Value="override this.UpdateStatusAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Response&gt;" Usage="customIPPrefixCreateOrUpdateOperation.UpdateStatusAsync cancellationToken" />
+      <MemberSignature Language="F#" Value="override this.UpdateStatusAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Response&gt;" Usage="customIpPrefixCreateOrUpdateOperation.UpdateStatusAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -182,16 +182,16 @@
             </summary>
         <returns>The HTTP response received from the server.</returns>
         <remarks>
-            This operation will update the value returned from GetRawResponse and might update HasCompleted, HasValue, and Value.
+            This operation will update the value returned from GetRawResponse and might update HasCompleted.
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
       <MemberSignature Language="C#" Value="public override Azure.ResourceManager.Network.CustomIpPrefix Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Network.CustomIpPrefix Value" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.Models.CustomIPPrefixCreateOrUpdateOperation.Value" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.Models.CustomIpPrefixCreateOrUpdateOperation.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Value As CustomIpPrefix" />
-      <MemberSignature Language="F#" Value="member this.Value : Azure.ResourceManager.Network.CustomIpPrefix" Usage="Azure.ResourceManager.Network.Models.CustomIPPrefixCreateOrUpdateOperation.Value" />
+      <MemberSignature Language="F#" Value="member this.Value : Azure.ResourceManager.Network.CustomIpPrefix" Usage="Azure.ResourceManager.Network.Models.CustomIpPrefixCreateOrUpdateOperation.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -213,9 +213,9 @@
     <Member MemberName="WaitForCompletionAsync">
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;Azure.ResourceManager.Network.CustomIpPrefix&gt;&gt; WaitForCompletionAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Network.CustomIpPrefix&gt;&gt; WaitForCompletionAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.Models.CustomIPPrefixCreateOrUpdateOperation.WaitForCompletionAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.Models.CustomIpPrefixCreateOrUpdateOperation.WaitForCompletionAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function WaitForCompletionAsync (Optional cancellationToken As CancellationToken = Nothing) As ValueTask(Of Response(Of CustomIpPrefix))" />
-      <MemberSignature Language="F#" Value="override this.WaitForCompletionAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;Azure.ResourceManager.Network.CustomIpPrefix&gt;&gt;" Usage="customIPPrefixCreateOrUpdateOperation.WaitForCompletionAsync cancellationToken" />
+      <MemberSignature Language="F#" Value="override this.WaitForCompletionAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;Azure.ResourceManager.Network.CustomIpPrefix&gt;&gt;" Usage="customIpPrefixCreateOrUpdateOperation.WaitForCompletionAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -241,9 +241,9 @@
     <Member MemberName="WaitForCompletionAsync">
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;Azure.ResourceManager.Network.CustomIpPrefix&gt;&gt; WaitForCompletionAsync (TimeSpan pollingInterval, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Network.CustomIpPrefix&gt;&gt; WaitForCompletionAsync(valuetype System.TimeSpan pollingInterval, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.Models.CustomIPPrefixCreateOrUpdateOperation.WaitForCompletionAsync(System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.Models.CustomIpPrefixCreateOrUpdateOperation.WaitForCompletionAsync(System.TimeSpan,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function WaitForCompletionAsync (pollingInterval As TimeSpan, Optional cancellationToken As CancellationToken = Nothing) As ValueTask(Of Response(Of CustomIpPrefix))" />
-      <MemberSignature Language="F#" Value="override this.WaitForCompletionAsync : TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;Azure.ResourceManager.Network.CustomIpPrefix&gt;&gt;" Usage="customIPPrefixCreateOrUpdateOperation.WaitForCompletionAsync (pollingInterval, cancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.WaitForCompletionAsync : TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;Azure.ResourceManager.Network.CustomIpPrefix&gt;&gt;" Usage="customIpPrefixCreateOrUpdateOperation.WaitForCompletionAsync (pollingInterval, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>

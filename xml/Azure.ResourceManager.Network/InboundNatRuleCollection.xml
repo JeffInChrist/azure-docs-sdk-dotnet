@@ -44,11 +44,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.InboundNatRuleCreateOrUpdateOperation CreateOrUpdate (string inboundNatRuleName, Azure.ResourceManager.Network.InboundNatRuleData inboundNatRuleParameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.InboundNatRuleCreateOrUpdateOperation CreateOrUpdate(string inboundNatRuleName, class Azure.ResourceManager.Network.InboundNatRuleData inboundNatRuleParameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.InboundNatRuleCollection.CreateOrUpdate(System.String,Azure.ResourceManager.Network.InboundNatRuleData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (inboundNatRuleName As String, inboundNatRuleParameters As InboundNatRuleData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As InboundNatRuleCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.ResourceManager.Network.InboundNatRuleData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.InboundNatRuleCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : string * Azure.ResourceManager.Network.InboundNatRuleData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.InboundNatRuleCreateOrUpdateOperation" Usage="inboundNatRuleCollection.CreateOrUpdate (inboundNatRuleName, inboundNatRuleParameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.InboundNatRuleCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string inboundNatRuleName, Azure.ResourceManager.Network.InboundNatRuleData inboundNatRuleParameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.InboundNatRuleCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string inboundNatRuleName, class Azure.ResourceManager.Network.InboundNatRuleData inboundNatRuleParameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.InboundNatRuleCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Network.InboundNatRuleData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, inboundNatRuleName As String, inboundNatRuleParameters As InboundNatRuleData, Optional cancellationToken As CancellationToken = Nothing) As InboundNatRuleCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Network.InboundNatRuleData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.InboundNatRuleCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Network.InboundNatRuleData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.InboundNatRuleCreateOrUpdateOperation" Usage="inboundNatRuleCollection.CreateOrUpdate (waitForCompletion, inboundNatRuleName, inboundNatRuleParameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -58,29 +58,31 @@
         <ReturnType>Azure.ResourceManager.Network.Models.InboundNatRuleCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="inboundNatRuleName" Type="System.String" />
         <Parameter Name="inboundNatRuleParameters" Type="Azure.ResourceManager.Network.InboundNatRuleData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="inboundNatRuleName"> The name of the inbound nat rule. </param>
         <param name="inboundNatRuleParameters"> Parameters supplied to the create or update inbound nat rule operation. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates a load balancer inbound nat rule. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="inboundNatRuleName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="inboundNatRuleName" /> or <paramref name="inboundNatRuleParameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.InboundNatRuleCreateOrUpdateOperation&gt; CreateOrUpdateAsync (string inboundNatRuleName, Azure.ResourceManager.Network.InboundNatRuleData inboundNatRuleParameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.InboundNatRuleCreateOrUpdateOperation&gt; CreateOrUpdateAsync(string inboundNatRuleName, class Azure.ResourceManager.Network.InboundNatRuleData inboundNatRuleParameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.InboundNatRuleCollection.CreateOrUpdateAsync(System.String,Azure.ResourceManager.Network.InboundNatRuleData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (inboundNatRuleName As String, inboundNatRuleParameters As InboundNatRuleData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of InboundNatRuleCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.ResourceManager.Network.InboundNatRuleData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.InboundNatRuleCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.ResourceManager.Network.InboundNatRuleData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.InboundNatRuleCreateOrUpdateOperation&gt;" Usage="inboundNatRuleCollection.CreateOrUpdateAsync (inboundNatRuleName, inboundNatRuleParameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.InboundNatRuleCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string inboundNatRuleName, Azure.ResourceManager.Network.InboundNatRuleData inboundNatRuleParameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.InboundNatRuleCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string inboundNatRuleName, class Azure.ResourceManager.Network.InboundNatRuleData inboundNatRuleParameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.InboundNatRuleCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Network.InboundNatRuleData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, inboundNatRuleName As String, inboundNatRuleParameters As InboundNatRuleData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of InboundNatRuleCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Network.InboundNatRuleData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.InboundNatRuleCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Network.InboundNatRuleData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.InboundNatRuleCreateOrUpdateOperation&gt;" Usage="inboundNatRuleCollection.CreateOrUpdateAsync (waitForCompletion, inboundNatRuleName, inboundNatRuleParameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -90,19 +92,21 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.InboundNatRuleCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="inboundNatRuleName" Type="System.String" />
         <Parameter Name="inboundNatRuleParameters" Type="Azure.ResourceManager.Network.InboundNatRuleData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="inboundNatRuleName"> The name of the inbound nat rule. </param>
         <param name="inboundNatRuleParameters"> Parameters supplied to the create or update inbound nat rule operation. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates a load balancer inbound nat rule. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="inboundNatRuleName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="inboundNatRuleName" /> or <paramref name="inboundNatRuleParameters" /> is null. </exception>
       </Docs>
@@ -133,6 +137,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="inboundNatRuleName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="inboundNatRuleName" /> is null. </exception>
       </Docs>
@@ -163,6 +169,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="inboundNatRuleName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="inboundNatRuleName" /> is null. </exception>
       </Docs>
@@ -193,6 +201,8 @@
         <summary> Gets the specified load balancer inbound nat rule. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="inboundNatRuleName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="inboundNatRuleName" /> is null. </exception>
       </Docs>
@@ -271,6 +281,8 @@
         <summary> Gets the specified load balancer inbound nat rule. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="inboundNatRuleName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="inboundNatRuleName" /> is null. </exception>
       </Docs>
@@ -301,6 +313,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="inboundNatRuleName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="inboundNatRuleName" /> is null. </exception>
       </Docs>
@@ -331,6 +345,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="inboundNatRuleName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="inboundNatRuleName" /> is null. </exception>
       </Docs>
@@ -407,26 +423,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.InboundNatRuleCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Network.InboundNatRuleCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
