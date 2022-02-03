@@ -44,65 +44,69 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.VirtualHubBgpConnectionCreateOrUpdateOperation CreateOrUpdate (string connectionName, Azure.ResourceManager.Network.BgpConnectionData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.VirtualHubBgpConnectionCreateOrUpdateOperation CreateOrUpdate(string connectionName, class Azure.ResourceManager.Network.BgpConnectionData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.BgpConnectionCollection.CreateOrUpdate(System.String,Azure.ResourceManager.Network.BgpConnectionData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (connectionName As String, parameters As BgpConnectionData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As VirtualHubBgpConnectionCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.ResourceManager.Network.BgpConnectionData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.VirtualHubBgpConnectionCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : string * Azure.ResourceManager.Network.BgpConnectionData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.VirtualHubBgpConnectionCreateOrUpdateOperation" Usage="bgpConnectionCollection.CreateOrUpdate (connectionName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.BgpConnectionCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string connectionName, Azure.ResourceManager.Network.BgpConnectionData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.BgpConnectionCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string connectionName, class Azure.ResourceManager.Network.BgpConnectionData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.BgpConnectionCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Network.BgpConnectionData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, connectionName As String, parameters As BgpConnectionData, Optional cancellationToken As CancellationToken = Nothing) As BgpConnectionCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Network.BgpConnectionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.BgpConnectionCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Network.BgpConnectionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.BgpConnectionCreateOrUpdateOperation" Usage="bgpConnectionCollection.CreateOrUpdate (waitForCompletion, connectionName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Network.Models.VirtualHubBgpConnectionCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.Network.Models.BgpConnectionCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="connectionName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Network.BgpConnectionData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="connectionName"> The name of the connection. </param>
         <param name="parameters"> Parameters of Bgp connection. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates a VirtualHubBgpConnection resource if it doesn't exist else updates the existing VirtualHubBgpConnection. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="connectionName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VirtualHubBgpConnectionCreateOrUpdateOperation&gt; CreateOrUpdateAsync (string connectionName, Azure.ResourceManager.Network.BgpConnectionData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.VirtualHubBgpConnectionCreateOrUpdateOperation&gt; CreateOrUpdateAsync(string connectionName, class Azure.ResourceManager.Network.BgpConnectionData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.BgpConnectionCollection.CreateOrUpdateAsync(System.String,Azure.ResourceManager.Network.BgpConnectionData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (connectionName As String, parameters As BgpConnectionData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualHubBgpConnectionCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.ResourceManager.Network.BgpConnectionData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VirtualHubBgpConnectionCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.ResourceManager.Network.BgpConnectionData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VirtualHubBgpConnectionCreateOrUpdateOperation&gt;" Usage="bgpConnectionCollection.CreateOrUpdateAsync (connectionName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.BgpConnectionCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string connectionName, Azure.ResourceManager.Network.BgpConnectionData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.BgpConnectionCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string connectionName, class Azure.ResourceManager.Network.BgpConnectionData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.BgpConnectionCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Network.BgpConnectionData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, connectionName As String, parameters As BgpConnectionData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of BgpConnectionCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Network.BgpConnectionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.BgpConnectionCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Network.BgpConnectionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.BgpConnectionCreateOrUpdateOperation&gt;" Usage="bgpConnectionCollection.CreateOrUpdateAsync (waitForCompletion, connectionName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VirtualHubBgpConnectionCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.BgpConnectionCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="connectionName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Network.BgpConnectionData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="connectionName"> The name of the connection. </param>
         <param name="parameters"> Parameters of Bgp connection. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates a VirtualHubBgpConnection resource if it doesn't exist else updates the existing VirtualHubBgpConnection. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="connectionName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -131,6 +135,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="connectionName" /> is null. </exception>
       </Docs>
@@ -159,6 +165,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="connectionName" /> is null. </exception>
       </Docs>
@@ -187,6 +195,8 @@
         <summary> Retrieves the details of a Virtual Hub Bgp Connection. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="connectionName" /> is null. </exception>
       </Docs>
@@ -263,6 +273,8 @@
         <summary> Retrieves the details of a Virtual Hub Bgp Connection. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="connectionName" /> is null. </exception>
       </Docs>
@@ -291,6 +303,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="connectionName" /> is null. </exception>
       </Docs>
@@ -319,6 +333,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="connectionName" /> is null. </exception>
       </Docs>
@@ -395,26 +411,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.BgpConnectionCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Network.BgpConnectionCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

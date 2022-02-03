@@ -44,29 +44,29 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ServiceBus.Models.MigrationConfigCreateAndStartMigrationOperation CreateOrUpdate (Azure.ResourceManager.ServiceBus.Models.MigrationConfigurationName configName, Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ServiceBus.Models.MigrationConfigCreateAndStartMigrationOperation CreateOrUpdate(valuetype Azure.ResourceManager.ServiceBus.Models.MigrationConfigurationName configName, class Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesCollection.CreateOrUpdate(Azure.ResourceManager.ServiceBus.Models.MigrationConfigurationName,Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (configName As MigrationConfigurationName, parameters As MigrationConfigPropertiesData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As MigrationConfigCreateAndStartMigrationOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : Azure.ResourceManager.ServiceBus.Models.MigrationConfigurationName * Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ServiceBus.Models.MigrationConfigCreateAndStartMigrationOperation&#xA;override this.CreateOrUpdate : Azure.ResourceManager.ServiceBus.Models.MigrationConfigurationName * Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ServiceBus.Models.MigrationConfigCreateAndStartMigrationOperation" Usage="migrationConfigPropertiesCollection.CreateOrUpdate (configName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ServiceBus.Models.MigrationConfigPropertiesCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, Azure.ResourceManager.ServiceBus.Models.MigrationConfigurationName configName, Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ServiceBus.Models.MigrationConfigPropertiesCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, valuetype Azure.ResourceManager.ServiceBus.Models.MigrationConfigurationName configName, class Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesCollection.CreateOrUpdate(System.Boolean,Azure.ResourceManager.ServiceBus.Models.MigrationConfigurationName,Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, configName As MigrationConfigurationName, parameters As MigrationConfigPropertiesData, Optional cancellationToken As CancellationToken = Nothing) As MigrationConfigPropertiesCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * Azure.ResourceManager.ServiceBus.Models.MigrationConfigurationName * Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ServiceBus.Models.MigrationConfigPropertiesCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * Azure.ResourceManager.ServiceBus.Models.MigrationConfigurationName * Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ServiceBus.Models.MigrationConfigPropertiesCreateOrUpdateOperation" Usage="migrationConfigPropertiesCollection.CreateOrUpdate (waitForCompletion, configName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ServiceBus.Models.MigrationConfigCreateAndStartMigrationOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ServiceBus.Models.MigrationConfigPropertiesCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="configName" Type="Azure.ResourceManager.ServiceBus.Models.MigrationConfigurationName" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="configName"> The configuration name. Should always be "$default". </param>
         <param name="parameters"> Parameters required to create Migration Configuration. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates Migration configuration and starts migration of entities from Standard to Premium namespace. </summary>
         <returns>To be added.</returns>
@@ -76,29 +76,29 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ServiceBus.Models.MigrationConfigCreateAndStartMigrationOperation&gt; CreateOrUpdateAsync (Azure.ResourceManager.ServiceBus.Models.MigrationConfigurationName configName, Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ServiceBus.Models.MigrationConfigCreateAndStartMigrationOperation&gt; CreateOrUpdateAsync(valuetype Azure.ResourceManager.ServiceBus.Models.MigrationConfigurationName configName, class Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesCollection.CreateOrUpdateAsync(Azure.ResourceManager.ServiceBus.Models.MigrationConfigurationName,Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (configName As MigrationConfigurationName, parameters As MigrationConfigPropertiesData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of MigrationConfigCreateAndStartMigrationOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : Azure.ResourceManager.ServiceBus.Models.MigrationConfigurationName * Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ServiceBus.Models.MigrationConfigCreateAndStartMigrationOperation&gt;&#xA;override this.CreateOrUpdateAsync : Azure.ResourceManager.ServiceBus.Models.MigrationConfigurationName * Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ServiceBus.Models.MigrationConfigCreateAndStartMigrationOperation&gt;" Usage="migrationConfigPropertiesCollection.CreateOrUpdateAsync (configName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ServiceBus.Models.MigrationConfigPropertiesCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, Azure.ResourceManager.ServiceBus.Models.MigrationConfigurationName configName, Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ServiceBus.Models.MigrationConfigPropertiesCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, valuetype Azure.ResourceManager.ServiceBus.Models.MigrationConfigurationName configName, class Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesCollection.CreateOrUpdateAsync(System.Boolean,Azure.ResourceManager.ServiceBus.Models.MigrationConfigurationName,Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, configName As MigrationConfigurationName, parameters As MigrationConfigPropertiesData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of MigrationConfigPropertiesCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * Azure.ResourceManager.ServiceBus.Models.MigrationConfigurationName * Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ServiceBus.Models.MigrationConfigPropertiesCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * Azure.ResourceManager.ServiceBus.Models.MigrationConfigurationName * Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ServiceBus.Models.MigrationConfigPropertiesCreateOrUpdateOperation&gt;" Usage="migrationConfigPropertiesCollection.CreateOrUpdateAsync (waitForCompletion, configName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ServiceBus.Models.MigrationConfigCreateAndStartMigrationOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ServiceBus.Models.MigrationConfigPropertiesCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="configName" Type="Azure.ResourceManager.ServiceBus.Models.MigrationConfigurationName" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="configName"> The configuration name. Should always be "$default". </param>
         <param name="parameters"> Parameters required to create Migration Configuration. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates Migration configuration and starts migration of entities from Standard to Premium namespace. </summary>
         <returns>To be added.</returns>
@@ -383,26 +383,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.ServiceBus.MigrationConfigPropertiesCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

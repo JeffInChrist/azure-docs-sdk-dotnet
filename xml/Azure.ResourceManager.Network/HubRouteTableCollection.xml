@@ -44,11 +44,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.HubRouteTableCreateOrUpdateOperation CreateOrUpdate (string routeTableName, Azure.ResourceManager.Network.HubRouteTableData routeTableParameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.HubRouteTableCreateOrUpdateOperation CreateOrUpdate(string routeTableName, class Azure.ResourceManager.Network.HubRouteTableData routeTableParameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.HubRouteTableCollection.CreateOrUpdate(System.String,Azure.ResourceManager.Network.HubRouteTableData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (routeTableName As String, routeTableParameters As HubRouteTableData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As HubRouteTableCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.ResourceManager.Network.HubRouteTableData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.HubRouteTableCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : string * Azure.ResourceManager.Network.HubRouteTableData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.HubRouteTableCreateOrUpdateOperation" Usage="hubRouteTableCollection.CreateOrUpdate (routeTableName, routeTableParameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.HubRouteTableCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string routeTableName, Azure.ResourceManager.Network.HubRouteTableData routeTableParameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.HubRouteTableCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string routeTableName, class Azure.ResourceManager.Network.HubRouteTableData routeTableParameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.HubRouteTableCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Network.HubRouteTableData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, routeTableName As String, routeTableParameters As HubRouteTableData, Optional cancellationToken As CancellationToken = Nothing) As HubRouteTableCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Network.HubRouteTableData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.HubRouteTableCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Network.HubRouteTableData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.HubRouteTableCreateOrUpdateOperation" Usage="hubRouteTableCollection.CreateOrUpdate (waitForCompletion, routeTableName, routeTableParameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -58,29 +58,31 @@
         <ReturnType>Azure.ResourceManager.Network.Models.HubRouteTableCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="routeTableName" Type="System.String" />
         <Parameter Name="routeTableParameters" Type="Azure.ResourceManager.Network.HubRouteTableData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="routeTableName"> The name of the RouteTable. </param>
         <param name="routeTableParameters"> Parameters supplied to create or update RouteTable. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates a RouteTable resource if it doesn't exist else updates the existing RouteTable. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="routeTableName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="routeTableName" /> or <paramref name="routeTableParameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.HubRouteTableCreateOrUpdateOperation&gt; CreateOrUpdateAsync (string routeTableName, Azure.ResourceManager.Network.HubRouteTableData routeTableParameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.HubRouteTableCreateOrUpdateOperation&gt; CreateOrUpdateAsync(string routeTableName, class Azure.ResourceManager.Network.HubRouteTableData routeTableParameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.HubRouteTableCollection.CreateOrUpdateAsync(System.String,Azure.ResourceManager.Network.HubRouteTableData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (routeTableName As String, routeTableParameters As HubRouteTableData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HubRouteTableCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.ResourceManager.Network.HubRouteTableData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.HubRouteTableCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.ResourceManager.Network.HubRouteTableData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.HubRouteTableCreateOrUpdateOperation&gt;" Usage="hubRouteTableCollection.CreateOrUpdateAsync (routeTableName, routeTableParameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.HubRouteTableCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string routeTableName, Azure.ResourceManager.Network.HubRouteTableData routeTableParameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.HubRouteTableCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string routeTableName, class Azure.ResourceManager.Network.HubRouteTableData routeTableParameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.HubRouteTableCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Network.HubRouteTableData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, routeTableName As String, routeTableParameters As HubRouteTableData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HubRouteTableCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Network.HubRouteTableData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.HubRouteTableCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Network.HubRouteTableData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.HubRouteTableCreateOrUpdateOperation&gt;" Usage="hubRouteTableCollection.CreateOrUpdateAsync (waitForCompletion, routeTableName, routeTableParameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -90,19 +92,21 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.HubRouteTableCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="routeTableName" Type="System.String" />
         <Parameter Name="routeTableParameters" Type="Azure.ResourceManager.Network.HubRouteTableData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="routeTableName"> The name of the RouteTable. </param>
         <param name="routeTableParameters"> Parameters supplied to create or update RouteTable. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates a RouteTable resource if it doesn't exist else updates the existing RouteTable. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="routeTableName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="routeTableName" /> or <paramref name="routeTableParameters" /> is null. </exception>
       </Docs>
@@ -131,6 +135,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="routeTableName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="routeTableName" /> is null. </exception>
       </Docs>
@@ -159,6 +165,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="routeTableName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="routeTableName" /> is null. </exception>
       </Docs>
@@ -187,6 +195,8 @@
         <summary> Retrieves the details of a RouteTable. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="routeTableName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="routeTableName" /> is null. </exception>
       </Docs>
@@ -263,6 +273,8 @@
         <summary> Retrieves the details of a RouteTable. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="routeTableName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="routeTableName" /> is null. </exception>
       </Docs>
@@ -291,6 +303,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="routeTableName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="routeTableName" /> is null. </exception>
       </Docs>
@@ -319,6 +333,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="routeTableName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="routeTableName" /> is null. </exception>
       </Docs>
@@ -395,26 +411,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.HubRouteTableCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Network.HubRouteTableCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

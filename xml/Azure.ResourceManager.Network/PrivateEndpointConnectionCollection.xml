@@ -44,65 +44,69 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.PrivateLinkServiceUpdatePrivateEndpointConnectionOperation CreateOrUpdate (string peConnectionName, Azure.ResourceManager.Network.PrivateEndpointConnectionData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.PrivateLinkServiceUpdatePrivateEndpointConnectionOperation CreateOrUpdate(string peConnectionName, class Azure.ResourceManager.Network.PrivateEndpointConnectionData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.PrivateEndpointConnectionCollection.CreateOrUpdate(System.String,Azure.ResourceManager.Network.PrivateEndpointConnectionData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (peConnectionName As String, parameters As PrivateEndpointConnectionData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As PrivateLinkServiceUpdatePrivateEndpointConnectionOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.ResourceManager.Network.PrivateEndpointConnectionData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.PrivateLinkServiceUpdatePrivateEndpointConnectionOperation&#xA;override this.CreateOrUpdate : string * Azure.ResourceManager.Network.PrivateEndpointConnectionData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.PrivateLinkServiceUpdatePrivateEndpointConnectionOperation" Usage="privateEndpointConnectionCollection.CreateOrUpdate (peConnectionName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.PrivateEndpointConnectionCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string peConnectionName, Azure.ResourceManager.Network.PrivateEndpointConnectionData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.PrivateEndpointConnectionCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string peConnectionName, class Azure.ResourceManager.Network.PrivateEndpointConnectionData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.PrivateEndpointConnectionCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Network.PrivateEndpointConnectionData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, peConnectionName As String, parameters As PrivateEndpointConnectionData, Optional cancellationToken As CancellationToken = Nothing) As PrivateEndpointConnectionCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Network.PrivateEndpointConnectionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.PrivateEndpointConnectionCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Network.PrivateEndpointConnectionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.PrivateEndpointConnectionCreateOrUpdateOperation" Usage="privateEndpointConnectionCollection.CreateOrUpdate (waitForCompletion, peConnectionName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Network.Models.PrivateLinkServiceUpdatePrivateEndpointConnectionOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.Network.Models.PrivateEndpointConnectionCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="peConnectionName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Network.PrivateEndpointConnectionData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="peConnectionName"> The name of the private end point connection. </param>
         <param name="parameters"> Parameters supplied to approve or reject the private end point connection. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Approve or reject private end point connection for a private link service in a subscription. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="peConnectionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="peConnectionName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.PrivateLinkServiceUpdatePrivateEndpointConnectionOperation&gt; CreateOrUpdateAsync (string peConnectionName, Azure.ResourceManager.Network.PrivateEndpointConnectionData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.PrivateLinkServiceUpdatePrivateEndpointConnectionOperation&gt; CreateOrUpdateAsync(string peConnectionName, class Azure.ResourceManager.Network.PrivateEndpointConnectionData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.PrivateEndpointConnectionCollection.CreateOrUpdateAsync(System.String,Azure.ResourceManager.Network.PrivateEndpointConnectionData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (peConnectionName As String, parameters As PrivateEndpointConnectionData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of PrivateLinkServiceUpdatePrivateEndpointConnectionOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.ResourceManager.Network.PrivateEndpointConnectionData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.PrivateLinkServiceUpdatePrivateEndpointConnectionOperation&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.ResourceManager.Network.PrivateEndpointConnectionData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.PrivateLinkServiceUpdatePrivateEndpointConnectionOperation&gt;" Usage="privateEndpointConnectionCollection.CreateOrUpdateAsync (peConnectionName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.PrivateEndpointConnectionCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string peConnectionName, Azure.ResourceManager.Network.PrivateEndpointConnectionData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.PrivateEndpointConnectionCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string peConnectionName, class Azure.ResourceManager.Network.PrivateEndpointConnectionData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.PrivateEndpointConnectionCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Network.PrivateEndpointConnectionData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, peConnectionName As String, parameters As PrivateEndpointConnectionData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of PrivateEndpointConnectionCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Network.PrivateEndpointConnectionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.PrivateEndpointConnectionCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Network.PrivateEndpointConnectionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.PrivateEndpointConnectionCreateOrUpdateOperation&gt;" Usage="privateEndpointConnectionCollection.CreateOrUpdateAsync (waitForCompletion, peConnectionName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.PrivateLinkServiceUpdatePrivateEndpointConnectionOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.PrivateEndpointConnectionCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="peConnectionName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Network.PrivateEndpointConnectionData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="peConnectionName"> The name of the private end point connection. </param>
         <param name="parameters"> Parameters supplied to approve or reject the private end point connection. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Approve or reject private end point connection for a private link service in a subscription. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="peConnectionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="peConnectionName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -133,6 +137,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="peConnectionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="peConnectionName" /> is null. </exception>
       </Docs>
@@ -163,6 +169,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="peConnectionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="peConnectionName" /> is null. </exception>
       </Docs>
@@ -193,6 +201,8 @@
         <summary> Get the specific private end point connection by specific private link service in the resource group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="peConnectionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="peConnectionName" /> is null. </exception>
       </Docs>
@@ -271,6 +281,8 @@
         <summary> Get the specific private end point connection by specific private link service in the resource group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="peConnectionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="peConnectionName" /> is null. </exception>
       </Docs>
@@ -301,6 +313,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="peConnectionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="peConnectionName" /> is null. </exception>
       </Docs>
@@ -331,6 +345,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="peConnectionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="peConnectionName" /> is null. </exception>
       </Docs>
@@ -407,26 +423,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.PrivateEndpointConnectionCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Network.PrivateEndpointConnectionCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,9 +1,9 @@
-<Type Name="VirtualWanCreateOrUpdateOperation" FullName="Azure.ResourceManager.Network.Models.VirtualWanCreateOrUpdateOperation">
-  <TypeSignature Language="C#" Value="public class VirtualWanCreateOrUpdateOperation : Azure.Operation&lt;Azure.ResourceManager.Network.VirtualWAN&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VirtualWanCreateOrUpdateOperation extends Azure.Operation`1&lt;class Azure.ResourceManager.Network.VirtualWAN&gt;" />
-  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Network.Models.VirtualWanCreateOrUpdateOperation" />
-  <TypeSignature Language="VB.NET" Value="Public Class VirtualWanCreateOrUpdateOperation&#xA;Inherits Operation(Of VirtualWAN)" />
-  <TypeSignature Language="F#" Value="type VirtualWanCreateOrUpdateOperation = class&#xA;    inherit Operation&lt;VirtualWAN&gt;" />
+<Type Name="VirtualWANCreateOrUpdateOperation" FullName="Azure.ResourceManager.Network.Models.VirtualWANCreateOrUpdateOperation">
+  <TypeSignature Language="C#" Value="public class VirtualWANCreateOrUpdateOperation : Azure.Operation&lt;Azure.ResourceManager.Network.VirtualWAN&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VirtualWANCreateOrUpdateOperation extends Azure.Operation`1&lt;class Azure.ResourceManager.Network.VirtualWAN&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Network.Models.VirtualWANCreateOrUpdateOperation" />
+  <TypeSignature Language="VB.NET" Value="Public Class VirtualWANCreateOrUpdateOperation&#xA;Inherits Operation(Of VirtualWAN)" />
+  <TypeSignature Language="F#" Value="type VirtualWANCreateOrUpdateOperation = class&#xA;    inherit Operation&lt;VirtualWAN&gt;" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -21,9 +21,9 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected VirtualWanCreateOrUpdateOperation ();" />
+      <MemberSignature Language="C#" Value="protected VirtualWANCreateOrUpdateOperation ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.Models.VirtualWanCreateOrUpdateOperation.#ctor" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.Models.VirtualWANCreateOrUpdateOperation.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -32,16 +32,16 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary> Initializes a new instance of VirtualWanCreateOrUpdateOperation for mocking. </summary>
+        <summary> Initializes a new instance of VirtualWANCreateOrUpdateOperation for mocking. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRawResponse">
       <MemberSignature Language="C#" Value="public override Azure.Response GetRawResponse ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Azure.Response GetRawResponse() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.Models.VirtualWanCreateOrUpdateOperation.GetRawResponse" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.Models.VirtualWANCreateOrUpdateOperation.GetRawResponse" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetRawResponse () As Response" />
-      <MemberSignature Language="F#" Value="override this.GetRawResponse : unit -&gt; Azure.Response" Usage="virtualWanCreateOrUpdateOperation.GetRawResponse " />
+      <MemberSignature Language="F#" Value="override this.GetRawResponse : unit -&gt; Azure.Response" Usage="virtualWANCreateOrUpdateOperation.GetRawResponse " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -66,9 +66,9 @@
     <Member MemberName="HasCompleted">
       <MemberSignature Language="C#" Value="public override bool HasCompleted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasCompleted" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.Models.VirtualWanCreateOrUpdateOperation.HasCompleted" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.Models.VirtualWANCreateOrUpdateOperation.HasCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property HasCompleted As Boolean" />
-      <MemberSignature Language="F#" Value="member this.HasCompleted : bool" Usage="Azure.ResourceManager.Network.Models.VirtualWanCreateOrUpdateOperation.HasCompleted" />
+      <MemberSignature Language="F#" Value="member this.HasCompleted : bool" Usage="Azure.ResourceManager.Network.Models.VirtualWANCreateOrUpdateOperation.HasCompleted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -88,9 +88,9 @@
     <Member MemberName="HasValue">
       <MemberSignature Language="C#" Value="public override bool HasValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasValue" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.Models.VirtualWanCreateOrUpdateOperation.HasValue" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.Models.VirtualWANCreateOrUpdateOperation.HasValue" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property HasValue As Boolean" />
-      <MemberSignature Language="F#" Value="member this.HasValue : bool" Usage="Azure.ResourceManager.Network.Models.VirtualWanCreateOrUpdateOperation.HasValue" />
+      <MemberSignature Language="F#" Value="member this.HasValue : bool" Usage="Azure.ResourceManager.Network.Models.VirtualWANCreateOrUpdateOperation.HasValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -110,9 +110,9 @@
     <Member MemberName="Id">
       <MemberSignature Language="C#" Value="public override string Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.Models.VirtualWanCreateOrUpdateOperation.Id" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.Models.VirtualWANCreateOrUpdateOperation.Id" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Id As String" />
-      <MemberSignature Language="F#" Value="member this.Id : string" Usage="Azure.ResourceManager.Network.Models.VirtualWanCreateOrUpdateOperation.Id" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="Azure.ResourceManager.Network.Models.VirtualWANCreateOrUpdateOperation.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -133,9 +133,9 @@
     <Member MemberName="UpdateStatus">
       <MemberSignature Language="C#" Value="public override Azure.Response UpdateStatus (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Azure.Response UpdateStatus(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.Models.VirtualWanCreateOrUpdateOperation.UpdateStatus(System.Threading.CancellationToken)" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.Models.VirtualWANCreateOrUpdateOperation.UpdateStatus(System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function UpdateStatus (Optional cancellationToken As CancellationToken = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="override this.UpdateStatus : System.Threading.CancellationToken -&gt; Azure.Response" Usage="virtualWanCreateOrUpdateOperation.UpdateStatus cancellationToken" />
+      <MemberSignature Language="F#" Value="override this.UpdateStatus : System.Threading.CancellationToken -&gt; Azure.Response" Usage="virtualWANCreateOrUpdateOperation.UpdateStatus cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -154,16 +154,16 @@
             </summary>
         <returns>The HTTP response received from the server.</returns>
         <remarks>
-            This operation will update the value returned from GetRawResponse and might update HasCompleted, HasValue, and Value.
+            This operation will update the value returned from GetRawResponse and might update HasCompleted.
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateStatusAsync">
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.ValueTask&lt;Azure.Response&gt; UpdateStatusAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;class Azure.Response&gt; UpdateStatusAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.Models.VirtualWanCreateOrUpdateOperation.UpdateStatusAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.Models.VirtualWANCreateOrUpdateOperation.UpdateStatusAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function UpdateStatusAsync (Optional cancellationToken As CancellationToken = Nothing) As ValueTask(Of Response)" />
-      <MemberSignature Language="F#" Value="override this.UpdateStatusAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Response&gt;" Usage="virtualWanCreateOrUpdateOperation.UpdateStatusAsync cancellationToken" />
+      <MemberSignature Language="F#" Value="override this.UpdateStatusAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Response&gt;" Usage="virtualWANCreateOrUpdateOperation.UpdateStatusAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -182,16 +182,16 @@
             </summary>
         <returns>The HTTP response received from the server.</returns>
         <remarks>
-            This operation will update the value returned from GetRawResponse and might update HasCompleted, HasValue, and Value.
+            This operation will update the value returned from GetRawResponse and might update HasCompleted.
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
       <MemberSignature Language="C#" Value="public override Azure.ResourceManager.Network.VirtualWAN Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Network.VirtualWAN Value" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.Models.VirtualWanCreateOrUpdateOperation.Value" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.Models.VirtualWANCreateOrUpdateOperation.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Value As VirtualWAN" />
-      <MemberSignature Language="F#" Value="member this.Value : Azure.ResourceManager.Network.VirtualWAN" Usage="Azure.ResourceManager.Network.Models.VirtualWanCreateOrUpdateOperation.Value" />
+      <MemberSignature Language="F#" Value="member this.Value : Azure.ResourceManager.Network.VirtualWAN" Usage="Azure.ResourceManager.Network.Models.VirtualWANCreateOrUpdateOperation.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -213,9 +213,9 @@
     <Member MemberName="WaitForCompletionAsync">
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;Azure.ResourceManager.Network.VirtualWAN&gt;&gt; WaitForCompletionAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Network.VirtualWAN&gt;&gt; WaitForCompletionAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.Models.VirtualWanCreateOrUpdateOperation.WaitForCompletionAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.Models.VirtualWANCreateOrUpdateOperation.WaitForCompletionAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function WaitForCompletionAsync (Optional cancellationToken As CancellationToken = Nothing) As ValueTask(Of Response(Of VirtualWAN))" />
-      <MemberSignature Language="F#" Value="override this.WaitForCompletionAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;Azure.ResourceManager.Network.VirtualWAN&gt;&gt;" Usage="virtualWanCreateOrUpdateOperation.WaitForCompletionAsync cancellationToken" />
+      <MemberSignature Language="F#" Value="override this.WaitForCompletionAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;Azure.ResourceManager.Network.VirtualWAN&gt;&gt;" Usage="virtualWANCreateOrUpdateOperation.WaitForCompletionAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -241,9 +241,9 @@
     <Member MemberName="WaitForCompletionAsync">
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;Azure.ResourceManager.Network.VirtualWAN&gt;&gt; WaitForCompletionAsync (TimeSpan pollingInterval, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Network.VirtualWAN&gt;&gt; WaitForCompletionAsync(valuetype System.TimeSpan pollingInterval, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.Models.VirtualWanCreateOrUpdateOperation.WaitForCompletionAsync(System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.Models.VirtualWANCreateOrUpdateOperation.WaitForCompletionAsync(System.TimeSpan,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function WaitForCompletionAsync (pollingInterval As TimeSpan, Optional cancellationToken As CancellationToken = Nothing) As ValueTask(Of Response(Of VirtualWAN))" />
-      <MemberSignature Language="F#" Value="override this.WaitForCompletionAsync : TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;Azure.ResourceManager.Network.VirtualWAN&gt;&gt;" Usage="virtualWanCreateOrUpdateOperation.WaitForCompletionAsync (pollingInterval, cancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.WaitForCompletionAsync : TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Response&lt;Azure.ResourceManager.Network.VirtualWAN&gt;&gt;" Usage="virtualWANCreateOrUpdateOperation.WaitForCompletionAsync (pollingInterval, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>

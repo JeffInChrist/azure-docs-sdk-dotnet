@@ -44,65 +44,69 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.VirtualHubIpConfigurationCreateOrUpdateOperation CreateOrUpdate (string ipConfigName, Azure.ResourceManager.Network.HubIpConfigurationData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.VirtualHubIpConfigurationCreateOrUpdateOperation CreateOrUpdate(string ipConfigName, class Azure.ResourceManager.Network.HubIpConfigurationData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.HubIpConfigurationCollection.CreateOrUpdate(System.String,Azure.ResourceManager.Network.HubIpConfigurationData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (ipConfigName As String, parameters As HubIpConfigurationData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As VirtualHubIpConfigurationCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.ResourceManager.Network.HubIpConfigurationData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.VirtualHubIpConfigurationCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : string * Azure.ResourceManager.Network.HubIpConfigurationData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.VirtualHubIpConfigurationCreateOrUpdateOperation" Usage="hubIpConfigurationCollection.CreateOrUpdate (ipConfigName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.HubIpConfigurationCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string ipConfigName, Azure.ResourceManager.Network.HubIpConfigurationData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.HubIpConfigurationCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string ipConfigName, class Azure.ResourceManager.Network.HubIpConfigurationData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.HubIpConfigurationCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Network.HubIpConfigurationData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, ipConfigName As String, parameters As HubIpConfigurationData, Optional cancellationToken As CancellationToken = Nothing) As HubIpConfigurationCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Network.HubIpConfigurationData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.HubIpConfigurationCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Network.HubIpConfigurationData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.HubIpConfigurationCreateOrUpdateOperation" Usage="hubIpConfigurationCollection.CreateOrUpdate (waitForCompletion, ipConfigName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Network.Models.VirtualHubIpConfigurationCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.Network.Models.HubIpConfigurationCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="ipConfigName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Network.HubIpConfigurationData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="ipConfigName"> The name of the ipconfig. </param>
         <param name="parameters"> Hub Ip Configuration parameters. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates a VirtualHubIpConfiguration resource if it doesn't exist else updates the existing VirtualHubIpConfiguration. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="ipConfigName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="ipConfigName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VirtualHubIpConfigurationCreateOrUpdateOperation&gt; CreateOrUpdateAsync (string ipConfigName, Azure.ResourceManager.Network.HubIpConfigurationData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.VirtualHubIpConfigurationCreateOrUpdateOperation&gt; CreateOrUpdateAsync(string ipConfigName, class Azure.ResourceManager.Network.HubIpConfigurationData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.HubIpConfigurationCollection.CreateOrUpdateAsync(System.String,Azure.ResourceManager.Network.HubIpConfigurationData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (ipConfigName As String, parameters As HubIpConfigurationData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualHubIpConfigurationCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.ResourceManager.Network.HubIpConfigurationData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VirtualHubIpConfigurationCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.ResourceManager.Network.HubIpConfigurationData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VirtualHubIpConfigurationCreateOrUpdateOperation&gt;" Usage="hubIpConfigurationCollection.CreateOrUpdateAsync (ipConfigName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.HubIpConfigurationCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string ipConfigName, Azure.ResourceManager.Network.HubIpConfigurationData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.HubIpConfigurationCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string ipConfigName, class Azure.ResourceManager.Network.HubIpConfigurationData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.HubIpConfigurationCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Network.HubIpConfigurationData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, ipConfigName As String, parameters As HubIpConfigurationData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HubIpConfigurationCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Network.HubIpConfigurationData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.HubIpConfigurationCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Network.HubIpConfigurationData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.HubIpConfigurationCreateOrUpdateOperation&gt;" Usage="hubIpConfigurationCollection.CreateOrUpdateAsync (waitForCompletion, ipConfigName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VirtualHubIpConfigurationCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.HubIpConfigurationCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="ipConfigName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Network.HubIpConfigurationData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="ipConfigName"> The name of the ipconfig. </param>
         <param name="parameters"> Hub Ip Configuration parameters. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates a VirtualHubIpConfiguration resource if it doesn't exist else updates the existing VirtualHubIpConfiguration. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="ipConfigName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="ipConfigName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -131,6 +135,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="ipConfigName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="ipConfigName" /> is null. </exception>
       </Docs>
@@ -159,6 +165,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="ipConfigName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="ipConfigName" /> is null. </exception>
       </Docs>
@@ -187,6 +195,8 @@
         <summary> Retrieves the details of a Virtual Hub Ip configuration. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="ipConfigName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="ipConfigName" /> is null. </exception>
       </Docs>
@@ -263,6 +273,8 @@
         <summary> Retrieves the details of a Virtual Hub Ip configuration. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="ipConfigName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="ipConfigName" /> is null. </exception>
       </Docs>
@@ -291,6 +303,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="ipConfigName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="ipConfigName" /> is null. </exception>
       </Docs>
@@ -319,6 +333,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="ipConfigName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="ipConfigName" /> is null. </exception>
       </Docs>
@@ -395,26 +411,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.HubIpConfigurationCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Network.HubIpConfigurationCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
