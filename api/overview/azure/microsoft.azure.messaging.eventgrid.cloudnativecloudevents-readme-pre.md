@@ -1,16 +1,15 @@
 ---
 title: 
-keywords: Azure, dotnet, SDK, API, Microsoft.Azure.Messaging.EventGrid.CloudNativeCloudEvents, 
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 06/15/2021
+keywords: Azure, dotnet, SDK, API, Microsoft.Azure.Messaging.EventGrid.CloudNativeCloudEvents, eventgrid
+author: Kishp01
+ms.author: kishp
+ms.date: 02/04/2022
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.service: 
+ms.service: eventgrid
 ---
-
 # CloudNative CloudEvent support for Azure.Messaging.EventGrid library for .NET
 
 This library can be used to enable publishing CloudNative CloudEvents using the Azure Event Grid library.
@@ -21,13 +20,13 @@ This library can be used to enable publishing CloudNative CloudEvents using the 
 
 Install the client library from [NuGet](https://www.nuget.org/):
 
-```PowerShell
-dotnet add package Microsoft.Azure.Messaging.EventGrid.CloudNativeCloudEvents --prerelease
+```dotnetcli
+dotnet add package Microsoft.Azure.Messaging.EventGrid.CloudNativeCloudEvents
 ```
 
 ### Prerequisites
 
-You must have an [Azure subscription](https://azure.microsoft.com/free/) and an Azure resource group with a custom Event Grid topic or domain. Follow this [step-by-step tutorial](https://docs.microsoft.com/azure/event-grid/custom-event-quickstart-portal) to register the Event Grid resource provider and create Event Grid topics using the [Azure portal](https://portal.azure.com/). There is a [similar tutorial](https://docs.microsoft.com/azure/event-grid/custom-event-quickstart) using [Azure CLI](https://docs.microsoft.com/cli/azure).
+You must have an [Azure subscription](https://azure.microsoft.com/free/dotnet/) and an Azure resource group with a custom Event Grid topic or domain. Follow this [step-by-step tutorial](https://docs.microsoft.com/azure/event-grid/custom-event-quickstart-portal) to register the Event Grid resource provider and create Event Grid topics using the [Azure portal](https://portal.azure.com/). There is a [similar tutorial](https://docs.microsoft.com/azure/event-grid/custom-event-quickstart) using [Azure CLI](https://docs.microsoft.com/cli/azure).
 
 ### Authenticate the client
 
@@ -57,32 +56,51 @@ EventGridPublisherClient client = new EventGridPublisherClient(
 
 For information about general Event Grid concepts: [Concepts in Azure Event Grid](https://docs.microsoft.com/azure/event-grid/concepts).
 
-For detailed information about the Event Grid client library concepts: [Event Grid Client Library](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Messaging.EventGrid.CloudNativeCloudEvents_1.0.0-beta.2/sdk/eventgrid/Azure.Messaging.EventGrid#key-concepts)
+For detailed information about the Event Grid client library concepts: [Event Grid Client Library](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/eventgrid/Azure.Messaging.EventGrid#key-concepts)
 
 ## Examples
 
+### Publish to an Event Grid topic
 ```C# Snippet:CloudNativePublish
 EventGridPublisherClient client = new EventGridPublisherClient(
         new Uri(TestEnvironment.CloudEventTopicHost),
         new AzureKeyCredential(TestEnvironment.CloudEventTopicKey));
 
 var cloudEvent =
-    new CloudEvent 
+    new CloudEvent
     {
+        Id = Guid.NewGuid().ToString(),
         Type = "record",
         Source = new Uri("http://www.contoso.com"),
         Data = "data"
     };
-await client.SendCloudEventAsync(cloudEvent);
+await client.SendCloudNativeCloudEventAsync(cloudEvent);
+```
+
+### Publish to an Event Grid Domain
+When publishing to an Event Grid Domain with CloudEvents, the CloudEvent `source` is used as the domain topic. The Event Grid service doesn't support using an absolute URI for a domain topic, so you would need to do something like the following to integrate with the CloudNative CloudEvents:
+```C# Snippet:CloudNativePublishToDomain
+CloudEvent cloudEvent =
+    new CloudEvent
+    {
+        Type = "record",
+        // Event Grid does not allow absolute URIs as the domain topic
+        Source = new Uri("test", UriKind.Relative),
+        Id = "eventId",
+        Time = DateTimeOffset.Now,
+        Data = new TestPayload("name", 0)
+    };
+
+await client.SendCloudNativeCloudEventAsync(cloudEvent);
 ```
 
 ## Troubleshooting
 
-For troubleshooting information, see the [Event Grid Client Library documentation](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Messaging.EventGrid.CloudNativeCloudEvents_1.0.0-beta.2/sdk/eventgrid/Azure.Messaging.EventGrid#troubleshooting).
+For troubleshooting information, see the [Event Grid Client Library documentation](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/eventgrid/Azure.Messaging.EventGrid#troubleshooting).
 
 ## Next steps
 
-View more [samples](https://github.com/Azure/azure-sdk-for-net/blob/Microsoft.Azure.Messaging.EventGrid.CloudNativeCloudEvents_1.0.0-beta.2/sdk/eventgrid/Microsoft.Azure.Messaging.EventGrid.CloudNativeCloudEvents/tests/Samples) here for common usages of the library.
+View more [samples](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/eventgrid/Microsoft.Azure.Messaging.EventGrid.CloudNativeCloudEvents/tests/Samples) here for common usages of the library.
 
 ## Contributing
 
