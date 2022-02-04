@@ -1,9 +1,9 @@
 <Type Name="ServerDatabaseAdvisorCollection" FullName="Azure.ResourceManager.Sql.ServerDatabaseAdvisorCollection">
-  <TypeSignature Language="C#" Value="public class ServerDatabaseAdvisorCollection : Azure.ResourceManager.Core.ArmCollection, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServerDatabaseAdvisorCollection extends Azure.ResourceManager.Core.ArmCollection implements class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="C#" Value="public class ServerDatabaseAdvisorCollection : Azure.ResourceManager.Core.ArmCollection, System.Collections.Generic.IAsyncEnumerable&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServerDatabaseAdvisorCollection extends Azure.ResourceManager.Core.ArmCollection implements class System.Collections.Generic.IAsyncEnumerable`1&lt;class Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.ServerDatabaseAdvisorCollection" />
-  <TypeSignature Language="VB.NET" Value="Public Class ServerDatabaseAdvisorCollection&#xA;Inherits ArmCollection&#xA;Implements IEnumerable(Of ServerDatabaseAdvisor)" />
-  <TypeSignature Language="F#" Value="type ServerDatabaseAdvisorCollection = class&#xA;    inherit ArmCollection&#xA;    interface seq&lt;ServerDatabaseAdvisor&gt;&#xA;    interface IEnumerable" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServerDatabaseAdvisorCollection&#xA;Inherits ArmCollection&#xA;Implements IAsyncEnumerable(Of ServerDatabaseAdvisor), IEnumerable(Of ServerDatabaseAdvisor)" />
+  <TypeSignature Language="F#" Value="type ServerDatabaseAdvisorCollection = class&#xA;    inherit ArmCollection&#xA;    interface seq&lt;ServerDatabaseAdvisor&gt;&#xA;    interface IEnumerable&#xA;    interface IAsyncEnumerable&lt;ServerDatabaseAdvisor&gt;" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -12,6 +12,9 @@
     <BaseTypeName>Azure.ResourceManager.Core.ArmCollection</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IAsyncEnumerable&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;</InterfaceName>
     </Interface>
@@ -64,6 +67,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="advisorName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="advisorName" /> is null. </exception>
       </Docs>
@@ -92,6 +97,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="advisorName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="advisorName" /> is null. </exception>
       </Docs>
@@ -120,23 +127,25 @@
         <summary> Gets a database advisor. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="advisorName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="advisorName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetAll">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;&gt; GetAll (string expand = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;&gt; GetAll(string expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt; GetAll (string expand = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt; GetAll(string expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerDatabaseAdvisorCollection.GetAll(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAll (Optional expand As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response(Of IReadOnlyList(Of ServerDatabaseAdvisor))" />
-      <MemberSignature Language="F#" Value="abstract member GetAll : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;&gt;&#xA;override this.GetAll : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;&gt;" Usage="serverDatabaseAdvisorCollection.GetAll (expand, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAll (Optional expand As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ServerDatabaseAdvisor)" />
+      <MemberSignature Language="F#" Value="abstract member GetAll : string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;&#xA;override this.GetAll : string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;" Usage="serverDatabaseAdvisorCollection.GetAll (expand, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="expand" Type="System.String" />
@@ -146,23 +155,23 @@
         <param name="expand"> The child resources to include in the response. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Gets a list of database advisors. </summary>
-        <returns>To be added.</returns>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.ServerDatabaseAdvisor" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAllAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;&gt;&gt; GetAllAsync (string expand = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;&gt;&gt; GetAllAsync(string expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt; GetAllAsync (string expand = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt; GetAllAsync(string expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerDatabaseAdvisorCollection.GetAllAsync(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAllAsync (Optional expand As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of IReadOnlyList(Of ServerDatabaseAdvisor)))" />
-      <MemberSignature Language="F#" Value="abstract member GetAllAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;&gt;&gt;&#xA;override this.GetAllAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;&gt;&gt;" Usage="serverDatabaseAdvisorCollection.GetAllAsync (expand, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAllAsync (Optional expand As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ServerDatabaseAdvisor)" />
+      <MemberSignature Language="F#" Value="abstract member GetAllAsync : string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;&#xA;override this.GetAllAsync : string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;" Usage="serverDatabaseAdvisorCollection.GetAllAsync (expand, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;&gt;&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="expand" Type="System.String" />
@@ -172,7 +181,7 @@
         <param name="expand"> The child resources to include in the response. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Gets a list of database advisors. </summary>
-        <returns>To be added.</returns>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.ServerDatabaseAdvisor" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,6 +209,8 @@
         <summary> Gets a database advisor. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="advisorName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="advisorName" /> is null. </exception>
       </Docs>
@@ -228,6 +239,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="advisorName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="advisorName" /> is null. </exception>
       </Docs>
@@ -256,8 +269,37 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="advisorName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="advisorName" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.IAsyncEnumerable&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;.GetAsyncEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IAsyncEnumerator&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt; IAsyncEnumerable&lt;ServerDatabaseAdvisor&gt;.GetAsyncEnumerator (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IAsyncEnumerator`1&lt;class Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt; System.Collections.Generic.IAsyncEnumerable&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;.GetAsyncEnumerator(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerDatabaseAdvisorCollection.System#Collections#Generic#IAsyncEnumerable&lt;Azure#ResourceManager#Sql#ServerDatabaseAdvisor&gt;#GetAsyncEnumerator(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Function GetAsyncEnumerator (cancellationToken As CancellationToken) As IAsyncEnumerator(Of ServerDatabaseAdvisor) Implements IAsyncEnumerable(Of ServerDatabaseAdvisor).GetAsyncEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.IAsyncEnumerable&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;.GetAsyncEnumerator : System.Threading.CancellationToken -&gt; System.Collections.Generic.IAsyncEnumerator&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;&#xA;override this.System.Collections.Generic.IAsyncEnumerable&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;.GetAsyncEnumerator : System.Threading.CancellationToken -&gt; System.Collections.Generic.IAsyncEnumerator&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;" Usage="serverDatabaseAdvisorCollection.System.Collections.Generic.IAsyncEnumerable&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;.GetAsyncEnumerator cancellationToken" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IAsyncEnumerable`1.GetAsyncEnumerator(System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IAsyncEnumerator&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> that may be used to cancel the asynchronous iteration.</param>
+        <summary>Returns an enumerator that iterates asynchronously through the collection.</summary>
+        <returns>An enumerator that can be used to iterate asynchronously through the collection.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Sql.ServerDatabaseAdvisor&gt;.GetEnumerator">
@@ -305,26 +347,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.ServerDatabaseAdvisorCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Sql.ServerDatabaseAdvisorCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

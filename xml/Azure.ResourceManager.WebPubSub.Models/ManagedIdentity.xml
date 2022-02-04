@@ -100,18 +100,18 @@
       </Docs>
     </Member>
     <Member MemberName="UserAssignedIdentities">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,Azure.ResourceManager.Resources.Models.UserAssignedIdentity&gt; UserAssignedIdentities { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class Azure.ResourceManager.Resources.Models.UserAssignedIdentity&gt; UserAssignedIdentities" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,Azure.ResourceManager.Models.UserAssignedIdentity&gt; UserAssignedIdentities { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class Azure.ResourceManager.Models.UserAssignedIdentity&gt; UserAssignedIdentities" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.WebPubSub.Models.ManagedIdentity.UserAssignedIdentities" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserAssignedIdentities As IDictionary(Of String, UserAssignedIdentity)" />
-      <MemberSignature Language="F#" Value="member this.UserAssignedIdentities : System.Collections.Generic.IDictionary&lt;string, Azure.ResourceManager.Resources.Models.UserAssignedIdentity&gt;" Usage="Azure.ResourceManager.WebPubSub.Models.ManagedIdentity.UserAssignedIdentities" />
+      <MemberSignature Language="F#" Value="member this.UserAssignedIdentities : System.Collections.Generic.IDictionary&lt;string, Azure.ResourceManager.Models.UserAssignedIdentity&gt;" Usage="Azure.ResourceManager.WebPubSub.Models.ManagedIdentity.UserAssignedIdentities" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,Azure.ResourceManager.Resources.Models.UserAssignedIdentity&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,Azure.ResourceManager.Models.UserAssignedIdentity&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Get or set the user assigned identities. </summary>

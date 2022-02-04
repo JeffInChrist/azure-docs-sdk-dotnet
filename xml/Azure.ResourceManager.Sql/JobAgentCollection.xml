@@ -44,11 +44,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.JobAgentCreateOrUpdateOperation CreateOrUpdate (string jobAgentName, Azure.ResourceManager.Sql.JobAgentData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.JobAgentCreateOrUpdateOperation CreateOrUpdate(string jobAgentName, class Azure.ResourceManager.Sql.JobAgentData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.JobAgentCollection.CreateOrUpdate(System.String,Azure.ResourceManager.Sql.JobAgentData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (jobAgentName As String, parameters As JobAgentData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As JobAgentCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.ResourceManager.Sql.JobAgentData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.JobAgentCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : string * Azure.ResourceManager.Sql.JobAgentData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.JobAgentCreateOrUpdateOperation" Usage="jobAgentCollection.CreateOrUpdate (jobAgentName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.JobAgentCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string jobAgentName, Azure.ResourceManager.Sql.JobAgentData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.JobAgentCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string jobAgentName, class Azure.ResourceManager.Sql.JobAgentData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.JobAgentCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Sql.JobAgentData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, jobAgentName As String, parameters As JobAgentData, Optional cancellationToken As CancellationToken = Nothing) As JobAgentCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Sql.JobAgentData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.JobAgentCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Sql.JobAgentData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.JobAgentCreateOrUpdateOperation" Usage="jobAgentCollection.CreateOrUpdate (waitForCompletion, jobAgentName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
@@ -58,29 +58,31 @@
         <ReturnType>Azure.ResourceManager.Sql.Models.JobAgentCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="jobAgentName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.JobAgentData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="jobAgentName"> The name of the job agent to be created or updated. </param>
         <param name="parameters"> The requested job agent resource state. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates a job agent. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="jobAgentName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="jobAgentName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.JobAgentCreateOrUpdateOperation&gt; CreateOrUpdateAsync (string jobAgentName, Azure.ResourceManager.Sql.JobAgentData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.JobAgentCreateOrUpdateOperation&gt; CreateOrUpdateAsync(string jobAgentName, class Azure.ResourceManager.Sql.JobAgentData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.JobAgentCollection.CreateOrUpdateAsync(System.String,Azure.ResourceManager.Sql.JobAgentData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (jobAgentName As String, parameters As JobAgentData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of JobAgentCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.ResourceManager.Sql.JobAgentData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.JobAgentCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.ResourceManager.Sql.JobAgentData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.JobAgentCreateOrUpdateOperation&gt;" Usage="jobAgentCollection.CreateOrUpdateAsync (jobAgentName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.JobAgentCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string jobAgentName, Azure.ResourceManager.Sql.JobAgentData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.JobAgentCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string jobAgentName, class Azure.ResourceManager.Sql.JobAgentData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.JobAgentCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Sql.JobAgentData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, jobAgentName As String, parameters As JobAgentData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of JobAgentCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Sql.JobAgentData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.JobAgentCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Sql.JobAgentData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.JobAgentCreateOrUpdateOperation&gt;" Usage="jobAgentCollection.CreateOrUpdateAsync (waitForCompletion, jobAgentName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
@@ -90,19 +92,21 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.JobAgentCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="jobAgentName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.JobAgentData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="jobAgentName"> The name of the job agent to be created or updated. </param>
         <param name="parameters"> The requested job agent resource state. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates a job agent. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="jobAgentName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="jobAgentName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -131,6 +135,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="jobAgentName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="jobAgentName" /> is null. </exception>
       </Docs>
@@ -159,6 +165,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="jobAgentName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="jobAgentName" /> is null. </exception>
       </Docs>
@@ -187,6 +195,8 @@
         <summary> Gets a job agent. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="jobAgentName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="jobAgentName" /> is null. </exception>
       </Docs>
@@ -263,6 +273,8 @@
         <summary> Gets a job agent. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="jobAgentName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="jobAgentName" /> is null. </exception>
       </Docs>
@@ -291,6 +303,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="jobAgentName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="jobAgentName" /> is null. </exception>
       </Docs>
@@ -319,6 +333,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="jobAgentName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="jobAgentName" /> is null. </exception>
       </Docs>
@@ -395,26 +411,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.JobAgentCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Sql.JobAgentCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
