@@ -44,11 +44,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.SyncMemberCreateOrUpdateOperation CreateOrUpdate (string syncMemberName, Azure.ResourceManager.Sql.SyncMemberData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.SyncMemberCreateOrUpdateOperation CreateOrUpdate(string syncMemberName, class Azure.ResourceManager.Sql.SyncMemberData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncMemberCollection.CreateOrUpdate(System.String,Azure.ResourceManager.Sql.SyncMemberData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (syncMemberName As String, parameters As SyncMemberData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As SyncMemberCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.ResourceManager.Sql.SyncMemberData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.SyncMemberCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : string * Azure.ResourceManager.Sql.SyncMemberData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.SyncMemberCreateOrUpdateOperation" Usage="syncMemberCollection.CreateOrUpdate (syncMemberName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.SyncMemberCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string syncMemberName, Azure.ResourceManager.Sql.SyncMemberData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.SyncMemberCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string syncMemberName, class Azure.ResourceManager.Sql.SyncMemberData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncMemberCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Sql.SyncMemberData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, syncMemberName As String, parameters As SyncMemberData, Optional cancellationToken As CancellationToken = Nothing) As SyncMemberCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Sql.SyncMemberData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.SyncMemberCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Sql.SyncMemberData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.SyncMemberCreateOrUpdateOperation" Usage="syncMemberCollection.CreateOrUpdate (waitForCompletion, syncMemberName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
@@ -58,29 +58,31 @@
         <ReturnType>Azure.ResourceManager.Sql.Models.SyncMemberCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="syncMemberName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.SyncMemberData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="syncMemberName"> The name of the sync member. </param>
         <param name="parameters"> The requested sync member resource state. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates a sync member. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="syncMemberName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="syncMemberName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.SyncMemberCreateOrUpdateOperation&gt; CreateOrUpdateAsync (string syncMemberName, Azure.ResourceManager.Sql.SyncMemberData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.SyncMemberCreateOrUpdateOperation&gt; CreateOrUpdateAsync(string syncMemberName, class Azure.ResourceManager.Sql.SyncMemberData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncMemberCollection.CreateOrUpdateAsync(System.String,Azure.ResourceManager.Sql.SyncMemberData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (syncMemberName As String, parameters As SyncMemberData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SyncMemberCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.ResourceManager.Sql.SyncMemberData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.SyncMemberCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.ResourceManager.Sql.SyncMemberData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.SyncMemberCreateOrUpdateOperation&gt;" Usage="syncMemberCollection.CreateOrUpdateAsync (syncMemberName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.SyncMemberCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string syncMemberName, Azure.ResourceManager.Sql.SyncMemberData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.SyncMemberCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string syncMemberName, class Azure.ResourceManager.Sql.SyncMemberData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncMemberCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Sql.SyncMemberData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, syncMemberName As String, parameters As SyncMemberData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SyncMemberCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Sql.SyncMemberData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.SyncMemberCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Sql.SyncMemberData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.SyncMemberCreateOrUpdateOperation&gt;" Usage="syncMemberCollection.CreateOrUpdateAsync (waitForCompletion, syncMemberName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
@@ -90,19 +92,21 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.SyncMemberCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="syncMemberName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.SyncMemberData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="syncMemberName"> The name of the sync member. </param>
         <param name="parameters"> The requested sync member resource state. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates a sync member. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="syncMemberName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="syncMemberName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -131,6 +135,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="syncMemberName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="syncMemberName" /> is null. </exception>
       </Docs>
@@ -159,6 +165,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="syncMemberName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="syncMemberName" /> is null. </exception>
       </Docs>
@@ -187,6 +195,8 @@
         <summary> Gets a sync member. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="syncMemberName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="syncMemberName" /> is null. </exception>
       </Docs>
@@ -263,6 +273,8 @@
         <summary> Gets a sync member. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="syncMemberName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="syncMemberName" /> is null. </exception>
       </Docs>
@@ -291,6 +303,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="syncMemberName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="syncMemberName" /> is null. </exception>
       </Docs>
@@ -319,6 +333,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="syncMemberName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="syncMemberName" /> is null. </exception>
       </Docs>
@@ -395,26 +411,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SyncMemberCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Sql.SyncMemberCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

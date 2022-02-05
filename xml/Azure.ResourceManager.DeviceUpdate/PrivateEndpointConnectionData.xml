@@ -1,6 +1,6 @@
 <Type Name="PrivateEndpointConnectionData" FullName="Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionData">
-  <TypeSignature Language="C#" Value="public class PrivateEndpointConnectionData : Azure.ResourceManager.DeviceUpdate.Models.Resource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrivateEndpointConnectionData extends Azure.ResourceManager.DeviceUpdate.Models.Resource" />
+  <TypeSignature Language="C#" Value="public class PrivateEndpointConnectionData : Azure.ResourceManager.Models.Resource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrivateEndpointConnectionData extends Azure.ResourceManager.Models.Resource" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionData" />
   <TypeSignature Language="VB.NET" Value="Public Class PrivateEndpointConnectionData&#xA;Inherits Resource" />
   <TypeSignature Language="F#" Value="type PrivateEndpointConnectionData = class&#xA;    inherit Resource" />
@@ -9,7 +9,7 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.DeviceUpdate.Models.Resource</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.Models.Resource</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>

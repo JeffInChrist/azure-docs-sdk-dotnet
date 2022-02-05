@@ -44,11 +44,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.JobTargetGroupCreateOrUpdateOperation CreateOrUpdate (string targetGroupName, Azure.ResourceManager.Sql.JobTargetGroupData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.JobTargetGroupCreateOrUpdateOperation CreateOrUpdate(string targetGroupName, class Azure.ResourceManager.Sql.JobTargetGroupData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.JobTargetGroupCollection.CreateOrUpdate(System.String,Azure.ResourceManager.Sql.JobTargetGroupData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (targetGroupName As String, parameters As JobTargetGroupData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As JobTargetGroupCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.ResourceManager.Sql.JobTargetGroupData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.JobTargetGroupCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : string * Azure.ResourceManager.Sql.JobTargetGroupData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.JobTargetGroupCreateOrUpdateOperation" Usage="jobTargetGroupCollection.CreateOrUpdate (targetGroupName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.JobTargetGroupCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string targetGroupName, Azure.ResourceManager.Sql.JobTargetGroupData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.JobTargetGroupCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string targetGroupName, class Azure.ResourceManager.Sql.JobTargetGroupData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.JobTargetGroupCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Sql.JobTargetGroupData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, targetGroupName As String, parameters As JobTargetGroupData, Optional cancellationToken As CancellationToken = Nothing) As JobTargetGroupCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Sql.JobTargetGroupData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.JobTargetGroupCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Sql.JobTargetGroupData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.JobTargetGroupCreateOrUpdateOperation" Usage="jobTargetGroupCollection.CreateOrUpdate (waitForCompletion, targetGroupName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
@@ -58,29 +58,31 @@
         <ReturnType>Azure.ResourceManager.Sql.Models.JobTargetGroupCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="targetGroupName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.JobTargetGroupData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="targetGroupName"> The name of the target group. </param>
         <param name="parameters"> The requested state of the target group. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates a target group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="targetGroupName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="targetGroupName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.JobTargetGroupCreateOrUpdateOperation&gt; CreateOrUpdateAsync (string targetGroupName, Azure.ResourceManager.Sql.JobTargetGroupData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.JobTargetGroupCreateOrUpdateOperation&gt; CreateOrUpdateAsync(string targetGroupName, class Azure.ResourceManager.Sql.JobTargetGroupData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.JobTargetGroupCollection.CreateOrUpdateAsync(System.String,Azure.ResourceManager.Sql.JobTargetGroupData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (targetGroupName As String, parameters As JobTargetGroupData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of JobTargetGroupCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.ResourceManager.Sql.JobTargetGroupData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.JobTargetGroupCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.ResourceManager.Sql.JobTargetGroupData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.JobTargetGroupCreateOrUpdateOperation&gt;" Usage="jobTargetGroupCollection.CreateOrUpdateAsync (targetGroupName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.JobTargetGroupCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string targetGroupName, Azure.ResourceManager.Sql.JobTargetGroupData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.JobTargetGroupCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string targetGroupName, class Azure.ResourceManager.Sql.JobTargetGroupData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.JobTargetGroupCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Sql.JobTargetGroupData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, targetGroupName As String, parameters As JobTargetGroupData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of JobTargetGroupCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Sql.JobTargetGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.JobTargetGroupCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Sql.JobTargetGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.JobTargetGroupCreateOrUpdateOperation&gt;" Usage="jobTargetGroupCollection.CreateOrUpdateAsync (waitForCompletion, targetGroupName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
@@ -90,19 +92,21 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.JobTargetGroupCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="targetGroupName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.JobTargetGroupData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="targetGroupName"> The name of the target group. </param>
         <param name="parameters"> The requested state of the target group. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates a target group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="targetGroupName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="targetGroupName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -131,6 +135,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="targetGroupName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="targetGroupName" /> is null. </exception>
       </Docs>
@@ -159,6 +165,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="targetGroupName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="targetGroupName" /> is null. </exception>
       </Docs>
@@ -187,6 +195,8 @@
         <summary> Gets a target group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="targetGroupName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="targetGroupName" /> is null. </exception>
       </Docs>
@@ -263,6 +273,8 @@
         <summary> Gets a target group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="targetGroupName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="targetGroupName" /> is null. </exception>
       </Docs>
@@ -291,6 +303,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="targetGroupName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="targetGroupName" /> is null. </exception>
       </Docs>
@@ -319,6 +333,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="targetGroupName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="targetGroupName" /> is null. </exception>
       </Docs>
@@ -395,26 +411,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.JobTargetGroupCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Sql.JobTargetGroupCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

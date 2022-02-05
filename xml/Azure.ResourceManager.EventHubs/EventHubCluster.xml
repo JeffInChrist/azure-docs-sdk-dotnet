@@ -90,18 +90,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateResourceIdentifier">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ResourceIdentifier CreateResourceIdentifier (string subscriptionId, string resourceGroupName, string clusterName);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ResourceIdentifier CreateResourceIdentifier(string subscriptionId, string resourceGroupName, string clusterName) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Core.ResourceIdentifier CreateResourceIdentifier (string subscriptionId, string resourceGroupName, string clusterName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Core.ResourceIdentifier CreateResourceIdentifier(string subscriptionId, string resourceGroupName, string clusterName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.EventHubCluster.CreateResourceIdentifier(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateResourceIdentifier (subscriptionId As String, resourceGroupName As String, clusterName As String) As ResourceIdentifier" />
-      <MemberSignature Language="F#" Value="static member CreateResourceIdentifier : string * string * string -&gt; Azure.ResourceManager.ResourceIdentifier" Usage="Azure.ResourceManager.EventHubs.EventHubCluster.CreateResourceIdentifier (subscriptionId, resourceGroupName, clusterName)" />
+      <MemberSignature Language="F#" Value="static member CreateResourceIdentifier : string * string * string -&gt; Azure.Core.ResourceIdentifier" Usage="Azure.ResourceManager.EventHubs.EventHubCluster.CreateResourceIdentifier (subscriptionId, resourceGroupName, clusterName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceIdentifier</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscriptionId" Type="System.String" />
@@ -139,10 +139,10 @@
       </Docs>
     </Member>
     <Member MemberName="Delete">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.EventHubs.Models.EventHubClusterDeleteOperation Delete (bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.EventHubs.Models.EventHubClusterDeleteOperation Delete (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.EventHubs.Models.EventHubClusterDeleteOperation Delete(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.EventHubCluster.Delete(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As EventHubClusterDeleteOperation" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As EventHubClusterDeleteOperation" />
       <MemberSignature Language="F#" Value="abstract member Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.EventHubs.Models.EventHubClusterDeleteOperation&#xA;override this.Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.EventHubs.Models.EventHubClusterDeleteOperation" Usage="eventHubCluster.Delete (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -165,10 +165,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.EventHubClusterDeleteOperation&gt; DeleteAsync (bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.EventHubClusterDeleteOperation&gt; DeleteAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.EventHubs.Models.EventHubClusterDeleteOperation&gt; DeleteAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.EventHubCluster.DeleteAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of EventHubClusterDeleteOperation)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of EventHubClusterDeleteOperation)" />
       <MemberSignature Language="F#" Value="abstract member DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.EventHubClusterDeleteOperation&gt;&#xA;override this.DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.EventHubClusterDeleteOperation&gt;" Usage="eventHubCluster.DeleteAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -239,18 +239,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetAvailableLocations">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt; GetAvailableLocations (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.Resources.Models.Location&gt; GetAvailableLocations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt; GetAvailableLocations (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt; GetAvailableLocations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.EventHubCluster.GetAvailableLocations(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocations (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of Location)" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&#xA;override this.GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;" Usage="eventHubCluster.GetAvailableLocations cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocations (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of AzureLocation)" />
+      <MemberSignature Language="F#" Value="abstract member GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;&#xA;override this.GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;" Usage="eventHubCluster.GetAvailableLocations cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -263,18 +263,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetAvailableLocationsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt; GetAvailableLocationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.Resources.Models.Location&gt;&gt; GetAvailableLocationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.EventHubCluster.GetAvailableLocationsAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocationsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of Location))" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;&#xA;override this.GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;" Usage="eventHubCluster.GetAvailableLocationsAsync cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocationsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of AzureLocation))" />
+      <MemberSignature Language="F#" Value="abstract member GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;&#xA;override this.GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;" Usage="eventHubCluster.GetAvailableLocationsAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -335,18 +335,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetNamespaces">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Resources.Models.SubResource&gt;&gt; GetNamespaces (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.ResourceManager.Resources.Models.SubResource&gt;&gt; GetNamespaces(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Resources.Models.SubResource&gt; GetNamespaces (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Resources.Models.SubResource&gt; GetNamespaces(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.EventHubCluster.GetNamespaces(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNamespaces (Optional cancellationToken As CancellationToken = Nothing) As Response(Of IReadOnlyList(Of SubResource))" />
-      <MemberSignature Language="F#" Value="abstract member GetNamespaces : System.Threading.CancellationToken -&gt; Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Resources.Models.SubResource&gt;&gt;&#xA;override this.GetNamespaces : System.Threading.CancellationToken -&gt; Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Resources.Models.SubResource&gt;&gt;" Usage="eventHubCluster.GetNamespaces cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNamespaces (Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of SubResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetNamespaces : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Resources.Models.SubResource&gt;&#xA;override this.GetNamespaces : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Resources.Models.SubResource&gt;" Usage="eventHubCluster.GetNamespaces cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Resources.Models.SubResource&gt;&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Resources.Models.SubResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -354,23 +354,23 @@
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> List all Event Hubs Namespace IDs in an Event Hubs Dedicated Cluster. </summary>
-        <returns>To be added.</returns>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Resources.Models.SubResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNamespacesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Resources.Models.SubResource&gt;&gt;&gt; GetNamespacesAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.ResourceManager.Resources.Models.SubResource&gt;&gt;&gt; GetNamespacesAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Resources.Models.SubResource&gt; GetNamespacesAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Resources.Models.SubResource&gt; GetNamespacesAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.EventHubCluster.GetNamespacesAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNamespacesAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of IReadOnlyList(Of SubResource)))" />
-      <MemberSignature Language="F#" Value="abstract member GetNamespacesAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Resources.Models.SubResource&gt;&gt;&gt;&#xA;override this.GetNamespacesAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Resources.Models.SubResource&gt;&gt;&gt;" Usage="eventHubCluster.GetNamespacesAsync cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNamespacesAsync (Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of SubResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetNamespacesAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Resources.Models.SubResource&gt;&#xA;override this.GetNamespacesAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Resources.Models.SubResource&gt;" Usage="eventHubCluster.GetNamespacesAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.Resources.Models.SubResource&gt;&gt;&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Resources.Models.SubResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -378,7 +378,7 @@
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> List all Event Hubs Namespace IDs in an Event Hubs Dedicated Cluster. </summary>
-        <returns>To be added.</returns>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Resources.Models.SubResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -511,18 +511,18 @@
       </Docs>
     </Member>
     <Member MemberName="ResourceType">
-      <MemberSignature Language="C#" Value="public static readonly Azure.ResourceManager.ResourceType ResourceType;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Azure.ResourceManager.ResourceType ResourceType" />
+      <MemberSignature Language="C#" Value="public static readonly Azure.Core.ResourceType ResourceType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype Azure.Core.ResourceType ResourceType" />
       <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.EventHubs.EventHubCluster.ResourceType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ResourceType As ResourceType " />
-      <MemberSignature Language="F#" Value=" staticval mutable ResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.EventHubs.EventHubCluster.ResourceType" />
+      <MemberSignature Language="F#" Value=" staticval mutable ResourceType : Azure.Core.ResourceType" Usage="Azure.ResourceManager.EventHubs.EventHubCluster.ResourceType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
+        <ReturnType>Azure.Core.ResourceType</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Gets the resource type for the operations. </summary>
@@ -582,11 +582,11 @@
       </Docs>
     </Member>
     <Member MemberName="Update">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.EventHubs.Models.EventHubClusterUpdateOperation Update (Azure.ResourceManager.EventHubs.EventHubClusterData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.EventHubs.Models.EventHubClusterUpdateOperation Update(class Azure.ResourceManager.EventHubs.EventHubClusterData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.EventHubCluster.Update(Azure.ResourceManager.EventHubs.EventHubClusterData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (parameters As EventHubClusterData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As EventHubClusterUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member Update : Azure.ResourceManager.EventHubs.EventHubClusterData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.EventHubs.Models.EventHubClusterUpdateOperation&#xA;override this.Update : Azure.ResourceManager.EventHubs.EventHubClusterData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.EventHubs.Models.EventHubClusterUpdateOperation" Usage="eventHubCluster.Update (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.EventHubs.Models.EventHubClusterUpdateOperation Update (bool waitForCompletion, Azure.ResourceManager.EventHubs.EventHubClusterData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.EventHubs.Models.EventHubClusterUpdateOperation Update(bool waitForCompletion, class Azure.ResourceManager.EventHubs.EventHubClusterData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.EventHubCluster.Update(System.Boolean,Azure.ResourceManager.EventHubs.EventHubClusterData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (waitForCompletion As Boolean, parameters As EventHubClusterData, Optional cancellationToken As CancellationToken = Nothing) As EventHubClusterUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member Update : bool * Azure.ResourceManager.EventHubs.EventHubClusterData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.EventHubs.Models.EventHubClusterUpdateOperation&#xA;override this.Update : bool * Azure.ResourceManager.EventHubs.EventHubClusterData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.EventHubs.Models.EventHubClusterUpdateOperation" Usage="eventHubCluster.Update (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
@@ -596,13 +596,13 @@
         <ReturnType>Azure.ResourceManager.EventHubs.Models.EventHubClusterUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.EventHubs.EventHubClusterData" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.EventHubs.EventHubClusterData" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> The properties of the Event Hubs Cluster which should be updated. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> The properties of the Event Hubs Cluster which should be updated. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Modifies mutable properties on the Event Hubs Cluster. This operation is idempotent. </summary>
         <returns>To be added.</returns>
@@ -612,11 +612,11 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.EventHubClusterUpdateOperation&gt; UpdateAsync (Azure.ResourceManager.EventHubs.EventHubClusterData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.EventHubs.Models.EventHubClusterUpdateOperation&gt; UpdateAsync(class Azure.ResourceManager.EventHubs.EventHubClusterData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.EventHubCluster.UpdateAsync(Azure.ResourceManager.EventHubs.EventHubClusterData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (parameters As EventHubClusterData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of EventHubClusterUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member UpdateAsync : Azure.ResourceManager.EventHubs.EventHubClusterData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.EventHubClusterUpdateOperation&gt;&#xA;override this.UpdateAsync : Azure.ResourceManager.EventHubs.EventHubClusterData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.EventHubClusterUpdateOperation&gt;" Usage="eventHubCluster.UpdateAsync (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.EventHubClusterUpdateOperation&gt; UpdateAsync (bool waitForCompletion, Azure.ResourceManager.EventHubs.EventHubClusterData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.EventHubs.Models.EventHubClusterUpdateOperation&gt; UpdateAsync(bool waitForCompletion, class Azure.ResourceManager.EventHubs.EventHubClusterData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.EventHubCluster.UpdateAsync(System.Boolean,Azure.ResourceManager.EventHubs.EventHubClusterData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (waitForCompletion As Boolean, parameters As EventHubClusterData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of EventHubClusterUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateAsync : bool * Azure.ResourceManager.EventHubs.EventHubClusterData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.EventHubClusterUpdateOperation&gt;&#xA;override this.UpdateAsync : bool * Azure.ResourceManager.EventHubs.EventHubClusterData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.EventHubClusterUpdateOperation&gt;" Usage="eventHubCluster.UpdateAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
@@ -626,39 +626,19 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.EventHubClusterUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.EventHubs.EventHubClusterData" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.EventHubs.EventHubClusterData" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> The properties of the Event Hubs Cluster which should be updated. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> The properties of the Event Hubs Cluster which should be updated. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Modifies mutable properties on the Event Hubs Cluster. This operation is idempotent. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="parameters" /> is null. </exception>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.EventHubs.EventHubCluster.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.EventHubs.EventHubCluster.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for the operations. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

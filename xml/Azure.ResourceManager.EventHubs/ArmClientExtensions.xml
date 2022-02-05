@@ -18,11 +18,11 @@
   </Docs>
   <Members>
     <Member MemberName="GetConsumerGroup">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EventHubs.ConsumerGroup GetConsumerGroup (this Azure.ResourceManager.ArmClient armClient, Azure.ResourceManager.ResourceIdentifier id);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EventHubs.ConsumerGroup GetConsumerGroup(class Azure.ResourceManager.ArmClient armClient, class Azure.ResourceManager.ResourceIdentifier id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ArmClientExtensions.GetConsumerGroup(Azure.ResourceManager.ArmClient,Azure.ResourceManager.ResourceIdentifier)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EventHubs.ConsumerGroup GetConsumerGroup (this Azure.ResourceManager.ArmClient armClient, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EventHubs.ConsumerGroup GetConsumerGroup(class Azure.ResourceManager.ArmClient armClient, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ArmClientExtensions.GetConsumerGroup(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetConsumerGroup (armClient As ArmClient, id As ResourceIdentifier) As ConsumerGroup" />
-      <MemberSignature Language="F#" Value="static member GetConsumerGroup : Azure.ResourceManager.ArmClient * Azure.ResourceManager.ResourceIdentifier -&gt; Azure.ResourceManager.EventHubs.ConsumerGroup" Usage="Azure.ResourceManager.EventHubs.ArmClientExtensions.GetConsumerGroup (armClient, id)" />
+      <MemberSignature Language="F#" Value="static member GetConsumerGroup : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.EventHubs.ConsumerGroup" Usage="Azure.ResourceManager.EventHubs.ArmClientExtensions.GetConsumerGroup (armClient, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
@@ -33,7 +33,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="armClient" Type="Azure.ResourceManager.ArmClient" RefType="this" />
-        <Parameter Name="id" Type="Azure.ResourceManager.ResourceIdentifier" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
         <param name="armClient"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
@@ -44,11 +44,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetDisasterRecovery">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EventHubs.DisasterRecovery GetDisasterRecovery (this Azure.ResourceManager.ArmClient armClient, Azure.ResourceManager.ResourceIdentifier id);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EventHubs.DisasterRecovery GetDisasterRecovery(class Azure.ResourceManager.ArmClient armClient, class Azure.ResourceManager.ResourceIdentifier id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ArmClientExtensions.GetDisasterRecovery(Azure.ResourceManager.ArmClient,Azure.ResourceManager.ResourceIdentifier)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EventHubs.DisasterRecovery GetDisasterRecovery (this Azure.ResourceManager.ArmClient armClient, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EventHubs.DisasterRecovery GetDisasterRecovery(class Azure.ResourceManager.ArmClient armClient, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ArmClientExtensions.GetDisasterRecovery(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDisasterRecovery (armClient As ArmClient, id As ResourceIdentifier) As DisasterRecovery" />
-      <MemberSignature Language="F#" Value="static member GetDisasterRecovery : Azure.ResourceManager.ArmClient * Azure.ResourceManager.ResourceIdentifier -&gt; Azure.ResourceManager.EventHubs.DisasterRecovery" Usage="Azure.ResourceManager.EventHubs.ArmClientExtensions.GetDisasterRecovery (armClient, id)" />
+      <MemberSignature Language="F#" Value="static member GetDisasterRecovery : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.EventHubs.DisasterRecovery" Usage="Azure.ResourceManager.EventHubs.ArmClientExtensions.GetDisasterRecovery (armClient, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
@@ -59,7 +59,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="armClient" Type="Azure.ResourceManager.ArmClient" RefType="this" />
-        <Parameter Name="id" Type="Azure.ResourceManager.ResourceIdentifier" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
         <param name="armClient"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
@@ -70,11 +70,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetDisasterRecoveryAuthorizationRule">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EventHubs.DisasterRecoveryAuthorizationRule GetDisasterRecoveryAuthorizationRule (this Azure.ResourceManager.ArmClient armClient, Azure.ResourceManager.ResourceIdentifier id);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EventHubs.DisasterRecoveryAuthorizationRule GetDisasterRecoveryAuthorizationRule(class Azure.ResourceManager.ArmClient armClient, class Azure.ResourceManager.ResourceIdentifier id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ArmClientExtensions.GetDisasterRecoveryAuthorizationRule(Azure.ResourceManager.ArmClient,Azure.ResourceManager.ResourceIdentifier)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EventHubs.DisasterRecoveryAuthorizationRule GetDisasterRecoveryAuthorizationRule (this Azure.ResourceManager.ArmClient armClient, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EventHubs.DisasterRecoveryAuthorizationRule GetDisasterRecoveryAuthorizationRule(class Azure.ResourceManager.ArmClient armClient, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ArmClientExtensions.GetDisasterRecoveryAuthorizationRule(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDisasterRecoveryAuthorizationRule (armClient As ArmClient, id As ResourceIdentifier) As DisasterRecoveryAuthorizationRule" />
-      <MemberSignature Language="F#" Value="static member GetDisasterRecoveryAuthorizationRule : Azure.ResourceManager.ArmClient * Azure.ResourceManager.ResourceIdentifier -&gt; Azure.ResourceManager.EventHubs.DisasterRecoveryAuthorizationRule" Usage="Azure.ResourceManager.EventHubs.ArmClientExtensions.GetDisasterRecoveryAuthorizationRule (armClient, id)" />
+      <MemberSignature Language="F#" Value="static member GetDisasterRecoveryAuthorizationRule : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.EventHubs.DisasterRecoveryAuthorizationRule" Usage="Azure.ResourceManager.EventHubs.ArmClientExtensions.GetDisasterRecoveryAuthorizationRule (armClient, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
@@ -85,7 +85,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="armClient" Type="Azure.ResourceManager.ArmClient" RefType="this" />
-        <Parameter Name="id" Type="Azure.ResourceManager.ResourceIdentifier" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
         <param name="armClient"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
@@ -96,11 +96,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetEventHub">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EventHubs.EventHub GetEventHub (this Azure.ResourceManager.ArmClient armClient, Azure.ResourceManager.ResourceIdentifier id);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EventHubs.EventHub GetEventHub(class Azure.ResourceManager.ArmClient armClient, class Azure.ResourceManager.ResourceIdentifier id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ArmClientExtensions.GetEventHub(Azure.ResourceManager.ArmClient,Azure.ResourceManager.ResourceIdentifier)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EventHubs.EventHub GetEventHub (this Azure.ResourceManager.ArmClient armClient, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EventHubs.EventHub GetEventHub(class Azure.ResourceManager.ArmClient armClient, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ArmClientExtensions.GetEventHub(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetEventHub (armClient As ArmClient, id As ResourceIdentifier) As EventHub" />
-      <MemberSignature Language="F#" Value="static member GetEventHub : Azure.ResourceManager.ArmClient * Azure.ResourceManager.ResourceIdentifier -&gt; Azure.ResourceManager.EventHubs.EventHub" Usage="Azure.ResourceManager.EventHubs.ArmClientExtensions.GetEventHub (armClient, id)" />
+      <MemberSignature Language="F#" Value="static member GetEventHub : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.EventHubs.EventHub" Usage="Azure.ResourceManager.EventHubs.ArmClientExtensions.GetEventHub (armClient, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
@@ -111,7 +111,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="armClient" Type="Azure.ResourceManager.ArmClient" RefType="this" />
-        <Parameter Name="id" Type="Azure.ResourceManager.ResourceIdentifier" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
         <param name="armClient"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
@@ -122,11 +122,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetEventHubAuthorizationRule">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EventHubs.EventHubAuthorizationRule GetEventHubAuthorizationRule (this Azure.ResourceManager.ArmClient armClient, Azure.ResourceManager.ResourceIdentifier id);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EventHubs.EventHubAuthorizationRule GetEventHubAuthorizationRule(class Azure.ResourceManager.ArmClient armClient, class Azure.ResourceManager.ResourceIdentifier id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ArmClientExtensions.GetEventHubAuthorizationRule(Azure.ResourceManager.ArmClient,Azure.ResourceManager.ResourceIdentifier)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EventHubs.EventHubAuthorizationRule GetEventHubAuthorizationRule (this Azure.ResourceManager.ArmClient armClient, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EventHubs.EventHubAuthorizationRule GetEventHubAuthorizationRule(class Azure.ResourceManager.ArmClient armClient, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ArmClientExtensions.GetEventHubAuthorizationRule(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetEventHubAuthorizationRule (armClient As ArmClient, id As ResourceIdentifier) As EventHubAuthorizationRule" />
-      <MemberSignature Language="F#" Value="static member GetEventHubAuthorizationRule : Azure.ResourceManager.ArmClient * Azure.ResourceManager.ResourceIdentifier -&gt; Azure.ResourceManager.EventHubs.EventHubAuthorizationRule" Usage="Azure.ResourceManager.EventHubs.ArmClientExtensions.GetEventHubAuthorizationRule (armClient, id)" />
+      <MemberSignature Language="F#" Value="static member GetEventHubAuthorizationRule : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.EventHubs.EventHubAuthorizationRule" Usage="Azure.ResourceManager.EventHubs.ArmClientExtensions.GetEventHubAuthorizationRule (armClient, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
@@ -137,7 +137,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="armClient" Type="Azure.ResourceManager.ArmClient" RefType="this" />
-        <Parameter Name="id" Type="Azure.ResourceManager.ResourceIdentifier" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
         <param name="armClient"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
@@ -148,11 +148,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetEventHubCluster">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EventHubs.EventHubCluster GetEventHubCluster (this Azure.ResourceManager.ArmClient armClient, Azure.ResourceManager.ResourceIdentifier id);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EventHubs.EventHubCluster GetEventHubCluster(class Azure.ResourceManager.ArmClient armClient, class Azure.ResourceManager.ResourceIdentifier id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ArmClientExtensions.GetEventHubCluster(Azure.ResourceManager.ArmClient,Azure.ResourceManager.ResourceIdentifier)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EventHubs.EventHubCluster GetEventHubCluster (this Azure.ResourceManager.ArmClient armClient, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EventHubs.EventHubCluster GetEventHubCluster(class Azure.ResourceManager.ArmClient armClient, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ArmClientExtensions.GetEventHubCluster(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetEventHubCluster (armClient As ArmClient, id As ResourceIdentifier) As EventHubCluster" />
-      <MemberSignature Language="F#" Value="static member GetEventHubCluster : Azure.ResourceManager.ArmClient * Azure.ResourceManager.ResourceIdentifier -&gt; Azure.ResourceManager.EventHubs.EventHubCluster" Usage="Azure.ResourceManager.EventHubs.ArmClientExtensions.GetEventHubCluster (armClient, id)" />
+      <MemberSignature Language="F#" Value="static member GetEventHubCluster : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.EventHubs.EventHubCluster" Usage="Azure.ResourceManager.EventHubs.ArmClientExtensions.GetEventHubCluster (armClient, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
@@ -163,7 +163,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="armClient" Type="Azure.ResourceManager.ArmClient" RefType="this" />
-        <Parameter Name="id" Type="Azure.ResourceManager.ResourceIdentifier" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
         <param name="armClient"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
@@ -174,11 +174,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetEventHubNamespace">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EventHubs.EventHubNamespace GetEventHubNamespace (this Azure.ResourceManager.ArmClient armClient, Azure.ResourceManager.ResourceIdentifier id);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EventHubs.EventHubNamespace GetEventHubNamespace(class Azure.ResourceManager.ArmClient armClient, class Azure.ResourceManager.ResourceIdentifier id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ArmClientExtensions.GetEventHubNamespace(Azure.ResourceManager.ArmClient,Azure.ResourceManager.ResourceIdentifier)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EventHubs.EventHubNamespace GetEventHubNamespace (this Azure.ResourceManager.ArmClient armClient, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EventHubs.EventHubNamespace GetEventHubNamespace(class Azure.ResourceManager.ArmClient armClient, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ArmClientExtensions.GetEventHubNamespace(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetEventHubNamespace (armClient As ArmClient, id As ResourceIdentifier) As EventHubNamespace" />
-      <MemberSignature Language="F#" Value="static member GetEventHubNamespace : Azure.ResourceManager.ArmClient * Azure.ResourceManager.ResourceIdentifier -&gt; Azure.ResourceManager.EventHubs.EventHubNamespace" Usage="Azure.ResourceManager.EventHubs.ArmClientExtensions.GetEventHubNamespace (armClient, id)" />
+      <MemberSignature Language="F#" Value="static member GetEventHubNamespace : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.EventHubs.EventHubNamespace" Usage="Azure.ResourceManager.EventHubs.ArmClientExtensions.GetEventHubNamespace (armClient, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
@@ -189,7 +189,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="armClient" Type="Azure.ResourceManager.ArmClient" RefType="this" />
-        <Parameter Name="id" Type="Azure.ResourceManager.ResourceIdentifier" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
         <param name="armClient"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
@@ -200,11 +200,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetNamespaceAuthorizationRule">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EventHubs.NamespaceAuthorizationRule GetNamespaceAuthorizationRule (this Azure.ResourceManager.ArmClient armClient, Azure.ResourceManager.ResourceIdentifier id);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EventHubs.NamespaceAuthorizationRule GetNamespaceAuthorizationRule(class Azure.ResourceManager.ArmClient armClient, class Azure.ResourceManager.ResourceIdentifier id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ArmClientExtensions.GetNamespaceAuthorizationRule(Azure.ResourceManager.ArmClient,Azure.ResourceManager.ResourceIdentifier)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EventHubs.NamespaceAuthorizationRule GetNamespaceAuthorizationRule (this Azure.ResourceManager.ArmClient armClient, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EventHubs.NamespaceAuthorizationRule GetNamespaceAuthorizationRule(class Azure.ResourceManager.ArmClient armClient, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ArmClientExtensions.GetNamespaceAuthorizationRule(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetNamespaceAuthorizationRule (armClient As ArmClient, id As ResourceIdentifier) As NamespaceAuthorizationRule" />
-      <MemberSignature Language="F#" Value="static member GetNamespaceAuthorizationRule : Azure.ResourceManager.ArmClient * Azure.ResourceManager.ResourceIdentifier -&gt; Azure.ResourceManager.EventHubs.NamespaceAuthorizationRule" Usage="Azure.ResourceManager.EventHubs.ArmClientExtensions.GetNamespaceAuthorizationRule (armClient, id)" />
+      <MemberSignature Language="F#" Value="static member GetNamespaceAuthorizationRule : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.EventHubs.NamespaceAuthorizationRule" Usage="Azure.ResourceManager.EventHubs.ArmClientExtensions.GetNamespaceAuthorizationRule (armClient, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
@@ -215,7 +215,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="armClient" Type="Azure.ResourceManager.ArmClient" RefType="this" />
-        <Parameter Name="id" Type="Azure.ResourceManager.ResourceIdentifier" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
         <param name="armClient"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
@@ -226,11 +226,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetNetworkRuleSet">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EventHubs.NetworkRuleSet GetNetworkRuleSet (this Azure.ResourceManager.ArmClient armClient, Azure.ResourceManager.ResourceIdentifier id);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EventHubs.NetworkRuleSet GetNetworkRuleSet(class Azure.ResourceManager.ArmClient armClient, class Azure.ResourceManager.ResourceIdentifier id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ArmClientExtensions.GetNetworkRuleSet(Azure.ResourceManager.ArmClient,Azure.ResourceManager.ResourceIdentifier)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EventHubs.NetworkRuleSet GetNetworkRuleSet (this Azure.ResourceManager.ArmClient armClient, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EventHubs.NetworkRuleSet GetNetworkRuleSet(class Azure.ResourceManager.ArmClient armClient, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ArmClientExtensions.GetNetworkRuleSet(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetNetworkRuleSet (armClient As ArmClient, id As ResourceIdentifier) As NetworkRuleSet" />
-      <MemberSignature Language="F#" Value="static member GetNetworkRuleSet : Azure.ResourceManager.ArmClient * Azure.ResourceManager.ResourceIdentifier -&gt; Azure.ResourceManager.EventHubs.NetworkRuleSet" Usage="Azure.ResourceManager.EventHubs.ArmClientExtensions.GetNetworkRuleSet (armClient, id)" />
+      <MemberSignature Language="F#" Value="static member GetNetworkRuleSet : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.EventHubs.NetworkRuleSet" Usage="Azure.ResourceManager.EventHubs.ArmClientExtensions.GetNetworkRuleSet (armClient, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
@@ -241,7 +241,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="armClient" Type="Azure.ResourceManager.ArmClient" RefType="this" />
-        <Parameter Name="id" Type="Azure.ResourceManager.ResourceIdentifier" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
         <param name="armClient"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
@@ -252,11 +252,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetPrivateEndpointConnection">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EventHubs.PrivateEndpointConnection GetPrivateEndpointConnection (this Azure.ResourceManager.ArmClient armClient, Azure.ResourceManager.ResourceIdentifier id);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EventHubs.PrivateEndpointConnection GetPrivateEndpointConnection(class Azure.ResourceManager.ArmClient armClient, class Azure.ResourceManager.ResourceIdentifier id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ArmClientExtensions.GetPrivateEndpointConnection(Azure.ResourceManager.ArmClient,Azure.ResourceManager.ResourceIdentifier)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EventHubs.PrivateEndpointConnection GetPrivateEndpointConnection (this Azure.ResourceManager.ArmClient armClient, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EventHubs.PrivateEndpointConnection GetPrivateEndpointConnection(class Azure.ResourceManager.ArmClient armClient, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ArmClientExtensions.GetPrivateEndpointConnection(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetPrivateEndpointConnection (armClient As ArmClient, id As ResourceIdentifier) As PrivateEndpointConnection" />
-      <MemberSignature Language="F#" Value="static member GetPrivateEndpointConnection : Azure.ResourceManager.ArmClient * Azure.ResourceManager.ResourceIdentifier -&gt; Azure.ResourceManager.EventHubs.PrivateEndpointConnection" Usage="Azure.ResourceManager.EventHubs.ArmClientExtensions.GetPrivateEndpointConnection (armClient, id)" />
+      <MemberSignature Language="F#" Value="static member GetPrivateEndpointConnection : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.EventHubs.PrivateEndpointConnection" Usage="Azure.ResourceManager.EventHubs.ArmClientExtensions.GetPrivateEndpointConnection (armClient, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
@@ -267,7 +267,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="armClient" Type="Azure.ResourceManager.ArmClient" RefType="this" />
-        <Parameter Name="id" Type="Azure.ResourceManager.ResourceIdentifier" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
         <param name="armClient"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
@@ -278,11 +278,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetSchemaGroup">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EventHubs.SchemaGroup GetSchemaGroup (this Azure.ResourceManager.ArmClient armClient, Azure.ResourceManager.ResourceIdentifier id);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EventHubs.SchemaGroup GetSchemaGroup(class Azure.ResourceManager.ArmClient armClient, class Azure.ResourceManager.ResourceIdentifier id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ArmClientExtensions.GetSchemaGroup(Azure.ResourceManager.ArmClient,Azure.ResourceManager.ResourceIdentifier)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EventHubs.SchemaGroup GetSchemaGroup (this Azure.ResourceManager.ArmClient armClient, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EventHubs.SchemaGroup GetSchemaGroup(class Azure.ResourceManager.ArmClient armClient, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ArmClientExtensions.GetSchemaGroup(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetSchemaGroup (armClient As ArmClient, id As ResourceIdentifier) As SchemaGroup" />
-      <MemberSignature Language="F#" Value="static member GetSchemaGroup : Azure.ResourceManager.ArmClient * Azure.ResourceManager.ResourceIdentifier -&gt; Azure.ResourceManager.EventHubs.SchemaGroup" Usage="Azure.ResourceManager.EventHubs.ArmClientExtensions.GetSchemaGroup (armClient, id)" />
+      <MemberSignature Language="F#" Value="static member GetSchemaGroup : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.EventHubs.SchemaGroup" Usage="Azure.ResourceManager.EventHubs.ArmClientExtensions.GetSchemaGroup (armClient, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
@@ -293,7 +293,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="armClient" Type="Azure.ResourceManager.ArmClient" RefType="this" />
-        <Parameter Name="id" Type="Azure.ResourceManager.ResourceIdentifier" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
         <param name="armClient"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>

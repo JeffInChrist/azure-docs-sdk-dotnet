@@ -1,0 +1,73 @@
+<Type Name="TenantExtensions" FullName="Azure.ResourceManager.ExtendedLocation.TenantExtensions">
+  <TypeSignature Language="C#" Value="public static class TenantExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TenantExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.ExtendedLocation.TenantExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module TenantExtensions" />
+  <TypeSignature Language="F#" Value="type TenantExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.ExtendedLocation</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class to add extension methods to Tenant. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetOperationsCustomLocations">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.ExtendedLocation.Models.CustomLocationOperation&gt; GetOperationsCustomLocations (this Azure.ResourceManager.Resources.Tenant tenant, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.ExtendedLocation.Models.CustomLocationOperation&gt; GetOperationsCustomLocations(class Azure.ResourceManager.Resources.Tenant tenant, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ExtendedLocation.TenantExtensions.GetOperationsCustomLocations(Azure.ResourceManager.Resources.Tenant,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetOperationsCustomLocations (tenant As Tenant, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of CustomLocationOperation)" />
+      <MemberSignature Language="F#" Value="static member GetOperationsCustomLocations : Azure.ResourceManager.Resources.Tenant * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.ExtendedLocation.Models.CustomLocationOperation&gt;" Usage="Azure.ResourceManager.ExtendedLocation.TenantExtensions.GetOperationsCustomLocations (tenant, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ExtendedLocation</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.ExtendedLocation.Models.CustomLocationOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tenant" Type="Azure.ResourceManager.Resources.Tenant" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="tenant"> The <see cref="T:Azure.ResourceManager.Resources.Tenant" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>To be added.</summary>
+        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOperationsCustomLocationsAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.ExtendedLocation.Models.CustomLocationOperation&gt; GetOperationsCustomLocationsAsync (this Azure.ResourceManager.Resources.Tenant tenant, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.ExtendedLocation.Models.CustomLocationOperation&gt; GetOperationsCustomLocationsAsync(class Azure.ResourceManager.Resources.Tenant tenant, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ExtendedLocation.TenantExtensions.GetOperationsCustomLocationsAsync(Azure.ResourceManager.Resources.Tenant,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetOperationsCustomLocationsAsync (tenant As Tenant, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of CustomLocationOperation)" />
+      <MemberSignature Language="F#" Value="static member GetOperationsCustomLocationsAsync : Azure.ResourceManager.Resources.Tenant * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.ExtendedLocation.Models.CustomLocationOperation&gt;" Usage="Azure.ResourceManager.ExtendedLocation.TenantExtensions.GetOperationsCustomLocationsAsync (tenant, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ExtendedLocation</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.ExtendedLocation.Models.CustomLocationOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tenant" Type="Azure.ResourceManager.Resources.Tenant" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="tenant"> The <see cref="T:Azure.ResourceManager.Resources.Tenant" /> instance the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>To be added.</summary>
+        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

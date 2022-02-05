@@ -82,18 +82,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateResourceIdentifier">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ResourceIdentifier CreateResourceIdentifier (string subscriptionId, string resourceGroupName, string serverName, string databaseName, string syncGroupName);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ResourceIdentifier CreateResourceIdentifier(string subscriptionId, string resourceGroupName, string serverName, string databaseName, string syncGroupName) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Core.ResourceIdentifier CreateResourceIdentifier (string subscriptionId, string resourceGroupName, string serverName, string databaseName, string syncGroupName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Core.ResourceIdentifier CreateResourceIdentifier(string subscriptionId, string resourceGroupName, string serverName, string databaseName, string syncGroupName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroup.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateResourceIdentifier (subscriptionId As String, resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String) As ResourceIdentifier" />
-      <MemberSignature Language="F#" Value="static member CreateResourceIdentifier : string * string * string * string * string -&gt; Azure.ResourceManager.ResourceIdentifier" Usage="Azure.ResourceManager.Sql.SyncGroup.CreateResourceIdentifier (subscriptionId, resourceGroupName, serverName, databaseName, syncGroupName)" />
+      <MemberSignature Language="F#" Value="static member CreateResourceIdentifier : string * string * string * string * string -&gt; Azure.Core.ResourceIdentifier" Usage="Azure.ResourceManager.Sql.SyncGroup.CreateResourceIdentifier (subscriptionId, resourceGroupName, serverName, databaseName, syncGroupName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceIdentifier</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscriptionId" Type="System.String" />
@@ -135,10 +135,10 @@
       </Docs>
     </Member>
     <Member MemberName="Delete">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.SyncGroupDeleteOperation Delete (bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.SyncGroupDeleteOperation Delete (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.SyncGroupDeleteOperation Delete(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroup.Delete(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As SyncGroupDeleteOperation" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As SyncGroupDeleteOperation" />
       <MemberSignature Language="F#" Value="abstract member Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.SyncGroupDeleteOperation&#xA;override this.Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.SyncGroupDeleteOperation" Usage="syncGroup.Delete (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -161,10 +161,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.SyncGroupDeleteOperation&gt; DeleteAsync (bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.SyncGroupDeleteOperation&gt; DeleteAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.SyncGroupDeleteOperation&gt; DeleteAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroup.DeleteAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SyncGroupDeleteOperation)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SyncGroupDeleteOperation)" />
       <MemberSignature Language="F#" Value="abstract member DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.SyncGroupDeleteOperation&gt;&#xA;override this.DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.SyncGroupDeleteOperation&gt;" Usage="syncGroup.DeleteAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -235,18 +235,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetAvailableLocations">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt; GetAvailableLocations (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.Resources.Models.Location&gt; GetAvailableLocations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt; GetAvailableLocations (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt; GetAvailableLocations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroup.GetAvailableLocations(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocations (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of Location)" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&#xA;override this.GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;" Usage="syncGroup.GetAvailableLocations cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocations (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of AzureLocation)" />
+      <MemberSignature Language="F#" Value="abstract member GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;&#xA;override this.GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;" Usage="syncGroup.GetAvailableLocations cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -259,18 +259,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetAvailableLocationsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt; GetAvailableLocationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.Resources.Models.Location&gt;&gt; GetAvailableLocationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroup.GetAvailableLocationsAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocationsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of Location))" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;&#xA;override this.GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;" Usage="syncGroup.GetAvailableLocationsAsync cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocationsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of AzureLocation))" />
+      <MemberSignature Language="F#" Value="abstract member GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;&#xA;override this.GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;" Usage="syncGroup.GetAvailableLocationsAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -360,6 +360,8 @@
         <summary> Gets a collection of sync group logs. </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.Models.SyncGroupLogProperties" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="startTime" /> or <paramref name="endTime" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetLogsAsync">
@@ -392,14 +394,16 @@
         <summary> Gets a collection of sync group logs. </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.Models.SyncGroupLogProperties" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="startTime" /> or <paramref name="endTime" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetSyncMembers">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Sql.SyncMemberCollection GetSyncMembers ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.ResourceManager.Sql.SyncMemberCollection GetSyncMembers() cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.SyncMemberCollection GetSyncMembers ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.SyncMemberCollection GetSyncMembers() cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroup.GetSyncMembers" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetSyncMembers () As SyncMemberCollection" />
-      <MemberSignature Language="F#" Value="member this.GetSyncMembers : unit -&gt; Azure.ResourceManager.Sql.SyncMemberCollection" Usage="syncGroup.GetSyncMembers " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSyncMembers () As SyncMemberCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetSyncMembers : unit -&gt; Azure.ResourceManager.Sql.SyncMemberCollection&#xA;override this.GetSyncMembers : unit -&gt; Azure.ResourceManager.Sql.SyncMemberCollection" Usage="syncGroup.GetSyncMembers " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
@@ -436,10 +440,10 @@
       </Docs>
     </Member>
     <Member MemberName="RefreshHubSchema">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.SyncGroupRefreshHubSchemaOperation RefreshHubSchema (bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.SyncGroupRefreshHubSchemaOperation RefreshHubSchema (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.SyncGroupRefreshHubSchemaOperation RefreshHubSchema(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroup.RefreshHubSchema(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RefreshHubSchema (Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As SyncGroupRefreshHubSchemaOperation" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RefreshHubSchema (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As SyncGroupRefreshHubSchemaOperation" />
       <MemberSignature Language="F#" Value="abstract member RefreshHubSchema : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.SyncGroupRefreshHubSchemaOperation&#xA;override this.RefreshHubSchema : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.SyncGroupRefreshHubSchemaOperation" Usage="syncGroup.RefreshHubSchema (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -462,10 +466,10 @@
       </Docs>
     </Member>
     <Member MemberName="RefreshHubSchemaAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.SyncGroupRefreshHubSchemaOperation&gt; RefreshHubSchemaAsync (bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.SyncGroupRefreshHubSchemaOperation&gt; RefreshHubSchemaAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.SyncGroupRefreshHubSchemaOperation&gt; RefreshHubSchemaAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroup.RefreshHubSchemaAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RefreshHubSchemaAsync (Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SyncGroupRefreshHubSchemaOperation)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RefreshHubSchemaAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SyncGroupRefreshHubSchemaOperation)" />
       <MemberSignature Language="F#" Value="abstract member RefreshHubSchemaAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.SyncGroupRefreshHubSchemaOperation&gt;&#xA;override this.RefreshHubSchemaAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.SyncGroupRefreshHubSchemaOperation&gt;" Usage="syncGroup.RefreshHubSchemaAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -488,18 +492,18 @@
       </Docs>
     </Member>
     <Member MemberName="ResourceType">
-      <MemberSignature Language="C#" Value="public static readonly Azure.ResourceManager.ResourceType ResourceType;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Azure.ResourceManager.ResourceType ResourceType" />
+      <MemberSignature Language="C#" Value="public static readonly Azure.Core.ResourceType ResourceType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype Azure.Core.ResourceType ResourceType" />
       <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.Sql.SyncGroup.ResourceType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ResourceType As ResourceType " />
-      <MemberSignature Language="F#" Value=" staticval mutable ResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Sql.SyncGroup.ResourceType" />
+      <MemberSignature Language="F#" Value=" staticval mutable ResourceType : Azure.Core.ResourceType" Usage="Azure.ResourceManager.Sql.SyncGroup.ResourceType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
+        <ReturnType>Azure.Core.ResourceType</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Gets the resource type for the operations. </summary>
@@ -555,11 +559,11 @@
       </Docs>
     </Member>
     <Member MemberName="Update">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.SyncGroupUpdateOperation Update (Azure.ResourceManager.Sql.SyncGroupData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.SyncGroupUpdateOperation Update(class Azure.ResourceManager.Sql.SyncGroupData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroup.Update(Azure.ResourceManager.Sql.SyncGroupData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (parameters As SyncGroupData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As SyncGroupUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member Update : Azure.ResourceManager.Sql.SyncGroupData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.SyncGroupUpdateOperation&#xA;override this.Update : Azure.ResourceManager.Sql.SyncGroupData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.SyncGroupUpdateOperation" Usage="syncGroup.Update (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.SyncGroupUpdateOperation Update (bool waitForCompletion, Azure.ResourceManager.Sql.SyncGroupData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.SyncGroupUpdateOperation Update(bool waitForCompletion, class Azure.ResourceManager.Sql.SyncGroupData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroup.Update(System.Boolean,Azure.ResourceManager.Sql.SyncGroupData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (waitForCompletion As Boolean, parameters As SyncGroupData, Optional cancellationToken As CancellationToken = Nothing) As SyncGroupUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member Update : bool * Azure.ResourceManager.Sql.SyncGroupData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.SyncGroupUpdateOperation&#xA;override this.Update : bool * Azure.ResourceManager.Sql.SyncGroupData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.SyncGroupUpdateOperation" Usage="syncGroup.Update (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
@@ -569,13 +573,13 @@
         <ReturnType>Azure.ResourceManager.Sql.Models.SyncGroupUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.SyncGroupData" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.SyncGroupData" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> The requested sync group resource state. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> The requested sync group resource state. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Updates a sync group. </summary>
         <returns>To be added.</returns>
@@ -585,11 +589,11 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.SyncGroupUpdateOperation&gt; UpdateAsync (Azure.ResourceManager.Sql.SyncGroupData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.SyncGroupUpdateOperation&gt; UpdateAsync(class Azure.ResourceManager.Sql.SyncGroupData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroup.UpdateAsync(Azure.ResourceManager.Sql.SyncGroupData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (parameters As SyncGroupData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SyncGroupUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member UpdateAsync : Azure.ResourceManager.Sql.SyncGroupData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.SyncGroupUpdateOperation&gt;&#xA;override this.UpdateAsync : Azure.ResourceManager.Sql.SyncGroupData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.SyncGroupUpdateOperation&gt;" Usage="syncGroup.UpdateAsync (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.SyncGroupUpdateOperation&gt; UpdateAsync (bool waitForCompletion, Azure.ResourceManager.Sql.SyncGroupData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.SyncGroupUpdateOperation&gt; UpdateAsync(bool waitForCompletion, class Azure.ResourceManager.Sql.SyncGroupData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.SyncGroup.UpdateAsync(System.Boolean,Azure.ResourceManager.Sql.SyncGroupData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (waitForCompletion As Boolean, parameters As SyncGroupData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SyncGroupUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateAsync : bool * Azure.ResourceManager.Sql.SyncGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.SyncGroupUpdateOperation&gt;&#xA;override this.UpdateAsync : bool * Azure.ResourceManager.Sql.SyncGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.SyncGroupUpdateOperation&gt;" Usage="syncGroup.UpdateAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
@@ -599,39 +603,19 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.SyncGroupUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.SyncGroupData" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.SyncGroupData" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> The requested sync group resource state. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> The requested sync group resource state. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Updates a sync group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="parameters" /> is null. </exception>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.SyncGroup.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Sql.SyncGroup.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for the operations. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

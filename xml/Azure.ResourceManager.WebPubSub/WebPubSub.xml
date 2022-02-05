@@ -90,18 +90,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateResourceIdentifier">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ResourceIdentifier CreateResourceIdentifier (string subscriptionId, string resourceGroupName, string resourceName);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ResourceIdentifier CreateResourceIdentifier(string subscriptionId, string resourceGroupName, string resourceName) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Core.ResourceIdentifier CreateResourceIdentifier (string subscriptionId, string resourceGroupName, string resourceName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Core.ResourceIdentifier CreateResourceIdentifier(string subscriptionId, string resourceGroupName, string resourceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.WebPubSub.CreateResourceIdentifier(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateResourceIdentifier (subscriptionId As String, resourceGroupName As String, resourceName As String) As ResourceIdentifier" />
-      <MemberSignature Language="F#" Value="static member CreateResourceIdentifier : string * string * string -&gt; Azure.ResourceManager.ResourceIdentifier" Usage="Azure.ResourceManager.WebPubSub.WebPubSub.CreateResourceIdentifier (subscriptionId, resourceGroupName, resourceName)" />
+      <MemberSignature Language="F#" Value="static member CreateResourceIdentifier : string * string * string -&gt; Azure.Core.ResourceIdentifier" Usage="Azure.ResourceManager.WebPubSub.WebPubSub.CreateResourceIdentifier (subscriptionId, resourceGroupName, resourceName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceIdentifier</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscriptionId" Type="System.String" />
@@ -139,10 +139,10 @@
       </Docs>
     </Member>
     <Member MemberName="Delete">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.WebPubSub.Models.WebPubSubDeleteOperation Delete (bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.WebPubSub.Models.WebPubSubDeleteOperation Delete (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.WebPubSub.Models.WebPubSubDeleteOperation Delete(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.WebPubSub.Delete(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As WebPubSubDeleteOperation" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As WebPubSubDeleteOperation" />
       <MemberSignature Language="F#" Value="abstract member Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.WebPubSub.Models.WebPubSubDeleteOperation&#xA;override this.Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.WebPubSub.Models.WebPubSubDeleteOperation" Usage="webPubSub.Delete (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -165,10 +165,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.WebPubSub.Models.WebPubSubDeleteOperation&gt; DeleteAsync (bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.WebPubSub.Models.WebPubSubDeleteOperation&gt; DeleteAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.WebPubSub.Models.WebPubSubDeleteOperation&gt; DeleteAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.WebPubSub.DeleteAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of WebPubSubDeleteOperation)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of WebPubSubDeleteOperation)" />
       <MemberSignature Language="F#" Value="abstract member DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.WebPubSub.Models.WebPubSubDeleteOperation&gt;&#xA;override this.DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.WebPubSub.Models.WebPubSubDeleteOperation&gt;" Usage="webPubSub.DeleteAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -239,18 +239,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetAvailableLocations">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt; GetAvailableLocations (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.Resources.Models.Location&gt; GetAvailableLocations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt; GetAvailableLocations (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt; GetAvailableLocations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.WebPubSub.GetAvailableLocations(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocations (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of Location)" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&#xA;override this.GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;" Usage="webPubSub.GetAvailableLocations cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocations (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of AzureLocation)" />
+      <MemberSignature Language="F#" Value="abstract member GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;&#xA;override this.GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;" Usage="webPubSub.GetAvailableLocations cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -263,18 +263,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetAvailableLocationsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt; GetAvailableLocationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.Resources.Models.Location&gt;&gt; GetAvailableLocationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.WebPubSub.GetAvailableLocationsAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocationsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of Location))" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;&#xA;override this.GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;" Usage="webPubSub.GetAvailableLocationsAsync cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocationsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of AzureLocation))" />
+      <MemberSignature Language="F#" Value="abstract member GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;&#xA;override this.GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;" Usage="webPubSub.GetAvailableLocationsAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -335,11 +335,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetPrivateEndpointConnections">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.WebPubSub.PrivateEndpointConnectionCollection GetPrivateEndpointConnections ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.ResourceManager.WebPubSub.PrivateEndpointConnectionCollection GetPrivateEndpointConnections() cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.WebPubSub.PrivateEndpointConnectionCollection GetPrivateEndpointConnections ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.WebPubSub.PrivateEndpointConnectionCollection GetPrivateEndpointConnections() cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.WebPubSub.GetPrivateEndpointConnections" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetPrivateEndpointConnections () As PrivateEndpointConnectionCollection" />
-      <MemberSignature Language="F#" Value="member this.GetPrivateEndpointConnections : unit -&gt; Azure.ResourceManager.WebPubSub.PrivateEndpointConnectionCollection" Usage="webPubSub.GetPrivateEndpointConnections " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPrivateEndpointConnections () As PrivateEndpointConnectionCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetPrivateEndpointConnections : unit -&gt; Azure.ResourceManager.WebPubSub.PrivateEndpointConnectionCollection&#xA;override this.GetPrivateEndpointConnections : unit -&gt; Azure.ResourceManager.WebPubSub.PrivateEndpointConnectionCollection" Usage="webPubSub.GetPrivateEndpointConnections " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
@@ -356,11 +356,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetSharedPrivateLinks">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.WebPubSub.SharedPrivateLinkCollection GetSharedPrivateLinks ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.ResourceManager.WebPubSub.SharedPrivateLinkCollection GetSharedPrivateLinks() cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.WebPubSub.SharedPrivateLinkCollection GetSharedPrivateLinks ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.WebPubSub.SharedPrivateLinkCollection GetSharedPrivateLinks() cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.WebPubSub.GetSharedPrivateLinks" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetSharedPrivateLinks () As SharedPrivateLinkCollection" />
-      <MemberSignature Language="F#" Value="member this.GetSharedPrivateLinks : unit -&gt; Azure.ResourceManager.WebPubSub.SharedPrivateLinkCollection" Usage="webPubSub.GetSharedPrivateLinks " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSharedPrivateLinks () As SharedPrivateLinkCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetSharedPrivateLinks : unit -&gt; Azure.ResourceManager.WebPubSub.SharedPrivateLinkCollection&#xA;override this.GetSharedPrivateLinks : unit -&gt; Azure.ResourceManager.WebPubSub.SharedPrivateLinkCollection" Usage="webPubSub.GetSharedPrivateLinks " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
@@ -377,18 +377,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetSkus">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.WebPubSub.Models.Sku&gt;&gt; GetSkus (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.ResourceManager.WebPubSub.Models.Sku&gt;&gt; GetSkus(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.WebPubSub.Models.Sku&gt; GetSkus (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.WebPubSub.Models.Sku&gt; GetSkus(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.WebPubSub.GetSkus(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSkus (Optional cancellationToken As CancellationToken = Nothing) As Response(Of IReadOnlyList(Of Sku))" />
-      <MemberSignature Language="F#" Value="abstract member GetSkus : System.Threading.CancellationToken -&gt; Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.WebPubSub.Models.Sku&gt;&gt;&#xA;override this.GetSkus : System.Threading.CancellationToken -&gt; Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.WebPubSub.Models.Sku&gt;&gt;" Usage="webPubSub.GetSkus cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSkus (Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of Sku)" />
+      <MemberSignature Language="F#" Value="abstract member GetSkus : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.WebPubSub.Models.Sku&gt;&#xA;override this.GetSkus : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.WebPubSub.Models.Sku&gt;" Usage="webPubSub.GetSkus cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.WebPubSub.Models.Sku&gt;&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.WebPubSub.Models.Sku&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -396,23 +396,23 @@
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> List all available skus of the resource. </summary>
-        <returns>To be added.</returns>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.WebPubSub.Models.Sku" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSkusAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.WebPubSub.Models.Sku&gt;&gt;&gt; GetSkusAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.ResourceManager.WebPubSub.Models.Sku&gt;&gt;&gt; GetSkusAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.WebPubSub.Models.Sku&gt; GetSkusAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.WebPubSub.Models.Sku&gt; GetSkusAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.WebPubSub.GetSkusAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSkusAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of IReadOnlyList(Of Sku)))" />
-      <MemberSignature Language="F#" Value="abstract member GetSkusAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.WebPubSub.Models.Sku&gt;&gt;&gt;&#xA;override this.GetSkusAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.WebPubSub.Models.Sku&gt;&gt;&gt;" Usage="webPubSub.GetSkusAsync cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSkusAsync (Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of Sku)" />
+      <MemberSignature Language="F#" Value="abstract member GetSkusAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.WebPubSub.Models.Sku&gt;&#xA;override this.GetSkusAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.WebPubSub.Models.Sku&gt;" Usage="webPubSub.GetSkusAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.WebPubSub.Models.Sku&gt;&gt;&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.WebPubSub.Models.Sku&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -420,16 +420,16 @@
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> List all available skus of the resource. </summary>
-        <returns>To be added.</returns>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.WebPubSub.Models.Sku" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetWebPubSubHubs">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.WebPubSub.WebPubSubHubCollection GetWebPubSubHubs ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.ResourceManager.WebPubSub.WebPubSubHubCollection GetWebPubSubHubs() cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.WebPubSub.WebPubSubHubCollection GetWebPubSubHubs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.WebPubSub.WebPubSubHubCollection GetWebPubSubHubs() cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.WebPubSub.GetWebPubSubHubs" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetWebPubSubHubs () As WebPubSubHubCollection" />
-      <MemberSignature Language="F#" Value="member this.GetWebPubSubHubs : unit -&gt; Azure.ResourceManager.WebPubSub.WebPubSubHubCollection" Usage="webPubSub.GetWebPubSubHubs " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetWebPubSubHubs () As WebPubSubHubCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetWebPubSubHubs : unit -&gt; Azure.ResourceManager.WebPubSub.WebPubSubHubCollection&#xA;override this.GetWebPubSubHubs : unit -&gt; Azure.ResourceManager.WebPubSub.WebPubSubHubCollection" Usage="webPubSub.GetWebPubSubHubs " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
@@ -514,11 +514,11 @@
       </Docs>
     </Member>
     <Member MemberName="RegenerateKey">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.WebPubSub.Models.WebPubSubRegenerateKeyOperation RegenerateKey (Azure.ResourceManager.WebPubSub.Models.RegenerateKeyParameters parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.WebPubSub.Models.WebPubSubRegenerateKeyOperation RegenerateKey(class Azure.ResourceManager.WebPubSub.Models.RegenerateKeyParameters parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.WebPubSub.RegenerateKey(Azure.ResourceManager.WebPubSub.Models.RegenerateKeyParameters,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RegenerateKey (parameters As RegenerateKeyParameters, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As WebPubSubRegenerateKeyOperation" />
-      <MemberSignature Language="F#" Value="abstract member RegenerateKey : Azure.ResourceManager.WebPubSub.Models.RegenerateKeyParameters * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.WebPubSub.Models.WebPubSubRegenerateKeyOperation&#xA;override this.RegenerateKey : Azure.ResourceManager.WebPubSub.Models.RegenerateKeyParameters * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.WebPubSub.Models.WebPubSubRegenerateKeyOperation" Usage="webPubSub.RegenerateKey (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.WebPubSub.Models.WebPubSubRegenerateKeyOperation RegenerateKey (bool waitForCompletion, Azure.ResourceManager.WebPubSub.Models.RegenerateKeyParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.WebPubSub.Models.WebPubSubRegenerateKeyOperation RegenerateKey(bool waitForCompletion, class Azure.ResourceManager.WebPubSub.Models.RegenerateKeyParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.WebPubSub.RegenerateKey(System.Boolean,Azure.ResourceManager.WebPubSub.Models.RegenerateKeyParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RegenerateKey (waitForCompletion As Boolean, parameters As RegenerateKeyParameters, Optional cancellationToken As CancellationToken = Nothing) As WebPubSubRegenerateKeyOperation" />
+      <MemberSignature Language="F#" Value="abstract member RegenerateKey : bool * Azure.ResourceManager.WebPubSub.Models.RegenerateKeyParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.WebPubSub.Models.WebPubSubRegenerateKeyOperation&#xA;override this.RegenerateKey : bool * Azure.ResourceManager.WebPubSub.Models.RegenerateKeyParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.WebPubSub.Models.WebPubSubRegenerateKeyOperation" Usage="webPubSub.RegenerateKey (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
@@ -528,13 +528,13 @@
         <ReturnType>Azure.ResourceManager.WebPubSub.Models.WebPubSubRegenerateKeyOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.WebPubSub.Models.RegenerateKeyParameters" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.WebPubSub.Models.RegenerateKeyParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Parameter that describes the Regenerate Key Operation. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Parameter that describes the Regenerate Key Operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Regenerate the access key for the resource. PrimaryKey and SecondaryKey cannot be regenerated at the same time. </summary>
         <returns>To be added.</returns>
@@ -544,11 +544,11 @@
       </Docs>
     </Member>
     <Member MemberName="RegenerateKeyAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.WebPubSub.Models.WebPubSubRegenerateKeyOperation&gt; RegenerateKeyAsync (Azure.ResourceManager.WebPubSub.Models.RegenerateKeyParameters parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.WebPubSub.Models.WebPubSubRegenerateKeyOperation&gt; RegenerateKeyAsync(class Azure.ResourceManager.WebPubSub.Models.RegenerateKeyParameters parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.WebPubSub.RegenerateKeyAsync(Azure.ResourceManager.WebPubSub.Models.RegenerateKeyParameters,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RegenerateKeyAsync (parameters As RegenerateKeyParameters, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of WebPubSubRegenerateKeyOperation)" />
-      <MemberSignature Language="F#" Value="abstract member RegenerateKeyAsync : Azure.ResourceManager.WebPubSub.Models.RegenerateKeyParameters * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.WebPubSub.Models.WebPubSubRegenerateKeyOperation&gt;&#xA;override this.RegenerateKeyAsync : Azure.ResourceManager.WebPubSub.Models.RegenerateKeyParameters * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.WebPubSub.Models.WebPubSubRegenerateKeyOperation&gt;" Usage="webPubSub.RegenerateKeyAsync (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.WebPubSub.Models.WebPubSubRegenerateKeyOperation&gt; RegenerateKeyAsync (bool waitForCompletion, Azure.ResourceManager.WebPubSub.Models.RegenerateKeyParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.WebPubSub.Models.WebPubSubRegenerateKeyOperation&gt; RegenerateKeyAsync(bool waitForCompletion, class Azure.ResourceManager.WebPubSub.Models.RegenerateKeyParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.WebPubSub.RegenerateKeyAsync(System.Boolean,Azure.ResourceManager.WebPubSub.Models.RegenerateKeyParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RegenerateKeyAsync (waitForCompletion As Boolean, parameters As RegenerateKeyParameters, Optional cancellationToken As CancellationToken = Nothing) As Task(Of WebPubSubRegenerateKeyOperation)" />
+      <MemberSignature Language="F#" Value="abstract member RegenerateKeyAsync : bool * Azure.ResourceManager.WebPubSub.Models.RegenerateKeyParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.WebPubSub.Models.WebPubSubRegenerateKeyOperation&gt;&#xA;override this.RegenerateKeyAsync : bool * Azure.ResourceManager.WebPubSub.Models.RegenerateKeyParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.WebPubSub.Models.WebPubSubRegenerateKeyOperation&gt;" Usage="webPubSub.RegenerateKeyAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
@@ -558,13 +558,13 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.WebPubSub.Models.WebPubSubRegenerateKeyOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.WebPubSub.Models.RegenerateKeyParameters" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.WebPubSub.Models.RegenerateKeyParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Parameter that describes the Regenerate Key Operation. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Parameter that describes the Regenerate Key Operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Regenerate the access key for the resource. PrimaryKey and SecondaryKey cannot be regenerated at the same time. </summary>
         <returns>To be added.</returns>
@@ -626,18 +626,18 @@
       </Docs>
     </Member>
     <Member MemberName="ResourceType">
-      <MemberSignature Language="C#" Value="public static readonly Azure.ResourceManager.ResourceType ResourceType;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Azure.ResourceManager.ResourceType ResourceType" />
+      <MemberSignature Language="C#" Value="public static readonly Azure.Core.ResourceType ResourceType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype Azure.Core.ResourceType ResourceType" />
       <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.WebPubSub.WebPubSub.ResourceType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ResourceType As ResourceType " />
-      <MemberSignature Language="F#" Value=" staticval mutable ResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.WebPubSub.WebPubSub.ResourceType" />
+      <MemberSignature Language="F#" Value=" staticval mutable ResourceType : Azure.Core.ResourceType" Usage="Azure.ResourceManager.WebPubSub.WebPubSub.ResourceType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
+        <ReturnType>Azure.Core.ResourceType</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Gets the resource type for the operations. </summary>
@@ -645,10 +645,10 @@
       </Docs>
     </Member>
     <Member MemberName="Restart">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.WebPubSub.Models.WebPubSubRestartOperation Restart (bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.WebPubSub.Models.WebPubSubRestartOperation Restart (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.WebPubSub.Models.WebPubSubRestartOperation Restart(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.WebPubSub.Restart(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Restart (Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As WebPubSubRestartOperation" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Restart (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As WebPubSubRestartOperation" />
       <MemberSignature Language="F#" Value="abstract member Restart : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.WebPubSub.Models.WebPubSubRestartOperation&#xA;override this.Restart : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.WebPubSub.Models.WebPubSubRestartOperation" Usage="webPubSub.Restart (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -671,10 +671,10 @@
       </Docs>
     </Member>
     <Member MemberName="RestartAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.WebPubSub.Models.WebPubSubRestartOperation&gt; RestartAsync (bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.WebPubSub.Models.WebPubSubRestartOperation&gt; RestartAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.WebPubSub.Models.WebPubSubRestartOperation&gt; RestartAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.WebPubSub.RestartAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RestartAsync (Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of WebPubSubRestartOperation)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RestartAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of WebPubSubRestartOperation)" />
       <MemberSignature Language="F#" Value="abstract member RestartAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.WebPubSub.Models.WebPubSubRestartOperation&gt;&#xA;override this.RestartAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.WebPubSub.Models.WebPubSubRestartOperation&gt;" Usage="webPubSub.RestartAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -749,11 +749,11 @@
       </Docs>
     </Member>
     <Member MemberName="Update">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.WebPubSub.Models.WebPubSubUpdateOperation Update (Azure.ResourceManager.WebPubSub.WebPubSubData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.WebPubSub.Models.WebPubSubUpdateOperation Update(class Azure.ResourceManager.WebPubSub.WebPubSubData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.WebPubSub.Update(Azure.ResourceManager.WebPubSub.WebPubSubData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (parameters As WebPubSubData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As WebPubSubUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member Update : Azure.ResourceManager.WebPubSub.WebPubSubData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.WebPubSub.Models.WebPubSubUpdateOperation&#xA;override this.Update : Azure.ResourceManager.WebPubSub.WebPubSubData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.WebPubSub.Models.WebPubSubUpdateOperation" Usage="webPubSub.Update (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.WebPubSub.Models.WebPubSubUpdateOperation Update (bool waitForCompletion, Azure.ResourceManager.WebPubSub.WebPubSubData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.WebPubSub.Models.WebPubSubUpdateOperation Update(bool waitForCompletion, class Azure.ResourceManager.WebPubSub.WebPubSubData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.WebPubSub.Update(System.Boolean,Azure.ResourceManager.WebPubSub.WebPubSubData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (waitForCompletion As Boolean, parameters As WebPubSubData, Optional cancellationToken As CancellationToken = Nothing) As WebPubSubUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member Update : bool * Azure.ResourceManager.WebPubSub.WebPubSubData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.WebPubSub.Models.WebPubSubUpdateOperation&#xA;override this.Update : bool * Azure.ResourceManager.WebPubSub.WebPubSubData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.WebPubSub.Models.WebPubSubUpdateOperation" Usage="webPubSub.Update (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
@@ -763,13 +763,13 @@
         <ReturnType>Azure.ResourceManager.WebPubSub.Models.WebPubSubUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.WebPubSub.WebPubSubData" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.WebPubSub.WebPubSubData" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Parameters for the update operation. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Parameters for the update operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Operation to update an exiting resource. </summary>
         <returns>To be added.</returns>
@@ -779,11 +779,11 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.WebPubSub.Models.WebPubSubUpdateOperation&gt; UpdateAsync (Azure.ResourceManager.WebPubSub.WebPubSubData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.WebPubSub.Models.WebPubSubUpdateOperation&gt; UpdateAsync(class Azure.ResourceManager.WebPubSub.WebPubSubData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.WebPubSub.UpdateAsync(Azure.ResourceManager.WebPubSub.WebPubSubData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (parameters As WebPubSubData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of WebPubSubUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member UpdateAsync : Azure.ResourceManager.WebPubSub.WebPubSubData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.WebPubSub.Models.WebPubSubUpdateOperation&gt;&#xA;override this.UpdateAsync : Azure.ResourceManager.WebPubSub.WebPubSubData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.WebPubSub.Models.WebPubSubUpdateOperation&gt;" Usage="webPubSub.UpdateAsync (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.WebPubSub.Models.WebPubSubUpdateOperation&gt; UpdateAsync (bool waitForCompletion, Azure.ResourceManager.WebPubSub.WebPubSubData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.WebPubSub.Models.WebPubSubUpdateOperation&gt; UpdateAsync(bool waitForCompletion, class Azure.ResourceManager.WebPubSub.WebPubSubData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.WebPubSub.WebPubSub.UpdateAsync(System.Boolean,Azure.ResourceManager.WebPubSub.WebPubSubData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (waitForCompletion As Boolean, parameters As WebPubSubData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of WebPubSubUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateAsync : bool * Azure.ResourceManager.WebPubSub.WebPubSubData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.WebPubSub.Models.WebPubSubUpdateOperation&gt;&#xA;override this.UpdateAsync : bool * Azure.ResourceManager.WebPubSub.WebPubSubData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.WebPubSub.Models.WebPubSubUpdateOperation&gt;" Usage="webPubSub.UpdateAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
@@ -793,39 +793,19 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.WebPubSub.Models.WebPubSubUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.WebPubSub.WebPubSubData" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.WebPubSub.WebPubSubData" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Parameters for the update operation. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Parameters for the update operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Operation to update an exiting resource. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="parameters" /> is null. </exception>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.WebPubSub.WebPubSub.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.WebPubSub.WebPubSub.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.WebPubSub</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for the operations. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -34,18 +34,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateResourceIdentifier">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ResourceIdentifier CreateResourceIdentifier (string subscriptionId, string resourceGroupName, string crossConnectionName, string peeringName);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ResourceIdentifier CreateResourceIdentifier(string subscriptionId, string resourceGroupName, string crossConnectionName, string peeringName) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Core.ResourceIdentifier CreateResourceIdentifier (string subscriptionId, string resourceGroupName, string crossConnectionName, string peeringName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Core.ResourceIdentifier CreateResourceIdentifier(string subscriptionId, string resourceGroupName, string crossConnectionName, string peeringName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ExpressRouteCrossConnectionPeering.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateResourceIdentifier (subscriptionId As String, resourceGroupName As String, crossConnectionName As String, peeringName As String) As ResourceIdentifier" />
-      <MemberSignature Language="F#" Value="static member CreateResourceIdentifier : string * string * string * string -&gt; Azure.ResourceManager.ResourceIdentifier" Usage="Azure.ResourceManager.Network.ExpressRouteCrossConnectionPeering.CreateResourceIdentifier (subscriptionId, resourceGroupName, crossConnectionName, peeringName)" />
+      <MemberSignature Language="F#" Value="static member CreateResourceIdentifier : string * string * string * string -&gt; Azure.Core.ResourceIdentifier" Usage="Azure.ResourceManager.Network.ExpressRouteCrossConnectionPeering.CreateResourceIdentifier (subscriptionId, resourceGroupName, crossConnectionName, peeringName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceIdentifier</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscriptionId" Type="System.String" />
@@ -85,10 +85,10 @@
       </Docs>
     </Member>
     <Member MemberName="Delete">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringDeleteOperation Delete (bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringDeleteOperation Delete (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringDeleteOperation Delete(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ExpressRouteCrossConnectionPeering.Delete(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As ExpressRouteCrossConnectionPeeringDeleteOperation" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ExpressRouteCrossConnectionPeeringDeleteOperation" />
       <MemberSignature Language="F#" Value="abstract member Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringDeleteOperation&#xA;override this.Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringDeleteOperation" Usage="expressRouteCrossConnectionPeering.Delete (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -111,10 +111,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringDeleteOperation&gt; DeleteAsync (bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringDeleteOperation&gt; DeleteAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringDeleteOperation&gt; DeleteAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ExpressRouteCrossConnectionPeering.DeleteAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ExpressRouteCrossConnectionPeeringDeleteOperation)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ExpressRouteCrossConnectionPeeringDeleteOperation)" />
       <MemberSignature Language="F#" Value="abstract member DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringDeleteOperation&gt;&#xA;override this.DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringDeleteOperation&gt;" Usage="expressRouteCrossConnectionPeering.DeleteAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -161,61 +161,65 @@
       </Docs>
     </Member>
     <Member MemberName="GetArpTableExpressRouteCrossConnection">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListArpTableOperation GetArpTableExpressRouteCrossConnection (string devicePath, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListArpTableOperation GetArpTableExpressRouteCrossConnection(string devicePath, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ExpressRouteCrossConnectionPeering.GetArpTableExpressRouteCrossConnection(System.String,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetArpTableExpressRouteCrossConnection (devicePath As String, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As ExpressRouteCrossConnectionListArpTableOperation" />
-      <MemberSignature Language="F#" Value="abstract member GetArpTableExpressRouteCrossConnection : string * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListArpTableOperation&#xA;override this.GetArpTableExpressRouteCrossConnection : string * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListArpTableOperation" Usage="expressRouteCrossConnectionPeering.GetArpTableExpressRouteCrossConnection (devicePath, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetArpTableExpressRouteCrossConnectionOperation GetArpTableExpressRouteCrossConnection (bool waitForCompletion, string devicePath, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetArpTableExpressRouteCrossConnectionOperation GetArpTableExpressRouteCrossConnection(bool waitForCompletion, string devicePath, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ExpressRouteCrossConnectionPeering.GetArpTableExpressRouteCrossConnection(System.Boolean,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetArpTableExpressRouteCrossConnection (waitForCompletion As Boolean, devicePath As String, Optional cancellationToken As CancellationToken = Nothing) As ExpressRouteCrossConnectionPeeringGetArpTableExpressRouteCrossConnectionOperation" />
+      <MemberSignature Language="F#" Value="abstract member GetArpTableExpressRouteCrossConnection : bool * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetArpTableExpressRouteCrossConnectionOperation&#xA;override this.GetArpTableExpressRouteCrossConnection : bool * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetArpTableExpressRouteCrossConnectionOperation" Usage="expressRouteCrossConnectionPeering.GetArpTableExpressRouteCrossConnection (waitForCompletion, devicePath, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListArpTableOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetArpTableExpressRouteCrossConnectionOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="devicePath" Type="System.String" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="devicePath" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="devicePath"> The path of the device. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="devicePath"> The path of the device. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Gets the currently advertised ARP table associated with the express route cross connection in a resource group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="devicePath" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="devicePath" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetArpTableExpressRouteCrossConnectionAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListArpTableOperation&gt; GetArpTableExpressRouteCrossConnectionAsync (string devicePath, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListArpTableOperation&gt; GetArpTableExpressRouteCrossConnectionAsync(string devicePath, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ExpressRouteCrossConnectionPeering.GetArpTableExpressRouteCrossConnectionAsync(System.String,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetArpTableExpressRouteCrossConnectionAsync (devicePath As String, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ExpressRouteCrossConnectionListArpTableOperation)" />
-      <MemberSignature Language="F#" Value="abstract member GetArpTableExpressRouteCrossConnectionAsync : string * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListArpTableOperation&gt;&#xA;override this.GetArpTableExpressRouteCrossConnectionAsync : string * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListArpTableOperation&gt;" Usage="expressRouteCrossConnectionPeering.GetArpTableExpressRouteCrossConnectionAsync (devicePath, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetArpTableExpressRouteCrossConnectionOperation&gt; GetArpTableExpressRouteCrossConnectionAsync (bool waitForCompletion, string devicePath, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetArpTableExpressRouteCrossConnectionOperation&gt; GetArpTableExpressRouteCrossConnectionAsync(bool waitForCompletion, string devicePath, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ExpressRouteCrossConnectionPeering.GetArpTableExpressRouteCrossConnectionAsync(System.Boolean,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetArpTableExpressRouteCrossConnectionAsync (waitForCompletion As Boolean, devicePath As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ExpressRouteCrossConnectionPeeringGetArpTableExpressRouteCrossConnectionOperation)" />
+      <MemberSignature Language="F#" Value="abstract member GetArpTableExpressRouteCrossConnectionAsync : bool * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetArpTableExpressRouteCrossConnectionOperation&gt;&#xA;override this.GetArpTableExpressRouteCrossConnectionAsync : bool * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetArpTableExpressRouteCrossConnectionOperation&gt;" Usage="expressRouteCrossConnectionPeering.GetArpTableExpressRouteCrossConnectionAsync (waitForCompletion, devicePath, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListArpTableOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetArpTableExpressRouteCrossConnectionOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="devicePath" Type="System.String" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="devicePath" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="devicePath"> The path of the device. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="devicePath"> The path of the device. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Gets the currently advertised ARP table associated with the express route cross connection in a resource group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="devicePath" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="devicePath" /> is null. </exception>
       </Docs>
@@ -245,18 +249,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetAvailableLocations">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt; GetAvailableLocations (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.Resources.Models.Location&gt; GetAvailableLocations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt; GetAvailableLocations (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt; GetAvailableLocations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ExpressRouteCrossConnectionPeering.GetAvailableLocations(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocations (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of Location)" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&#xA;override this.GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;" Usage="expressRouteCrossConnectionPeering.GetAvailableLocations cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocations (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of AzureLocation)" />
+      <MemberSignature Language="F#" Value="abstract member GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;&#xA;override this.GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;" Usage="expressRouteCrossConnectionPeering.GetAvailableLocations cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -269,18 +273,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetAvailableLocationsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt; GetAvailableLocationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.Resources.Models.Location&gt;&gt; GetAvailableLocationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ExpressRouteCrossConnectionPeering.GetAvailableLocationsAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocationsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of Location))" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;&#xA;override this.GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;" Usage="expressRouteCrossConnectionPeering.GetAvailableLocationsAsync cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocationsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of AzureLocation))" />
+      <MemberSignature Language="F#" Value="abstract member GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;&#xA;override this.GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;" Usage="expressRouteCrossConnectionPeering.GetAvailableLocationsAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -293,121 +297,129 @@
       </Docs>
     </Member>
     <Member MemberName="GetRoutesTableExpressRouteCrossConnection">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListRoutesTableOperation GetRoutesTableExpressRouteCrossConnection (string devicePath, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListRoutesTableOperation GetRoutesTableExpressRouteCrossConnection(string devicePath, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ExpressRouteCrossConnectionPeering.GetRoutesTableExpressRouteCrossConnection(System.String,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRoutesTableExpressRouteCrossConnection (devicePath As String, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As ExpressRouteCrossConnectionListRoutesTableOperation" />
-      <MemberSignature Language="F#" Value="abstract member GetRoutesTableExpressRouteCrossConnection : string * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListRoutesTableOperation&#xA;override this.GetRoutesTableExpressRouteCrossConnection : string * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListRoutesTableOperation" Usage="expressRouteCrossConnectionPeering.GetRoutesTableExpressRouteCrossConnection (devicePath, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetRoutesTableExpressRouteCrossConnectionOperation GetRoutesTableExpressRouteCrossConnection (bool waitForCompletion, string devicePath, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetRoutesTableExpressRouteCrossConnectionOperation GetRoutesTableExpressRouteCrossConnection(bool waitForCompletion, string devicePath, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ExpressRouteCrossConnectionPeering.GetRoutesTableExpressRouteCrossConnection(System.Boolean,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRoutesTableExpressRouteCrossConnection (waitForCompletion As Boolean, devicePath As String, Optional cancellationToken As CancellationToken = Nothing) As ExpressRouteCrossConnectionPeeringGetRoutesTableExpressRouteCrossConnectionOperation" />
+      <MemberSignature Language="F#" Value="abstract member GetRoutesTableExpressRouteCrossConnection : bool * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetRoutesTableExpressRouteCrossConnectionOperation&#xA;override this.GetRoutesTableExpressRouteCrossConnection : bool * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetRoutesTableExpressRouteCrossConnectionOperation" Usage="expressRouteCrossConnectionPeering.GetRoutesTableExpressRouteCrossConnection (waitForCompletion, devicePath, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListRoutesTableOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetRoutesTableExpressRouteCrossConnectionOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="devicePath" Type="System.String" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="devicePath" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="devicePath"> The path of the device. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="devicePath"> The path of the device. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Gets the currently advertised routes table associated with the express route cross connection in a resource group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="devicePath" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="devicePath" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetRoutesTableExpressRouteCrossConnectionAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListRoutesTableOperation&gt; GetRoutesTableExpressRouteCrossConnectionAsync (string devicePath, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListRoutesTableOperation&gt; GetRoutesTableExpressRouteCrossConnectionAsync(string devicePath, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ExpressRouteCrossConnectionPeering.GetRoutesTableExpressRouteCrossConnectionAsync(System.String,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRoutesTableExpressRouteCrossConnectionAsync (devicePath As String, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ExpressRouteCrossConnectionListRoutesTableOperation)" />
-      <MemberSignature Language="F#" Value="abstract member GetRoutesTableExpressRouteCrossConnectionAsync : string * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListRoutesTableOperation&gt;&#xA;override this.GetRoutesTableExpressRouteCrossConnectionAsync : string * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListRoutesTableOperation&gt;" Usage="expressRouteCrossConnectionPeering.GetRoutesTableExpressRouteCrossConnectionAsync (devicePath, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetRoutesTableExpressRouteCrossConnectionOperation&gt; GetRoutesTableExpressRouteCrossConnectionAsync (bool waitForCompletion, string devicePath, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetRoutesTableExpressRouteCrossConnectionOperation&gt; GetRoutesTableExpressRouteCrossConnectionAsync(bool waitForCompletion, string devicePath, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ExpressRouteCrossConnectionPeering.GetRoutesTableExpressRouteCrossConnectionAsync(System.Boolean,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRoutesTableExpressRouteCrossConnectionAsync (waitForCompletion As Boolean, devicePath As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ExpressRouteCrossConnectionPeeringGetRoutesTableExpressRouteCrossConnectionOperation)" />
+      <MemberSignature Language="F#" Value="abstract member GetRoutesTableExpressRouteCrossConnectionAsync : bool * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetRoutesTableExpressRouteCrossConnectionOperation&gt;&#xA;override this.GetRoutesTableExpressRouteCrossConnectionAsync : bool * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetRoutesTableExpressRouteCrossConnectionOperation&gt;" Usage="expressRouteCrossConnectionPeering.GetRoutesTableExpressRouteCrossConnectionAsync (waitForCompletion, devicePath, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListRoutesTableOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetRoutesTableExpressRouteCrossConnectionOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="devicePath" Type="System.String" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="devicePath" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="devicePath"> The path of the device. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="devicePath"> The path of the device. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Gets the currently advertised routes table associated with the express route cross connection in a resource group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="devicePath" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="devicePath" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetRoutesTableSummaryExpressRouteCrossConnection">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListRoutesTableSummaryOperation GetRoutesTableSummaryExpressRouteCrossConnection (string devicePath, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListRoutesTableSummaryOperation GetRoutesTableSummaryExpressRouteCrossConnection(string devicePath, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ExpressRouteCrossConnectionPeering.GetRoutesTableSummaryExpressRouteCrossConnection(System.String,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRoutesTableSummaryExpressRouteCrossConnection (devicePath As String, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As ExpressRouteCrossConnectionListRoutesTableSummaryOperation" />
-      <MemberSignature Language="F#" Value="abstract member GetRoutesTableSummaryExpressRouteCrossConnection : string * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListRoutesTableSummaryOperation&#xA;override this.GetRoutesTableSummaryExpressRouteCrossConnection : string * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListRoutesTableSummaryOperation" Usage="expressRouteCrossConnectionPeering.GetRoutesTableSummaryExpressRouteCrossConnection (devicePath, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetRoutesTableSummaryExpressRouteCrossConnectionOperation GetRoutesTableSummaryExpressRouteCrossConnection (bool waitForCompletion, string devicePath, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetRoutesTableSummaryExpressRouteCrossConnectionOperation GetRoutesTableSummaryExpressRouteCrossConnection(bool waitForCompletion, string devicePath, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ExpressRouteCrossConnectionPeering.GetRoutesTableSummaryExpressRouteCrossConnection(System.Boolean,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRoutesTableSummaryExpressRouteCrossConnection (waitForCompletion As Boolean, devicePath As String, Optional cancellationToken As CancellationToken = Nothing) As ExpressRouteCrossConnectionPeeringGetRoutesTableSummaryExpressRouteCrossConnectionOperation" />
+      <MemberSignature Language="F#" Value="abstract member GetRoutesTableSummaryExpressRouteCrossConnection : bool * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetRoutesTableSummaryExpressRouteCrossConnectionOperation&#xA;override this.GetRoutesTableSummaryExpressRouteCrossConnection : bool * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetRoutesTableSummaryExpressRouteCrossConnectionOperation" Usage="expressRouteCrossConnectionPeering.GetRoutesTableSummaryExpressRouteCrossConnection (waitForCompletion, devicePath, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListRoutesTableSummaryOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetRoutesTableSummaryExpressRouteCrossConnectionOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="devicePath" Type="System.String" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="devicePath" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="devicePath"> The path of the device. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="devicePath"> The path of the device. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Gets the route table summary associated with the express route cross connection in a resource group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="devicePath" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="devicePath" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetRoutesTableSummaryExpressRouteCrossConnectionAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListRoutesTableSummaryOperation&gt; GetRoutesTableSummaryExpressRouteCrossConnectionAsync (string devicePath, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListRoutesTableSummaryOperation&gt; GetRoutesTableSummaryExpressRouteCrossConnectionAsync(string devicePath, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ExpressRouteCrossConnectionPeering.GetRoutesTableSummaryExpressRouteCrossConnectionAsync(System.String,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRoutesTableSummaryExpressRouteCrossConnectionAsync (devicePath As String, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ExpressRouteCrossConnectionListRoutesTableSummaryOperation)" />
-      <MemberSignature Language="F#" Value="abstract member GetRoutesTableSummaryExpressRouteCrossConnectionAsync : string * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListRoutesTableSummaryOperation&gt;&#xA;override this.GetRoutesTableSummaryExpressRouteCrossConnectionAsync : string * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListRoutesTableSummaryOperation&gt;" Usage="expressRouteCrossConnectionPeering.GetRoutesTableSummaryExpressRouteCrossConnectionAsync (devicePath, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetRoutesTableSummaryExpressRouteCrossConnectionOperation&gt; GetRoutesTableSummaryExpressRouteCrossConnectionAsync (bool waitForCompletion, string devicePath, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetRoutesTableSummaryExpressRouteCrossConnectionOperation&gt; GetRoutesTableSummaryExpressRouteCrossConnectionAsync(bool waitForCompletion, string devicePath, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ExpressRouteCrossConnectionPeering.GetRoutesTableSummaryExpressRouteCrossConnectionAsync(System.Boolean,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRoutesTableSummaryExpressRouteCrossConnectionAsync (waitForCompletion As Boolean, devicePath As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ExpressRouteCrossConnectionPeeringGetRoutesTableSummaryExpressRouteCrossConnectionOperation)" />
+      <MemberSignature Language="F#" Value="abstract member GetRoutesTableSummaryExpressRouteCrossConnectionAsync : bool * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetRoutesTableSummaryExpressRouteCrossConnectionOperation&gt;&#xA;override this.GetRoutesTableSummaryExpressRouteCrossConnectionAsync : bool * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetRoutesTableSummaryExpressRouteCrossConnectionOperation&gt;" Usage="expressRouteCrossConnectionPeering.GetRoutesTableSummaryExpressRouteCrossConnectionAsync (waitForCompletion, devicePath, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionListRoutesTableSummaryOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCrossConnectionPeeringGetRoutesTableSummaryExpressRouteCrossConnectionOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="devicePath" Type="System.String" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="devicePath" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="devicePath"> The path of the device. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="devicePath"> The path of the device. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Gets the route table summary associated with the express route cross connection in a resource group. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="devicePath" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="devicePath" /> is null. </exception>
       </Docs>
@@ -433,41 +445,21 @@
       </Docs>
     </Member>
     <Member MemberName="ResourceType">
-      <MemberSignature Language="C#" Value="public static readonly Azure.ResourceManager.ResourceType ResourceType;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Azure.ResourceManager.ResourceType ResourceType" />
+      <MemberSignature Language="C#" Value="public static readonly Azure.Core.ResourceType ResourceType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype Azure.Core.ResourceType ResourceType" />
       <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.Network.ExpressRouteCrossConnectionPeering.ResourceType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ResourceType As ResourceType " />
-      <MemberSignature Language="F#" Value=" staticval mutable ResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Network.ExpressRouteCrossConnectionPeering.ResourceType" />
+      <MemberSignature Language="F#" Value=" staticval mutable ResourceType : Azure.Core.ResourceType" Usage="Azure.ResourceManager.Network.ExpressRouteCrossConnectionPeering.ResourceType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
+        <ReturnType>Azure.Core.ResourceType</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Gets the resource type for the operations. </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.ExpressRouteCrossConnectionPeering.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Network.ExpressRouteCrossConnectionPeering.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for the operations. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

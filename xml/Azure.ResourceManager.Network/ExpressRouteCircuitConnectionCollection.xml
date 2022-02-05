@@ -44,11 +44,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.ExpressRouteCircuitConnectionCreateOrUpdateOperation CreateOrUpdate (string connectionName, Azure.ResourceManager.Network.ExpressRouteCircuitConnectionData expressRouteCircuitConnectionParameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.ExpressRouteCircuitConnectionCreateOrUpdateOperation CreateOrUpdate(string connectionName, class Azure.ResourceManager.Network.ExpressRouteCircuitConnectionData expressRouteCircuitConnectionParameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ExpressRouteCircuitConnectionCollection.CreateOrUpdate(System.String,Azure.ResourceManager.Network.ExpressRouteCircuitConnectionData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (connectionName As String, expressRouteCircuitConnectionParameters As ExpressRouteCircuitConnectionData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As ExpressRouteCircuitConnectionCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.ResourceManager.Network.ExpressRouteCircuitConnectionData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.ExpressRouteCircuitConnectionCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : string * Azure.ResourceManager.Network.ExpressRouteCircuitConnectionData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.ExpressRouteCircuitConnectionCreateOrUpdateOperation" Usage="expressRouteCircuitConnectionCollection.CreateOrUpdate (connectionName, expressRouteCircuitConnectionParameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.ExpressRouteCircuitConnectionCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string connectionName, Azure.ResourceManager.Network.ExpressRouteCircuitConnectionData expressRouteCircuitConnectionParameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.ExpressRouteCircuitConnectionCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string connectionName, class Azure.ResourceManager.Network.ExpressRouteCircuitConnectionData expressRouteCircuitConnectionParameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ExpressRouteCircuitConnectionCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Network.ExpressRouteCircuitConnectionData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, connectionName As String, expressRouteCircuitConnectionParameters As ExpressRouteCircuitConnectionData, Optional cancellationToken As CancellationToken = Nothing) As ExpressRouteCircuitConnectionCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Network.ExpressRouteCircuitConnectionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.ExpressRouteCircuitConnectionCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Network.ExpressRouteCircuitConnectionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.ExpressRouteCircuitConnectionCreateOrUpdateOperation" Usage="expressRouteCircuitConnectionCollection.CreateOrUpdate (waitForCompletion, connectionName, expressRouteCircuitConnectionParameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -58,29 +58,31 @@
         <ReturnType>Azure.ResourceManager.Network.Models.ExpressRouteCircuitConnectionCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="connectionName" Type="System.String" />
         <Parameter Name="expressRouteCircuitConnectionParameters" Type="Azure.ResourceManager.Network.ExpressRouteCircuitConnectionData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="connectionName"> The name of the express route circuit connection. </param>
         <param name="expressRouteCircuitConnectionParameters"> Parameters supplied to the create or update express route circuit connection operation. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates a Express Route Circuit Connection in the specified express route circuits. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="connectionName" /> or <paramref name="expressRouteCircuitConnectionParameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCircuitConnectionCreateOrUpdateOperation&gt; CreateOrUpdateAsync (string connectionName, Azure.ResourceManager.Network.ExpressRouteCircuitConnectionData expressRouteCircuitConnectionParameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.ExpressRouteCircuitConnectionCreateOrUpdateOperation&gt; CreateOrUpdateAsync(string connectionName, class Azure.ResourceManager.Network.ExpressRouteCircuitConnectionData expressRouteCircuitConnectionParameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ExpressRouteCircuitConnectionCollection.CreateOrUpdateAsync(System.String,Azure.ResourceManager.Network.ExpressRouteCircuitConnectionData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (connectionName As String, expressRouteCircuitConnectionParameters As ExpressRouteCircuitConnectionData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ExpressRouteCircuitConnectionCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.ResourceManager.Network.ExpressRouteCircuitConnectionData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCircuitConnectionCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.ResourceManager.Network.ExpressRouteCircuitConnectionData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCircuitConnectionCreateOrUpdateOperation&gt;" Usage="expressRouteCircuitConnectionCollection.CreateOrUpdateAsync (connectionName, expressRouteCircuitConnectionParameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCircuitConnectionCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string connectionName, Azure.ResourceManager.Network.ExpressRouteCircuitConnectionData expressRouteCircuitConnectionParameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.ExpressRouteCircuitConnectionCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string connectionName, class Azure.ResourceManager.Network.ExpressRouteCircuitConnectionData expressRouteCircuitConnectionParameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ExpressRouteCircuitConnectionCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Network.ExpressRouteCircuitConnectionData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, connectionName As String, expressRouteCircuitConnectionParameters As ExpressRouteCircuitConnectionData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ExpressRouteCircuitConnectionCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Network.ExpressRouteCircuitConnectionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCircuitConnectionCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Network.ExpressRouteCircuitConnectionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCircuitConnectionCreateOrUpdateOperation&gt;" Usage="expressRouteCircuitConnectionCollection.CreateOrUpdateAsync (waitForCompletion, connectionName, expressRouteCircuitConnectionParameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -90,19 +92,21 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.ExpressRouteCircuitConnectionCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="connectionName" Type="System.String" />
         <Parameter Name="expressRouteCircuitConnectionParameters" Type="Azure.ResourceManager.Network.ExpressRouteCircuitConnectionData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="connectionName"> The name of the express route circuit connection. </param>
         <param name="expressRouteCircuitConnectionParameters"> Parameters supplied to the create or update express route circuit connection operation. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates a Express Route Circuit Connection in the specified express route circuits. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="connectionName" /> or <paramref name="expressRouteCircuitConnectionParameters" /> is null. </exception>
       </Docs>
@@ -131,6 +135,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="connectionName" /> is null. </exception>
       </Docs>
@@ -159,6 +165,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="connectionName" /> is null. </exception>
       </Docs>
@@ -187,6 +195,8 @@
         <summary> Gets the specified Express Route Circuit Connection from the specified express route circuit. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="connectionName" /> is null. </exception>
       </Docs>
@@ -263,6 +273,8 @@
         <summary> Gets the specified Express Route Circuit Connection from the specified express route circuit. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="connectionName" /> is null. </exception>
       </Docs>
@@ -291,6 +303,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="connectionName" /> is null. </exception>
       </Docs>
@@ -319,6 +333,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="connectionName" /> is null. </exception>
       </Docs>
@@ -395,26 +411,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.ExpressRouteCircuitConnectionCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Network.ExpressRouteCircuitConnectionCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -44,27 +44,27 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.JobExecutionCreateOrUpdateOperation CreateOrUpdate (Guid jobExecutionId, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.JobExecutionCreateOrUpdateOperation CreateOrUpdate(valuetype System.Guid jobExecutionId, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerJobAgentJobExecutionCollection.CreateOrUpdate(System.Guid,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (jobExecutionId As Guid, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As JobExecutionCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : Guid * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.JobExecutionCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : Guid * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.JobExecutionCreateOrUpdateOperation" Usage="serverJobAgentJobExecutionCollection.CreateOrUpdate (jobExecutionId, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.ServerJobAgentJobExecutionCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, Guid jobExecutionId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.ServerJobAgentJobExecutionCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, valuetype System.Guid jobExecutionId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerJobAgentJobExecutionCollection.CreateOrUpdate(System.Boolean,System.Guid,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, jobExecutionId As Guid, Optional cancellationToken As CancellationToken = Nothing) As ServerJobAgentJobExecutionCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * Guid * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.ServerJobAgentJobExecutionCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * Guid * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.ServerJobAgentJobExecutionCreateOrUpdateOperation" Usage="serverJobAgentJobExecutionCollection.CreateOrUpdate (waitForCompletion, jobExecutionId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Sql.Models.JobExecutionCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.Sql.Models.ServerJobAgentJobExecutionCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="jobExecutionId" Type="System.Guid" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="jobExecutionId" Type="System.Guid" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="jobExecutionId"> The job execution id to create the job execution under. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="jobExecutionId"> The job execution id to create the job execution under. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates a job execution. </summary>
         <returns>To be added.</returns>
@@ -72,27 +72,27 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.JobExecutionCreateOrUpdateOperation&gt; CreateOrUpdateAsync (Guid jobExecutionId, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.JobExecutionCreateOrUpdateOperation&gt; CreateOrUpdateAsync(valuetype System.Guid jobExecutionId, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerJobAgentJobExecutionCollection.CreateOrUpdateAsync(System.Guid,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (jobExecutionId As Guid, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of JobExecutionCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : Guid * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.JobExecutionCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : Guid * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.JobExecutionCreateOrUpdateOperation&gt;" Usage="serverJobAgentJobExecutionCollection.CreateOrUpdateAsync (jobExecutionId, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ServerJobAgentJobExecutionCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, Guid jobExecutionId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.ServerJobAgentJobExecutionCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, valuetype System.Guid jobExecutionId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerJobAgentJobExecutionCollection.CreateOrUpdateAsync(System.Boolean,System.Guid,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, jobExecutionId As Guid, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ServerJobAgentJobExecutionCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * Guid * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ServerJobAgentJobExecutionCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * Guid * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ServerJobAgentJobExecutionCreateOrUpdateOperation&gt;" Usage="serverJobAgentJobExecutionCollection.CreateOrUpdateAsync (waitForCompletion, jobExecutionId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.JobExecutionCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ServerJobAgentJobExecutionCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="jobExecutionId" Type="System.Guid" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="jobExecutionId" Type="System.Guid" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="jobExecutionId"> The job execution id to create the job execution under. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="jobExecutionId"> The job execution id to create the job execution under. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates a job execution. </summary>
         <returns>To be added.</returns>
@@ -483,26 +483,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.ServerJobAgentJobExecutionCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Sql.ServerJobAgentJobExecutionCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

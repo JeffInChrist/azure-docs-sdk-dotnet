@@ -44,65 +44,69 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateInstanceCreateOperation CreateOrUpdate (string instanceName, Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceData instance, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateInstanceCreateOperation CreateOrUpdate(string instanceName, class Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceData instance, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceCollection.CreateOrUpdate(System.String,Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (instanceName As String, instance As DeviceUpdateInstanceData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As DeviceUpdateInstanceCreateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateInstanceCreateOperation&#xA;override this.CreateOrUpdate : string * Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateInstanceCreateOperation" Usage="deviceUpdateInstanceCollection.CreateOrUpdate (instanceName, instance, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateInstanceCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string instanceName, Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceData instance, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateInstanceCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string instanceName, class Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceData instance, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, instanceName As String, instance As DeviceUpdateInstanceData, Optional cancellationToken As CancellationToken = Nothing) As DeviceUpdateInstanceCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateInstanceCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateInstanceCreateOrUpdateOperation" Usage="deviceUpdateInstanceCollection.CreateOrUpdate (waitForCompletion, instanceName, instance, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceUpdate</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateInstanceCreateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateInstanceCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="instanceName" Type="System.String" />
         <Parameter Name="instance" Type="Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="instanceName"> Instance name. </param>
         <param name="instance"> Instance details. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates instance. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="instanceName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="instanceName" /> or <paramref name="instance" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateInstanceCreateOperation&gt; CreateOrUpdateAsync (string instanceName, Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceData instance, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateInstanceCreateOperation&gt; CreateOrUpdateAsync(string instanceName, class Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceData instance, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceCollection.CreateOrUpdateAsync(System.String,Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (instanceName As String, instance As DeviceUpdateInstanceData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of DeviceUpdateInstanceCreateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateInstanceCreateOperation&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateInstanceCreateOperation&gt;" Usage="deviceUpdateInstanceCollection.CreateOrUpdateAsync (instanceName, instance, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateInstanceCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string instanceName, Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceData instance, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateInstanceCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string instanceName, class Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceData instance, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, instanceName As String, instance As DeviceUpdateInstanceData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of DeviceUpdateInstanceCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateInstanceCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateInstanceCreateOrUpdateOperation&gt;" Usage="deviceUpdateInstanceCollection.CreateOrUpdateAsync (waitForCompletion, instanceName, instance, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceUpdate</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateInstanceCreateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateInstanceCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="instanceName" Type="System.String" />
         <Parameter Name="instance" Type="Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="instanceName"> Instance name. </param>
         <param name="instance"> Instance details. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates instance. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="instanceName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="instanceName" /> or <paramref name="instance" /> is null. </exception>
       </Docs>
@@ -131,6 +135,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="instanceName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="instanceName" /> is null. </exception>
       </Docs>
@@ -159,6 +165,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="instanceName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="instanceName" /> is null. </exception>
       </Docs>
@@ -187,6 +195,8 @@
         <summary> Returns instance details for the given instance and account name. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="instanceName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="instanceName" /> is null. </exception>
       </Docs>
@@ -263,6 +273,8 @@
         <summary> Returns instance details for the given instance and account name. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="instanceName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="instanceName" /> is null. </exception>
       </Docs>
@@ -291,6 +303,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="instanceName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="instanceName" /> is null. </exception>
       </Docs>
@@ -319,6 +333,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="instanceName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="instanceName" /> is null. </exception>
       </Docs>
@@ -395,26 +411,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstanceCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.DeviceUpdate</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

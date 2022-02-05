@@ -44,11 +44,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyCreateOrUpdateOperation CreateOrUpdate (Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName policyName, Azure.ResourceManager.Sql.LongTermRetentionPolicyData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyCreateOrUpdateOperation CreateOrUpdate(valuetype Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName policyName, class Azure.ResourceManager.Sql.LongTermRetentionPolicyData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.LongTermRetentionPolicyCollection.CreateOrUpdate(Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName,Azure.ResourceManager.Sql.LongTermRetentionPolicyData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (policyName As LongTermRetentionPolicyName, parameters As LongTermRetentionPolicyData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As LongTermRetentionPolicyCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName * Azure.ResourceManager.Sql.LongTermRetentionPolicyData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName * Azure.ResourceManager.Sql.LongTermRetentionPolicyData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyCreateOrUpdateOperation" Usage="longTermRetentionPolicyCollection.CreateOrUpdate (policyName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName policyName, Azure.ResourceManager.Sql.LongTermRetentionPolicyData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, valuetype Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName policyName, class Azure.ResourceManager.Sql.LongTermRetentionPolicyData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.LongTermRetentionPolicyCollection.CreateOrUpdate(System.Boolean,Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName,Azure.ResourceManager.Sql.LongTermRetentionPolicyData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, policyName As LongTermRetentionPolicyName, parameters As LongTermRetentionPolicyData, Optional cancellationToken As CancellationToken = Nothing) As LongTermRetentionPolicyCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName * Azure.ResourceManager.Sql.LongTermRetentionPolicyData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName * Azure.ResourceManager.Sql.LongTermRetentionPolicyData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyCreateOrUpdateOperation" Usage="longTermRetentionPolicyCollection.CreateOrUpdate (waitForCompletion, policyName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
@@ -58,15 +58,15 @@
         <ReturnType>Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="policyName" Type="Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.LongTermRetentionPolicyData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="policyName"> The policy name. Should always be Default. </param>
         <param name="parameters"> The long term retention policy info. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Sets a database's long term retention policy. </summary>
         <returns>To be added.</returns>
@@ -76,11 +76,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyCreateOrUpdateOperation&gt; CreateOrUpdateAsync (Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName policyName, Azure.ResourceManager.Sql.LongTermRetentionPolicyData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyCreateOrUpdateOperation&gt; CreateOrUpdateAsync(valuetype Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName policyName, class Azure.ResourceManager.Sql.LongTermRetentionPolicyData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.LongTermRetentionPolicyCollection.CreateOrUpdateAsync(Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName,Azure.ResourceManager.Sql.LongTermRetentionPolicyData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (policyName As LongTermRetentionPolicyName, parameters As LongTermRetentionPolicyData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of LongTermRetentionPolicyCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName * Azure.ResourceManager.Sql.LongTermRetentionPolicyData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName * Azure.ResourceManager.Sql.LongTermRetentionPolicyData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyCreateOrUpdateOperation&gt;" Usage="longTermRetentionPolicyCollection.CreateOrUpdateAsync (policyName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName policyName, Azure.ResourceManager.Sql.LongTermRetentionPolicyData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, valuetype Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName policyName, class Azure.ResourceManager.Sql.LongTermRetentionPolicyData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.LongTermRetentionPolicyCollection.CreateOrUpdateAsync(System.Boolean,Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName,Azure.ResourceManager.Sql.LongTermRetentionPolicyData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, policyName As LongTermRetentionPolicyName, parameters As LongTermRetentionPolicyData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of LongTermRetentionPolicyCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName * Azure.ResourceManager.Sql.LongTermRetentionPolicyData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName * Azure.ResourceManager.Sql.LongTermRetentionPolicyData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyCreateOrUpdateOperation&gt;" Usage="longTermRetentionPolicyCollection.CreateOrUpdateAsync (waitForCompletion, policyName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
@@ -90,15 +90,15 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="policyName" Type="Azure.ResourceManager.Sql.Models.LongTermRetentionPolicyName" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.LongTermRetentionPolicyData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="policyName"> The policy name. Should always be Default. </param>
         <param name="parameters"> The long term retention policy info. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Sets a database's long term retention policy. </summary>
         <returns>To be added.</returns>
@@ -383,26 +383,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.LongTermRetentionPolicyCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Sql.LongTermRetentionPolicyCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

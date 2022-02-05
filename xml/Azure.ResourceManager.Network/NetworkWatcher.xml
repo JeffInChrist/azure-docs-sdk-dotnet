@@ -34,11 +34,11 @@
       </Docs>
     </Member>
     <Member MemberName="CheckConnectivity">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.NetworkWatcherCheckConnectivityOperation CheckConnectivity (Azure.ResourceManager.Network.Models.ConnectivityParameters parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.NetworkWatcherCheckConnectivityOperation CheckConnectivity(class Azure.ResourceManager.Network.Models.ConnectivityParameters parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.CheckConnectivity(Azure.ResourceManager.Network.Models.ConnectivityParameters,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CheckConnectivity (parameters As ConnectivityParameters, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As NetworkWatcherCheckConnectivityOperation" />
-      <MemberSignature Language="F#" Value="abstract member CheckConnectivity : Azure.ResourceManager.Network.Models.ConnectivityParameters * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherCheckConnectivityOperation&#xA;override this.CheckConnectivity : Azure.ResourceManager.Network.Models.ConnectivityParameters * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherCheckConnectivityOperation" Usage="networkWatcher.CheckConnectivity (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.NetworkWatcherCheckConnectivityOperation CheckConnectivity (bool waitForCompletion, Azure.ResourceManager.Network.Models.ConnectivityParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.NetworkWatcherCheckConnectivityOperation CheckConnectivity(bool waitForCompletion, class Azure.ResourceManager.Network.Models.ConnectivityParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.CheckConnectivity(System.Boolean,Azure.ResourceManager.Network.Models.ConnectivityParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CheckConnectivity (waitForCompletion As Boolean, parameters As ConnectivityParameters, Optional cancellationToken As CancellationToken = Nothing) As NetworkWatcherCheckConnectivityOperation" />
+      <MemberSignature Language="F#" Value="abstract member CheckConnectivity : bool * Azure.ResourceManager.Network.Models.ConnectivityParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherCheckConnectivityOperation&#xA;override this.CheckConnectivity : bool * Azure.ResourceManager.Network.Models.ConnectivityParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherCheckConnectivityOperation" Usage="networkWatcher.CheckConnectivity (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -48,13 +48,13 @@
         <ReturnType>Azure.ResourceManager.Network.Models.NetworkWatcherCheckConnectivityOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.ConnectivityParameters" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.ConnectivityParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Parameters that determine how the connectivity check will be performed. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Parameters that determine how the connectivity check will be performed. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Verifies the possibility of establishing a direct TCP connection from a virtual machine to a given endpoint including another VM or an arbitrary remote server. </summary>
         <returns>To be added.</returns>
@@ -64,11 +64,11 @@
       </Docs>
     </Member>
     <Member MemberName="CheckConnectivityAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherCheckConnectivityOperation&gt; CheckConnectivityAsync (Azure.ResourceManager.Network.Models.ConnectivityParameters parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.NetworkWatcherCheckConnectivityOperation&gt; CheckConnectivityAsync(class Azure.ResourceManager.Network.Models.ConnectivityParameters parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.CheckConnectivityAsync(Azure.ResourceManager.Network.Models.ConnectivityParameters,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CheckConnectivityAsync (parameters As ConnectivityParameters, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NetworkWatcherCheckConnectivityOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CheckConnectivityAsync : Azure.ResourceManager.Network.Models.ConnectivityParameters * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherCheckConnectivityOperation&gt;&#xA;override this.CheckConnectivityAsync : Azure.ResourceManager.Network.Models.ConnectivityParameters * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherCheckConnectivityOperation&gt;" Usage="networkWatcher.CheckConnectivityAsync (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherCheckConnectivityOperation&gt; CheckConnectivityAsync (bool waitForCompletion, Azure.ResourceManager.Network.Models.ConnectivityParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.NetworkWatcherCheckConnectivityOperation&gt; CheckConnectivityAsync(bool waitForCompletion, class Azure.ResourceManager.Network.Models.ConnectivityParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.CheckConnectivityAsync(System.Boolean,Azure.ResourceManager.Network.Models.ConnectivityParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CheckConnectivityAsync (waitForCompletion As Boolean, parameters As ConnectivityParameters, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NetworkWatcherCheckConnectivityOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CheckConnectivityAsync : bool * Azure.ResourceManager.Network.Models.ConnectivityParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherCheckConnectivityOperation&gt;&#xA;override this.CheckConnectivityAsync : bool * Azure.ResourceManager.Network.Models.ConnectivityParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherCheckConnectivityOperation&gt;" Usage="networkWatcher.CheckConnectivityAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -78,13 +78,13 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherCheckConnectivityOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.ConnectivityParameters" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.ConnectivityParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Parameters that determine how the connectivity check will be performed. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Parameters that determine how the connectivity check will be performed. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Verifies the possibility of establishing a direct TCP connection from a virtual machine to a given endpoint including another VM or an arbitrary remote server. </summary>
         <returns>To be added.</returns>
@@ -94,18 +94,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateResourceIdentifier">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ResourceIdentifier CreateResourceIdentifier (string subscriptionId, string resourceGroupName, string networkWatcherName);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ResourceIdentifier CreateResourceIdentifier(string subscriptionId, string resourceGroupName, string networkWatcherName) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Core.ResourceIdentifier CreateResourceIdentifier (string subscriptionId, string resourceGroupName, string networkWatcherName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Core.ResourceIdentifier CreateResourceIdentifier(string subscriptionId, string resourceGroupName, string networkWatcherName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.CreateResourceIdentifier(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateResourceIdentifier (subscriptionId As String, resourceGroupName As String, networkWatcherName As String) As ResourceIdentifier" />
-      <MemberSignature Language="F#" Value="static member CreateResourceIdentifier : string * string * string -&gt; Azure.ResourceManager.ResourceIdentifier" Usage="Azure.ResourceManager.Network.NetworkWatcher.CreateResourceIdentifier (subscriptionId, resourceGroupName, networkWatcherName)" />
+      <MemberSignature Language="F#" Value="static member CreateResourceIdentifier : string * string * string -&gt; Azure.Core.ResourceIdentifier" Usage="Azure.ResourceManager.Network.NetworkWatcher.CreateResourceIdentifier (subscriptionId, resourceGroupName, networkWatcherName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceIdentifier</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscriptionId" Type="System.String" />
@@ -143,10 +143,10 @@
       </Docs>
     </Member>
     <Member MemberName="Delete">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.NetworkWatcherDeleteOperation Delete (bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.NetworkWatcherDeleteOperation Delete (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.NetworkWatcherDeleteOperation Delete(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.Delete(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As NetworkWatcherDeleteOperation" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As NetworkWatcherDeleteOperation" />
       <MemberSignature Language="F#" Value="abstract member Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherDeleteOperation&#xA;override this.Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherDeleteOperation" Usage="networkWatcher.Delete (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -169,10 +169,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherDeleteOperation&gt; DeleteAsync (bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherDeleteOperation&gt; DeleteAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.NetworkWatcherDeleteOperation&gt; DeleteAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.DeleteAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NetworkWatcherDeleteOperation)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NetworkWatcherDeleteOperation)" />
       <MemberSignature Language="F#" Value="abstract member DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherDeleteOperation&gt;&#xA;override this.DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherDeleteOperation&gt;" Usage="networkWatcher.DeleteAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -243,18 +243,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetAvailableLocations">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt; GetAvailableLocations (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.Resources.Models.Location&gt; GetAvailableLocations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt; GetAvailableLocations (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt; GetAvailableLocations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetAvailableLocations(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocations (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of Location)" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&#xA;override this.GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;" Usage="networkWatcher.GetAvailableLocations cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocations (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of AzureLocation)" />
+      <MemberSignature Language="F#" Value="abstract member GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;&#xA;override this.GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;" Usage="networkWatcher.GetAvailableLocations cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -267,18 +267,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetAvailableLocationsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt; GetAvailableLocationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.Resources.Models.Location&gt;&gt; GetAvailableLocationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetAvailableLocationsAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocationsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of Location))" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;&#xA;override this.GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;" Usage="networkWatcher.GetAvailableLocationsAsync cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocationsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of AzureLocation))" />
+      <MemberSignature Language="F#" Value="abstract member GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;&#xA;override this.GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;" Usage="networkWatcher.GetAvailableLocationsAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -291,27 +291,27 @@
       </Docs>
     </Member>
     <Member MemberName="GetAvailableProviders">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.NetworkWatcherListAvailableProvidersOperation GetAvailableProviders (Azure.ResourceManager.Network.Models.AvailableProvidersListParameters parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.NetworkWatcherListAvailableProvidersOperation GetAvailableProviders(class Azure.ResourceManager.Network.Models.AvailableProvidersListParameters parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetAvailableProviders(Azure.ResourceManager.Network.Models.AvailableProvidersListParameters,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableProviders (parameters As AvailableProvidersListParameters, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As NetworkWatcherListAvailableProvidersOperation" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableProviders : Azure.ResourceManager.Network.Models.AvailableProvidersListParameters * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherListAvailableProvidersOperation&#xA;override this.GetAvailableProviders : Azure.ResourceManager.Network.Models.AvailableProvidersListParameters * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherListAvailableProvidersOperation" Usage="networkWatcher.GetAvailableProviders (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.NetworkWatcherGetAvailableProvidersOperation GetAvailableProviders (bool waitForCompletion, Azure.ResourceManager.Network.Models.AvailableProvidersListParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.NetworkWatcherGetAvailableProvidersOperation GetAvailableProviders(bool waitForCompletion, class Azure.ResourceManager.Network.Models.AvailableProvidersListParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetAvailableProviders(System.Boolean,Azure.ResourceManager.Network.Models.AvailableProvidersListParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableProviders (waitForCompletion As Boolean, parameters As AvailableProvidersListParameters, Optional cancellationToken As CancellationToken = Nothing) As NetworkWatcherGetAvailableProvidersOperation" />
+      <MemberSignature Language="F#" Value="abstract member GetAvailableProviders : bool * Azure.ResourceManager.Network.Models.AvailableProvidersListParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetAvailableProvidersOperation&#xA;override this.GetAvailableProviders : bool * Azure.ResourceManager.Network.Models.AvailableProvidersListParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetAvailableProvidersOperation" Usage="networkWatcher.GetAvailableProviders (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Network.Models.NetworkWatcherListAvailableProvidersOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.Network.Models.NetworkWatcherGetAvailableProvidersOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.AvailableProvidersListParameters" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.AvailableProvidersListParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Parameters that scope the list of available providers. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Parameters that scope the list of available providers. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> NOTE: This feature is currently in preview and still being tested for stability. Lists all available internet service providers for a specified Azure region. </summary>
         <returns>To be added.</returns>
@@ -321,27 +321,27 @@
       </Docs>
     </Member>
     <Member MemberName="GetAvailableProvidersAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherListAvailableProvidersOperation&gt; GetAvailableProvidersAsync (Azure.ResourceManager.Network.Models.AvailableProvidersListParameters parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.NetworkWatcherListAvailableProvidersOperation&gt; GetAvailableProvidersAsync(class Azure.ResourceManager.Network.Models.AvailableProvidersListParameters parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetAvailableProvidersAsync(Azure.ResourceManager.Network.Models.AvailableProvidersListParameters,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableProvidersAsync (parameters As AvailableProvidersListParameters, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NetworkWatcherListAvailableProvidersOperation)" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableProvidersAsync : Azure.ResourceManager.Network.Models.AvailableProvidersListParameters * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherListAvailableProvidersOperation&gt;&#xA;override this.GetAvailableProvidersAsync : Azure.ResourceManager.Network.Models.AvailableProvidersListParameters * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherListAvailableProvidersOperation&gt;" Usage="networkWatcher.GetAvailableProvidersAsync (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetAvailableProvidersOperation&gt; GetAvailableProvidersAsync (bool waitForCompletion, Azure.ResourceManager.Network.Models.AvailableProvidersListParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.NetworkWatcherGetAvailableProvidersOperation&gt; GetAvailableProvidersAsync(bool waitForCompletion, class Azure.ResourceManager.Network.Models.AvailableProvidersListParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetAvailableProvidersAsync(System.Boolean,Azure.ResourceManager.Network.Models.AvailableProvidersListParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableProvidersAsync (waitForCompletion As Boolean, parameters As AvailableProvidersListParameters, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NetworkWatcherGetAvailableProvidersOperation)" />
+      <MemberSignature Language="F#" Value="abstract member GetAvailableProvidersAsync : bool * Azure.ResourceManager.Network.Models.AvailableProvidersListParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetAvailableProvidersOperation&gt;&#xA;override this.GetAvailableProvidersAsync : bool * Azure.ResourceManager.Network.Models.AvailableProvidersListParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetAvailableProvidersOperation&gt;" Usage="networkWatcher.GetAvailableProvidersAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherListAvailableProvidersOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetAvailableProvidersOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.AvailableProvidersListParameters" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.AvailableProvidersListParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Parameters that scope the list of available providers. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Parameters that scope the list of available providers. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> NOTE: This feature is currently in preview and still being tested for stability. Lists all available internet service providers for a specified Azure region. </summary>
         <returns>To be added.</returns>
@@ -351,11 +351,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetAzureReachabilityReport">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.NetworkWatcherGetAzureReachabilityReportOperation GetAzureReachabilityReport (Azure.ResourceManager.Network.Models.AzureReachabilityReportParameters parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.NetworkWatcherGetAzureReachabilityReportOperation GetAzureReachabilityReport(class Azure.ResourceManager.Network.Models.AzureReachabilityReportParameters parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetAzureReachabilityReport(Azure.ResourceManager.Network.Models.AzureReachabilityReportParameters,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAzureReachabilityReport (parameters As AzureReachabilityReportParameters, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As NetworkWatcherGetAzureReachabilityReportOperation" />
-      <MemberSignature Language="F#" Value="abstract member GetAzureReachabilityReport : Azure.ResourceManager.Network.Models.AzureReachabilityReportParameters * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetAzureReachabilityReportOperation&#xA;override this.GetAzureReachabilityReport : Azure.ResourceManager.Network.Models.AzureReachabilityReportParameters * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetAzureReachabilityReportOperation" Usage="networkWatcher.GetAzureReachabilityReport (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.NetworkWatcherGetAzureReachabilityReportOperation GetAzureReachabilityReport (bool waitForCompletion, Azure.ResourceManager.Network.Models.AzureReachabilityReportParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.NetworkWatcherGetAzureReachabilityReportOperation GetAzureReachabilityReport(bool waitForCompletion, class Azure.ResourceManager.Network.Models.AzureReachabilityReportParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetAzureReachabilityReport(System.Boolean,Azure.ResourceManager.Network.Models.AzureReachabilityReportParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAzureReachabilityReport (waitForCompletion As Boolean, parameters As AzureReachabilityReportParameters, Optional cancellationToken As CancellationToken = Nothing) As NetworkWatcherGetAzureReachabilityReportOperation" />
+      <MemberSignature Language="F#" Value="abstract member GetAzureReachabilityReport : bool * Azure.ResourceManager.Network.Models.AzureReachabilityReportParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetAzureReachabilityReportOperation&#xA;override this.GetAzureReachabilityReport : bool * Azure.ResourceManager.Network.Models.AzureReachabilityReportParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetAzureReachabilityReportOperation" Usage="networkWatcher.GetAzureReachabilityReport (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -365,13 +365,13 @@
         <ReturnType>Azure.ResourceManager.Network.Models.NetworkWatcherGetAzureReachabilityReportOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.AzureReachabilityReportParameters" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.AzureReachabilityReportParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Parameters that determine Azure reachability report configuration. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Parameters that determine Azure reachability report configuration. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> NOTE: This feature is currently in preview and still being tested for stability. Gets the relative latency score for internet service providers from a specified location to Azure regions. </summary>
         <returns>To be added.</returns>
@@ -381,11 +381,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetAzureReachabilityReportAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetAzureReachabilityReportOperation&gt; GetAzureReachabilityReportAsync (Azure.ResourceManager.Network.Models.AzureReachabilityReportParameters parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.NetworkWatcherGetAzureReachabilityReportOperation&gt; GetAzureReachabilityReportAsync(class Azure.ResourceManager.Network.Models.AzureReachabilityReportParameters parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetAzureReachabilityReportAsync(Azure.ResourceManager.Network.Models.AzureReachabilityReportParameters,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAzureReachabilityReportAsync (parameters As AzureReachabilityReportParameters, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NetworkWatcherGetAzureReachabilityReportOperation)" />
-      <MemberSignature Language="F#" Value="abstract member GetAzureReachabilityReportAsync : Azure.ResourceManager.Network.Models.AzureReachabilityReportParameters * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetAzureReachabilityReportOperation&gt;&#xA;override this.GetAzureReachabilityReportAsync : Azure.ResourceManager.Network.Models.AzureReachabilityReportParameters * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetAzureReachabilityReportOperation&gt;" Usage="networkWatcher.GetAzureReachabilityReportAsync (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetAzureReachabilityReportOperation&gt; GetAzureReachabilityReportAsync (bool waitForCompletion, Azure.ResourceManager.Network.Models.AzureReachabilityReportParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.NetworkWatcherGetAzureReachabilityReportOperation&gt; GetAzureReachabilityReportAsync(bool waitForCompletion, class Azure.ResourceManager.Network.Models.AzureReachabilityReportParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetAzureReachabilityReportAsync(System.Boolean,Azure.ResourceManager.Network.Models.AzureReachabilityReportParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAzureReachabilityReportAsync (waitForCompletion As Boolean, parameters As AzureReachabilityReportParameters, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NetworkWatcherGetAzureReachabilityReportOperation)" />
+      <MemberSignature Language="F#" Value="abstract member GetAzureReachabilityReportAsync : bool * Azure.ResourceManager.Network.Models.AzureReachabilityReportParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetAzureReachabilityReportOperation&gt;&#xA;override this.GetAzureReachabilityReportAsync : bool * Azure.ResourceManager.Network.Models.AzureReachabilityReportParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetAzureReachabilityReportOperation&gt;" Usage="networkWatcher.GetAzureReachabilityReportAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -395,13 +395,13 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetAzureReachabilityReportOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.AzureReachabilityReportParameters" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.AzureReachabilityReportParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Parameters that determine Azure reachability report configuration. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Parameters that determine Azure reachability report configuration. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> NOTE: This feature is currently in preview and still being tested for stability. Gets the relative latency score for internet service providers from a specified location to Azure regions. </summary>
         <returns>To be added.</returns>
@@ -411,11 +411,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetConnectionMonitors">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.ConnectionMonitorCollection GetConnectionMonitors ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.ResourceManager.Network.ConnectionMonitorCollection GetConnectionMonitors() cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.ConnectionMonitorCollection GetConnectionMonitors ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.ConnectionMonitorCollection GetConnectionMonitors() cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetConnectionMonitors" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetConnectionMonitors () As ConnectionMonitorCollection" />
-      <MemberSignature Language="F#" Value="member this.GetConnectionMonitors : unit -&gt; Azure.ResourceManager.Network.ConnectionMonitorCollection" Usage="networkWatcher.GetConnectionMonitors " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetConnectionMonitors () As ConnectionMonitorCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetConnectionMonitors : unit -&gt; Azure.ResourceManager.Network.ConnectionMonitorCollection&#xA;override this.GetConnectionMonitors : unit -&gt; Azure.ResourceManager.Network.ConnectionMonitorCollection" Usage="networkWatcher.GetConnectionMonitors " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -432,11 +432,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetFlowLogs">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.FlowLogCollection GetFlowLogs ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.ResourceManager.Network.FlowLogCollection GetFlowLogs() cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.FlowLogCollection GetFlowLogs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.FlowLogCollection GetFlowLogs() cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetFlowLogs" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetFlowLogs () As FlowLogCollection" />
-      <MemberSignature Language="F#" Value="member this.GetFlowLogs : unit -&gt; Azure.ResourceManager.Network.FlowLogCollection" Usage="networkWatcher.GetFlowLogs " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFlowLogs () As FlowLogCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetFlowLogs : unit -&gt; Azure.ResourceManager.Network.FlowLogCollection&#xA;override this.GetFlowLogs : unit -&gt; Azure.ResourceManager.Network.FlowLogCollection" Usage="networkWatcher.GetFlowLogs " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -453,11 +453,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetFlowLogStatus">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.NetworkWatcherGetFlowLogStatusOperation GetFlowLogStatus (Azure.ResourceManager.Network.Models.FlowLogStatusParameters parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.NetworkWatcherGetFlowLogStatusOperation GetFlowLogStatus(class Azure.ResourceManager.Network.Models.FlowLogStatusParameters parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetFlowLogStatus(Azure.ResourceManager.Network.Models.FlowLogStatusParameters,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFlowLogStatus (parameters As FlowLogStatusParameters, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As NetworkWatcherGetFlowLogStatusOperation" />
-      <MemberSignature Language="F#" Value="abstract member GetFlowLogStatus : Azure.ResourceManager.Network.Models.FlowLogStatusParameters * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetFlowLogStatusOperation&#xA;override this.GetFlowLogStatus : Azure.ResourceManager.Network.Models.FlowLogStatusParameters * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetFlowLogStatusOperation" Usage="networkWatcher.GetFlowLogStatus (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.NetworkWatcherGetFlowLogStatusOperation GetFlowLogStatus (bool waitForCompletion, Azure.ResourceManager.Network.Models.FlowLogStatusParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.NetworkWatcherGetFlowLogStatusOperation GetFlowLogStatus(bool waitForCompletion, class Azure.ResourceManager.Network.Models.FlowLogStatusParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetFlowLogStatus(System.Boolean,Azure.ResourceManager.Network.Models.FlowLogStatusParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFlowLogStatus (waitForCompletion As Boolean, parameters As FlowLogStatusParameters, Optional cancellationToken As CancellationToken = Nothing) As NetworkWatcherGetFlowLogStatusOperation" />
+      <MemberSignature Language="F#" Value="abstract member GetFlowLogStatus : bool * Azure.ResourceManager.Network.Models.FlowLogStatusParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetFlowLogStatusOperation&#xA;override this.GetFlowLogStatus : bool * Azure.ResourceManager.Network.Models.FlowLogStatusParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetFlowLogStatusOperation" Usage="networkWatcher.GetFlowLogStatus (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -467,13 +467,13 @@
         <ReturnType>Azure.ResourceManager.Network.Models.NetworkWatcherGetFlowLogStatusOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.FlowLogStatusParameters" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.FlowLogStatusParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Parameters that define a resource to query flow log and traffic analytics (optional) status. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Parameters that define a resource to query flow log and traffic analytics (optional) status. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Queries status of flow log and traffic analytics (optional) on a specified resource. </summary>
         <returns>To be added.</returns>
@@ -483,11 +483,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetFlowLogStatusAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetFlowLogStatusOperation&gt; GetFlowLogStatusAsync (Azure.ResourceManager.Network.Models.FlowLogStatusParameters parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.NetworkWatcherGetFlowLogStatusOperation&gt; GetFlowLogStatusAsync(class Azure.ResourceManager.Network.Models.FlowLogStatusParameters parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetFlowLogStatusAsync(Azure.ResourceManager.Network.Models.FlowLogStatusParameters,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFlowLogStatusAsync (parameters As FlowLogStatusParameters, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NetworkWatcherGetFlowLogStatusOperation)" />
-      <MemberSignature Language="F#" Value="abstract member GetFlowLogStatusAsync : Azure.ResourceManager.Network.Models.FlowLogStatusParameters * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetFlowLogStatusOperation&gt;&#xA;override this.GetFlowLogStatusAsync : Azure.ResourceManager.Network.Models.FlowLogStatusParameters * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetFlowLogStatusOperation&gt;" Usage="networkWatcher.GetFlowLogStatusAsync (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetFlowLogStatusOperation&gt; GetFlowLogStatusAsync (bool waitForCompletion, Azure.ResourceManager.Network.Models.FlowLogStatusParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.NetworkWatcherGetFlowLogStatusOperation&gt; GetFlowLogStatusAsync(bool waitForCompletion, class Azure.ResourceManager.Network.Models.FlowLogStatusParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetFlowLogStatusAsync(System.Boolean,Azure.ResourceManager.Network.Models.FlowLogStatusParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFlowLogStatusAsync (waitForCompletion As Boolean, parameters As FlowLogStatusParameters, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NetworkWatcherGetFlowLogStatusOperation)" />
+      <MemberSignature Language="F#" Value="abstract member GetFlowLogStatusAsync : bool * Azure.ResourceManager.Network.Models.FlowLogStatusParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetFlowLogStatusOperation&gt;&#xA;override this.GetFlowLogStatusAsync : bool * Azure.ResourceManager.Network.Models.FlowLogStatusParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetFlowLogStatusOperation&gt;" Usage="networkWatcher.GetFlowLogStatusAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -497,13 +497,13 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetFlowLogStatusOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.FlowLogStatusParameters" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.FlowLogStatusParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Parameters that define a resource to query flow log and traffic analytics (optional) status. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Parameters that define a resource to query flow log and traffic analytics (optional) status. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Queries status of flow log and traffic analytics (optional) on a specified resource. </summary>
         <returns>To be added.</returns>
@@ -513,11 +513,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetNetworkConfigurationDiagnostic">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.NetworkWatcherGetNetworkConfigurationDiagnosticOperation GetNetworkConfigurationDiagnostic (Azure.ResourceManager.Network.Models.NetworkConfigurationDiagnosticParameters parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.NetworkWatcherGetNetworkConfigurationDiagnosticOperation GetNetworkConfigurationDiagnostic(class Azure.ResourceManager.Network.Models.NetworkConfigurationDiagnosticParameters parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetNetworkConfigurationDiagnostic(Azure.ResourceManager.Network.Models.NetworkConfigurationDiagnosticParameters,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNetworkConfigurationDiagnostic (parameters As NetworkConfigurationDiagnosticParameters, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As NetworkWatcherGetNetworkConfigurationDiagnosticOperation" />
-      <MemberSignature Language="F#" Value="abstract member GetNetworkConfigurationDiagnostic : Azure.ResourceManager.Network.Models.NetworkConfigurationDiagnosticParameters * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetNetworkConfigurationDiagnosticOperation&#xA;override this.GetNetworkConfigurationDiagnostic : Azure.ResourceManager.Network.Models.NetworkConfigurationDiagnosticParameters * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetNetworkConfigurationDiagnosticOperation" Usage="networkWatcher.GetNetworkConfigurationDiagnostic (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.NetworkWatcherGetNetworkConfigurationDiagnosticOperation GetNetworkConfigurationDiagnostic (bool waitForCompletion, Azure.ResourceManager.Network.Models.NetworkConfigurationDiagnosticParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.NetworkWatcherGetNetworkConfigurationDiagnosticOperation GetNetworkConfigurationDiagnostic(bool waitForCompletion, class Azure.ResourceManager.Network.Models.NetworkConfigurationDiagnosticParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetNetworkConfigurationDiagnostic(System.Boolean,Azure.ResourceManager.Network.Models.NetworkConfigurationDiagnosticParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNetworkConfigurationDiagnostic (waitForCompletion As Boolean, parameters As NetworkConfigurationDiagnosticParameters, Optional cancellationToken As CancellationToken = Nothing) As NetworkWatcherGetNetworkConfigurationDiagnosticOperation" />
+      <MemberSignature Language="F#" Value="abstract member GetNetworkConfigurationDiagnostic : bool * Azure.ResourceManager.Network.Models.NetworkConfigurationDiagnosticParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetNetworkConfigurationDiagnosticOperation&#xA;override this.GetNetworkConfigurationDiagnostic : bool * Azure.ResourceManager.Network.Models.NetworkConfigurationDiagnosticParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetNetworkConfigurationDiagnosticOperation" Usage="networkWatcher.GetNetworkConfigurationDiagnostic (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -527,13 +527,13 @@
         <ReturnType>Azure.ResourceManager.Network.Models.NetworkWatcherGetNetworkConfigurationDiagnosticOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.NetworkConfigurationDiagnosticParameters" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.NetworkConfigurationDiagnosticParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Parameters to get network configuration diagnostic. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Parameters to get network configuration diagnostic. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Gets Network Configuration Diagnostic data to help customers understand and debug network behavior. It provides detailed information on what security rules were applied to a specified traffic flow and the result of evaluating these rules. Customers must provide details of a flow like source, destination, protocol, etc. The API returns whether traffic was allowed or denied, the rules evaluated for the specified flow and the evaluation results. </summary>
         <returns>To be added.</returns>
@@ -543,11 +543,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetNetworkConfigurationDiagnosticAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetNetworkConfigurationDiagnosticOperation&gt; GetNetworkConfigurationDiagnosticAsync (Azure.ResourceManager.Network.Models.NetworkConfigurationDiagnosticParameters parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.NetworkWatcherGetNetworkConfigurationDiagnosticOperation&gt; GetNetworkConfigurationDiagnosticAsync(class Azure.ResourceManager.Network.Models.NetworkConfigurationDiagnosticParameters parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetNetworkConfigurationDiagnosticAsync(Azure.ResourceManager.Network.Models.NetworkConfigurationDiagnosticParameters,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNetworkConfigurationDiagnosticAsync (parameters As NetworkConfigurationDiagnosticParameters, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NetworkWatcherGetNetworkConfigurationDiagnosticOperation)" />
-      <MemberSignature Language="F#" Value="abstract member GetNetworkConfigurationDiagnosticAsync : Azure.ResourceManager.Network.Models.NetworkConfigurationDiagnosticParameters * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetNetworkConfigurationDiagnosticOperation&gt;&#xA;override this.GetNetworkConfigurationDiagnosticAsync : Azure.ResourceManager.Network.Models.NetworkConfigurationDiagnosticParameters * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetNetworkConfigurationDiagnosticOperation&gt;" Usage="networkWatcher.GetNetworkConfigurationDiagnosticAsync (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetNetworkConfigurationDiagnosticOperation&gt; GetNetworkConfigurationDiagnosticAsync (bool waitForCompletion, Azure.ResourceManager.Network.Models.NetworkConfigurationDiagnosticParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.NetworkWatcherGetNetworkConfigurationDiagnosticOperation&gt; GetNetworkConfigurationDiagnosticAsync(bool waitForCompletion, class Azure.ResourceManager.Network.Models.NetworkConfigurationDiagnosticParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetNetworkConfigurationDiagnosticAsync(System.Boolean,Azure.ResourceManager.Network.Models.NetworkConfigurationDiagnosticParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNetworkConfigurationDiagnosticAsync (waitForCompletion As Boolean, parameters As NetworkConfigurationDiagnosticParameters, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NetworkWatcherGetNetworkConfigurationDiagnosticOperation)" />
+      <MemberSignature Language="F#" Value="abstract member GetNetworkConfigurationDiagnosticAsync : bool * Azure.ResourceManager.Network.Models.NetworkConfigurationDiagnosticParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetNetworkConfigurationDiagnosticOperation&gt;&#xA;override this.GetNetworkConfigurationDiagnosticAsync : bool * Azure.ResourceManager.Network.Models.NetworkConfigurationDiagnosticParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetNetworkConfigurationDiagnosticOperation&gt;" Usage="networkWatcher.GetNetworkConfigurationDiagnosticAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -557,13 +557,13 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetNetworkConfigurationDiagnosticOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.NetworkConfigurationDiagnosticParameters" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.NetworkConfigurationDiagnosticParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Parameters to get network configuration diagnostic. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Parameters to get network configuration diagnostic. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Gets Network Configuration Diagnostic data to help customers understand and debug network behavior. It provides detailed information on what security rules were applied to a specified traffic flow and the result of evaluating these rules. Customers must provide details of a flow like source, destination, protocol, etc. The API returns whether traffic was allowed or denied, the rules evaluated for the specified flow and the evaluation results. </summary>
         <returns>To be added.</returns>
@@ -573,11 +573,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetNextHop">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.NetworkWatcherGetNextHopOperation GetNextHop (Azure.ResourceManager.Network.Models.NextHopParameters parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.NetworkWatcherGetNextHopOperation GetNextHop(class Azure.ResourceManager.Network.Models.NextHopParameters parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetNextHop(Azure.ResourceManager.Network.Models.NextHopParameters,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNextHop (parameters As NextHopParameters, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As NetworkWatcherGetNextHopOperation" />
-      <MemberSignature Language="F#" Value="abstract member GetNextHop : Azure.ResourceManager.Network.Models.NextHopParameters * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetNextHopOperation&#xA;override this.GetNextHop : Azure.ResourceManager.Network.Models.NextHopParameters * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetNextHopOperation" Usage="networkWatcher.GetNextHop (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.NetworkWatcherGetNextHopOperation GetNextHop (bool waitForCompletion, Azure.ResourceManager.Network.Models.NextHopParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.NetworkWatcherGetNextHopOperation GetNextHop(bool waitForCompletion, class Azure.ResourceManager.Network.Models.NextHopParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetNextHop(System.Boolean,Azure.ResourceManager.Network.Models.NextHopParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNextHop (waitForCompletion As Boolean, parameters As NextHopParameters, Optional cancellationToken As CancellationToken = Nothing) As NetworkWatcherGetNextHopOperation" />
+      <MemberSignature Language="F#" Value="abstract member GetNextHop : bool * Azure.ResourceManager.Network.Models.NextHopParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetNextHopOperation&#xA;override this.GetNextHop : bool * Azure.ResourceManager.Network.Models.NextHopParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetNextHopOperation" Usage="networkWatcher.GetNextHop (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -587,13 +587,13 @@
         <ReturnType>Azure.ResourceManager.Network.Models.NetworkWatcherGetNextHopOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.NextHopParameters" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.NextHopParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Parameters that define the source and destination endpoint. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Parameters that define the source and destination endpoint. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Gets the next hop from the specified VM. </summary>
         <returns>To be added.</returns>
@@ -603,11 +603,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetNextHopAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetNextHopOperation&gt; GetNextHopAsync (Azure.ResourceManager.Network.Models.NextHopParameters parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.NetworkWatcherGetNextHopOperation&gt; GetNextHopAsync(class Azure.ResourceManager.Network.Models.NextHopParameters parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetNextHopAsync(Azure.ResourceManager.Network.Models.NextHopParameters,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNextHopAsync (parameters As NextHopParameters, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NetworkWatcherGetNextHopOperation)" />
-      <MemberSignature Language="F#" Value="abstract member GetNextHopAsync : Azure.ResourceManager.Network.Models.NextHopParameters * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetNextHopOperation&gt;&#xA;override this.GetNextHopAsync : Azure.ResourceManager.Network.Models.NextHopParameters * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetNextHopOperation&gt;" Usage="networkWatcher.GetNextHopAsync (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetNextHopOperation&gt; GetNextHopAsync (bool waitForCompletion, Azure.ResourceManager.Network.Models.NextHopParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.NetworkWatcherGetNextHopOperation&gt; GetNextHopAsync(bool waitForCompletion, class Azure.ResourceManager.Network.Models.NextHopParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetNextHopAsync(System.Boolean,Azure.ResourceManager.Network.Models.NextHopParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNextHopAsync (waitForCompletion As Boolean, parameters As NextHopParameters, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NetworkWatcherGetNextHopOperation)" />
+      <MemberSignature Language="F#" Value="abstract member GetNextHopAsync : bool * Azure.ResourceManager.Network.Models.NextHopParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetNextHopOperation&gt;&#xA;override this.GetNextHopAsync : bool * Azure.ResourceManager.Network.Models.NextHopParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetNextHopOperation&gt;" Usage="networkWatcher.GetNextHopAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -617,13 +617,13 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetNextHopOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.NextHopParameters" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.NextHopParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Parameters that define the source and destination endpoint. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Parameters that define the source and destination endpoint. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Gets the next hop from the specified VM. </summary>
         <returns>To be added.</returns>
@@ -633,11 +633,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetPacketCaptures">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.PacketCaptureCollection GetPacketCaptures ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.ResourceManager.Network.PacketCaptureCollection GetPacketCaptures() cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.PacketCaptureCollection GetPacketCaptures ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.PacketCaptureCollection GetPacketCaptures() cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetPacketCaptures" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetPacketCaptures () As PacketCaptureCollection" />
-      <MemberSignature Language="F#" Value="member this.GetPacketCaptures : unit -&gt; Azure.ResourceManager.Network.PacketCaptureCollection" Usage="networkWatcher.GetPacketCaptures " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPacketCaptures () As PacketCaptureCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetPacketCaptures : unit -&gt; Azure.ResourceManager.Network.PacketCaptureCollection&#xA;override this.GetPacketCaptures : unit -&gt; Azure.ResourceManager.Network.PacketCaptureCollection" Usage="networkWatcher.GetPacketCaptures " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -710,11 +710,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetTroubleshooting">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingOperation GetTroubleshooting (Azure.ResourceManager.Network.Models.TroubleshootingParameters parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingOperation GetTroubleshooting(class Azure.ResourceManager.Network.Models.TroubleshootingParameters parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetTroubleshooting(Azure.ResourceManager.Network.Models.TroubleshootingParameters,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTroubleshooting (parameters As TroubleshootingParameters, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As NetworkWatcherGetTroubleshootingOperation" />
-      <MemberSignature Language="F#" Value="abstract member GetTroubleshooting : Azure.ResourceManager.Network.Models.TroubleshootingParameters * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingOperation&#xA;override this.GetTroubleshooting : Azure.ResourceManager.Network.Models.TroubleshootingParameters * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingOperation" Usage="networkWatcher.GetTroubleshooting (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingOperation GetTroubleshooting (bool waitForCompletion, Azure.ResourceManager.Network.Models.TroubleshootingParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingOperation GetTroubleshooting(bool waitForCompletion, class Azure.ResourceManager.Network.Models.TroubleshootingParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetTroubleshooting(System.Boolean,Azure.ResourceManager.Network.Models.TroubleshootingParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTroubleshooting (waitForCompletion As Boolean, parameters As TroubleshootingParameters, Optional cancellationToken As CancellationToken = Nothing) As NetworkWatcherGetTroubleshootingOperation" />
+      <MemberSignature Language="F#" Value="abstract member GetTroubleshooting : bool * Azure.ResourceManager.Network.Models.TroubleshootingParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingOperation&#xA;override this.GetTroubleshooting : bool * Azure.ResourceManager.Network.Models.TroubleshootingParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingOperation" Usage="networkWatcher.GetTroubleshooting (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -724,13 +724,13 @@
         <ReturnType>Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.TroubleshootingParameters" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.TroubleshootingParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Parameters that define the resource to troubleshoot. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Parameters that define the resource to troubleshoot. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Initiate troubleshooting on a specified resource. </summary>
         <returns>To be added.</returns>
@@ -740,11 +740,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetTroubleshootingAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingOperation&gt; GetTroubleshootingAsync (Azure.ResourceManager.Network.Models.TroubleshootingParameters parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingOperation&gt; GetTroubleshootingAsync(class Azure.ResourceManager.Network.Models.TroubleshootingParameters parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetTroubleshootingAsync(Azure.ResourceManager.Network.Models.TroubleshootingParameters,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTroubleshootingAsync (parameters As TroubleshootingParameters, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NetworkWatcherGetTroubleshootingOperation)" />
-      <MemberSignature Language="F#" Value="abstract member GetTroubleshootingAsync : Azure.ResourceManager.Network.Models.TroubleshootingParameters * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingOperation&gt;&#xA;override this.GetTroubleshootingAsync : Azure.ResourceManager.Network.Models.TroubleshootingParameters * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingOperation&gt;" Usage="networkWatcher.GetTroubleshootingAsync (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingOperation&gt; GetTroubleshootingAsync (bool waitForCompletion, Azure.ResourceManager.Network.Models.TroubleshootingParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingOperation&gt; GetTroubleshootingAsync(bool waitForCompletion, class Azure.ResourceManager.Network.Models.TroubleshootingParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetTroubleshootingAsync(System.Boolean,Azure.ResourceManager.Network.Models.TroubleshootingParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTroubleshootingAsync (waitForCompletion As Boolean, parameters As TroubleshootingParameters, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NetworkWatcherGetTroubleshootingOperation)" />
+      <MemberSignature Language="F#" Value="abstract member GetTroubleshootingAsync : bool * Azure.ResourceManager.Network.Models.TroubleshootingParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingOperation&gt;&#xA;override this.GetTroubleshootingAsync : bool * Azure.ResourceManager.Network.Models.TroubleshootingParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingOperation&gt;" Usage="networkWatcher.GetTroubleshootingAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -754,13 +754,13 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.TroubleshootingParameters" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.TroubleshootingParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Parameters that define the resource to troubleshoot. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Parameters that define the resource to troubleshoot. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Initiate troubleshooting on a specified resource. </summary>
         <returns>To be added.</returns>
@@ -770,11 +770,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetTroubleshootingResult">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingResultOperation GetTroubleshootingResult (Azure.ResourceManager.Network.Models.QueryTroubleshootingParameters parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingResultOperation GetTroubleshootingResult(class Azure.ResourceManager.Network.Models.QueryTroubleshootingParameters parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetTroubleshootingResult(Azure.ResourceManager.Network.Models.QueryTroubleshootingParameters,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTroubleshootingResult (parameters As QueryTroubleshootingParameters, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As NetworkWatcherGetTroubleshootingResultOperation" />
-      <MemberSignature Language="F#" Value="abstract member GetTroubleshootingResult : Azure.ResourceManager.Network.Models.QueryTroubleshootingParameters * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingResultOperation&#xA;override this.GetTroubleshootingResult : Azure.ResourceManager.Network.Models.QueryTroubleshootingParameters * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingResultOperation" Usage="networkWatcher.GetTroubleshootingResult (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingResultOperation GetTroubleshootingResult (bool waitForCompletion, Azure.ResourceManager.Network.Models.QueryTroubleshootingParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingResultOperation GetTroubleshootingResult(bool waitForCompletion, class Azure.ResourceManager.Network.Models.QueryTroubleshootingParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetTroubleshootingResult(System.Boolean,Azure.ResourceManager.Network.Models.QueryTroubleshootingParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTroubleshootingResult (waitForCompletion As Boolean, parameters As QueryTroubleshootingParameters, Optional cancellationToken As CancellationToken = Nothing) As NetworkWatcherGetTroubleshootingResultOperation" />
+      <MemberSignature Language="F#" Value="abstract member GetTroubleshootingResult : bool * Azure.ResourceManager.Network.Models.QueryTroubleshootingParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingResultOperation&#xA;override this.GetTroubleshootingResult : bool * Azure.ResourceManager.Network.Models.QueryTroubleshootingParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingResultOperation" Usage="networkWatcher.GetTroubleshootingResult (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -784,13 +784,13 @@
         <ReturnType>Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingResultOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.QueryTroubleshootingParameters" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.QueryTroubleshootingParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Parameters that define the resource to query the troubleshooting result. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Parameters that define the resource to query the troubleshooting result. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Get the last completed troubleshooting result on a specified resource. </summary>
         <returns>To be added.</returns>
@@ -800,11 +800,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetTroubleshootingResultAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingResultOperation&gt; GetTroubleshootingResultAsync (Azure.ResourceManager.Network.Models.QueryTroubleshootingParameters parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingResultOperation&gt; GetTroubleshootingResultAsync(class Azure.ResourceManager.Network.Models.QueryTroubleshootingParameters parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetTroubleshootingResultAsync(Azure.ResourceManager.Network.Models.QueryTroubleshootingParameters,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTroubleshootingResultAsync (parameters As QueryTroubleshootingParameters, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NetworkWatcherGetTroubleshootingResultOperation)" />
-      <MemberSignature Language="F#" Value="abstract member GetTroubleshootingResultAsync : Azure.ResourceManager.Network.Models.QueryTroubleshootingParameters * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingResultOperation&gt;&#xA;override this.GetTroubleshootingResultAsync : Azure.ResourceManager.Network.Models.QueryTroubleshootingParameters * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingResultOperation&gt;" Usage="networkWatcher.GetTroubleshootingResultAsync (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingResultOperation&gt; GetTroubleshootingResultAsync (bool waitForCompletion, Azure.ResourceManager.Network.Models.QueryTroubleshootingParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingResultOperation&gt; GetTroubleshootingResultAsync(bool waitForCompletion, class Azure.ResourceManager.Network.Models.QueryTroubleshootingParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetTroubleshootingResultAsync(System.Boolean,Azure.ResourceManager.Network.Models.QueryTroubleshootingParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTroubleshootingResultAsync (waitForCompletion As Boolean, parameters As QueryTroubleshootingParameters, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NetworkWatcherGetTroubleshootingResultOperation)" />
+      <MemberSignature Language="F#" Value="abstract member GetTroubleshootingResultAsync : bool * Azure.ResourceManager.Network.Models.QueryTroubleshootingParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingResultOperation&gt;&#xA;override this.GetTroubleshootingResultAsync : bool * Azure.ResourceManager.Network.Models.QueryTroubleshootingParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingResultOperation&gt;" Usage="networkWatcher.GetTroubleshootingResultAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -814,13 +814,13 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetTroubleshootingResultOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.QueryTroubleshootingParameters" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.QueryTroubleshootingParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Parameters that define the resource to query the troubleshooting result. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Parameters that define the resource to query the troubleshooting result. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Get the last completed troubleshooting result on a specified resource. </summary>
         <returns>To be added.</returns>
@@ -830,11 +830,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetVMSecurityRules">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.NetworkWatcherGetVMSecurityRulesOperation GetVMSecurityRules (Azure.ResourceManager.Network.Models.SecurityGroupViewParameters parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.NetworkWatcherGetVMSecurityRulesOperation GetVMSecurityRules(class Azure.ResourceManager.Network.Models.SecurityGroupViewParameters parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetVMSecurityRules(Azure.ResourceManager.Network.Models.SecurityGroupViewParameters,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetVMSecurityRules (parameters As SecurityGroupViewParameters, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As NetworkWatcherGetVMSecurityRulesOperation" />
-      <MemberSignature Language="F#" Value="abstract member GetVMSecurityRules : Azure.ResourceManager.Network.Models.SecurityGroupViewParameters * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetVMSecurityRulesOperation&#xA;override this.GetVMSecurityRules : Azure.ResourceManager.Network.Models.SecurityGroupViewParameters * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetVMSecurityRulesOperation" Usage="networkWatcher.GetVMSecurityRules (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.NetworkWatcherGetVMSecurityRulesOperation GetVMSecurityRules (bool waitForCompletion, Azure.ResourceManager.Network.Models.SecurityGroupViewParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.NetworkWatcherGetVMSecurityRulesOperation GetVMSecurityRules(bool waitForCompletion, class Azure.ResourceManager.Network.Models.SecurityGroupViewParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetVMSecurityRules(System.Boolean,Azure.ResourceManager.Network.Models.SecurityGroupViewParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetVMSecurityRules (waitForCompletion As Boolean, parameters As SecurityGroupViewParameters, Optional cancellationToken As CancellationToken = Nothing) As NetworkWatcherGetVMSecurityRulesOperation" />
+      <MemberSignature Language="F#" Value="abstract member GetVMSecurityRules : bool * Azure.ResourceManager.Network.Models.SecurityGroupViewParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetVMSecurityRulesOperation&#xA;override this.GetVMSecurityRules : bool * Azure.ResourceManager.Network.Models.SecurityGroupViewParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherGetVMSecurityRulesOperation" Usage="networkWatcher.GetVMSecurityRules (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -844,13 +844,13 @@
         <ReturnType>Azure.ResourceManager.Network.Models.NetworkWatcherGetVMSecurityRulesOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.SecurityGroupViewParameters" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.SecurityGroupViewParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Parameters that define the VM to check security groups for. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Parameters that define the VM to check security groups for. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Gets the configured and effective security group rules on the specified VM. </summary>
         <returns>To be added.</returns>
@@ -860,11 +860,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetVMSecurityRulesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetVMSecurityRulesOperation&gt; GetVMSecurityRulesAsync (Azure.ResourceManager.Network.Models.SecurityGroupViewParameters parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.NetworkWatcherGetVMSecurityRulesOperation&gt; GetVMSecurityRulesAsync(class Azure.ResourceManager.Network.Models.SecurityGroupViewParameters parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetVMSecurityRulesAsync(Azure.ResourceManager.Network.Models.SecurityGroupViewParameters,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetVMSecurityRulesAsync (parameters As SecurityGroupViewParameters, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NetworkWatcherGetVMSecurityRulesOperation)" />
-      <MemberSignature Language="F#" Value="abstract member GetVMSecurityRulesAsync : Azure.ResourceManager.Network.Models.SecurityGroupViewParameters * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetVMSecurityRulesOperation&gt;&#xA;override this.GetVMSecurityRulesAsync : Azure.ResourceManager.Network.Models.SecurityGroupViewParameters * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetVMSecurityRulesOperation&gt;" Usage="networkWatcher.GetVMSecurityRulesAsync (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetVMSecurityRulesOperation&gt; GetVMSecurityRulesAsync (bool waitForCompletion, Azure.ResourceManager.Network.Models.SecurityGroupViewParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.NetworkWatcherGetVMSecurityRulesOperation&gt; GetVMSecurityRulesAsync(bool waitForCompletion, class Azure.ResourceManager.Network.Models.SecurityGroupViewParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.GetVMSecurityRulesAsync(System.Boolean,Azure.ResourceManager.Network.Models.SecurityGroupViewParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetVMSecurityRulesAsync (waitForCompletion As Boolean, parameters As SecurityGroupViewParameters, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NetworkWatcherGetVMSecurityRulesOperation)" />
+      <MemberSignature Language="F#" Value="abstract member GetVMSecurityRulesAsync : bool * Azure.ResourceManager.Network.Models.SecurityGroupViewParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetVMSecurityRulesOperation&gt;&#xA;override this.GetVMSecurityRulesAsync : bool * Azure.ResourceManager.Network.Models.SecurityGroupViewParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetVMSecurityRulesOperation&gt;" Usage="networkWatcher.GetVMSecurityRulesAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -874,13 +874,13 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherGetVMSecurityRulesOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.SecurityGroupViewParameters" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.SecurityGroupViewParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Parameters that define the VM to check security groups for. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Parameters that define the VM to check security groups for. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Gets the configured and effective security group rules on the specified VM. </summary>
         <returns>To be added.</returns>
@@ -910,18 +910,18 @@
       </Docs>
     </Member>
     <Member MemberName="ResourceType">
-      <MemberSignature Language="C#" Value="public static readonly Azure.ResourceManager.ResourceType ResourceType;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Azure.ResourceManager.ResourceType ResourceType" />
+      <MemberSignature Language="C#" Value="public static readonly Azure.Core.ResourceType ResourceType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype Azure.Core.ResourceType ResourceType" />
       <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.Network.NetworkWatcher.ResourceType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ResourceType As ResourceType " />
-      <MemberSignature Language="F#" Value=" staticval mutable ResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Network.NetworkWatcher.ResourceType" />
+      <MemberSignature Language="F#" Value=" staticval mutable ResourceType : Azure.Core.ResourceType" Usage="Azure.ResourceManager.Network.NetworkWatcher.ResourceType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
+        <ReturnType>Azure.Core.ResourceType</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Gets the resource type for the operations. </summary>
@@ -929,11 +929,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetFlowLogConfiguration">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.NetworkWatcherSetFlowLogConfigurationOperation SetFlowLogConfiguration (Azure.ResourceManager.Network.Models.FlowLogInformation parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.NetworkWatcherSetFlowLogConfigurationOperation SetFlowLogConfiguration(class Azure.ResourceManager.Network.Models.FlowLogInformation parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.SetFlowLogConfiguration(Azure.ResourceManager.Network.Models.FlowLogInformation,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function SetFlowLogConfiguration (parameters As FlowLogInformation, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As NetworkWatcherSetFlowLogConfigurationOperation" />
-      <MemberSignature Language="F#" Value="abstract member SetFlowLogConfiguration : Azure.ResourceManager.Network.Models.FlowLogInformation * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherSetFlowLogConfigurationOperation&#xA;override this.SetFlowLogConfiguration : Azure.ResourceManager.Network.Models.FlowLogInformation * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherSetFlowLogConfigurationOperation" Usage="networkWatcher.SetFlowLogConfiguration (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.NetworkWatcherSetFlowLogConfigurationOperation SetFlowLogConfiguration (bool waitForCompletion, Azure.ResourceManager.Network.Models.FlowLogInformation parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.NetworkWatcherSetFlowLogConfigurationOperation SetFlowLogConfiguration(bool waitForCompletion, class Azure.ResourceManager.Network.Models.FlowLogInformation parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.SetFlowLogConfiguration(System.Boolean,Azure.ResourceManager.Network.Models.FlowLogInformation,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SetFlowLogConfiguration (waitForCompletion As Boolean, parameters As FlowLogInformation, Optional cancellationToken As CancellationToken = Nothing) As NetworkWatcherSetFlowLogConfigurationOperation" />
+      <MemberSignature Language="F#" Value="abstract member SetFlowLogConfiguration : bool * Azure.ResourceManager.Network.Models.FlowLogInformation * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherSetFlowLogConfigurationOperation&#xA;override this.SetFlowLogConfiguration : bool * Azure.ResourceManager.Network.Models.FlowLogInformation * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherSetFlowLogConfigurationOperation" Usage="networkWatcher.SetFlowLogConfiguration (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -943,13 +943,13 @@
         <ReturnType>Azure.ResourceManager.Network.Models.NetworkWatcherSetFlowLogConfigurationOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.FlowLogInformation" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.FlowLogInformation" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Parameters that define the configuration of flow log. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Parameters that define the configuration of flow log. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Configures flow log and traffic analytics (optional) on a specified resource. </summary>
         <returns>To be added.</returns>
@@ -959,11 +959,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetFlowLogConfigurationAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherSetFlowLogConfigurationOperation&gt; SetFlowLogConfigurationAsync (Azure.ResourceManager.Network.Models.FlowLogInformation parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.NetworkWatcherSetFlowLogConfigurationOperation&gt; SetFlowLogConfigurationAsync(class Azure.ResourceManager.Network.Models.FlowLogInformation parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.SetFlowLogConfigurationAsync(Azure.ResourceManager.Network.Models.FlowLogInformation,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function SetFlowLogConfigurationAsync (parameters As FlowLogInformation, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NetworkWatcherSetFlowLogConfigurationOperation)" />
-      <MemberSignature Language="F#" Value="abstract member SetFlowLogConfigurationAsync : Azure.ResourceManager.Network.Models.FlowLogInformation * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherSetFlowLogConfigurationOperation&gt;&#xA;override this.SetFlowLogConfigurationAsync : Azure.ResourceManager.Network.Models.FlowLogInformation * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherSetFlowLogConfigurationOperation&gt;" Usage="networkWatcher.SetFlowLogConfigurationAsync (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherSetFlowLogConfigurationOperation&gt; SetFlowLogConfigurationAsync (bool waitForCompletion, Azure.ResourceManager.Network.Models.FlowLogInformation parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.NetworkWatcherSetFlowLogConfigurationOperation&gt; SetFlowLogConfigurationAsync(bool waitForCompletion, class Azure.ResourceManager.Network.Models.FlowLogInformation parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.SetFlowLogConfigurationAsync(System.Boolean,Azure.ResourceManager.Network.Models.FlowLogInformation,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SetFlowLogConfigurationAsync (waitForCompletion As Boolean, parameters As FlowLogInformation, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NetworkWatcherSetFlowLogConfigurationOperation)" />
+      <MemberSignature Language="F#" Value="abstract member SetFlowLogConfigurationAsync : bool * Azure.ResourceManager.Network.Models.FlowLogInformation * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherSetFlowLogConfigurationOperation&gt;&#xA;override this.SetFlowLogConfigurationAsync : bool * Azure.ResourceManager.Network.Models.FlowLogInformation * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherSetFlowLogConfigurationOperation&gt;" Usage="networkWatcher.SetFlowLogConfigurationAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -973,13 +973,13 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherSetFlowLogConfigurationOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.FlowLogInformation" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.FlowLogInformation" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Parameters that define the configuration of flow log. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Parameters that define the configuration of flow log. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Configures flow log and traffic analytics (optional) on a specified resource. </summary>
         <returns>To be added.</returns>
@@ -1044,32 +1044,12 @@
           <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.NetworkWatcher.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Network.NetworkWatcher.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for the operations. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="VerifyIPFlow">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.NetworkWatcherVerifyIPFlowOperation VerifyIPFlow (Azure.ResourceManager.Network.Models.VerificationIPFlowParameters parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.NetworkWatcherVerifyIPFlowOperation VerifyIPFlow(class Azure.ResourceManager.Network.Models.VerificationIPFlowParameters parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.VerifyIPFlow(Azure.ResourceManager.Network.Models.VerificationIPFlowParameters,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function VerifyIPFlow (parameters As VerificationIPFlowParameters, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As NetworkWatcherVerifyIPFlowOperation" />
-      <MemberSignature Language="F#" Value="abstract member VerifyIPFlow : Azure.ResourceManager.Network.Models.VerificationIPFlowParameters * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherVerifyIPFlowOperation&#xA;override this.VerifyIPFlow : Azure.ResourceManager.Network.Models.VerificationIPFlowParameters * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherVerifyIPFlowOperation" Usage="networkWatcher.VerifyIPFlow (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.NetworkWatcherVerifyIPFlowOperation VerifyIPFlow (bool waitForCompletion, Azure.ResourceManager.Network.Models.VerificationIPFlowParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.NetworkWatcherVerifyIPFlowOperation VerifyIPFlow(bool waitForCompletion, class Azure.ResourceManager.Network.Models.VerificationIPFlowParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.VerifyIPFlow(System.Boolean,Azure.ResourceManager.Network.Models.VerificationIPFlowParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VerifyIPFlow (waitForCompletion As Boolean, parameters As VerificationIPFlowParameters, Optional cancellationToken As CancellationToken = Nothing) As NetworkWatcherVerifyIPFlowOperation" />
+      <MemberSignature Language="F#" Value="abstract member VerifyIPFlow : bool * Azure.ResourceManager.Network.Models.VerificationIPFlowParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherVerifyIPFlowOperation&#xA;override this.VerifyIPFlow : bool * Azure.ResourceManager.Network.Models.VerificationIPFlowParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.NetworkWatcherVerifyIPFlowOperation" Usage="networkWatcher.VerifyIPFlow (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -1079,13 +1059,13 @@
         <ReturnType>Azure.ResourceManager.Network.Models.NetworkWatcherVerifyIPFlowOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.VerificationIPFlowParameters" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.VerificationIPFlowParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Parameters that define the IP flow to be verified. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Parameters that define the IP flow to be verified. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Verify IP flow from the specified VM to a location given the currently configured NSG rules. </summary>
         <returns>To be added.</returns>
@@ -1095,11 +1075,11 @@
       </Docs>
     </Member>
     <Member MemberName="VerifyIPFlowAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherVerifyIPFlowOperation&gt; VerifyIPFlowAsync (Azure.ResourceManager.Network.Models.VerificationIPFlowParameters parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.NetworkWatcherVerifyIPFlowOperation&gt; VerifyIPFlowAsync(class Azure.ResourceManager.Network.Models.VerificationIPFlowParameters parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.VerifyIPFlowAsync(Azure.ResourceManager.Network.Models.VerificationIPFlowParameters,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function VerifyIPFlowAsync (parameters As VerificationIPFlowParameters, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NetworkWatcherVerifyIPFlowOperation)" />
-      <MemberSignature Language="F#" Value="abstract member VerifyIPFlowAsync : Azure.ResourceManager.Network.Models.VerificationIPFlowParameters * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherVerifyIPFlowOperation&gt;&#xA;override this.VerifyIPFlowAsync : Azure.ResourceManager.Network.Models.VerificationIPFlowParameters * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherVerifyIPFlowOperation&gt;" Usage="networkWatcher.VerifyIPFlowAsync (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherVerifyIPFlowOperation&gt; VerifyIPFlowAsync (bool waitForCompletion, Azure.ResourceManager.Network.Models.VerificationIPFlowParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.NetworkWatcherVerifyIPFlowOperation&gt; VerifyIPFlowAsync(bool waitForCompletion, class Azure.ResourceManager.Network.Models.VerificationIPFlowParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.NetworkWatcher.VerifyIPFlowAsync(System.Boolean,Azure.ResourceManager.Network.Models.VerificationIPFlowParameters,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VerifyIPFlowAsync (waitForCompletion As Boolean, parameters As VerificationIPFlowParameters, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NetworkWatcherVerifyIPFlowOperation)" />
+      <MemberSignature Language="F#" Value="abstract member VerifyIPFlowAsync : bool * Azure.ResourceManager.Network.Models.VerificationIPFlowParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherVerifyIPFlowOperation&gt;&#xA;override this.VerifyIPFlowAsync : bool * Azure.ResourceManager.Network.Models.VerificationIPFlowParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherVerifyIPFlowOperation&gt;" Usage="networkWatcher.VerifyIPFlowAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -1109,13 +1089,13 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.NetworkWatcherVerifyIPFlowOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.VerificationIPFlowParameters" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.VerificationIPFlowParameters" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> Parameters that define the IP flow to be verified. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> Parameters that define the IP flow to be verified. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Verify IP flow from the specified VM to a location given the currently configured NSG rules. </summary>
         <returns>To be added.</returns>

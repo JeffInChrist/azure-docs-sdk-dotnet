@@ -90,18 +90,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateResourceIdentifier">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ResourceIdentifier CreateResourceIdentifier (string subscriptionId, string resourceGroupName, string configStoreName);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ResourceIdentifier CreateResourceIdentifier(string subscriptionId, string resourceGroupName, string configStoreName) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Core.ResourceIdentifier CreateResourceIdentifier (string subscriptionId, string resourceGroupName, string configStoreName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Core.ResourceIdentifier CreateResourceIdentifier(string subscriptionId, string resourceGroupName, string configStoreName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.AppConfiguration.ConfigurationStore.CreateResourceIdentifier(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateResourceIdentifier (subscriptionId As String, resourceGroupName As String, configStoreName As String) As ResourceIdentifier" />
-      <MemberSignature Language="F#" Value="static member CreateResourceIdentifier : string * string * string -&gt; Azure.ResourceManager.ResourceIdentifier" Usage="Azure.ResourceManager.AppConfiguration.ConfigurationStore.CreateResourceIdentifier (subscriptionId, resourceGroupName, configStoreName)" />
+      <MemberSignature Language="F#" Value="static member CreateResourceIdentifier : string * string * string -&gt; Azure.Core.ResourceIdentifier" Usage="Azure.ResourceManager.AppConfiguration.ConfigurationStore.CreateResourceIdentifier (subscriptionId, resourceGroupName, configStoreName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.AppConfiguration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceIdentifier</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscriptionId" Type="System.String" />
@@ -139,10 +139,10 @@
       </Docs>
     </Member>
     <Member MemberName="Delete">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreDeleteOperation Delete (bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreDeleteOperation Delete (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreDeleteOperation Delete(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.AppConfiguration.ConfigurationStore.Delete(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As ConfigurationStoreDeleteOperation" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ConfigurationStoreDeleteOperation" />
       <MemberSignature Language="F#" Value="abstract member Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreDeleteOperation&#xA;override this.Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreDeleteOperation" Usage="configurationStore.Delete (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -165,10 +165,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreDeleteOperation&gt; DeleteAsync (bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreDeleteOperation&gt; DeleteAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreDeleteOperation&gt; DeleteAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.AppConfiguration.ConfigurationStore.DeleteAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ConfigurationStoreDeleteOperation)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ConfigurationStoreDeleteOperation)" />
       <MemberSignature Language="F#" Value="abstract member DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreDeleteOperation&gt;&#xA;override this.DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreDeleteOperation&gt;" Usage="configurationStore.DeleteAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -239,18 +239,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetAvailableLocations">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt; GetAvailableLocations (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.Resources.Models.Location&gt; GetAvailableLocations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt; GetAvailableLocations (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt; GetAvailableLocations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.AppConfiguration.ConfigurationStore.GetAvailableLocations(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocations (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of Location)" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&#xA;override this.GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;" Usage="configurationStore.GetAvailableLocations cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocations (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of AzureLocation)" />
+      <MemberSignature Language="F#" Value="abstract member GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;&#xA;override this.GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;" Usage="configurationStore.GetAvailableLocations cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.AppConfiguration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -263,18 +263,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetAvailableLocationsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt; GetAvailableLocationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.Resources.Models.Location&gt;&gt; GetAvailableLocationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.AppConfiguration.ConfigurationStore.GetAvailableLocationsAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocationsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of Location))" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;&#xA;override this.GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;" Usage="configurationStore.GetAvailableLocationsAsync cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocationsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of AzureLocation))" />
+      <MemberSignature Language="F#" Value="abstract member GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;&#xA;override this.GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;" Usage="configurationStore.GetAvailableLocationsAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.AppConfiguration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -395,11 +395,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetPrivateEndpointConnections">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.AppConfiguration.PrivateEndpointConnectionCollection GetPrivateEndpointConnections ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.ResourceManager.AppConfiguration.PrivateEndpointConnectionCollection GetPrivateEndpointConnections() cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.AppConfiguration.PrivateEndpointConnectionCollection GetPrivateEndpointConnections ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.AppConfiguration.PrivateEndpointConnectionCollection GetPrivateEndpointConnections() cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.AppConfiguration.ConfigurationStore.GetPrivateEndpointConnections" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetPrivateEndpointConnections () As PrivateEndpointConnectionCollection" />
-      <MemberSignature Language="F#" Value="member this.GetPrivateEndpointConnections : unit -&gt; Azure.ResourceManager.AppConfiguration.PrivateEndpointConnectionCollection" Usage="configurationStore.GetPrivateEndpointConnections " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPrivateEndpointConnections () As PrivateEndpointConnectionCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetPrivateEndpointConnections : unit -&gt; Azure.ResourceManager.AppConfiguration.PrivateEndpointConnectionCollection&#xA;override this.GetPrivateEndpointConnections : unit -&gt; Azure.ResourceManager.AppConfiguration.PrivateEndpointConnectionCollection" Usage="configurationStore.GetPrivateEndpointConnections " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.AppConfiguration</AssemblyName>
@@ -416,11 +416,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetPrivateLinkResources">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.AppConfiguration.PrivateLinkResourceCollection GetPrivateLinkResources ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.ResourceManager.AppConfiguration.PrivateLinkResourceCollection GetPrivateLinkResources() cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.AppConfiguration.PrivateLinkResourceCollection GetPrivateLinkResources ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.AppConfiguration.PrivateLinkResourceCollection GetPrivateLinkResources() cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.AppConfiguration.ConfigurationStore.GetPrivateLinkResources" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetPrivateLinkResources () As PrivateLinkResourceCollection" />
-      <MemberSignature Language="F#" Value="member this.GetPrivateLinkResources : unit -&gt; Azure.ResourceManager.AppConfiguration.PrivateLinkResourceCollection" Usage="configurationStore.GetPrivateLinkResources " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPrivateLinkResources () As PrivateLinkResourceCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetPrivateLinkResources : unit -&gt; Azure.ResourceManager.AppConfiguration.PrivateLinkResourceCollection&#xA;override this.GetPrivateLinkResources : unit -&gt; Azure.ResourceManager.AppConfiguration.PrivateLinkResourceCollection" Usage="configurationStore.GetPrivateLinkResources " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.AppConfiguration</AssemblyName>
@@ -565,18 +565,18 @@
       </Docs>
     </Member>
     <Member MemberName="ResourceType">
-      <MemberSignature Language="C#" Value="public static readonly Azure.ResourceManager.ResourceType ResourceType;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Azure.ResourceManager.ResourceType ResourceType" />
+      <MemberSignature Language="C#" Value="public static readonly Azure.Core.ResourceType ResourceType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype Azure.Core.ResourceType ResourceType" />
       <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.AppConfiguration.ConfigurationStore.ResourceType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ResourceType As ResourceType " />
-      <MemberSignature Language="F#" Value=" staticval mutable ResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.AppConfiguration.ConfigurationStore.ResourceType" />
+      <MemberSignature Language="F#" Value=" staticval mutable ResourceType : Azure.Core.ResourceType" Usage="Azure.ResourceManager.AppConfiguration.ConfigurationStore.ResourceType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.AppConfiguration</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
+        <ReturnType>Azure.Core.ResourceType</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Gets the resource type for the operations. </summary>
@@ -636,11 +636,11 @@
       </Docs>
     </Member>
     <Member MemberName="Update">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOperation Update (Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOptions configurationStoreUpdateOptions, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOperation Update(class Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOptions configurationStoreUpdateOptions, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.AppConfiguration.ConfigurationStore.Update(Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOptions,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (configurationStoreUpdateOptions As ConfigurationStoreUpdateOptions, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As ConfigurationStoreUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member Update : Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOptions * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOperation&#xA;override this.Update : Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOptions * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOperation" Usage="configurationStore.Update (configurationStoreUpdateOptions, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOperation Update (bool waitForCompletion, Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOptions configurationStoreUpdateOptions, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOperation Update(bool waitForCompletion, class Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOptions configurationStoreUpdateOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.AppConfiguration.ConfigurationStore.Update(System.Boolean,Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (waitForCompletion As Boolean, configurationStoreUpdateOptions As ConfigurationStoreUpdateOptions, Optional cancellationToken As CancellationToken = Nothing) As ConfigurationStoreUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member Update : bool * Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOperation&#xA;override this.Update : bool * Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOperation" Usage="configurationStore.Update (waitForCompletion, configurationStoreUpdateOptions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.AppConfiguration</AssemblyName>
@@ -650,13 +650,13 @@
         <ReturnType>Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="configurationStoreUpdateOptions" Type="Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOptions" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="configurationStoreUpdateOptions" Type="Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOptions" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="configurationStoreUpdateOptions"> The options for updating a configuration store. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="configurationStoreUpdateOptions"> The options for updating a configuration store. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Updates a configuration store with the specified parameters. </summary>
         <returns>To be added.</returns>
@@ -666,11 +666,11 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOperation&gt; UpdateAsync (Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOptions configurationStoreUpdateOptions, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOperation&gt; UpdateAsync(class Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOptions configurationStoreUpdateOptions, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.AppConfiguration.ConfigurationStore.UpdateAsync(Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOptions,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (configurationStoreUpdateOptions As ConfigurationStoreUpdateOptions, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ConfigurationStoreUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member UpdateAsync : Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOptions * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOperation&gt;&#xA;override this.UpdateAsync : Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOptions * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOperation&gt;" Usage="configurationStore.UpdateAsync (configurationStoreUpdateOptions, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOperation&gt; UpdateAsync (bool waitForCompletion, Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOptions configurationStoreUpdateOptions, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOperation&gt; UpdateAsync(bool waitForCompletion, class Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOptions configurationStoreUpdateOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.AppConfiguration.ConfigurationStore.UpdateAsync(System.Boolean,Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (waitForCompletion As Boolean, configurationStoreUpdateOptions As ConfigurationStoreUpdateOptions, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ConfigurationStoreUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateAsync : bool * Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOperation&gt;&#xA;override this.UpdateAsync : bool * Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOperation&gt;" Usage="configurationStore.UpdateAsync (waitForCompletion, configurationStoreUpdateOptions, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.AppConfiguration</AssemblyName>
@@ -680,39 +680,19 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="configurationStoreUpdateOptions" Type="Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOptions" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="configurationStoreUpdateOptions" Type="Azure.ResourceManager.AppConfiguration.Models.ConfigurationStoreUpdateOptions" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="configurationStoreUpdateOptions"> The options for updating a configuration store. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="configurationStoreUpdateOptions"> The options for updating a configuration store. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Updates a configuration store with the specified parameters. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="configurationStoreUpdateOptions" /> is null. </exception>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.AppConfiguration.ConfigurationStore.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.AppConfiguration.ConfigurationStore.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.AppConfiguration</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for the operations. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

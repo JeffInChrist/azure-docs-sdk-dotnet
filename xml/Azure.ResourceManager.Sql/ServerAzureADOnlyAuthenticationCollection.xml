@@ -44,11 +44,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthenticationCreateOrUpdateOperation CreateOrUpdate (Azure.ResourceManager.Sql.Models.AuthenticationName authenticationName, Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthenticationCreateOrUpdateOperation CreateOrUpdate(valuetype Azure.ResourceManager.Sql.Models.AuthenticationName authenticationName, class Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationCollection.CreateOrUpdate(Azure.ResourceManager.Sql.Models.AuthenticationName,Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (authenticationName As AuthenticationName, parameters As ServerAzureADOnlyAuthenticationData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As ServerAzureADOnlyAuthenticationCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : Azure.ResourceManager.Sql.Models.AuthenticationName * Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthenticationCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : Azure.ResourceManager.Sql.Models.AuthenticationName * Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthenticationCreateOrUpdateOperation" Usage="serverAzureADOnlyAuthenticationCollection.CreateOrUpdate (authenticationName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthenticationCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, Azure.ResourceManager.Sql.Models.AuthenticationName authenticationName, Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthenticationCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, valuetype Azure.ResourceManager.Sql.Models.AuthenticationName authenticationName, class Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationCollection.CreateOrUpdate(System.Boolean,Azure.ResourceManager.Sql.Models.AuthenticationName,Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, authenticationName As AuthenticationName, parameters As ServerAzureADOnlyAuthenticationData, Optional cancellationToken As CancellationToken = Nothing) As ServerAzureADOnlyAuthenticationCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * Azure.ResourceManager.Sql.Models.AuthenticationName * Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthenticationCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * Azure.ResourceManager.Sql.Models.AuthenticationName * Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthenticationCreateOrUpdateOperation" Usage="serverAzureADOnlyAuthenticationCollection.CreateOrUpdate (waitForCompletion, authenticationName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
@@ -58,15 +58,15 @@
         <ReturnType>Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthenticationCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="authenticationName" Type="Azure.ResourceManager.Sql.Models.AuthenticationName" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="authenticationName"> The name of server azure active directory only authentication. </param>
         <param name="parameters"> The required parameters for creating or updating an Active Directory only authentication property. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Sets Server Active Directory only authentication property or updates an existing server Active Directory only authentication property. </summary>
         <returns>To be added.</returns>
@@ -76,11 +76,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthenticationCreateOrUpdateOperation&gt; CreateOrUpdateAsync (Azure.ResourceManager.Sql.Models.AuthenticationName authenticationName, Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthenticationCreateOrUpdateOperation&gt; CreateOrUpdateAsync(valuetype Azure.ResourceManager.Sql.Models.AuthenticationName authenticationName, class Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationCollection.CreateOrUpdateAsync(Azure.ResourceManager.Sql.Models.AuthenticationName,Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (authenticationName As AuthenticationName, parameters As ServerAzureADOnlyAuthenticationData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ServerAzureADOnlyAuthenticationCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : Azure.ResourceManager.Sql.Models.AuthenticationName * Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthenticationCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : Azure.ResourceManager.Sql.Models.AuthenticationName * Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthenticationCreateOrUpdateOperation&gt;" Usage="serverAzureADOnlyAuthenticationCollection.CreateOrUpdateAsync (authenticationName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthenticationCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, Azure.ResourceManager.Sql.Models.AuthenticationName authenticationName, Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthenticationCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, valuetype Azure.ResourceManager.Sql.Models.AuthenticationName authenticationName, class Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationCollection.CreateOrUpdateAsync(System.Boolean,Azure.ResourceManager.Sql.Models.AuthenticationName,Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, authenticationName As AuthenticationName, parameters As ServerAzureADOnlyAuthenticationData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ServerAzureADOnlyAuthenticationCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * Azure.ResourceManager.Sql.Models.AuthenticationName * Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthenticationCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * Azure.ResourceManager.Sql.Models.AuthenticationName * Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthenticationCreateOrUpdateOperation&gt;" Usage="serverAzureADOnlyAuthenticationCollection.CreateOrUpdateAsync (waitForCompletion, authenticationName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
@@ -90,15 +90,15 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ServerAzureADOnlyAuthenticationCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="authenticationName" Type="Azure.ResourceManager.Sql.Models.AuthenticationName" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="authenticationName"> The name of server azure active directory only authentication. </param>
         <param name="parameters"> The required parameters for creating or updating an Active Directory only authentication property. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Sets Server Active Directory only authentication property or updates an existing server Active Directory only authentication property. </summary>
         <returns>To be added.</returns>
@@ -383,26 +383,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Sql.ServerAzureADOnlyAuthenticationCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

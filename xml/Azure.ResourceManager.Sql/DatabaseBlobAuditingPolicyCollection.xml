@@ -44,11 +44,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.DatabaseBlobAuditingPolicyCreateOrUpdateOperation CreateOrUpdate (Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName blobAuditingPolicyName, Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.DatabaseBlobAuditingPolicyCreateOrUpdateOperation CreateOrUpdate(valuetype Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName blobAuditingPolicyName, class Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyCollection.CreateOrUpdate(Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName,Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (blobAuditingPolicyName As BlobAuditingPolicyName, parameters As DatabaseBlobAuditingPolicyData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As DatabaseBlobAuditingPolicyCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName * Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.DatabaseBlobAuditingPolicyCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName * Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.DatabaseBlobAuditingPolicyCreateOrUpdateOperation" Usage="databaseBlobAuditingPolicyCollection.CreateOrUpdate (blobAuditingPolicyName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.DatabaseBlobAuditingPolicyCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName blobAuditingPolicyName, Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.DatabaseBlobAuditingPolicyCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, valuetype Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName blobAuditingPolicyName, class Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyCollection.CreateOrUpdate(System.Boolean,Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName,Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, blobAuditingPolicyName As BlobAuditingPolicyName, parameters As DatabaseBlobAuditingPolicyData, Optional cancellationToken As CancellationToken = Nothing) As DatabaseBlobAuditingPolicyCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName * Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.DatabaseBlobAuditingPolicyCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName * Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.DatabaseBlobAuditingPolicyCreateOrUpdateOperation" Usage="databaseBlobAuditingPolicyCollection.CreateOrUpdate (waitForCompletion, blobAuditingPolicyName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
@@ -58,15 +58,15 @@
         <ReturnType>Azure.ResourceManager.Sql.Models.DatabaseBlobAuditingPolicyCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="blobAuditingPolicyName" Type="Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="blobAuditingPolicyName"> The name of the blob auditing policy. </param>
         <param name="parameters"> The database blob auditing policy. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates a database's blob auditing policy. </summary>
         <returns>To be added.</returns>
@@ -76,11 +76,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.DatabaseBlobAuditingPolicyCreateOrUpdateOperation&gt; CreateOrUpdateAsync (Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName blobAuditingPolicyName, Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.DatabaseBlobAuditingPolicyCreateOrUpdateOperation&gt; CreateOrUpdateAsync(valuetype Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName blobAuditingPolicyName, class Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyCollection.CreateOrUpdateAsync(Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName,Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (blobAuditingPolicyName As BlobAuditingPolicyName, parameters As DatabaseBlobAuditingPolicyData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of DatabaseBlobAuditingPolicyCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName * Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.DatabaseBlobAuditingPolicyCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName * Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.DatabaseBlobAuditingPolicyCreateOrUpdateOperation&gt;" Usage="databaseBlobAuditingPolicyCollection.CreateOrUpdateAsync (blobAuditingPolicyName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.DatabaseBlobAuditingPolicyCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName blobAuditingPolicyName, Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.DatabaseBlobAuditingPolicyCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, valuetype Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName blobAuditingPolicyName, class Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyCollection.CreateOrUpdateAsync(System.Boolean,Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName,Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, blobAuditingPolicyName As BlobAuditingPolicyName, parameters As DatabaseBlobAuditingPolicyData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of DatabaseBlobAuditingPolicyCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName * Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.DatabaseBlobAuditingPolicyCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName * Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.DatabaseBlobAuditingPolicyCreateOrUpdateOperation&gt;" Usage="databaseBlobAuditingPolicyCollection.CreateOrUpdateAsync (waitForCompletion, blobAuditingPolicyName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
@@ -90,15 +90,15 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.DatabaseBlobAuditingPolicyCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="blobAuditingPolicyName" Type="Azure.ResourceManager.Sql.Models.BlobAuditingPolicyName" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="blobAuditingPolicyName"> The name of the blob auditing policy. </param>
         <param name="parameters"> The database blob auditing policy. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates a database's blob auditing policy. </summary>
         <returns>To be added.</returns>
@@ -383,26 +383,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Sql.DatabaseBlobAuditingPolicyCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

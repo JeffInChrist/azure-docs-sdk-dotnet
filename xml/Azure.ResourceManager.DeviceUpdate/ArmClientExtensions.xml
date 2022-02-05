@@ -18,11 +18,11 @@
   </Docs>
   <Members>
     <Member MemberName="GetDeviceUpdateAccount">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DeviceUpdate.DeviceUpdateAccount GetDeviceUpdateAccount (this Azure.ResourceManager.ArmClient armClient, Azure.ResourceManager.ResourceIdentifier id);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DeviceUpdate.DeviceUpdateAccount GetDeviceUpdateAccount(class Azure.ResourceManager.ArmClient armClient, class Azure.ResourceManager.ResourceIdentifier id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceUpdate.ArmClientExtensions.GetDeviceUpdateAccount(Azure.ResourceManager.ArmClient,Azure.ResourceManager.ResourceIdentifier)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DeviceUpdate.DeviceUpdateAccount GetDeviceUpdateAccount (this Azure.ResourceManager.ArmClient armClient, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DeviceUpdate.DeviceUpdateAccount GetDeviceUpdateAccount(class Azure.ResourceManager.ArmClient armClient, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceUpdate.ArmClientExtensions.GetDeviceUpdateAccount(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeviceUpdateAccount (armClient As ArmClient, id As ResourceIdentifier) As DeviceUpdateAccount" />
-      <MemberSignature Language="F#" Value="static member GetDeviceUpdateAccount : Azure.ResourceManager.ArmClient * Azure.ResourceManager.ResourceIdentifier -&gt; Azure.ResourceManager.DeviceUpdate.DeviceUpdateAccount" Usage="Azure.ResourceManager.DeviceUpdate.ArmClientExtensions.GetDeviceUpdateAccount (armClient, id)" />
+      <MemberSignature Language="F#" Value="static member GetDeviceUpdateAccount : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DeviceUpdate.DeviceUpdateAccount" Usage="Azure.ResourceManager.DeviceUpdate.ArmClientExtensions.GetDeviceUpdateAccount (armClient, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceUpdate</AssemblyName>
@@ -33,7 +33,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="armClient" Type="Azure.ResourceManager.ArmClient" RefType="this" />
-        <Parameter Name="id" Type="Azure.ResourceManager.ResourceIdentifier" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
         <param name="armClient"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
@@ -44,11 +44,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetDeviceUpdateInstance">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstance GetDeviceUpdateInstance (this Azure.ResourceManager.ArmClient armClient, Azure.ResourceManager.ResourceIdentifier id);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstance GetDeviceUpdateInstance(class Azure.ResourceManager.ArmClient armClient, class Azure.ResourceManager.ResourceIdentifier id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceUpdate.ArmClientExtensions.GetDeviceUpdateInstance(Azure.ResourceManager.ArmClient,Azure.ResourceManager.ResourceIdentifier)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstance GetDeviceUpdateInstance (this Azure.ResourceManager.ArmClient armClient, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstance GetDeviceUpdateInstance(class Azure.ResourceManager.ArmClient armClient, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceUpdate.ArmClientExtensions.GetDeviceUpdateInstance(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeviceUpdateInstance (armClient As ArmClient, id As ResourceIdentifier) As DeviceUpdateInstance" />
-      <MemberSignature Language="F#" Value="static member GetDeviceUpdateInstance : Azure.ResourceManager.ArmClient * Azure.ResourceManager.ResourceIdentifier -&gt; Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstance" Usage="Azure.ResourceManager.DeviceUpdate.ArmClientExtensions.GetDeviceUpdateInstance (armClient, id)" />
+      <MemberSignature Language="F#" Value="static member GetDeviceUpdateInstance : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DeviceUpdate.DeviceUpdateInstance" Usage="Azure.ResourceManager.DeviceUpdate.ArmClientExtensions.GetDeviceUpdateInstance (armClient, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceUpdate</AssemblyName>
@@ -59,7 +59,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="armClient" Type="Azure.ResourceManager.ArmClient" RefType="this" />
-        <Parameter Name="id" Type="Azure.ResourceManager.ResourceIdentifier" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
         <param name="armClient"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
@@ -70,11 +70,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetPrivateEndpointConnection">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnection GetPrivateEndpointConnection (this Azure.ResourceManager.ArmClient armClient, Azure.ResourceManager.ResourceIdentifier id);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnection GetPrivateEndpointConnection(class Azure.ResourceManager.ArmClient armClient, class Azure.ResourceManager.ResourceIdentifier id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceUpdate.ArmClientExtensions.GetPrivateEndpointConnection(Azure.ResourceManager.ArmClient,Azure.ResourceManager.ResourceIdentifier)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnection GetPrivateEndpointConnection (this Azure.ResourceManager.ArmClient armClient, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnection GetPrivateEndpointConnection(class Azure.ResourceManager.ArmClient armClient, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceUpdate.ArmClientExtensions.GetPrivateEndpointConnection(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetPrivateEndpointConnection (armClient As ArmClient, id As ResourceIdentifier) As PrivateEndpointConnection" />
-      <MemberSignature Language="F#" Value="static member GetPrivateEndpointConnection : Azure.ResourceManager.ArmClient * Azure.ResourceManager.ResourceIdentifier -&gt; Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnection" Usage="Azure.ResourceManager.DeviceUpdate.ArmClientExtensions.GetPrivateEndpointConnection (armClient, id)" />
+      <MemberSignature Language="F#" Value="static member GetPrivateEndpointConnection : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnection" Usage="Azure.ResourceManager.DeviceUpdate.ArmClientExtensions.GetPrivateEndpointConnection (armClient, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceUpdate</AssemblyName>
@@ -85,7 +85,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="armClient" Type="Azure.ResourceManager.ArmClient" RefType="this" />
-        <Parameter Name="id" Type="Azure.ResourceManager.ResourceIdentifier" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
         <param name="armClient"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
@@ -96,11 +96,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetPrivateEndpointConnectionProxy">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxy GetPrivateEndpointConnectionProxy (this Azure.ResourceManager.ArmClient armClient, Azure.ResourceManager.ResourceIdentifier id);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxy GetPrivateEndpointConnectionProxy(class Azure.ResourceManager.ArmClient armClient, class Azure.ResourceManager.ResourceIdentifier id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceUpdate.ArmClientExtensions.GetPrivateEndpointConnectionProxy(Azure.ResourceManager.ArmClient,Azure.ResourceManager.ResourceIdentifier)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxy GetPrivateEndpointConnectionProxy (this Azure.ResourceManager.ArmClient armClient, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxy GetPrivateEndpointConnectionProxy(class Azure.ResourceManager.ArmClient armClient, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceUpdate.ArmClientExtensions.GetPrivateEndpointConnectionProxy(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetPrivateEndpointConnectionProxy (armClient As ArmClient, id As ResourceIdentifier) As PrivateEndpointConnectionProxy" />
-      <MemberSignature Language="F#" Value="static member GetPrivateEndpointConnectionProxy : Azure.ResourceManager.ArmClient * Azure.ResourceManager.ResourceIdentifier -&gt; Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxy" Usage="Azure.ResourceManager.DeviceUpdate.ArmClientExtensions.GetPrivateEndpointConnectionProxy (armClient, id)" />
+      <MemberSignature Language="F#" Value="static member GetPrivateEndpointConnectionProxy : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DeviceUpdate.PrivateEndpointConnectionProxy" Usage="Azure.ResourceManager.DeviceUpdate.ArmClientExtensions.GetPrivateEndpointConnectionProxy (armClient, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceUpdate</AssemblyName>
@@ -111,7 +111,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="armClient" Type="Azure.ResourceManager.ArmClient" RefType="this" />
-        <Parameter Name="id" Type="Azure.ResourceManager.ResourceIdentifier" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
         <param name="armClient"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
@@ -122,11 +122,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetPrivateLink">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DeviceUpdate.PrivateLink GetPrivateLink (this Azure.ResourceManager.ArmClient armClient, Azure.ResourceManager.ResourceIdentifier id);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DeviceUpdate.PrivateLink GetPrivateLink(class Azure.ResourceManager.ArmClient armClient, class Azure.ResourceManager.ResourceIdentifier id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceUpdate.ArmClientExtensions.GetPrivateLink(Azure.ResourceManager.ArmClient,Azure.ResourceManager.ResourceIdentifier)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DeviceUpdate.PrivateLink GetPrivateLink (this Azure.ResourceManager.ArmClient armClient, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DeviceUpdate.PrivateLink GetPrivateLink(class Azure.ResourceManager.ArmClient armClient, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DeviceUpdate.ArmClientExtensions.GetPrivateLink(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetPrivateLink (armClient As ArmClient, id As ResourceIdentifier) As PrivateLink" />
-      <MemberSignature Language="F#" Value="static member GetPrivateLink : Azure.ResourceManager.ArmClient * Azure.ResourceManager.ResourceIdentifier -&gt; Azure.ResourceManager.DeviceUpdate.PrivateLink" Usage="Azure.ResourceManager.DeviceUpdate.ArmClientExtensions.GetPrivateLink (armClient, id)" />
+      <MemberSignature Language="F#" Value="static member GetPrivateLink : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DeviceUpdate.PrivateLink" Usage="Azure.ResourceManager.DeviceUpdate.ArmClientExtensions.GetPrivateLink (armClient, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceUpdate</AssemblyName>
@@ -137,7 +137,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="armClient" Type="Azure.ResourceManager.ArmClient" RefType="this" />
-        <Parameter Name="id" Type="Azure.ResourceManager.ResourceIdentifier" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
         <param name="armClient"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>

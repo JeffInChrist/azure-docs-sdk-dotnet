@@ -44,29 +44,29 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.LedgerDigestUploadCreateOrUpdateOperation CreateOrUpdate (Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName ledgerDigestUploads, Azure.ResourceManager.Sql.LedgerDigestUploadsData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.LedgerDigestUploadCreateOrUpdateOperation CreateOrUpdate(valuetype Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName ledgerDigestUploads, class Azure.ResourceManager.Sql.LedgerDigestUploadsData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.LedgerDigestUploadsCollection.CreateOrUpdate(Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName,Azure.ResourceManager.Sql.LedgerDigestUploadsData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (ledgerDigestUploads As LedgerDigestUploadsName, parameters As LedgerDigestUploadsData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As LedgerDigestUploadCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName * Azure.ResourceManager.Sql.LedgerDigestUploadsData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.LedgerDigestUploadCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName * Azure.ResourceManager.Sql.LedgerDigestUploadsData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.LedgerDigestUploadCreateOrUpdateOperation" Usage="ledgerDigestUploadsCollection.CreateOrUpdate (ledgerDigestUploads, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.LedgerDigestUploadsCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName ledgerDigestUploads, Azure.ResourceManager.Sql.LedgerDigestUploadsData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.LedgerDigestUploadsCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, valuetype Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName ledgerDigestUploads, class Azure.ResourceManager.Sql.LedgerDigestUploadsData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.LedgerDigestUploadsCollection.CreateOrUpdate(System.Boolean,Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName,Azure.ResourceManager.Sql.LedgerDigestUploadsData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, ledgerDigestUploads As LedgerDigestUploadsName, parameters As LedgerDigestUploadsData, Optional cancellationToken As CancellationToken = Nothing) As LedgerDigestUploadsCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName * Azure.ResourceManager.Sql.LedgerDigestUploadsData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.LedgerDigestUploadsCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName * Azure.ResourceManager.Sql.LedgerDigestUploadsData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.LedgerDigestUploadsCreateOrUpdateOperation" Usage="ledgerDigestUploadsCollection.CreateOrUpdate (waitForCompletion, ledgerDigestUploads, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Sql.Models.LedgerDigestUploadCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.Sql.Models.LedgerDigestUploadsCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="ledgerDigestUploads" Type="Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.LedgerDigestUploadsData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="ledgerDigestUploads"> The LedgerDigestUploadsName to use. </param>
         <param name="parameters"> The LedgerDigestUploads to use. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Enables upload ledger digests to an Azure Storage account or an Azure Confidential Ledger instance. </summary>
         <returns>To be added.</returns>
@@ -76,29 +76,29 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.LedgerDigestUploadCreateOrUpdateOperation&gt; CreateOrUpdateAsync (Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName ledgerDigestUploads, Azure.ResourceManager.Sql.LedgerDigestUploadsData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.LedgerDigestUploadCreateOrUpdateOperation&gt; CreateOrUpdateAsync(valuetype Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName ledgerDigestUploads, class Azure.ResourceManager.Sql.LedgerDigestUploadsData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.LedgerDigestUploadsCollection.CreateOrUpdateAsync(Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName,Azure.ResourceManager.Sql.LedgerDigestUploadsData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (ledgerDigestUploads As LedgerDigestUploadsName, parameters As LedgerDigestUploadsData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of LedgerDigestUploadCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName * Azure.ResourceManager.Sql.LedgerDigestUploadsData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.LedgerDigestUploadCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName * Azure.ResourceManager.Sql.LedgerDigestUploadsData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.LedgerDigestUploadCreateOrUpdateOperation&gt;" Usage="ledgerDigestUploadsCollection.CreateOrUpdateAsync (ledgerDigestUploads, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.LedgerDigestUploadsCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName ledgerDigestUploads, Azure.ResourceManager.Sql.LedgerDigestUploadsData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.LedgerDigestUploadsCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, valuetype Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName ledgerDigestUploads, class Azure.ResourceManager.Sql.LedgerDigestUploadsData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.LedgerDigestUploadsCollection.CreateOrUpdateAsync(System.Boolean,Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName,Azure.ResourceManager.Sql.LedgerDigestUploadsData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, ledgerDigestUploads As LedgerDigestUploadsName, parameters As LedgerDigestUploadsData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of LedgerDigestUploadsCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName * Azure.ResourceManager.Sql.LedgerDigestUploadsData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.LedgerDigestUploadsCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName * Azure.ResourceManager.Sql.LedgerDigestUploadsData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.LedgerDigestUploadsCreateOrUpdateOperation&gt;" Usage="ledgerDigestUploadsCollection.CreateOrUpdateAsync (waitForCompletion, ledgerDigestUploads, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.LedgerDigestUploadCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.LedgerDigestUploadsCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="ledgerDigestUploads" Type="Azure.ResourceManager.Sql.Models.LedgerDigestUploadsName" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.LedgerDigestUploadsData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="ledgerDigestUploads"> The LedgerDigestUploadsName to use. </param>
         <param name="parameters"> The LedgerDigestUploads to use. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Enables upload ledger digests to an Azure Storage account or an Azure Confidential Ledger instance. </summary>
         <returns>To be added.</returns>
@@ -383,26 +383,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.LedgerDigestUploadsCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Sql.LedgerDigestUploadsCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

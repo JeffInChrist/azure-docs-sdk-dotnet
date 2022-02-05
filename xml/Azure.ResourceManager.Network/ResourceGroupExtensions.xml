@@ -18,69 +18,73 @@
   </Docs>
   <Members>
     <Member MemberName="CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkService">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Network.Models.PrivateLinkServiceCheckPrivateLinkServiceVisibilityByResourceGroupOperation CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkService (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string location, Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Network.Models.PrivateLinkServiceCheckPrivateLinkServiceVisibilityByResourceGroupOperation CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkService(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string location, class Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ResourceGroupExtensions.CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkService(Azure.ResourceManager.Resources.ResourceGroup,System.String,Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkService (resourceGroup As ResourceGroup, location As String, parameters As CheckPrivateLinkServiceVisibilityRequest, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As PrivateLinkServiceCheckPrivateLinkServiceVisibilityByResourceGroupOperation" />
-      <MemberSignature Language="F#" Value="static member CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkService : Azure.ResourceManager.Resources.ResourceGroup * string * Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.PrivateLinkServiceCheckPrivateLinkServiceVisibilityByResourceGroupOperation" Usage="Azure.ResourceManager.Network.ResourceGroupExtensions.CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkService (resourceGroup, location, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkServiceOperation CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkService (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, bool waitForCompletion, string location, Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkServiceOperation CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkService(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, bool waitForCompletion, string location, class Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ResourceGroupExtensions.CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkService(Azure.ResourceManager.Resources.ResourceGroup,System.Boolean,System.String,Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkService (resourceGroup As ResourceGroup, waitForCompletion As Boolean, location As String, parameters As CheckPrivateLinkServiceVisibilityRequest, Optional cancellationToken As CancellationToken = Nothing) As CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkServiceOperation" />
+      <MemberSignature Language="F#" Value="static member CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkService : Azure.ResourceManager.Resources.ResourceGroup * bool * string * Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkServiceOperation" Usage="Azure.ResourceManager.Network.ResourceGroupExtensions.CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkService (resourceGroup, waitForCompletion, location, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Network.Models.PrivateLinkServiceCheckPrivateLinkServiceVisibilityByResourceGroupOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkServiceOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="location" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="location"> The location of the domain name. </param>
         <param name="parameters"> The request body of CheckPrivateLinkService API call. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Checks whether the subscription is visible to private link service in the specified resource group. </summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkServiceAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.PrivateLinkServiceCheckPrivateLinkServiceVisibilityByResourceGroupOperation&gt; CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkServiceAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string location, Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.PrivateLinkServiceCheckPrivateLinkServiceVisibilityByResourceGroupOperation&gt; CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkServiceAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string location, class Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ResourceGroupExtensions.CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkServiceAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkServiceAsync (resourceGroup As ResourceGroup, location As String, parameters As CheckPrivateLinkServiceVisibilityRequest, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of PrivateLinkServiceCheckPrivateLinkServiceVisibilityByResourceGroupOperation)" />
-      <MemberSignature Language="F#" Value="static member CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkServiceAsync : Azure.ResourceManager.Resources.ResourceGroup * string * Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.PrivateLinkServiceCheckPrivateLinkServiceVisibilityByResourceGroupOperation&gt;" Usage="Azure.ResourceManager.Network.ResourceGroupExtensions.CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkServiceAsync (resourceGroup, location, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkServiceOperation&gt; CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkServiceAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, bool waitForCompletion, string location, Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkServiceOperation&gt; CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkServiceAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, bool waitForCompletion, string location, class Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.ResourceGroupExtensions.CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkServiceAsync(Azure.ResourceManager.Resources.ResourceGroup,System.Boolean,System.String,Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkServiceAsync (resourceGroup As ResourceGroup, waitForCompletion As Boolean, location As String, parameters As CheckPrivateLinkServiceVisibilityRequest, Optional cancellationToken As CancellationToken = Nothing) As Task(Of CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkServiceOperation)" />
+      <MemberSignature Language="F#" Value="static member CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkServiceAsync : Azure.ResourceManager.Resources.ResourceGroup * bool * string * Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkServiceOperation&gt;" Usage="Azure.ResourceManager.Network.ResourceGroupExtensions.CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkServiceAsync (resourceGroup, waitForCompletion, location, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.PrivateLinkServiceCheckPrivateLinkServiceVisibilityByResourceGroupOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityByResourceGroupPrivateLinkServiceOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="location" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Network.Models.CheckPrivateLinkServiceVisibilityRequest" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="location"> The location of the domain name. </param>
         <param name="parameters"> The request body of CheckPrivateLinkService API call. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Checks whether the subscription is visible to private link service in the specified resource group. </summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -159,6 +163,8 @@
         <summary> Lists the AutoApprovedPrivateLinkServices for this <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" />. </summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -189,6 +195,8 @@
         <summary> Lists the AutoApprovedPrivateLinkServices for this <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" />. </summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -219,6 +227,8 @@
         <summary> Lists the AvailablePrivateEndpointTypes for this <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" />. </summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -249,6 +259,8 @@
         <summary> Lists the AvailablePrivateEndpointTypes for this <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" />. </summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -279,6 +291,8 @@
         <summary> Lists the AvailableDelegations for this <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" />. </summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -309,6 +323,8 @@
         <summary> Lists the AvailableDelegations for this <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" />. </summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -339,6 +355,8 @@
         <summary> Lists the AvailableServiceAliases for this <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" />. </summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -369,6 +387,8 @@
         <summary> Lists the AvailableServiceAliases for this <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" />. </summary>
         <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>

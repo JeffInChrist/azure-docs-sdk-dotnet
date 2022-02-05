@@ -44,11 +44,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.VirtualNetworkPeeringCreateOrUpdateOperation CreateOrUpdate (string virtualNetworkPeeringName, Azure.ResourceManager.Network.VirtualNetworkPeeringData virtualNetworkPeeringParameters, Azure.ResourceManager.Network.Models.SyncRemoteAddressSpace? syncRemoteAddressSpace = default, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.VirtualNetworkPeeringCreateOrUpdateOperation CreateOrUpdate(string virtualNetworkPeeringName, class Azure.ResourceManager.Network.VirtualNetworkPeeringData virtualNetworkPeeringParameters, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Network.Models.SyncRemoteAddressSpace&gt; syncRemoteAddressSpace, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.VirtualNetworkPeeringCollection.CreateOrUpdate(System.String,Azure.ResourceManager.Network.VirtualNetworkPeeringData,System.Nullable{Azure.ResourceManager.Network.Models.SyncRemoteAddressSpace},System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (virtualNetworkPeeringName As String, virtualNetworkPeeringParameters As VirtualNetworkPeeringData, Optional syncRemoteAddressSpace As Nullable(Of SyncRemoteAddressSpace) = Nothing, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As VirtualNetworkPeeringCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.ResourceManager.Network.VirtualNetworkPeeringData * Nullable&lt;Azure.ResourceManager.Network.Models.SyncRemoteAddressSpace&gt; * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.VirtualNetworkPeeringCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : string * Azure.ResourceManager.Network.VirtualNetworkPeeringData * Nullable&lt;Azure.ResourceManager.Network.Models.SyncRemoteAddressSpace&gt; * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.VirtualNetworkPeeringCreateOrUpdateOperation" Usage="virtualNetworkPeeringCollection.CreateOrUpdate (virtualNetworkPeeringName, virtualNetworkPeeringParameters, syncRemoteAddressSpace, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.VirtualNetworkPeeringCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string virtualNetworkPeeringName, Azure.ResourceManager.Network.VirtualNetworkPeeringData virtualNetworkPeeringParameters, Azure.ResourceManager.Network.Models.SyncRemoteAddressSpace? syncRemoteAddressSpace = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.VirtualNetworkPeeringCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string virtualNetworkPeeringName, class Azure.ResourceManager.Network.VirtualNetworkPeeringData virtualNetworkPeeringParameters, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Network.Models.SyncRemoteAddressSpace&gt; syncRemoteAddressSpace, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.VirtualNetworkPeeringCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Network.VirtualNetworkPeeringData,System.Nullable{Azure.ResourceManager.Network.Models.SyncRemoteAddressSpace},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, virtualNetworkPeeringName As String, virtualNetworkPeeringParameters As VirtualNetworkPeeringData, Optional syncRemoteAddressSpace As Nullable(Of SyncRemoteAddressSpace) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As VirtualNetworkPeeringCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Network.VirtualNetworkPeeringData * Nullable&lt;Azure.ResourceManager.Network.Models.SyncRemoteAddressSpace&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.VirtualNetworkPeeringCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Network.VirtualNetworkPeeringData * Nullable&lt;Azure.ResourceManager.Network.Models.SyncRemoteAddressSpace&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.VirtualNetworkPeeringCreateOrUpdateOperation" Usage="virtualNetworkPeeringCollection.CreateOrUpdate (waitForCompletion, virtualNetworkPeeringName, virtualNetworkPeeringParameters, syncRemoteAddressSpace, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -58,31 +58,33 @@
         <ReturnType>Azure.ResourceManager.Network.Models.VirtualNetworkPeeringCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="virtualNetworkPeeringName" Type="System.String" />
         <Parameter Name="virtualNetworkPeeringParameters" Type="Azure.ResourceManager.Network.VirtualNetworkPeeringData" />
         <Parameter Name="syncRemoteAddressSpace" Type="System.Nullable&lt;Azure.ResourceManager.Network.Models.SyncRemoteAddressSpace&gt;" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="virtualNetworkPeeringName"> The name of the peering. </param>
         <param name="virtualNetworkPeeringParameters"> Parameters supplied to the create or update virtual network peering operation. </param>
         <param name="syncRemoteAddressSpace"> Parameter indicates the intention to sync the peering with the current address space on the remote vNet after it's updated. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates a peering in the specified virtual network. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualNetworkPeeringName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualNetworkPeeringName" /> or <paramref name="virtualNetworkPeeringParameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VirtualNetworkPeeringCreateOrUpdateOperation&gt; CreateOrUpdateAsync (string virtualNetworkPeeringName, Azure.ResourceManager.Network.VirtualNetworkPeeringData virtualNetworkPeeringParameters, Azure.ResourceManager.Network.Models.SyncRemoteAddressSpace? syncRemoteAddressSpace = default, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.VirtualNetworkPeeringCreateOrUpdateOperation&gt; CreateOrUpdateAsync(string virtualNetworkPeeringName, class Azure.ResourceManager.Network.VirtualNetworkPeeringData virtualNetworkPeeringParameters, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Network.Models.SyncRemoteAddressSpace&gt; syncRemoteAddressSpace, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.VirtualNetworkPeeringCollection.CreateOrUpdateAsync(System.String,Azure.ResourceManager.Network.VirtualNetworkPeeringData,System.Nullable{Azure.ResourceManager.Network.Models.SyncRemoteAddressSpace},System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (virtualNetworkPeeringName As String, virtualNetworkPeeringParameters As VirtualNetworkPeeringData, Optional syncRemoteAddressSpace As Nullable(Of SyncRemoteAddressSpace) = Nothing, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualNetworkPeeringCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.ResourceManager.Network.VirtualNetworkPeeringData * Nullable&lt;Azure.ResourceManager.Network.Models.SyncRemoteAddressSpace&gt; * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VirtualNetworkPeeringCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.ResourceManager.Network.VirtualNetworkPeeringData * Nullable&lt;Azure.ResourceManager.Network.Models.SyncRemoteAddressSpace&gt; * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VirtualNetworkPeeringCreateOrUpdateOperation&gt;" Usage="virtualNetworkPeeringCollection.CreateOrUpdateAsync (virtualNetworkPeeringName, virtualNetworkPeeringParameters, syncRemoteAddressSpace, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VirtualNetworkPeeringCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string virtualNetworkPeeringName, Azure.ResourceManager.Network.VirtualNetworkPeeringData virtualNetworkPeeringParameters, Azure.ResourceManager.Network.Models.SyncRemoteAddressSpace? syncRemoteAddressSpace = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.VirtualNetworkPeeringCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string virtualNetworkPeeringName, class Azure.ResourceManager.Network.VirtualNetworkPeeringData virtualNetworkPeeringParameters, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Network.Models.SyncRemoteAddressSpace&gt; syncRemoteAddressSpace, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.VirtualNetworkPeeringCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Network.VirtualNetworkPeeringData,System.Nullable{Azure.ResourceManager.Network.Models.SyncRemoteAddressSpace},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, virtualNetworkPeeringName As String, virtualNetworkPeeringParameters As VirtualNetworkPeeringData, Optional syncRemoteAddressSpace As Nullable(Of SyncRemoteAddressSpace) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualNetworkPeeringCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Network.VirtualNetworkPeeringData * Nullable&lt;Azure.ResourceManager.Network.Models.SyncRemoteAddressSpace&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VirtualNetworkPeeringCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Network.VirtualNetworkPeeringData * Nullable&lt;Azure.ResourceManager.Network.Models.SyncRemoteAddressSpace&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VirtualNetworkPeeringCreateOrUpdateOperation&gt;" Usage="virtualNetworkPeeringCollection.CreateOrUpdateAsync (waitForCompletion, virtualNetworkPeeringName, virtualNetworkPeeringParameters, syncRemoteAddressSpace, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -92,21 +94,23 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VirtualNetworkPeeringCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="virtualNetworkPeeringName" Type="System.String" />
         <Parameter Name="virtualNetworkPeeringParameters" Type="Azure.ResourceManager.Network.VirtualNetworkPeeringData" />
         <Parameter Name="syncRemoteAddressSpace" Type="System.Nullable&lt;Azure.ResourceManager.Network.Models.SyncRemoteAddressSpace&gt;" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="virtualNetworkPeeringName"> The name of the peering. </param>
         <param name="virtualNetworkPeeringParameters"> Parameters supplied to the create or update virtual network peering operation. </param>
         <param name="syncRemoteAddressSpace"> Parameter indicates the intention to sync the peering with the current address space on the remote vNet after it's updated. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Creates or updates a peering in the specified virtual network. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualNetworkPeeringName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualNetworkPeeringName" /> or <paramref name="virtualNetworkPeeringParameters" /> is null. </exception>
       </Docs>
@@ -135,6 +139,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualNetworkPeeringName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualNetworkPeeringName" /> is null. </exception>
       </Docs>
@@ -163,6 +169,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualNetworkPeeringName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualNetworkPeeringName" /> is null. </exception>
       </Docs>
@@ -191,6 +199,8 @@
         <summary> Gets the specified virtual network peering. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualNetworkPeeringName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualNetworkPeeringName" /> is null. </exception>
       </Docs>
@@ -267,6 +277,8 @@
         <summary> Gets the specified virtual network peering. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualNetworkPeeringName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualNetworkPeeringName" /> is null. </exception>
       </Docs>
@@ -295,6 +307,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualNetworkPeeringName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualNetworkPeeringName" /> is null. </exception>
       </Docs>
@@ -323,6 +337,8 @@
         <summary> Tries to get details for this resource from the service. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualNetworkPeeringName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualNetworkPeeringName" /> is null. </exception>
       </Docs>
@@ -399,26 +415,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.VirtualNetworkPeeringCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Network.VirtualNetworkPeeringCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
