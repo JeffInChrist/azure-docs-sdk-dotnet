@@ -10,7 +10,7 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: storage
 ---
-# Azure WebJobs Storage Blobs client library for .NET - Version 5.0.0-alpha.20220207.6 
+# Azure WebJobs Storage Blobs client library for .NET - Version 5.0.0-alpha.20220208.1 
 
 
 This extension provides functionality for accessing Azure Storage Blobs in Azure Functions.

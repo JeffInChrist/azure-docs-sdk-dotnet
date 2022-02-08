@@ -1,7 +1,7 @@
 {
   "Name": "Microsoft.Azure.WebJobs.Extensions.Storage.Queues",
-  "Version": "5.0.0-alpha.20220207.6",
-  "DevVersion": "5.0.0-alpha.20220207.6",
+  "Version": "5.0.0-alpha.20220208.1",
+  "DevVersion": "5.0.0-alpha.20220208.1",
   "DirectoryPath": "sdk/storage/Microsoft.Azure.WebJobs.Extensions.Storage.Queues",
   "ServiceDirectory": "storage",
   "ReadMePath": "sdk/storage/Microsoft.Azure.WebJobs.Extensions.Storage.Queues/README.md",
