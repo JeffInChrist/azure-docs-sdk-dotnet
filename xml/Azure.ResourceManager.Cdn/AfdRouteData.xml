@@ -1,15 +1,15 @@
 <Type Name="AfdRouteData" FullName="Azure.ResourceManager.Cdn.AfdRouteData">
-  <TypeSignature Language="C#" Value="public class AfdRouteData : Azure.ResourceManager.Cdn.Models.ProxyResource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AfdRouteData extends Azure.ResourceManager.Cdn.Models.ProxyResource" />
+  <TypeSignature Language="C#" Value="public class AfdRouteData : Azure.ResourceManager.Models.Resource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AfdRouteData extends Azure.ResourceManager.Models.Resource" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Cdn.AfdRouteData" />
-  <TypeSignature Language="VB.NET" Value="Public Class AfdRouteData&#xA;Inherits ProxyResource" />
-  <TypeSignature Language="F#" Value="type AfdRouteData = class&#xA;    inherit ProxyResource" />
+  <TypeSignature Language="VB.NET" Value="Public Class AfdRouteData&#xA;Inherits Resource" />
+  <TypeSignature Language="F#" Value="type AfdRouteData = class&#xA;    inherit Resource" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.Cdn.Models.ProxyResource</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.Models.Resource</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>

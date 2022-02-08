@@ -254,8 +254,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of StorageQueues in the QueueService. </summary>
-        <returns> An object representing collection of StorageQueues and their operations over a QueueService. </returns>
+        <summary> Gets a collection of StorageQueues in the StorageQueue. </summary>
+        <returns> An object representing collection of StorageQueues and their operations over a StorageQueue. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

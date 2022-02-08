@@ -192,8 +192,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of RestorableDatabaseAccounts in the CosmosDBLocation. </summary>
-        <returns> An object representing collection of RestorableDatabaseAccounts and their operations over a CosmosDBLocation. </returns>
+        <summary> Gets a collection of RestorableDatabaseAccounts in the RestorableDatabaseAccount. </summary>
+        <returns> An object representing collection of RestorableDatabaseAccounts and their operations over a RestorableDatabaseAccount. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

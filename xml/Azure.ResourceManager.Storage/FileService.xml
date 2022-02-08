@@ -254,8 +254,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of FileShares in the FileService. </summary>
-        <returns> An object representing collection of FileShares and their operations over a FileService. </returns>
+        <summary> Gets a collection of FileShares in the FileShare. </summary>
+        <returns> An object representing collection of FileShares and their operations over a FileShare. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

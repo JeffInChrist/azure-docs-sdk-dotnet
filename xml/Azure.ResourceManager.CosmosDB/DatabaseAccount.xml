@@ -55,10 +55,12 @@
       <Docs>
         <param name="key"> The key for the tag. </param>
         <param name="value"> The value for the tag. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Add a tag to the current resource. </summary>
         <returns> The updated resource with the tag added. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="AddTagAsync">
@@ -83,10 +85,12 @@
       <Docs>
         <param name="key"> The key for the tag. </param>
         <param name="value"> The value for the tag. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Add a tag to the current resource. </summary>
         <returns> The updated resource with the tag added. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateResourceIdentifier">
@@ -362,8 +366,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of CassandraKeyspaces in the DatabaseAccount. </summary>
-        <returns> An object representing collection of CassandraKeyspaces and their operations over a DatabaseAccount. </returns>
+        <summary> Gets a collection of CassandraKeyspaces in the CassandraKeyspace. </summary>
+        <returns> An object representing collection of CassandraKeyspaces and their operations over a CassandraKeyspace. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -431,8 +435,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of CosmosTables in the DatabaseAccount. </summary>
-        <returns> An object representing collection of CosmosTables and their operations over a DatabaseAccount. </returns>
+        <summary> Gets a collection of CosmosTables in the CosmosTable. </summary>
+        <returns> An object representing collection of CosmosTables and their operations over a CosmosTable. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -452,8 +456,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of GremlinDatabases in the DatabaseAccount. </summary>
-        <returns> An object representing collection of GremlinDatabases and their operations over a DatabaseAccount. </returns>
+        <summary> Gets a collection of GremlinDatabases in the GremlinDatabase. </summary>
+        <returns> An object representing collection of GremlinDatabases and their operations over a GremlinDatabase. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1493,8 +1497,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of MongoDBDatabases in the DatabaseAccount. </summary>
-        <returns> An object representing collection of MongoDBDatabases and their operations over a DatabaseAccount. </returns>
+        <summary> Gets a collection of MongoDBDatabases in the MongoDBDatabase. </summary>
+        <returns> An object representing collection of MongoDBDatabases and their operations over a MongoDBDatabase. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1514,8 +1518,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of PrivateEndpointConnections in the DatabaseAccount. </summary>
-        <returns> An object representing collection of PrivateEndpointConnections and their operations over a DatabaseAccount. </returns>
+        <summary> Gets a collection of PrivateEndpointConnections in the PrivateEndpointConnection. </summary>
+        <returns> An object representing collection of PrivateEndpointConnections and their operations over a PrivateEndpointConnection. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1535,8 +1539,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of PrivateLinkResources in the DatabaseAccount. </summary>
-        <returns> An object representing collection of PrivateLinkResources and their operations over a DatabaseAccount. </returns>
+        <summary> Gets a collection of PrivateLinkResources in the PrivateLinkResource. </summary>
+        <returns> An object representing collection of PrivateLinkResources and their operations over a PrivateLinkResource. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1604,8 +1608,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of SqlDatabases in the DatabaseAccount. </summary>
-        <returns> An object representing collection of SqlDatabases and their operations over a DatabaseAccount. </returns>
+        <summary> Gets a collection of SqlDatabases in the SqlDatabase. </summary>
+        <returns> An object representing collection of SqlDatabases and their operations over a SqlDatabase. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2080,11 +2084,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="key"> The key of the tag to remove. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
+        <param name="key"> The key for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Removes a tag by key from the resource. </summary>
         <returns> The updated resource with the tag removed. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveTagAsync">
@@ -2106,11 +2112,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="key"> The key of the tag to remove. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
+        <param name="key"> The key for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Removes a tag by key from the resource. </summary>
         <returns> The updated resource with the tag removed. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ResourceType">
@@ -2152,10 +2160,12 @@
       </Parameters>
       <Docs>
         <param name="tags"> The set of tags to use as replacement. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Replace the tags on the resource with the given set. </summary>
         <returns> The updated resource with the tags replaced. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tags" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="SetTagsAsync">
@@ -2178,10 +2188,12 @@
       </Parameters>
       <Docs>
         <param name="tags"> The set of tags to use as replacement. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Replace the tags on the resource with the given set. </summary>
         <returns> The updated resource with the tags replaced. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tags" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="Update">

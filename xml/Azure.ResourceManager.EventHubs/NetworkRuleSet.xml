@@ -34,27 +34,27 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.EventHubs.Models.NamespaceCreateOrUpdateNetworkRuleSetOperation CreateOrUpdate (Azure.ResourceManager.EventHubs.NetworkRuleSetData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.EventHubs.Models.NamespaceCreateOrUpdateNetworkRuleSetOperation CreateOrUpdate(class Azure.ResourceManager.EventHubs.NetworkRuleSetData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.NetworkRuleSet.CreateOrUpdate(Azure.ResourceManager.EventHubs.NetworkRuleSetData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (parameters As NetworkRuleSetData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As NamespaceCreateOrUpdateNetworkRuleSetOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : Azure.ResourceManager.EventHubs.NetworkRuleSetData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.EventHubs.Models.NamespaceCreateOrUpdateNetworkRuleSetOperation&#xA;override this.CreateOrUpdate : Azure.ResourceManager.EventHubs.NetworkRuleSetData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.EventHubs.Models.NamespaceCreateOrUpdateNetworkRuleSetOperation" Usage="networkRuleSet.CreateOrUpdate (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.EventHubs.Models.NetworkRuleSetCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, Azure.ResourceManager.EventHubs.NetworkRuleSetData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.EventHubs.Models.NetworkRuleSetCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, class Azure.ResourceManager.EventHubs.NetworkRuleSetData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.NetworkRuleSet.CreateOrUpdate(System.Boolean,Azure.ResourceManager.EventHubs.NetworkRuleSetData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, parameters As NetworkRuleSetData, Optional cancellationToken As CancellationToken = Nothing) As NetworkRuleSetCreateOrUpdateOperation" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * Azure.ResourceManager.EventHubs.NetworkRuleSetData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.EventHubs.Models.NetworkRuleSetCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * Azure.ResourceManager.EventHubs.NetworkRuleSetData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.EventHubs.Models.NetworkRuleSetCreateOrUpdateOperation" Usage="networkRuleSet.CreateOrUpdate (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.EventHubs.Models.NamespaceCreateOrUpdateNetworkRuleSetOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.EventHubs.Models.NetworkRuleSetCreateOrUpdateOperation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.EventHubs.NetworkRuleSetData" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.EventHubs.NetworkRuleSetData" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> The Namespace IpFilterRule. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> The Namespace IpFilterRule. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Create or update NetworkRuleSet for a Namespace. </summary>
         <returns>To be added.</returns>
@@ -64,27 +64,27 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.NamespaceCreateOrUpdateNetworkRuleSetOperation&gt; CreateOrUpdateAsync (Azure.ResourceManager.EventHubs.NetworkRuleSetData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.EventHubs.Models.NamespaceCreateOrUpdateNetworkRuleSetOperation&gt; CreateOrUpdateAsync(class Azure.ResourceManager.EventHubs.NetworkRuleSetData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.NetworkRuleSet.CreateOrUpdateAsync(Azure.ResourceManager.EventHubs.NetworkRuleSetData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (parameters As NetworkRuleSetData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NamespaceCreateOrUpdateNetworkRuleSetOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : Azure.ResourceManager.EventHubs.NetworkRuleSetData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.NamespaceCreateOrUpdateNetworkRuleSetOperation&gt;&#xA;override this.CreateOrUpdateAsync : Azure.ResourceManager.EventHubs.NetworkRuleSetData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.NamespaceCreateOrUpdateNetworkRuleSetOperation&gt;" Usage="networkRuleSet.CreateOrUpdateAsync (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.NetworkRuleSetCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, Azure.ResourceManager.EventHubs.NetworkRuleSetData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.EventHubs.Models.NetworkRuleSetCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, class Azure.ResourceManager.EventHubs.NetworkRuleSetData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.NetworkRuleSet.CreateOrUpdateAsync(System.Boolean,Azure.ResourceManager.EventHubs.NetworkRuleSetData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, parameters As NetworkRuleSetData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of NetworkRuleSetCreateOrUpdateOperation)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * Azure.ResourceManager.EventHubs.NetworkRuleSetData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.NetworkRuleSetCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * Azure.ResourceManager.EventHubs.NetworkRuleSetData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.NetworkRuleSetCreateOrUpdateOperation&gt;" Usage="networkRuleSet.CreateOrUpdateAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.NamespaceCreateOrUpdateNetworkRuleSetOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.NetworkRuleSetCreateOrUpdateOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.EventHubs.NetworkRuleSetData" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="Azure.ResourceManager.EventHubs.NetworkRuleSetData" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> The Namespace IpFilterRule. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="parameters"> The Namespace IpFilterRule. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Create or update NetworkRuleSet for a Namespace. </summary>
         <returns>To be added.</returns>
@@ -94,18 +94,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateResourceIdentifier">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ResourceIdentifier CreateResourceIdentifier (string subscriptionId, string resourceGroupName, string namespaceName);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ResourceIdentifier CreateResourceIdentifier(string subscriptionId, string resourceGroupName, string namespaceName) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Core.ResourceIdentifier CreateResourceIdentifier (string subscriptionId, string resourceGroupName, string namespaceName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Core.ResourceIdentifier CreateResourceIdentifier(string subscriptionId, string resourceGroupName, string namespaceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.NetworkRuleSet.CreateResourceIdentifier(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateResourceIdentifier (subscriptionId As String, resourceGroupName As String, namespaceName As String) As ResourceIdentifier" />
-      <MemberSignature Language="F#" Value="static member CreateResourceIdentifier : string * string * string -&gt; Azure.ResourceManager.ResourceIdentifier" Usage="Azure.ResourceManager.EventHubs.NetworkRuleSet.CreateResourceIdentifier (subscriptionId, resourceGroupName, namespaceName)" />
+      <MemberSignature Language="F#" Value="static member CreateResourceIdentifier : string * string * string -&gt; Azure.Core.ResourceIdentifier" Usage="Azure.ResourceManager.EventHubs.NetworkRuleSet.CreateResourceIdentifier (subscriptionId, resourceGroupName, namespaceName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceIdentifier</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscriptionId" Type="System.String" />
@@ -191,18 +191,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetAvailableLocations">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt; GetAvailableLocations (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.Resources.Models.Location&gt; GetAvailableLocations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt; GetAvailableLocations (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt; GetAvailableLocations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.NetworkRuleSet.GetAvailableLocations(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocations (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of Location)" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&#xA;override this.GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;" Usage="networkRuleSet.GetAvailableLocations cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocations (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of AzureLocation)" />
+      <MemberSignature Language="F#" Value="abstract member GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;&#xA;override this.GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;" Usage="networkRuleSet.GetAvailableLocations cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -215,18 +215,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetAvailableLocationsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt; GetAvailableLocationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.Resources.Models.Location&gt;&gt; GetAvailableLocationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.NetworkRuleSet.GetAvailableLocationsAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocationsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of Location))" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;&#xA;override this.GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;" Usage="networkRuleSet.GetAvailableLocationsAsync cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocationsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of AzureLocation))" />
+      <MemberSignature Language="F#" Value="abstract member GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;&#xA;override this.GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;" Usage="networkRuleSet.GetAvailableLocationsAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -258,62 +258,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Parent">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Core.ArmResource Parent { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Core.ArmResource Parent" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.EventHubs.NetworkRuleSet.Parent" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As ArmResource" />
-      <MemberSignature Language="F#" Value="member this.Parent : Azure.ResourceManager.Core.ArmResource" Usage="Azure.ResourceManager.EventHubs.NetworkRuleSet.Parent" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Core.ArmResource</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the parent resource of this resource. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="ResourceType">
-      <MemberSignature Language="C#" Value="public static readonly Azure.ResourceManager.ResourceType ResourceType;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Azure.ResourceManager.ResourceType ResourceType" />
+      <MemberSignature Language="C#" Value="public static readonly Azure.Core.ResourceType ResourceType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype Azure.Core.ResourceType ResourceType" />
       <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.EventHubs.NetworkRuleSet.ResourceType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ResourceType As ResourceType " />
-      <MemberSignature Language="F#" Value=" staticval mutable ResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.EventHubs.NetworkRuleSet.ResourceType" />
+      <MemberSignature Language="F#" Value=" staticval mutable ResourceType : Azure.Core.ResourceType" Usage="Azure.ResourceManager.EventHubs.NetworkRuleSet.ResourceType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
+        <ReturnType>Azure.Core.ResourceType</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Gets the resource type for the operations. </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.EventHubs.NetworkRuleSet.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.EventHubs.NetworkRuleSet.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for the operations. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

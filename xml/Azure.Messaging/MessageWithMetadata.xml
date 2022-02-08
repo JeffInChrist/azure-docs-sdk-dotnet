@@ -1,8 +1,8 @@
 <Type Name="MessageWithMetadata" FullName="Azure.Messaging.MessageWithMetadata">
-  <TypeSignature Language="C#" Value="public abstract class MessageWithMetadata" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MessageWithMetadata extends System.Object" />
+  <TypeSignature Language="C#" Value="public class MessageWithMetadata" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessageWithMetadata extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Azure.Messaging.MessageWithMetadata" />
-  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MessageWithMetadata" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessageWithMetadata" />
   <TypeSignature Language="F#" Value="type MessageWithMetadata = class" />
   <AssemblyInfo>
     <AssemblyName>Azure.Core.Experimental</AssemblyName>
@@ -14,16 +14,16 @@
   <Interfaces />
   <Docs>
     <summary>
-            An abstraction for a message containing a content type along with its data.
+            A message containing a content type along with its data.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected MessageWithMetadata ();" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="C#" Value="public MessageWithMetadata ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Messaging.MessageWithMetadata.#ctor" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Core.Experimental</AssemblyName>
@@ -36,10 +36,10 @@
       </Docs>
     </Member>
     <Member MemberName="ContentType">
-      <MemberSignature Language="C#" Value="public abstract string ContentType { get; set; }" />
+      <MemberSignature Language="C#" Value="public virtual string? ContentType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
       <MemberSignature Language="DocId" Value="P:Azure.Messaging.MessageWithMetadata.ContentType" />
-      <MemberSignature Language="VB.NET" Value="Public MustOverride Property ContentType As String" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ContentType As String" />
       <MemberSignature Language="F#" Value="member this.ContentType : string with get, set" Usage="Azure.Messaging.MessageWithMetadata.ContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -58,10 +58,10 @@
       </Docs>
     </Member>
     <Member MemberName="Data">
-      <MemberSignature Language="C#" Value="public abstract BinaryData Data { get; set; }" />
+      <MemberSignature Language="C#" Value="public virtual BinaryData? Data { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.BinaryData Data" />
       <MemberSignature Language="DocId" Value="P:Azure.Messaging.MessageWithMetadata.Data" />
-      <MemberSignature Language="VB.NET" Value="Public MustOverride Property Data As BinaryData" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Data As BinaryData" />
       <MemberSignature Language="F#" Value="member this.Data : BinaryData with get, set" Usage="Azure.Messaging.MessageWithMetadata.Data" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -80,10 +80,10 @@
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
-      <MemberSignature Language="C#" Value="public abstract bool IsReadOnly { get; }" />
+      <MemberSignature Language="C#" Value="public virtual bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:Azure.Messaging.MessageWithMetadata.IsReadOnly" />
-      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="Azure.Messaging.MessageWithMetadata.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -95,7 +95,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets whether the message is read only or not.
+            Gets whether the message is read only or not. This
+            can be overriden by inheriting classes to specify whether or
+            not the message can be modified.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

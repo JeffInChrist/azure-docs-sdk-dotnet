@@ -254,8 +254,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of BlobContainers in the BlobService. </summary>
-        <returns> An object representing collection of BlobContainers and their operations over a BlobService. </returns>
+        <summary> Gets a collection of BlobContainers in the BlobContainer. </summary>
+        <returns> An object representing collection of BlobContainers and their operations over a BlobContainer. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
