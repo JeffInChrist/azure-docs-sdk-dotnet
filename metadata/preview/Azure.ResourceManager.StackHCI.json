@@ -1,0 +1,14 @@
+{
+  "Name": "Azure.ResourceManager.StackHCI",
+  "Version": "2.0.0-alpha.20220208.6",
+  "DevVersion": "2.0.0-alpha.20220208.6",
+  "DirectoryPath": "sdk/azurestackhci/Azure.ResourceManager.StackHCI",
+  "ServiceDirectory": "azurestackhci",
+  "ReadMePath": "sdk/azurestackhci/Azure.ResourceManager.StackHCI/README.md",
+  "ChangeLogPath": "sdk/azurestackhci/Azure.ResourceManager.StackHCI/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "mgmt",
+  "IsNewSdk": true,
+  "ArtifactName": "Azure.ResourceManager.StackHCI",
+  "ReleaseStatus": "2022-02-09"
+}
