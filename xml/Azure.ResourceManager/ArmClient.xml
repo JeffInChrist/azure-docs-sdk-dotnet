@@ -118,47 +118,43 @@
         <exception cref="T:System.ArgumentNullException"> If <see cref="T:Azure.Core.TokenCredential" /> is null. </exception>
       </Docs>
     </Member>
-    <Member MemberName="BaseUri">
-      <MemberSignature Language="C#" Value="protected internal Uri BaseUri { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri BaseUri" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ArmClient.BaseUri" />
-      <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property BaseUri As Uri" />
-      <MemberSignature Language="F#" Value="member this.BaseUri : Uri" Usage="Azure.ResourceManager.ArmClient.BaseUri" />
-      <MemberType>Property</MemberType>
+    <Member MemberName="GetClient&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public virtual T GetClient&lt;T&gt; (Func&lt;T&gt; ctor) where T : Azure.ResourceManager.Core.ArmResource;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!T GetClient&lt;(class Azure.ResourceManager.Core.ArmResource) T&gt;(class System.Func`1&lt;!!T&gt; ctor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ArmClient.GetClient``1(System.Func{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClient(Of T As ArmResource) (ctor As Func(Of T)) As T" />
+      <MemberSignature Language="F#" Value="abstract member GetClient : Func&lt;'T (requires 'T :&gt; Azure.ResourceManager.Core.ArmResource)&gt; -&gt; 'T (requires 'T :&gt; Azure.ResourceManager.Core.ArmResource)&#xA;override this.GetClient : Func&lt;'T (requires 'T :&gt; Azure.ResourceManager.Core.ArmResource)&gt; -&gt; 'T (requires 'T :&gt; Azure.ResourceManager.Core.ArmResource)" Usage="armClient.GetClient ctor" />
+      <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
-        <ReturnType>System.Uri</ReturnType>
+        <ReturnType>T</ReturnType>
       </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>Azure.ResourceManager.Core.ArmResource</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="ctor" Type="System.Func&lt;T&gt;" />
+      </Parameters>
       <Docs>
+        <typeparam name="T"> The type of <see cref="T:Azure.ResourceManager.Core.ArmResource" /> that will be constructed. </typeparam>
+        <param name="ctor"> Delegate method that will construct the client. </param>
         <summary>
-            Gets the base URI of the service.
+            Gets a client using this instance of ArmClient to copy the client settings from.
             </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="DiagnosticOptions">
-      <MemberSignature Language="C#" Value="protected internal virtual Azure.Core.DiagnosticsOptions DiagnosticOptions { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.DiagnosticsOptions DiagnosticOptions" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ArmClient.DiagnosticOptions" />
-      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable ReadOnly Property DiagnosticOptions As DiagnosticsOptions" />
-      <MemberSignature Language="F#" Value="member this.DiagnosticOptions : Azure.Core.DiagnosticsOptions" Usage="Azure.ResourceManager.ArmClient.DiagnosticOptions" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.Core.DiagnosticsOptions</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets the diagnostic options used for this client.
-            </summary>
-        <value>To be added.</value>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -849,28 +845,6 @@
             Gets the tenants.
             </summary>
         <returns> Tenant collection. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Pipeline">
-      <MemberSignature Language="C#" Value="protected internal Azure.Core.Pipeline.HttpPipeline Pipeline { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.Pipeline.HttpPipeline Pipeline" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ArmClient.Pipeline" />
-      <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property Pipeline As HttpPipeline" />
-      <MemberSignature Language="F#" Value="member this.Pipeline : Azure.Core.Pipeline.HttpPipeline" Usage="Azure.ResourceManager.ArmClient.Pipeline" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.Core.Pipeline.HttpPipeline</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets the HTTP pipeline.
-            </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

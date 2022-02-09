@@ -148,8 +148,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of Features in the Provider. </summary>
-        <returns> An object representing collection of Features and their operations over a Provider. </returns>
+        <summary> Gets a collection of Features in the Feature. </summary>
+        <returns> An object representing collection of Features and their operations over a Feature. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

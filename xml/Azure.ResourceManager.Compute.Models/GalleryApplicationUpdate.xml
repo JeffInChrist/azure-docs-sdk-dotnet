@@ -94,18 +94,18 @@
       </Docs>
     </Member>
     <Member MemberName="PrivacyStatementUri">
-      <MemberSignature Language="C#" Value="public string PrivacyStatementUri { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string PrivacyStatementUri" />
+      <MemberSignature Language="C#" Value="public Uri PrivacyStatementUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri PrivacyStatementUri" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Compute.Models.GalleryApplicationUpdate.PrivacyStatementUri" />
-      <MemberSignature Language="VB.NET" Value="Public Property PrivacyStatementUri As String" />
-      <MemberSignature Language="F#" Value="member this.PrivacyStatementUri : string with get, set" Usage="Azure.ResourceManager.Compute.Models.GalleryApplicationUpdate.PrivacyStatementUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrivacyStatementUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.PrivacyStatementUri : Uri with get, set" Usage="Azure.ResourceManager.Compute.Models.GalleryApplicationUpdate.PrivacyStatementUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The privacy statement uri. </summary>
@@ -114,18 +114,18 @@
       </Docs>
     </Member>
     <Member MemberName="ReleaseNoteUri">
-      <MemberSignature Language="C#" Value="public string ReleaseNoteUri { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string ReleaseNoteUri" />
+      <MemberSignature Language="C#" Value="public Uri ReleaseNoteUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ReleaseNoteUri" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Compute.Models.GalleryApplicationUpdate.ReleaseNoteUri" />
-      <MemberSignature Language="VB.NET" Value="Public Property ReleaseNoteUri As String" />
-      <MemberSignature Language="F#" Value="member this.ReleaseNoteUri : string with get, set" Usage="Azure.ResourceManager.Compute.Models.GalleryApplicationUpdate.ReleaseNoteUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReleaseNoteUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.ReleaseNoteUri : Uri with get, set" Usage="Azure.ResourceManager.Compute.Models.GalleryApplicationUpdate.ReleaseNoteUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The release note uri. </summary>

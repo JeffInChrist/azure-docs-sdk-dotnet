@@ -18,18 +18,18 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ServiceBusNamespaceUpdateOptions (Azure.ResourceManager.Resources.Models.Location location);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Azure.ResourceManager.Resources.Models.Location location) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.Models.ServiceBusNamespaceUpdateOptions.#ctor(Azure.ResourceManager.Resources.Models.Location)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (location As Location)" />
-      <MemberSignature Language="F#" Value="new Azure.ResourceManager.ServiceBus.Models.ServiceBusNamespaceUpdateOptions : Azure.ResourceManager.Resources.Models.Location -&gt; Azure.ResourceManager.ServiceBus.Models.ServiceBusNamespaceUpdateOptions" Usage="new Azure.ResourceManager.ServiceBus.Models.ServiceBusNamespaceUpdateOptions location" />
+      <MemberSignature Language="C#" Value="public ServiceBusNamespaceUpdateOptions (Azure.Core.AzureLocation location);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Azure.Core.AzureLocation location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.Models.ServiceBusNamespaceUpdateOptions.#ctor(Azure.Core.AzureLocation)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (location As AzureLocation)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.ServiceBus.Models.ServiceBusNamespaceUpdateOptions : Azure.Core.AzureLocation -&gt; Azure.ResourceManager.ServiceBus.Models.ServiceBusNamespaceUpdateOptions" Usage="new Azure.ResourceManager.ServiceBus.Models.ServiceBusNamespaceUpdateOptions location" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="location" Type="Azure.ResourceManager.Resources.Models.Location" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
       </Parameters>
       <Docs>
         <param name="location"> The location. </param>
@@ -98,18 +98,18 @@
       </Docs>
     </Member>
     <Member MemberName="Identity">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ServiceBus.Models.Identity Identity { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ServiceBus.Models.Identity Identity" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Models.ManagedServiceIdentity Identity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Models.ManagedServiceIdentity Identity" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ServiceBus.Models.ServiceBusNamespaceUpdateOptions.Identity" />
-      <MemberSignature Language="VB.NET" Value="Public Property Identity As Identity" />
-      <MemberSignature Language="F#" Value="member this.Identity : Azure.ResourceManager.ServiceBus.Models.Identity with get, set" Usage="Azure.ResourceManager.ServiceBus.Models.ServiceBusNamespaceUpdateOptions.Identity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Identity As ManagedServiceIdentity" />
+      <MemberSignature Language="F#" Value="member this.Identity : Azure.ResourceManager.Models.ManagedServiceIdentity with get, set" Usage="Azure.ResourceManager.ServiceBus.Models.ServiceBusNamespaceUpdateOptions.Identity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ServiceBus.Models.Identity</ReturnType>
+        <ReturnType>Azure.ResourceManager.Models.ManagedServiceIdentity</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Properties of BYOK Identity description. </summary>
@@ -198,18 +198,18 @@
       </Docs>
     </Member>
     <Member MemberName="Sku">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ServiceBus.Models.ServiceBusSku Sku { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ServiceBus.Models.ServiceBusSku Sku" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ServiceBus.Models.Sku Sku { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ServiceBus.Models.Sku Sku" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ServiceBus.Models.ServiceBusNamespaceUpdateOptions.Sku" />
-      <MemberSignature Language="VB.NET" Value="Public Property Sku As ServiceBusSku" />
-      <MemberSignature Language="F#" Value="member this.Sku : Azure.ResourceManager.ServiceBus.Models.ServiceBusSku with get, set" Usage="Azure.ResourceManager.ServiceBus.Models.ServiceBusNamespaceUpdateOptions.Sku" />
+      <MemberSignature Language="VB.NET" Value="Public Property Sku As Sku" />
+      <MemberSignature Language="F#" Value="member this.Sku : Azure.ResourceManager.ServiceBus.Models.Sku with get, set" Usage="Azure.ResourceManager.ServiceBus.Models.ServiceBusNamespaceUpdateOptions.Sku" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ServiceBus.Models.ServiceBusSku</ReturnType>
+        <ReturnType>Azure.ResourceManager.ServiceBus.Models.Sku</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Properties of SKU. </summary>
