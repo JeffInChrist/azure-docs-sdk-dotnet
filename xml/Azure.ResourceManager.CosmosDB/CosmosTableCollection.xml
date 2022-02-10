@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.CosmosDB.Models.CosmosTableCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string tableName, Azure.ResourceManager.CosmosDB.Models.TableCreateUpdateOptions createUpdateTableParameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.CosmosDB.Models.CosmosTableCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string tableName, class Azure.ResourceManager.CosmosDB.Models.TableCreateUpdateOptions createUpdateTableParameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.CosmosTable&gt; CreateOrUpdate (bool waitForCompletion, string tableName, Azure.ResourceManager.CosmosDB.Models.TableCreateUpdateOptions createUpdateTableParameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.CosmosDB.CosmosTable&gt; CreateOrUpdate(bool waitForCompletion, string tableName, class Azure.ResourceManager.CosmosDB.Models.TableCreateUpdateOptions createUpdateTableParameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosTableCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.CosmosDB.Models.TableCreateUpdateOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, tableName As String, createUpdateTableParameters As TableCreateUpdateOptions, Optional cancellationToken As CancellationToken = Nothing) As CosmosTableCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.CosmosDB.Models.TableCreateUpdateOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.CosmosDB.Models.CosmosTableCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.CosmosDB.Models.TableCreateUpdateOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.CosmosDB.Models.CosmosTableCreateOrUpdateOperation" Usage="cosmosTableCollection.CreateOrUpdate (waitForCompletion, tableName, createUpdateTableParameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, tableName As String, createUpdateTableParameters As TableCreateUpdateOptions, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of CosmosTable)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.CosmosDB.Models.TableCreateUpdateOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.CosmosTable&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.CosmosDB.Models.TableCreateUpdateOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.CosmosTable&gt;" Usage="cosmosTableCollection.CreateOrUpdate (waitForCompletion, tableName, createUpdateTableParameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.CosmosDB.Models.CosmosTableCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.CosmosTable&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -78,18 +78,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.CosmosTableCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string tableName, Azure.ResourceManager.CosmosDB.Models.TableCreateUpdateOptions createUpdateTableParameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.CosmosDB.Models.CosmosTableCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string tableName, class Azure.ResourceManager.CosmosDB.Models.TableCreateUpdateOptions createUpdateTableParameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.CosmosTable&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string tableName, Azure.ResourceManager.CosmosDB.Models.TableCreateUpdateOptions createUpdateTableParameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.CosmosDB.CosmosTable&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string tableName, class Azure.ResourceManager.CosmosDB.Models.TableCreateUpdateOptions createUpdateTableParameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CosmosTableCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.CosmosDB.Models.TableCreateUpdateOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, tableName As String, createUpdateTableParameters As TableCreateUpdateOptions, Optional cancellationToken As CancellationToken = Nothing) As Task(Of CosmosTableCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.CosmosDB.Models.TableCreateUpdateOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.CosmosTableCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.CosmosDB.Models.TableCreateUpdateOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.CosmosTableCreateOrUpdateOperation&gt;" Usage="cosmosTableCollection.CreateOrUpdateAsync (waitForCompletion, tableName, createUpdateTableParameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, tableName As String, createUpdateTableParameters As TableCreateUpdateOptions, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of CosmosTable))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.CosmosDB.Models.TableCreateUpdateOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.CosmosTable&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.CosmosDB.Models.TableCreateUpdateOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.CosmosTable&gt;&gt;" Usage="cosmosTableCollection.CreateOrUpdateAsync (waitForCompletion, tableName, createUpdateTableParameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.CosmosTableCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.CosmosTable&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -132,7 +132,7 @@
       <Docs>
         <param name="tableName"> Cosmos DB table name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -162,7 +162,7 @@
       <Docs>
         <param name="tableName"> Cosmos DB table name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">

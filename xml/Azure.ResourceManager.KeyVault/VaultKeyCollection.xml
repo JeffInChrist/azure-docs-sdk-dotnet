@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.KeyVault.Models.VaultKeyCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string keyName, Azure.ResourceManager.KeyVault.Models.KeyCreateParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.KeyVault.Models.VaultKeyCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string keyName, class Azure.ResourceManager.KeyVault.Models.KeyCreateParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.VaultKey&gt; CreateOrUpdate (bool waitForCompletion, string keyName, Azure.ResourceManager.KeyVault.Models.KeyCreateParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.KeyVault.VaultKey&gt; CreateOrUpdate(bool waitForCompletion, string keyName, class Azure.ResourceManager.KeyVault.Models.KeyCreateParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.VaultKeyCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.KeyVault.Models.KeyCreateParameters,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, keyName As String, parameters As KeyCreateParameters, Optional cancellationToken As CancellationToken = Nothing) As VaultKeyCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.KeyVault.Models.KeyCreateParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.KeyVault.Models.VaultKeyCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.KeyVault.Models.KeyCreateParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.KeyVault.Models.VaultKeyCreateOrUpdateOperation" Usage="vaultKeyCollection.CreateOrUpdate (waitForCompletion, keyName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, keyName As String, parameters As KeyCreateParameters, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of VaultKey)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.KeyVault.Models.KeyCreateParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.VaultKey&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.KeyVault.Models.KeyCreateParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.VaultKey&gt;" Usage="vaultKeyCollection.CreateOrUpdate (waitForCompletion, keyName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.KeyVault.Models.VaultKeyCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.VaultKey&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -78,18 +78,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.KeyVault.Models.VaultKeyCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string keyName, Azure.ResourceManager.KeyVault.Models.KeyCreateParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.KeyVault.Models.VaultKeyCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string keyName, class Azure.ResourceManager.KeyVault.Models.KeyCreateParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.VaultKey&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string keyName, Azure.ResourceManager.KeyVault.Models.KeyCreateParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.KeyVault.VaultKey&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string keyName, class Azure.ResourceManager.KeyVault.Models.KeyCreateParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.VaultKeyCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.KeyVault.Models.KeyCreateParameters,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, keyName As String, parameters As KeyCreateParameters, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VaultKeyCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.KeyVault.Models.KeyCreateParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.KeyVault.Models.VaultKeyCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.KeyVault.Models.KeyCreateParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.KeyVault.Models.VaultKeyCreateOrUpdateOperation&gt;" Usage="vaultKeyCollection.CreateOrUpdateAsync (waitForCompletion, keyName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, keyName As String, parameters As KeyCreateParameters, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of VaultKey))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.KeyVault.Models.KeyCreateParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.VaultKey&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.KeyVault.Models.KeyCreateParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.VaultKey&gt;&gt;" Usage="vaultKeyCollection.CreateOrUpdateAsync (waitForCompletion, keyName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.KeyVault.Models.VaultKeyCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.VaultKey&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -132,7 +132,7 @@
       <Docs>
         <param name="keyName"> The name of the key to be retrieved. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -162,7 +162,7 @@
       <Docs>
         <param name="keyName"> The name of the key to be retrieved. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">

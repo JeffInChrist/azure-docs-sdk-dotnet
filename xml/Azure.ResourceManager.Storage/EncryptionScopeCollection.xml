@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Storage.Models.EncryptionScopeCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string encryptionScopeName, Azure.ResourceManager.Storage.EncryptionScopeData encryptionScope, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Storage.Models.EncryptionScopeCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string encryptionScopeName, class Azure.ResourceManager.Storage.EncryptionScopeData encryptionScope, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.EncryptionScope&gt; CreateOrUpdate (bool waitForCompletion, string encryptionScopeName, Azure.ResourceManager.Storage.EncryptionScopeData encryptionScope, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Storage.EncryptionScope&gt; CreateOrUpdate(bool waitForCompletion, string encryptionScopeName, class Azure.ResourceManager.Storage.EncryptionScopeData encryptionScope, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.EncryptionScopeCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Storage.EncryptionScopeData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, encryptionScopeName As String, encryptionScope As EncryptionScopeData, Optional cancellationToken As CancellationToken = Nothing) As EncryptionScopeCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Storage.EncryptionScopeData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Storage.Models.EncryptionScopeCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Storage.EncryptionScopeData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Storage.Models.EncryptionScopeCreateOrUpdateOperation" Usage="encryptionScopeCollection.CreateOrUpdate (waitForCompletion, encryptionScopeName, encryptionScope, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, encryptionScopeName As String, encryptionScope As EncryptionScopeData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of EncryptionScope)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Storage.EncryptionScopeData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.EncryptionScope&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Storage.EncryptionScopeData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.EncryptionScope&gt;" Usage="encryptionScopeCollection.CreateOrUpdate (waitForCompletion, encryptionScopeName, encryptionScope, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Storage.Models.EncryptionScopeCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.EncryptionScope&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -78,18 +78,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Storage.Models.EncryptionScopeCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string encryptionScopeName, Azure.ResourceManager.Storage.EncryptionScopeData encryptionScope, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Storage.Models.EncryptionScopeCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string encryptionScopeName, class Azure.ResourceManager.Storage.EncryptionScopeData encryptionScope, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.EncryptionScope&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string encryptionScopeName, Azure.ResourceManager.Storage.EncryptionScopeData encryptionScope, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Storage.EncryptionScope&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string encryptionScopeName, class Azure.ResourceManager.Storage.EncryptionScopeData encryptionScope, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.EncryptionScopeCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Storage.EncryptionScopeData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, encryptionScopeName As String, encryptionScope As EncryptionScopeData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of EncryptionScopeCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Storage.EncryptionScopeData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Storage.Models.EncryptionScopeCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Storage.EncryptionScopeData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Storage.Models.EncryptionScopeCreateOrUpdateOperation&gt;" Usage="encryptionScopeCollection.CreateOrUpdateAsync (waitForCompletion, encryptionScopeName, encryptionScope, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, encryptionScopeName As String, encryptionScope As EncryptionScopeData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of EncryptionScope))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Storage.EncryptionScopeData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.EncryptionScope&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Storage.EncryptionScopeData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.EncryptionScope&gt;&gt;" Usage="encryptionScopeCollection.CreateOrUpdateAsync (waitForCompletion, encryptionScopeName, encryptionScope, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Storage.Models.EncryptionScopeCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.EncryptionScope&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -132,7 +132,7 @@
       <Docs>
         <param name="encryptionScopeName"> The name of the encryption scope within the specified storage account. Encryption scope names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only. Every dash (-) character must be immediately preceded and followed by a letter or number. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -162,7 +162,7 @@
       <Docs>
         <param name="encryptionScopeName"> The name of the encryption scope within the specified storage account. Encryption scope names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only. Every dash (-) character must be immediately preceded and followed by a letter or number. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">

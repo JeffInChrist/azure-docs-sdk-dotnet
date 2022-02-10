@@ -36,8 +36,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a ClusterResourceCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.ClusterResourceCollection" /> object. </returns>
+        <summary> Gets a collection of ClusterResources in the ClusterResource. </summary>
+        <returns> An object representing collection of ClusterResources and their operations over a ClusterResource. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,8 +60,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a DatabaseAccountCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.CosmosDB.DatabaseAccountCollection" /> object. </returns>
+        <summary> Gets a collection of DatabaseAccounts in the DatabaseAccount. </summary>
+        <returns> An object representing collection of DatabaseAccounts and their operations over a DatabaseAccount. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

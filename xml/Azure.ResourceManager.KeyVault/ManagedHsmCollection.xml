@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.KeyVault.Models.ManagedHsmCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string name, Azure.ResourceManager.KeyVault.ManagedHsmData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.KeyVault.Models.ManagedHsmCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string name, class Azure.ResourceManager.KeyVault.ManagedHsmData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.ManagedHsm&gt; CreateOrUpdate (bool waitForCompletion, string name, Azure.ResourceManager.KeyVault.ManagedHsmData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.KeyVault.ManagedHsm&gt; CreateOrUpdate(bool waitForCompletion, string name, class Azure.ResourceManager.KeyVault.ManagedHsmData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.ManagedHsmCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.KeyVault.ManagedHsmData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, name As String, parameters As ManagedHsmData, Optional cancellationToken As CancellationToken = Nothing) As ManagedHsmCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.KeyVault.ManagedHsmData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.KeyVault.Models.ManagedHsmCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.KeyVault.ManagedHsmData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.KeyVault.Models.ManagedHsmCreateOrUpdateOperation" Usage="managedHsmCollection.CreateOrUpdate (waitForCompletion, name, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, name As String, parameters As ManagedHsmData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of ManagedHsm)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.KeyVault.ManagedHsmData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.ManagedHsm&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.KeyVault.ManagedHsmData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.ManagedHsm&gt;" Usage="managedHsmCollection.CreateOrUpdate (waitForCompletion, name, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.KeyVault.Models.ManagedHsmCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.ManagedHsm&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -78,18 +78,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string name, Azure.ResourceManager.KeyVault.ManagedHsmData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.KeyVault.Models.ManagedHsmCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string name, class Azure.ResourceManager.KeyVault.ManagedHsmData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.ManagedHsm&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string name, Azure.ResourceManager.KeyVault.ManagedHsmData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.KeyVault.ManagedHsm&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string name, class Azure.ResourceManager.KeyVault.ManagedHsmData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.ManagedHsmCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.KeyVault.ManagedHsmData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, name As String, parameters As ManagedHsmData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ManagedHsmCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.KeyVault.ManagedHsmData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.KeyVault.ManagedHsmData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmCreateOrUpdateOperation&gt;" Usage="managedHsmCollection.CreateOrUpdateAsync (waitForCompletion, name, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, name As String, parameters As ManagedHsmData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of ManagedHsm))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.KeyVault.ManagedHsmData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.ManagedHsm&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.KeyVault.ManagedHsmData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.ManagedHsm&gt;&gt;" Usage="managedHsmCollection.CreateOrUpdateAsync (waitForCompletion, name, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.ManagedHsm&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -132,7 +132,7 @@
       <Docs>
         <param name="name"> The name of the managed HSM Pool. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -162,7 +162,7 @@
       <Docs>
         <param name="name"> The name of the managed HSM Pool. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">

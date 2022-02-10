@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.Models.ResourceGroupCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string resourceGroupName, Azure.ResourceManager.Resources.ResourceGroupData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Models.ResourceGroupCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string resourceGroupName, class Azure.ResourceManager.Resources.ResourceGroupData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ResourceGroup&gt; CreateOrUpdate (bool waitForCompletion, string resourceGroupName, Azure.ResourceManager.Resources.ResourceGroupData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Resources.ResourceGroup&gt; CreateOrUpdate(bool waitForCompletion, string resourceGroupName, class Azure.ResourceManager.Resources.ResourceGroupData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ResourceGroupCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Resources.ResourceGroupData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, resourceGroupName As String, parameters As ResourceGroupData, Optional cancellationToken As CancellationToken = Nothing) As ResourceGroupCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.ResourceGroupData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Resources.Models.ResourceGroupCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.ResourceGroupData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Resources.Models.ResourceGroupCreateOrUpdateOperation" Usage="resourceGroupCollection.CreateOrUpdate (waitForCompletion, resourceGroupName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, resourceGroupName As String, parameters As ResourceGroupData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of ResourceGroup)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.ResourceGroupData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ResourceGroup&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.ResourceGroupData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ResourceGroup&gt;" Usage="resourceGroupCollection.CreateOrUpdate (waitForCompletion, resourceGroupName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.ResourceGroupCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ResourceGroup&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -78,18 +78,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ResourceGroupCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string resourceGroupName, Azure.ResourceManager.Resources.ResourceGroupData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Resources.Models.ResourceGroupCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string resourceGroupName, class Azure.ResourceManager.Resources.ResourceGroupData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ResourceGroup&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string resourceGroupName, Azure.ResourceManager.Resources.ResourceGroupData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Resources.ResourceGroup&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string resourceGroupName, class Azure.ResourceManager.Resources.ResourceGroupData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ResourceGroupCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Resources.ResourceGroupData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, resourceGroupName As String, parameters As ResourceGroupData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ResourceGroupCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.ResourceGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ResourceGroupCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.ResourceGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ResourceGroupCreateOrUpdateOperation&gt;" Usage="resourceGroupCollection.CreateOrUpdateAsync (waitForCompletion, resourceGroupName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, resourceGroupName As String, parameters As ResourceGroupData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of ResourceGroup))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.ResourceGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ResourceGroup&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.ResourceGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ResourceGroup&gt;&gt;" Usage="resourceGroupCollection.CreateOrUpdateAsync (waitForCompletion, resourceGroupName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ResourceGroupCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ResourceGroup&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -132,7 +132,7 @@
       <Docs>
         <param name="resourceGroupName"> The name of the resource group to get. The name is case insensitive. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -162,7 +162,7 @@
       <Docs>
         <param name="resourceGroupName"> The name of the resource group to get. The name is case insensitive. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -345,28 +345,6 @@
           <paramref name="resourceGroupName" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="resourceGroupName" /> is null. </exception>
-      </Docs>
-    </Member>
-    <Member MemberName="Parent">
-      <MemberSignature Language="C#" Value="protected Azure.ResourceManager.Resources.Subscription Parent { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Resources.Subscription Parent" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.ResourceGroupCollection.Parent" />
-      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Parent As Subscription" />
-      <MemberSignature Language="F#" Value="member this.Parent : Azure.ResourceManager.Resources.Subscription" Usage="Azure.ResourceManager.Resources.ResourceGroupCollection.Parent" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Subscription</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets the parent resource of this resource.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IAsyncEnumerable&lt;Azure.ResourceManager.Resources.ResourceGroup&gt;.GetAsyncEnumerator">

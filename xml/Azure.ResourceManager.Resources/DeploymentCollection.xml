@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.Models.DeploymentCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string deploymentName, Azure.ResourceManager.Resources.Models.DeploymentInput parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Models.DeploymentCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string deploymentName, class Azure.ResourceManager.Resources.Models.DeploymentInput parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.Deployment&gt; CreateOrUpdate (bool waitForCompletion, string deploymentName, Azure.ResourceManager.Resources.Models.DeploymentInput parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Resources.Deployment&gt; CreateOrUpdate(bool waitForCompletion, string deploymentName, class Azure.ResourceManager.Resources.Models.DeploymentInput parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Resources.Models.DeploymentInput,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, deploymentName As String, parameters As DeploymentInput, Optional cancellationToken As CancellationToken = Nothing) As DeploymentCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.Models.DeploymentInput * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Resources.Models.DeploymentCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.Models.DeploymentInput * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Resources.Models.DeploymentCreateOrUpdateOperation" Usage="deploymentCollection.CreateOrUpdate (waitForCompletion, deploymentName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, deploymentName As String, parameters As DeploymentInput, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of Deployment)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.Models.DeploymentInput * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.Deployment&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.Models.DeploymentInput * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.Deployment&gt;" Usage="deploymentCollection.CreateOrUpdate (waitForCompletion, deploymentName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.DeploymentCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.Deployment&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -78,18 +78,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.DeploymentCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string deploymentName, Azure.ResourceManager.Resources.Models.DeploymentInput parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Resources.Models.DeploymentCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string deploymentName, class Azure.ResourceManager.Resources.Models.DeploymentInput parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.Deployment&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string deploymentName, Azure.ResourceManager.Resources.Models.DeploymentInput parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Resources.Deployment&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string deploymentName, class Azure.ResourceManager.Resources.Models.DeploymentInput parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Resources.Models.DeploymentInput,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, deploymentName As String, parameters As DeploymentInput, Optional cancellationToken As CancellationToken = Nothing) As Task(Of DeploymentCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.Models.DeploymentInput * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.DeploymentCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.Models.DeploymentInput * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.DeploymentCreateOrUpdateOperation&gt;" Usage="deploymentCollection.CreateOrUpdateAsync (waitForCompletion, deploymentName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, deploymentName As String, parameters As DeploymentInput, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of Deployment))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.Models.DeploymentInput * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.Deployment&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.Models.DeploymentInput * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.Deployment&gt;&gt;" Usage="deploymentCollection.CreateOrUpdateAsync (waitForCompletion, deploymentName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.DeploymentCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.Deployment&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -132,7 +132,7 @@
       <Docs>
         <param name="deploymentName"> The name of the deployment. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -162,7 +162,7 @@
       <Docs>
         <param name="deploymentName"> The name of the deployment. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">

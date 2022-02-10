@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.Models.PolicyAssignmentCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string policyAssignmentName, Azure.ResourceManager.Resources.PolicyAssignmentData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Models.PolicyAssignmentCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string policyAssignmentName, class Azure.ResourceManager.Resources.PolicyAssignmentData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.PolicyAssignment&gt; CreateOrUpdate (bool waitForCompletion, string policyAssignmentName, Azure.ResourceManager.Resources.PolicyAssignmentData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Resources.PolicyAssignment&gt; CreateOrUpdate(bool waitForCompletion, string policyAssignmentName, class Azure.ResourceManager.Resources.PolicyAssignmentData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.PolicyAssignmentCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Resources.PolicyAssignmentData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, policyAssignmentName As String, parameters As PolicyAssignmentData, Optional cancellationToken As CancellationToken = Nothing) As PolicyAssignmentCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.PolicyAssignmentData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Resources.Models.PolicyAssignmentCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.PolicyAssignmentData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Resources.Models.PolicyAssignmentCreateOrUpdateOperation" Usage="policyAssignmentCollection.CreateOrUpdate (waitForCompletion, policyAssignmentName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, policyAssignmentName As String, parameters As PolicyAssignmentData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of PolicyAssignment)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.PolicyAssignmentData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.PolicyAssignment&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.PolicyAssignmentData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.PolicyAssignment&gt;" Usage="policyAssignmentCollection.CreateOrUpdate (waitForCompletion, policyAssignmentName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.PolicyAssignmentCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.PolicyAssignment&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -78,18 +78,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.PolicyAssignmentCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string policyAssignmentName, Azure.ResourceManager.Resources.PolicyAssignmentData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Resources.Models.PolicyAssignmentCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string policyAssignmentName, class Azure.ResourceManager.Resources.PolicyAssignmentData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.PolicyAssignment&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string policyAssignmentName, Azure.ResourceManager.Resources.PolicyAssignmentData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Resources.PolicyAssignment&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string policyAssignmentName, class Azure.ResourceManager.Resources.PolicyAssignmentData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.PolicyAssignmentCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Resources.PolicyAssignmentData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, policyAssignmentName As String, parameters As PolicyAssignmentData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of PolicyAssignmentCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.PolicyAssignmentData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.PolicyAssignmentCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.PolicyAssignmentData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.PolicyAssignmentCreateOrUpdateOperation&gt;" Usage="policyAssignmentCollection.CreateOrUpdateAsync (waitForCompletion, policyAssignmentName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, policyAssignmentName As String, parameters As PolicyAssignmentData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of PolicyAssignment))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.PolicyAssignmentData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.PolicyAssignment&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.PolicyAssignmentData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.PolicyAssignment&gt;&gt;" Usage="policyAssignmentCollection.CreateOrUpdateAsync (waitForCompletion, policyAssignmentName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.PolicyAssignmentCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.PolicyAssignment&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -132,7 +132,7 @@
       <Docs>
         <param name="policyAssignmentName"> The name of the policy assignment to get. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -162,7 +162,7 @@
       <Docs>
         <param name="policyAssignmentName"> The name of the policy assignment to get. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">

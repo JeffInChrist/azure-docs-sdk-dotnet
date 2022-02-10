@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Storage.Models.FileShareCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string shareName, Azure.ResourceManager.Storage.FileShareData fileShare, string expand = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Storage.Models.FileShareCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string shareName, class Azure.ResourceManager.Storage.FileShareData fileShare, string expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.FileShare&gt; CreateOrUpdate (bool waitForCompletion, string shareName, Azure.ResourceManager.Storage.FileShareData fileShare, string expand = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Storage.FileShare&gt; CreateOrUpdate(bool waitForCompletion, string shareName, class Azure.ResourceManager.Storage.FileShareData fileShare, string expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.FileShareCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Storage.FileShareData,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, shareName As String, fileShare As FileShareData, Optional expand As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As FileShareCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Storage.FileShareData * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Storage.Models.FileShareCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Storage.FileShareData * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Storage.Models.FileShareCreateOrUpdateOperation" Usage="fileShareCollection.CreateOrUpdate (waitForCompletion, shareName, fileShare, expand, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, shareName As String, fileShare As FileShareData, Optional expand As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of FileShare)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Storage.FileShareData * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.FileShare&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Storage.FileShareData * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.FileShare&gt;" Usage="fileShareCollection.CreateOrUpdate (waitForCompletion, shareName, fileShare, expand, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Storage.Models.FileShareCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.FileShare&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -80,18 +80,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Storage.Models.FileShareCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string shareName, Azure.ResourceManager.Storage.FileShareData fileShare, string expand = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Storage.Models.FileShareCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string shareName, class Azure.ResourceManager.Storage.FileShareData fileShare, string expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.FileShare&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string shareName, Azure.ResourceManager.Storage.FileShareData fileShare, string expand = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Storage.FileShare&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string shareName, class Azure.ResourceManager.Storage.FileShareData fileShare, string expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.FileShareCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Storage.FileShareData,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, shareName As String, fileShare As FileShareData, Optional expand As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of FileShareCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Storage.FileShareData * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Storage.Models.FileShareCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Storage.FileShareData * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Storage.Models.FileShareCreateOrUpdateOperation&gt;" Usage="fileShareCollection.CreateOrUpdateAsync (waitForCompletion, shareName, fileShare, expand, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, shareName As String, fileShare As FileShareData, Optional expand As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of FileShare))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Storage.FileShareData * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.FileShare&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Storage.FileShareData * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.FileShare&gt;&gt;" Usage="fileShareCollection.CreateOrUpdateAsync (waitForCompletion, shareName, fileShare, expand, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Storage.Models.FileShareCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.FileShare&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -140,7 +140,7 @@
         <param name="expand"> Optional, used to expand the properties within share's properties. Valid values are: stats. Should be passed as a string with delimiter ','. </param>
         <param name="xMsSnapshot"> Optional, used to retrieve properties of a snapshot. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -174,7 +174,7 @@
         <param name="expand"> Optional, used to expand the properties within share's properties. Valid values are: stats. Should be passed as a string with delimiter ','. </param>
         <param name="xMsSnapshot"> Optional, used to retrieve properties of a snapshot. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">

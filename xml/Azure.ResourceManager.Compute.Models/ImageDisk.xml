@@ -34,18 +34,18 @@
       </Docs>
     </Member>
     <Member MemberName="BlobUri">
-      <MemberSignature Language="C#" Value="public string BlobUri { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string BlobUri" />
+      <MemberSignature Language="C#" Value="public Uri BlobUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri BlobUri" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Compute.Models.ImageDisk.BlobUri" />
-      <MemberSignature Language="VB.NET" Value="Public Property BlobUri As String" />
-      <MemberSignature Language="F#" Value="member this.BlobUri : string with get, set" Usage="Azure.ResourceManager.Compute.Models.ImageDisk.BlobUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property BlobUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.BlobUri : Uri with get, set" Usage="Azure.ResourceManager.Compute.Models.ImageDisk.BlobUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The Virtual Hard Disk. </summary>

@@ -42,8 +42,8 @@
         <param name="filter"> $filter is supported to filter based on shipping address properties. Filter supports only equals operation. </param>
         <param name="skipToken"> $skipToken is supported on Get list of addresses, which provides the next page in the list of addresses. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary> Lists all the addresses available under the subscription. </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.EdgeOrder.AddressResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,8 +72,8 @@
         <param name="filter"> $filter is supported to filter based on shipping address properties. Filter supports only equals operation. </param>
         <param name="skipToken"> $skipToken is supported on Get list of addresses, which provides the next page in the list of addresses. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary> Lists all the addresses available under the subscription. </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.EdgeOrder.AddressResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,8 +102,8 @@
         <param name="configurationsRequest"> Filters for showing the configurations. </param>
         <param name="skipToken"> $skipToken is supported on list of configurations, which provides the next page in the list of configurations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary> This method provides the list of configurations for the given product family, product line and product under subscription. </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.EdgeOrder.Models.ProductConfiguration" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="configurationsRequest" /> is null. </exception>
@@ -134,8 +134,8 @@
         <param name="configurationsRequest"> Filters for showing the configurations. </param>
         <param name="skipToken"> $skipToken is supported on list of configurations, which provides the next page in the list of configurations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary> This method provides the list of configurations for the given product family, product line and product under subscription. </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.EdgeOrder.Models.ProductConfiguration" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="configurationsRequest" /> is null. </exception>
@@ -168,8 +168,8 @@
         <param name="expand"> $expand is supported on device details, forward shipping details and reverse shipping details parameters. Each of these can be provided as a comma separated list. Device Details for order item provides details on the devices of the product, Forward and Reverse Shipping details provide forward and reverse shipping details respectively. </param>
         <param name="skipToken"> $skipToken is supported on Get list of order items, which provides the next page in the list of order items. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary> Lists order item at subscription level. </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.EdgeOrder.OrderItemResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,8 +200,8 @@
         <param name="expand"> $expand is supported on device details, forward shipping details and reverse shipping details parameters. Each of these can be provided as a comma separated list. Device Details for order item provides details on the devices of the product, Forward and Reverse Shipping details provide forward and reverse shipping details respectively. </param>
         <param name="skipToken"> $skipToken is supported on Get list of order items, which provides the next page in the list of order items. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary> Lists order item at subscription level. </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.EdgeOrder.OrderItemResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,8 +228,8 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="skipToken"> $skipToken is supported on Get list of order, which provides the next page in the list of order. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary> Lists order at subscription level. </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.EdgeOrder.OrderResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,8 +256,8 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="skipToken"> $skipToken is supported on Get list of order, which provides the next page in the list of order. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary> Lists order at subscription level. </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.EdgeOrder.OrderResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -288,8 +288,8 @@
         <param name="expand"> $expand is supported on configurations parameter for product, which provides details on the configurations for the product. </param>
         <param name="skipToken"> $skipToken is supported on list of product families, which provides the next page in the list of product families. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary> This method provides the list of product families for the given subscription. </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.EdgeOrder.Models.ProductFamily" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="productFamiliesRequest" /> is null. </exception>
@@ -322,8 +322,8 @@
         <param name="expand"> $expand is supported on configurations parameter for product, which provides details on the configurations for the product. </param>
         <param name="skipToken"> $skipToken is supported on list of product families, which provides the next page in the list of product families. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary> This method provides the list of product families for the given subscription. </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.EdgeOrder.Models.ProductFamily" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="productFamiliesRequest" /> is null. </exception>
@@ -352,8 +352,8 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="skipToken"> $skipToken is supported on list of product families metadata, which provides the next page in the list of product families metadata. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary> This method provides the list of product families metadata for the given subscription. </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.EdgeOrder.Models.ProductFamiliesMetadataDetails" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -380,8 +380,8 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="skipToken"> $skipToken is supported on list of product families metadata, which provides the next page in the list of product families metadata. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary> This method provides the list of product families metadata for the given subscription. </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.EdgeOrder.Models.ProductFamiliesMetadataDetails" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

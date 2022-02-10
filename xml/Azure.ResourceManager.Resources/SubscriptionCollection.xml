@@ -64,7 +64,7 @@
       <Docs>
         <param name="subscriptionId"> The ID of the target subscription. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -94,7 +94,7 @@
       <Docs>
         <param name="subscriptionId"> The ID of the target subscription. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -269,28 +269,6 @@
           <paramref name="subscriptionId" /> is empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionId" /> is null. </exception>
-      </Docs>
-    </Member>
-    <Member MemberName="Parent">
-      <MemberSignature Language="C#" Value="protected Azure.ResourceManager.Resources.Tenant Parent { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Resources.Tenant Parent" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.SubscriptionCollection.Parent" />
-      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Parent As Tenant" />
-      <MemberSignature Language="F#" Value="member this.Parent : Azure.ResourceManager.Resources.Tenant" Usage="Azure.ResourceManager.Resources.SubscriptionCollection.Parent" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Tenant</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets the parent resource of this resource.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IAsyncEnumerable&lt;Azure.ResourceManager.Resources.Subscription&gt;.GetAsyncEnumerator">

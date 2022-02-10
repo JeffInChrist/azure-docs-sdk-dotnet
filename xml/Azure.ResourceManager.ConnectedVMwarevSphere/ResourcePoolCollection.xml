@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ConnectedVMwarevSphere.Models.ResourcePoolCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string resourcePoolName, Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePoolData body = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ConnectedVMwarevSphere.Models.ResourcePoolCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string resourcePoolName, class Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePoolData body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePool&gt; CreateOrUpdate (bool waitForCompletion, string resourcePoolName, Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePoolData body = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePool&gt; CreateOrUpdate(bool waitForCompletion, string resourcePoolName, class Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePoolData body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePoolCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePoolData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, resourcePoolName As String, Optional body As ResourcePoolData = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ResourcePoolCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePoolData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ConnectedVMwarevSphere.Models.ResourcePoolCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePoolData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ConnectedVMwarevSphere.Models.ResourcePoolCreateOrUpdateOperation" Usage="resourcePoolCollection.CreateOrUpdate (waitForCompletion, resourcePoolName, body, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, resourcePoolName As String, Optional body As ResourcePoolData = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of ResourcePool)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePoolData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePool&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePoolData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePool&gt;" Usage="resourcePoolCollection.CreateOrUpdate (waitForCompletion, resourcePoolName, body, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ConnectedVMwarevSphere</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ConnectedVMwarevSphere.Models.ResourcePoolCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePool&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -78,18 +78,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.ResourcePoolCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string resourcePoolName, Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePoolData body = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ConnectedVMwarevSphere.Models.ResourcePoolCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string resourcePoolName, class Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePoolData body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePool&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string resourcePoolName, Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePoolData body = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePool&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string resourcePoolName, class Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePoolData body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePoolCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePoolData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, resourcePoolName As String, Optional body As ResourcePoolData = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ResourcePoolCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePoolData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.ResourcePoolCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePoolData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.ResourcePoolCreateOrUpdateOperation&gt;" Usage="resourcePoolCollection.CreateOrUpdateAsync (waitForCompletion, resourcePoolName, body, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, resourcePoolName As String, Optional body As ResourcePoolData = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of ResourcePool))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePoolData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePool&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePoolData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePool&gt;&gt;" Usage="resourcePoolCollection.CreateOrUpdateAsync (waitForCompletion, resourcePoolName, body, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ConnectedVMwarevSphere</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.ResourcePoolCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePool&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -132,7 +132,7 @@
       <Docs>
         <param name="resourcePoolName"> Name of the resourcePool. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -162,7 +162,7 @@
       <Docs>
         <param name="resourcePoolName"> Name of the resourcePool. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">

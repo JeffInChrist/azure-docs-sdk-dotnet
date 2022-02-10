@@ -55,10 +55,12 @@
       <Docs>
         <param name="key"> The key for the tag. </param>
         <param name="value"> The value for the tag. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Add a tag to the current resource. </summary>
         <returns> The updated resource with the tag added. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="AddTagAsync">
@@ -83,25 +85,27 @@
       <Docs>
         <param name="key"> The key for the tag. </param>
         <param name="value"> The value for the tag. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Add a tag to the current resource. </summary>
         <returns> The updated resource with the tag added. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="AssessPatches">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachineAssessPatchesOperation AssessPatches (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachineAssessPatchesOperation AssessPatches(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.VirtualMachineAssessPatchesResult&gt; AssessPatches (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineAssessPatchesResult&gt; AssessPatches(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.AssessPatches(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function AssessPatches (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineAssessPatchesOperation" />
-      <MemberSignature Language="F#" Value="abstract member AssessPatches : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineAssessPatchesOperation&#xA;override this.AssessPatches : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineAssessPatchesOperation" Usage="virtualMachine.AssessPatches (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AssessPatches (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of VirtualMachineAssessPatchesResult)" />
+      <MemberSignature Language="F#" Value="abstract member AssessPatches : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.VirtualMachineAssessPatchesResult&gt;&#xA;override this.AssessPatches : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.VirtualMachineAssessPatchesResult&gt;" Usage="virtualMachine.AssessPatches (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineAssessPatchesOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.VirtualMachineAssessPatchesResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -116,18 +120,18 @@
       </Docs>
     </Member>
     <Member MemberName="AssessPatchesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineAssessPatchesOperation&gt; AssessPatchesAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineAssessPatchesOperation&gt; AssessPatchesAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.VirtualMachineAssessPatchesResult&gt;&gt; AssessPatchesAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineAssessPatchesResult&gt;&gt; AssessPatchesAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.AssessPatchesAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function AssessPatchesAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineAssessPatchesOperation)" />
-      <MemberSignature Language="F#" Value="abstract member AssessPatchesAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineAssessPatchesOperation&gt;&#xA;override this.AssessPatchesAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineAssessPatchesOperation&gt;" Usage="virtualMachine.AssessPatchesAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AssessPatchesAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of VirtualMachineAssessPatchesResult))" />
+      <MemberSignature Language="F#" Value="abstract member AssessPatchesAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.VirtualMachineAssessPatchesResult&gt;&gt;&#xA;override this.AssessPatchesAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.VirtualMachineAssessPatchesResult&gt;&gt;" Usage="virtualMachine.AssessPatchesAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineAssessPatchesOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.VirtualMachineAssessPatchesResult&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -142,18 +146,18 @@
       </Docs>
     </Member>
     <Member MemberName="Capture">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachineCaptureOperation Capture (bool waitForCompletion, Azure.ResourceManager.Compute.Models.VirtualMachineCaptureParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachineCaptureOperation Capture(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.VirtualMachineCaptureParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.VirtualMachineCaptureResult&gt; Capture (bool waitForCompletion, Azure.ResourceManager.Compute.Models.VirtualMachineCaptureParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineCaptureResult&gt; Capture(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.VirtualMachineCaptureParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.Capture(System.Boolean,Azure.ResourceManager.Compute.Models.VirtualMachineCaptureParameters,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Capture (waitForCompletion As Boolean, parameters As VirtualMachineCaptureParameters, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineCaptureOperation" />
-      <MemberSignature Language="F#" Value="abstract member Capture : bool * Azure.ResourceManager.Compute.Models.VirtualMachineCaptureParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineCaptureOperation&#xA;override this.Capture : bool * Azure.ResourceManager.Compute.Models.VirtualMachineCaptureParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineCaptureOperation" Usage="virtualMachine.Capture (waitForCompletion, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Capture (waitForCompletion As Boolean, parameters As VirtualMachineCaptureParameters, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of VirtualMachineCaptureResult)" />
+      <MemberSignature Language="F#" Value="abstract member Capture : bool * Azure.ResourceManager.Compute.Models.VirtualMachineCaptureParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.VirtualMachineCaptureResult&gt;&#xA;override this.Capture : bool * Azure.ResourceManager.Compute.Models.VirtualMachineCaptureParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.VirtualMachineCaptureResult&gt;" Usage="virtualMachine.Capture (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineCaptureOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.VirtualMachineCaptureResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -172,18 +176,18 @@
       </Docs>
     </Member>
     <Member MemberName="CaptureAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineCaptureOperation&gt; CaptureAsync (bool waitForCompletion, Azure.ResourceManager.Compute.Models.VirtualMachineCaptureParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineCaptureOperation&gt; CaptureAsync(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.VirtualMachineCaptureParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.VirtualMachineCaptureResult&gt;&gt; CaptureAsync (bool waitForCompletion, Azure.ResourceManager.Compute.Models.VirtualMachineCaptureParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineCaptureResult&gt;&gt; CaptureAsync(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.VirtualMachineCaptureParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.CaptureAsync(System.Boolean,Azure.ResourceManager.Compute.Models.VirtualMachineCaptureParameters,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CaptureAsync (waitForCompletion As Boolean, parameters As VirtualMachineCaptureParameters, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineCaptureOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CaptureAsync : bool * Azure.ResourceManager.Compute.Models.VirtualMachineCaptureParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineCaptureOperation&gt;&#xA;override this.CaptureAsync : bool * Azure.ResourceManager.Compute.Models.VirtualMachineCaptureParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineCaptureOperation&gt;" Usage="virtualMachine.CaptureAsync (waitForCompletion, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CaptureAsync (waitForCompletion As Boolean, parameters As VirtualMachineCaptureParameters, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of VirtualMachineCaptureResult))" />
+      <MemberSignature Language="F#" Value="abstract member CaptureAsync : bool * Azure.ResourceManager.Compute.Models.VirtualMachineCaptureParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.VirtualMachineCaptureResult&gt;&gt;&#xA;override this.CaptureAsync : bool * Azure.ResourceManager.Compute.Models.VirtualMachineCaptureParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.VirtualMachineCaptureResult&gt;&gt;" Usage="virtualMachine.CaptureAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineCaptureOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.VirtualMachineCaptureResult&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -202,18 +206,18 @@
       </Docs>
     </Member>
     <Member MemberName="ConvertToManagedDisks">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachineConvertToManagedDisksOperation ConvertToManagedDisks (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachineConvertToManagedDisksOperation ConvertToManagedDisks(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation ConvertToManagedDisks (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation ConvertToManagedDisks(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.ConvertToManagedDisks(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ConvertToManagedDisks (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineConvertToManagedDisksOperation" />
-      <MemberSignature Language="F#" Value="abstract member ConvertToManagedDisks : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineConvertToManagedDisksOperation&#xA;override this.ConvertToManagedDisks : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineConvertToManagedDisksOperation" Usage="virtualMachine.ConvertToManagedDisks (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ConvertToManagedDisks (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member ConvertToManagedDisks : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.ConvertToManagedDisks : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="virtualMachine.ConvertToManagedDisks (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineConvertToManagedDisksOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -228,18 +232,18 @@
       </Docs>
     </Member>
     <Member MemberName="ConvertToManagedDisksAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineConvertToManagedDisksOperation&gt; ConvertToManagedDisksAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineConvertToManagedDisksOperation&gt; ConvertToManagedDisksAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; ConvertToManagedDisksAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; ConvertToManagedDisksAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.ConvertToManagedDisksAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ConvertToManagedDisksAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineConvertToManagedDisksOperation)" />
-      <MemberSignature Language="F#" Value="abstract member ConvertToManagedDisksAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineConvertToManagedDisksOperation&gt;&#xA;override this.ConvertToManagedDisksAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineConvertToManagedDisksOperation&gt;" Usage="virtualMachine.ConvertToManagedDisksAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ConvertToManagedDisksAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member ConvertToManagedDisksAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.ConvertToManagedDisksAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="virtualMachine.ConvertToManagedDisksAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineConvertToManagedDisksOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -303,18 +307,18 @@
       </Docs>
     </Member>
     <Member MemberName="Deallocate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachineDeallocateOperation Deallocate (bool waitForCompletion, bool? hibernate = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachineDeallocateOperation Deallocate(bool waitForCompletion, valuetype System.Nullable`1&lt;bool&gt; hibernate, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Deallocate (bool waitForCompletion, bool? hibernate = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Deallocate(bool waitForCompletion, valuetype System.Nullable`1&lt;bool&gt; hibernate, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.Deallocate(System.Boolean,System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Deallocate (waitForCompletion As Boolean, Optional hibernate As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineDeallocateOperation" />
-      <MemberSignature Language="F#" Value="abstract member Deallocate : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineDeallocateOperation&#xA;override this.Deallocate : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineDeallocateOperation" Usage="virtualMachine.Deallocate (waitForCompletion, hibernate, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Deallocate (waitForCompletion As Boolean, Optional hibernate As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Deallocate : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Deallocate : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="virtualMachine.Deallocate (waitForCompletion, hibernate, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineDeallocateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -331,18 +335,18 @@
       </Docs>
     </Member>
     <Member MemberName="DeallocateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineDeallocateOperation&gt; DeallocateAsync (bool waitForCompletion, bool? hibernate = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineDeallocateOperation&gt; DeallocateAsync(bool waitForCompletion, valuetype System.Nullable`1&lt;bool&gt; hibernate, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; DeallocateAsync (bool waitForCompletion, bool? hibernate = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; DeallocateAsync(bool waitForCompletion, valuetype System.Nullable`1&lt;bool&gt; hibernate, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.DeallocateAsync(System.Boolean,System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeallocateAsync (waitForCompletion As Boolean, Optional hibernate As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineDeallocateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member DeallocateAsync : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineDeallocateOperation&gt;&#xA;override this.DeallocateAsync : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineDeallocateOperation&gt;" Usage="virtualMachine.DeallocateAsync (waitForCompletion, hibernate, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeallocateAsync (waitForCompletion As Boolean, Optional hibernate As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member DeallocateAsync : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.DeallocateAsync : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="virtualMachine.DeallocateAsync (waitForCompletion, hibernate, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineDeallocateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -359,18 +363,18 @@
       </Docs>
     </Member>
     <Member MemberName="Delete">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachineDeleteOperation Delete (bool waitForCompletion, bool? forceDeletion = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachineDeleteOperation Delete(bool waitForCompletion, valuetype System.Nullable`1&lt;bool&gt; forceDeletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Delete (bool waitForCompletion, bool? forceDeletion = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Delete(bool waitForCompletion, valuetype System.Nullable`1&lt;bool&gt; forceDeletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.Delete(System.Boolean,System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (waitForCompletion As Boolean, Optional forceDeletion As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineDeleteOperation" />
-      <MemberSignature Language="F#" Value="abstract member Delete : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineDeleteOperation&#xA;override this.Delete : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineDeleteOperation" Usage="virtualMachine.Delete (waitForCompletion, forceDeletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (waitForCompletion As Boolean, Optional forceDeletion As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Delete : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Delete : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="virtualMachine.Delete (waitForCompletion, forceDeletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineDeleteOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -387,18 +391,18 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineDeleteOperation&gt; DeleteAsync (bool waitForCompletion, bool? forceDeletion = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineDeleteOperation&gt; DeleteAsync(bool waitForCompletion, valuetype System.Nullable`1&lt;bool&gt; forceDeletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; DeleteAsync (bool waitForCompletion, bool? forceDeletion = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; DeleteAsync(bool waitForCompletion, valuetype System.Nullable`1&lt;bool&gt; forceDeletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.DeleteAsync(System.Boolean,System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (waitForCompletion As Boolean, Optional forceDeletion As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineDeleteOperation)" />
-      <MemberSignature Language="F#" Value="abstract member DeleteAsync : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineDeleteOperation&gt;&#xA;override this.DeleteAsync : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineDeleteOperation&gt;" Usage="virtualMachine.DeleteAsync (waitForCompletion, forceDeletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (waitForCompletion As Boolean, Optional forceDeletion As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAsync : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.DeleteAsync : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="virtualMachine.DeleteAsync (waitForCompletion, forceDeletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineDeleteOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -514,54 +518,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetAvailableLocations">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt; GetAvailableLocations (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt; GetAvailableLocations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.GetAvailableLocations(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocations (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of AzureLocation)" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;&#xA;override this.GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;" Usage="virtualMachine.GetAvailableLocations cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Lists all available geo-locations. </summary>
-        <returns> A collection of locations that may take multiple service requests to iterate over. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetAvailableLocationsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.GetAvailableLocationsAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocationsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of AzureLocation))" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;&#xA;override this.GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;" Usage="virtualMachine.GetAvailableLocationsAsync cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Lists all available geo-locations. </summary>
-        <returns> A collection of locations that may take multiple service requests to iterate over. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="GetAvailableSizes">
       <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Compute.Models.VirtualMachineSize&gt; GetAvailableSizes (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineSize&gt; GetAvailableSizes(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -626,8 +582,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of VirtualMachineExtensions in the VirtualMachine. </summary>
-        <returns> An object representing collection of VirtualMachineExtensions and their operations over a VirtualMachine. </returns>
+        <summary> Gets a collection of VirtualMachineExtensions in the VirtualMachineExtension. </summary>
+        <returns> An object representing collection of VirtualMachineExtensions and their operations over a VirtualMachineExtension. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -647,8 +603,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of VirtualMachineRunCommands in the VirtualMachine. </summary>
-        <returns> An object representing collection of VirtualMachineRunCommands and their operations over a VirtualMachine. </returns>
+        <summary> Gets a collection of VirtualMachineRunCommands in the VirtualMachineRunCommand. </summary>
+        <returns> An object representing collection of VirtualMachineRunCommands and their operations over a VirtualMachineRunCommand. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -673,18 +629,18 @@
       </Docs>
     </Member>
     <Member MemberName="InstallPatches">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesOperation InstallPatches (bool waitForCompletion, Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesParameters installPatchesInput, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesOperation InstallPatches(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesParameters installPatchesInput, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesResult&gt; InstallPatches (bool waitForCompletion, Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesParameters installPatchesInput, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesResult&gt; InstallPatches(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesParameters installPatchesInput, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.InstallPatches(System.Boolean,Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesParameters,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function InstallPatches (waitForCompletion As Boolean, installPatchesInput As VirtualMachineInstallPatchesParameters, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineInstallPatchesOperation" />
-      <MemberSignature Language="F#" Value="abstract member InstallPatches : bool * Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesOperation&#xA;override this.InstallPatches : bool * Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesOperation" Usage="virtualMachine.InstallPatches (waitForCompletion, installPatchesInput, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function InstallPatches (waitForCompletion As Boolean, installPatchesInput As VirtualMachineInstallPatchesParameters, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of VirtualMachineInstallPatchesResult)" />
+      <MemberSignature Language="F#" Value="abstract member InstallPatches : bool * Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesResult&gt;&#xA;override this.InstallPatches : bool * Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesResult&gt;" Usage="virtualMachine.InstallPatches (waitForCompletion, installPatchesInput, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -703,18 +659,18 @@
       </Docs>
     </Member>
     <Member MemberName="InstallPatchesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesOperation&gt; InstallPatchesAsync (bool waitForCompletion, Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesParameters installPatchesInput, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesOperation&gt; InstallPatchesAsync(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesParameters installPatchesInput, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesResult&gt;&gt; InstallPatchesAsync (bool waitForCompletion, Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesParameters installPatchesInput, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesResult&gt;&gt; InstallPatchesAsync(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesParameters installPatchesInput, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.InstallPatchesAsync(System.Boolean,Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesParameters,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function InstallPatchesAsync (waitForCompletion As Boolean, installPatchesInput As VirtualMachineInstallPatchesParameters, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineInstallPatchesOperation)" />
-      <MemberSignature Language="F#" Value="abstract member InstallPatchesAsync : bool * Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesOperation&gt;&#xA;override this.InstallPatchesAsync : bool * Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesOperation&gt;" Usage="virtualMachine.InstallPatchesAsync (waitForCompletion, installPatchesInput, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function InstallPatchesAsync (waitForCompletion As Boolean, installPatchesInput As VirtualMachineInstallPatchesParameters, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of VirtualMachineInstallPatchesResult))" />
+      <MemberSignature Language="F#" Value="abstract member InstallPatchesAsync : bool * Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesResult&gt;&gt;&#xA;override this.InstallPatchesAsync : bool * Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesResult&gt;&gt;" Usage="virtualMachine.InstallPatchesAsync (waitForCompletion, installPatchesInput, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.VirtualMachineInstallPatchesResult&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -781,18 +737,18 @@
       </Docs>
     </Member>
     <Member MemberName="PerformMaintenance">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachinePerformMaintenanceOperation PerformMaintenance (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachinePerformMaintenanceOperation PerformMaintenance(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation PerformMaintenance (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation PerformMaintenance(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.PerformMaintenance(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function PerformMaintenance (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachinePerformMaintenanceOperation" />
-      <MemberSignature Language="F#" Value="abstract member PerformMaintenance : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachinePerformMaintenanceOperation&#xA;override this.PerformMaintenance : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachinePerformMaintenanceOperation" Usage="virtualMachine.PerformMaintenance (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PerformMaintenance (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member PerformMaintenance : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.PerformMaintenance : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="virtualMachine.PerformMaintenance (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachinePerformMaintenanceOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -807,18 +763,18 @@
       </Docs>
     </Member>
     <Member MemberName="PerformMaintenanceAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachinePerformMaintenanceOperation&gt; PerformMaintenanceAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachinePerformMaintenanceOperation&gt; PerformMaintenanceAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; PerformMaintenanceAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; PerformMaintenanceAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.PerformMaintenanceAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function PerformMaintenanceAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachinePerformMaintenanceOperation)" />
-      <MemberSignature Language="F#" Value="abstract member PerformMaintenanceAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachinePerformMaintenanceOperation&gt;&#xA;override this.PerformMaintenanceAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachinePerformMaintenanceOperation&gt;" Usage="virtualMachine.PerformMaintenanceAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PerformMaintenanceAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member PerformMaintenanceAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.PerformMaintenanceAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="virtualMachine.PerformMaintenanceAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachinePerformMaintenanceOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -833,18 +789,18 @@
       </Docs>
     </Member>
     <Member MemberName="PowerOff">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachinePowerOffOperation PowerOff (bool waitForCompletion, bool? skipShutdown = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachinePowerOffOperation PowerOff(bool waitForCompletion, valuetype System.Nullable`1&lt;bool&gt; skipShutdown, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation PowerOff (bool waitForCompletion, bool? skipShutdown = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation PowerOff(bool waitForCompletion, valuetype System.Nullable`1&lt;bool&gt; skipShutdown, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.PowerOff(System.Boolean,System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function PowerOff (waitForCompletion As Boolean, Optional skipShutdown As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachinePowerOffOperation" />
-      <MemberSignature Language="F#" Value="abstract member PowerOff : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachinePowerOffOperation&#xA;override this.PowerOff : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachinePowerOffOperation" Usage="virtualMachine.PowerOff (waitForCompletion, skipShutdown, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PowerOff (waitForCompletion As Boolean, Optional skipShutdown As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member PowerOff : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.PowerOff : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="virtualMachine.PowerOff (waitForCompletion, skipShutdown, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachinePowerOffOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -861,18 +817,18 @@
       </Docs>
     </Member>
     <Member MemberName="PowerOffAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachinePowerOffOperation&gt; PowerOffAsync (bool waitForCompletion, bool? skipShutdown = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachinePowerOffOperation&gt; PowerOffAsync(bool waitForCompletion, valuetype System.Nullable`1&lt;bool&gt; skipShutdown, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; PowerOffAsync (bool waitForCompletion, bool? skipShutdown = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; PowerOffAsync(bool waitForCompletion, valuetype System.Nullable`1&lt;bool&gt; skipShutdown, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.PowerOffAsync(System.Boolean,System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function PowerOffAsync (waitForCompletion As Boolean, Optional skipShutdown As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachinePowerOffOperation)" />
-      <MemberSignature Language="F#" Value="abstract member PowerOffAsync : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachinePowerOffOperation&gt;&#xA;override this.PowerOffAsync : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachinePowerOffOperation&gt;" Usage="virtualMachine.PowerOffAsync (waitForCompletion, skipShutdown, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PowerOffAsync (waitForCompletion As Boolean, Optional skipShutdown As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member PowerOffAsync : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.PowerOffAsync : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="virtualMachine.PowerOffAsync (waitForCompletion, skipShutdown, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachinePowerOffOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -889,18 +845,18 @@
       </Docs>
     </Member>
     <Member MemberName="PowerOn">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachinePowerOnOperation PowerOn (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachinePowerOnOperation PowerOn(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation PowerOn (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation PowerOn(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.PowerOn(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function PowerOn (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachinePowerOnOperation" />
-      <MemberSignature Language="F#" Value="abstract member PowerOn : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachinePowerOnOperation&#xA;override this.PowerOn : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachinePowerOnOperation" Usage="virtualMachine.PowerOn (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PowerOn (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member PowerOn : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.PowerOn : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="virtualMachine.PowerOn (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachinePowerOnOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -915,18 +871,18 @@
       </Docs>
     </Member>
     <Member MemberName="PowerOnAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachinePowerOnOperation&gt; PowerOnAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachinePowerOnOperation&gt; PowerOnAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; PowerOnAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; PowerOnAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.PowerOnAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function PowerOnAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachinePowerOnOperation)" />
-      <MemberSignature Language="F#" Value="abstract member PowerOnAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachinePowerOnOperation&gt;&#xA;override this.PowerOnAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachinePowerOnOperation&gt;" Usage="virtualMachine.PowerOnAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PowerOnAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member PowerOnAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.PowerOnAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="virtualMachine.PowerOnAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachinePowerOnOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -941,18 +897,18 @@
       </Docs>
     </Member>
     <Member MemberName="Reapply">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachineReapplyOperation Reapply (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachineReapplyOperation Reapply(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Reapply (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Reapply(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.Reapply(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Reapply (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineReapplyOperation" />
-      <MemberSignature Language="F#" Value="abstract member Reapply : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineReapplyOperation&#xA;override this.Reapply : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineReapplyOperation" Usage="virtualMachine.Reapply (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Reapply (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Reapply : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Reapply : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="virtualMachine.Reapply (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineReapplyOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -967,18 +923,18 @@
       </Docs>
     </Member>
     <Member MemberName="ReapplyAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineReapplyOperation&gt; ReapplyAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineReapplyOperation&gt; ReapplyAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; ReapplyAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; ReapplyAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.ReapplyAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReapplyAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineReapplyOperation)" />
-      <MemberSignature Language="F#" Value="abstract member ReapplyAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineReapplyOperation&gt;&#xA;override this.ReapplyAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineReapplyOperation&gt;" Usage="virtualMachine.ReapplyAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReapplyAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member ReapplyAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.ReapplyAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="virtualMachine.ReapplyAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineReapplyOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -993,18 +949,18 @@
       </Docs>
     </Member>
     <Member MemberName="Redeploy">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachineRedeployOperation Redeploy (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachineRedeployOperation Redeploy(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Redeploy (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Redeploy(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.Redeploy(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Redeploy (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineRedeployOperation" />
-      <MemberSignature Language="F#" Value="abstract member Redeploy : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineRedeployOperation&#xA;override this.Redeploy : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineRedeployOperation" Usage="virtualMachine.Redeploy (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Redeploy (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Redeploy : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Redeploy : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="virtualMachine.Redeploy (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineRedeployOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -1019,18 +975,18 @@
       </Docs>
     </Member>
     <Member MemberName="RedeployAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineRedeployOperation&gt; RedeployAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineRedeployOperation&gt; RedeployAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; RedeployAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; RedeployAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.RedeployAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RedeployAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineRedeployOperation)" />
-      <MemberSignature Language="F#" Value="abstract member RedeployAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineRedeployOperation&gt;&#xA;override this.RedeployAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineRedeployOperation&gt;" Usage="virtualMachine.RedeployAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RedeployAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member RedeployAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.RedeployAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="virtualMachine.RedeployAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineRedeployOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -1045,18 +1001,18 @@
       </Docs>
     </Member>
     <Member MemberName="Reimage">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachineReimageOperation Reimage (bool waitForCompletion, Azure.ResourceManager.Compute.Models.VirtualMachineReimageParameters parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachineReimageOperation Reimage(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.VirtualMachineReimageParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Reimage (bool waitForCompletion, Azure.ResourceManager.Compute.Models.VirtualMachineReimageParameters parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Reimage(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.VirtualMachineReimageParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.Reimage(System.Boolean,Azure.ResourceManager.Compute.Models.VirtualMachineReimageParameters,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Reimage (waitForCompletion As Boolean, Optional parameters As VirtualMachineReimageParameters = Nothing, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineReimageOperation" />
-      <MemberSignature Language="F#" Value="abstract member Reimage : bool * Azure.ResourceManager.Compute.Models.VirtualMachineReimageParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineReimageOperation&#xA;override this.Reimage : bool * Azure.ResourceManager.Compute.Models.VirtualMachineReimageParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineReimageOperation" Usage="virtualMachine.Reimage (waitForCompletion, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Reimage (waitForCompletion As Boolean, Optional parameters As VirtualMachineReimageParameters = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Reimage : bool * Azure.ResourceManager.Compute.Models.VirtualMachineReimageParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Reimage : bool * Azure.ResourceManager.Compute.Models.VirtualMachineReimageParameters * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="virtualMachine.Reimage (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineReimageOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -1073,18 +1029,18 @@
       </Docs>
     </Member>
     <Member MemberName="ReimageAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineReimageOperation&gt; ReimageAsync (bool waitForCompletion, Azure.ResourceManager.Compute.Models.VirtualMachineReimageParameters parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineReimageOperation&gt; ReimageAsync(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.VirtualMachineReimageParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; ReimageAsync (bool waitForCompletion, Azure.ResourceManager.Compute.Models.VirtualMachineReimageParameters parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; ReimageAsync(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.VirtualMachineReimageParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.ReimageAsync(System.Boolean,Azure.ResourceManager.Compute.Models.VirtualMachineReimageParameters,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReimageAsync (waitForCompletion As Boolean, Optional parameters As VirtualMachineReimageParameters = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineReimageOperation)" />
-      <MemberSignature Language="F#" Value="abstract member ReimageAsync : bool * Azure.ResourceManager.Compute.Models.VirtualMachineReimageParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineReimageOperation&gt;&#xA;override this.ReimageAsync : bool * Azure.ResourceManager.Compute.Models.VirtualMachineReimageParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineReimageOperation&gt;" Usage="virtualMachine.ReimageAsync (waitForCompletion, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReimageAsync (waitForCompletion As Boolean, Optional parameters As VirtualMachineReimageParameters = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member ReimageAsync : bool * Azure.ResourceManager.Compute.Models.VirtualMachineReimageParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.ReimageAsync : bool * Azure.ResourceManager.Compute.Models.VirtualMachineReimageParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="virtualMachine.ReimageAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineReimageOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -1119,11 +1075,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="key"> The key of the tag to remove. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
+        <param name="key"> The key for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Removes a tag by key from the resource. </summary>
         <returns> The updated resource with the tag removed. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveTagAsync">
@@ -1145,11 +1103,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="key"> The key of the tag to remove. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
+        <param name="key"> The key for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Removes a tag by key from the resource. </summary>
         <returns> The updated resource with the tag removed. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ResourceType">
@@ -1172,18 +1132,18 @@
       </Docs>
     </Member>
     <Member MemberName="Restart">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachineRestartOperation Restart (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachineRestartOperation Restart(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Restart (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Restart(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.Restart(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Restart (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineRestartOperation" />
-      <MemberSignature Language="F#" Value="abstract member Restart : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineRestartOperation&#xA;override this.Restart : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineRestartOperation" Usage="virtualMachine.Restart (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Restart (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Restart : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Restart : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="virtualMachine.Restart (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineRestartOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -1198,18 +1158,18 @@
       </Docs>
     </Member>
     <Member MemberName="RestartAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineRestartOperation&gt; RestartAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineRestartOperation&gt; RestartAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; RestartAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; RestartAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.RestartAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RestartAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineRestartOperation)" />
-      <MemberSignature Language="F#" Value="abstract member RestartAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineRestartOperation&gt;&#xA;override this.RestartAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineRestartOperation&gt;" Usage="virtualMachine.RestartAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RestartAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member RestartAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.RestartAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="virtualMachine.RestartAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineRestartOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -1276,18 +1236,18 @@
       </Docs>
     </Member>
     <Member MemberName="RunCommand">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachineRunCommandOperation RunCommand (bool waitForCompletion, Azure.ResourceManager.Compute.Models.RunCommandInput parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachineRunCommandOperation RunCommand(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.RunCommandInput parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.RunCommandResult&gt; RunCommand (bool waitForCompletion, Azure.ResourceManager.Compute.Models.RunCommandInput parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.Models.RunCommandResult&gt; RunCommand(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.RunCommandInput parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.RunCommand(System.Boolean,Azure.ResourceManager.Compute.Models.RunCommandInput,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RunCommand (waitForCompletion As Boolean, parameters As RunCommandInput, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineRunCommandOperation" />
-      <MemberSignature Language="F#" Value="abstract member RunCommand : bool * Azure.ResourceManager.Compute.Models.RunCommandInput * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineRunCommandOperation&#xA;override this.RunCommand : bool * Azure.ResourceManager.Compute.Models.RunCommandInput * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineRunCommandOperation" Usage="virtualMachine.RunCommand (waitForCompletion, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RunCommand (waitForCompletion As Boolean, parameters As RunCommandInput, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of RunCommandResult)" />
+      <MemberSignature Language="F#" Value="abstract member RunCommand : bool * Azure.ResourceManager.Compute.Models.RunCommandInput * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.RunCommandResult&gt;&#xA;override this.RunCommand : bool * Azure.ResourceManager.Compute.Models.RunCommandInput * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.RunCommandResult&gt;" Usage="virtualMachine.RunCommand (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineRunCommandOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.RunCommandResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -1306,18 +1266,18 @@
       </Docs>
     </Member>
     <Member MemberName="RunCommandAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineRunCommandOperation&gt; RunCommandAsync (bool waitForCompletion, Azure.ResourceManager.Compute.Models.RunCommandInput parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineRunCommandOperation&gt; RunCommandAsync(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.RunCommandInput parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.RunCommandResult&gt;&gt; RunCommandAsync (bool waitForCompletion, Azure.ResourceManager.Compute.Models.RunCommandInput parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.Models.RunCommandResult&gt;&gt; RunCommandAsync(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.RunCommandInput parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.RunCommandAsync(System.Boolean,Azure.ResourceManager.Compute.Models.RunCommandInput,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RunCommandAsync (waitForCompletion As Boolean, parameters As RunCommandInput, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineRunCommandOperation)" />
-      <MemberSignature Language="F#" Value="abstract member RunCommandAsync : bool * Azure.ResourceManager.Compute.Models.RunCommandInput * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineRunCommandOperation&gt;&#xA;override this.RunCommandAsync : bool * Azure.ResourceManager.Compute.Models.RunCommandInput * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineRunCommandOperation&gt;" Usage="virtualMachine.RunCommandAsync (waitForCompletion, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RunCommandAsync (waitForCompletion As Boolean, parameters As RunCommandInput, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of RunCommandResult))" />
+      <MemberSignature Language="F#" Value="abstract member RunCommandAsync : bool * Azure.ResourceManager.Compute.Models.RunCommandInput * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.RunCommandResult&gt;&gt;&#xA;override this.RunCommandAsync : bool * Azure.ResourceManager.Compute.Models.RunCommandInput * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.RunCommandResult&gt;&gt;" Usage="virtualMachine.RunCommandAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineRunCommandOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.RunCommandResult&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -1355,10 +1315,12 @@
       </Parameters>
       <Docs>
         <param name="tags"> The set of tags to use as replacement. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Replace the tags on the resource with the given set. </summary>
         <returns> The updated resource with the tags replaced. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tags" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="SetTagsAsync">
@@ -1381,10 +1343,12 @@
       </Parameters>
       <Docs>
         <param name="tags"> The set of tags to use as replacement. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Replace the tags on the resource with the given set. </summary>
         <returns> The updated resource with the tags replaced. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tags" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="SimulateEviction">
@@ -1436,18 +1400,18 @@
       </Docs>
     </Member>
     <Member MemberName="Update">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachineUpdateOperation Update (bool waitForCompletion, Azure.ResourceManager.Compute.Models.VirtualMachineUpdate parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachineUpdateOperation Update(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.VirtualMachineUpdate parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachine&gt; Update (bool waitForCompletion, Azure.ResourceManager.Compute.Models.VirtualMachineUpdate parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.VirtualMachine&gt; Update(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.VirtualMachineUpdate parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.Update(System.Boolean,Azure.ResourceManager.Compute.Models.VirtualMachineUpdate,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (waitForCompletion As Boolean, parameters As VirtualMachineUpdate, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member Update : bool * Azure.ResourceManager.Compute.Models.VirtualMachineUpdate * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineUpdateOperation&#xA;override this.Update : bool * Azure.ResourceManager.Compute.Models.VirtualMachineUpdate * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineUpdateOperation" Usage="virtualMachine.Update (waitForCompletion, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (waitForCompletion As Boolean, parameters As VirtualMachineUpdate, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of VirtualMachine)" />
+      <MemberSignature Language="F#" Value="abstract member Update : bool * Azure.ResourceManager.Compute.Models.VirtualMachineUpdate * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachine&gt;&#xA;override this.Update : bool * Azure.ResourceManager.Compute.Models.VirtualMachineUpdate * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachine&gt;" Usage="virtualMachine.Update (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachine&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -1466,18 +1430,18 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineUpdateOperation&gt; UpdateAsync (bool waitForCompletion, Azure.ResourceManager.Compute.Models.VirtualMachineUpdate parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineUpdateOperation&gt; UpdateAsync(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.VirtualMachineUpdate parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachine&gt;&gt; UpdateAsync (bool waitForCompletion, Azure.ResourceManager.Compute.Models.VirtualMachineUpdate parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.VirtualMachine&gt;&gt; UpdateAsync(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.VirtualMachineUpdate parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachine.UpdateAsync(System.Boolean,Azure.ResourceManager.Compute.Models.VirtualMachineUpdate,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (waitForCompletion As Boolean, parameters As VirtualMachineUpdate, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member UpdateAsync : bool * Azure.ResourceManager.Compute.Models.VirtualMachineUpdate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineUpdateOperation&gt;&#xA;override this.UpdateAsync : bool * Azure.ResourceManager.Compute.Models.VirtualMachineUpdate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineUpdateOperation&gt;" Usage="virtualMachine.UpdateAsync (waitForCompletion, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (waitForCompletion As Boolean, parameters As VirtualMachineUpdate, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of VirtualMachine))" />
+      <MemberSignature Language="F#" Value="abstract member UpdateAsync : bool * Azure.ResourceManager.Compute.Models.VirtualMachineUpdate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachine&gt;&gt;&#xA;override this.UpdateAsync : bool * Azure.ResourceManager.Compute.Models.VirtualMachineUpdate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachine&gt;&gt;" Usage="virtualMachine.UpdateAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachine&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />

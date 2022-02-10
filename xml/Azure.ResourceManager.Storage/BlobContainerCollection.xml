@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Storage.Models.BlobContainerCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string containerName, Azure.ResourceManager.Storage.BlobContainerData blobContainer, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Storage.Models.BlobContainerCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string containerName, class Azure.ResourceManager.Storage.BlobContainerData blobContainer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.BlobContainer&gt; CreateOrUpdate (bool waitForCompletion, string containerName, Azure.ResourceManager.Storage.BlobContainerData blobContainer, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Storage.BlobContainer&gt; CreateOrUpdate(bool waitForCompletion, string containerName, class Azure.ResourceManager.Storage.BlobContainerData blobContainer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.BlobContainerCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Storage.BlobContainerData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, containerName As String, blobContainer As BlobContainerData, Optional cancellationToken As CancellationToken = Nothing) As BlobContainerCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Storage.BlobContainerData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Storage.Models.BlobContainerCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Storage.BlobContainerData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Storage.Models.BlobContainerCreateOrUpdateOperation" Usage="blobContainerCollection.CreateOrUpdate (waitForCompletion, containerName, blobContainer, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, containerName As String, blobContainer As BlobContainerData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of BlobContainer)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Storage.BlobContainerData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.BlobContainer&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Storage.BlobContainerData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.BlobContainer&gt;" Usage="blobContainerCollection.CreateOrUpdate (waitForCompletion, containerName, blobContainer, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Storage.Models.BlobContainerCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.BlobContainer&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -78,18 +78,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Storage.Models.BlobContainerCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string containerName, Azure.ResourceManager.Storage.BlobContainerData blobContainer, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Storage.Models.BlobContainerCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string containerName, class Azure.ResourceManager.Storage.BlobContainerData blobContainer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.BlobContainer&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string containerName, Azure.ResourceManager.Storage.BlobContainerData blobContainer, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Storage.BlobContainer&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string containerName, class Azure.ResourceManager.Storage.BlobContainerData blobContainer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.BlobContainerCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Storage.BlobContainerData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, containerName As String, blobContainer As BlobContainerData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of BlobContainerCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Storage.BlobContainerData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Storage.Models.BlobContainerCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Storage.BlobContainerData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Storage.Models.BlobContainerCreateOrUpdateOperation&gt;" Usage="blobContainerCollection.CreateOrUpdateAsync (waitForCompletion, containerName, blobContainer, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, containerName As String, blobContainer As BlobContainerData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of BlobContainer))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Storage.BlobContainerData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.BlobContainer&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Storage.BlobContainerData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.BlobContainer&gt;&gt;" Usage="blobContainerCollection.CreateOrUpdateAsync (waitForCompletion, containerName, blobContainer, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Storage.Models.BlobContainerCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.BlobContainer&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -132,7 +132,7 @@
       <Docs>
         <param name="containerName"> The name of the blob container within the specified storage account. Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only. Every dash (-) character must be immediately preceded and followed by a letter or number. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -162,7 +162,7 @@
       <Docs>
         <param name="containerName"> The name of the blob container within the specified storage account. Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only. Every dash (-) character must be immediately preceded and followed by a letter or number. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">

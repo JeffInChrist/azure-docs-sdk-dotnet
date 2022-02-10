@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.DedicatedHostGroupCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string hostGroupName, Azure.ResourceManager.Compute.DedicatedHostGroupData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.DedicatedHostGroupCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string hostGroupName, class Azure.ResourceManager.Compute.DedicatedHostGroupData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.DedicatedHostGroup&gt; CreateOrUpdate (bool waitForCompletion, string hostGroupName, Azure.ResourceManager.Compute.DedicatedHostGroupData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.DedicatedHostGroup&gt; CreateOrUpdate(bool waitForCompletion, string hostGroupName, class Azure.ResourceManager.Compute.DedicatedHostGroupData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.DedicatedHostGroupCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Compute.DedicatedHostGroupData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, hostGroupName As String, parameters As DedicatedHostGroupData, Optional cancellationToken As CancellationToken = Nothing) As DedicatedHostGroupCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.DedicatedHostGroupData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.DedicatedHostGroupCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.DedicatedHostGroupData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.DedicatedHostGroupCreateOrUpdateOperation" Usage="dedicatedHostGroupCollection.CreateOrUpdate (waitForCompletion, hostGroupName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, hostGroupName As String, parameters As DedicatedHostGroupData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of DedicatedHostGroup)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.DedicatedHostGroupData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.DedicatedHostGroup&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.DedicatedHostGroupData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.DedicatedHostGroup&gt;" Usage="dedicatedHostGroupCollection.CreateOrUpdate (waitForCompletion, hostGroupName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.DedicatedHostGroupCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.DedicatedHostGroup&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -78,18 +78,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.DedicatedHostGroupCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string hostGroupName, Azure.ResourceManager.Compute.DedicatedHostGroupData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.DedicatedHostGroupCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string hostGroupName, class Azure.ResourceManager.Compute.DedicatedHostGroupData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.DedicatedHostGroup&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string hostGroupName, Azure.ResourceManager.Compute.DedicatedHostGroupData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.DedicatedHostGroup&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string hostGroupName, class Azure.ResourceManager.Compute.DedicatedHostGroupData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.DedicatedHostGroupCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Compute.DedicatedHostGroupData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, hostGroupName As String, parameters As DedicatedHostGroupData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of DedicatedHostGroupCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.DedicatedHostGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.DedicatedHostGroupCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.DedicatedHostGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.DedicatedHostGroupCreateOrUpdateOperation&gt;" Usage="dedicatedHostGroupCollection.CreateOrUpdateAsync (waitForCompletion, hostGroupName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, hostGroupName As String, parameters As DedicatedHostGroupData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of DedicatedHostGroup))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.DedicatedHostGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.DedicatedHostGroup&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.DedicatedHostGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.DedicatedHostGroup&gt;&gt;" Usage="dedicatedHostGroupCollection.CreateOrUpdateAsync (waitForCompletion, hostGroupName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.DedicatedHostGroupCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.DedicatedHostGroup&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -134,7 +134,7 @@
         <param name="hostGroupName"> The name of the dedicated host group. </param>
         <param name="expand"> The expand expression to apply on the operation. 'InstanceView' will retrieve the list of instance views of the dedicated hosts under the dedicated host group. 'UserData' is not supported for dedicated host group. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -166,7 +166,7 @@
         <param name="hostGroupName"> The name of the dedicated host group. </param>
         <param name="expand"> The expand expression to apply on the operation. 'InstanceView' will retrieve the list of instance views of the dedicated hosts under the dedicated host group. 'UserData' is not supported for dedicated host group. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">

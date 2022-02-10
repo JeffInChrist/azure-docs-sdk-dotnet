@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.Models.ManagementGroupPolicyDefinitionCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string policyDefinitionName, Azure.ResourceManager.Resources.PolicyDefinitionData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Models.ManagementGroupPolicyDefinitionCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string policyDefinitionName, class Azure.ResourceManager.Resources.PolicyDefinitionData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ManagementGroupPolicyDefinition&gt; CreateOrUpdate (bool waitForCompletion, string policyDefinitionName, Azure.ResourceManager.Resources.PolicyDefinitionData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Resources.ManagementGroupPolicyDefinition&gt; CreateOrUpdate(bool waitForCompletion, string policyDefinitionName, class Azure.ResourceManager.Resources.PolicyDefinitionData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ManagementGroupPolicyDefinitionCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Resources.PolicyDefinitionData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, policyDefinitionName As String, parameters As PolicyDefinitionData, Optional cancellationToken As CancellationToken = Nothing) As ManagementGroupPolicyDefinitionCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.PolicyDefinitionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Resources.Models.ManagementGroupPolicyDefinitionCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.PolicyDefinitionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Resources.Models.ManagementGroupPolicyDefinitionCreateOrUpdateOperation" Usage="managementGroupPolicyDefinitionCollection.CreateOrUpdate (waitForCompletion, policyDefinitionName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, policyDefinitionName As String, parameters As PolicyDefinitionData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of ManagementGroupPolicyDefinition)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.PolicyDefinitionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ManagementGroupPolicyDefinition&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.PolicyDefinitionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ManagementGroupPolicyDefinition&gt;" Usage="managementGroupPolicyDefinitionCollection.CreateOrUpdate (waitForCompletion, policyDefinitionName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.ManagementGroupPolicyDefinitionCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ManagementGroupPolicyDefinition&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -78,18 +78,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ManagementGroupPolicyDefinitionCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string policyDefinitionName, Azure.ResourceManager.Resources.PolicyDefinitionData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Resources.Models.ManagementGroupPolicyDefinitionCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string policyDefinitionName, class Azure.ResourceManager.Resources.PolicyDefinitionData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ManagementGroupPolicyDefinition&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string policyDefinitionName, Azure.ResourceManager.Resources.PolicyDefinitionData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Resources.ManagementGroupPolicyDefinition&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string policyDefinitionName, class Azure.ResourceManager.Resources.PolicyDefinitionData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ManagementGroupPolicyDefinitionCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Resources.PolicyDefinitionData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, policyDefinitionName As String, parameters As PolicyDefinitionData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ManagementGroupPolicyDefinitionCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.PolicyDefinitionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ManagementGroupPolicyDefinitionCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.PolicyDefinitionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ManagementGroupPolicyDefinitionCreateOrUpdateOperation&gt;" Usage="managementGroupPolicyDefinitionCollection.CreateOrUpdateAsync (waitForCompletion, policyDefinitionName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, policyDefinitionName As String, parameters As PolicyDefinitionData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of ManagementGroupPolicyDefinition))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.PolicyDefinitionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ManagementGroupPolicyDefinition&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.PolicyDefinitionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ManagementGroupPolicyDefinition&gt;&gt;" Usage="managementGroupPolicyDefinitionCollection.CreateOrUpdateAsync (waitForCompletion, policyDefinitionName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ManagementGroupPolicyDefinitionCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ManagementGroupPolicyDefinition&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -132,7 +132,7 @@
       <Docs>
         <param name="policyDefinitionName"> The name of the policy definition to get. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -162,7 +162,7 @@
       <Docs>
         <param name="policyDefinitionName"> The name of the policy definition to get. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">

@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.StoragePool.Models.IscsiTargetCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string iscsiTargetName, Azure.ResourceManager.StoragePool.Models.IscsiTargetCreate iscsiTargetCreatePayload, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.StoragePool.Models.IscsiTargetCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string iscsiTargetName, class Azure.ResourceManager.StoragePool.Models.IscsiTargetCreate iscsiTargetCreatePayload, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.StoragePool.IscsiTarget&gt; CreateOrUpdate (bool waitForCompletion, string iscsiTargetName, Azure.ResourceManager.StoragePool.Models.IscsiTargetCreate iscsiTargetCreatePayload, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.StoragePool.IscsiTarget&gt; CreateOrUpdate(bool waitForCompletion, string iscsiTargetName, class Azure.ResourceManager.StoragePool.Models.IscsiTargetCreate iscsiTargetCreatePayload, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.StoragePool.IscsiTargetCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.StoragePool.Models.IscsiTargetCreate,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, iscsiTargetName As String, iscsiTargetCreatePayload As IscsiTargetCreate, Optional cancellationToken As CancellationToken = Nothing) As IscsiTargetCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.StoragePool.Models.IscsiTargetCreate * System.Threading.CancellationToken -&gt; Azure.ResourceManager.StoragePool.Models.IscsiTargetCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.StoragePool.Models.IscsiTargetCreate * System.Threading.CancellationToken -&gt; Azure.ResourceManager.StoragePool.Models.IscsiTargetCreateOrUpdateOperation" Usage="iscsiTargetCollection.CreateOrUpdate (waitForCompletion, iscsiTargetName, iscsiTargetCreatePayload, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, iscsiTargetName As String, iscsiTargetCreatePayload As IscsiTargetCreate, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of IscsiTarget)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.StoragePool.Models.IscsiTargetCreate * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.StoragePool.IscsiTarget&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.StoragePool.Models.IscsiTargetCreate * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.StoragePool.IscsiTarget&gt;" Usage="iscsiTargetCollection.CreateOrUpdate (waitForCompletion, iscsiTargetName, iscsiTargetCreatePayload, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.StoragePool</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.StoragePool.Models.IscsiTargetCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.StoragePool.IscsiTarget&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -78,18 +78,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.StoragePool.Models.IscsiTargetCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string iscsiTargetName, Azure.ResourceManager.StoragePool.Models.IscsiTargetCreate iscsiTargetCreatePayload, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.StoragePool.Models.IscsiTargetCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string iscsiTargetName, class Azure.ResourceManager.StoragePool.Models.IscsiTargetCreate iscsiTargetCreatePayload, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.StoragePool.IscsiTarget&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string iscsiTargetName, Azure.ResourceManager.StoragePool.Models.IscsiTargetCreate iscsiTargetCreatePayload, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.StoragePool.IscsiTarget&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string iscsiTargetName, class Azure.ResourceManager.StoragePool.Models.IscsiTargetCreate iscsiTargetCreatePayload, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.StoragePool.IscsiTargetCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.StoragePool.Models.IscsiTargetCreate,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, iscsiTargetName As String, iscsiTargetCreatePayload As IscsiTargetCreate, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IscsiTargetCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.StoragePool.Models.IscsiTargetCreate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.StoragePool.Models.IscsiTargetCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.StoragePool.Models.IscsiTargetCreate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.StoragePool.Models.IscsiTargetCreateOrUpdateOperation&gt;" Usage="iscsiTargetCollection.CreateOrUpdateAsync (waitForCompletion, iscsiTargetName, iscsiTargetCreatePayload, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, iscsiTargetName As String, iscsiTargetCreatePayload As IscsiTargetCreate, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of IscsiTarget))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.StoragePool.Models.IscsiTargetCreate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.StoragePool.IscsiTarget&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.StoragePool.Models.IscsiTargetCreate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.StoragePool.IscsiTarget&gt;&gt;" Usage="iscsiTargetCollection.CreateOrUpdateAsync (waitForCompletion, iscsiTargetName, iscsiTargetCreatePayload, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.StoragePool</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.StoragePool.Models.IscsiTargetCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.StoragePool.IscsiTarget&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -132,7 +132,7 @@
       <Docs>
         <param name="iscsiTargetName"> The name of the iSCSI Target. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -162,7 +162,7 @@
       <Docs>
         <param name="iscsiTargetName"> The name of the iSCSI Target. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">

@@ -55,10 +55,12 @@
       <Docs>
         <param name="key"> The key for the tag. </param>
         <param name="value"> The value for the tag. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Add a tag to the current resource. </summary>
         <returns> The updated resource with the tag added. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="AddTagAsync">
@@ -83,10 +85,12 @@
       <Docs>
         <param name="key"> The key for the tag. </param>
         <param name="value"> The value for the tag. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Add a tag to the current resource. </summary>
         <returns> The updated resource with the tag added. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateResourceIdentifier">
@@ -139,18 +143,18 @@
       </Docs>
     </Member>
     <Member MemberName="Delete">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.CloudServiceDeleteOperation Delete (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.CloudServiceDeleteOperation Delete(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Delete (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Delete(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.CloudService.Delete(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As CloudServiceDeleteOperation" />
-      <MemberSignature Language="F#" Value="abstract member Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.CloudServiceDeleteOperation&#xA;override this.Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.CloudServiceDeleteOperation" Usage="cloudService.Delete (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="cloudService.Delete (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.CloudServiceDeleteOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -165,18 +169,18 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceDeleteOperation&gt; DeleteAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.CloudServiceDeleteOperation&gt; DeleteAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; DeleteAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; DeleteAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.CloudService.DeleteAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of CloudServiceDeleteOperation)" />
-      <MemberSignature Language="F#" Value="abstract member DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceDeleteOperation&gt;&#xA;override this.DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceDeleteOperation&gt;" Usage="cloudService.DeleteAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="cloudService.DeleteAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceDeleteOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -191,18 +195,18 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteInstances">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.CloudServiceDeleteInstancesOperation DeleteInstances (bool waitForCompletion, Azure.ResourceManager.Compute.Models.RoleInstances parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.CloudServiceDeleteInstancesOperation DeleteInstances(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.RoleInstances parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation DeleteInstances (bool waitForCompletion, Azure.ResourceManager.Compute.Models.RoleInstances parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation DeleteInstances(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.RoleInstances parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.CloudService.DeleteInstances(System.Boolean,Azure.ResourceManager.Compute.Models.RoleInstances,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteInstances (waitForCompletion As Boolean, Optional parameters As RoleInstances = Nothing, Optional cancellationToken As CancellationToken = Nothing) As CloudServiceDeleteInstancesOperation" />
-      <MemberSignature Language="F#" Value="abstract member DeleteInstances : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.CloudServiceDeleteInstancesOperation&#xA;override this.DeleteInstances : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.CloudServiceDeleteInstancesOperation" Usage="cloudService.DeleteInstances (waitForCompletion, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteInstances (waitForCompletion As Boolean, Optional parameters As RoleInstances = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member DeleteInstances : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.DeleteInstances : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="cloudService.DeleteInstances (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.CloudServiceDeleteInstancesOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -219,18 +223,18 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteInstancesAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceDeleteInstancesOperation&gt; DeleteInstancesAsync (bool waitForCompletion, Azure.ResourceManager.Compute.Models.RoleInstances parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.CloudServiceDeleteInstancesOperation&gt; DeleteInstancesAsync(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.RoleInstances parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; DeleteInstancesAsync (bool waitForCompletion, Azure.ResourceManager.Compute.Models.RoleInstances parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; DeleteInstancesAsync(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.RoleInstances parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.CloudService.DeleteInstancesAsync(System.Boolean,Azure.ResourceManager.Compute.Models.RoleInstances,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteInstancesAsync (waitForCompletion As Boolean, Optional parameters As RoleInstances = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of CloudServiceDeleteInstancesOperation)" />
-      <MemberSignature Language="F#" Value="abstract member DeleteInstancesAsync : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceDeleteInstancesOperation&gt;&#xA;override this.DeleteInstancesAsync : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceDeleteInstancesOperation&gt;" Usage="cloudService.DeleteInstancesAsync (waitForCompletion, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteInstancesAsync (waitForCompletion As Boolean, Optional parameters As RoleInstances = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteInstancesAsync : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.DeleteInstancesAsync : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="cloudService.DeleteInstancesAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceDeleteInstancesOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -294,54 +298,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetAvailableLocations">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt; GetAvailableLocations (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt; GetAvailableLocations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.CloudService.GetAvailableLocations(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocations (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of AzureLocation)" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;&#xA;override this.GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;" Usage="cloudService.GetAvailableLocations cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Lists all available geo-locations. </summary>
-        <returns> A collection of locations that may take multiple service requests to iterate over. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetAvailableLocationsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.CloudService.GetAvailableLocationsAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocationsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of AzureLocation))" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;&#xA;override this.GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;" Usage="cloudService.GetAvailableLocationsAsync cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Lists all available geo-locations. </summary>
-        <returns> A collection of locations that may take multiple service requests to iterate over. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="GetCloudServiceRoles">
       <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.CloudServiceRoleCollection GetCloudServiceRoles ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.CloudServiceRoleCollection GetCloudServiceRoles() cil managed" />
@@ -358,8 +314,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of CloudServiceRoles in the CloudService. </summary>
-        <returns> An object representing collection of CloudServiceRoles and their operations over a CloudService. </returns>
+        <summary> Gets a collection of CloudServiceRoles in the CloudServiceRole. </summary>
+        <returns> An object representing collection of CloudServiceRoles and their operations over a CloudServiceRole. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -427,8 +383,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of RoleInstances in the CloudService. </summary>
-        <returns> An object representing collection of RoleInstances and their operations over a CloudService. </returns>
+        <summary> Gets a collection of RoleInstances in the RoleInstance. </summary>
+        <returns> An object representing collection of RoleInstances and their operations over a RoleInstance. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -553,18 +509,18 @@
       </Docs>
     </Member>
     <Member MemberName="PowerOff">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.CloudServicePowerOffOperation PowerOff (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.CloudServicePowerOffOperation PowerOff(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation PowerOff (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation PowerOff(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.CloudService.PowerOff(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function PowerOff (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As CloudServicePowerOffOperation" />
-      <MemberSignature Language="F#" Value="abstract member PowerOff : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.CloudServicePowerOffOperation&#xA;override this.PowerOff : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.CloudServicePowerOffOperation" Usage="cloudService.PowerOff (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PowerOff (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member PowerOff : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.PowerOff : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="cloudService.PowerOff (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.CloudServicePowerOffOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -579,18 +535,18 @@
       </Docs>
     </Member>
     <Member MemberName="PowerOffAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServicePowerOffOperation&gt; PowerOffAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.CloudServicePowerOffOperation&gt; PowerOffAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; PowerOffAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; PowerOffAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.CloudService.PowerOffAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function PowerOffAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of CloudServicePowerOffOperation)" />
-      <MemberSignature Language="F#" Value="abstract member PowerOffAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServicePowerOffOperation&gt;&#xA;override this.PowerOffAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServicePowerOffOperation&gt;" Usage="cloudService.PowerOffAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PowerOffAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member PowerOffAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.PowerOffAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="cloudService.PowerOffAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServicePowerOffOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -605,18 +561,18 @@
       </Docs>
     </Member>
     <Member MemberName="PowerOn">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.CloudServicePowerOnOperation PowerOn (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.CloudServicePowerOnOperation PowerOn(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation PowerOn (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation PowerOn(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.CloudService.PowerOn(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function PowerOn (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As CloudServicePowerOnOperation" />
-      <MemberSignature Language="F#" Value="abstract member PowerOn : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.CloudServicePowerOnOperation&#xA;override this.PowerOn : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.CloudServicePowerOnOperation" Usage="cloudService.PowerOn (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PowerOn (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member PowerOn : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.PowerOn : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="cloudService.PowerOn (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.CloudServicePowerOnOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -631,18 +587,18 @@
       </Docs>
     </Member>
     <Member MemberName="PowerOnAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServicePowerOnOperation&gt; PowerOnAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.CloudServicePowerOnOperation&gt; PowerOnAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; PowerOnAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; PowerOnAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.CloudService.PowerOnAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function PowerOnAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of CloudServicePowerOnOperation)" />
-      <MemberSignature Language="F#" Value="abstract member PowerOnAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServicePowerOnOperation&gt;&#xA;override this.PowerOnAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServicePowerOnOperation&gt;" Usage="cloudService.PowerOnAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PowerOnAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member PowerOnAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.PowerOnAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="cloudService.PowerOnAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServicePowerOnOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -657,18 +613,18 @@
       </Docs>
     </Member>
     <Member MemberName="Rebuild">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.CloudServiceRebuildOperation Rebuild (bool waitForCompletion, Azure.ResourceManager.Compute.Models.RoleInstances parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.CloudServiceRebuildOperation Rebuild(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.RoleInstances parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Rebuild (bool waitForCompletion, Azure.ResourceManager.Compute.Models.RoleInstances parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Rebuild(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.RoleInstances parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.CloudService.Rebuild(System.Boolean,Azure.ResourceManager.Compute.Models.RoleInstances,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Rebuild (waitForCompletion As Boolean, Optional parameters As RoleInstances = Nothing, Optional cancellationToken As CancellationToken = Nothing) As CloudServiceRebuildOperation" />
-      <MemberSignature Language="F#" Value="abstract member Rebuild : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.CloudServiceRebuildOperation&#xA;override this.Rebuild : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.CloudServiceRebuildOperation" Usage="cloudService.Rebuild (waitForCompletion, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Rebuild (waitForCompletion As Boolean, Optional parameters As RoleInstances = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Rebuild : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Rebuild : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="cloudService.Rebuild (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.CloudServiceRebuildOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -685,18 +641,18 @@
       </Docs>
     </Member>
     <Member MemberName="RebuildAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceRebuildOperation&gt; RebuildAsync (bool waitForCompletion, Azure.ResourceManager.Compute.Models.RoleInstances parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.CloudServiceRebuildOperation&gt; RebuildAsync(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.RoleInstances parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; RebuildAsync (bool waitForCompletion, Azure.ResourceManager.Compute.Models.RoleInstances parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; RebuildAsync(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.RoleInstances parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.CloudService.RebuildAsync(System.Boolean,Azure.ResourceManager.Compute.Models.RoleInstances,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RebuildAsync (waitForCompletion As Boolean, Optional parameters As RoleInstances = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of CloudServiceRebuildOperation)" />
-      <MemberSignature Language="F#" Value="abstract member RebuildAsync : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceRebuildOperation&gt;&#xA;override this.RebuildAsync : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceRebuildOperation&gt;" Usage="cloudService.RebuildAsync (waitForCompletion, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RebuildAsync (waitForCompletion As Boolean, Optional parameters As RoleInstances = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member RebuildAsync : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.RebuildAsync : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="cloudService.RebuildAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceRebuildOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -713,18 +669,18 @@
       </Docs>
     </Member>
     <Member MemberName="Reimage">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.CloudServiceReimageOperation Reimage (bool waitForCompletion, Azure.ResourceManager.Compute.Models.RoleInstances parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.CloudServiceReimageOperation Reimage(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.RoleInstances parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Reimage (bool waitForCompletion, Azure.ResourceManager.Compute.Models.RoleInstances parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Reimage(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.RoleInstances parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.CloudService.Reimage(System.Boolean,Azure.ResourceManager.Compute.Models.RoleInstances,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Reimage (waitForCompletion As Boolean, Optional parameters As RoleInstances = Nothing, Optional cancellationToken As CancellationToken = Nothing) As CloudServiceReimageOperation" />
-      <MemberSignature Language="F#" Value="abstract member Reimage : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.CloudServiceReimageOperation&#xA;override this.Reimage : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.CloudServiceReimageOperation" Usage="cloudService.Reimage (waitForCompletion, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Reimage (waitForCompletion As Boolean, Optional parameters As RoleInstances = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Reimage : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Reimage : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="cloudService.Reimage (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.CloudServiceReimageOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -741,18 +697,18 @@
       </Docs>
     </Member>
     <Member MemberName="ReimageAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceReimageOperation&gt; ReimageAsync (bool waitForCompletion, Azure.ResourceManager.Compute.Models.RoleInstances parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.CloudServiceReimageOperation&gt; ReimageAsync(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.RoleInstances parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; ReimageAsync (bool waitForCompletion, Azure.ResourceManager.Compute.Models.RoleInstances parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; ReimageAsync(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.RoleInstances parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.CloudService.ReimageAsync(System.Boolean,Azure.ResourceManager.Compute.Models.RoleInstances,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReimageAsync (waitForCompletion As Boolean, Optional parameters As RoleInstances = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of CloudServiceReimageOperation)" />
-      <MemberSignature Language="F#" Value="abstract member ReimageAsync : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceReimageOperation&gt;&#xA;override this.ReimageAsync : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceReimageOperation&gt;" Usage="cloudService.ReimageAsync (waitForCompletion, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReimageAsync (waitForCompletion As Boolean, Optional parameters As RoleInstances = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member ReimageAsync : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.ReimageAsync : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="cloudService.ReimageAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceReimageOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -787,11 +743,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="key"> The key of the tag to remove. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
+        <param name="key"> The key for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Removes a tag by key from the resource. </summary>
         <returns> The updated resource with the tag removed. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveTagAsync">
@@ -813,11 +771,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="key"> The key of the tag to remove. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
+        <param name="key"> The key for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Removes a tag by key from the resource. </summary>
         <returns> The updated resource with the tag removed. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ResourceType">
@@ -840,18 +800,18 @@
       </Docs>
     </Member>
     <Member MemberName="Restart">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.CloudServiceRestartOperation Restart (bool waitForCompletion, Azure.ResourceManager.Compute.Models.RoleInstances parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.CloudServiceRestartOperation Restart(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.RoleInstances parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Restart (bool waitForCompletion, Azure.ResourceManager.Compute.Models.RoleInstances parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Restart(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.RoleInstances parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.CloudService.Restart(System.Boolean,Azure.ResourceManager.Compute.Models.RoleInstances,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Restart (waitForCompletion As Boolean, Optional parameters As RoleInstances = Nothing, Optional cancellationToken As CancellationToken = Nothing) As CloudServiceRestartOperation" />
-      <MemberSignature Language="F#" Value="abstract member Restart : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.CloudServiceRestartOperation&#xA;override this.Restart : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.CloudServiceRestartOperation" Usage="cloudService.Restart (waitForCompletion, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Restart (waitForCompletion As Boolean, Optional parameters As RoleInstances = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Restart : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Restart : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="cloudService.Restart (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.CloudServiceRestartOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -868,18 +828,18 @@
       </Docs>
     </Member>
     <Member MemberName="RestartAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceRestartOperation&gt; RestartAsync (bool waitForCompletion, Azure.ResourceManager.Compute.Models.RoleInstances parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.CloudServiceRestartOperation&gt; RestartAsync(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.RoleInstances parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; RestartAsync (bool waitForCompletion, Azure.ResourceManager.Compute.Models.RoleInstances parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; RestartAsync(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.RoleInstances parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.CloudService.RestartAsync(System.Boolean,Azure.ResourceManager.Compute.Models.RoleInstances,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RestartAsync (waitForCompletion As Boolean, Optional parameters As RoleInstances = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of CloudServiceRestartOperation)" />
-      <MemberSignature Language="F#" Value="abstract member RestartAsync : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceRestartOperation&gt;&#xA;override this.RestartAsync : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceRestartOperation&gt;" Usage="cloudService.RestartAsync (waitForCompletion, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RestartAsync (waitForCompletion As Boolean, Optional parameters As RoleInstances = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member RestartAsync : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.RestartAsync : bool * Azure.ResourceManager.Compute.Models.RoleInstances * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="cloudService.RestartAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceRestartOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -915,10 +875,12 @@
       </Parameters>
       <Docs>
         <param name="tags"> The set of tags to use as replacement. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Replace the tags on the resource with the given set. </summary>
         <returns> The updated resource with the tags replaced. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tags" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="SetTagsAsync">
@@ -941,25 +903,27 @@
       </Parameters>
       <Docs>
         <param name="tags"> The set of tags to use as replacement. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Replace the tags on the resource with the given set. </summary>
         <returns> The updated resource with the tags replaced. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tags" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="Update">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.CloudServiceUpdateOperation Update (bool waitForCompletion, Azure.ResourceManager.Compute.Models.CloudServiceUpdate parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.CloudServiceUpdateOperation Update(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.CloudServiceUpdate parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.CloudService&gt; Update (bool waitForCompletion, Azure.ResourceManager.Compute.Models.CloudServiceUpdate parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.CloudService&gt; Update(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.CloudServiceUpdate parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.CloudService.Update(System.Boolean,Azure.ResourceManager.Compute.Models.CloudServiceUpdate,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (waitForCompletion As Boolean, Optional parameters As CloudServiceUpdate = Nothing, Optional cancellationToken As CancellationToken = Nothing) As CloudServiceUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member Update : bool * Azure.ResourceManager.Compute.Models.CloudServiceUpdate * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.CloudServiceUpdateOperation&#xA;override this.Update : bool * Azure.ResourceManager.Compute.Models.CloudServiceUpdate * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.CloudServiceUpdateOperation" Usage="cloudService.Update (waitForCompletion, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (waitForCompletion As Boolean, Optional parameters As CloudServiceUpdate = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of CloudService)" />
+      <MemberSignature Language="F#" Value="abstract member Update : bool * Azure.ResourceManager.Compute.Models.CloudServiceUpdate * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.CloudService&gt;&#xA;override this.Update : bool * Azure.ResourceManager.Compute.Models.CloudServiceUpdate * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.CloudService&gt;" Usage="cloudService.Update (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.CloudServiceUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.CloudService&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -976,18 +940,18 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceUpdateOperation&gt; UpdateAsync (bool waitForCompletion, Azure.ResourceManager.Compute.Models.CloudServiceUpdate parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.CloudServiceUpdateOperation&gt; UpdateAsync(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.CloudServiceUpdate parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.CloudService&gt;&gt; UpdateAsync (bool waitForCompletion, Azure.ResourceManager.Compute.Models.CloudServiceUpdate parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.CloudService&gt;&gt; UpdateAsync(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.CloudServiceUpdate parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.CloudService.UpdateAsync(System.Boolean,Azure.ResourceManager.Compute.Models.CloudServiceUpdate,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (waitForCompletion As Boolean, Optional parameters As CloudServiceUpdate = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of CloudServiceUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member UpdateAsync : bool * Azure.ResourceManager.Compute.Models.CloudServiceUpdate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceUpdateOperation&gt;&#xA;override this.UpdateAsync : bool * Azure.ResourceManager.Compute.Models.CloudServiceUpdate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceUpdateOperation&gt;" Usage="cloudService.UpdateAsync (waitForCompletion, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (waitForCompletion As Boolean, Optional parameters As CloudServiceUpdate = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of CloudService))" />
+      <MemberSignature Language="F#" Value="abstract member UpdateAsync : bool * Azure.ResourceManager.Compute.Models.CloudServiceUpdate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.CloudService&gt;&gt;&#xA;override this.UpdateAsync : bool * Azure.ResourceManager.Compute.Models.CloudServiceUpdate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.CloudService&gt;&gt;" Usage="cloudService.UpdateAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.CloudService&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -1004,18 +968,18 @@
       </Docs>
     </Member>
     <Member MemberName="WalkUpdateDomain">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.CloudServiceWalkUpdateDomainOperation WalkUpdateDomain (bool waitForCompletion, int updateDomain, Azure.ResourceManager.Compute.Models.UpdateDomain parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.CloudServiceWalkUpdateDomainOperation WalkUpdateDomain(bool waitForCompletion, int32 updateDomain, class Azure.ResourceManager.Compute.Models.UpdateDomain parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation WalkUpdateDomain (bool waitForCompletion, int updateDomain, Azure.ResourceManager.Compute.Models.UpdateDomain parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation WalkUpdateDomain(bool waitForCompletion, int32 updateDomain, class Azure.ResourceManager.Compute.Models.UpdateDomain parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.CloudService.WalkUpdateDomain(System.Boolean,System.Int32,Azure.ResourceManager.Compute.Models.UpdateDomain,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function WalkUpdateDomain (waitForCompletion As Boolean, updateDomain As Integer, Optional parameters As UpdateDomain = Nothing, Optional cancellationToken As CancellationToken = Nothing) As CloudServiceWalkUpdateDomainOperation" />
-      <MemberSignature Language="F#" Value="abstract member WalkUpdateDomain : bool * int * Azure.ResourceManager.Compute.Models.UpdateDomain * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.CloudServiceWalkUpdateDomainOperation&#xA;override this.WalkUpdateDomain : bool * int * Azure.ResourceManager.Compute.Models.UpdateDomain * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.CloudServiceWalkUpdateDomainOperation" Usage="cloudService.WalkUpdateDomain (waitForCompletion, updateDomain, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WalkUpdateDomain (waitForCompletion As Boolean, updateDomain As Integer, Optional parameters As UpdateDomain = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member WalkUpdateDomain : bool * int * Azure.ResourceManager.Compute.Models.UpdateDomain * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.WalkUpdateDomain : bool * int * Azure.ResourceManager.Compute.Models.UpdateDomain * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="cloudService.WalkUpdateDomain (waitForCompletion, updateDomain, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.CloudServiceWalkUpdateDomainOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -1034,18 +998,18 @@
       </Docs>
     </Member>
     <Member MemberName="WalkUpdateDomainAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceWalkUpdateDomainOperation&gt; WalkUpdateDomainAsync (bool waitForCompletion, int updateDomain, Azure.ResourceManager.Compute.Models.UpdateDomain parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.CloudServiceWalkUpdateDomainOperation&gt; WalkUpdateDomainAsync(bool waitForCompletion, int32 updateDomain, class Azure.ResourceManager.Compute.Models.UpdateDomain parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; WalkUpdateDomainAsync (bool waitForCompletion, int updateDomain, Azure.ResourceManager.Compute.Models.UpdateDomain parameters = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; WalkUpdateDomainAsync(bool waitForCompletion, int32 updateDomain, class Azure.ResourceManager.Compute.Models.UpdateDomain parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.CloudService.WalkUpdateDomainAsync(System.Boolean,System.Int32,Azure.ResourceManager.Compute.Models.UpdateDomain,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function WalkUpdateDomainAsync (waitForCompletion As Boolean, updateDomain As Integer, Optional parameters As UpdateDomain = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of CloudServiceWalkUpdateDomainOperation)" />
-      <MemberSignature Language="F#" Value="abstract member WalkUpdateDomainAsync : bool * int * Azure.ResourceManager.Compute.Models.UpdateDomain * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceWalkUpdateDomainOperation&gt;&#xA;override this.WalkUpdateDomainAsync : bool * int * Azure.ResourceManager.Compute.Models.UpdateDomain * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceWalkUpdateDomainOperation&gt;" Usage="cloudService.WalkUpdateDomainAsync (waitForCompletion, updateDomain, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WalkUpdateDomainAsync (waitForCompletion As Boolean, updateDomain As Integer, Optional parameters As UpdateDomain = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member WalkUpdateDomainAsync : bool * int * Azure.ResourceManager.Compute.Models.UpdateDomain * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.WalkUpdateDomainAsync : bool * int * Azure.ResourceManager.Compute.Models.UpdateDomain * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="cloudService.WalkUpdateDomainAsync (waitForCompletion, updateDomain, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.CloudServiceWalkUpdateDomainOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />

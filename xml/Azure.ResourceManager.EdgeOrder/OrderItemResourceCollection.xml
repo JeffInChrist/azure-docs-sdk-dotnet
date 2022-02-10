@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.EdgeOrder.Models.OrderItemResourceCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string orderItemName, Azure.ResourceManager.EdgeOrder.OrderItemResourceData orderItemResource, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.EdgeOrder.Models.OrderItemResourceCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string orderItemName, class Azure.ResourceManager.EdgeOrder.OrderItemResourceData orderItemResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.EdgeOrder.OrderItemResource&gt; CreateOrUpdate (bool waitForCompletion, string orderItemName, Azure.ResourceManager.EdgeOrder.OrderItemResourceData orderItemResource, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.EdgeOrder.OrderItemResource&gt; CreateOrUpdate(bool waitForCompletion, string orderItemName, class Azure.ResourceManager.EdgeOrder.OrderItemResourceData orderItemResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EdgeOrder.OrderItemResourceCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.EdgeOrder.OrderItemResourceData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, orderItemName As String, orderItemResource As OrderItemResourceData, Optional cancellationToken As CancellationToken = Nothing) As OrderItemResourceCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.EdgeOrder.OrderItemResourceData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.EdgeOrder.Models.OrderItemResourceCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.EdgeOrder.OrderItemResourceData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.EdgeOrder.Models.OrderItemResourceCreateOrUpdateOperation" Usage="orderItemResourceCollection.CreateOrUpdate (waitForCompletion, orderItemName, orderItemResource, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, orderItemName As String, orderItemResource As OrderItemResourceData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of OrderItemResource)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.EdgeOrder.OrderItemResourceData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.EdgeOrder.OrderItemResource&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.EdgeOrder.OrderItemResourceData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.EdgeOrder.OrderItemResource&gt;" Usage="orderItemResourceCollection.CreateOrUpdate (waitForCompletion, orderItemName, orderItemResource, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EdgeOrder</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.EdgeOrder.Models.OrderItemResourceCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.EdgeOrder.OrderItemResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -78,18 +78,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.EdgeOrder.Models.OrderItemResourceCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string orderItemName, Azure.ResourceManager.EdgeOrder.OrderItemResourceData orderItemResource, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.EdgeOrder.Models.OrderItemResourceCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string orderItemName, class Azure.ResourceManager.EdgeOrder.OrderItemResourceData orderItemResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.EdgeOrder.OrderItemResource&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string orderItemName, Azure.ResourceManager.EdgeOrder.OrderItemResourceData orderItemResource, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.EdgeOrder.OrderItemResource&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string orderItemName, class Azure.ResourceManager.EdgeOrder.OrderItemResourceData orderItemResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EdgeOrder.OrderItemResourceCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.EdgeOrder.OrderItemResourceData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, orderItemName As String, orderItemResource As OrderItemResourceData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of OrderItemResourceCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.EdgeOrder.OrderItemResourceData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.EdgeOrder.Models.OrderItemResourceCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.EdgeOrder.OrderItemResourceData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.EdgeOrder.Models.OrderItemResourceCreateOrUpdateOperation&gt;" Usage="orderItemResourceCollection.CreateOrUpdateAsync (waitForCompletion, orderItemName, orderItemResource, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, orderItemName As String, orderItemResource As OrderItemResourceData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of OrderItemResource))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.EdgeOrder.OrderItemResourceData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.EdgeOrder.OrderItemResource&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.EdgeOrder.OrderItemResourceData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.EdgeOrder.OrderItemResource&gt;&gt;" Usage="orderItemResourceCollection.CreateOrUpdateAsync (waitForCompletion, orderItemName, orderItemResource, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EdgeOrder</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.EdgeOrder.Models.OrderItemResourceCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.EdgeOrder.OrderItemResource&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -134,7 +134,7 @@
         <param name="orderItemName"> The name of the order item. </param>
         <param name="expand"> $expand is supported on device details, forward shipping details and reverse shipping details parameters. Each of these can be provided as a comma separated list. Device Details for order item provides details on the devices of the product, Forward and Reverse Shipping details provide forward and reverse shipping details respectively. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -166,7 +166,7 @@
         <param name="orderItemName"> The name of the order item. </param>
         <param name="expand"> $expand is supported on device details, forward shipping details and reverse shipping details parameters. Each of these can be provided as a comma separated list. Device Details for order item provides details on the devices of the product, Forward and Reverse Shipping details provide forward and reverse shipping details respectively. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
