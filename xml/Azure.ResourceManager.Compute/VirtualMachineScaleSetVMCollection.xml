@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string instanceId, Azure.ResourceManager.Compute.VirtualMachineScaleSetVmData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string instanceId, class Azure.ResourceManager.Compute.VirtualMachineScaleSetVmData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachineScaleSetVm&gt; CreateOrUpdate (bool waitForCompletion, string instanceId, Azure.ResourceManager.Compute.VirtualMachineScaleSetVmData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.VirtualMachineScaleSetVm&gt; CreateOrUpdate(bool waitForCompletion, string instanceId, class Azure.ResourceManager.Compute.VirtualMachineScaleSetVmData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetVmCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Compute.VirtualMachineScaleSetVmData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, instanceId As String, parameters As VirtualMachineScaleSetVmData, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineScaleSetVmCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.VirtualMachineScaleSetVmData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.VirtualMachineScaleSetVmData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmCreateOrUpdateOperation" Usage="virtualMachineScaleSetVmCollection.CreateOrUpdate (waitForCompletion, instanceId, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, instanceId As String, parameters As VirtualMachineScaleSetVmData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of VirtualMachineScaleSetVm)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.VirtualMachineScaleSetVmData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachineScaleSetVm&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.VirtualMachineScaleSetVmData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachineScaleSetVm&gt;" Usage="virtualMachineScaleSetVmCollection.CreateOrUpdate (waitForCompletion, instanceId, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachineScaleSetVm&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -78,18 +78,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string instanceId, Azure.ResourceManager.Compute.VirtualMachineScaleSetVmData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string instanceId, class Azure.ResourceManager.Compute.VirtualMachineScaleSetVmData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachineScaleSetVm&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string instanceId, Azure.ResourceManager.Compute.VirtualMachineScaleSetVmData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.VirtualMachineScaleSetVm&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string instanceId, class Azure.ResourceManager.Compute.VirtualMachineScaleSetVmData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetVmCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Compute.VirtualMachineScaleSetVmData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, instanceId As String, parameters As VirtualMachineScaleSetVmData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineScaleSetVmCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.VirtualMachineScaleSetVmData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.VirtualMachineScaleSetVmData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmCreateOrUpdateOperation&gt;" Usage="virtualMachineScaleSetVmCollection.CreateOrUpdateAsync (waitForCompletion, instanceId, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, instanceId As String, parameters As VirtualMachineScaleSetVmData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of VirtualMachineScaleSetVm))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.VirtualMachineScaleSetVmData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachineScaleSetVm&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.VirtualMachineScaleSetVmData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachineScaleSetVm&gt;&gt;" Usage="virtualMachineScaleSetVmCollection.CreateOrUpdateAsync (waitForCompletion, instanceId, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachineScaleSetVm&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -134,7 +134,7 @@
         <param name="instanceId"> The instance ID of the virtual machine. </param>
         <param name="expand"> The expand expression to apply on the operation. 'InstanceView' will retrieve the instance view of the virtual machine. 'UserData' will retrieve the UserData of the virtual machine. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -166,7 +166,7 @@
         <param name="instanceId"> The instance ID of the virtual machine. </param>
         <param name="expand"> The expand expression to apply on the operation. 'InstanceView' will retrieve the instance view of the virtual machine. 'UserData' will retrieve the UserData of the virtual machine. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">

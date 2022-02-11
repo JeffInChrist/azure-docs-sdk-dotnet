@@ -13,6 +13,8 @@
     <AssemblyVersion>7.4.0.0</AssemblyVersion>
     <AssemblyVersion>7.5.0.0</AssemblyVersion>
     <AssemblyVersion>7.5.1.0</AssemblyVersion>
+    <AssemblyVersion>7.6.0.0</AssemblyVersion>
+    <AssemblyVersion>7.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -38,6 +40,8 @@
         <AssemblyVersion>7.4.0.0</AssemblyVersion>
         <AssemblyVersion>7.5.0.0</AssemblyVersion>
         <AssemblyVersion>7.5.1.0</AssemblyVersion>
+        <AssemblyVersion>7.6.0.0</AssemblyVersion>
+        <AssemblyVersion>7.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Messaging.ServiceBus.ServiceBusErrorSource</ReturnType>
@@ -63,6 +67,8 @@
         <AssemblyVersion>7.4.0.0</AssemblyVersion>
         <AssemblyVersion>7.5.0.0</AssemblyVersion>
         <AssemblyVersion>7.5.1.0</AssemblyVersion>
+        <AssemblyVersion>7.6.0.0</AssemblyVersion>
+        <AssemblyVersion>7.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Messaging.ServiceBus.ServiceBusErrorSource</ReturnType>
@@ -88,6 +94,8 @@
         <AssemblyVersion>7.4.0.0</AssemblyVersion>
         <AssemblyVersion>7.5.0.0</AssemblyVersion>
         <AssemblyVersion>7.5.1.0</AssemblyVersion>
+        <AssemblyVersion>7.6.0.0</AssemblyVersion>
+        <AssemblyVersion>7.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Messaging.ServiceBus.ServiceBusErrorSource</ReturnType>
@@ -113,6 +121,8 @@
         <AssemblyVersion>7.4.0.0</AssemblyVersion>
         <AssemblyVersion>7.5.0.0</AssemblyVersion>
         <AssemblyVersion>7.5.1.0</AssemblyVersion>
+        <AssemblyVersion>7.6.0.0</AssemblyVersion>
+        <AssemblyVersion>7.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Messaging.ServiceBus.ServiceBusErrorSource</ReturnType>
@@ -138,6 +148,8 @@
         <AssemblyVersion>7.4.0.0</AssemblyVersion>
         <AssemblyVersion>7.5.0.0</AssemblyVersion>
         <AssemblyVersion>7.5.1.0</AssemblyVersion>
+        <AssemblyVersion>7.6.0.0</AssemblyVersion>
+        <AssemblyVersion>7.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Messaging.ServiceBus.ServiceBusErrorSource</ReturnType>
@@ -163,6 +175,8 @@
         <AssemblyVersion>7.4.0.0</AssemblyVersion>
         <AssemblyVersion>7.5.0.0</AssemblyVersion>
         <AssemblyVersion>7.5.1.0</AssemblyVersion>
+        <AssemblyVersion>7.6.0.0</AssemblyVersion>
+        <AssemblyVersion>7.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Messaging.ServiceBus.ServiceBusErrorSource</ReturnType>
@@ -188,6 +202,8 @@
         <AssemblyVersion>7.4.0.0</AssemblyVersion>
         <AssemblyVersion>7.5.0.0</AssemblyVersion>
         <AssemblyVersion>7.5.1.0</AssemblyVersion>
+        <AssemblyVersion>7.6.0.0</AssemblyVersion>
+        <AssemblyVersion>7.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Messaging.ServiceBus.ServiceBusErrorSource</ReturnType>

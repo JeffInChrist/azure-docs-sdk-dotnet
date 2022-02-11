@@ -36,8 +36,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a DiskPoolCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.StoragePool.DiskPoolCollection" /> object. </returns>
+        <summary> Gets a collection of DiskPools in the DiskPool. </summary>
+        <returns> An object representing collection of DiskPools and their operations over a DiskPool. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

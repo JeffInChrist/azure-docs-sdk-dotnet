@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ConnectedVMwarevSphere.Models.HybridIdentityMetadataCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string metadataName, Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadataData body = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ConnectedVMwarevSphere.Models.HybridIdentityMetadataCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string metadataName, class Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadataData body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadata&gt; CreateOrUpdate (bool waitForCompletion, string metadataName, Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadataData body = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadata&gt; CreateOrUpdate(bool waitForCompletion, string metadataName, class Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadataData body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadataCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadataData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, metadataName As String, Optional body As HybridIdentityMetadataData = Nothing, Optional cancellationToken As CancellationToken = Nothing) As HybridIdentityMetadataCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadataData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ConnectedVMwarevSphere.Models.HybridIdentityMetadataCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadataData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ConnectedVMwarevSphere.Models.HybridIdentityMetadataCreateOrUpdateOperation" Usage="hybridIdentityMetadataCollection.CreateOrUpdate (waitForCompletion, metadataName, body, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, metadataName As String, Optional body As HybridIdentityMetadataData = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of HybridIdentityMetadata)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadataData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadata&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadataData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadata&gt;" Usage="hybridIdentityMetadataCollection.CreateOrUpdate (waitForCompletion, metadataName, body, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ConnectedVMwarevSphere</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ConnectedVMwarevSphere.Models.HybridIdentityMetadataCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadata&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -78,18 +78,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.HybridIdentityMetadataCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string metadataName, Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadataData body = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ConnectedVMwarevSphere.Models.HybridIdentityMetadataCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string metadataName, class Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadataData body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadata&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string metadataName, Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadataData body = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadata&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string metadataName, class Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadataData body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadataCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadataData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, metadataName As String, Optional body As HybridIdentityMetadataData = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HybridIdentityMetadataCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadataData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.HybridIdentityMetadataCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadataData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.HybridIdentityMetadataCreateOrUpdateOperation&gt;" Usage="hybridIdentityMetadataCollection.CreateOrUpdateAsync (waitForCompletion, metadataName, body, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, metadataName As String, Optional body As HybridIdentityMetadataData = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of HybridIdentityMetadata))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadataData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadata&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadataData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadata&gt;&gt;" Usage="hybridIdentityMetadataCollection.CreateOrUpdateAsync (waitForCompletion, metadataName, body, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ConnectedVMwarevSphere</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.HybridIdentityMetadataCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.HybridIdentityMetadata&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -132,7 +132,7 @@
       <Docs>
         <param name="metadataName"> Name of the HybridIdentityMetadata. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -162,7 +162,7 @@
       <Docs>
         <param name="metadataName"> Name of the HybridIdentityMetadata. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">

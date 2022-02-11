@@ -34,18 +34,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateResourceIdentifier">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ResourceIdentifier CreateResourceIdentifier (string subscriptionId, string resourceGroupName, string loadBalancerName);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ResourceIdentifier CreateResourceIdentifier(string subscriptionId, string resourceGroupName, string loadBalancerName) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Core.ResourceIdentifier CreateResourceIdentifier (string subscriptionId, string resourceGroupName, string loadBalancerName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Core.ResourceIdentifier CreateResourceIdentifier(string subscriptionId, string resourceGroupName, string loadBalancerName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.LoadBalancer.CreateResourceIdentifier(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateResourceIdentifier (subscriptionId As String, resourceGroupName As String, loadBalancerName As String) As ResourceIdentifier" />
-      <MemberSignature Language="F#" Value="static member CreateResourceIdentifier : string * string * string -&gt; Azure.ResourceManager.ResourceIdentifier" Usage="Azure.ResourceManager.Network.LoadBalancer.CreateResourceIdentifier (subscriptionId, resourceGroupName, loadBalancerName)" />
+      <MemberSignature Language="F#" Value="static member CreateResourceIdentifier : string * string * string -&gt; Azure.Core.ResourceIdentifier" Usage="Azure.ResourceManager.Network.LoadBalancer.CreateResourceIdentifier (subscriptionId, resourceGroupName, loadBalancerName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceIdentifier</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscriptionId" Type="System.String" />
@@ -83,18 +83,18 @@
       </Docs>
     </Member>
     <Member MemberName="Delete">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.LoadBalancerDeleteOperation Delete (bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.LoadBalancerDeleteOperation Delete(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Delete (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Delete(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.LoadBalancer.Delete(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As LoadBalancerDeleteOperation" />
-      <MemberSignature Language="F#" Value="abstract member Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.LoadBalancerDeleteOperation&#xA;override this.Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.LoadBalancerDeleteOperation" Usage="loadBalancer.Delete (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="loadBalancer.Delete (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Network.Models.LoadBalancerDeleteOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -109,18 +109,18 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.LoadBalancerDeleteOperation&gt; DeleteAsync (bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.LoadBalancerDeleteOperation&gt; DeleteAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; DeleteAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; DeleteAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.LoadBalancer.DeleteAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of LoadBalancerDeleteOperation)" />
-      <MemberSignature Language="F#" Value="abstract member DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.LoadBalancerDeleteOperation&gt;&#xA;override this.DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.LoadBalancerDeleteOperation&gt;" Usage="loadBalancer.DeleteAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="loadBalancer.DeleteAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.LoadBalancerDeleteOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -186,60 +186,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetAvailableLocations">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt; GetAvailableLocations (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.Resources.Models.Location&gt; GetAvailableLocations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.LoadBalancer.GetAvailableLocations(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocations (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of Location)" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&#xA;override this.GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;" Usage="loadBalancer.GetAvailableLocations cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Lists all available geo-locations. </summary>
-        <returns> A collection of locations that may take multiple service requests to iterate over. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetAvailableLocationsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt; GetAvailableLocationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.Resources.Models.Location&gt;&gt; GetAvailableLocationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.LoadBalancer.GetAvailableLocationsAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocationsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of Location))" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;&#xA;override this.GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;" Usage="loadBalancer.GetAvailableLocationsAsync cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Lists all available geo-locations. </summary>
-        <returns> A collection of locations that may take multiple service requests to iterate over. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="GetBackendAddressPools">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.BackendAddressPoolCollection GetBackendAddressPools ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.ResourceManager.Network.BackendAddressPoolCollection GetBackendAddressPools() cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.BackendAddressPoolCollection GetBackendAddressPools ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.BackendAddressPoolCollection GetBackendAddressPools() cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.LoadBalancer.GetBackendAddressPools" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetBackendAddressPools () As BackendAddressPoolCollection" />
-      <MemberSignature Language="F#" Value="member this.GetBackendAddressPools : unit -&gt; Azure.ResourceManager.Network.BackendAddressPoolCollection" Usage="loadBalancer.GetBackendAddressPools " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBackendAddressPools () As BackendAddressPoolCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetBackendAddressPools : unit -&gt; Azure.ResourceManager.Network.BackendAddressPoolCollection&#xA;override this.GetBackendAddressPools : unit -&gt; Azure.ResourceManager.Network.BackendAddressPoolCollection" Usage="loadBalancer.GetBackendAddressPools " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -250,17 +202,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of BackendAddressPools in the LoadBalancer. </summary>
-        <returns> An object representing collection of BackendAddressPools and their operations over a LoadBalancer. </returns>
+        <summary> Gets a collection of BackendAddressPools in the BackendAddressPool. </summary>
+        <returns> An object representing collection of BackendAddressPools and their operations over a BackendAddressPool. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFrontendIPConfigurations">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.FrontendIPConfigurationCollection GetFrontendIPConfigurations ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.ResourceManager.Network.FrontendIPConfigurationCollection GetFrontendIPConfigurations() cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.FrontendIPConfigurationCollection GetFrontendIPConfigurations ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.FrontendIPConfigurationCollection GetFrontendIPConfigurations() cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.LoadBalancer.GetFrontendIPConfigurations" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetFrontendIPConfigurations () As FrontendIPConfigurationCollection" />
-      <MemberSignature Language="F#" Value="member this.GetFrontendIPConfigurations : unit -&gt; Azure.ResourceManager.Network.FrontendIPConfigurationCollection" Usage="loadBalancer.GetFrontendIPConfigurations " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFrontendIPConfigurations () As FrontendIPConfigurationCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetFrontendIPConfigurations : unit -&gt; Azure.ResourceManager.Network.FrontendIPConfigurationCollection&#xA;override this.GetFrontendIPConfigurations : unit -&gt; Azure.ResourceManager.Network.FrontendIPConfigurationCollection" Usage="loadBalancer.GetFrontendIPConfigurations " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -271,17 +223,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of FrontendIPConfigurations in the LoadBalancer. </summary>
-        <returns> An object representing collection of FrontendIPConfigurations and their operations over a LoadBalancer. </returns>
+        <summary> Gets a collection of FrontendIPConfigurations in the FrontendIPConfiguration. </summary>
+        <returns> An object representing collection of FrontendIPConfigurations and their operations over a FrontendIPConfiguration. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetInboundNatRules">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.InboundNatRuleCollection GetInboundNatRules ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.ResourceManager.Network.InboundNatRuleCollection GetInboundNatRules() cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.InboundNatRuleCollection GetInboundNatRules ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.InboundNatRuleCollection GetInboundNatRules() cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.LoadBalancer.GetInboundNatRules" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetInboundNatRules () As InboundNatRuleCollection" />
-      <MemberSignature Language="F#" Value="member this.GetInboundNatRules : unit -&gt; Azure.ResourceManager.Network.InboundNatRuleCollection" Usage="loadBalancer.GetInboundNatRules " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetInboundNatRules () As InboundNatRuleCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetInboundNatRules : unit -&gt; Azure.ResourceManager.Network.InboundNatRuleCollection&#xA;override this.GetInboundNatRules : unit -&gt; Azure.ResourceManager.Network.InboundNatRuleCollection" Usage="loadBalancer.GetInboundNatRules " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -292,24 +244,24 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of InboundNatRules in the LoadBalancer. </summary>
-        <returns> An object representing collection of InboundNatRules and their operations over a LoadBalancer. </returns>
+        <summary> Gets a collection of InboundNatRules in the InboundNatRule. </summary>
+        <returns> An object representing collection of InboundNatRules and their operations over a InboundNatRule. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLoadBalancerNetworkInterfaces">
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Network.NetworkInterfaceData&gt; GetLoadBalancerNetworkInterfaces (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Network.NetworkInterfaceData&gt; GetLoadBalancerNetworkInterfaces(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Network.NetworkInterface&gt; GetLoadBalancerNetworkInterfaces (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Network.NetworkInterface&gt; GetLoadBalancerNetworkInterfaces(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.LoadBalancer.GetLoadBalancerNetworkInterfaces(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetLoadBalancerNetworkInterfaces (Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of NetworkInterfaceData)" />
-      <MemberSignature Language="F#" Value="abstract member GetLoadBalancerNetworkInterfaces : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Network.NetworkInterfaceData&gt;&#xA;override this.GetLoadBalancerNetworkInterfaces : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Network.NetworkInterfaceData&gt;" Usage="loadBalancer.GetLoadBalancerNetworkInterfaces cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetLoadBalancerNetworkInterfaces (Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of NetworkInterface)" />
+      <MemberSignature Language="F#" Value="abstract member GetLoadBalancerNetworkInterfaces : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Network.NetworkInterface&gt;&#xA;override this.GetLoadBalancerNetworkInterfaces : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Network.NetworkInterface&gt;" Usage="loadBalancer.GetLoadBalancerNetworkInterfaces cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Network.NetworkInterfaceData&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Network.NetworkInterface&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -317,23 +269,23 @@
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Gets associated load balancer network interfaces. </summary>
-        <returns> A collection of <see cref="T:Azure.ResourceManager.Network.NetworkInterfaceData" /> that may take multiple service requests to iterate over. </returns>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Network.NetworkInterface" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLoadBalancerNetworkInterfacesAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Network.NetworkInterfaceData&gt; GetLoadBalancerNetworkInterfacesAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Network.NetworkInterfaceData&gt; GetLoadBalancerNetworkInterfacesAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Network.NetworkInterface&gt; GetLoadBalancerNetworkInterfacesAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Network.NetworkInterface&gt; GetLoadBalancerNetworkInterfacesAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.LoadBalancer.GetLoadBalancerNetworkInterfacesAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetLoadBalancerNetworkInterfacesAsync (Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of NetworkInterfaceData)" />
-      <MemberSignature Language="F#" Value="abstract member GetLoadBalancerNetworkInterfacesAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Network.NetworkInterfaceData&gt;&#xA;override this.GetLoadBalancerNetworkInterfacesAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Network.NetworkInterfaceData&gt;" Usage="loadBalancer.GetLoadBalancerNetworkInterfacesAsync cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetLoadBalancerNetworkInterfacesAsync (Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of NetworkInterface)" />
+      <MemberSignature Language="F#" Value="abstract member GetLoadBalancerNetworkInterfacesAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Network.NetworkInterface&gt;&#xA;override this.GetLoadBalancerNetworkInterfacesAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Network.NetworkInterface&gt;" Usage="loadBalancer.GetLoadBalancerNetworkInterfacesAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Network.NetworkInterfaceData&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Network.NetworkInterface&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -341,16 +293,16 @@
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary> Gets associated load balancer network interfaces. </summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.Network.NetworkInterfaceData" /> that may take multiple service requests to iterate over. </returns>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Network.NetworkInterface" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLoadBalancingRules">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.LoadBalancingRuleCollection GetLoadBalancingRules ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.ResourceManager.Network.LoadBalancingRuleCollection GetLoadBalancingRules() cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.LoadBalancingRuleCollection GetLoadBalancingRules ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.LoadBalancingRuleCollection GetLoadBalancingRules() cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.LoadBalancer.GetLoadBalancingRules" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetLoadBalancingRules () As LoadBalancingRuleCollection" />
-      <MemberSignature Language="F#" Value="member this.GetLoadBalancingRules : unit -&gt; Azure.ResourceManager.Network.LoadBalancingRuleCollection" Usage="loadBalancer.GetLoadBalancingRules " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetLoadBalancingRules () As LoadBalancingRuleCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetLoadBalancingRules : unit -&gt; Azure.ResourceManager.Network.LoadBalancingRuleCollection&#xA;override this.GetLoadBalancingRules : unit -&gt; Azure.ResourceManager.Network.LoadBalancingRuleCollection" Usage="loadBalancer.GetLoadBalancingRules " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -361,17 +313,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of LoadBalancingRules in the LoadBalancer. </summary>
-        <returns> An object representing collection of LoadBalancingRules and their operations over a LoadBalancer. </returns>
+        <summary> Gets a collection of LoadBalancingRules in the LoadBalancingRule. </summary>
+        <returns> An object representing collection of LoadBalancingRules and their operations over a LoadBalancingRule. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetOutboundRules">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.OutboundRuleCollection GetOutboundRules ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.ResourceManager.Network.OutboundRuleCollection GetOutboundRules() cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.OutboundRuleCollection GetOutboundRules ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.OutboundRuleCollection GetOutboundRules() cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.LoadBalancer.GetOutboundRules" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetOutboundRules () As OutboundRuleCollection" />
-      <MemberSignature Language="F#" Value="member this.GetOutboundRules : unit -&gt; Azure.ResourceManager.Network.OutboundRuleCollection" Usage="loadBalancer.GetOutboundRules " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetOutboundRules () As OutboundRuleCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetOutboundRules : unit -&gt; Azure.ResourceManager.Network.OutboundRuleCollection&#xA;override this.GetOutboundRules : unit -&gt; Azure.ResourceManager.Network.OutboundRuleCollection" Usage="loadBalancer.GetOutboundRules " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -382,17 +334,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of OutboundRules in the LoadBalancer. </summary>
-        <returns> An object representing collection of OutboundRules and their operations over a LoadBalancer. </returns>
+        <summary> Gets a collection of OutboundRules in the OutboundRule. </summary>
+        <returns> An object representing collection of OutboundRules and their operations over a OutboundRule. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetProbes">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.ProbeCollection GetProbes ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.ResourceManager.Network.ProbeCollection GetProbes() cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.ProbeCollection GetProbes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.ProbeCollection GetProbes() cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.LoadBalancer.GetProbes" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetProbes () As ProbeCollection" />
-      <MemberSignature Language="F#" Value="member this.GetProbes : unit -&gt; Azure.ResourceManager.Network.ProbeCollection" Usage="loadBalancer.GetProbes " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProbes () As ProbeCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetProbes : unit -&gt; Azure.ResourceManager.Network.ProbeCollection&#xA;override this.GetProbes : unit -&gt; Azure.ResourceManager.Network.ProbeCollection" Usage="loadBalancer.GetProbes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
@@ -403,8 +355,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of Probes in the LoadBalancer. </summary>
-        <returns> An object representing collection of Probes and their operations over a LoadBalancer. </returns>
+        <summary> Gets a collection of Probes in the Probe. </summary>
+        <returns> An object representing collection of Probes and their operations over a Probe. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -429,18 +381,18 @@
       </Docs>
     </Member>
     <Member MemberName="ResourceType">
-      <MemberSignature Language="C#" Value="public static readonly Azure.ResourceManager.ResourceType ResourceType;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Azure.ResourceManager.ResourceType ResourceType" />
+      <MemberSignature Language="C#" Value="public static readonly Azure.Core.ResourceType ResourceType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype Azure.Core.ResourceType ResourceType" />
       <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.Network.LoadBalancer.ResourceType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ResourceType As ResourceType " />
-      <MemberSignature Language="F#" Value=" staticval mutable ResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Network.LoadBalancer.ResourceType" />
+      <MemberSignature Language="F#" Value=" staticval mutable ResourceType : Azure.Core.ResourceType" Usage="Azure.ResourceManager.Network.LoadBalancer.ResourceType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
+        <ReturnType>Azure.Core.ResourceType</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Gets the resource type for the operations. </summary>
@@ -501,26 +453,6 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="parameters" /> is null. </exception>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.LoadBalancer.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Network.LoadBalancer.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for the operations. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVirtualMachineRunCommandCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string runCommandName, Azure.ResourceManager.Compute.VirtualMachineRunCommandData runCommand, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVirtualMachineRunCommandCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string runCommandName, class Azure.ResourceManager.Compute.VirtualMachineRunCommandData runCommand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachineScaleSetVirtualMachineRunCommand&gt; CreateOrUpdate (bool waitForCompletion, string runCommandName, Azure.ResourceManager.Compute.VirtualMachineRunCommandData runCommand, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.VirtualMachineScaleSetVirtualMachineRunCommand&gt; CreateOrUpdate(bool waitForCompletion, string runCommandName, class Azure.ResourceManager.Compute.VirtualMachineRunCommandData runCommand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetVirtualMachineRunCommandCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Compute.VirtualMachineRunCommandData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, runCommandName As String, runCommand As VirtualMachineRunCommandData, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineScaleSetVirtualMachineRunCommandCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.VirtualMachineRunCommandData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVirtualMachineRunCommandCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.VirtualMachineRunCommandData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVirtualMachineRunCommandCreateOrUpdateOperation" Usage="virtualMachineScaleSetVirtualMachineRunCommandCollection.CreateOrUpdate (waitForCompletion, runCommandName, runCommand, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, runCommandName As String, runCommand As VirtualMachineRunCommandData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of VirtualMachineScaleSetVirtualMachineRunCommand)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.VirtualMachineRunCommandData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachineScaleSetVirtualMachineRunCommand&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.VirtualMachineRunCommandData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachineScaleSetVirtualMachineRunCommand&gt;" Usage="virtualMachineScaleSetVirtualMachineRunCommandCollection.CreateOrUpdate (waitForCompletion, runCommandName, runCommand, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVirtualMachineRunCommandCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachineScaleSetVirtualMachineRunCommand&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -78,18 +78,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVirtualMachineRunCommandCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string runCommandName, Azure.ResourceManager.Compute.VirtualMachineRunCommandData runCommand, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVirtualMachineRunCommandCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string runCommandName, class Azure.ResourceManager.Compute.VirtualMachineRunCommandData runCommand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachineScaleSetVirtualMachineRunCommand&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string runCommandName, Azure.ResourceManager.Compute.VirtualMachineRunCommandData runCommand, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.VirtualMachineScaleSetVirtualMachineRunCommand&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string runCommandName, class Azure.ResourceManager.Compute.VirtualMachineRunCommandData runCommand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetVirtualMachineRunCommandCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Compute.VirtualMachineRunCommandData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, runCommandName As String, runCommand As VirtualMachineRunCommandData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineScaleSetVirtualMachineRunCommandCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.VirtualMachineRunCommandData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVirtualMachineRunCommandCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.VirtualMachineRunCommandData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVirtualMachineRunCommandCreateOrUpdateOperation&gt;" Usage="virtualMachineScaleSetVirtualMachineRunCommandCollection.CreateOrUpdateAsync (waitForCompletion, runCommandName, runCommand, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, runCommandName As String, runCommand As VirtualMachineRunCommandData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of VirtualMachineScaleSetVirtualMachineRunCommand))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.VirtualMachineRunCommandData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachineScaleSetVirtualMachineRunCommand&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.VirtualMachineRunCommandData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachineScaleSetVirtualMachineRunCommand&gt;&gt;" Usage="virtualMachineScaleSetVirtualMachineRunCommandCollection.CreateOrUpdateAsync (waitForCompletion, runCommandName, runCommand, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVirtualMachineRunCommandCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachineScaleSetVirtualMachineRunCommand&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -134,7 +134,7 @@
         <param name="runCommandName"> The name of the virtual machine run command. </param>
         <param name="expand"> The expand expression to apply on the operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -166,7 +166,7 @@
         <param name="runCommandName"> The name of the virtual machine run command. </param>
         <param name="expand"> The expand expression to apply on the operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary> Checks to see if the resource exists in azure. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
