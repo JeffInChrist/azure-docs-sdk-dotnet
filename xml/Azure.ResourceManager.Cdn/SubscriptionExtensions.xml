@@ -40,7 +40,11 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="checkNameAvailabilityInput"> Input to check. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
+        <summary>
+            Check the availability of a resource name. This is needed for resources where name is globally unique, such as a CDN endpoint.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Cdn/checkNameAvailability
+            Operation Id: CheckNameAvailabilityWithSubscription
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -70,7 +74,11 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="checkNameAvailabilityInput"> Input to check. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
+        <summary>
+            Check the availability of a resource name. This is needed for resources where name is globally unique, such as a CDN endpoint.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Cdn/checkNameAvailability
+            Operation Id: CheckNameAvailabilityWithSubscription
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -98,8 +106,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the ManagedRuleSetDefinitions for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all available managed rule sets.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Cdn/CdnWebApplicationFirewallManagedRuleSets
+            Operation Id: ManagedRuleSets_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Cdn.Models.ManagedRuleSetDefinition" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,8 +136,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the ManagedRuleSetDefinitions for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all available managed rule sets.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Cdn/CdnWebApplicationFirewallManagedRuleSets
+            Operation Id: ManagedRuleSets_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Cdn.Models.ManagedRuleSetDefinition" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,8 +166,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the Profiles for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all of the CDN profiles within an Azure subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Cdn/profiles
+            Operation Id: Profiles_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Cdn.Profile" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,8 +196,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the Profiles for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all of the CDN profiles within an Azure subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Cdn/profiles
+            Operation Id: Profiles_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Cdn.Profile" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,8 +226,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the ResourceUsages for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Check the quota and actual usage of the CDN profiles under the given subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Cdn/checkResourceUsage
+            Operation Id: ResourceUsage_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Cdn.Models.ResourceUsage" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,8 +256,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the ResourceUsages for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Check the quota and actual usage of the CDN profiles under the given subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Cdn/checkResourceUsage
+            Operation Id: ResourceUsage_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Cdn.Models.ResourceUsage" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,7 +288,11 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="validateProbeInput"> Input to check. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Check if the probe path is a valid path and the file can be accessed. Probe path is the path to a file hosted on the origin server to help accelerate the delivery of dynamic content via the CDN endpoint. This path is relative to the origin path specified in the endpoint configuration. </summary>
+        <summary>
+            Check if the probe path is a valid path and the file can be accessed. Probe path is the path to a file hosted on the origin server to help accelerate the delivery of dynamic content via the CDN endpoint. This path is relative to the origin path specified in the endpoint configuration.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Cdn/validateProbe
+            Operation Id: ValidateProbe
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -286,7 +322,11 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="validateProbeInput"> Input to check. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Check if the probe path is a valid path and the file can be accessed. Probe path is the path to a file hosted on the origin server to help accelerate the delivery of dynamic content via the CDN endpoint. This path is relative to the origin path specified in the endpoint configuration. </summary>
+        <summary>
+            Check if the probe path is a valid path and the file can be accessed. Probe path is the path to a file hosted on the origin server to help accelerate the delivery of dynamic content via the CDN endpoint. This path is relative to the origin path specified in the endpoint configuration.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Cdn/validateProbe
+            Operation Id: ValidateProbe
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

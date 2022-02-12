@@ -34,18 +34,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.RestorePointCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string restorePointName, Azure.ResourceManager.Compute.RestorePointData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.RestorePointCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string restorePointName, class Azure.ResourceManager.Compute.RestorePointData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.RestorePoint&gt; CreateOrUpdate (bool waitForCompletion, string restorePointName, Azure.ResourceManager.Compute.RestorePointData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.RestorePoint&gt; CreateOrUpdate(bool waitForCompletion, string restorePointName, class Azure.ResourceManager.Compute.RestorePointData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.RestorePointCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Compute.RestorePointData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, restorePointName As String, parameters As RestorePointData, Optional cancellationToken As CancellationToken = Nothing) As RestorePointCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.RestorePointData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.RestorePointCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.RestorePointData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.RestorePointCreateOrUpdateOperation" Usage="restorePointCollection.CreateOrUpdate (waitForCompletion, restorePointName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, restorePointName As String, parameters As RestorePointData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of RestorePoint)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.RestorePointData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.RestorePoint&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.RestorePointData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.RestorePoint&gt;" Usage="restorePointCollection.CreateOrUpdate (waitForCompletion, restorePointName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.RestorePointCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.RestorePoint&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -58,7 +58,11 @@
         <param name="restorePointName"> The name of the restore point. </param>
         <param name="parameters"> Parameters supplied to the Create restore point operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> The operation to create the restore point. Updating properties of an existing restore point is not allowed. </summary>
+        <summary>
+            The operation to create the restore point. Updating properties of an existing restore point is not allowed
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/restorePointCollections/{restorePointCollectionName}/restorePoints/{restorePointName}
+            Operation Id: RestorePoints_Create
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -68,18 +72,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.RestorePointCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string restorePointName, Azure.ResourceManager.Compute.RestorePointData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.RestorePointCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string restorePointName, class Azure.ResourceManager.Compute.RestorePointData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.RestorePoint&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string restorePointName, Azure.ResourceManager.Compute.RestorePointData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.RestorePoint&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string restorePointName, class Azure.ResourceManager.Compute.RestorePointData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.RestorePointCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Compute.RestorePointData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, restorePointName As String, parameters As RestorePointData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of RestorePointCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.RestorePointData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.RestorePointCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.RestorePointData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.RestorePointCreateOrUpdateOperation&gt;" Usage="restorePointCollection.CreateOrUpdateAsync (waitForCompletion, restorePointName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, restorePointName As String, parameters As RestorePointData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of RestorePoint))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.RestorePointData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.RestorePoint&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.RestorePointData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.RestorePoint&gt;&gt;" Usage="restorePointCollection.CreateOrUpdateAsync (waitForCompletion, restorePointName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.RestorePointCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.RestorePoint&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -92,7 +96,11 @@
         <param name="restorePointName"> The name of the restore point. </param>
         <param name="parameters"> Parameters supplied to the Create restore point operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> The operation to create the restore point. Updating properties of an existing restore point is not allowed. </summary>
+        <summary>
+            The operation to create the restore point. Updating properties of an existing restore point is not allowed
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/restorePointCollections/{restorePointCollectionName}/restorePoints/{restorePointName}
+            Operation Id: RestorePoints_Create
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -122,7 +130,11 @@
       <Docs>
         <param name="restorePointName"> The name of the restore point. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/restorePointCollections/{restorePointCollectionName}/restorePoints/{restorePointName}
+            Operation Id: RestorePoints_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -152,7 +164,11 @@
       <Docs>
         <param name="restorePointName"> The name of the restore point. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/restorePointCollections/{restorePointCollectionName}/restorePoints/{restorePointName}
+            Operation Id: RestorePoints_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -182,7 +198,11 @@
       <Docs>
         <param name="restorePointName"> The name of the restore point. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> The operation to get the restore point. </summary>
+        <summary>
+            The operation to get the restore point.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/restorePointCollections/{restorePointCollectionName}/restorePoints/{restorePointName}
+            Operation Id: RestorePoints_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -212,7 +232,11 @@
       <Docs>
         <param name="restorePointName"> The name of the restore point. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> The operation to get the restore point. </summary>
+        <summary>
+            The operation to get the restore point.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/restorePointCollections/{restorePointCollectionName}/restorePoints/{restorePointName}
+            Operation Id: RestorePoints_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -242,7 +266,11 @@
       <Docs>
         <param name="restorePointName"> The name of the restore point. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/restorePointCollections/{restorePointCollectionName}/restorePoints/{restorePointName}
+            Operation Id: RestorePoints_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -272,7 +300,11 @@
       <Docs>
         <param name="restorePointName"> The name of the restore point. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/restorePointCollections/{restorePointCollectionName}/restorePoints/{restorePointName}
+            Operation Id: RestorePoints_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">

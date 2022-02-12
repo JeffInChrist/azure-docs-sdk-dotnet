@@ -64,7 +64,11 @@
       <Docs>
         <param name="keyVersion"> The version of the key to be retrieved. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{vaultName}/keys/{keyName}/versions/{keyVersion}
+            Operation Id: Keys_GetVersion
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -94,7 +98,11 @@
       <Docs>
         <param name="keyVersion"> The version of the key to be retrieved. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{vaultName}/keys/{keyName}/versions/{keyVersion}
+            Operation Id: Keys_GetVersion
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -124,7 +132,11 @@
       <Docs>
         <param name="keyVersion"> The version of the key to be retrieved. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the specified version of the specified key in the specified key vault. </summary>
+        <summary>
+            Gets the specified version of the specified key in the specified key vault.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{vaultName}/keys/{keyName}/versions/{keyVersion}
+            Operation Id: Keys_GetVersion
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -152,7 +164,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the versions of the specified key in the specified key vault. </summary>
+        <summary>
+            Lists the versions of the specified key in the specified key vault.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{vaultName}/keys/{keyName}/versions
+            Operation Id: Keys_ListVersions
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.KeyVault.VaultKeyVersion" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,7 +192,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the versions of the specified key in the specified key vault. </summary>
+        <summary>
+            Lists the versions of the specified key in the specified key vault.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{vaultName}/keys/{keyName}/versions
+            Operation Id: Keys_ListVersions
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.KeyVault.VaultKeyVersion" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -202,7 +222,11 @@
       <Docs>
         <param name="keyVersion"> The version of the key to be retrieved. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the specified version of the specified key in the specified key vault. </summary>
+        <summary>
+            Gets the specified version of the specified key in the specified key vault.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{vaultName}/keys/{keyName}/versions/{keyVersion}
+            Operation Id: Keys_GetVersion
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -232,7 +256,11 @@
       <Docs>
         <param name="keyVersion"> The version of the key to be retrieved. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{vaultName}/keys/{keyName}/versions/{keyVersion}
+            Operation Id: Keys_GetVersion
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -262,7 +290,11 @@
       <Docs>
         <param name="keyVersion"> The version of the key to be retrieved. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{vaultName}/keys/{keyName}/versions/{keyVersion}
+            Operation Id: Keys_GetVersion
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">

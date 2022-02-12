@@ -1,15 +1,15 @@
 <Type Name="SyncGroupData" FullName="Azure.ResourceManager.Sql.SyncGroupData">
-  <TypeSignature Language="C#" Value="public class SyncGroupData : Azure.ResourceManager.Models.Resource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SyncGroupData extends Azure.ResourceManager.Models.Resource" />
+  <TypeSignature Language="C#" Value="public class SyncGroupData : Azure.ResourceManager.Models.ResourceData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SyncGroupData extends Azure.ResourceManager.Models.ResourceData" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.SyncGroupData" />
-  <TypeSignature Language="VB.NET" Value="Public Class SyncGroupData&#xA;Inherits Resource" />
-  <TypeSignature Language="F#" Value="type SyncGroupData = class&#xA;    inherit Resource" />
+  <TypeSignature Language="VB.NET" Value="Public Class SyncGroupData&#xA;Inherits ResourceData" />
+  <TypeSignature Language="F#" Value="type SyncGroupData = class&#xA;    inherit ResourceData" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.Models.Resource</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.Models.ResourceData</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
