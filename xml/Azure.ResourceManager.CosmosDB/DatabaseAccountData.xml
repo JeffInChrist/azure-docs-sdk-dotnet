@@ -1,15 +1,15 @@
 <Type Name="DatabaseAccountData" FullName="Azure.ResourceManager.CosmosDB.DatabaseAccountData">
-  <TypeSignature Language="C#" Value="public class DatabaseAccountData : Azure.ResourceManager.Models.TrackedResource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DatabaseAccountData extends Azure.ResourceManager.Models.TrackedResource" />
+  <TypeSignature Language="C#" Value="public class DatabaseAccountData : Azure.ResourceManager.Models.TrackedResourceData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DatabaseAccountData extends Azure.ResourceManager.Models.TrackedResourceData" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.CosmosDB.DatabaseAccountData" />
-  <TypeSignature Language="VB.NET" Value="Public Class DatabaseAccountData&#xA;Inherits TrackedResource" />
-  <TypeSignature Language="F#" Value="type DatabaseAccountData = class&#xA;    inherit TrackedResource" />
+  <TypeSignature Language="VB.NET" Value="Public Class DatabaseAccountData&#xA;Inherits TrackedResourceData" />
+  <TypeSignature Language="F#" Value="type DatabaseAccountData = class&#xA;    inherit TrackedResourceData" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.Models.TrackedResource</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.Models.TrackedResourceData</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -518,18 +518,18 @@
       </Docs>
     </Member>
     <Member MemberName="KeyVaultKeyUri">
-      <MemberSignature Language="C#" Value="public string KeyVaultKeyUri { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string KeyVaultKeyUri" />
+      <MemberSignature Language="C#" Value="public Uri KeyVaultKeyUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri KeyVaultKeyUri" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.CosmosDB.DatabaseAccountData.KeyVaultKeyUri" />
-      <MemberSignature Language="VB.NET" Value="Public Property KeyVaultKeyUri As String" />
-      <MemberSignature Language="F#" Value="member this.KeyVaultKeyUri : string with get, set" Usage="Azure.ResourceManager.CosmosDB.DatabaseAccountData.KeyVaultKeyUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyVaultKeyUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.KeyVaultKeyUri : Uri with get, set" Usage="Azure.ResourceManager.CosmosDB.DatabaseAccountData.KeyVaultKeyUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The URI of the key vault. </summary>

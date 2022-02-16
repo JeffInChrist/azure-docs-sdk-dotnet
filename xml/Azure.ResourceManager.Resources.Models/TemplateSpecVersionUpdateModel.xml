@@ -1,15 +1,15 @@
 <Type Name="TemplateSpecVersionUpdateModel" FullName="Azure.ResourceManager.Resources.Models.TemplateSpecVersionUpdateModel">
-  <TypeSignature Language="C#" Value="public class TemplateSpecVersionUpdateModel : Azure.ResourceManager.Models.Resource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplateSpecVersionUpdateModel extends Azure.ResourceManager.Models.Resource" />
+  <TypeSignature Language="C#" Value="public class TemplateSpecVersionUpdateModel : Azure.ResourceManager.Models.ResourceData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplateSpecVersionUpdateModel extends Azure.ResourceManager.Models.ResourceData" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Resources.Models.TemplateSpecVersionUpdateModel" />
-  <TypeSignature Language="VB.NET" Value="Public Class TemplateSpecVersionUpdateModel&#xA;Inherits Resource" />
-  <TypeSignature Language="F#" Value="type TemplateSpecVersionUpdateModel = class&#xA;    inherit Resource" />
+  <TypeSignature Language="VB.NET" Value="Public Class TemplateSpecVersionUpdateModel&#xA;Inherits ResourceData" />
+  <TypeSignature Language="F#" Value="type TemplateSpecVersionUpdateModel = class&#xA;    inherit ResourceData" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.Models.Resource</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.Models.ResourceData</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>

@@ -44,31 +44,35 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.ServerConnectionPolicyCreateOrUpdateOperation CreateOrUpdate (Azure.ResourceManager.Sql.Models.ConnectionPolicyName connectionPolicyName, Azure.ResourceManager.Sql.ServerConnectionPolicyData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.ServerConnectionPolicyCreateOrUpdateOperation CreateOrUpdate(valuetype Azure.ResourceManager.Sql.Models.ConnectionPolicyName connectionPolicyName, class Azure.ResourceManager.Sql.ServerConnectionPolicyData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerConnectionPolicyCollection.CreateOrUpdate(Azure.ResourceManager.Sql.Models.ConnectionPolicyName,Azure.ResourceManager.Sql.ServerConnectionPolicyData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (connectionPolicyName As ConnectionPolicyName, parameters As ServerConnectionPolicyData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As ServerConnectionPolicyCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : Azure.ResourceManager.Sql.Models.ConnectionPolicyName * Azure.ResourceManager.Sql.ServerConnectionPolicyData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.ServerConnectionPolicyCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : Azure.ResourceManager.Sql.Models.ConnectionPolicyName * Azure.ResourceManager.Sql.ServerConnectionPolicyData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.ServerConnectionPolicyCreateOrUpdateOperation" Usage="serverConnectionPolicyCollection.CreateOrUpdate (connectionPolicyName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.ServerConnectionPolicy&gt; CreateOrUpdate (bool waitForCompletion, Azure.ResourceManager.Sql.Models.ConnectionPolicyName connectionPolicyName, Azure.ResourceManager.Sql.ServerConnectionPolicyData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Sql.ServerConnectionPolicy&gt; CreateOrUpdate(bool waitForCompletion, valuetype Azure.ResourceManager.Sql.Models.ConnectionPolicyName connectionPolicyName, class Azure.ResourceManager.Sql.ServerConnectionPolicyData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerConnectionPolicyCollection.CreateOrUpdate(System.Boolean,Azure.ResourceManager.Sql.Models.ConnectionPolicyName,Azure.ResourceManager.Sql.ServerConnectionPolicyData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, connectionPolicyName As ConnectionPolicyName, parameters As ServerConnectionPolicyData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of ServerConnectionPolicy)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * Azure.ResourceManager.Sql.Models.ConnectionPolicyName * Azure.ResourceManager.Sql.ServerConnectionPolicyData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.ServerConnectionPolicy&gt;&#xA;override this.CreateOrUpdate : bool * Azure.ResourceManager.Sql.Models.ConnectionPolicyName * Azure.ResourceManager.Sql.ServerConnectionPolicyData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.ServerConnectionPolicy&gt;" Usage="serverConnectionPolicyCollection.CreateOrUpdate (waitForCompletion, connectionPolicyName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Sql.Models.ServerConnectionPolicyCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.ServerConnectionPolicy&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="connectionPolicyName" Type="Azure.ResourceManager.Sql.Models.ConnectionPolicyName" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.ServerConnectionPolicyData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="connectionPolicyName"> The name of the connection policy. </param>
         <param name="parameters"> The required parameters for updating a server connection policy. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Updates a server connection policy. </summary>
+        <summary>
+            Updates a server connection policy
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/connectionPolicies/{connectionPolicyName}
+            Operation Id: ServerConnectionPolicies_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -76,31 +80,35 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ServerConnectionPolicyCreateOrUpdateOperation&gt; CreateOrUpdateAsync (Azure.ResourceManager.Sql.Models.ConnectionPolicyName connectionPolicyName, Azure.ResourceManager.Sql.ServerConnectionPolicyData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.ServerConnectionPolicyCreateOrUpdateOperation&gt; CreateOrUpdateAsync(valuetype Azure.ResourceManager.Sql.Models.ConnectionPolicyName connectionPolicyName, class Azure.ResourceManager.Sql.ServerConnectionPolicyData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerConnectionPolicyCollection.CreateOrUpdateAsync(Azure.ResourceManager.Sql.Models.ConnectionPolicyName,Azure.ResourceManager.Sql.ServerConnectionPolicyData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (connectionPolicyName As ConnectionPolicyName, parameters As ServerConnectionPolicyData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ServerConnectionPolicyCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : Azure.ResourceManager.Sql.Models.ConnectionPolicyName * Azure.ResourceManager.Sql.ServerConnectionPolicyData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ServerConnectionPolicyCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : Azure.ResourceManager.Sql.Models.ConnectionPolicyName * Azure.ResourceManager.Sql.ServerConnectionPolicyData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ServerConnectionPolicyCreateOrUpdateOperation&gt;" Usage="serverConnectionPolicyCollection.CreateOrUpdateAsync (connectionPolicyName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.ServerConnectionPolicy&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, Azure.ResourceManager.Sql.Models.ConnectionPolicyName connectionPolicyName, Azure.ResourceManager.Sql.ServerConnectionPolicyData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Sql.ServerConnectionPolicy&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, valuetype Azure.ResourceManager.Sql.Models.ConnectionPolicyName connectionPolicyName, class Azure.ResourceManager.Sql.ServerConnectionPolicyData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerConnectionPolicyCollection.CreateOrUpdateAsync(System.Boolean,Azure.ResourceManager.Sql.Models.ConnectionPolicyName,Azure.ResourceManager.Sql.ServerConnectionPolicyData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, connectionPolicyName As ConnectionPolicyName, parameters As ServerConnectionPolicyData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of ServerConnectionPolicy))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * Azure.ResourceManager.Sql.Models.ConnectionPolicyName * Azure.ResourceManager.Sql.ServerConnectionPolicyData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.ServerConnectionPolicy&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * Azure.ResourceManager.Sql.Models.ConnectionPolicyName * Azure.ResourceManager.Sql.ServerConnectionPolicyData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.ServerConnectionPolicy&gt;&gt;" Usage="serverConnectionPolicyCollection.CreateOrUpdateAsync (waitForCompletion, connectionPolicyName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ServerConnectionPolicyCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.ServerConnectionPolicy&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="connectionPolicyName" Type="Azure.ResourceManager.Sql.Models.ConnectionPolicyName" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.ServerConnectionPolicyData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="connectionPolicyName"> The name of the connection policy. </param>
         <param name="parameters"> The required parameters for updating a server connection policy. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Updates a server connection policy. </summary>
+        <summary>
+            Updates a server connection policy
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/connectionPolicies/{connectionPolicyName}
+            Operation Id: ServerConnectionPolicies_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -128,7 +136,11 @@
       <Docs>
         <param name="connectionPolicyName"> The name of the connection policy. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/connectionPolicies/{connectionPolicyName}
+            Operation Id: ServerConnectionPolicies_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,7 +166,11 @@
       <Docs>
         <param name="connectionPolicyName"> The name of the connection policy. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/connectionPolicies/{connectionPolicyName}
+            Operation Id: ServerConnectionPolicies_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -180,7 +196,11 @@
       <Docs>
         <param name="connectionPolicyName"> The name of the connection policy. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a server connection policy. </summary>
+        <summary>
+            Gets a server connection policy
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/connectionPolicies/{connectionPolicyName}
+            Operation Id: ServerConnectionPolicies_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -204,7 +224,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists connection policy. </summary>
+        <summary>
+            Lists connection policy
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/connectionPolicies
+            Operation Id: ServerConnectionPolicies_ListByServer
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.ServerConnectionPolicy" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -228,7 +252,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists connection policy. </summary>
+        <summary>
+            Lists connection policy
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/connectionPolicies
+            Operation Id: ServerConnectionPolicies_ListByServer
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.ServerConnectionPolicy" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -254,7 +282,11 @@
       <Docs>
         <param name="connectionPolicyName"> The name of the connection policy. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a server connection policy. </summary>
+        <summary>
+            Gets a server connection policy
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/connectionPolicies/{connectionPolicyName}
+            Operation Id: ServerConnectionPolicies_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -280,7 +312,11 @@
       <Docs>
         <param name="connectionPolicyName"> The name of the connection policy. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/connectionPolicies/{connectionPolicyName}
+            Operation Id: ServerConnectionPolicies_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -306,7 +342,11 @@
       <Docs>
         <param name="connectionPolicyName"> The name of the connection policy. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/connectionPolicies/{connectionPolicyName}
+            Operation Id: ServerConnectionPolicies_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -383,26 +423,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.ServerConnectionPolicyCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Sql.ServerConnectionPolicyCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

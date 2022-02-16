@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string vmScaleSetName, Azure.ResourceManager.Compute.VirtualMachineScaleSetData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string vmScaleSetName, class Azure.ResourceManager.Compute.VirtualMachineScaleSetData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachineScaleSet&gt; CreateOrUpdate (bool waitForCompletion, string vmScaleSetName, Azure.ResourceManager.Compute.VirtualMachineScaleSetData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.VirtualMachineScaleSet&gt; CreateOrUpdate(bool waitForCompletion, string vmScaleSetName, class Azure.ResourceManager.Compute.VirtualMachineScaleSetData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Compute.VirtualMachineScaleSetData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, vmScaleSetName As String, parameters As VirtualMachineScaleSetData, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineScaleSetCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.VirtualMachineScaleSetData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.VirtualMachineScaleSetData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetCreateOrUpdateOperation" Usage="virtualMachineScaleSetCollection.CreateOrUpdate (waitForCompletion, vmScaleSetName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, vmScaleSetName As String, parameters As VirtualMachineScaleSetData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of VirtualMachineScaleSet)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.VirtualMachineScaleSetData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachineScaleSet&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.VirtualMachineScaleSetData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachineScaleSet&gt;" Usage="virtualMachineScaleSetCollection.CreateOrUpdate (waitForCompletion, vmScaleSetName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachineScaleSet&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -68,7 +68,11 @@
         <param name="vmScaleSetName"> The name of the VM scale set to create or update. </param>
         <param name="parameters"> The scale set object. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Create or update a VM scale set. </summary>
+        <summary>
+            Create or update a VM scale set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}
+            Operation Id: VirtualMachineScaleSets_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -78,18 +82,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string vmScaleSetName, Azure.ResourceManager.Compute.VirtualMachineScaleSetData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string vmScaleSetName, class Azure.ResourceManager.Compute.VirtualMachineScaleSetData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachineScaleSet&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string vmScaleSetName, Azure.ResourceManager.Compute.VirtualMachineScaleSetData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.VirtualMachineScaleSet&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string vmScaleSetName, class Azure.ResourceManager.Compute.VirtualMachineScaleSetData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Compute.VirtualMachineScaleSetData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, vmScaleSetName As String, parameters As VirtualMachineScaleSetData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineScaleSetCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.VirtualMachineScaleSetData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.VirtualMachineScaleSetData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetCreateOrUpdateOperation&gt;" Usage="virtualMachineScaleSetCollection.CreateOrUpdateAsync (waitForCompletion, vmScaleSetName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, vmScaleSetName As String, parameters As VirtualMachineScaleSetData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of VirtualMachineScaleSet))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.VirtualMachineScaleSetData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachineScaleSet&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.VirtualMachineScaleSetData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachineScaleSet&gt;&gt;" Usage="virtualMachineScaleSetCollection.CreateOrUpdateAsync (waitForCompletion, vmScaleSetName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachineScaleSet&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -102,7 +106,11 @@
         <param name="vmScaleSetName"> The name of the VM scale set to create or update. </param>
         <param name="parameters"> The scale set object. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Create or update a VM scale set. </summary>
+        <summary>
+            Create or update a VM scale set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}
+            Operation Id: VirtualMachineScaleSets_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -134,7 +142,11 @@
         <param name="vmScaleSetName"> The name of the VM scale set. </param>
         <param name="expand"> The expand expression to apply on the operation. 'UserData' retrieves the UserData property of the VM scale set that was provided by the user during the VM scale set Create/Update operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}
+            Operation Id: VirtualMachineScaleSets_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -166,7 +178,11 @@
         <param name="vmScaleSetName"> The name of the VM scale set. </param>
         <param name="expand"> The expand expression to apply on the operation. 'UserData' retrieves the UserData property of the VM scale set that was provided by the user during the VM scale set Create/Update operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}
+            Operation Id: VirtualMachineScaleSets_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -198,7 +214,11 @@
         <param name="vmScaleSetName"> The name of the VM scale set. </param>
         <param name="expand"> The expand expression to apply on the operation. 'UserData' retrieves the UserData property of the VM scale set that was provided by the user during the VM scale set Create/Update operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Display information about a virtual machine scale set. </summary>
+        <summary>
+            Display information about a virtual machine scale set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}
+            Operation Id: VirtualMachineScaleSets_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -226,7 +246,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a list of all VM scale sets under a resource group. </summary>
+        <summary>
+            Gets a list of all VM scale sets under a resource group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets
+            Operation Id: VirtualMachineScaleSets_List
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.VirtualMachineScaleSet" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -250,7 +274,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a list of all VM scale sets under a resource group. </summary>
+        <summary>
+            Gets a list of all VM scale sets under a resource group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets
+            Operation Id: VirtualMachineScaleSets_List
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.VirtualMachineScaleSet" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -278,7 +306,11 @@
         <param name="vmScaleSetName"> The name of the VM scale set. </param>
         <param name="expand"> The expand expression to apply on the operation. 'UserData' retrieves the UserData property of the VM scale set that was provided by the user during the VM scale set Create/Update operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Display information about a virtual machine scale set. </summary>
+        <summary>
+            Display information about a virtual machine scale set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}
+            Operation Id: VirtualMachineScaleSets_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -310,7 +342,11 @@
         <param name="vmScaleSetName"> The name of the VM scale set. </param>
         <param name="expand"> The expand expression to apply on the operation. 'UserData' retrieves the UserData property of the VM scale set that was provided by the user during the VM scale set Create/Update operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}
+            Operation Id: VirtualMachineScaleSets_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -342,7 +378,11 @@
         <param name="vmScaleSetName"> The name of the VM scale set. </param>
         <param name="expand"> The expand expression to apply on the operation. 'UserData' retrieves the UserData property of the VM scale set that was provided by the user during the VM scale set Create/Update operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}
+            Operation Id: VirtualMachineScaleSets_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">

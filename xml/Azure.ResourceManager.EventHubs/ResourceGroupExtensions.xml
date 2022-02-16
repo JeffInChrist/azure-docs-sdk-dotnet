@@ -36,8 +36,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a EventHubClusterCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.EventHubs.EventHubClusterCollection" /> object. </returns>
+        <summary> Gets a collection of EventHubClusters in the EventHubCluster. </summary>
+        <returns> An object representing collection of EventHubClusters and their operations over a EventHubCluster. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,8 +60,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a EventHubNamespaceCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.EventHubs.EventHubNamespaceCollection" /> object. </returns>
+        <summary> Gets a collection of EventHubNamespaces in the EventHubNamespace. </summary>
+        <returns> An object representing collection of EventHubNamespaces and their operations over a EventHubNamespace. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

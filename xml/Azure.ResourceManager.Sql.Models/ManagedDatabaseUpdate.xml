@@ -354,18 +354,18 @@
       </Docs>
     </Member>
     <Member MemberName="StorageContainerUri">
-      <MemberSignature Language="C#" Value="public string StorageContainerUri { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string StorageContainerUri" />
+      <MemberSignature Language="C#" Value="public Uri StorageContainerUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri StorageContainerUri" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.Models.ManagedDatabaseUpdate.StorageContainerUri" />
-      <MemberSignature Language="VB.NET" Value="Public Property StorageContainerUri As String" />
-      <MemberSignature Language="F#" Value="member this.StorageContainerUri : string with get, set" Usage="Azure.ResourceManager.Sql.Models.ManagedDatabaseUpdate.StorageContainerUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property StorageContainerUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.StorageContainerUri : Uri with get, set" Usage="Azure.ResourceManager.Sql.Models.ManagedDatabaseUpdate.StorageContainerUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Conditional. If createMode is RestoreExternalBackup, this value is required. Specifies the uri of the storage container where backups for this restore are stored. </summary>
