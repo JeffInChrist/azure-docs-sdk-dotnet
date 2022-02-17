@@ -56,7 +56,11 @@
         <param name="location"> The location of the deleted managed HSM. </param>
         <param name="name"> The name of the deleted managed HSM. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/locations/{location}/deletedManagedHSMs/{name}
+            Operation Id: ManagedHsms_GetDeleted
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -88,7 +92,11 @@
         <param name="location"> The location of the deleted managed HSM. </param>
         <param name="name"> The name of the deleted managed HSM. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/locations/{location}/deletedManagedHSMs/{name}
+            Operation Id: ManagedHsms_GetDeleted
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -120,7 +128,11 @@
         <param name="location"> The location of the deleted managed HSM. </param>
         <param name="name"> The name of the deleted managed HSM. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the specified deleted managed HSM. </summary>
+        <summary>
+            Gets the specified deleted managed HSM.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/locations/{location}/deletedManagedHSMs/{name}
+            Operation Id: ManagedHsms_GetDeleted
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -152,7 +164,11 @@
         <param name="location"> The location of the deleted managed HSM. </param>
         <param name="name"> The name of the deleted managed HSM. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the specified deleted managed HSM. </summary>
+        <summary>
+            Gets the specified deleted managed HSM.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/locations/{location}/deletedManagedHSMs/{name}
+            Operation Id: ManagedHsms_GetDeleted
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -184,7 +200,11 @@
         <param name="location"> The location of the deleted managed HSM. </param>
         <param name="name"> The name of the deleted managed HSM. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/locations/{location}/deletedManagedHSMs/{name}
+            Operation Id: ManagedHsms_GetDeleted
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -216,7 +236,11 @@
         <param name="location"> The location of the deleted managed HSM. </param>
         <param name="name"> The name of the deleted managed HSM. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/locations/{location}/deletedManagedHSMs/{name}
+            Operation Id: ManagedHsms_GetDeleted
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">

@@ -362,18 +362,18 @@
       </Docs>
     </Member>
     <Member MemberName="VaultUri">
-      <MemberSignature Language="C#" Value="public string VaultUri { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string VaultUri" />
+      <MemberSignature Language="C#" Value="public Uri VaultUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri VaultUri" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.KeyVault.Models.VaultProperties.VaultUri" />
-      <MemberSignature Language="VB.NET" Value="Public Property VaultUri As String" />
-      <MemberSignature Language="F#" Value="member this.VaultUri : string with get, set" Usage="Azure.ResourceManager.KeyVault.Models.VaultProperties.VaultUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property VaultUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.VaultUri : Uri with get, set" Usage="Azure.ResourceManager.KeyVault.Models.VaultProperties.VaultUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The URI of the vault for performing operations on keys and secrets. </summary>

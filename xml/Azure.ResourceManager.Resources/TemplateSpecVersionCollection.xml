@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.Models.TemplateSpecVersionCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string templateSpecVersion, Azure.ResourceManager.Resources.TemplateSpecVersionData templateSpecVersionModel, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Models.TemplateSpecVersionCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string templateSpecVersion, class Azure.ResourceManager.Resources.TemplateSpecVersionData templateSpecVersionModel, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.TemplateSpecVersion&gt; CreateOrUpdate (bool waitForCompletion, string templateSpecVersion, Azure.ResourceManager.Resources.TemplateSpecVersionData templateSpecVersionModel, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Resources.TemplateSpecVersion&gt; CreateOrUpdate(bool waitForCompletion, string templateSpecVersion, class Azure.ResourceManager.Resources.TemplateSpecVersionData templateSpecVersionModel, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.TemplateSpecVersionCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Resources.TemplateSpecVersionData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, templateSpecVersion As String, templateSpecVersionModel As TemplateSpecVersionData, Optional cancellationToken As CancellationToken = Nothing) As TemplateSpecVersionCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.TemplateSpecVersionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Resources.Models.TemplateSpecVersionCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.TemplateSpecVersionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Resources.Models.TemplateSpecVersionCreateOrUpdateOperation" Usage="templateSpecVersionCollection.CreateOrUpdate (waitForCompletion, templateSpecVersion, templateSpecVersionModel, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, templateSpecVersion As String, templateSpecVersionModel As TemplateSpecVersionData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of TemplateSpecVersion)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.TemplateSpecVersionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.TemplateSpecVersion&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.TemplateSpecVersionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.TemplateSpecVersion&gt;" Usage="templateSpecVersionCollection.CreateOrUpdate (waitForCompletion, templateSpecVersion, templateSpecVersionModel, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.TemplateSpecVersionCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.TemplateSpecVersion&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -68,7 +68,11 @@
         <param name="templateSpecVersion"> The version of the Template Spec. </param>
         <param name="templateSpecVersionModel"> Template Spec Version supplied to the operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Creates or updates a Template Spec version. </summary>
+        <summary>
+            Creates or updates a Template Spec version.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Resources/templateSpecs/{templateSpecName}/versions/{templateSpecVersion}
+            Operation Id: TemplateSpecVersions_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -78,18 +82,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.TemplateSpecVersionCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string templateSpecVersion, Azure.ResourceManager.Resources.TemplateSpecVersionData templateSpecVersionModel, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Resources.Models.TemplateSpecVersionCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string templateSpecVersion, class Azure.ResourceManager.Resources.TemplateSpecVersionData templateSpecVersionModel, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.TemplateSpecVersion&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string templateSpecVersion, Azure.ResourceManager.Resources.TemplateSpecVersionData templateSpecVersionModel, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Resources.TemplateSpecVersion&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string templateSpecVersion, class Azure.ResourceManager.Resources.TemplateSpecVersionData templateSpecVersionModel, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.TemplateSpecVersionCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Resources.TemplateSpecVersionData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, templateSpecVersion As String, templateSpecVersionModel As TemplateSpecVersionData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TemplateSpecVersionCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.TemplateSpecVersionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.TemplateSpecVersionCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.TemplateSpecVersionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.TemplateSpecVersionCreateOrUpdateOperation&gt;" Usage="templateSpecVersionCollection.CreateOrUpdateAsync (waitForCompletion, templateSpecVersion, templateSpecVersionModel, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, templateSpecVersion As String, templateSpecVersionModel As TemplateSpecVersionData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of TemplateSpecVersion))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.TemplateSpecVersionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.TemplateSpecVersion&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.TemplateSpecVersionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.TemplateSpecVersion&gt;&gt;" Usage="templateSpecVersionCollection.CreateOrUpdateAsync (waitForCompletion, templateSpecVersion, templateSpecVersionModel, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.TemplateSpecVersionCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.TemplateSpecVersion&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -102,7 +106,11 @@
         <param name="templateSpecVersion"> The version of the Template Spec. </param>
         <param name="templateSpecVersionModel"> Template Spec Version supplied to the operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Creates or updates a Template Spec version. </summary>
+        <summary>
+            Creates or updates a Template Spec version.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Resources/templateSpecs/{templateSpecName}/versions/{templateSpecVersion}
+            Operation Id: TemplateSpecVersions_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -132,7 +140,11 @@
       <Docs>
         <param name="templateSpecVersion"> The version of the Template Spec. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Resources/templateSpecs/{templateSpecName}/versions/{templateSpecVersion}
+            Operation Id: TemplateSpecVersions_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -162,7 +174,11 @@
       <Docs>
         <param name="templateSpecVersion"> The version of the Template Spec. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Resources/templateSpecs/{templateSpecName}/versions/{templateSpecVersion}
+            Operation Id: TemplateSpecVersions_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -192,7 +208,11 @@
       <Docs>
         <param name="templateSpecVersion"> The version of the Template Spec. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a Template Spec version from a specific Template Spec. </summary>
+        <summary>
+            Gets a Template Spec version from a specific Template Spec.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Resources/templateSpecs/{templateSpecName}/versions/{templateSpecVersion}
+            Operation Id: TemplateSpecVersions_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -220,7 +240,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists all the Template Spec versions in the specified Template Spec. </summary>
+        <summary>
+            Lists all the Template Spec versions in the specified Template Spec.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Resources/templateSpecs/{templateSpecName}/versions
+            Operation Id: TemplateSpecVersions_List
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Resources.TemplateSpecVersion" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -244,7 +268,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists all the Template Spec versions in the specified Template Spec. </summary>
+        <summary>
+            Lists all the Template Spec versions in the specified Template Spec.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Resources/templateSpecs/{templateSpecName}/versions
+            Operation Id: TemplateSpecVersions_List
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Resources.TemplateSpecVersion" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -270,7 +298,11 @@
       <Docs>
         <param name="templateSpecVersion"> The version of the Template Spec. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a Template Spec version from a specific Template Spec. </summary>
+        <summary>
+            Gets a Template Spec version from a specific Template Spec.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Resources/templateSpecs/{templateSpecName}/versions/{templateSpecVersion}
+            Operation Id: TemplateSpecVersions_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -300,7 +332,11 @@
       <Docs>
         <param name="templateSpecVersion"> The version of the Template Spec. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Resources/templateSpecs/{templateSpecName}/versions/{templateSpecVersion}
+            Operation Id: TemplateSpecVersions_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -330,7 +366,11 @@
       <Docs>
         <param name="templateSpecVersion"> The version of the Template Spec. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Resources/templateSpecs/{templateSpecName}/versions/{templateSpecVersion}
+            Operation Id: TemplateSpecVersions_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">

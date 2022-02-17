@@ -168,7 +168,7 @@
             </summary>
         <returns>The HTTP response received from the server.</returns>
         <remarks>
-            This operation will update the value returned from GetRawResponse and might update HasCompleted.
+            This operation will update the value returned from GetRawResponse and might update HasCompleted, HasValue, and Value.
             </remarks>
       </Docs>
     </Member>
@@ -198,7 +198,7 @@
             </summary>
         <returns>The HTTP response received from the server.</returns>
         <remarks>
-            This operation will update the value returned from GetRawResponse and might update HasCompleted.
+            This operation will update the value returned from GetRawResponse and might update HasCompleted, HasValue, and Value.
             </remarks>
       </Docs>
     </Member>

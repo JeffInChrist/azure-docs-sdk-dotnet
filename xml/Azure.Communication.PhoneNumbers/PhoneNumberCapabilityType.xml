@@ -41,7 +41,7 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Communication.PhoneNumbers.PhoneNumberCapabilityType" />. </summary>
+        <summary> Determines if two <see cref="T:Azure.Communication.PhoneNumbers.PhoneNumberCapabilityType" /> values are the same. </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is null. </exception>

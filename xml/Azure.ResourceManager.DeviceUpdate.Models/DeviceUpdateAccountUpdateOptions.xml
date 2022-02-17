@@ -1,15 +1,15 @@
 <Type Name="DeviceUpdateAccountUpdateOptions" FullName="Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateAccountUpdateOptions">
-  <TypeSignature Language="C#" Value="public class DeviceUpdateAccountUpdateOptions : Azure.ResourceManager.DeviceUpdate.Models.TagUpdateOptions" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeviceUpdateAccountUpdateOptions extends Azure.ResourceManager.DeviceUpdate.Models.TagUpdateOptions" />
+  <TypeSignature Language="C#" Value="public class DeviceUpdateAccountUpdateOptions : Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateInstanceUpdateOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeviceUpdateAccountUpdateOptions extends Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateInstanceUpdateOptions" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateAccountUpdateOptions" />
-  <TypeSignature Language="VB.NET" Value="Public Class DeviceUpdateAccountUpdateOptions&#xA;Inherits TagUpdateOptions" />
-  <TypeSignature Language="F#" Value="type DeviceUpdateAccountUpdateOptions = class&#xA;    inherit TagUpdateOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class DeviceUpdateAccountUpdateOptions&#xA;Inherits DeviceUpdateInstanceUpdateOptions" />
+  <TypeSignature Language="F#" Value="type DeviceUpdateAccountUpdateOptions = class&#xA;    inherit DeviceUpdateInstanceUpdateOptions" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.DeviceUpdate</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.DeviceUpdate.Models.TagUpdateOptions</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateInstanceUpdateOptions</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -34,18 +34,18 @@
       </Docs>
     </Member>
     <Member MemberName="Identity">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DeviceUpdate.Models.ManagedServiceIdentity Identity { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.DeviceUpdate.Models.ManagedServiceIdentity Identity" />
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Models.ManagedServiceIdentity Identity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Models.ManagedServiceIdentity Identity" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateAccountUpdateOptions.Identity" />
       <MemberSignature Language="VB.NET" Value="Public Property Identity As ManagedServiceIdentity" />
-      <MemberSignature Language="F#" Value="member this.Identity : Azure.ResourceManager.DeviceUpdate.Models.ManagedServiceIdentity with get, set" Usage="Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateAccountUpdateOptions.Identity" />
+      <MemberSignature Language="F#" Value="member this.Identity : Azure.ResourceManager.Models.ManagedServiceIdentity with get, set" Usage="Azure.ResourceManager.DeviceUpdate.Models.DeviceUpdateAccountUpdateOptions.Identity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DeviceUpdate</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.DeviceUpdate.Models.ManagedServiceIdentity</ReturnType>
+        <ReturnType>Azure.ResourceManager.Models.ManagedServiceIdentity</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The type of identity used for the resource. </summary>

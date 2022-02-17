@@ -38,8 +38,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets a list of Disk Pools in a subscription
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.StoragePool/diskPools
+            Operation Id: DiskPools_ListBySubscription
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.StoragePool.DiskPool" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +68,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets a list of Disk Pools in a subscription
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.StoragePool/diskPools
+            Operation Id: DiskPools_ListBySubscription
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.StoragePool.DiskPool" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,8 +100,12 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="location"> The location of the resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists available Disk Pool Skus in an Azure location.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.StoragePool/locations/{location}/diskPoolZones
+            Operation Id: DiskPoolZones_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.StoragePool.Models.DiskPoolZoneInfo" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="location" /> is empty. </exception>
@@ -124,8 +136,12 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="location"> The location of the resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists available Disk Pool Skus in an Azure location.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.StoragePool/locations/{location}/diskPoolZones
+            Operation Id: DiskPoolZones_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.StoragePool.Models.DiskPoolZoneInfo" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="location" /> is empty. </exception>
@@ -156,8 +172,12 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="location"> The location of the resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists available StoragePool resources and skus in an Azure location.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.StoragePool/locations/{location}/skus
+            Operation Id: ResourceSkus_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.StoragePool.Models.ResourceSkuInfo" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="location" /> is empty. </exception>
@@ -188,8 +208,12 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="location"> The location of the resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists available StoragePool resources and skus in an Azure location.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.StoragePool/locations/{location}/skus
+            Operation Id: ResourceSkus_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.StoragePool.Models.ResourceSkuInfo" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="location" /> is empty. </exception>
