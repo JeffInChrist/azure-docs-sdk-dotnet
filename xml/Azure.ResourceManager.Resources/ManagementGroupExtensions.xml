@@ -40,8 +40,8 @@
       </Parameters>
       <Docs>
         <param name="managementGroup"> The <see cref="T:Azure.ResourceManager.Management.ManagementGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a DeploymentCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Resources.DeploymentCollection" /> object. </returns>
+        <summary> Gets a collection of Deployments in the Deployment. </summary>
+        <returns> An object representing collection of Deployments and their operations over a Deployment. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

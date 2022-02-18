@@ -1,0 +1,421 @@
+<Type Name="HciClusterData" FullName="Azure.ResourceManager.StackHCI.HciClusterData">
+  <TypeSignature Language="C#" Value="public class HciClusterData : Azure.ResourceManager.Models.TrackedResourceData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HciClusterData extends Azure.ResourceManager.Models.TrackedResourceData" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.StackHCI.HciClusterData" />
+  <TypeSignature Language="VB.NET" Value="Public Class HciClusterData&#xA;Inherits TrackedResourceData" />
+  <TypeSignature Language="F#" Value="type HciClusterData = class&#xA;    inherit TrackedResourceData" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.ResourceManager.Models.TrackedResourceData</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class representing the HciCluster data model. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HciClusterData (Azure.Core.AzureLocation location);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Azure.Core.AzureLocation location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.StackHCI.HciClusterData.#ctor(Azure.Core.AzureLocation)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (location As AzureLocation)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.StackHCI.HciClusterData : Azure.Core.AzureLocation -&gt; Azure.ResourceManager.StackHCI.HciClusterData" Usage="new Azure.ResourceManager.StackHCI.HciClusterData location" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+      </Parameters>
+      <Docs>
+        <param name="location"> The location. </param>
+        <summary> Initializes a new instance of HciClusterData. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AadClientId">
+      <MemberSignature Language="C#" Value="public string AadClientId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AadClientId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.HciClusterData.AadClientId" />
+      <MemberSignature Language="VB.NET" Value="Public Property AadClientId As String" />
+      <MemberSignature Language="F#" Value="member this.AadClientId : string with get, set" Usage="Azure.ResourceManager.StackHCI.HciClusterData.AadClientId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> App id of cluster AAD identity. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AadTenantId">
+      <MemberSignature Language="C#" Value="public string AadTenantId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AadTenantId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.HciClusterData.AadTenantId" />
+      <MemberSignature Language="VB.NET" Value="Public Property AadTenantId As String" />
+      <MemberSignature Language="F#" Value="member this.AadTenantId : string with get, set" Usage="Azure.ResourceManager.StackHCI.HciClusterData.AadTenantId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Tenant id of cluster AAD identity. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BillingModel">
+      <MemberSignature Language="C#" Value="public string BillingModel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BillingModel" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.HciClusterData.BillingModel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BillingModel As String" />
+      <MemberSignature Language="F#" Value="member this.BillingModel : string" Usage="Azure.ResourceManager.StackHCI.HciClusterData.BillingModel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Type of billing applied to the resource. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloudId">
+      <MemberSignature Language="C#" Value="public string CloudId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CloudId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.HciClusterData.CloudId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CloudId As String" />
+      <MemberSignature Language="F#" Value="member this.CloudId : string" Usage="Azure.ResourceManager.StackHCI.HciClusterData.CloudId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Unique, immutable resource id. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloudManagementEndpoint">
+      <MemberSignature Language="C#" Value="public string CloudManagementEndpoint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CloudManagementEndpoint" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.HciClusterData.CloudManagementEndpoint" />
+      <MemberSignature Language="VB.NET" Value="Public Property CloudManagementEndpoint As String" />
+      <MemberSignature Language="F#" Value="member this.CloudManagementEndpoint : string with get, set" Usage="Azure.ResourceManager.StackHCI.HciClusterData.CloudManagementEndpoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Endpoint configured for management from the Azure portal. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedAt">
+      <MemberSignature Language="C#" Value="public DateTimeOffset? CreatedAt { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; CreatedAt" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.HciClusterData.CreatedAt" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreatedAt As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.CreatedAt : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="Azure.ResourceManager.StackHCI.HciClusterData.CreatedAt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The timestamp of resource creation (UTC). </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedBy">
+      <MemberSignature Language="C#" Value="public string CreatedBy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CreatedBy" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.HciClusterData.CreatedBy" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreatedBy As String" />
+      <MemberSignature Language="F#" Value="member this.CreatedBy : string with get, set" Usage="Azure.ResourceManager.StackHCI.HciClusterData.CreatedBy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The identity that created the resource. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedByType">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.StackHCI.Models.CreatedByType? CreatedByType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.StackHCI.Models.CreatedByType&gt; CreatedByType" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.HciClusterData.CreatedByType" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreatedByType As Nullable(Of CreatedByType)" />
+      <MemberSignature Language="F#" Value="member this.CreatedByType : Nullable&lt;Azure.ResourceManager.StackHCI.Models.CreatedByType&gt; with get, set" Usage="Azure.ResourceManager.StackHCI.HciClusterData.CreatedByType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.StackHCI.Models.CreatedByType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The type of identity that created the resource. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DesiredProperties">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.StackHCI.Models.ClusterDesiredProperties DesiredProperties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.StackHCI.Models.ClusterDesiredProperties DesiredProperties" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.HciClusterData.DesiredProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Property DesiredProperties As ClusterDesiredProperties" />
+      <MemberSignature Language="F#" Value="member this.DesiredProperties : Azure.ResourceManager.StackHCI.Models.ClusterDesiredProperties with get, set" Usage="Azure.ResourceManager.StackHCI.HciClusterData.DesiredProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.StackHCI.Models.ClusterDesiredProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Desired properties of the cluster. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastBillingTimestamp">
+      <MemberSignature Language="C#" Value="public DateTimeOffset? LastBillingTimestamp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; LastBillingTimestamp" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.HciClusterData.LastBillingTimestamp" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastBillingTimestamp As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.LastBillingTimestamp : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.ResourceManager.StackHCI.HciClusterData.LastBillingTimestamp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Most recent billing meter timestamp. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModifiedAt">
+      <MemberSignature Language="C#" Value="public DateTimeOffset? LastModifiedAt { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; LastModifiedAt" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.HciClusterData.LastModifiedAt" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastModifiedAt As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.LastModifiedAt : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="Azure.ResourceManager.StackHCI.HciClusterData.LastModifiedAt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The timestamp of resource last modification (UTC). </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModifiedBy">
+      <MemberSignature Language="C#" Value="public string LastModifiedBy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LastModifiedBy" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.HciClusterData.LastModifiedBy" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastModifiedBy As String" />
+      <MemberSignature Language="F#" Value="member this.LastModifiedBy : string with get, set" Usage="Azure.ResourceManager.StackHCI.HciClusterData.LastModifiedBy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The identity that last modified the resource. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModifiedByType">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.StackHCI.Models.CreatedByType? LastModifiedByType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.StackHCI.Models.CreatedByType&gt; LastModifiedByType" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.HciClusterData.LastModifiedByType" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastModifiedByType As Nullable(Of CreatedByType)" />
+      <MemberSignature Language="F#" Value="member this.LastModifiedByType : Nullable&lt;Azure.ResourceManager.StackHCI.Models.CreatedByType&gt; with get, set" Usage="Azure.ResourceManager.StackHCI.HciClusterData.LastModifiedByType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.StackHCI.Models.CreatedByType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The type of identity that last modified the resource. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastSyncTimestamp">
+      <MemberSignature Language="C#" Value="public DateTimeOffset? LastSyncTimestamp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; LastSyncTimestamp" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.HciClusterData.LastSyncTimestamp" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastSyncTimestamp As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.LastSyncTimestamp : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.ResourceManager.StackHCI.HciClusterData.LastSyncTimestamp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Most recent cluster sync timestamp. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvisioningState">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.StackHCI.Models.ProvisioningState? ProvisioningState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.StackHCI.Models.ProvisioningState&gt; ProvisioningState" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.HciClusterData.ProvisioningState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As Nullable(Of ProvisioningState)" />
+      <MemberSignature Language="F#" Value="member this.ProvisioningState : Nullable&lt;Azure.ResourceManager.StackHCI.Models.ProvisioningState&gt;" Usage="Azure.ResourceManager.StackHCI.HciClusterData.ProvisioningState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.StackHCI.Models.ProvisioningState&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Provisioning state. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegistrationTimestamp">
+      <MemberSignature Language="C#" Value="public DateTimeOffset? RegistrationTimestamp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; RegistrationTimestamp" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.HciClusterData.RegistrationTimestamp" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RegistrationTimestamp As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.RegistrationTimestamp : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.ResourceManager.StackHCI.HciClusterData.RegistrationTimestamp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> First cluster sync timestamp. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReportedProperties">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.StackHCI.Models.ClusterReportedProperties ReportedProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.StackHCI.Models.ClusterReportedProperties ReportedProperties" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.HciClusterData.ReportedProperties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReportedProperties As ClusterReportedProperties" />
+      <MemberSignature Language="F#" Value="member this.ReportedProperties : Azure.ResourceManager.StackHCI.Models.ClusterReportedProperties" Usage="Azure.ResourceManager.StackHCI.HciClusterData.ReportedProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.StackHCI.Models.ClusterReportedProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Properties reported by cluster agent. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.StackHCI.Models.HciClusterStatus? Status { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.StackHCI.Models.HciClusterStatus&gt; Status" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.HciClusterData.Status" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As Nullable(Of HciClusterStatus)" />
+      <MemberSignature Language="F#" Value="member this.Status : Nullable&lt;Azure.ResourceManager.StackHCI.Models.HciClusterStatus&gt;" Usage="Azure.ResourceManager.StackHCI.HciClusterData.Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.StackHCI.Models.HciClusterStatus&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Status of the cluster agent. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrialDaysRemaining">
+      <MemberSignature Language="C#" Value="public float? TrialDaysRemaining { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float32&gt; TrialDaysRemaining" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.HciClusterData.TrialDaysRemaining" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TrialDaysRemaining As Nullable(Of Single)" />
+      <MemberSignature Language="F#" Value="member this.TrialDaysRemaining : Nullable&lt;single&gt;" Usage="Azure.ResourceManager.StackHCI.HciClusterData.TrialDaysRemaining" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Number of days remaining in the trial period. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

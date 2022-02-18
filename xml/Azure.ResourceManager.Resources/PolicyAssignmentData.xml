@@ -1,15 +1,15 @@
 <Type Name="PolicyAssignmentData" FullName="Azure.ResourceManager.Resources.PolicyAssignmentData">
-  <TypeSignature Language="C#" Value="public class PolicyAssignmentData : Azure.ResourceManager.Models.Resource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PolicyAssignmentData extends Azure.ResourceManager.Models.Resource" />
+  <TypeSignature Language="C#" Value="public class PolicyAssignmentData : Azure.ResourceManager.Models.ResourceData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PolicyAssignmentData extends Azure.ResourceManager.Models.ResourceData" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Resources.PolicyAssignmentData" />
-  <TypeSignature Language="VB.NET" Value="Public Class PolicyAssignmentData&#xA;Inherits Resource" />
-  <TypeSignature Language="F#" Value="type PolicyAssignmentData = class&#xA;    inherit Resource" />
+  <TypeSignature Language="VB.NET" Value="Public Class PolicyAssignmentData&#xA;Inherits ResourceData" />
+  <TypeSignature Language="F#" Value="type PolicyAssignmentData = class&#xA;    inherit ResourceData" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.Models.Resource</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.Models.ResourceData</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>

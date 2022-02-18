@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.Models.ResourceGroupCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string resourceGroupName, Azure.ResourceManager.Resources.ResourceGroupData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Models.ResourceGroupCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string resourceGroupName, class Azure.ResourceManager.Resources.ResourceGroupData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ResourceGroup&gt; CreateOrUpdate (bool waitForCompletion, string resourceGroupName, Azure.ResourceManager.Resources.ResourceGroupData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Resources.ResourceGroup&gt; CreateOrUpdate(bool waitForCompletion, string resourceGroupName, class Azure.ResourceManager.Resources.ResourceGroupData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ResourceGroupCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Resources.ResourceGroupData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, resourceGroupName As String, parameters As ResourceGroupData, Optional cancellationToken As CancellationToken = Nothing) As ResourceGroupCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.ResourceGroupData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Resources.Models.ResourceGroupCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.ResourceGroupData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Resources.Models.ResourceGroupCreateOrUpdateOperation" Usage="resourceGroupCollection.CreateOrUpdate (waitForCompletion, resourceGroupName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, resourceGroupName As String, parameters As ResourceGroupData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of ResourceGroup)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.ResourceGroupData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ResourceGroup&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.ResourceGroupData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ResourceGroup&gt;" Usage="resourceGroupCollection.CreateOrUpdate (waitForCompletion, resourceGroupName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.ResourceGroupCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ResourceGroup&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -68,28 +68,32 @@
         <param name="resourceGroupName"> The name of the resource group to create or update. Can include alphanumeric, underscore, parentheses, hyphen, period (except at end), and Unicode characters that match the allowed characters. </param>
         <param name="parameters"> Parameters supplied to the create or update a resource group. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Creates or updates a resource group. </summary>
+        <summary>
+            Creates or updates a resource group.
+            Request Path: /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}
+            Operation Id: ResourceGroups_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="resourceGroupName" /> is empty. </exception>
+          <paramref name="resourceGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="resourceGroupName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ResourceGroupCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string resourceGroupName, Azure.ResourceManager.Resources.ResourceGroupData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Resources.Models.ResourceGroupCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string resourceGroupName, class Azure.ResourceManager.Resources.ResourceGroupData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ResourceGroup&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string resourceGroupName, Azure.ResourceManager.Resources.ResourceGroupData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Resources.ResourceGroup&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string resourceGroupName, class Azure.ResourceManager.Resources.ResourceGroupData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ResourceGroupCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Resources.ResourceGroupData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, resourceGroupName As String, parameters As ResourceGroupData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ResourceGroupCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.ResourceGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ResourceGroupCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.ResourceGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ResourceGroupCreateOrUpdateOperation&gt;" Usage="resourceGroupCollection.CreateOrUpdateAsync (waitForCompletion, resourceGroupName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, resourceGroupName As String, parameters As ResourceGroupData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of ResourceGroup))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.ResourceGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ResourceGroup&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.ResourceGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ResourceGroup&gt;&gt;" Usage="resourceGroupCollection.CreateOrUpdateAsync (waitForCompletion, resourceGroupName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ResourceGroupCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ResourceGroup&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -102,11 +106,15 @@
         <param name="resourceGroupName"> The name of the resource group to create or update. Can include alphanumeric, underscore, parentheses, hyphen, period (except at end), and Unicode characters that match the allowed characters. </param>
         <param name="parameters"> Parameters supplied to the create or update a resource group. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Creates or updates a resource group. </summary>
+        <summary>
+            Creates or updates a resource group.
+            Request Path: /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}
+            Operation Id: ResourceGroups_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="resourceGroupName" /> is empty. </exception>
+          <paramref name="resourceGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="resourceGroupName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -132,11 +140,15 @@
       <Docs>
         <param name="resourceGroupName"> The name of the resource group to get. The name is case insensitive. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}
+            Operation Id: ResourceGroups_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="resourceGroupName" /> is empty. </exception>
+          <paramref name="resourceGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="resourceGroupName" /> is null. </exception>
       </Docs>
@@ -162,11 +174,15 @@
       <Docs>
         <param name="resourceGroupName"> The name of the resource group to get. The name is case insensitive. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}
+            Operation Id: ResourceGroups_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="resourceGroupName" /> is empty. </exception>
+          <paramref name="resourceGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="resourceGroupName" /> is null. </exception>
       </Docs>
@@ -192,11 +208,15 @@
       <Docs>
         <param name="resourceGroupName"> The name of the resource group to get. The name is case insensitive. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a resource group. </summary>
+        <summary>
+            Gets a resource group.
+            Request Path: /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}
+            Operation Id: ResourceGroups_Get
+            </summary>
         <returns> A response with the <see cref="T:Azure.Response`1" /> operation for this resource group. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="resourceGroupName" /> is empty. </exception>
+          <paramref name="resourceGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="resourceGroupName" /> is null. </exception>
       </Docs>
@@ -224,7 +244,11 @@
         <param name="filter"> The filter to apply on the operation.&lt;br&gt;&lt;br&gt;You can filter by tag names and values. For example, to filter for a tag name and value, use $filter=tagName eq 'tag1' and tagValue eq 'Value1'. </param>
         <param name="top"> The number of results to return. If null is passed, returns all resource groups. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets all the resource groups for a subscription. </summary>
+        <summary>
+            Gets all the resource groups for a subscription.
+            Request Path: /subscriptions/{subscriptionId}/resourcegroups
+            Operation Id: ResourceGroups_List
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -252,7 +276,11 @@
         <param name="filter"> The filter to apply on the operation.&lt;br&gt;&lt;br&gt;You can filter by tag names and values. For example, to filter for a tag name and value, use $filter=tagName eq 'tag1' and tagValue eq 'Value1'. </param>
         <param name="top"> The number of results to return. If null is passed, returns all resource groups. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets all the resource groups for a subscription. </summary>
+        <summary>
+            Gets all the resource groups for a subscription.
+            Request Path: /subscriptions/{subscriptionId}/resourcegroups
+            Operation Id: ResourceGroups_List
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -278,11 +306,15 @@
       <Docs>
         <param name="resourceGroupName"> The name of the resource group to get. The name is case insensitive. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a resource group. </summary>
+        <summary>
+            Gets a resource group.
+            Request Path: /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}
+            Operation Id: ResourceGroups_Get
+            </summary>
         <returns> A <see cref="T:System.Threading.Tasks.Task" /> that on completion returns a response with the <see cref="T:Azure.Response`1" /> operation for this resource group. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="resourceGroupName" /> is empty. </exception>
+          <paramref name="resourceGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="resourceGroupName" /> is null. </exception>
       </Docs>
@@ -308,11 +340,15 @@
       <Docs>
         <param name="resourceGroupName"> The name of the resource group to get. The name is case insensitive. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}
+            Operation Id: ResourceGroups_Get
+            </summary>
         <returns> Whether or not the resource existed. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="resourceGroupName" /> is empty. </exception>
+          <paramref name="resourceGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="resourceGroupName" /> is null. </exception>
       </Docs>
@@ -338,35 +374,17 @@
       <Docs>
         <param name="resourceGroupName"> The name of the resource group to get. The name is case insensitive. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}
+            Operation Id: ResourceGroups_Get
+            </summary>
         <returns> Whether or not the resource existed. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="resourceGroupName" /> is empty. </exception>
+          <paramref name="resourceGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="resourceGroupName" /> is null. </exception>
-      </Docs>
-    </Member>
-    <Member MemberName="Parent">
-      <MemberSignature Language="C#" Value="protected Azure.ResourceManager.Resources.Subscription Parent { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Resources.Subscription Parent" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.ResourceGroupCollection.Parent" />
-      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Parent As Subscription" />
-      <MemberSignature Language="F#" Value="member this.Parent : Azure.ResourceManager.Resources.Subscription" Usage="Azure.ResourceManager.Resources.ResourceGroupCollection.Parent" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Subscription</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets the parent resource of this resource.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IAsyncEnumerable&lt;Azure.ResourceManager.Resources.ResourceGroup&gt;.GetAsyncEnumerator">

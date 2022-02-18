@@ -23,7 +23,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary> A class representing collection of PolicyDefinition and their operations over its parent. </summary>
+    <summary> A class representing collection of ManagementGroupPolicyDefinition and their operations over its parent. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.Models.ManagementGroupPolicyDefinitionCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string policyDefinitionName, Azure.ResourceManager.Resources.PolicyDefinitionData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Models.ManagementGroupPolicyDefinitionCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string policyDefinitionName, class Azure.ResourceManager.Resources.PolicyDefinitionData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ManagementGroupPolicyDefinition&gt; CreateOrUpdate (bool waitForCompletion, string policyDefinitionName, Azure.ResourceManager.Resources.PolicyDefinitionData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Resources.ManagementGroupPolicyDefinition&gt; CreateOrUpdate(bool waitForCompletion, string policyDefinitionName, class Azure.ResourceManager.Resources.PolicyDefinitionData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ManagementGroupPolicyDefinitionCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Resources.PolicyDefinitionData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, policyDefinitionName As String, parameters As PolicyDefinitionData, Optional cancellationToken As CancellationToken = Nothing) As ManagementGroupPolicyDefinitionCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.PolicyDefinitionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Resources.Models.ManagementGroupPolicyDefinitionCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.PolicyDefinitionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Resources.Models.ManagementGroupPolicyDefinitionCreateOrUpdateOperation" Usage="managementGroupPolicyDefinitionCollection.CreateOrUpdate (waitForCompletion, policyDefinitionName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, policyDefinitionName As String, parameters As PolicyDefinitionData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of ManagementGroupPolicyDefinition)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.PolicyDefinitionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ManagementGroupPolicyDefinition&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.PolicyDefinitionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ManagementGroupPolicyDefinition&gt;" Usage="managementGroupPolicyDefinitionCollection.CreateOrUpdate (waitForCompletion, policyDefinitionName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.ManagementGroupPolicyDefinitionCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ManagementGroupPolicyDefinition&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -68,28 +68,32 @@
         <param name="policyDefinitionName"> The name of the policy definition to create. </param>
         <param name="parameters"> The policy definition properties. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> This operation creates or updates a policy definition in the given management group with the given name. </summary>
+        <summary>
+            This operation creates or updates a policy definition in the given management group with the given name.
+            Request Path: /providers/Microsoft.Management/managementGroups/{managementGroupId}/providers/Microsoft.Authorization/policyDefinitions/{policyDefinitionName}
+            Operation Id: PolicyDefinitions_CreateOrUpdateAtManagementGroup
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="policyDefinitionName" /> is empty. </exception>
+          <paramref name="policyDefinitionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="policyDefinitionName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ManagementGroupPolicyDefinitionCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string policyDefinitionName, Azure.ResourceManager.Resources.PolicyDefinitionData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Resources.Models.ManagementGroupPolicyDefinitionCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string policyDefinitionName, class Azure.ResourceManager.Resources.PolicyDefinitionData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ManagementGroupPolicyDefinition&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string policyDefinitionName, Azure.ResourceManager.Resources.PolicyDefinitionData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Resources.ManagementGroupPolicyDefinition&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string policyDefinitionName, class Azure.ResourceManager.Resources.PolicyDefinitionData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ManagementGroupPolicyDefinitionCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Resources.PolicyDefinitionData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, policyDefinitionName As String, parameters As PolicyDefinitionData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ManagementGroupPolicyDefinitionCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.PolicyDefinitionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ManagementGroupPolicyDefinitionCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.PolicyDefinitionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ManagementGroupPolicyDefinitionCreateOrUpdateOperation&gt;" Usage="managementGroupPolicyDefinitionCollection.CreateOrUpdateAsync (waitForCompletion, policyDefinitionName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, policyDefinitionName As String, parameters As PolicyDefinitionData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of ManagementGroupPolicyDefinition))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.PolicyDefinitionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ManagementGroupPolicyDefinition&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.PolicyDefinitionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ManagementGroupPolicyDefinition&gt;&gt;" Usage="managementGroupPolicyDefinitionCollection.CreateOrUpdateAsync (waitForCompletion, policyDefinitionName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ManagementGroupPolicyDefinitionCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.ManagementGroupPolicyDefinition&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -102,11 +106,15 @@
         <param name="policyDefinitionName"> The name of the policy definition to create. </param>
         <param name="parameters"> The policy definition properties. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> This operation creates or updates a policy definition in the given management group with the given name. </summary>
+        <summary>
+            This operation creates or updates a policy definition in the given management group with the given name.
+            Request Path: /providers/Microsoft.Management/managementGroups/{managementGroupId}/providers/Microsoft.Authorization/policyDefinitions/{policyDefinitionName}
+            Operation Id: PolicyDefinitions_CreateOrUpdateAtManagementGroup
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="policyDefinitionName" /> is empty. </exception>
+          <paramref name="policyDefinitionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="policyDefinitionName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -132,11 +140,15 @@
       <Docs>
         <param name="policyDefinitionName"> The name of the policy definition to get. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /providers/Microsoft.Management/managementGroups/{managementGroupId}/providers/Microsoft.Authorization/policyDefinitions/{policyDefinitionName}
+            Operation Id: PolicyDefinitions_GetAtManagementGroup
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="policyDefinitionName" /> is empty. </exception>
+          <paramref name="policyDefinitionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="policyDefinitionName" /> is null. </exception>
       </Docs>
@@ -162,11 +174,15 @@
       <Docs>
         <param name="policyDefinitionName"> The name of the policy definition to get. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /providers/Microsoft.Management/managementGroups/{managementGroupId}/providers/Microsoft.Authorization/policyDefinitions/{policyDefinitionName}
+            Operation Id: PolicyDefinitions_GetAtManagementGroup
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="policyDefinitionName" /> is empty. </exception>
+          <paramref name="policyDefinitionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="policyDefinitionName" /> is null. </exception>
       </Docs>
@@ -192,11 +208,15 @@
       <Docs>
         <param name="policyDefinitionName"> The name of the policy definition to get. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> This operation retrieves the policy definition in the given management group with the given name. </summary>
+        <summary>
+            This operation retrieves the policy definition in the given management group with the given name.
+            Request Path: /providers/Microsoft.Management/managementGroups/{managementGroupId}/providers/Microsoft.Authorization/policyDefinitions/{policyDefinitionName}
+            Operation Id: PolicyDefinitions_GetAtManagementGroup
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="policyDefinitionName" /> is empty. </exception>
+          <paramref name="policyDefinitionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="policyDefinitionName" /> is null. </exception>
       </Docs>
@@ -224,7 +244,11 @@
         <param name="filter"> The filter to apply on the operation. Valid values for $filter are: 'atExactScope()', 'policyType -eq {value}' or 'category eq '{value}''. If $filter is not provided, no filtering is performed. If $filter=atExactScope() is provided, the returned list only includes all policy definitions that at the given scope. If $filter='policyType -eq {value}' is provided, the returned list only includes all policy definitions whose type match the {value}. Possible policyType values are NotSpecified, BuiltIn, Custom, and Static. If $filter='category -eq {value}' is provided, the returned list only includes all policy definitions whose category match the {value}. </param>
         <param name="top"> Maximum number of records to return. When the $top filter is not provided, it will return 500 records. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> This operation retrieves a list of all the policy definitions in a given management group that match the optional given $filter. Valid values for $filter are: 'atExactScope()', 'policyType -eq {value}' or 'category eq '{value}''. If $filter is not provided, the unfiltered list includes all policy definitions associated with the management group, including those that apply directly or from management groups that contain the given management group. If $filter=atExactScope() is provided, the returned list only includes all policy definitions that at the given management group. If $filter='policyType -eq {value}' is provided, the returned list only includes all policy definitions whose type match the {value}. Possible policyType values are NotSpecified, BuiltIn, Custom, and Static. If $filter='category -eq {value}' is provided, the returned list only includes all policy definitions whose category match the {value}. </summary>
+        <summary>
+            This operation retrieves a list of all the policy definitions in a given management group that match the optional given $filter. Valid values for $filter are: 'atExactScope()', 'policyType -eq {value}' or 'category eq '{value}''. If $filter is not provided, the unfiltered list includes all policy definitions associated with the management group, including those that apply directly or from management groups that contain the given management group. If $filter=atExactScope() is provided, the returned list only includes all policy definitions that at the given management group. If $filter='policyType -eq {value}' is provided, the returned list only includes all policy definitions whose type match the {value}. Possible policyType values are NotSpecified, BuiltIn, Custom, and Static. If $filter='category -eq {value}' is provided, the returned list only includes all policy definitions whose category match the {value}.
+            Request Path: /providers/Microsoft.Management/managementGroups/{managementGroupId}/providers/Microsoft.Authorization/policyDefinitions
+            Operation Id: PolicyDefinitions_ListByManagementGroup
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Resources.ManagementGroupPolicyDefinition" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -252,7 +276,11 @@
         <param name="filter"> The filter to apply on the operation. Valid values for $filter are: 'atExactScope()', 'policyType -eq {value}' or 'category eq '{value}''. If $filter is not provided, no filtering is performed. If $filter=atExactScope() is provided, the returned list only includes all policy definitions that at the given scope. If $filter='policyType -eq {value}' is provided, the returned list only includes all policy definitions whose type match the {value}. Possible policyType values are NotSpecified, BuiltIn, Custom, and Static. If $filter='category -eq {value}' is provided, the returned list only includes all policy definitions whose category match the {value}. </param>
         <param name="top"> Maximum number of records to return. When the $top filter is not provided, it will return 500 records. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> This operation retrieves a list of all the policy definitions in a given management group that match the optional given $filter. Valid values for $filter are: 'atExactScope()', 'policyType -eq {value}' or 'category eq '{value}''. If $filter is not provided, the unfiltered list includes all policy definitions associated with the management group, including those that apply directly or from management groups that contain the given management group. If $filter=atExactScope() is provided, the returned list only includes all policy definitions that at the given management group. If $filter='policyType -eq {value}' is provided, the returned list only includes all policy definitions whose type match the {value}. Possible policyType values are NotSpecified, BuiltIn, Custom, and Static. If $filter='category -eq {value}' is provided, the returned list only includes all policy definitions whose category match the {value}. </summary>
+        <summary>
+            This operation retrieves a list of all the policy definitions in a given management group that match the optional given $filter. Valid values for $filter are: 'atExactScope()', 'policyType -eq {value}' or 'category eq '{value}''. If $filter is not provided, the unfiltered list includes all policy definitions associated with the management group, including those that apply directly or from management groups that contain the given management group. If $filter=atExactScope() is provided, the returned list only includes all policy definitions that at the given management group. If $filter='policyType -eq {value}' is provided, the returned list only includes all policy definitions whose type match the {value}. Possible policyType values are NotSpecified, BuiltIn, Custom, and Static. If $filter='category -eq {value}' is provided, the returned list only includes all policy definitions whose category match the {value}.
+            Request Path: /providers/Microsoft.Management/managementGroups/{managementGroupId}/providers/Microsoft.Authorization/policyDefinitions
+            Operation Id: PolicyDefinitions_ListByManagementGroup
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Resources.ManagementGroupPolicyDefinition" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -278,11 +306,15 @@
       <Docs>
         <param name="policyDefinitionName"> The name of the policy definition to get. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> This operation retrieves the policy definition in the given management group with the given name. </summary>
+        <summary>
+            This operation retrieves the policy definition in the given management group with the given name.
+            Request Path: /providers/Microsoft.Management/managementGroups/{managementGroupId}/providers/Microsoft.Authorization/policyDefinitions/{policyDefinitionName}
+            Operation Id: PolicyDefinitions_GetAtManagementGroup
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="policyDefinitionName" /> is empty. </exception>
+          <paramref name="policyDefinitionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="policyDefinitionName" /> is null. </exception>
       </Docs>
@@ -308,11 +340,15 @@
       <Docs>
         <param name="policyDefinitionName"> The name of the policy definition to get. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /providers/Microsoft.Management/managementGroups/{managementGroupId}/providers/Microsoft.Authorization/policyDefinitions/{policyDefinitionName}
+            Operation Id: PolicyDefinitions_GetAtManagementGroup
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="policyDefinitionName" /> is empty. </exception>
+          <paramref name="policyDefinitionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="policyDefinitionName" /> is null. </exception>
       </Docs>
@@ -338,11 +374,15 @@
       <Docs>
         <param name="policyDefinitionName"> The name of the policy definition to get. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /providers/Microsoft.Management/managementGroups/{managementGroupId}/providers/Microsoft.Authorization/policyDefinitions/{policyDefinitionName}
+            Operation Id: PolicyDefinitions_GetAtManagementGroup
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="policyDefinitionName" /> is empty. </exception>
+          <paramref name="policyDefinitionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="policyDefinitionName" /> is null. </exception>
       </Docs>

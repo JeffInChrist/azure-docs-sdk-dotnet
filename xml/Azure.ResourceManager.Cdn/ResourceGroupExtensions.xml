@@ -36,8 +36,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a CdnWebApplicationFirewallPolicyCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Cdn.CdnWebApplicationFirewallPolicyCollection" /> object. </returns>
+        <summary> Gets a collection of CdnWebApplicationFirewallPolicies in the CdnWebApplicationFirewallPolicy. </summary>
+        <returns> An object representing collection of CdnWebApplicationFirewallPolicies and their operations over a CdnWebApplicationFirewallPolicy. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,8 +60,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a ProfileCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Cdn.ProfileCollection" /> object. </returns>
+        <summary> Gets a collection of Profiles in the Profile. </summary>
+        <returns> An object representing collection of Profiles and their operations over a Profile. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

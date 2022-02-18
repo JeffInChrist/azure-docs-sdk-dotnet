@@ -64,7 +64,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the tenants for your account. </summary>
+        <summary>
+            Gets the tenants for your account.
+            Request Path: /tenants
+            Operation Id: Tenants_List
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Resources.Tenant" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,7 +92,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the tenants for your account. </summary>
+        <summary>
+            Gets the tenants for your account.
+            Request Path: /tenants
+            Operation Id: Tenants_List
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Resources.Tenant" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,15 +1,15 @@
 <Type Name="GremlinGraphCreateUpdateOptions" FullName="Azure.ResourceManager.CosmosDB.Models.GremlinGraphCreateUpdateOptions">
-  <TypeSignature Language="C#" Value="public class GremlinGraphCreateUpdateOptions : Azure.ResourceManager.Models.TrackedResource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GremlinGraphCreateUpdateOptions extends Azure.ResourceManager.Models.TrackedResource" />
+  <TypeSignature Language="C#" Value="public class GremlinGraphCreateUpdateOptions : Azure.ResourceManager.Models.TrackedResourceData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GremlinGraphCreateUpdateOptions extends Azure.ResourceManager.Models.TrackedResourceData" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.CosmosDB.Models.GremlinGraphCreateUpdateOptions" />
-  <TypeSignature Language="VB.NET" Value="Public Class GremlinGraphCreateUpdateOptions&#xA;Inherits TrackedResource" />
-  <TypeSignature Language="F#" Value="type GremlinGraphCreateUpdateOptions = class&#xA;    inherit TrackedResource" />
+  <TypeSignature Language="VB.NET" Value="Public Class GremlinGraphCreateUpdateOptions&#xA;Inherits TrackedResourceData" />
+  <TypeSignature Language="F#" Value="type GremlinGraphCreateUpdateOptions = class&#xA;    inherit TrackedResourceData" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.Models.TrackedResource</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.Models.TrackedResourceData</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>

@@ -1,15 +1,15 @@
 <Type Name="DescendantInfo" FullName="Azure.ResourceManager.Management.Models.DescendantInfo">
-  <TypeSignature Language="C#" Value="public class DescendantInfo : Azure.ResourceManager.Models.Resource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DescendantInfo extends Azure.ResourceManager.Models.Resource" />
+  <TypeSignature Language="C#" Value="public class DescendantInfo : Azure.ResourceManager.Models.ResourceData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DescendantInfo extends Azure.ResourceManager.Models.ResourceData" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Management.Models.DescendantInfo" />
-  <TypeSignature Language="VB.NET" Value="Public Class DescendantInfo&#xA;Inherits Resource" />
-  <TypeSignature Language="F#" Value="type DescendantInfo = class&#xA;    inherit Resource" />
+  <TypeSignature Language="VB.NET" Value="Public Class DescendantInfo&#xA;Inherits ResourceData" />
+  <TypeSignature Language="F#" Value="type DescendantInfo = class&#xA;    inherit ResourceData" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.Models.Resource</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.Models.ResourceData</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>

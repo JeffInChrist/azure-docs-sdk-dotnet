@@ -64,7 +64,11 @@
       <Docs>
         <param name="checkNameAvailabilityRequest"> Management group name availability check parameters. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Checks if the specified management group name is valid and unique. </summary>
+        <summary>
+            Checks if the specified management group name is valid and unique
+            Request Path: /providers/Microsoft.Management/checkNameAvailability
+            Operation Id: ManagementGroups_CheckNameAvailability
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -92,7 +96,11 @@
       <Docs>
         <param name="checkNameAvailabilityRequest"> Management group name availability check parameters. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Checks if the specified management group name is valid and unique. </summary>
+        <summary>
+            Checks if the specified management group name is valid and unique
+            Request Path: /providers/Microsoft.Management/checkNameAvailability
+            Operation Id: ManagementGroups_CheckNameAvailability
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -100,18 +108,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Management.Models.ManagementGroupCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string groupId, Azure.ResourceManager.Management.Models.CreateManagementGroupOptions createManagementGroupRequest, string cacheControl = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Management.Models.ManagementGroupCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string groupId, class Azure.ResourceManager.Management.Models.CreateManagementGroupOptions createManagementGroupRequest, string cacheControl, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Management.ManagementGroup&gt; CreateOrUpdate (bool waitForCompletion, string groupId, Azure.ResourceManager.Management.Models.CreateManagementGroupOptions createManagementGroupRequest, string cacheControl = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Management.ManagementGroup&gt; CreateOrUpdate(bool waitForCompletion, string groupId, class Azure.ResourceManager.Management.Models.CreateManagementGroupOptions createManagementGroupRequest, string cacheControl, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Management.ManagementGroupCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Management.Models.CreateManagementGroupOptions,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, groupId As String, createManagementGroupRequest As CreateManagementGroupOptions, Optional cacheControl As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ManagementGroupCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Management.Models.CreateManagementGroupOptions * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Management.Models.ManagementGroupCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Management.Models.CreateManagementGroupOptions * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Management.Models.ManagementGroupCreateOrUpdateOperation" Usage="managementGroupCollection.CreateOrUpdate (waitForCompletion, groupId, createManagementGroupRequest, cacheControl, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, groupId As String, createManagementGroupRequest As CreateManagementGroupOptions, Optional cacheControl As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of ManagementGroup)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Management.Models.CreateManagementGroupOptions * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Management.ManagementGroup&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Management.Models.CreateManagementGroupOptions * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Management.ManagementGroup&gt;" Usage="managementGroupCollection.CreateOrUpdate (waitForCompletion, groupId, createManagementGroupRequest, cacheControl, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Management.Models.ManagementGroupCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Management.ManagementGroup&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -130,28 +138,30 @@
             Create or update a management group.
             If a management group is already created and a subsequent create request is issued with different properties, the management group properties will be updated.
             
+            Request Path: /providers/Microsoft.Management/managementGroups/{groupId}
+            Operation Id: ManagementGroups_CreateOrUpdate
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="groupId" /> is empty. </exception>
+          <paramref name="groupId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> or <paramref name="createManagementGroupRequest" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Management.Models.ManagementGroupCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string groupId, Azure.ResourceManager.Management.Models.CreateManagementGroupOptions createManagementGroupRequest, string cacheControl = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Management.Models.ManagementGroupCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string groupId, class Azure.ResourceManager.Management.Models.CreateManagementGroupOptions createManagementGroupRequest, string cacheControl, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Management.ManagementGroup&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string groupId, Azure.ResourceManager.Management.Models.CreateManagementGroupOptions createManagementGroupRequest, string cacheControl = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Management.ManagementGroup&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string groupId, class Azure.ResourceManager.Management.Models.CreateManagementGroupOptions createManagementGroupRequest, string cacheControl, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Management.ManagementGroupCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Management.Models.CreateManagementGroupOptions,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, groupId As String, createManagementGroupRequest As CreateManagementGroupOptions, Optional cacheControl As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ManagementGroupCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Management.Models.CreateManagementGroupOptions * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Management.Models.ManagementGroupCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Management.Models.CreateManagementGroupOptions * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Management.Models.ManagementGroupCreateOrUpdateOperation&gt;" Usage="managementGroupCollection.CreateOrUpdateAsync (waitForCompletion, groupId, createManagementGroupRequest, cacheControl, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, groupId As String, createManagementGroupRequest As CreateManagementGroupOptions, Optional cacheControl As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of ManagementGroup))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Management.Models.CreateManagementGroupOptions * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Management.ManagementGroup&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Management.Models.CreateManagementGroupOptions * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Management.ManagementGroup&gt;&gt;" Usage="managementGroupCollection.CreateOrUpdateAsync (waitForCompletion, groupId, createManagementGroupRequest, cacheControl, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Management.Models.ManagementGroupCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Management.ManagementGroup&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -170,11 +180,13 @@
             Create or update a management group.
             If a management group is already created and a subsequent create request is issued with different properties, the management group properties will be updated.
             
+            Request Path: /providers/Microsoft.Management/managementGroups/{groupId}
+            Operation Id: ManagementGroups_CreateOrUpdate
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="groupId" /> is empty. </exception>
+          <paramref name="groupId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> or <paramref name="createManagementGroupRequest" /> is null. </exception>
       </Docs>
@@ -208,11 +220,15 @@
         <param name="filter"> A filter which allows the exclusion of subscriptions from results (i.e. '$filter=children.childType ne Subscription'). </param>
         <param name="cacheControl"> Indicates whether the request should utilize any caches. Populate the header with 'no-cache' value to bypass existing caches. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /providers/Microsoft.Management/managementGroups/{groupId}
+            Operation Id: ManagementGroups_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="groupId" /> is empty. </exception>
+          <paramref name="groupId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> is null. </exception>
       </Docs>
@@ -246,11 +262,15 @@
         <param name="filter"> A filter which allows the exclusion of subscriptions from results (i.e. '$filter=children.childType ne Subscription'). </param>
         <param name="cacheControl"> Indicates whether the request should utilize any caches. Populate the header with 'no-cache' value to bypass existing caches. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /providers/Microsoft.Management/managementGroups/{groupId}
+            Operation Id: ManagementGroups_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="groupId" /> is empty. </exception>
+          <paramref name="groupId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> is null. </exception>
       </Docs>
@@ -287,11 +307,13 @@
         <summary>
             Get the details of the management group.
             
+            Request Path: /providers/Microsoft.Management/managementGroups/{groupId}
+            Operation Id: ManagementGroups_Get
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="groupId" /> is empty. </exception>
+          <paramref name="groupId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> is null. </exception>
       </Docs>
@@ -326,6 +348,8 @@
         <summary>
             List management groups for the authenticated user.
             
+            Request Path: /providers/Microsoft.Management/managementGroups
+            Operation Id: ManagementGroups_List
             </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Management.ManagementGroup" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
@@ -361,6 +385,8 @@
         <summary>
             List management groups for the authenticated user.
             
+            Request Path: /providers/Microsoft.Management/managementGroups
+            Operation Id: ManagementGroups_List
             </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Management.ManagementGroup" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
@@ -398,11 +424,13 @@
         <summary>
             Get the details of the management group.
             
+            Request Path: /providers/Microsoft.Management/managementGroups/{groupId}
+            Operation Id: ManagementGroups_Get
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="groupId" /> is empty. </exception>
+          <paramref name="groupId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> is null. </exception>
       </Docs>
@@ -436,11 +464,15 @@
         <param name="filter"> A filter which allows the exclusion of subscriptions from results (i.e. '$filter=children.childType ne Subscription'). </param>
         <param name="cacheControl"> Indicates whether the request should utilize any caches. Populate the header with 'no-cache' value to bypass existing caches. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /providers/Microsoft.Management/managementGroups/{groupId}
+            Operation Id: ManagementGroups_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="groupId" /> is empty. </exception>
+          <paramref name="groupId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> is null. </exception>
       </Docs>
@@ -474,11 +506,15 @@
         <param name="filter"> A filter which allows the exclusion of subscriptions from results (i.e. '$filter=children.childType ne Subscription'). </param>
         <param name="cacheControl"> Indicates whether the request should utilize any caches. Populate the header with 'no-cache' value to bypass existing caches. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /providers/Microsoft.Management/managementGroups/{groupId}
+            Operation Id: ManagementGroups_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="groupId" /> is empty. </exception>
+          <paramref name="groupId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> is null. </exception>
       </Docs>

@@ -184,18 +184,18 @@
       </Docs>
     </Member>
     <Member MemberName="PrimaryScriptUri">
-      <MemberSignature Language="C#" Value="public string PrimaryScriptUri { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string PrimaryScriptUri" />
+      <MemberSignature Language="C#" Value="public Uri PrimaryScriptUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri PrimaryScriptUri" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.AzureCliScript.PrimaryScriptUri" />
-      <MemberSignature Language="VB.NET" Value="Public Property PrimaryScriptUri As String" />
-      <MemberSignature Language="F#" Value="member this.PrimaryScriptUri : string with get, set" Usage="Azure.ResourceManager.Resources.Models.AzureCliScript.PrimaryScriptUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrimaryScriptUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.PrimaryScriptUri : Uri with get, set" Usage="Azure.ResourceManager.Resources.Models.AzureCliScript.PrimaryScriptUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Uri for the script. This is the entry point for the external script. </summary>

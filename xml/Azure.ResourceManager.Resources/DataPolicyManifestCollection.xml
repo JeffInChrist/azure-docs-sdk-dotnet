@@ -64,11 +64,15 @@
       <Docs>
         <param name="policyMode"> The policy mode of the data policy manifest to get. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /providers/Microsoft.Authorization/dataPolicyManifests/{policyMode}
+            Operation Id: DataPolicyManifests_GetByPolicyMode
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="policyMode" /> is empty. </exception>
+          <paramref name="policyMode" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="policyMode" /> is null. </exception>
       </Docs>
@@ -94,11 +98,15 @@
       <Docs>
         <param name="policyMode"> The policy mode of the data policy manifest to get. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /providers/Microsoft.Authorization/dataPolicyManifests/{policyMode}
+            Operation Id: DataPolicyManifests_GetByPolicyMode
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="policyMode" /> is empty. </exception>
+          <paramref name="policyMode" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="policyMode" /> is null. </exception>
       </Docs>
@@ -124,11 +132,15 @@
       <Docs>
         <param name="policyMode"> The policy mode of the data policy manifest to get. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> This operation retrieves the data policy manifest with the given policy mode. </summary>
+        <summary>
+            This operation retrieves the data policy manifest with the given policy mode.
+            Request Path: /providers/Microsoft.Authorization/dataPolicyManifests/{policyMode}
+            Operation Id: DataPolicyManifests_GetByPolicyMode
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="policyMode" /> is empty. </exception>
+          <paramref name="policyMode" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="policyMode" /> is null. </exception>
       </Docs>
@@ -154,7 +166,11 @@
       <Docs>
         <param name="filter"> The filter to apply on the operation. Valid values for $filter are: "namespace eq '{value}'". If $filter is not provided, no filtering is performed. If $filter=namespace eq '{value}' is provided, the returned list only includes all data policy manifests that have a namespace matching the provided value. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> This operation retrieves a list of all the data policy manifests that match the optional given $filter. Valid values for $filter are: "$filter=namespace eq '{0}'". If $filter is not provided, the unfiltered list includes all data policy manifests for data resource types. If $filter=namespace is provided, the returned list only includes all data policy manifests that have a namespace matching the provided value. </summary>
+        <summary>
+            This operation retrieves a list of all the data policy manifests that match the optional given $filter. Valid values for $filter are: "$filter=namespace eq '{0}'". If $filter is not provided, the unfiltered list includes all data policy manifests for data resource types. If $filter=namespace is provided, the returned list only includes all data policy manifests that have a namespace matching the provided value.
+            Request Path: /providers/Microsoft.Authorization/dataPolicyManifests
+            Operation Id: DataPolicyManifests_List
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Resources.DataPolicyManifest" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -180,7 +196,11 @@
       <Docs>
         <param name="filter"> The filter to apply on the operation. Valid values for $filter are: "namespace eq '{value}'". If $filter is not provided, no filtering is performed. If $filter=namespace eq '{value}' is provided, the returned list only includes all data policy manifests that have a namespace matching the provided value. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> This operation retrieves a list of all the data policy manifests that match the optional given $filter. Valid values for $filter are: "$filter=namespace eq '{0}'". If $filter is not provided, the unfiltered list includes all data policy manifests for data resource types. If $filter=namespace is provided, the returned list only includes all data policy manifests that have a namespace matching the provided value. </summary>
+        <summary>
+            This operation retrieves a list of all the data policy manifests that match the optional given $filter. Valid values for $filter are: "$filter=namespace eq '{0}'". If $filter is not provided, the unfiltered list includes all data policy manifests for data resource types. If $filter=namespace is provided, the returned list only includes all data policy manifests that have a namespace matching the provided value.
+            Request Path: /providers/Microsoft.Authorization/dataPolicyManifests
+            Operation Id: DataPolicyManifests_List
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Resources.DataPolicyManifest" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -206,11 +226,15 @@
       <Docs>
         <param name="policyMode"> The policy mode of the data policy manifest to get. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> This operation retrieves the data policy manifest with the given policy mode. </summary>
+        <summary>
+            This operation retrieves the data policy manifest with the given policy mode.
+            Request Path: /providers/Microsoft.Authorization/dataPolicyManifests/{policyMode}
+            Operation Id: DataPolicyManifests_GetByPolicyMode
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="policyMode" /> is empty. </exception>
+          <paramref name="policyMode" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="policyMode" /> is null. </exception>
       </Docs>
@@ -236,11 +260,15 @@
       <Docs>
         <param name="policyMode"> The policy mode of the data policy manifest to get. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /providers/Microsoft.Authorization/dataPolicyManifests/{policyMode}
+            Operation Id: DataPolicyManifests_GetByPolicyMode
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="policyMode" /> is empty. </exception>
+          <paramref name="policyMode" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="policyMode" /> is null. </exception>
       </Docs>
@@ -266,11 +294,15 @@
       <Docs>
         <param name="policyMode"> The policy mode of the data policy manifest to get. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /providers/Microsoft.Authorization/dataPolicyManifests/{policyMode}
+            Operation Id: DataPolicyManifests_GetByPolicyMode
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="policyMode" /> is empty. </exception>
+          <paramref name="policyMode" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="policyMode" /> is null. </exception>
       </Docs>
