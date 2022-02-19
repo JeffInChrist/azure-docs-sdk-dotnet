@@ -36,8 +36,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a StorageAccountCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Storage.StorageAccountCollection" /> object. </returns>
+        <summary> Gets a collection of StorageAccounts in the StorageAccount. </summary>
+        <returns> An object representing collection of StorageAccounts and their operations over a StorageAccount. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

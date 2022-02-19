@@ -1,15 +1,15 @@
 <Type Name="TableServiceData" FullName="Azure.ResourceManager.Storage.TableServiceData">
-  <TypeSignature Language="C#" Value="public class TableServiceData : Azure.ResourceManager.Models.Resource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TableServiceData extends Azure.ResourceManager.Models.Resource" />
+  <TypeSignature Language="C#" Value="public class TableServiceData : Azure.ResourceManager.Models.ResourceData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TableServiceData extends Azure.ResourceManager.Models.ResourceData" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Storage.TableServiceData" />
-  <TypeSignature Language="VB.NET" Value="Public Class TableServiceData&#xA;Inherits Resource" />
-  <TypeSignature Language="F#" Value="type TableServiceData = class&#xA;    inherit Resource" />
+  <TypeSignature Language="VB.NET" Value="Public Class TableServiceData&#xA;Inherits ResourceData" />
+  <TypeSignature Language="F#" Value="type TableServiceData = class&#xA;    inherit ResourceData" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.Models.Resource</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.Models.ResourceData</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>

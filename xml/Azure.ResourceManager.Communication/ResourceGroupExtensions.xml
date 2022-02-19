@@ -36,8 +36,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a CommunicationServiceCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Communication.CommunicationServiceCollection" /> object. </returns>
+        <summary> Gets a collection of CommunicationServices in the CommunicationService. </summary>
+        <returns> An object representing collection of CommunicationServices and their operations over a CommunicationService. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

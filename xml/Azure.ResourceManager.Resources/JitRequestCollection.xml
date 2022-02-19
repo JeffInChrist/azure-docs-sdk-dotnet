@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.Models.JitRequestCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string jitRequestName, Azure.ResourceManager.Resources.JitRequestData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Models.JitRequestCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string jitRequestName, class Azure.ResourceManager.Resources.JitRequestData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.JitRequest&gt; CreateOrUpdate (bool waitForCompletion, string jitRequestName, Azure.ResourceManager.Resources.JitRequestData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Resources.JitRequest&gt; CreateOrUpdate(bool waitForCompletion, string jitRequestName, class Azure.ResourceManager.Resources.JitRequestData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.JitRequestCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Resources.JitRequestData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, jitRequestName As String, parameters As JitRequestData, Optional cancellationToken As CancellationToken = Nothing) As JitRequestCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.JitRequestData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Resources.Models.JitRequestCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.JitRequestData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Resources.Models.JitRequestCreateOrUpdateOperation" Usage="jitRequestCollection.CreateOrUpdate (waitForCompletion, jitRequestName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, jitRequestName As String, parameters As JitRequestData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of JitRequest)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.JitRequestData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.JitRequest&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.JitRequestData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.JitRequest&gt;" Usage="jitRequestCollection.CreateOrUpdate (waitForCompletion, jitRequestName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.JitRequestCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.JitRequest&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -68,28 +68,32 @@
         <param name="jitRequestName"> The name of the JIT request. </param>
         <param name="parameters"> Parameters supplied to the update JIT request. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Creates or updates the JIT request. </summary>
+        <summary>
+            Creates or updates the JIT request.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/jitRequests/{jitRequestName}
+            Operation Id: JitRequests_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="jitRequestName" /> is empty. </exception>
+          <paramref name="jitRequestName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="jitRequestName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.JitRequestCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string jitRequestName, Azure.ResourceManager.Resources.JitRequestData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Resources.Models.JitRequestCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string jitRequestName, class Azure.ResourceManager.Resources.JitRequestData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.JitRequest&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string jitRequestName, Azure.ResourceManager.Resources.JitRequestData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Resources.JitRequest&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string jitRequestName, class Azure.ResourceManager.Resources.JitRequestData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.JitRequestCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Resources.JitRequestData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, jitRequestName As String, parameters As JitRequestData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of JitRequestCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.JitRequestData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.JitRequestCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.JitRequestData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.JitRequestCreateOrUpdateOperation&gt;" Usage="jitRequestCollection.CreateOrUpdateAsync (waitForCompletion, jitRequestName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, jitRequestName As String, parameters As JitRequestData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of JitRequest))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.JitRequestData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.JitRequest&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.JitRequestData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.JitRequest&gt;&gt;" Usage="jitRequestCollection.CreateOrUpdateAsync (waitForCompletion, jitRequestName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.JitRequestCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.JitRequest&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -102,11 +106,15 @@
         <param name="jitRequestName"> The name of the JIT request. </param>
         <param name="parameters"> Parameters supplied to the update JIT request. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Creates or updates the JIT request. </summary>
+        <summary>
+            Creates or updates the JIT request.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/jitRequests/{jitRequestName}
+            Operation Id: JitRequests_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="jitRequestName" /> is empty. </exception>
+          <paramref name="jitRequestName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="jitRequestName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -132,11 +140,15 @@
       <Docs>
         <param name="jitRequestName"> The name of the JIT request. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/jitRequests/{jitRequestName}
+            Operation Id: JitRequests_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="jitRequestName" /> is empty. </exception>
+          <paramref name="jitRequestName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="jitRequestName" /> is null. </exception>
       </Docs>
@@ -162,11 +174,15 @@
       <Docs>
         <param name="jitRequestName"> The name of the JIT request. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/jitRequests/{jitRequestName}
+            Operation Id: JitRequests_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="jitRequestName" /> is empty. </exception>
+          <paramref name="jitRequestName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="jitRequestName" /> is null. </exception>
       </Docs>
@@ -192,11 +208,15 @@
       <Docs>
         <param name="jitRequestName"> The name of the JIT request. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the JIT request. </summary>
+        <summary>
+            Gets the JIT request.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/jitRequests/{jitRequestName}
+            Operation Id: JitRequests_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="jitRequestName" /> is empty. </exception>
+          <paramref name="jitRequestName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="jitRequestName" /> is null. </exception>
       </Docs>
@@ -220,7 +240,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Retrieves all JIT requests within the resource group. </summary>
+        <summary>
+            Retrieves all JIT requests within the resource group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/jitRequests
+            Operation Id: JitRequests_ListByResourceGroup
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Resources.JitRequest" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -244,7 +268,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Retrieves all JIT requests within the resource group. </summary>
+        <summary>
+            Retrieves all JIT requests within the resource group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/jitRequests
+            Operation Id: JitRequests_ListByResourceGroup
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Resources.JitRequest" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -270,11 +298,15 @@
       <Docs>
         <param name="jitRequestName"> The name of the JIT request. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the JIT request. </summary>
+        <summary>
+            Gets the JIT request.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/jitRequests/{jitRequestName}
+            Operation Id: JitRequests_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="jitRequestName" /> is empty. </exception>
+          <paramref name="jitRequestName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="jitRequestName" /> is null. </exception>
       </Docs>
@@ -300,11 +332,15 @@
       <Docs>
         <param name="jitRequestName"> The name of the JIT request. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/jitRequests/{jitRequestName}
+            Operation Id: JitRequests_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="jitRequestName" /> is empty. </exception>
+          <paramref name="jitRequestName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="jitRequestName" /> is null. </exception>
       </Docs>
@@ -330,11 +366,15 @@
       <Docs>
         <param name="jitRequestName"> The name of the JIT request. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/jitRequests/{jitRequestName}
+            Operation Id: JitRequests_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="jitRequestName" /> is empty. </exception>
+          <paramref name="jitRequestName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="jitRequestName" /> is null. </exception>
       </Docs>

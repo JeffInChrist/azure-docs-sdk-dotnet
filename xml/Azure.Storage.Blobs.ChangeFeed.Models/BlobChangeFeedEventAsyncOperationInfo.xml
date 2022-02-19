@@ -1,0 +1,89 @@
+<Type Name="BlobChangeFeedEventAsyncOperationInfo" FullName="Azure.Storage.Blobs.ChangeFeed.Models.BlobChangeFeedEventAsyncOperationInfo">
+  <TypeSignature Language="C#" Value="public class BlobChangeFeedEventAsyncOperationInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BlobChangeFeedEventAsyncOperationInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.Storage.Blobs.ChangeFeed.Models.BlobChangeFeedEventAsyncOperationInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class BlobChangeFeedEventAsyncOperationInfo" />
+  <TypeSignature Language="F#" Value="type BlobChangeFeedEventAsyncOperationInfo = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Storage.Blobs.ChangeFeed</AssemblyName>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            ChangeFeedEventAsyncOperationInfo.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CopyId">
+      <MemberSignature Language="C#" Value="public string CopyId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CopyId" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Blobs.ChangeFeed.Models.BlobChangeFeedEventAsyncOperationInfo.CopyId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CopyId As String" />
+      <MemberSignature Language="F#" Value="member this.CopyId : string" Usage="Azure.Storage.Blobs.ChangeFeed.Models.BlobChangeFeedEventAsyncOperationInfo.CopyId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Blobs.ChangeFeed</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Copy Id.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DestinationAccessTier">
+      <MemberSignature Language="C#" Value="public Azure.Storage.Blobs.Models.AccessTier? DestinationAccessTier { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.Storage.Blobs.Models.AccessTier&gt; DestinationAccessTier" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Blobs.ChangeFeed.Models.BlobChangeFeedEventAsyncOperationInfo.DestinationAccessTier" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DestinationAccessTier As Nullable(Of AccessTier)" />
+      <MemberSignature Language="F#" Value="member this.DestinationAccessTier : Nullable&lt;Azure.Storage.Blobs.Models.AccessTier&gt;" Usage="Azure.Storage.Blobs.ChangeFeed.Models.BlobChangeFeedEventAsyncOperationInfo.DestinationAccessTier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Blobs.ChangeFeed</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.Storage.Blobs.Models.AccessTier&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            DestinationAccessTier.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WasAsyncOperation">
+      <MemberSignature Language="C#" Value="public bool WasAsyncOperation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool WasAsyncOperation" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Blobs.ChangeFeed.Models.BlobChangeFeedEventAsyncOperationInfo.WasAsyncOperation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WasAsyncOperation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.WasAsyncOperation : bool" Usage="Azure.Storage.Blobs.ChangeFeed.Models.BlobChangeFeedEventAsyncOperationInfo.WasAsyncOperation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Blobs.ChangeFeed</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If the operation was async.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

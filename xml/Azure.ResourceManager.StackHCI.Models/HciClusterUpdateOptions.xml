@@ -1,0 +1,137 @@
+<Type Name="HciClusterUpdateOptions" FullName="Azure.ResourceManager.StackHCI.Models.HciClusterUpdateOptions">
+  <TypeSignature Language="C#" Value="public class HciClusterUpdateOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HciClusterUpdateOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.StackHCI.Models.HciClusterUpdateOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class HciClusterUpdateOptions" />
+  <TypeSignature Language="F#" Value="type HciClusterUpdateOptions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> Cluster details to update. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HciClusterUpdateOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.StackHCI.Models.HciClusterUpdateOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of HciClusterUpdateOptions. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AadClientId">
+      <MemberSignature Language="C#" Value="public string AadClientId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AadClientId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.Models.HciClusterUpdateOptions.AadClientId" />
+      <MemberSignature Language="VB.NET" Value="Public Property AadClientId As String" />
+      <MemberSignature Language="F#" Value="member this.AadClientId : string with get, set" Usage="Azure.ResourceManager.StackHCI.Models.HciClusterUpdateOptions.AadClientId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> App id of cluster AAD identity. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AadTenantId">
+      <MemberSignature Language="C#" Value="public string AadTenantId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AadTenantId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.Models.HciClusterUpdateOptions.AadTenantId" />
+      <MemberSignature Language="VB.NET" Value="Public Property AadTenantId As String" />
+      <MemberSignature Language="F#" Value="member this.AadTenantId : string with get, set" Usage="Azure.ResourceManager.StackHCI.Models.HciClusterUpdateOptions.AadTenantId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Tenant id of cluster AAD identity. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloudManagementEndpoint">
+      <MemberSignature Language="C#" Value="public string CloudManagementEndpoint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CloudManagementEndpoint" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.Models.HciClusterUpdateOptions.CloudManagementEndpoint" />
+      <MemberSignature Language="VB.NET" Value="Public Property CloudManagementEndpoint As String" />
+      <MemberSignature Language="F#" Value="member this.CloudManagementEndpoint : string with get, set" Usage="Azure.ResourceManager.StackHCI.Models.HciClusterUpdateOptions.CloudManagementEndpoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Endpoint configured for management from the Azure portal. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DesiredProperties">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.StackHCI.Models.ClusterDesiredProperties DesiredProperties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.StackHCI.Models.ClusterDesiredProperties DesiredProperties" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.Models.HciClusterUpdateOptions.DesiredProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Property DesiredProperties As ClusterDesiredProperties" />
+      <MemberSignature Language="F#" Value="member this.DesiredProperties : Azure.ResourceManager.StackHCI.Models.ClusterDesiredProperties with get, set" Usage="Azure.ResourceManager.StackHCI.Models.HciClusterUpdateOptions.DesiredProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.StackHCI.Models.ClusterDesiredProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Desired properties of the cluster. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tags">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; Tags { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; Tags" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.Models.HciClusterUpdateOptions.Tags" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tags As IDictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.Tags : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="Azure.ResourceManager.StackHCI.Models.HciClusterUpdateOptions.Tags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Resource tags. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

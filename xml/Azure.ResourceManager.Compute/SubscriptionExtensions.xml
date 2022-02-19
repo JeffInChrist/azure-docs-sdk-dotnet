@@ -18,18 +18,18 @@
   </Docs>
   <Members>
     <Member MemberName="ExportRequestRateByIntervalLogAnalytic">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Compute.Models.ExportRequestRateByIntervalLogAnalyticOperation ExportRequestRateByIntervalLogAnalytic (this Azure.ResourceManager.Resources.Subscription subscription, bool waitForCompletion, string location, Azure.ResourceManager.Compute.Models.RequestRateByIntervalInput parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Compute.Models.ExportRequestRateByIntervalLogAnalyticOperation ExportRequestRateByIntervalLogAnalytic(class Azure.ResourceManager.Resources.Subscription subscription, bool waitForCompletion, string location, class Azure.ResourceManager.Compute.Models.RequestRateByIntervalInput parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.LogAnalytics&gt; ExportRequestRateByIntervalLogAnalytic (this Azure.ResourceManager.Resources.Subscription subscription, bool waitForCompletion, string location, Azure.ResourceManager.Compute.Models.RequestRateByIntervalInput parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.Models.LogAnalytics&gt; ExportRequestRateByIntervalLogAnalytic(class Azure.ResourceManager.Resources.Subscription subscription, bool waitForCompletion, string location, class Azure.ResourceManager.Compute.Models.RequestRateByIntervalInput parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.SubscriptionExtensions.ExportRequestRateByIntervalLogAnalytic(Azure.ResourceManager.Resources.Subscription,System.Boolean,System.String,Azure.ResourceManager.Compute.Models.RequestRateByIntervalInput,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ExportRequestRateByIntervalLogAnalytic (subscription As Subscription, waitForCompletion As Boolean, location As String, parameters As RequestRateByIntervalInput, Optional cancellationToken As CancellationToken = Nothing) As ExportRequestRateByIntervalLogAnalyticOperation" />
-      <MemberSignature Language="F#" Value="static member ExportRequestRateByIntervalLogAnalytic : Azure.ResourceManager.Resources.Subscription * bool * string * Azure.ResourceManager.Compute.Models.RequestRateByIntervalInput * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.ExportRequestRateByIntervalLogAnalyticOperation" Usage="Azure.ResourceManager.Compute.SubscriptionExtensions.ExportRequestRateByIntervalLogAnalytic (subscription, waitForCompletion, location, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ExportRequestRateByIntervalLogAnalytic (subscription As Subscription, waitForCompletion As Boolean, location As String, parameters As RequestRateByIntervalInput, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of LogAnalytics)" />
+      <MemberSignature Language="F#" Value="static member ExportRequestRateByIntervalLogAnalytic : Azure.ResourceManager.Resources.Subscription * bool * string * Azure.ResourceManager.Compute.Models.RequestRateByIntervalInput * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.LogAnalytics&gt;" Usage="Azure.ResourceManager.Compute.SubscriptionExtensions.ExportRequestRateByIntervalLogAnalytic (subscription, waitForCompletion, location, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.ExportRequestRateByIntervalLogAnalyticOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.LogAnalytics&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
@@ -44,28 +44,32 @@
         <param name="location"> The location upon which virtual-machine-sizes is queried. </param>
         <param name="parameters"> Parameters supplied to the LogAnalytics getRequestRateByInterval Api. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
+        <summary>
+            Export logs that show Api requests made by this subscription in the given time window to show throttling activities.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/logAnalytics/apiAccess/getRequestRateByInterval
+            Operation Id: LogAnalytics_ExportRequestRateByInterval
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> is empty. </exception>
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ExportRequestRateByIntervalLogAnalyticAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.ExportRequestRateByIntervalLogAnalyticOperation&gt; ExportRequestRateByIntervalLogAnalyticAsync (this Azure.ResourceManager.Resources.Subscription subscription, bool waitForCompletion, string location, Azure.ResourceManager.Compute.Models.RequestRateByIntervalInput parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.ExportRequestRateByIntervalLogAnalyticOperation&gt; ExportRequestRateByIntervalLogAnalyticAsync(class Azure.ResourceManager.Resources.Subscription subscription, bool waitForCompletion, string location, class Azure.ResourceManager.Compute.Models.RequestRateByIntervalInput parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.LogAnalytics&gt;&gt; ExportRequestRateByIntervalLogAnalyticAsync (this Azure.ResourceManager.Resources.Subscription subscription, bool waitForCompletion, string location, Azure.ResourceManager.Compute.Models.RequestRateByIntervalInput parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.Models.LogAnalytics&gt;&gt; ExportRequestRateByIntervalLogAnalyticAsync(class Azure.ResourceManager.Resources.Subscription subscription, bool waitForCompletion, string location, class Azure.ResourceManager.Compute.Models.RequestRateByIntervalInput parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.SubscriptionExtensions.ExportRequestRateByIntervalLogAnalyticAsync(Azure.ResourceManager.Resources.Subscription,System.Boolean,System.String,Azure.ResourceManager.Compute.Models.RequestRateByIntervalInput,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ExportRequestRateByIntervalLogAnalyticAsync (subscription As Subscription, waitForCompletion As Boolean, location As String, parameters As RequestRateByIntervalInput, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ExportRequestRateByIntervalLogAnalyticOperation)" />
-      <MemberSignature Language="F#" Value="static member ExportRequestRateByIntervalLogAnalyticAsync : Azure.ResourceManager.Resources.Subscription * bool * string * Azure.ResourceManager.Compute.Models.RequestRateByIntervalInput * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.ExportRequestRateByIntervalLogAnalyticOperation&gt;" Usage="Azure.ResourceManager.Compute.SubscriptionExtensions.ExportRequestRateByIntervalLogAnalyticAsync (subscription, waitForCompletion, location, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ExportRequestRateByIntervalLogAnalyticAsync (subscription As Subscription, waitForCompletion As Boolean, location As String, parameters As RequestRateByIntervalInput, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of LogAnalytics))" />
+      <MemberSignature Language="F#" Value="static member ExportRequestRateByIntervalLogAnalyticAsync : Azure.ResourceManager.Resources.Subscription * bool * string * Azure.ResourceManager.Compute.Models.RequestRateByIntervalInput * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.LogAnalytics&gt;&gt;" Usage="Azure.ResourceManager.Compute.SubscriptionExtensions.ExportRequestRateByIntervalLogAnalyticAsync (subscription, waitForCompletion, location, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.ExportRequestRateByIntervalLogAnalyticOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.LogAnalytics&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
@@ -80,28 +84,32 @@
         <param name="location"> The location upon which virtual-machine-sizes is queried. </param>
         <param name="parameters"> Parameters supplied to the LogAnalytics getRequestRateByInterval Api. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
+        <summary>
+            Export logs that show Api requests made by this subscription in the given time window to show throttling activities.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/logAnalytics/apiAccess/getRequestRateByInterval
+            Operation Id: LogAnalytics_ExportRequestRateByInterval
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> is empty. </exception>
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ExportThrottledRequestsLogAnalytic">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Compute.Models.ExportThrottledRequestsLogAnalyticOperation ExportThrottledRequestsLogAnalytic (this Azure.ResourceManager.Resources.Subscription subscription, bool waitForCompletion, string location, Azure.ResourceManager.Compute.Models.ThrottledRequestsInput parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Compute.Models.ExportThrottledRequestsLogAnalyticOperation ExportThrottledRequestsLogAnalytic(class Azure.ResourceManager.Resources.Subscription subscription, bool waitForCompletion, string location, class Azure.ResourceManager.Compute.Models.ThrottledRequestsInput parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.LogAnalytics&gt; ExportThrottledRequestsLogAnalytic (this Azure.ResourceManager.Resources.Subscription subscription, bool waitForCompletion, string location, Azure.ResourceManager.Compute.Models.ThrottledRequestsInput parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.Models.LogAnalytics&gt; ExportThrottledRequestsLogAnalytic(class Azure.ResourceManager.Resources.Subscription subscription, bool waitForCompletion, string location, class Azure.ResourceManager.Compute.Models.ThrottledRequestsInput parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.SubscriptionExtensions.ExportThrottledRequestsLogAnalytic(Azure.ResourceManager.Resources.Subscription,System.Boolean,System.String,Azure.ResourceManager.Compute.Models.ThrottledRequestsInput,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ExportThrottledRequestsLogAnalytic (subscription As Subscription, waitForCompletion As Boolean, location As String, parameters As ThrottledRequestsInput, Optional cancellationToken As CancellationToken = Nothing) As ExportThrottledRequestsLogAnalyticOperation" />
-      <MemberSignature Language="F#" Value="static member ExportThrottledRequestsLogAnalytic : Azure.ResourceManager.Resources.Subscription * bool * string * Azure.ResourceManager.Compute.Models.ThrottledRequestsInput * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.ExportThrottledRequestsLogAnalyticOperation" Usage="Azure.ResourceManager.Compute.SubscriptionExtensions.ExportThrottledRequestsLogAnalytic (subscription, waitForCompletion, location, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ExportThrottledRequestsLogAnalytic (subscription As Subscription, waitForCompletion As Boolean, location As String, parameters As ThrottledRequestsInput, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of LogAnalytics)" />
+      <MemberSignature Language="F#" Value="static member ExportThrottledRequestsLogAnalytic : Azure.ResourceManager.Resources.Subscription * bool * string * Azure.ResourceManager.Compute.Models.ThrottledRequestsInput * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.LogAnalytics&gt;" Usage="Azure.ResourceManager.Compute.SubscriptionExtensions.ExportThrottledRequestsLogAnalytic (subscription, waitForCompletion, location, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.ExportThrottledRequestsLogAnalyticOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.LogAnalytics&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
@@ -116,28 +124,32 @@
         <param name="location"> The location upon which virtual-machine-sizes is queried. </param>
         <param name="parameters"> Parameters supplied to the LogAnalytics getThrottledRequests Api. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
+        <summary>
+            Export logs that show total throttled Api requests for this subscription in the given time window.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/logAnalytics/apiAccess/getThrottledRequests
+            Operation Id: LogAnalytics_ExportThrottledRequests
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> is empty. </exception>
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ExportThrottledRequestsLogAnalyticAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.ExportThrottledRequestsLogAnalyticOperation&gt; ExportThrottledRequestsLogAnalyticAsync (this Azure.ResourceManager.Resources.Subscription subscription, bool waitForCompletion, string location, Azure.ResourceManager.Compute.Models.ThrottledRequestsInput parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.ExportThrottledRequestsLogAnalyticOperation&gt; ExportThrottledRequestsLogAnalyticAsync(class Azure.ResourceManager.Resources.Subscription subscription, bool waitForCompletion, string location, class Azure.ResourceManager.Compute.Models.ThrottledRequestsInput parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.LogAnalytics&gt;&gt; ExportThrottledRequestsLogAnalyticAsync (this Azure.ResourceManager.Resources.Subscription subscription, bool waitForCompletion, string location, Azure.ResourceManager.Compute.Models.ThrottledRequestsInput parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.Models.LogAnalytics&gt;&gt; ExportThrottledRequestsLogAnalyticAsync(class Azure.ResourceManager.Resources.Subscription subscription, bool waitForCompletion, string location, class Azure.ResourceManager.Compute.Models.ThrottledRequestsInput parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.SubscriptionExtensions.ExportThrottledRequestsLogAnalyticAsync(Azure.ResourceManager.Resources.Subscription,System.Boolean,System.String,Azure.ResourceManager.Compute.Models.ThrottledRequestsInput,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ExportThrottledRequestsLogAnalyticAsync (subscription As Subscription, waitForCompletion As Boolean, location As String, parameters As ThrottledRequestsInput, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ExportThrottledRequestsLogAnalyticOperation)" />
-      <MemberSignature Language="F#" Value="static member ExportThrottledRequestsLogAnalyticAsync : Azure.ResourceManager.Resources.Subscription * bool * string * Azure.ResourceManager.Compute.Models.ThrottledRequestsInput * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.ExportThrottledRequestsLogAnalyticOperation&gt;" Usage="Azure.ResourceManager.Compute.SubscriptionExtensions.ExportThrottledRequestsLogAnalyticAsync (subscription, waitForCompletion, location, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ExportThrottledRequestsLogAnalyticAsync (subscription As Subscription, waitForCompletion As Boolean, location As String, parameters As ThrottledRequestsInput, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of LogAnalytics))" />
+      <MemberSignature Language="F#" Value="static member ExportThrottledRequestsLogAnalyticAsync : Azure.ResourceManager.Resources.Subscription * bool * string * Azure.ResourceManager.Compute.Models.ThrottledRequestsInput * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.LogAnalytics&gt;&gt;" Usage="Azure.ResourceManager.Compute.SubscriptionExtensions.ExportThrottledRequestsLogAnalyticAsync (subscription, waitForCompletion, location, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.ExportThrottledRequestsLogAnalyticOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.LogAnalytics&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscription" Type="Azure.ResourceManager.Resources.Subscription" RefType="this" />
@@ -152,11 +164,15 @@
         <param name="location"> The location upon which virtual-machine-sizes is queried. </param>
         <param name="parameters"> Parameters supplied to the LogAnalytics getThrottledRequests Api. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
+        <summary>
+            Export logs that show total throttled Api requests for this subscription in the given time window.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/logAnalytics/apiAccess/getThrottledRequests
+            Operation Id: LogAnalytics_ExportThrottledRequests
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> is empty. </exception>
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -184,8 +200,12 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="expand"> The expand expression to apply to the operation. Allowed values are 'instanceView'. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the AvailabilitySets for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all availability sets in a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/availabilitySets
+            Operation Id: AvailabilitySets_ListBySubscription
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.AvailabilitySet" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,8 +232,12 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="expand"> The expand expression to apply to the operation. Allowed values are 'instanceView'. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the AvailabilitySets for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all availability sets in a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/availabilitySets
+            Operation Id: AvailabilitySets_ListBySubscription
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.AvailabilitySet" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,8 +264,12 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="expand"> The expand expression to apply on the operation. Based on the expand param(s) specified we return Virtual Machine or ScaleSet VM Instance or both resource Ids which are associated to capacity reservation group in the response. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all of the capacity reservation groups in the subscription. Use the nextLink property in the response to get the next page of capacity reservation groups.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/capacityReservationGroups
+            Operation Id: CapacityReservationGroups_ListBySubscription
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.CapacityReservationGroup" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,8 +296,12 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="expand"> The expand expression to apply on the operation. Based on the expand param(s) specified we return Virtual Machine or ScaleSet VM Instance or both resource Ids which are associated to capacity reservation group in the response. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all of the capacity reservation groups in the subscription. Use the nextLink property in the response to get the next page of capacity reservation groups.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/capacityReservationGroups
+            Operation Id: CapacityReservationGroups_ListBySubscription
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.CapacityReservationGroup" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -294,8 +326,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the CloudServices for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets a list of all cloud services in the subscription, regardless of the associated resource group. Use nextLink property in the response to get the next page of Cloud Services. Do this till nextLink is null to fetch all the Cloud Services.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/cloudServices
+            Operation Id: CloudServices_ListAll
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.CloudService" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -320,8 +356,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the CloudServices for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets a list of all cloud services in the subscription, regardless of the associated resource group. Use nextLink property in the response to get the next page of Cloud Services. Do this till nextLink is null to fetch all the Cloud Services.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/cloudServices
+            Operation Id: CloudServices_ListAll
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.CloudService" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -350,11 +390,15 @@
         <param name="location"> Resource location. </param>
         <param name="publicGalleryName"> The public name of the community gallery. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
+        <summary>
+            Get a community gallery by gallery public name.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/communityGalleries/{publicGalleryName}
+            Operation Id: CommunityGalleries_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> or <paramref name="publicGalleryName" /> is empty. </exception>
+          <paramref name="location" /> or <paramref name="publicGalleryName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="publicGalleryName" /> is null. </exception>
       </Docs>
@@ -384,11 +428,15 @@
         <param name="location"> Resource location. </param>
         <param name="publicGalleryName"> The public name of the community gallery. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
+        <summary>
+            Get a community gallery by gallery public name.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/communityGalleries/{publicGalleryName}
+            Operation Id: CommunityGalleries_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> or <paramref name="publicGalleryName" /> is empty. </exception>
+          <paramref name="location" /> or <paramref name="publicGalleryName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="publicGalleryName" /> is null. </exception>
       </Docs>
@@ -420,13 +468,17 @@
         <param name="publicGalleryName"> The public name of the community gallery. </param>
         <param name="galleryImageName"> The name of the community gallery image definition. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
+        <summary>
+            Get a community gallery image.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/communityGalleries/{publicGalleryName}/images/{galleryImageName}
+            Operation Id: CommunityGalleryImages_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" />, <paramref name="publicGalleryName" />, or <paramref name="galleryImageName" /> is empty. </exception>
+          <paramref name="location" />, <paramref name="publicGalleryName" /> or <paramref name="galleryImageName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="location" />, <paramref name="publicGalleryName" />, or <paramref name="galleryImageName" /> is null. </exception>
+          <paramref name="location" />, <paramref name="publicGalleryName" /> or <paramref name="galleryImageName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetCommunityGalleryImageAsync">
@@ -456,13 +508,17 @@
         <param name="publicGalleryName"> The public name of the community gallery. </param>
         <param name="galleryImageName"> The name of the community gallery image definition. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
+        <summary>
+            Get a community gallery image.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/communityGalleries/{publicGalleryName}/images/{galleryImageName}
+            Operation Id: CommunityGalleryImages_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" />, <paramref name="publicGalleryName" />, or <paramref name="galleryImageName" /> is empty. </exception>
+          <paramref name="location" />, <paramref name="publicGalleryName" /> or <paramref name="galleryImageName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="location" />, <paramref name="publicGalleryName" />, or <paramref name="galleryImageName" /> is null. </exception>
+          <paramref name="location" />, <paramref name="publicGalleryName" /> or <paramref name="galleryImageName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetCommunityGalleryImageVersion">
@@ -494,13 +550,17 @@
         <param name="galleryImageName"> The name of the community gallery image definition. </param>
         <param name="galleryImageVersionName"> The name of the community gallery image version. Needs to follow semantic version name pattern: The allowed characters are digit and period. Digits must be within the range of a 32-bit integer. Format: &lt;MajorVersion&gt;.&lt;MinorVersion&gt;.&lt;Patch&gt;. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
+        <summary>
+            Get a community gallery image version.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/communityGalleries/{publicGalleryName}/images/{galleryImageName}/versions/{galleryImageVersionName}
+            Operation Id: CommunityGalleryImageVersions_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" />, <paramref name="publicGalleryName" />, <paramref name="galleryImageName" />, or <paramref name="galleryImageVersionName" /> is empty. </exception>
+          <paramref name="location" />, <paramref name="publicGalleryName" />, <paramref name="galleryImageName" /> or <paramref name="galleryImageVersionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="location" />, <paramref name="publicGalleryName" />, <paramref name="galleryImageName" />, or <paramref name="galleryImageVersionName" /> is null. </exception>
+          <paramref name="location" />, <paramref name="publicGalleryName" />, <paramref name="galleryImageName" /> or <paramref name="galleryImageVersionName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetCommunityGalleryImageVersionAsync">
@@ -532,13 +592,17 @@
         <param name="galleryImageName"> The name of the community gallery image definition. </param>
         <param name="galleryImageVersionName"> The name of the community gallery image version. Needs to follow semantic version name pattern: The allowed characters are digit and period. Digits must be within the range of a 32-bit integer. Format: &lt;MajorVersion&gt;.&lt;MinorVersion&gt;.&lt;Patch&gt;. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
+        <summary>
+            Get a community gallery image version.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/communityGalleries/{publicGalleryName}/images/{galleryImageName}/versions/{galleryImageVersionName}
+            Operation Id: CommunityGalleryImageVersions_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" />, <paramref name="publicGalleryName" />, <paramref name="galleryImageName" />, or <paramref name="galleryImageVersionName" /> is empty. </exception>
+          <paramref name="location" />, <paramref name="publicGalleryName" />, <paramref name="galleryImageName" /> or <paramref name="galleryImageVersionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="location" />, <paramref name="publicGalleryName" />, <paramref name="galleryImageName" />, or <paramref name="galleryImageVersionName" /> is null. </exception>
+          <paramref name="location" />, <paramref name="publicGalleryName" />, <paramref name="galleryImageName" /> or <paramref name="galleryImageVersionName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDedicatedHostGroups">
@@ -562,8 +626,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the DedicatedHostGroups for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all of the dedicated host groups in the subscription. Use the nextLink property in the response to get the next page of dedicated host groups.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/hostGroups
+            Operation Id: DedicatedHostGroups_ListBySubscription
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.DedicatedHostGroup" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -588,8 +656,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the DedicatedHostGroups for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all of the dedicated host groups in the subscription. Use the nextLink property in the response to get the next page of dedicated host groups.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/hostGroups
+            Operation Id: DedicatedHostGroups_ListBySubscription
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.DedicatedHostGroup" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -614,8 +686,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the DiskAccesses for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all the disk access resources under a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/diskAccesses
+            Operation Id: DiskAccesses_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.DiskAccess" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -640,8 +716,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the DiskAccesses for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all the disk access resources under a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/diskAccesses
+            Operation Id: DiskAccesses_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.DiskAccess" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -666,8 +746,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the DiskEncryptionSets for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all the disk encryption sets under a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/diskEncryptionSets
+            Operation Id: DiskEncryptionSets_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.DiskEncryptionSet" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -692,8 +776,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the DiskEncryptionSets for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all the disk encryption sets under a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/diskEncryptionSets
+            Operation Id: DiskEncryptionSets_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.DiskEncryptionSet" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -718,8 +806,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the Disks for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all the disks under a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/disks
+            Operation Id: Disks_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.Disk" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -744,8 +836,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the Disks for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all the disks under a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/disks
+            Operation Id: Disks_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.Disk" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -770,8 +866,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the Galleries for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            List galleries under a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/galleries
+            Operation Id: Galleries_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.Gallery" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -796,8 +896,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the Galleries for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            List galleries under a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/galleries
+            Operation Id: Galleries_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.Gallery" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -822,8 +926,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the Images for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets the list of Images in the subscription. Use nextLink property in the response to get the next page of Images. Do this till nextLink is null to fetch all the Images.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/images
+            Operation Id: Images_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.Image" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -848,8 +956,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the Images for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets the list of Images in the subscription. Use nextLink property in the response to get the next page of Images. Do this till nextLink is null to fetch all the Images.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/images
+            Operation Id: Images_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.Image" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -878,11 +990,15 @@
         <param name="location"> The name of a supported Azure region. </param>
         <param name="publisherName"> A valid image publisher. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a list of virtual machine image offers for the specified location and publisher. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets a list of virtual machine image offers for the specified location and publisher.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers/{publisherName}/artifacttypes/vmimage/offers
+            Operation Id: VirtualMachineImages_ListOffers
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.Models.VirtualMachineImageResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> or <paramref name="publisherName" /> is empty. </exception>
+          <paramref name="location" /> or <paramref name="publisherName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="publisherName" /> is null. </exception>
       </Docs>
@@ -912,11 +1028,15 @@
         <param name="location"> The name of a supported Azure region. </param>
         <param name="publisherName"> A valid image publisher. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a list of virtual machine image offers for the specified location and publisher. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets a list of virtual machine image offers for the specified location and publisher.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers/{publisherName}/artifacttypes/vmimage/offers
+            Operation Id: VirtualMachineImages_ListOffers
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.Models.VirtualMachineImageResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> or <paramref name="publisherName" /> is empty. </exception>
+          <paramref name="location" /> or <paramref name="publisherName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="publisherName" /> is null. </exception>
       </Docs>
@@ -948,13 +1068,17 @@
         <param name="edgeZone"> The name of the edge zone. </param>
         <param name="publisherName"> A valid image publisher. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a list of virtual machine image offers for the specified location, edge zone and publisher. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets a list of virtual machine image offers for the specified location, edge zone and publisher.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/edgeZones/{edgeZone}/publishers/{publisherName}/artifacttypes/vmimage/offers
+            Operation Id: VirtualMachineImagesEdgeZone_ListOffers
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.Models.VirtualMachineImageResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" />, <paramref name="edgeZone" />, or <paramref name="publisherName" /> is empty. </exception>
+          <paramref name="location" />, <paramref name="edgeZone" /> or <paramref name="publisherName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="location" />, <paramref name="edgeZone" />, or <paramref name="publisherName" /> is null. </exception>
+          <paramref name="location" />, <paramref name="edgeZone" /> or <paramref name="publisherName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetOffersVirtualMachineImagesEdgeZonesAsync">
@@ -984,13 +1108,17 @@
         <param name="edgeZone"> The name of the edge zone. </param>
         <param name="publisherName"> A valid image publisher. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a list of virtual machine image offers for the specified location, edge zone and publisher. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets a list of virtual machine image offers for the specified location, edge zone and publisher.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/edgeZones/{edgeZone}/publishers/{publisherName}/artifacttypes/vmimage/offers
+            Operation Id: VirtualMachineImagesEdgeZone_ListOffers
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.Models.VirtualMachineImageResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" />, <paramref name="edgeZone" />, or <paramref name="publisherName" /> is empty. </exception>
+          <paramref name="location" />, <paramref name="edgeZone" /> or <paramref name="publisherName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="location" />, <paramref name="edgeZone" />, or <paramref name="publisherName" /> is null. </exception>
+          <paramref name="location" />, <paramref name="edgeZone" /> or <paramref name="publisherName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetOSFamilies">
@@ -1014,9 +1142,13 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="location"> Name of the location that the OS families pertain to. </param>
-        <summary> Gets an object representing a OSFamilyCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Compute.OSFamilyCollection" /> object. </returns>
+        <summary> Gets a collection of OSFamilies in the OSFamily. </summary>
+        <returns> An object representing collection of OSFamilies and their operations over a OSFamily. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="location" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetOSVersions">
@@ -1040,9 +1172,13 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="location"> Name of the location that the OS versions pertain to. </param>
-        <summary> Gets an object representing a OSVersionCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Compute.OSVersionCollection" /> object. </returns>
+        <summary> Gets a collection of OSVersions in the OSVersion. </summary>
+        <returns> An object representing collection of OSVersions and their operations over a OSVersion. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="location" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetProximityPlacementGroups">
@@ -1066,8 +1202,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the ProximityPlacementGroups for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all proximity placement groups in a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/proximityPlacementGroups
+            Operation Id: ProximityPlacementGroups_ListBySubscription
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.ProximityPlacementGroup" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1092,8 +1232,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the ProximityPlacementGroups for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all proximity placement groups in a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/proximityPlacementGroups
+            Operation Id: ProximityPlacementGroups_ListBySubscription
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.ProximityPlacementGroup" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1120,11 +1264,15 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="location"> The name of a supported Azure region. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a list of virtual machine image publishers for the specified Azure location. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets a list of virtual machine image publishers for the specified Azure location.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers
+            Operation Id: VirtualMachineImages_ListPublishers
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.Models.VirtualMachineImageResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> is empty. </exception>
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -1152,11 +1300,15 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="location"> The name of a supported Azure region. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a list of virtual machine image publishers for the specified Azure location. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets a list of virtual machine image publishers for the specified Azure location.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers
+            Operation Id: VirtualMachineImages_ListPublishers
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.Models.VirtualMachineImageResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> is empty. </exception>
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -1186,11 +1338,15 @@
         <param name="location"> The name of a supported Azure region. </param>
         <param name="edgeZone"> The name of the edge zone. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a list of virtual machine image publishers for the specified Azure location and edge zone. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets a list of virtual machine image publishers for the specified Azure location and edge zone.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/edgeZones/{edgeZone}/publishers
+            Operation Id: VirtualMachineImagesEdgeZone_ListPublishers
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.Models.VirtualMachineImageResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> or <paramref name="edgeZone" /> is empty. </exception>
+          <paramref name="location" /> or <paramref name="edgeZone" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="edgeZone" /> is null. </exception>
       </Docs>
@@ -1220,11 +1376,15 @@
         <param name="location"> The name of a supported Azure region. </param>
         <param name="edgeZone"> The name of the edge zone. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a list of virtual machine image publishers for the specified Azure location and edge zone. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets a list of virtual machine image publishers for the specified Azure location and edge zone.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/edgeZones/{edgeZone}/publishers
+            Operation Id: VirtualMachineImagesEdgeZone_ListPublishers
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.Models.VirtualMachineImageResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> or <paramref name="edgeZone" /> is empty. </exception>
+          <paramref name="location" /> or <paramref name="edgeZone" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="edgeZone" /> is null. </exception>
       </Docs>
@@ -1254,8 +1414,12 @@
         <param name="filter"> The filter to apply on the operation. Only **location** filter is supported currently. </param>
         <param name="includeExtendedLocations"> To Include Extended Locations information or not in the response. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets the list of Microsoft.Compute SKUs available for your Subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/skus
+            Operation Id: ResourceSkus_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.Models.ResourceSku" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1284,8 +1448,12 @@
         <param name="filter"> The filter to apply on the operation. Only **location** filter is supported currently. </param>
         <param name="includeExtendedLocations"> To Include Extended Locations information or not in the response. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets the list of Microsoft.Compute SKUs available for your Subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/skus
+            Operation Id: ResourceSkus_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.Models.ResourceSku" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1310,8 +1478,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets the list of restore point collections in the subscription. Use nextLink property in the response to get the next page of restore point collections. Do this till nextLink is not null to fetch all the restore point collections.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/restorePointCollections
+            Operation Id: RestorePointCollections_ListAll
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.RestorePointGroup" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1336,8 +1508,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets the list of restore point collections in the subscription. Use nextLink property in the response to get the next page of restore point collections. Do this till nextLink is not null to fetch all the restore point collections.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/restorePointCollections
+            Operation Id: RestorePointCollections_ListAll
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.RestorePointGroup" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1362,9 +1538,13 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="location"> Resource location. </param>
-        <summary> Gets an object representing a SharedGalleryCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Compute.SharedGalleryCollection" /> object. </returns>
+        <summary> Gets a collection of SharedGalleries in the SharedGallery. </summary>
+        <returns> An object representing collection of SharedGalleries and their operations over a SharedGallery. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="location" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetSnapshots">
@@ -1388,8 +1568,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the Snapshots for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists snapshots under a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/snapshots
+            Operation Id: Snapshots_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.Snapshot" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1414,8 +1598,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the Snapshots for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists snapshots under a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/snapshots
+            Operation Id: Snapshots_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.Snapshot" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1440,8 +1628,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the SshPublicKeys for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all of the SSH public keys in the subscription. Use the nextLink property in the response to get the next page of SSH public keys.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/sshPublicKeys
+            Operation Id: SshPublicKeys_ListBySubscription
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.SshPublicKey" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1466,8 +1658,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the SshPublicKeys for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all of the SSH public keys in the subscription. Use the nextLink property in the response to get the next page of SSH public keys.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/sshPublicKeys
+            Operation Id: SshPublicKeys_ListBySubscription
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.SshPublicKey" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1494,11 +1690,15 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="location"> The location for which resource usage is queried. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the Usages for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets, for the specified location, the current compute resource usage information as well as the limits for compute resources under the subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/usages
+            Operation Id: Usage_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.Models.Usage" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> is empty. </exception>
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -1526,11 +1726,15 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="location"> The location for which resource usage is queried. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the Usages for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets, for the specified location, the current compute resource usage information as well as the limits for compute resources under the subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/usages
+            Operation Id: Usage_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.Models.Usage" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> is empty. </exception>
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -1558,9 +1762,13 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="location"> The name of a supported Azure region. </param>
         <param name="publisherName"> The String to use. </param>
-        <summary> Gets an object representing a VirtualMachineExtensionImageCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Compute.VirtualMachineExtensionImageCollection" /> object. </returns>
+        <summary> Gets a collection of VirtualMachineExtensionImages in the VirtualMachineExtensionImage. </summary>
+        <returns> An object representing collection of VirtualMachineExtensionImages and their operations over a VirtualMachineExtensionImage. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="location" /> or <paramref name="publisherName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="location" /> or <paramref name="publisherName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetVirtualMachineImage">
@@ -1594,13 +1802,17 @@
         <param name="skus"> A valid image SKU. </param>
         <param name="version"> A valid image SKU version. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a virtual machine image. </summary>
+        <summary>
+            Gets a virtual machine image.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers/{publisherName}/artifacttypes/vmimage/offers/{offer}/skus/{skus}/versions/{version}
+            Operation Id: VirtualMachineImages_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" />, <paramref name="publisherName" />, <paramref name="offer" />, <paramref name="skus" />, or <paramref name="version" /> is empty. </exception>
+          <paramref name="location" />, <paramref name="publisherName" />, <paramref name="offer" />, <paramref name="skus" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="location" />, <paramref name="publisherName" />, <paramref name="offer" />, <paramref name="skus" />, or <paramref name="version" /> is null. </exception>
+          <paramref name="location" />, <paramref name="publisherName" />, <paramref name="offer" />, <paramref name="skus" /> or <paramref name="version" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetVirtualMachineImageAsync">
@@ -1634,13 +1846,17 @@
         <param name="skus"> A valid image SKU. </param>
         <param name="version"> A valid image SKU version. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a virtual machine image. </summary>
+        <summary>
+            Gets a virtual machine image.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers/{publisherName}/artifacttypes/vmimage/offers/{offer}/skus/{skus}/versions/{version}
+            Operation Id: VirtualMachineImages_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" />, <paramref name="publisherName" />, <paramref name="offer" />, <paramref name="skus" />, or <paramref name="version" /> is empty. </exception>
+          <paramref name="location" />, <paramref name="publisherName" />, <paramref name="offer" />, <paramref name="skus" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="location" />, <paramref name="publisherName" />, <paramref name="offer" />, <paramref name="skus" />, or <paramref name="version" /> is null. </exception>
+          <paramref name="location" />, <paramref name="publisherName" />, <paramref name="offer" />, <paramref name="skus" /> or <paramref name="version" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetVirtualMachineImageEdgeZoneSkus">
@@ -1672,13 +1888,17 @@
         <param name="publisherName"> A valid image publisher. </param>
         <param name="offer"> A valid image publisher offer. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets a list of virtual machine image SKUs for the specified location, edge zone, publisher, and offer.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/edgeZones/{edgeZone}/publishers/{publisherName}/artifacttypes/vmimage/offers/{offer}/skus
+            Operation Id: VirtualMachineImagesEdgeZone_ListSkus
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.Models.VirtualMachineImageResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" />, <paramref name="edgeZone" />, <paramref name="publisherName" />, or <paramref name="offer" /> is empty. </exception>
+          <paramref name="location" />, <paramref name="edgeZone" />, <paramref name="publisherName" /> or <paramref name="offer" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="location" />, <paramref name="edgeZone" />, <paramref name="publisherName" />, or <paramref name="offer" /> is null. </exception>
+          <paramref name="location" />, <paramref name="edgeZone" />, <paramref name="publisherName" /> or <paramref name="offer" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetVirtualMachineImageEdgeZoneSkusAsync">
@@ -1710,13 +1930,17 @@
         <param name="publisherName"> A valid image publisher. </param>
         <param name="offer"> A valid image publisher offer. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets a list of virtual machine image SKUs for the specified location, edge zone, publisher, and offer.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/edgeZones/{edgeZone}/publishers/{publisherName}/artifacttypes/vmimage/offers/{offer}/skus
+            Operation Id: VirtualMachineImagesEdgeZone_ListSkus
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.Models.VirtualMachineImageResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" />, <paramref name="edgeZone" />, <paramref name="publisherName" />, or <paramref name="offer" /> is empty. </exception>
+          <paramref name="location" />, <paramref name="edgeZone" />, <paramref name="publisherName" /> or <paramref name="offer" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="location" />, <paramref name="edgeZone" />, <paramref name="publisherName" />, or <paramref name="offer" /> is null. </exception>
+          <paramref name="location" />, <paramref name="edgeZone" />, <paramref name="publisherName" /> or <paramref name="offer" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetVirtualMachineImages">
@@ -1754,13 +1978,17 @@
         <param name="top"> The Integer to use. </param>
         <param name="orderby"> The String to use. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a list of all virtual machine image versions for the specified location, publisher, offer, and SKU. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets a list of all virtual machine image versions for the specified location, publisher, offer, and SKU.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers/{publisherName}/artifacttypes/vmimage/offers/{offer}/skus/{skus}/versions
+            Operation Id: VirtualMachineImages_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.Models.VirtualMachineImageResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" />, <paramref name="publisherName" />, <paramref name="offer" />, or <paramref name="skus" /> is empty. </exception>
+          <paramref name="location" />, <paramref name="publisherName" />, <paramref name="offer" /> or <paramref name="skus" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="location" />, <paramref name="publisherName" />, <paramref name="offer" />, or <paramref name="skus" /> is null. </exception>
+          <paramref name="location" />, <paramref name="publisherName" />, <paramref name="offer" /> or <paramref name="skus" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetVirtualMachineImagesAsync">
@@ -1798,13 +2026,17 @@
         <param name="top"> The Integer to use. </param>
         <param name="orderby"> The String to use. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a list of all virtual machine image versions for the specified location, publisher, offer, and SKU. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets a list of all virtual machine image versions for the specified location, publisher, offer, and SKU.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers/{publisherName}/artifacttypes/vmimage/offers/{offer}/skus/{skus}/versions
+            Operation Id: VirtualMachineImages_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.Models.VirtualMachineImageResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" />, <paramref name="publisherName" />, <paramref name="offer" />, or <paramref name="skus" /> is empty. </exception>
+          <paramref name="location" />, <paramref name="publisherName" />, <paramref name="offer" /> or <paramref name="skus" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="location" />, <paramref name="publisherName" />, <paramref name="offer" />, or <paramref name="skus" /> is null. </exception>
+          <paramref name="location" />, <paramref name="publisherName" />, <paramref name="offer" /> or <paramref name="skus" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetVirtualMachineImagesEdgeZone">
@@ -1840,13 +2072,17 @@
         <param name="skus"> A valid image SKU. </param>
         <param name="version"> A valid image SKU version. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a virtual machine image in an edge zone. </summary>
+        <summary>
+            Gets a virtual machine image in an edge zone.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/edgeZones/{edgeZone}/publishers/{publisherName}/artifacttypes/vmimage/offers/{offer}/skus/{skus}/versions/{version}
+            Operation Id: VirtualMachineImagesEdgeZone_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" />, <paramref name="edgeZone" />, <paramref name="publisherName" />, <paramref name="offer" />, <paramref name="skus" />, or <paramref name="version" /> is empty. </exception>
+          <paramref name="location" />, <paramref name="edgeZone" />, <paramref name="publisherName" />, <paramref name="offer" />, <paramref name="skus" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="location" />, <paramref name="edgeZone" />, <paramref name="publisherName" />, <paramref name="offer" />, <paramref name="skus" />, or <paramref name="version" /> is null. </exception>
+          <paramref name="location" />, <paramref name="edgeZone" />, <paramref name="publisherName" />, <paramref name="offer" />, <paramref name="skus" /> or <paramref name="version" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetVirtualMachineImagesEdgeZoneAsync">
@@ -1882,13 +2118,17 @@
         <param name="skus"> A valid image SKU. </param>
         <param name="version"> A valid image SKU version. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a virtual machine image in an edge zone. </summary>
+        <summary>
+            Gets a virtual machine image in an edge zone.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/edgeZones/{edgeZone}/publishers/{publisherName}/artifacttypes/vmimage/offers/{offer}/skus/{skus}/versions/{version}
+            Operation Id: VirtualMachineImagesEdgeZone_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" />, <paramref name="edgeZone" />, <paramref name="publisherName" />, <paramref name="offer" />, <paramref name="skus" />, or <paramref name="version" /> is empty. </exception>
+          <paramref name="location" />, <paramref name="edgeZone" />, <paramref name="publisherName" />, <paramref name="offer" />, <paramref name="skus" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="location" />, <paramref name="edgeZone" />, <paramref name="publisherName" />, <paramref name="offer" />, <paramref name="skus" />, or <paramref name="version" /> is null. </exception>
+          <paramref name="location" />, <paramref name="edgeZone" />, <paramref name="publisherName" />, <paramref name="offer" />, <paramref name="skus" /> or <paramref name="version" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetVirtualMachineImagesEdgeZones">
@@ -1928,13 +2168,17 @@
         <param name="top"> An integer value specifying the number of images to return that matches supplied values. </param>
         <param name="orderby"> Specifies the order of the results returned. Formatted as an OData query. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a list of all virtual machine image versions for the specified location, edge zone, publisher, offer, and SKU. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets a list of all virtual machine image versions for the specified location, edge zone, publisher, offer, and SKU.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/edgeZones/{edgeZone}/publishers/{publisherName}/artifacttypes/vmimage/offers/{offer}/skus/{skus}/versions
+            Operation Id: VirtualMachineImagesEdgeZone_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.Models.VirtualMachineImageResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" />, <paramref name="edgeZone" />, <paramref name="publisherName" />, <paramref name="offer" />, or <paramref name="skus" /> is empty. </exception>
+          <paramref name="location" />, <paramref name="edgeZone" />, <paramref name="publisherName" />, <paramref name="offer" /> or <paramref name="skus" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="location" />, <paramref name="edgeZone" />, <paramref name="publisherName" />, <paramref name="offer" />, or <paramref name="skus" /> is null. </exception>
+          <paramref name="location" />, <paramref name="edgeZone" />, <paramref name="publisherName" />, <paramref name="offer" /> or <paramref name="skus" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetVirtualMachineImagesEdgeZonesAsync">
@@ -1974,13 +2218,17 @@
         <param name="top"> An integer value specifying the number of images to return that matches supplied values. </param>
         <param name="orderby"> Specifies the order of the results returned. Formatted as an OData query. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a list of all virtual machine image versions for the specified location, edge zone, publisher, offer, and SKU. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets a list of all virtual machine image versions for the specified location, edge zone, publisher, offer, and SKU.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/edgeZones/{edgeZone}/publishers/{publisherName}/artifacttypes/vmimage/offers/{offer}/skus/{skus}/versions
+            Operation Id: VirtualMachineImagesEdgeZone_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.Models.VirtualMachineImageResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" />, <paramref name="edgeZone" />, <paramref name="publisherName" />, <paramref name="offer" />, or <paramref name="skus" /> is empty. </exception>
+          <paramref name="location" />, <paramref name="edgeZone" />, <paramref name="publisherName" />, <paramref name="offer" /> or <paramref name="skus" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="location" />, <paramref name="edgeZone" />, <paramref name="publisherName" />, <paramref name="offer" />, or <paramref name="skus" /> is null. </exception>
+          <paramref name="location" />, <paramref name="edgeZone" />, <paramref name="publisherName" />, <paramref name="offer" /> or <paramref name="skus" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetVirtualMachineImageSkus">
@@ -2010,13 +2258,17 @@
         <param name="publisherName"> A valid image publisher. </param>
         <param name="offer"> A valid image publisher offer. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets a list of virtual machine image SKUs for the specified location, publisher, and offer.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers/{publisherName}/artifacttypes/vmimage/offers/{offer}/skus
+            Operation Id: VirtualMachineImages_ListSkus
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.Models.VirtualMachineImageResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" />, <paramref name="publisherName" />, or <paramref name="offer" /> is empty. </exception>
+          <paramref name="location" />, <paramref name="publisherName" /> or <paramref name="offer" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="location" />, <paramref name="publisherName" />, or <paramref name="offer" /> is null. </exception>
+          <paramref name="location" />, <paramref name="publisherName" /> or <paramref name="offer" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetVirtualMachineImageSkusAsync">
@@ -2046,13 +2298,17 @@
         <param name="publisherName"> A valid image publisher. </param>
         <param name="offer"> A valid image publisher offer. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets a list of virtual machine image SKUs for the specified location, publisher, and offer.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers/{publisherName}/artifacttypes/vmimage/offers/{offer}/skus
+            Operation Id: VirtualMachineImages_ListSkus
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.Models.VirtualMachineImageResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" />, <paramref name="publisherName" />, or <paramref name="offer" /> is empty. </exception>
+          <paramref name="location" />, <paramref name="publisherName" /> or <paramref name="offer" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="location" />, <paramref name="publisherName" />, or <paramref name="offer" /> is null. </exception>
+          <paramref name="location" />, <paramref name="publisherName" /> or <paramref name="offer" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetVirtualMachineRunCommand">
@@ -2080,11 +2336,15 @@
         <param name="location"> The location upon which run commands is queried. </param>
         <param name="commandId"> The command id. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets specific run command for a subscription in a location. </summary>
+        <summary>
+            Gets specific run command for a subscription in a location.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/runCommands/{commandId}
+            Operation Id: VirtualMachineRunCommands_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> or <paramref name="commandId" /> is empty. </exception>
+          <paramref name="location" /> or <paramref name="commandId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="commandId" /> is null. </exception>
       </Docs>
@@ -2114,11 +2374,15 @@
         <param name="location"> The location upon which run commands is queried. </param>
         <param name="commandId"> The command id. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets specific run command for a subscription in a location. </summary>
+        <summary>
+            Gets specific run command for a subscription in a location.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/runCommands/{commandId}
+            Operation Id: VirtualMachineRunCommands_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> or <paramref name="commandId" /> is empty. </exception>
+          <paramref name="location" /> or <paramref name="commandId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> or <paramref name="commandId" /> is null. </exception>
       </Docs>
@@ -2146,11 +2410,15 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="location"> The location upon which run commands is queried. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the RunCommandDocumentBases for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all available run commands for a subscription in a location.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/runCommands
+            Operation Id: VirtualMachineRunCommands_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.Models.RunCommandDocumentBase" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> is empty. </exception>
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -2178,11 +2446,15 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="location"> The location upon which run commands is queried. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the RunCommandDocumentBases for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all available run commands for a subscription in a location.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/runCommands
+            Operation Id: VirtualMachineRunCommands_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.Models.RunCommandDocumentBase" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> is empty. </exception>
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -2210,8 +2482,12 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="statusOnly"> statusOnly=true enables fetching run time status of all Virtual Machines in the subscription. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the VirtualMachines for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all of the virtual machines in the specified subscription. Use the nextLink property in the response to get the next page of virtual machines.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/virtualMachines
+            Operation Id: VirtualMachines_ListAll
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.VirtualMachine" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2238,8 +2514,12 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="statusOnly"> statusOnly=true enables fetching run time status of all Virtual Machines in the subscription. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the VirtualMachines for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists all of the virtual machines in the specified subscription. Use the nextLink property in the response to get the next page of virtual machines.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/virtualMachines
+            Operation Id: VirtualMachines_ListAll
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.VirtualMachine" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2266,11 +2546,15 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="location"> The location for which virtual machines under the subscription are queried. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the VirtualMachineData for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets all the virtual machines under the specified subscription for the specified location.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/virtualMachines
+            Operation Id: VirtualMachines_ListByLocation
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.VirtualMachine" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> is empty. </exception>
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -2298,11 +2582,15 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="location"> The location for which virtual machines under the subscription are queried. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the VirtualMachineData for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets all the virtual machines under the specified subscription for the specified location.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/virtualMachines
+            Operation Id: VirtualMachines_ListByLocation
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.VirtualMachine" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> is empty. </exception>
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -2328,8 +2616,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the VirtualMachineScaleSets for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets a list of all VM Scale Sets in the subscription, regardless of the associated resource group. Use nextLink property in the response to get the next page of VM Scale Sets. Do this till nextLink is null to fetch all the VM Scale Sets.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/virtualMachineScaleSets
+            Operation Id: VirtualMachineScaleSets_ListAll
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.VirtualMachineScaleSet" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2354,8 +2646,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the VirtualMachineScaleSets for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets a list of all VM Scale Sets in the subscription, regardless of the associated resource group. Use nextLink property in the response to get the next page of VM Scale Sets. Do this till nextLink is null to fetch all the VM Scale Sets.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/virtualMachineScaleSets
+            Operation Id: VirtualMachineScaleSets_ListAll
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.VirtualMachineScaleSet" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2382,11 +2678,15 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="location"> The location for which VM scale sets under the subscription are queried. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the VirtualMachineScaleSetData for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets all the VM scale sets under the specified subscription for the specified location.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/virtualMachineScaleSets
+            Operation Id: VirtualMachineScaleSets_ListByLocation
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.VirtualMachineScaleSet" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> is empty. </exception>
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -2414,11 +2714,15 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="location"> The location for which VM scale sets under the subscription are queried. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the VirtualMachineScaleSetData for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets all the VM scale sets under the specified subscription for the specified location.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/virtualMachineScaleSets
+            Operation Id: VirtualMachineScaleSets_ListByLocation
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.VirtualMachineScaleSet" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> is empty. </exception>
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -2446,11 +2750,15 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="location"> The location upon which virtual-machine-sizes is queried. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the VirtualMachineSizes for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            This API is deprecated. Use [Resources Skus](https://docs.microsoft.com/rest/api/compute/resourceskus/list)
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/vmSizes
+            Operation Id: VirtualMachineSizes_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.Models.VirtualMachineSize" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> is empty. </exception>
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>
@@ -2478,11 +2786,15 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="location"> The location upon which virtual-machine-sizes is queried. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the VirtualMachineSizes for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            This API is deprecated. Use [Resources Skus](https://docs.microsoft.com/rest/api/compute/resourceskus/list)
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/vmSizes
+            Operation Id: VirtualMachineSizes_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.Models.VirtualMachineSize" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="location" /> is empty. </exception>
+          <paramref name="location" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="location" /> is null. </exception>
       </Docs>

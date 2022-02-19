@@ -23,7 +23,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary> A class representing collection of JobExecution and their operations over its parent. </summary>
+    <summary> A class representing collection of ServerJobAgentJobExecution and their operations over its parent. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -44,57 +44,65 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.JobExecutionCreateOrUpdateOperation CreateOrUpdate (Guid jobExecutionId, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.JobExecutionCreateOrUpdateOperation CreateOrUpdate(valuetype System.Guid jobExecutionId, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerJobAgentJobExecutionCollection.CreateOrUpdate(System.Guid,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (jobExecutionId As Guid, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As JobExecutionCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : Guid * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.JobExecutionCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : Guid * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.JobExecutionCreateOrUpdateOperation" Usage="serverJobAgentJobExecutionCollection.CreateOrUpdate (jobExecutionId, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.ServerJobAgentJobExecution&gt; CreateOrUpdate (bool waitForCompletion, Guid jobExecutionId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Sql.ServerJobAgentJobExecution&gt; CreateOrUpdate(bool waitForCompletion, valuetype System.Guid jobExecutionId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerJobAgentJobExecutionCollection.CreateOrUpdate(System.Boolean,System.Guid,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, jobExecutionId As Guid, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of ServerJobAgentJobExecution)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * Guid * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.ServerJobAgentJobExecution&gt;&#xA;override this.CreateOrUpdate : bool * Guid * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.ServerJobAgentJobExecution&gt;" Usage="serverJobAgentJobExecutionCollection.CreateOrUpdate (waitForCompletion, jobExecutionId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Sql.Models.JobExecutionCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.ServerJobAgentJobExecution&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="jobExecutionId" Type="System.Guid" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="jobExecutionId" Type="System.Guid" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="jobExecutionId"> The job execution id to create the job execution under. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="jobExecutionId"> The job execution id to create the job execution under. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Creates or updates a job execution. </summary>
+        <summary>
+            Creates or updates a job execution.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/jobAgents/{jobAgentName}/jobs/{jobName}/executions/{jobExecutionId}
+            Operation Id: JobExecutions_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.JobExecutionCreateOrUpdateOperation&gt; CreateOrUpdateAsync (Guid jobExecutionId, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.JobExecutionCreateOrUpdateOperation&gt; CreateOrUpdateAsync(valuetype System.Guid jobExecutionId, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerJobAgentJobExecutionCollection.CreateOrUpdateAsync(System.Guid,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (jobExecutionId As Guid, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of JobExecutionCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : Guid * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.JobExecutionCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : Guid * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.JobExecutionCreateOrUpdateOperation&gt;" Usage="serverJobAgentJobExecutionCollection.CreateOrUpdateAsync (jobExecutionId, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.ServerJobAgentJobExecution&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, Guid jobExecutionId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Sql.ServerJobAgentJobExecution&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, valuetype System.Guid jobExecutionId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerJobAgentJobExecutionCollection.CreateOrUpdateAsync(System.Boolean,System.Guid,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, jobExecutionId As Guid, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of ServerJobAgentJobExecution))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * Guid * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.ServerJobAgentJobExecution&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * Guid * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.ServerJobAgentJobExecution&gt;&gt;" Usage="serverJobAgentJobExecutionCollection.CreateOrUpdateAsync (waitForCompletion, jobExecutionId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.JobExecutionCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.ServerJobAgentJobExecution&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="jobExecutionId" Type="System.Guid" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="jobExecutionId" Type="System.Guid" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="jobExecutionId"> The job execution id to create the job execution under. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="jobExecutionId"> The job execution id to create the job execution under. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Creates or updates a job execution. </summary>
+        <summary>
+            Creates or updates a job execution.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/jobAgents/{jobAgentName}/jobs/{jobName}/executions/{jobExecutionId}
+            Operation Id: JobExecutions_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,7 +128,11 @@
       <Docs>
         <param name="jobExecutionId"> The id of the job execution. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/jobAgents/{jobAgentName}/jobs/{jobName}/executions/{jobExecutionId}
+            Operation Id: JobExecutions_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,7 +158,11 @@
       <Docs>
         <param name="jobExecutionId"> The id of the job execution. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/jobAgents/{jobAgentName}/jobs/{jobName}/executions/{jobExecutionId}
+            Operation Id: JobExecutions_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -172,7 +188,11 @@
       <Docs>
         <param name="jobExecutionId"> The id of the job execution. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a job execution. </summary>
+        <summary>
+            Gets a job execution.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/jobAgents/{jobAgentName}/jobs/{jobName}/executions/{jobExecutionId}
+            Operation Id: JobExecutions_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -210,7 +230,11 @@
         <param name="skip"> The number of elements in the collection to skip. </param>
         <param name="top"> The number of elements to return from the collection. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists a job's executions. </summary>
+        <summary>
+            Lists a job's executions.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/jobAgents/{jobAgentName}/jobs/{jobName}/executions
+            Operation Id: JobExecutions_ListByJob
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.ServerJobAgentJobExecution" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -248,7 +272,11 @@
         <param name="skip"> The number of elements in the collection to skip. </param>
         <param name="top"> The number of elements to return from the collection. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists a job's executions. </summary>
+        <summary>
+            Lists a job's executions.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/jobAgents/{jobAgentName}/jobs/{jobName}/executions
+            Operation Id: JobExecutions_ListByJob
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.ServerJobAgentJobExecution" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -274,7 +302,11 @@
       <Docs>
         <param name="jobExecutionId"> The id of the job execution. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a job execution. </summary>
+        <summary>
+            Gets a job execution.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/jobAgents/{jobAgentName}/jobs/{jobName}/executions/{jobExecutionId}
+            Operation Id: JobExecutions_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -300,7 +332,11 @@
       <Docs>
         <param name="jobExecutionId"> The id of the job execution. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/jobAgents/{jobAgentName}/jobs/{jobName}/executions/{jobExecutionId}
+            Operation Id: JobExecutions_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -326,24 +362,28 @@
       <Docs>
         <param name="jobExecutionId"> The id of the job execution. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/jobAgents/{jobAgentName}/jobs/{jobName}/executions/{jobExecutionId}
+            Operation Id: JobExecutions_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetJobTargetExecutions">
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.ServerJobAgentJobExecution&gt; GetJobTargetExecutions (Guid jobExecutionId, DateTimeOffset? createTimeMin = default, DateTimeOffset? createTimeMax = default, DateTimeOffset? endTimeMin = default, DateTimeOffset? endTimeMax = default, bool? isActive = default, int? skip = default, int? top = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.ServerJobAgentJobExecution&gt; GetJobTargetExecutions(valuetype System.Guid jobExecutionId, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createTimeMin, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createTimeMax, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endTimeMin, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endTimeMax, valuetype System.Nullable`1&lt;bool&gt; isActive, valuetype System.Nullable`1&lt;int32&gt; skip, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.ServerJobAgentJobExecutionStepTarget&gt; GetJobTargetExecutions (Guid jobExecutionId, DateTimeOffset? createTimeMin = default, DateTimeOffset? createTimeMax = default, DateTimeOffset? endTimeMin = default, DateTimeOffset? endTimeMax = default, bool? isActive = default, int? skip = default, int? top = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.ServerJobAgentJobExecutionStepTarget&gt; GetJobTargetExecutions(valuetype System.Guid jobExecutionId, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createTimeMin, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createTimeMax, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endTimeMin, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endTimeMax, valuetype System.Nullable`1&lt;bool&gt; isActive, valuetype System.Nullable`1&lt;int32&gt; skip, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerJobAgentJobExecutionCollection.GetJobTargetExecutions(System.Guid,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetJobTargetExecutions (jobExecutionId As Guid, Optional createTimeMin As Nullable(Of DateTimeOffset) = Nothing, Optional createTimeMax As Nullable(Of DateTimeOffset) = Nothing, Optional endTimeMin As Nullable(Of DateTimeOffset) = Nothing, Optional endTimeMax As Nullable(Of DateTimeOffset) = Nothing, Optional isActive As Nullable(Of Boolean) = Nothing, Optional skip As Nullable(Of Integer) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ServerJobAgentJobExecution)" />
-      <MemberSignature Language="F#" Value="abstract member GetJobTargetExecutions : Guid * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.ServerJobAgentJobExecution&gt;&#xA;override this.GetJobTargetExecutions : Guid * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.ServerJobAgentJobExecution&gt;" Usage="serverJobAgentJobExecutionCollection.GetJobTargetExecutions (jobExecutionId, createTimeMin, createTimeMax, endTimeMin, endTimeMax, isActive, skip, top, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetJobTargetExecutions (jobExecutionId As Guid, Optional createTimeMin As Nullable(Of DateTimeOffset) = Nothing, Optional createTimeMax As Nullable(Of DateTimeOffset) = Nothing, Optional endTimeMin As Nullable(Of DateTimeOffset) = Nothing, Optional endTimeMax As Nullable(Of DateTimeOffset) = Nothing, Optional isActive As Nullable(Of Boolean) = Nothing, Optional skip As Nullable(Of Integer) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ServerJobAgentJobExecutionStepTarget)" />
+      <MemberSignature Language="F#" Value="abstract member GetJobTargetExecutions : Guid * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.ServerJobAgentJobExecutionStepTarget&gt;&#xA;override this.GetJobTargetExecutions : Guid * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.ServerJobAgentJobExecutionStepTarget&gt;" Usage="serverJobAgentJobExecutionCollection.GetJobTargetExecutions (jobExecutionId, createTimeMin, createTimeMax, endTimeMin, endTimeMax, isActive, skip, top, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.ServerJobAgentJobExecution&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.ServerJobAgentJobExecutionStepTarget&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="jobExecutionId" Type="System.Guid" />
@@ -366,24 +406,28 @@
         <param name="skip"> The number of elements in the collection to skip. </param>
         <param name="top"> The number of elements to return from the collection. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists target executions for all steps of a job execution. </summary>
-        <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.ServerJobAgentJobExecution" /> that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists target executions for all steps of a job execution.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/jobAgents/{jobAgentName}/jobs/{jobName}/executions/{jobExecutionId}/targets
+            Operation Id: JobTargetExecutions_ListByJobExecution
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.ServerJobAgentJobExecutionStepTarget" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetJobTargetExecutionsAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ServerJobAgentJobExecution&gt; GetJobTargetExecutionsAsync (Guid jobExecutionId, DateTimeOffset? createTimeMin = default, DateTimeOffset? createTimeMax = default, DateTimeOffset? endTimeMin = default, DateTimeOffset? endTimeMax = default, bool? isActive = default, int? skip = default, int? top = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.ServerJobAgentJobExecution&gt; GetJobTargetExecutionsAsync(valuetype System.Guid jobExecutionId, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createTimeMin, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createTimeMax, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endTimeMin, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endTimeMax, valuetype System.Nullable`1&lt;bool&gt; isActive, valuetype System.Nullable`1&lt;int32&gt; skip, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ServerJobAgentJobExecutionStepTarget&gt; GetJobTargetExecutionsAsync (Guid jobExecutionId, DateTimeOffset? createTimeMin = default, DateTimeOffset? createTimeMax = default, DateTimeOffset? endTimeMin = default, DateTimeOffset? endTimeMax = default, bool? isActive = default, int? skip = default, int? top = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.ServerJobAgentJobExecutionStepTarget&gt; GetJobTargetExecutionsAsync(valuetype System.Guid jobExecutionId, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createTimeMin, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createTimeMax, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endTimeMin, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endTimeMax, valuetype System.Nullable`1&lt;bool&gt; isActive, valuetype System.Nullable`1&lt;int32&gt; skip, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ServerJobAgentJobExecutionCollection.GetJobTargetExecutionsAsync(System.Guid,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetJobTargetExecutionsAsync (jobExecutionId As Guid, Optional createTimeMin As Nullable(Of DateTimeOffset) = Nothing, Optional createTimeMax As Nullable(Of DateTimeOffset) = Nothing, Optional endTimeMin As Nullable(Of DateTimeOffset) = Nothing, Optional endTimeMax As Nullable(Of DateTimeOffset) = Nothing, Optional isActive As Nullable(Of Boolean) = Nothing, Optional skip As Nullable(Of Integer) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ServerJobAgentJobExecution)" />
-      <MemberSignature Language="F#" Value="abstract member GetJobTargetExecutionsAsync : Guid * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ServerJobAgentJobExecution&gt;&#xA;override this.GetJobTargetExecutionsAsync : Guid * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ServerJobAgentJobExecution&gt;" Usage="serverJobAgentJobExecutionCollection.GetJobTargetExecutionsAsync (jobExecutionId, createTimeMin, createTimeMax, endTimeMin, endTimeMax, isActive, skip, top, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetJobTargetExecutionsAsync (jobExecutionId As Guid, Optional createTimeMin As Nullable(Of DateTimeOffset) = Nothing, Optional createTimeMax As Nullable(Of DateTimeOffset) = Nothing, Optional endTimeMin As Nullable(Of DateTimeOffset) = Nothing, Optional endTimeMax As Nullable(Of DateTimeOffset) = Nothing, Optional isActive As Nullable(Of Boolean) = Nothing, Optional skip As Nullable(Of Integer) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ServerJobAgentJobExecutionStepTarget)" />
+      <MemberSignature Language="F#" Value="abstract member GetJobTargetExecutionsAsync : Guid * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ServerJobAgentJobExecutionStepTarget&gt;&#xA;override this.GetJobTargetExecutionsAsync : Guid * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ServerJobAgentJobExecutionStepTarget&gt;" Usage="serverJobAgentJobExecutionCollection.GetJobTargetExecutionsAsync (jobExecutionId, createTimeMin, createTimeMax, endTimeMin, endTimeMax, isActive, skip, top, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ServerJobAgentJobExecution&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ServerJobAgentJobExecutionStepTarget&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="jobExecutionId" Type="System.Guid" />
@@ -406,8 +450,12 @@
         <param name="skip"> The number of elements in the collection to skip. </param>
         <param name="top"> The number of elements to return from the collection. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists target executions for all steps of a job execution. </summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.ServerJobAgentJobExecution" /> that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists target executions for all steps of a job execution.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/jobAgents/{jobAgentName}/jobs/{jobName}/executions/{jobExecutionId}/targets
+            Operation Id: JobTargetExecutions_ListByJobExecution
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.ServerJobAgentJobExecutionStepTarget" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -483,26 +531,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.ServerJobAgentJobExecutionCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Sql.ServerJobAgentJobExecutionCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -55,10 +55,16 @@
       <Docs>
         <param name="key"> The key for the tag. </param>
         <param name="value"> The value for the tag. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Add a tag to the current resource. </summary>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Add a tag to the current resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}
+            Operation Id: ElasticPools_Get
+            </summary>
         <returns> The updated resource with the tag added. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="AddTagAsync">
@@ -83,10 +89,16 @@
       <Docs>
         <param name="key"> The key for the tag. </param>
         <param name="value"> The value for the tag. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Add a tag to the current resource. </summary>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Add a tag to the current resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}
+            Operation Id: ElasticPools_Get
+            </summary>
         <returns> The updated resource with the tag added. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CancelElasticPoolOperation">
@@ -110,7 +122,11 @@
       <Docs>
         <param name="operationId"> The operation identifier. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Cancels the asynchronous operation on the elastic pool. </summary>
+        <summary>
+            Cancels the asynchronous operation on the elastic pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}/operations/{operationId}/cancel
+            Operation Id: ElasticPoolOperations_Cancel
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -136,24 +152,28 @@
       <Docs>
         <param name="operationId"> The operation identifier. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Cancels the asynchronous operation on the elastic pool. </summary>
+        <summary>
+            Cancels the asynchronous operation on the elastic pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}/operations/{operationId}/cancel
+            Operation Id: ElasticPoolOperations_Cancel
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateResourceIdentifier">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ResourceIdentifier CreateResourceIdentifier (string subscriptionId, string resourceGroupName, string serverName, string elasticPoolName);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ResourceIdentifier CreateResourceIdentifier(string subscriptionId, string resourceGroupName, string serverName, string elasticPoolName) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Core.ResourceIdentifier CreateResourceIdentifier (string subscriptionId, string resourceGroupName, string serverName, string elasticPoolName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Core.ResourceIdentifier CreateResourceIdentifier(string subscriptionId, string resourceGroupName, string serverName, string elasticPoolName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ElasticPool.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateResourceIdentifier (subscriptionId As String, resourceGroupName As String, serverName As String, elasticPoolName As String) As ResourceIdentifier" />
-      <MemberSignature Language="F#" Value="static member CreateResourceIdentifier : string * string * string * string -&gt; Azure.ResourceManager.ResourceIdentifier" Usage="Azure.ResourceManager.Sql.ElasticPool.CreateResourceIdentifier (subscriptionId, resourceGroupName, serverName, elasticPoolName)" />
+      <MemberSignature Language="F#" Value="static member CreateResourceIdentifier : string * string * string * string -&gt; Azure.Core.ResourceIdentifier" Usage="Azure.ResourceManager.Sql.ElasticPool.CreateResourceIdentifier (subscriptionId, resourceGroupName, serverName, elasticPoolName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceIdentifier</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="subscriptionId" Type="System.String" />
@@ -193,18 +213,18 @@
       </Docs>
     </Member>
     <Member MemberName="Delete">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.ElasticPoolDeleteOperation Delete (bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.ElasticPoolDeleteOperation Delete(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Delete (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Delete(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ElasticPool.Delete(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As ElasticPoolDeleteOperation" />
-      <MemberSignature Language="F#" Value="abstract member Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.ElasticPoolDeleteOperation&#xA;override this.Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.ElasticPoolDeleteOperation" Usage="elasticPool.Delete (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="elasticPool.Delete (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Sql.Models.ElasticPoolDeleteOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -213,24 +233,28 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Deletes an elastic pool. </summary>
+        <summary>
+            Deletes an elastic pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}
+            Operation Id: ElasticPools_Delete
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ElasticPoolDeleteOperation&gt; DeleteAsync (bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.ElasticPoolDeleteOperation&gt; DeleteAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; DeleteAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; DeleteAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ElasticPool.DeleteAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ElasticPoolDeleteOperation)" />
-      <MemberSignature Language="F#" Value="abstract member DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ElasticPoolDeleteOperation&gt;&#xA;override this.DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ElasticPoolDeleteOperation&gt;" Usage="elasticPool.DeleteAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="elasticPool.DeleteAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ElasticPoolDeleteOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -239,24 +263,28 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Deletes an elastic pool. </summary>
+        <summary>
+            Deletes an elastic pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}
+            Operation Id: ElasticPools_Delete
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Failover">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.ElasticPoolFailoverOperation Failover (bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.ElasticPoolFailoverOperation Failover(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Failover (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Failover(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ElasticPool.Failover(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Failover (Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As ElasticPoolFailoverOperation" />
-      <MemberSignature Language="F#" Value="abstract member Failover : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.ElasticPoolFailoverOperation&#xA;override this.Failover : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.ElasticPoolFailoverOperation" Usage="elasticPool.Failover (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Failover (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Failover : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Failover : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="elasticPool.Failover (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Sql.Models.ElasticPoolFailoverOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -265,24 +293,28 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Failovers an elastic pool. </summary>
+        <summary>
+            Failovers an elastic pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}/failover
+            Operation Id: ElasticPools_Failover
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FailoverAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ElasticPoolFailoverOperation&gt; FailoverAsync (bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.ElasticPoolFailoverOperation&gt; FailoverAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; FailoverAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; FailoverAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ElasticPool.FailoverAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function FailoverAsync (Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ElasticPoolFailoverOperation)" />
-      <MemberSignature Language="F#" Value="abstract member FailoverAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ElasticPoolFailoverOperation&gt;&#xA;override this.FailoverAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ElasticPoolFailoverOperation&gt;" Usage="elasticPool.FailoverAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function FailoverAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member FailoverAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.FailoverAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="elasticPool.FailoverAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ElasticPoolFailoverOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -291,7 +323,11 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Failovers an elastic pool. </summary>
+        <summary>
+            Failovers an elastic pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}/failover
+            Operation Id: ElasticPools_Failover
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -315,7 +351,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets an elastic pool. </summary>
+        <summary>
+            Gets an elastic pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}
+            Operation Id: ElasticPools_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -339,104 +379,68 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets an elastic pool. </summary>
+        <summary>
+            Gets an elastic pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}
+            Operation Id: ElasticPools_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetAvailableLocations">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt; GetAvailableLocations (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.Resources.Models.Location&gt; GetAvailableLocations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ElasticPool.GetAvailableLocations(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocations (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of Location)" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&#xA;override this.GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;" Usage="elasticPool.GetAvailableLocations cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Lists all available geo-locations. </summary>
-        <returns> A collection of locations that may take multiple service requests to iterate over. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetAvailableLocationsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt; GetAvailableLocationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.Resources.Models.Location&gt;&gt; GetAvailableLocationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ElasticPool.GetAvailableLocationsAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocationsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of Location))" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;&#xA;override this.GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;" Usage="elasticPool.GetAvailableLocationsAsync cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.Models.Location&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Lists all available geo-locations. </summary>
-        <returns> A collection of locations that may take multiple service requests to iterate over. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="GetDatabases">
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.SqlDatabaseData&gt; GetDatabases (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.SqlDatabaseData&gt; GetDatabases(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Sql.SqlDatabase&gt; GetDatabases (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.SqlDatabase&gt; GetDatabases(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ElasticPool.GetDatabases(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDatabases (Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of SqlDatabaseData)" />
-      <MemberSignature Language="F#" Value="abstract member GetDatabases : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.SqlDatabaseData&gt;&#xA;override this.GetDatabases : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.SqlDatabaseData&gt;" Usage="elasticPool.GetDatabases cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDatabases (Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of SqlDatabase)" />
+      <MemberSignature Language="F#" Value="abstract member GetDatabases : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.SqlDatabase&gt;&#xA;override this.GetDatabases : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.SqlDatabase&gt;" Usage="elasticPool.GetDatabases cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.SqlDatabaseData&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.SqlDatabase&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a list of databases in an elastic pool. </summary>
-        <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseData" /> that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets a list of databases in an elastic pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}/databases
+            Operation Id: Databases_ListByElasticPool
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.SqlDatabase" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDatabasesAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SqlDatabaseData&gt; GetDatabasesAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.SqlDatabaseData&gt; GetDatabasesAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SqlDatabase&gt; GetDatabasesAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.SqlDatabase&gt; GetDatabasesAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ElasticPool.GetDatabasesAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDatabasesAsync (Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of SqlDatabaseData)" />
-      <MemberSignature Language="F#" Value="abstract member GetDatabasesAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SqlDatabaseData&gt;&#xA;override this.GetDatabasesAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SqlDatabaseData&gt;" Usage="elasticPool.GetDatabasesAsync cancellationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDatabasesAsync (Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of SqlDatabase)" />
+      <MemberSignature Language="F#" Value="abstract member GetDatabasesAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SqlDatabase&gt;&#xA;override this.GetDatabasesAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SqlDatabase&gt;" Usage="elasticPool.GetDatabasesAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SqlDatabaseData&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SqlDatabase&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a list of databases in an elastic pool. </summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.SqlDatabaseData" /> that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets a list of databases in an elastic pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}/databases
+            Operation Id: Databases_ListByElasticPool
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.SqlDatabase" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -459,7 +463,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Returns elastic pool activities. </summary>
+        <summary>
+            Returns elastic pool activities.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}/elasticPoolActivity
+            Operation Id: ElasticPoolActivities_ListByElasticPool
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.Models.ElasticPoolActivity" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -483,7 +491,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Returns elastic pool activities. </summary>
+        <summary>
+            Returns elastic pool activities.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}/elasticPoolActivity
+            Operation Id: ElasticPoolActivities_ListByElasticPool
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.Models.ElasticPoolActivity" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -507,7 +519,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Returns activity on databases inside of an elastic pool. </summary>
+        <summary>
+            Returns activity on databases inside of an elastic pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}/elasticPoolDatabaseActivity
+            Operation Id: ElasticPoolDatabaseActivities_ListByElasticPool
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.Models.ElasticPoolDatabaseActivity" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -531,7 +547,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Returns activity on databases inside of an elastic pool. </summary>
+        <summary>
+            Returns activity on databases inside of an elastic pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}/elasticPoolDatabaseActivity
+            Operation Id: ElasticPoolDatabaseActivities_ListByElasticPool
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.Models.ElasticPoolDatabaseActivity" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -555,7 +575,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a list of operations performed on the elastic pool. </summary>
+        <summary>
+            Gets a list of operations performed on the elastic pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}/operations
+            Operation Id: ElasticPoolOperations_ListByElasticPool
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.Models.ElasticPoolOperation" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -579,7 +603,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a list of operations performed on the elastic pool. </summary>
+        <summary>
+            Gets a list of operations performed on the elastic pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}/operations
+            Operation Id: ElasticPoolOperations_ListByElasticPool
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.Models.ElasticPoolOperation" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -603,7 +631,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Returns elastic pool metric definitions. </summary>
+        <summary>
+            Returns elastic pool metric definitions.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}/metricDefinitions
+            Operation Id: ElasticPools_ListMetricDefinitions
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.Models.MetricDefinition" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -627,7 +659,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Returns elastic pool metric definitions. </summary>
+        <summary>
+            Returns elastic pool metric definitions.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}/metricDefinitions
+            Operation Id: ElasticPools_ListMetricDefinitions
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.Models.MetricDefinition" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -653,9 +689,15 @@
       <Docs>
         <param name="filter"> An OData filter expression that describes a subset of metrics to return. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Returns elastic pool  metrics. </summary>
+        <summary>
+            Returns elastic pool  metrics.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}/metrics
+            Operation Id: ElasticPools_ListMetrics
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.Models.SqlMetric" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="filter" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetMetricsAsync">
@@ -679,9 +721,15 @@
       <Docs>
         <param name="filter"> An OData filter expression that describes a subset of metrics to return. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Returns elastic pool  metrics. </summary>
+        <summary>
+            Returns elastic pool  metrics.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}/metrics
+            Operation Id: ElasticPools_ListMetrics
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.Models.SqlMetric" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="filter" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="HasData">
@@ -723,11 +771,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="key"> The key of the tag to remove. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Removes a tag by key from the resource. </summary>
+        <param name="key"> The key for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Removes a tag by key from the resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}
+            Operation Id: ElasticPools_Get
+            </summary>
         <returns> The updated resource with the tag removed. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveTagAsync">
@@ -749,26 +803,32 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="key"> The key of the tag to remove. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Removes a tag by key from the resource. </summary>
+        <param name="key"> The key for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Removes a tag by key from the resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}
+            Operation Id: ElasticPools_Get
+            </summary>
         <returns> The updated resource with the tag removed. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ResourceType">
-      <MemberSignature Language="C#" Value="public static readonly Azure.ResourceManager.ResourceType ResourceType;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Azure.ResourceManager.ResourceType ResourceType" />
+      <MemberSignature Language="C#" Value="public static readonly Azure.Core.ResourceType ResourceType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype Azure.Core.ResourceType ResourceType" />
       <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.Sql.ElasticPool.ResourceType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ResourceType As ResourceType " />
-      <MemberSignature Language="F#" Value=" staticval mutable ResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Sql.ElasticPool.ResourceType" />
+      <MemberSignature Language="F#" Value=" staticval mutable ResourceType : Azure.Core.ResourceType" Usage="Azure.ResourceManager.Sql.ElasticPool.ResourceType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
+        <ReturnType>Azure.Core.ResourceType</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> Gets the resource type for the operations. </summary>
@@ -795,10 +855,16 @@
       </Parameters>
       <Docs>
         <param name="tags"> The set of tags to use as replacement. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Replace the tags on the resource with the given set. </summary>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Replace the tags on the resource with the given set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}
+            Operation Id: ElasticPools_Get
+            </summary>
         <returns> The updated resource with the tags replaced. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tags" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="SetTagsAsync">
@@ -821,90 +887,84 @@
       </Parameters>
       <Docs>
         <param name="tags"> The set of tags to use as replacement. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Replace the tags on the resource with the given set. </summary>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Replace the tags on the resource with the given set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}
+            Operation Id: ElasticPools_Get
+            </summary>
         <returns> The updated resource with the tags replaced. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tags" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="Update">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Sql.Models.ElasticPoolUpdateOperation Update (Azure.ResourceManager.Sql.Models.ElasticPoolUpdate parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Sql.Models.ElasticPoolUpdateOperation Update(class Azure.ResourceManager.Sql.Models.ElasticPoolUpdate parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ElasticPool.Update(Azure.ResourceManager.Sql.Models.ElasticPoolUpdate,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (parameters As ElasticPoolUpdate, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As ElasticPoolUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member Update : Azure.ResourceManager.Sql.Models.ElasticPoolUpdate * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.ElasticPoolUpdateOperation&#xA;override this.Update : Azure.ResourceManager.Sql.Models.ElasticPoolUpdate * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Sql.Models.ElasticPoolUpdateOperation" Usage="elasticPool.Update (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.ElasticPool&gt; Update (bool waitForCompletion, Azure.ResourceManager.Sql.Models.ElasticPoolUpdateOptions options, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Sql.ElasticPool&gt; Update(bool waitForCompletion, class Azure.ResourceManager.Sql.Models.ElasticPoolUpdateOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ElasticPool.Update(System.Boolean,Azure.ResourceManager.Sql.Models.ElasticPoolUpdateOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (waitForCompletion As Boolean, options As ElasticPoolUpdateOptions, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of ElasticPool)" />
+      <MemberSignature Language="F#" Value="abstract member Update : bool * Azure.ResourceManager.Sql.Models.ElasticPoolUpdateOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.ElasticPool&gt;&#xA;override this.Update : bool * Azure.ResourceManager.Sql.Models.ElasticPoolUpdateOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.ElasticPool&gt;" Usage="elasticPool.Update (waitForCompletion, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Sql.Models.ElasticPoolUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.ElasticPool&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.ElasticPoolUpdate" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="options" Type="Azure.ResourceManager.Sql.Models.ElasticPoolUpdateOptions" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> The elastic pool update parameters. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="options"> The elastic pool update parameters. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Updates an elastic pool. </summary>
+        <summary>
+            Updates an elastic pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}
+            Operation Id: ElasticPools_Update
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="parameters" /> is null. </exception>
+          <paramref name="options" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ElasticPoolUpdateOperation&gt; UpdateAsync (Azure.ResourceManager.Sql.Models.ElasticPoolUpdate parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Sql.Models.ElasticPoolUpdateOperation&gt; UpdateAsync(class Azure.ResourceManager.Sql.Models.ElasticPoolUpdate parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ElasticPool.UpdateAsync(Azure.ResourceManager.Sql.Models.ElasticPoolUpdate,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (parameters As ElasticPoolUpdate, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ElasticPoolUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member UpdateAsync : Azure.ResourceManager.Sql.Models.ElasticPoolUpdate * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ElasticPoolUpdateOperation&gt;&#xA;override this.UpdateAsync : Azure.ResourceManager.Sql.Models.ElasticPoolUpdate * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ElasticPoolUpdateOperation&gt;" Usage="elasticPool.UpdateAsync (parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.ElasticPool&gt;&gt; UpdateAsync (bool waitForCompletion, Azure.ResourceManager.Sql.Models.ElasticPoolUpdateOptions options, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Sql.ElasticPool&gt;&gt; UpdateAsync(bool waitForCompletion, class Azure.ResourceManager.Sql.Models.ElasticPoolUpdateOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ElasticPool.UpdateAsync(System.Boolean,Azure.ResourceManager.Sql.Models.ElasticPoolUpdateOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (waitForCompletion As Boolean, options As ElasticPoolUpdateOptions, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of ElasticPool))" />
+      <MemberSignature Language="F#" Value="abstract member UpdateAsync : bool * Azure.ResourceManager.Sql.Models.ElasticPoolUpdateOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.ElasticPool&gt;&gt;&#xA;override this.UpdateAsync : bool * Azure.ResourceManager.Sql.Models.ElasticPoolUpdateOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.ElasticPool&gt;&gt;" Usage="elasticPool.UpdateAsync (waitForCompletion, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Sql.Models.ElasticPoolUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Sql.ElasticPool&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="Azure.ResourceManager.Sql.Models.ElasticPoolUpdate" />
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
+        <Parameter Name="options" Type="Azure.ResourceManager.Sql.Models.ElasticPoolUpdateOptions" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="parameters"> The elastic pool update parameters. </param>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
+        <param name="options"> The elastic pool update parameters. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Updates an elastic pool. </summary>
+        <summary>
+            Updates an elastic pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/elasticPools/{elasticPoolName}
+            Operation Id: ElasticPools_Update
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="parameters" /> is null. </exception>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.ElasticPool.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Sql.ElasticPool.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for the operations. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+          <paramref name="options" /> is null. </exception>
       </Docs>
     </Member>
   </Members>

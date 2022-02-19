@@ -44,65 +44,77 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Network.Models.VirtualApplianceSiteCreateOrUpdateOperation CreateOrUpdate (string siteName, Azure.ResourceManager.Network.VirtualApplianceSiteData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Network.Models.VirtualApplianceSiteCreateOrUpdateOperation CreateOrUpdate(string siteName, class Azure.ResourceManager.Network.VirtualApplianceSiteData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.VirtualApplianceSiteCollection.CreateOrUpdate(System.String,Azure.ResourceManager.Network.VirtualApplianceSiteData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (siteName As String, parameters As VirtualApplianceSiteData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As VirtualApplianceSiteCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.ResourceManager.Network.VirtualApplianceSiteData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.VirtualApplianceSiteCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : string * Azure.ResourceManager.Network.VirtualApplianceSiteData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Network.Models.VirtualApplianceSiteCreateOrUpdateOperation" Usage="virtualApplianceSiteCollection.CreateOrUpdate (siteName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Network.VirtualApplianceSite&gt; CreateOrUpdate (bool waitForCompletion, string siteName, Azure.ResourceManager.Network.VirtualApplianceSiteData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Network.VirtualApplianceSite&gt; CreateOrUpdate(bool waitForCompletion, string siteName, class Azure.ResourceManager.Network.VirtualApplianceSiteData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.VirtualApplianceSiteCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Network.VirtualApplianceSiteData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, siteName As String, parameters As VirtualApplianceSiteData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of VirtualApplianceSite)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Network.VirtualApplianceSiteData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Network.VirtualApplianceSite&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Network.VirtualApplianceSiteData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Network.VirtualApplianceSite&gt;" Usage="virtualApplianceSiteCollection.CreateOrUpdate (waitForCompletion, siteName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Network.Models.VirtualApplianceSiteCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Network.VirtualApplianceSite&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="siteName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Network.VirtualApplianceSiteData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="siteName"> The name of the site. </param>
         <param name="parameters"> Parameters supplied to the create or update Network Virtual Appliance Site operation. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Creates or updates the specified Network Virtual Appliance Site. </summary>
+        <summary>
+            Creates or updates the specified Network Virtual Appliance Site.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/networkVirtualAppliances/{networkVirtualApplianceName}/virtualApplianceSites/{siteName}
+            Operation Id: VirtualApplianceSites_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="siteName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="siteName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VirtualApplianceSiteCreateOrUpdateOperation&gt; CreateOrUpdateAsync (string siteName, Azure.ResourceManager.Network.VirtualApplianceSiteData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Network.Models.VirtualApplianceSiteCreateOrUpdateOperation&gt; CreateOrUpdateAsync(string siteName, class Azure.ResourceManager.Network.VirtualApplianceSiteData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.VirtualApplianceSiteCollection.CreateOrUpdateAsync(System.String,Azure.ResourceManager.Network.VirtualApplianceSiteData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (siteName As String, parameters As VirtualApplianceSiteData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualApplianceSiteCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.ResourceManager.Network.VirtualApplianceSiteData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VirtualApplianceSiteCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.ResourceManager.Network.VirtualApplianceSiteData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VirtualApplianceSiteCreateOrUpdateOperation&gt;" Usage="virtualApplianceSiteCollection.CreateOrUpdateAsync (siteName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Network.VirtualApplianceSite&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string siteName, Azure.ResourceManager.Network.VirtualApplianceSiteData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Network.VirtualApplianceSite&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string siteName, class Azure.ResourceManager.Network.VirtualApplianceSiteData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Network.VirtualApplianceSiteCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Network.VirtualApplianceSiteData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, siteName As String, parameters As VirtualApplianceSiteData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of VirtualApplianceSite))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Network.VirtualApplianceSiteData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Network.VirtualApplianceSite&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Network.VirtualApplianceSiteData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Network.VirtualApplianceSite&gt;&gt;" Usage="virtualApplianceSiteCollection.CreateOrUpdateAsync (waitForCompletion, siteName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Network.Models.VirtualApplianceSiteCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Network.VirtualApplianceSite&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="siteName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.Network.VirtualApplianceSiteData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="siteName"> The name of the site. </param>
         <param name="parameters"> Parameters supplied to the create or update Network Virtual Appliance Site operation. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Creates or updates the specified Network Virtual Appliance Site. </summary>
+        <summary>
+            Creates or updates the specified Network Virtual Appliance Site.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/networkVirtualAppliances/{networkVirtualApplianceName}/virtualApplianceSites/{siteName}
+            Operation Id: VirtualApplianceSites_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="siteName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="siteName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -128,9 +140,15 @@
       <Docs>
         <param name="siteName"> The name of the site. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/networkVirtualAppliances/{networkVirtualApplianceName}/virtualApplianceSites/{siteName}
+            Operation Id: VirtualApplianceSites_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="siteName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="siteName" /> is null. </exception>
       </Docs>
@@ -156,9 +174,15 @@
       <Docs>
         <param name="siteName"> The name of the site. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/networkVirtualAppliances/{networkVirtualApplianceName}/virtualApplianceSites/{siteName}
+            Operation Id: VirtualApplianceSites_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="siteName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="siteName" /> is null. </exception>
       </Docs>
@@ -184,9 +208,15 @@
       <Docs>
         <param name="siteName"> The name of the site. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the specified Virtual Appliance Site. </summary>
+        <summary>
+            Gets the specified Virtual Appliance Site.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/networkVirtualAppliances/{networkVirtualApplianceName}/virtualApplianceSites/{siteName}
+            Operation Id: VirtualApplianceSites_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="siteName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="siteName" /> is null. </exception>
       </Docs>
@@ -210,7 +240,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists all Network Virtual Appliance Sites in a Network Virtual Appliance resource. </summary>
+        <summary>
+            Lists all Network Virtual Appliance Sites in a Network Virtual Appliance resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/networkVirtualAppliances/{networkVirtualApplianceName}/virtualApplianceSites
+            Operation Id: VirtualApplianceSites_List
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Network.VirtualApplianceSite" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -234,7 +268,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists all Network Virtual Appliance Sites in a Network Virtual Appliance resource. </summary>
+        <summary>
+            Lists all Network Virtual Appliance Sites in a Network Virtual Appliance resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/networkVirtualAppliances/{networkVirtualApplianceName}/virtualApplianceSites
+            Operation Id: VirtualApplianceSites_List
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Network.VirtualApplianceSite" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -260,9 +298,15 @@
       <Docs>
         <param name="siteName"> The name of the site. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the specified Virtual Appliance Site. </summary>
+        <summary>
+            Gets the specified Virtual Appliance Site.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/networkVirtualAppliances/{networkVirtualApplianceName}/virtualApplianceSites/{siteName}
+            Operation Id: VirtualApplianceSites_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="siteName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="siteName" /> is null. </exception>
       </Docs>
@@ -288,9 +332,15 @@
       <Docs>
         <param name="siteName"> The name of the site. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/networkVirtualAppliances/{networkVirtualApplianceName}/virtualApplianceSites/{siteName}
+            Operation Id: VirtualApplianceSites_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="siteName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="siteName" /> is null. </exception>
       </Docs>
@@ -316,9 +366,15 @@
       <Docs>
         <param name="siteName"> The name of the site. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/networkVirtualAppliances/{networkVirtualApplianceName}/virtualApplianceSites/{siteName}
+            Operation Id: VirtualApplianceSites_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="siteName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="siteName" /> is null. </exception>
       </Docs>
@@ -395,26 +451,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.VirtualApplianceSiteCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Network.VirtualApplianceSiteCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

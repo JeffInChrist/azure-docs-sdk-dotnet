@@ -44,7 +44,11 @@
         <param name="tenant"> The <see cref="T:Azure.ResourceManager.Resources.Tenant" /> instance the method will execute against. </param>
         <param name="template"> The template provided to calculate hash. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Calculate the hash of the given template. </summary>
+        <summary>
+            Calculate the hash of the given template.
+            Request Path: /providers/Microsoft.Resources/calculateTemplateHash
+            Operation Id: Deployments_CalculateTemplateHash
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -74,7 +78,11 @@
         <param name="tenant"> The <see cref="T:Azure.ResourceManager.Resources.Tenant" /> instance the method will execute against. </param>
         <param name="template"> The template provided to calculate hash. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Calculate the hash of the given template. </summary>
+        <summary>
+            Calculate the hash of the given template.
+            Request Path: /providers/Microsoft.Resources/calculateTemplateHash
+            Operation Id: Deployments_CalculateTemplateHash
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -100,8 +108,8 @@
       </Parameters>
       <Docs>
         <param name="tenant"> The <see cref="T:Azure.ResourceManager.Resources.Tenant" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a DeploymentCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Resources.DeploymentCollection" /> object. </returns>
+        <summary> Gets a collection of Deployments in the Deployment. </summary>
+        <returns> An object representing collection of Deployments and their operations over a Deployment. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

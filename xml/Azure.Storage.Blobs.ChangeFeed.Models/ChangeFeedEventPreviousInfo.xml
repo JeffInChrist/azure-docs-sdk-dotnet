@@ -1,0 +1,133 @@
+<Type Name="ChangeFeedEventPreviousInfo" FullName="Azure.Storage.Blobs.ChangeFeed.Models.ChangeFeedEventPreviousInfo">
+  <TypeSignature Language="C#" Value="public class ChangeFeedEventPreviousInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChangeFeedEventPreviousInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.Storage.Blobs.ChangeFeed.Models.ChangeFeedEventPreviousInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChangeFeedEventPreviousInfo" />
+  <TypeSignature Language="F#" Value="type ChangeFeedEventPreviousInfo = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Storage.Blobs.ChangeFeed</AssemblyName>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Previous info for Change Feed Event.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BlobVersion">
+      <MemberSignature Language="C#" Value="public string BlobVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BlobVersion" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Blobs.ChangeFeed.Models.ChangeFeedEventPreviousInfo.BlobVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BlobVersion As String" />
+      <MemberSignature Language="F#" Value="member this.BlobVersion : string" Usage="Azure.Storage.Blobs.ChangeFeed.Models.ChangeFeedEventPreviousInfo.BlobVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Blobs.ChangeFeed</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Blob version.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastVersion">
+      <MemberSignature Language="C#" Value="public string LastVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LastVersion" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Blobs.ChangeFeed.Models.ChangeFeedEventPreviousInfo.LastVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastVersion As String" />
+      <MemberSignature Language="F#" Value="member this.LastVersion : string" Usage="Azure.Storage.Blobs.ChangeFeed.Models.ChangeFeedEventPreviousInfo.LastVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Blobs.ChangeFeed</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Last version.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousTier">
+      <MemberSignature Language="C#" Value="public Azure.Storage.Blobs.Models.AccessTier? PreviousTier { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.Storage.Blobs.Models.AccessTier&gt; PreviousTier" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Blobs.ChangeFeed.Models.ChangeFeedEventPreviousInfo.PreviousTier" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviousTier As Nullable(Of AccessTier)" />
+      <MemberSignature Language="F#" Value="member this.PreviousTier : Nullable&lt;Azure.Storage.Blobs.Models.AccessTier&gt;" Usage="Azure.Storage.Blobs.ChangeFeed.Models.ChangeFeedEventPreviousInfo.PreviousTier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Blobs.ChangeFeed</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.Storage.Blobs.Models.AccessTier&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Previous Access Tier.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SoftDeleteSnapshot">
+      <MemberSignature Language="C#" Value="public string SoftDeleteSnapshot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SoftDeleteSnapshot" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Blobs.ChangeFeed.Models.ChangeFeedEventPreviousInfo.SoftDeleteSnapshot" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SoftDeleteSnapshot As String" />
+      <MemberSignature Language="F#" Value="member this.SoftDeleteSnapshot : string" Usage="Azure.Storage.Blobs.ChangeFeed.Models.ChangeFeedEventPreviousInfo.SoftDeleteSnapshot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Blobs.ChangeFeed</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Soft delete snapshot.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WasBlobSoftDeleted">
+      <MemberSignature Language="C#" Value="public bool WasBlobSoftDeleted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool WasBlobSoftDeleted" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Blobs.ChangeFeed.Models.ChangeFeedEventPreviousInfo.WasBlobSoftDeleted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WasBlobSoftDeleted As Boolean" />
+      <MemberSignature Language="F#" Value="member this.WasBlobSoftDeleted : bool" Usage="Azure.Storage.Blobs.ChangeFeed.Models.ChangeFeedEventPreviousInfo.WasBlobSoftDeleted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Blobs.ChangeFeed</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If the blob was soft deleted.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

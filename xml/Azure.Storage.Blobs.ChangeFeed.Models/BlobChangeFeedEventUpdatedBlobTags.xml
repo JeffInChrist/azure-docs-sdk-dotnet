@@ -1,0 +1,67 @@
+<Type Name="BlobChangeFeedEventUpdatedBlobTags" FullName="Azure.Storage.Blobs.ChangeFeed.Models.BlobChangeFeedEventUpdatedBlobTags">
+  <TypeSignature Language="C#" Value="public class BlobChangeFeedEventUpdatedBlobTags" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BlobChangeFeedEventUpdatedBlobTags extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.Storage.Blobs.ChangeFeed.Models.BlobChangeFeedEventUpdatedBlobTags" />
+  <TypeSignature Language="VB.NET" Value="Public Class BlobChangeFeedEventUpdatedBlobTags" />
+  <TypeSignature Language="F#" Value="type BlobChangeFeedEventUpdatedBlobTags = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Storage.Blobs.ChangeFeed</AssemblyName>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Blob tags that were updated as part of the change feed event.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="NewTags">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,string&gt; NewTags { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;string, string&gt; NewTags" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Blobs.ChangeFeed.Models.BlobChangeFeedEventUpdatedBlobTags.NewTags" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewTags As Dictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.NewTags : System.Collections.Generic.Dictionary&lt;string, string&gt;" Usage="Azure.Storage.Blobs.ChangeFeed.Models.BlobChangeFeedEventUpdatedBlobTags.NewTags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Blobs.ChangeFeed</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            New Tags.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousTags">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,string&gt; PreviousTags { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;string, string&gt; PreviousTags" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Blobs.ChangeFeed.Models.BlobChangeFeedEventUpdatedBlobTags.PreviousTags" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviousTags As Dictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.PreviousTags : System.Collections.Generic.Dictionary&lt;string, string&gt;" Usage="Azure.Storage.Blobs.ChangeFeed.Models.BlobChangeFeedEventUpdatedBlobTags.PreviousTags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Blobs.ChangeFeed</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Previous Tags.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

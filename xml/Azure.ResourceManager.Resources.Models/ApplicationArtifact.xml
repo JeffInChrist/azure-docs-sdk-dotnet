@@ -58,18 +58,18 @@
       </Docs>
     </Member>
     <Member MemberName="Uri">
-      <MemberSignature Language="C#" Value="public string Uri { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string Uri" />
+      <MemberSignature Language="C#" Value="public Uri Uri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Uri" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.ApplicationArtifact.Uri" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uri As String" />
-      <MemberSignature Language="F#" Value="member this.Uri : string" Usage="Azure.ResourceManager.Resources.Models.ApplicationArtifact.Uri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uri As Uri" />
+      <MemberSignature Language="F#" Value="member this.Uri : Uri" Usage="Azure.ResourceManager.Resources.Models.ApplicationArtifact.Uri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The managed application artifact blob uri. </summary>
