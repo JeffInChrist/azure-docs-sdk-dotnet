@@ -36,8 +36,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a AddressResourceCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.EdgeOrder.AddressResourceCollection" /> object. </returns>
+        <summary> Gets a collection of AddressResources in the AddressResource. </summary>
+        <returns> An object representing collection of AddressResources and their operations over a AddressResource. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,8 +60,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a OrderItemResourceCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.EdgeOrder.OrderItemResourceCollection" /> object. </returns>
+        <summary> Gets a collection of OrderItemResources in the OrderItemResource. </summary>
+        <returns> An object representing collection of OrderItemResources and their operations over a OrderItemResource. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +84,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a OrderResourceCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.EdgeOrder.OrderResourceCollection" /> object. </returns>
+        <summary> Gets a collection of OrderResources in the OrderResource. </summary>
+        <returns> An object representing collection of OrderResources and their operations over a OrderResource. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,8 +112,12 @@
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
         <param name="skipToken"> $skipToken is supported on Get list of order, which provides the next page in the list of order. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists order at resource group level.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EdgeOrder/orders
+            Operation Id: ListOrderAtResourceGroupLevel
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.EdgeOrder.OrderResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,8 +144,12 @@
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
         <param name="skipToken"> $skipToken is supported on Get list of order, which provides the next page in the list of order. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists order at resource group level.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EdgeOrder/orders
+            Operation Id: ListOrderAtResourceGroupLevel
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.EdgeOrder.OrderResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

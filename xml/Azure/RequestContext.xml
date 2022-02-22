@@ -8,6 +8,7 @@
     <AssemblyName>Azure.Core</AssemblyName>
     <AssemblyVersion>1.21.0.0</AssemblyVersion>
     <AssemblyVersion>1.22.0.0</AssemblyVersion>
+    <AssemblyVersion>1.23.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -15,7 +16,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Options which can be used to control the behavior of a request sent by a client.
+            Options that can be used to control the behavior of a request sent by a client.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -30,11 +31,76 @@
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.21.0.0</AssemblyVersion>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>
             Initializes a new instance of the <see cref="T:Azure.RequestContext" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddClassifier">
+      <MemberSignature Language="C#" Value="public void AddClassifier (Azure.Core.ResponseClassificationHandler classifier);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddClassifier(class Azure.Core.ResponseClassificationHandler classifier) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.RequestContext.AddClassifier(Azure.Core.ResponseClassificationHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddClassifier (classifier As ResponseClassificationHandler)" />
+      <MemberSignature Language="F#" Value="member this.AddClassifier : Azure.Core.ResponseClassificationHandler -&gt; unit" Usage="requestContext.AddClassifier classifier" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Core</AssemblyName>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="classifier" Type="Azure.Core.ResponseClassificationHandler" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="classifier">The custom classifier.</param>
+        <summary>
+            Customizes the <see cref="T:Azure.Core.ResponseClassifier" /> for this operation.
+            Adding a <see cref="T:Azure.Core.ResponseClassificationHandler" /> changes the classification
+            behavior so that it first tries to classify a response via the handler, and if
+            the handler doesn't have an opinion, it instead uses the default classifier.
+            Handlers are applied in order so the most recently added takes precedence.
+            This is useful for cases where you'd like to prevent specific response status codes from being treated as errors by
+            logging and distributed tracing policies -- that is, if a response is not classified as an error, it will not appear as an error in
+            logs or distributed traces.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddClassifier">
+      <MemberSignature Language="C#" Value="public void AddClassifier (int statusCode, bool isError);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddClassifier(int32 statusCode, bool isError) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.RequestContext.AddClassifier(System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddClassifier (statusCode As Integer, isError As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.AddClassifier : int * bool -&gt; unit" Usage="requestContext.AddClassifier (statusCode, isError)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Core</AssemblyName>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="statusCode" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="isError" Type="System.Boolean" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="statusCode">The status code to customize classification for.</param>
+        <param name="isError">Whether the passed-in status code should be classified as an error.</param>
+        <summary>
+            Customizes the <see cref="T:Azure.Core.ResponseClassifier" /> for this operation.
+            Adding a classifier changes the default classification behavior so that it considers
+            the passed-in status code to be an error or not, as specified.
+            This is useful for cases where you'd like to prevent specific response status codes from being treated as errors by
+            logging and distributed tracing policies -- that is, if a response is not classified as an error, it will not appear as an error in
+            logs or distributed traces.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -49,6 +115,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -61,7 +128,7 @@
         <param name="policy">The <see cref="T:Azure.Core.Pipeline.HttpPipelinePolicy" /> instance to be added to the pipeline.</param>
         <param name="position">The position of the policy in the pipeline.</param>
         <summary>
-            Adds an <see cref="T:Azure.Core.Pipeline.HttpPipelinePolicy" /> into the pipeline for the duration of this request.
+            Adds an <see cref="T:Azure.Core.Pipeline.HttpPipelinePolicy" /> into the pipeline for the duration of this operation.
             The position of policy in the pipeline is controlled by <paramref name="position" /> parameter.
             If you want the policy to execute once per client request use <see cref="F:Azure.Core.HttpPipelinePosition.PerCall" />
             otherwise use <see cref="F:Azure.Core.HttpPipelinePosition.PerRetry" /> to run the policy for every retry.
@@ -80,6 +147,7 @@
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.21.0.0</AssemblyVersion>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.CancellationToken</ReturnType>
@@ -103,6 +171,7 @@
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.21.0.0</AssemblyVersion>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ErrorOptions</ReturnType>
@@ -126,6 +195,7 @@
         <AssemblyName>Azure.Core</AssemblyName>
         <AssemblyVersion>1.21.0.0</AssemblyVersion>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.RequestContext</ReturnType>

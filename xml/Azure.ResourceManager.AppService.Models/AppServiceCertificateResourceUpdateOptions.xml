@@ -1,0 +1,97 @@
+<Type Name="AppServiceCertificateResourceUpdateOptions" FullName="Azure.ResourceManager.AppService.Models.AppServiceCertificateResourceUpdateOptions">
+  <TypeSignature Language="C#" Value="public class AppServiceCertificateResourceUpdateOptions : Azure.ResourceManager.AppService.Models.ProxyOnlyResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AppServiceCertificateResourceUpdateOptions extends Azure.ResourceManager.AppService.Models.ProxyOnlyResource" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.AppService.Models.AppServiceCertificateResourceUpdateOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class AppServiceCertificateResourceUpdateOptions&#xA;Inherits ProxyOnlyResource" />
+  <TypeSignature Language="F#" Value="type AppServiceCertificateResourceUpdateOptions = class&#xA;    inherit ProxyOnlyResource" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.AppService</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.ResourceManager.AppService.Models.ProxyOnlyResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> Key Vault container ARM resource for a certificate that is purchased through Azure. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AppServiceCertificateResourceUpdateOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.AppService.Models.AppServiceCertificateResourceUpdateOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.AppService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of AppServiceCertificateResourceUpdateOptions. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyVaultId">
+      <MemberSignature Language="C#" Value="public string KeyVaultId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string KeyVaultId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.AppService.Models.AppServiceCertificateResourceUpdateOptions.KeyVaultId" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyVaultId As String" />
+      <MemberSignature Language="F#" Value="member this.KeyVaultId : string with get, set" Usage="Azure.ResourceManager.AppService.Models.AppServiceCertificateResourceUpdateOptions.KeyVaultId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.AppService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Key Vault resource Id. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyVaultSecretName">
+      <MemberSignature Language="C#" Value="public string KeyVaultSecretName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string KeyVaultSecretName" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.AppService.Models.AppServiceCertificateResourceUpdateOptions.KeyVaultSecretName" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyVaultSecretName As String" />
+      <MemberSignature Language="F#" Value="member this.KeyVaultSecretName : string with get, set" Usage="Azure.ResourceManager.AppService.Models.AppServiceCertificateResourceUpdateOptions.KeyVaultSecretName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.AppService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Key Vault secret name. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvisioningState">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.AppService.Models.KeyVaultSecretStatus? ProvisioningState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.AppService.Models.KeyVaultSecretStatus&gt; ProvisioningState" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.AppService.Models.AppServiceCertificateResourceUpdateOptions.ProvisioningState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As Nullable(Of KeyVaultSecretStatus)" />
+      <MemberSignature Language="F#" Value="member this.ProvisioningState : Nullable&lt;Azure.ResourceManager.AppService.Models.KeyVaultSecretStatus&gt;" Usage="Azure.ResourceManager.AppService.Models.AppServiceCertificateResourceUpdateOptions.ProvisioningState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.AppService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.AppService.Models.KeyVaultSecretStatus&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Status of the Key Vault secret. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
