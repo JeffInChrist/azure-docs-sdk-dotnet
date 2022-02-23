@@ -44,65 +44,77 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.EventHubs.Models.ConsumerGroupCreateOrUpdateOperation CreateOrUpdate (string consumerGroupName, Azure.ResourceManager.EventHubs.ConsumerGroupData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.EventHubs.Models.ConsumerGroupCreateOrUpdateOperation CreateOrUpdate(string consumerGroupName, class Azure.ResourceManager.EventHubs.ConsumerGroupData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ConsumerGroupCollection.CreateOrUpdate(System.String,Azure.ResourceManager.EventHubs.ConsumerGroupData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (consumerGroupName As String, parameters As ConsumerGroupData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As ConsumerGroupCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.ResourceManager.EventHubs.ConsumerGroupData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.EventHubs.Models.ConsumerGroupCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : string * Azure.ResourceManager.EventHubs.ConsumerGroupData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.EventHubs.Models.ConsumerGroupCreateOrUpdateOperation" Usage="consumerGroupCollection.CreateOrUpdate (consumerGroupName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.EventHubs.ConsumerGroup&gt; CreateOrUpdate (bool waitForCompletion, string consumerGroupName, Azure.ResourceManager.EventHubs.ConsumerGroupData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.EventHubs.ConsumerGroup&gt; CreateOrUpdate(bool waitForCompletion, string consumerGroupName, class Azure.ResourceManager.EventHubs.ConsumerGroupData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ConsumerGroupCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.EventHubs.ConsumerGroupData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, consumerGroupName As String, parameters As ConsumerGroupData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of ConsumerGroup)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.EventHubs.ConsumerGroupData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.EventHubs.ConsumerGroup&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.EventHubs.ConsumerGroupData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.EventHubs.ConsumerGroup&gt;" Usage="consumerGroupCollection.CreateOrUpdate (waitForCompletion, consumerGroupName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.EventHubs.Models.ConsumerGroupCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.EventHubs.ConsumerGroup&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="consumerGroupName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.EventHubs.ConsumerGroupData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="consumerGroupName"> The consumer group name. </param>
         <param name="parameters"> Parameters supplied to create or update a consumer group resource. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Creates or updates an Event Hubs consumer group as a nested resource within a Namespace. </summary>
+        <summary>
+            Creates or updates an Event Hubs consumer group as a nested resource within a Namespace.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}/eventhubs/{eventHubName}/consumergroups/{consumerGroupName}
+            Operation Id: ConsumerGroups_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="consumerGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="consumerGroupName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.ConsumerGroupCreateOrUpdateOperation&gt; CreateOrUpdateAsync (string consumerGroupName, Azure.ResourceManager.EventHubs.ConsumerGroupData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.EventHubs.Models.ConsumerGroupCreateOrUpdateOperation&gt; CreateOrUpdateAsync(string consumerGroupName, class Azure.ResourceManager.EventHubs.ConsumerGroupData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ConsumerGroupCollection.CreateOrUpdateAsync(System.String,Azure.ResourceManager.EventHubs.ConsumerGroupData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (consumerGroupName As String, parameters As ConsumerGroupData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ConsumerGroupCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.ResourceManager.EventHubs.ConsumerGroupData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.ConsumerGroupCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.ResourceManager.EventHubs.ConsumerGroupData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.ConsumerGroupCreateOrUpdateOperation&gt;" Usage="consumerGroupCollection.CreateOrUpdateAsync (consumerGroupName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.EventHubs.ConsumerGroup&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string consumerGroupName, Azure.ResourceManager.EventHubs.ConsumerGroupData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.EventHubs.ConsumerGroup&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string consumerGroupName, class Azure.ResourceManager.EventHubs.ConsumerGroupData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.ConsumerGroupCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.EventHubs.ConsumerGroupData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, consumerGroupName As String, parameters As ConsumerGroupData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of ConsumerGroup))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.EventHubs.ConsumerGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.EventHubs.ConsumerGroup&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.EventHubs.ConsumerGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.EventHubs.ConsumerGroup&gt;&gt;" Usage="consumerGroupCollection.CreateOrUpdateAsync (waitForCompletion, consumerGroupName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.ConsumerGroupCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.EventHubs.ConsumerGroup&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="consumerGroupName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.EventHubs.ConsumerGroupData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="consumerGroupName"> The consumer group name. </param>
         <param name="parameters"> Parameters supplied to create or update a consumer group resource. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Creates or updates an Event Hubs consumer group as a nested resource within a Namespace. </summary>
+        <summary>
+            Creates or updates an Event Hubs consumer group as a nested resource within a Namespace.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}/eventhubs/{eventHubName}/consumergroups/{consumerGroupName}
+            Operation Id: ConsumerGroups_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="consumerGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="consumerGroupName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -128,9 +140,15 @@
       <Docs>
         <param name="consumerGroupName"> The consumer group name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}/eventhubs/{eventHubName}/consumergroups/{consumerGroupName}
+            Operation Id: ConsumerGroups_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="consumerGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="consumerGroupName" /> is null. </exception>
       </Docs>
@@ -156,9 +174,15 @@
       <Docs>
         <param name="consumerGroupName"> The consumer group name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}/eventhubs/{eventHubName}/consumergroups/{consumerGroupName}
+            Operation Id: ConsumerGroups_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="consumerGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="consumerGroupName" /> is null. </exception>
       </Docs>
@@ -184,9 +208,15 @@
       <Docs>
         <param name="consumerGroupName"> The consumer group name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a description for the specified consumer group. </summary>
+        <summary>
+            Gets a description for the specified consumer group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}/eventhubs/{eventHubName}/consumergroups/{consumerGroupName}
+            Operation Id: ConsumerGroups_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="consumerGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="consumerGroupName" /> is null. </exception>
       </Docs>
@@ -214,7 +244,11 @@
         <param name="skip"> Skip is only used if a previous operation returned a partial result. If a previous response contains a nextLink element, the value of the nextLink element will include a skip parameter that specifies a starting point to use for subsequent calls. </param>
         <param name="top"> May be used to limit the number of results to the most recent N usageDetails. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets all the consumer groups in a Namespace. An empty feed is returned if no consumer group exists in the Namespace. </summary>
+        <summary>
+            Gets all the consumer groups in a Namespace. An empty feed is returned if no consumer group exists in the Namespace.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}/eventhubs/{eventHubName}/consumergroups
+            Operation Id: ConsumerGroups_ListByEventHub
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.EventHubs.ConsumerGroup" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -242,7 +276,11 @@
         <param name="skip"> Skip is only used if a previous operation returned a partial result. If a previous response contains a nextLink element, the value of the nextLink element will include a skip parameter that specifies a starting point to use for subsequent calls. </param>
         <param name="top"> May be used to limit the number of results to the most recent N usageDetails. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets all the consumer groups in a Namespace. An empty feed is returned if no consumer group exists in the Namespace. </summary>
+        <summary>
+            Gets all the consumer groups in a Namespace. An empty feed is returned if no consumer group exists in the Namespace.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}/eventhubs/{eventHubName}/consumergroups
+            Operation Id: ConsumerGroups_ListByEventHub
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.EventHubs.ConsumerGroup" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -268,9 +306,15 @@
       <Docs>
         <param name="consumerGroupName"> The consumer group name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a description for the specified consumer group. </summary>
+        <summary>
+            Gets a description for the specified consumer group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}/eventhubs/{eventHubName}/consumergroups/{consumerGroupName}
+            Operation Id: ConsumerGroups_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="consumerGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="consumerGroupName" /> is null. </exception>
       </Docs>
@@ -296,9 +340,15 @@
       <Docs>
         <param name="consumerGroupName"> The consumer group name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}/eventhubs/{eventHubName}/consumergroups/{consumerGroupName}
+            Operation Id: ConsumerGroups_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="consumerGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="consumerGroupName" /> is null. </exception>
       </Docs>
@@ -324,9 +374,15 @@
       <Docs>
         <param name="consumerGroupName"> The consumer group name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}/eventhubs/{eventHubName}/consumergroups/{consumerGroupName}
+            Operation Id: ConsumerGroups_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="consumerGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="consumerGroupName" /> is null. </exception>
       </Docs>
@@ -403,26 +459,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.EventHubs.ConsumerGroupCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.EventHubs.ConsumerGroupCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,0 +1,221 @@
+<Type Name="ClusterNode" FullName="Azure.ResourceManager.StackHCI.Models.ClusterNode">
+  <TypeSignature Language="C#" Value="public class ClusterNode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ClusterNode extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.StackHCI.Models.ClusterNode" />
+  <TypeSignature Language="VB.NET" Value="Public Class ClusterNode" />
+  <TypeSignature Language="F#" Value="type ClusterNode = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> Cluster node details. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CoreCount">
+      <MemberSignature Language="C#" Value="public float? CoreCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float32&gt; CoreCount" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.Models.ClusterNode.CoreCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CoreCount As Nullable(Of Single)" />
+      <MemberSignature Language="F#" Value="member this.CoreCount : Nullable&lt;single&gt;" Usage="Azure.ResourceManager.StackHCI.Models.ClusterNode.CoreCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Number of physical cores on the cluster node. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public float? Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float32&gt; Id" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.Models.ClusterNode.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Nullable(Of Single)" />
+      <MemberSignature Language="F#" Value="member this.Id : Nullable&lt;single&gt;" Usage="Azure.ResourceManager.StackHCI.Models.ClusterNode.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Id of the node in the cluster. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Manufacturer">
+      <MemberSignature Language="C#" Value="public string Manufacturer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Manufacturer" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.Models.ClusterNode.Manufacturer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Manufacturer As String" />
+      <MemberSignature Language="F#" Value="member this.Manufacturer : string" Usage="Azure.ResourceManager.StackHCI.Models.ClusterNode.Manufacturer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Manufacturer of the cluster node hardware. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MemoryInGiB">
+      <MemberSignature Language="C#" Value="public float? MemoryInGiB { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float32&gt; MemoryInGiB" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.Models.ClusterNode.MemoryInGiB" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemoryInGiB As Nullable(Of Single)" />
+      <MemberSignature Language="F#" Value="member this.MemoryInGiB : Nullable&lt;single&gt;" Usage="Azure.ResourceManager.StackHCI.Models.ClusterNode.MemoryInGiB" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Total available memory on the cluster node (in GiB). </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Model">
+      <MemberSignature Language="C#" Value="public string Model { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Model" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.Models.ClusterNode.Model" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Model As String" />
+      <MemberSignature Language="F#" Value="member this.Model : string" Usage="Azure.ResourceManager.StackHCI.Models.ClusterNode.Model" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Model name of the cluster node hardware. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.Models.ClusterNode.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Azure.ResourceManager.StackHCI.Models.ClusterNode.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Name of the cluster node. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OsName">
+      <MemberSignature Language="C#" Value="public string OsName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OsName" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.Models.ClusterNode.OsName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OsName As String" />
+      <MemberSignature Language="F#" Value="member this.OsName : string" Usage="Azure.ResourceManager.StackHCI.Models.ClusterNode.OsName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Operating system running on the cluster node. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OsVersion">
+      <MemberSignature Language="C#" Value="public string OsVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OsVersion" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.Models.ClusterNode.OsVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OsVersion As String" />
+      <MemberSignature Language="F#" Value="member this.OsVersion : string" Usage="Azure.ResourceManager.StackHCI.Models.ClusterNode.OsVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Version of the operating system running on the cluster node. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerialNumber">
+      <MemberSignature Language="C#" Value="public string SerialNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SerialNumber" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.Models.ClusterNode.SerialNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SerialNumber As String" />
+      <MemberSignature Language="F#" Value="member this.SerialNumber : string" Usage="Azure.ResourceManager.StackHCI.Models.ClusterNode.SerialNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Immutable id of the cluster node. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsServerSubscription">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.StackHCI.Models.WindowsServerSubscription? WindowsServerSubscription { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.StackHCI.Models.WindowsServerSubscription&gt; WindowsServerSubscription" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.StackHCI.Models.ClusterNode.WindowsServerSubscription" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WindowsServerSubscription As Nullable(Of WindowsServerSubscription)" />
+      <MemberSignature Language="F#" Value="member this.WindowsServerSubscription : Nullable&lt;Azure.ResourceManager.StackHCI.Models.WindowsServerSubscription&gt;" Usage="Azure.ResourceManager.StackHCI.Models.ClusterNode.WindowsServerSubscription" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.StackHCI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.StackHCI.Models.WindowsServerSubscription&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> State of Windows Server Subscription. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

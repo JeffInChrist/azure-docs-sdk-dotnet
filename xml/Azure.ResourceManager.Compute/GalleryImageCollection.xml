@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.GalleryImageCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string galleryImageName, Azure.ResourceManager.Compute.GalleryImageData galleryImage, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.GalleryImageCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string galleryImageName, class Azure.ResourceManager.Compute.GalleryImageData galleryImage, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.GalleryImage&gt; CreateOrUpdate (bool waitForCompletion, string galleryImageName, Azure.ResourceManager.Compute.GalleryImageData galleryImage, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.GalleryImage&gt; CreateOrUpdate(bool waitForCompletion, string galleryImageName, class Azure.ResourceManager.Compute.GalleryImageData galleryImage, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.GalleryImageCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Compute.GalleryImageData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, galleryImageName As String, galleryImage As GalleryImageData, Optional cancellationToken As CancellationToken = Nothing) As GalleryImageCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.GalleryImageData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.GalleryImageCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.GalleryImageData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.GalleryImageCreateOrUpdateOperation" Usage="galleryImageCollection.CreateOrUpdate (waitForCompletion, galleryImageName, galleryImage, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, galleryImageName As String, galleryImage As GalleryImageData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of GalleryImage)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.GalleryImageData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.GalleryImage&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.GalleryImageData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.GalleryImage&gt;" Usage="galleryImageCollection.CreateOrUpdate (waitForCompletion, galleryImageName, galleryImage, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.GalleryImageCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.GalleryImage&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -68,28 +68,32 @@
         <param name="galleryImageName"> The name of the gallery image definition to be created or updated. The allowed characters are alphabets and numbers with dots, dashes, and periods allowed in the middle. The maximum length is 80 characters. </param>
         <param name="galleryImage"> Parameters supplied to the create or update gallery image operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Create or update a gallery image definition. </summary>
+        <summary>
+            Create or update a gallery image definition.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/galleries/{galleryName}/images/{galleryImageName}
+            Operation Id: GalleryImages_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="galleryImageName" /> is empty. </exception>
+          <paramref name="galleryImageName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="galleryImageName" /> or <paramref name="galleryImage" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.GalleryImageCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string galleryImageName, Azure.ResourceManager.Compute.GalleryImageData galleryImage, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.GalleryImageCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string galleryImageName, class Azure.ResourceManager.Compute.GalleryImageData galleryImage, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.GalleryImage&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string galleryImageName, Azure.ResourceManager.Compute.GalleryImageData galleryImage, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.GalleryImage&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string galleryImageName, class Azure.ResourceManager.Compute.GalleryImageData galleryImage, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.GalleryImageCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Compute.GalleryImageData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, galleryImageName As String, galleryImage As GalleryImageData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of GalleryImageCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.GalleryImageData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.GalleryImageCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.GalleryImageData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.GalleryImageCreateOrUpdateOperation&gt;" Usage="galleryImageCollection.CreateOrUpdateAsync (waitForCompletion, galleryImageName, galleryImage, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, galleryImageName As String, galleryImage As GalleryImageData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of GalleryImage))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.GalleryImageData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.GalleryImage&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.GalleryImageData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.GalleryImage&gt;&gt;" Usage="galleryImageCollection.CreateOrUpdateAsync (waitForCompletion, galleryImageName, galleryImage, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.GalleryImageCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.GalleryImage&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -102,11 +106,15 @@
         <param name="galleryImageName"> The name of the gallery image definition to be created or updated. The allowed characters are alphabets and numbers with dots, dashes, and periods allowed in the middle. The maximum length is 80 characters. </param>
         <param name="galleryImage"> Parameters supplied to the create or update gallery image operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Create or update a gallery image definition. </summary>
+        <summary>
+            Create or update a gallery image definition.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/galleries/{galleryName}/images/{galleryImageName}
+            Operation Id: GalleryImages_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="galleryImageName" /> is empty. </exception>
+          <paramref name="galleryImageName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="galleryImageName" /> or <paramref name="galleryImage" /> is null. </exception>
       </Docs>
@@ -132,11 +140,15 @@
       <Docs>
         <param name="galleryImageName"> The name of the gallery image definition to be retrieved. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/galleries/{galleryName}/images/{galleryImageName}
+            Operation Id: GalleryImages_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="galleryImageName" /> is empty. </exception>
+          <paramref name="galleryImageName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="galleryImageName" /> is null. </exception>
       </Docs>
@@ -162,11 +174,15 @@
       <Docs>
         <param name="galleryImageName"> The name of the gallery image definition to be retrieved. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/galleries/{galleryName}/images/{galleryImageName}
+            Operation Id: GalleryImages_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="galleryImageName" /> is empty. </exception>
+          <paramref name="galleryImageName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="galleryImageName" /> is null. </exception>
       </Docs>
@@ -192,11 +208,15 @@
       <Docs>
         <param name="galleryImageName"> The name of the gallery image definition to be retrieved. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Retrieves information about a gallery image definition. </summary>
+        <summary>
+            Retrieves information about a gallery image definition.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/galleries/{galleryName}/images/{galleryImageName}
+            Operation Id: GalleryImages_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="galleryImageName" /> is empty. </exception>
+          <paramref name="galleryImageName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="galleryImageName" /> is null. </exception>
       </Docs>
@@ -220,7 +240,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> List gallery image definitions in a gallery. </summary>
+        <summary>
+            List gallery image definitions in a gallery.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/galleries/{galleryName}/images
+            Operation Id: GalleryImages_ListByGallery
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.GalleryImage" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -244,7 +268,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> List gallery image definitions in a gallery. </summary>
+        <summary>
+            List gallery image definitions in a gallery.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/galleries/{galleryName}/images
+            Operation Id: GalleryImages_ListByGallery
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.GalleryImage" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -270,11 +298,15 @@
       <Docs>
         <param name="galleryImageName"> The name of the gallery image definition to be retrieved. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Retrieves information about a gallery image definition. </summary>
+        <summary>
+            Retrieves information about a gallery image definition.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/galleries/{galleryName}/images/{galleryImageName}
+            Operation Id: GalleryImages_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="galleryImageName" /> is empty. </exception>
+          <paramref name="galleryImageName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="galleryImageName" /> is null. </exception>
       </Docs>
@@ -300,11 +332,15 @@
       <Docs>
         <param name="galleryImageName"> The name of the gallery image definition to be retrieved. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/galleries/{galleryName}/images/{galleryImageName}
+            Operation Id: GalleryImages_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="galleryImageName" /> is empty. </exception>
+          <paramref name="galleryImageName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="galleryImageName" /> is null. </exception>
       </Docs>
@@ -330,11 +366,15 @@
       <Docs>
         <param name="galleryImageName"> The name of the gallery image definition to be retrieved. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/galleries/{galleryName}/images/{galleryImageName}
+            Operation Id: GalleryImages_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="galleryImageName" /> is empty. </exception>
+          <paramref name="galleryImageName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="galleryImageName" /> is null. </exception>
       </Docs>

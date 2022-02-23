@@ -23,7 +23,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary> A class representing collection of DatabaseSchema and their operations over its parent. </summary>
+    <summary> A class representing collection of ManagedInstanceDatabaseSchema and their operations over its parent. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -64,9 +64,15 @@
       <Docs>
         <param name="schemaName"> The name of the schema. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/managedInstances/{managedInstanceName}/databases/{databaseName}/schemas/{schemaName}
+            Operation Id: ManagedDatabaseSchemas_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="schemaName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="schemaName" /> is null. </exception>
       </Docs>
@@ -92,9 +98,15 @@
       <Docs>
         <param name="schemaName"> The name of the schema. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/managedInstances/{managedInstanceName}/databases/{databaseName}/schemas/{schemaName}
+            Operation Id: ManagedDatabaseSchemas_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="schemaName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="schemaName" /> is null. </exception>
       </Docs>
@@ -120,9 +132,15 @@
       <Docs>
         <param name="schemaName"> The name of the schema. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Get managed database schema. </summary>
+        <summary>
+            Get managed database schema
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/managedInstances/{managedInstanceName}/databases/{databaseName}/schemas/{schemaName}
+            Operation Id: ManagedDatabaseSchemas_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="schemaName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="schemaName" /> is null. </exception>
       </Docs>
@@ -148,7 +166,11 @@
       <Docs>
         <param name="filter"> An OData filter expression that filters elements in the collection. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> List managed database schemas. </summary>
+        <summary>
+            List managed database schemas
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/managedInstances/{managedInstanceName}/databases/{databaseName}/schemas
+            Operation Id: ManagedDatabaseSchemas_ListByDatabase
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceDatabaseSchema" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -174,7 +196,11 @@
       <Docs>
         <param name="filter"> An OData filter expression that filters elements in the collection. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> List managed database schemas. </summary>
+        <summary>
+            List managed database schemas
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/managedInstances/{managedInstanceName}/databases/{databaseName}/schemas
+            Operation Id: ManagedDatabaseSchemas_ListByDatabase
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceDatabaseSchema" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -200,9 +226,15 @@
       <Docs>
         <param name="schemaName"> The name of the schema. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Get managed database schema. </summary>
+        <summary>
+            Get managed database schema
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/managedInstances/{managedInstanceName}/databases/{databaseName}/schemas/{schemaName}
+            Operation Id: ManagedDatabaseSchemas_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="schemaName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="schemaName" /> is null. </exception>
       </Docs>
@@ -228,9 +260,15 @@
       <Docs>
         <param name="schemaName"> The name of the schema. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/managedInstances/{managedInstanceName}/databases/{databaseName}/schemas/{schemaName}
+            Operation Id: ManagedDatabaseSchemas_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="schemaName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="schemaName" /> is null. </exception>
       </Docs>
@@ -256,9 +294,15 @@
       <Docs>
         <param name="schemaName"> The name of the schema. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/managedInstances/{managedInstanceName}/databases/{databaseName}/schemas/{schemaName}
+            Operation Id: ManagedDatabaseSchemas_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="schemaName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="schemaName" /> is null. </exception>
       </Docs>
@@ -335,26 +379,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Sql.ManagedInstanceDatabaseSchemaCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.Sql.ManagedInstanceDatabaseSchemaCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

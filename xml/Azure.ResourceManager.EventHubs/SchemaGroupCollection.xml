@@ -44,65 +44,75 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.EventHubs.Models.SchemaRegistryCreateOrUpdateOperation CreateOrUpdate (string schemaGroupName, Azure.ResourceManager.EventHubs.SchemaGroupData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.EventHubs.Models.SchemaRegistryCreateOrUpdateOperation CreateOrUpdate(string schemaGroupName, class Azure.ResourceManager.EventHubs.SchemaGroupData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.SchemaGroupCollection.CreateOrUpdate(System.String,Azure.ResourceManager.EventHubs.SchemaGroupData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (schemaGroupName As String, parameters As SchemaGroupData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As SchemaRegistryCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.ResourceManager.EventHubs.SchemaGroupData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.EventHubs.Models.SchemaRegistryCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : string * Azure.ResourceManager.EventHubs.SchemaGroupData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.EventHubs.Models.SchemaRegistryCreateOrUpdateOperation" Usage="schemaGroupCollection.CreateOrUpdate (schemaGroupName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.EventHubs.SchemaGroup&gt; CreateOrUpdate (bool waitForCompletion, string schemaGroupName, Azure.ResourceManager.EventHubs.SchemaGroupData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.EventHubs.SchemaGroup&gt; CreateOrUpdate(bool waitForCompletion, string schemaGroupName, class Azure.ResourceManager.EventHubs.SchemaGroupData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.SchemaGroupCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.EventHubs.SchemaGroupData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, schemaGroupName As String, parameters As SchemaGroupData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of SchemaGroup)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.EventHubs.SchemaGroupData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.EventHubs.SchemaGroup&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.EventHubs.SchemaGroupData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.EventHubs.SchemaGroup&gt;" Usage="schemaGroupCollection.CreateOrUpdate (waitForCompletion, schemaGroupName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.EventHubs.Models.SchemaRegistryCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.EventHubs.SchemaGroup&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="schemaGroupName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.EventHubs.SchemaGroupData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="schemaGroupName"> The Schema Group name. </param>
         <param name="parameters"> Parameters supplied to create an Event Hub resource. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
+        <summary>
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}/schemagroups/{schemaGroupName}
+            Operation Id: SchemaRegistry_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="schemaGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="schemaGroupName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.SchemaRegistryCreateOrUpdateOperation&gt; CreateOrUpdateAsync (string schemaGroupName, Azure.ResourceManager.EventHubs.SchemaGroupData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.EventHubs.Models.SchemaRegistryCreateOrUpdateOperation&gt; CreateOrUpdateAsync(string schemaGroupName, class Azure.ResourceManager.EventHubs.SchemaGroupData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.SchemaGroupCollection.CreateOrUpdateAsync(System.String,Azure.ResourceManager.EventHubs.SchemaGroupData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (schemaGroupName As String, parameters As SchemaGroupData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SchemaRegistryCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.ResourceManager.EventHubs.SchemaGroupData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.SchemaRegistryCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.ResourceManager.EventHubs.SchemaGroupData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.SchemaRegistryCreateOrUpdateOperation&gt;" Usage="schemaGroupCollection.CreateOrUpdateAsync (schemaGroupName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.EventHubs.SchemaGroup&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string schemaGroupName, Azure.ResourceManager.EventHubs.SchemaGroupData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.EventHubs.SchemaGroup&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string schemaGroupName, class Azure.ResourceManager.EventHubs.SchemaGroupData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EventHubs.SchemaGroupCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.EventHubs.SchemaGroupData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, schemaGroupName As String, parameters As SchemaGroupData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of SchemaGroup))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.EventHubs.SchemaGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.EventHubs.SchemaGroup&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.EventHubs.SchemaGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.EventHubs.SchemaGroup&gt;&gt;" Usage="schemaGroupCollection.CreateOrUpdateAsync (waitForCompletion, schemaGroupName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.EventHubs.Models.SchemaRegistryCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.EventHubs.SchemaGroup&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="schemaGroupName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.EventHubs.SchemaGroupData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="schemaGroupName"> The Schema Group name. </param>
         <param name="parameters"> Parameters supplied to create an Event Hub resource. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
+        <summary>
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}/schemagroups/{schemaGroupName}
+            Operation Id: SchemaRegistry_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="schemaGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="schemaGroupName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -128,9 +138,15 @@
       <Docs>
         <param name="schemaGroupName"> The Schema Group name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}/schemagroups/{schemaGroupName}
+            Operation Id: SchemaRegistry_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="schemaGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="schemaGroupName" /> is null. </exception>
       </Docs>
@@ -156,9 +172,15 @@
       <Docs>
         <param name="schemaGroupName"> The Schema Group name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}/schemagroups/{schemaGroupName}
+            Operation Id: SchemaRegistry_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="schemaGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="schemaGroupName" /> is null. </exception>
       </Docs>
@@ -184,9 +206,14 @@
       <Docs>
         <param name="schemaGroupName"> The Schema Group name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
+        <summary>
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}/schemagroups/{schemaGroupName}
+            Operation Id: SchemaRegistry_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="schemaGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="schemaGroupName" /> is null. </exception>
       </Docs>
@@ -214,7 +241,11 @@
         <param name="skip"> Skip is only used if a previous operation returned a partial result. If a previous response contains a nextLink element, the value of the nextLink element will include a skip parameter that specifies a starting point to use for subsequent calls. </param>
         <param name="top"> May be used to limit the number of results to the most recent N usageDetails. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets all the Schema Groups in a Namespace. </summary>
+        <summary>
+            Gets all the Schema Groups in a Namespace.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}/schemagroups
+            Operation Id: SchemaRegistry_ListByNamespace
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.EventHubs.SchemaGroup" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -242,7 +273,11 @@
         <param name="skip"> Skip is only used if a previous operation returned a partial result. If a previous response contains a nextLink element, the value of the nextLink element will include a skip parameter that specifies a starting point to use for subsequent calls. </param>
         <param name="top"> May be used to limit the number of results to the most recent N usageDetails. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets all the Schema Groups in a Namespace. </summary>
+        <summary>
+            Gets all the Schema Groups in a Namespace.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}/schemagroups
+            Operation Id: SchemaRegistry_ListByNamespace
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.EventHubs.SchemaGroup" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -268,9 +303,14 @@
       <Docs>
         <param name="schemaGroupName"> The Schema Group name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
+        <summary>
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}/schemagroups/{schemaGroupName}
+            Operation Id: SchemaRegistry_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="schemaGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="schemaGroupName" /> is null. </exception>
       </Docs>
@@ -296,9 +336,15 @@
       <Docs>
         <param name="schemaGroupName"> The Schema Group name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}/schemagroups/{schemaGroupName}
+            Operation Id: SchemaRegistry_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="schemaGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="schemaGroupName" /> is null. </exception>
       </Docs>
@@ -324,9 +370,15 @@
       <Docs>
         <param name="schemaGroupName"> The Schema Group name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}/schemagroups/{schemaGroupName}
+            Operation Id: SchemaRegistry_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="schemaGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="schemaGroupName" /> is null. </exception>
       </Docs>
@@ -403,26 +455,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.EventHubs.SchemaGroupCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.EventHubs.SchemaGroupCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

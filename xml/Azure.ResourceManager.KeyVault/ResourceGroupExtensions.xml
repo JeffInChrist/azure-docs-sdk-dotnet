@@ -36,8 +36,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a ManagedHsmCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.KeyVault.ManagedHsmCollection" /> object. </returns>
+        <summary> Gets a collection of ManagedHsms in the ManagedHsm. </summary>
+        <returns> An object representing collection of ManagedHsms and their operations over a ManagedHsm. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,8 +60,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a VaultCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.KeyVault.VaultCollection" /> object. </returns>
+        <summary> Gets a collection of Vaults in the Vault. </summary>
+        <returns> An object representing collection of Vaults and their operations over a Vault. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

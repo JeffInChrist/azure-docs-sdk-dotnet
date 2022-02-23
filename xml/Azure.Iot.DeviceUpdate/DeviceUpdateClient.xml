@@ -58,7 +58,7 @@
         <summary> Initializes a new instance of DeviceUpdateClient. </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="endpoint" />, <paramref name="instanceId" />, or <paramref name="credential" /> is null. </exception>
+          <paramref name="endpoint" />, <paramref name="instanceId" /> or <paramref name="credential" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="DeleteUpdate">
@@ -109,7 +109,9 @@
             }
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="provider" />, <paramref name="name" />, or <paramref name="version" /> is null. </exception>
+          <paramref name="provider" />, <paramref name="name" /> or <paramref name="version" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="provider" />, <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="DeleteUpdateAsync">
@@ -160,7 +162,9 @@
             }
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="provider" />, <paramref name="name" />, or <paramref name="version" /> is null. </exception>
+          <paramref name="provider" />, <paramref name="name" /> or <paramref name="version" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="provider" />, <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetFile">
@@ -225,7 +229,9 @@
             }
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="provider" />, <paramref name="name" />, <paramref name="version" />, or <paramref name="fileId" /> is null. </exception>
+          <paramref name="provider" />, <paramref name="name" />, <paramref name="version" /> or <paramref name="fileId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="provider" />, <paramref name="name" />, <paramref name="version" /> or <paramref name="fileId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetFileAsync">
@@ -290,7 +296,9 @@
             }
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="provider" />, <paramref name="name" />, <paramref name="version" />, or <paramref name="fileId" /> is null. </exception>
+          <paramref name="provider" />, <paramref name="name" />, <paramref name="version" /> or <paramref name="fileId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="provider" />, <paramref name="name" />, <paramref name="version" /> or <paramref name="fileId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetFiles">
@@ -345,7 +353,9 @@
             }
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="provider" />, <paramref name="name" />, or <paramref name="version" /> is null. </exception>
+          <paramref name="provider" />, <paramref name="name" /> or <paramref name="version" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="provider" />, <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetFilesAsync">
@@ -400,7 +410,9 @@
             }
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="provider" />, <paramref name="name" />, or <paramref name="version" /> is null. </exception>
+          <paramref name="provider" />, <paramref name="name" /> or <paramref name="version" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="provider" />, <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetNames">
@@ -452,6 +464,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="provider" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="provider" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetNamesAsync">
@@ -503,6 +517,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="provider" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="provider" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetOperation">
@@ -579,6 +595,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="operationId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="operationId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetOperationAsync">
@@ -655,6 +673,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="operationId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="operationId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetOperations">
@@ -990,7 +1010,9 @@
             }
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="provider" />, <paramref name="name" />, or <paramref name="version" /> is null. </exception>
+          <paramref name="provider" />, <paramref name="name" /> or <paramref name="version" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="provider" />, <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetUpdateAsync">
@@ -1074,7 +1096,9 @@
             }
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="provider" />, <paramref name="name" />, or <paramref name="version" /> is null. </exception>
+          <paramref name="provider" />, <paramref name="name" /> or <paramref name="version" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="provider" />, <paramref name="name" /> or <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetUpdates">
@@ -1296,6 +1320,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="provider" /> or <paramref name="name" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="provider" /> or <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetVersionsAsync">
@@ -1351,6 +1377,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="provider" /> or <paramref name="name" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="provider" /> or <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="ImportUpdate">
