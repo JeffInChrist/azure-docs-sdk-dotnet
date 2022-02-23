@@ -1,8 +1,8 @@
 ---
 title: 
 keywords: Azure, dotnet, SDK, API, System.Memory.Data, core
-author: JoshLove-msft
-ms.author: jolov
+author: ramya-rao-a
+ms.author: ramyar
 ms.date: 02/23/2022
 ms.topic: reference
 ms.prod: azure
