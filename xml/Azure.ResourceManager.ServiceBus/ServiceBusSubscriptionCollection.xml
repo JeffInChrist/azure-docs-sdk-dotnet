@@ -44,65 +44,77 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ServiceBus.Models.SubscriptionCreateOrUpdateOperation CreateOrUpdate (string subscriptionName, Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ServiceBus.Models.SubscriptionCreateOrUpdateOperation CreateOrUpdate(string subscriptionName, class Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionCollection.CreateOrUpdate(System.String,Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (subscriptionName As String, parameters As ServiceBusSubscriptionData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As SubscriptionCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ServiceBus.Models.SubscriptionCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : string * Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionData * bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ServiceBus.Models.SubscriptionCreateOrUpdateOperation" Usage="serviceBusSubscriptionCollection.CreateOrUpdate (subscriptionName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ServiceBus.ServiceBusSubscription&gt; CreateOrUpdate (bool waitForCompletion, string subscriptionName, Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.ServiceBus.ServiceBusSubscription&gt; CreateOrUpdate(bool waitForCompletion, string subscriptionName, class Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, subscriptionName As String, parameters As ServiceBusSubscriptionData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of ServiceBusSubscription)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ServiceBus.ServiceBusSubscription&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ServiceBus.ServiceBusSubscription&gt;" Usage="serviceBusSubscriptionCollection.CreateOrUpdate (waitForCompletion, subscriptionName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ServiceBus.Models.SubscriptionCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ServiceBus.ServiceBusSubscription&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="subscriptionName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="subscriptionName"> The subscription name. </param>
         <param name="parameters"> Parameters supplied to create a subscription resource. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Creates a topic subscription. </summary>
+        <summary>
+            Creates a topic subscription.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceBus/namespaces/{namespaceName}/topics/{topicName}/subscriptions/{subscriptionName}
+            Operation Id: Subscriptions_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="subscriptionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ServiceBus.Models.SubscriptionCreateOrUpdateOperation&gt; CreateOrUpdateAsync (string subscriptionName, Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionData parameters, bool waitForCompletion = true, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ServiceBus.Models.SubscriptionCreateOrUpdateOperation&gt; CreateOrUpdateAsync(string subscriptionName, class Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionData parameters, bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionCollection.CreateOrUpdateAsync(System.String,Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionData,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (subscriptionName As String, parameters As ServiceBusSubscriptionData, Optional waitForCompletion As Boolean = true, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SubscriptionCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ServiceBus.Models.SubscriptionCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionData * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ServiceBus.Models.SubscriptionCreateOrUpdateOperation&gt;" Usage="serviceBusSubscriptionCollection.CreateOrUpdateAsync (subscriptionName, parameters, waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ServiceBus.ServiceBusSubscription&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string subscriptionName, Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.ServiceBus.ServiceBusSubscription&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string subscriptionName, class Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, subscriptionName As String, parameters As ServiceBusSubscriptionData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of ServiceBusSubscription))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ServiceBus.ServiceBusSubscription&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ServiceBus.ServiceBusSubscription&gt;&gt;" Usage="serviceBusSubscriptionCollection.CreateOrUpdateAsync (waitForCompletion, subscriptionName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ServiceBus.Models.SubscriptionCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ServiceBus.ServiceBusSubscription&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="subscriptionName" Type="System.String" />
         <Parameter Name="parameters" Type="Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionData" />
-        <Parameter Name="waitForCompletion" Type="System.Boolean" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="subscriptionName"> The subscription name. </param>
         <param name="parameters"> Parameters supplied to create a subscription resource. </param>
-        <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Creates a topic subscription. </summary>
+        <summary>
+            Creates a topic subscription.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceBus/namespaces/{namespaceName}/topics/{topicName}/subscriptions/{subscriptionName}
+            Operation Id: Subscriptions_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="subscriptionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -128,9 +140,15 @@
       <Docs>
         <param name="subscriptionName"> The subscription name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceBus/namespaces/{namespaceName}/topics/{topicName}/subscriptions/{subscriptionName}
+            Operation Id: Subscriptions_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="subscriptionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionName" /> is null. </exception>
       </Docs>
@@ -156,9 +174,15 @@
       <Docs>
         <param name="subscriptionName"> The subscription name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceBus/namespaces/{namespaceName}/topics/{topicName}/subscriptions/{subscriptionName}
+            Operation Id: Subscriptions_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="subscriptionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionName" /> is null. </exception>
       </Docs>
@@ -184,9 +208,15 @@
       <Docs>
         <param name="subscriptionName"> The subscription name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Returns a subscription description for the specified topic. </summary>
+        <summary>
+            Returns a subscription description for the specified topic.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceBus/namespaces/{namespaceName}/topics/{topicName}/subscriptions/{subscriptionName}
+            Operation Id: Subscriptions_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="subscriptionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionName" /> is null. </exception>
       </Docs>
@@ -214,7 +244,11 @@
         <param name="skip"> Skip is only used if a previous operation returned a partial result. If a previous response contains a nextLink element, the value of the nextLink element will include a skip parameter that specifies a starting point to use for subsequent calls. </param>
         <param name="top"> May be used to limit the number of results to the most recent N usageDetails. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> List all the subscriptions under a specified topic. </summary>
+        <summary>
+            List all the subscriptions under a specified topic.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceBus/namespaces/{namespaceName}/topics/{topicName}/subscriptions
+            Operation Id: Subscriptions_ListByTopic
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.ServiceBus.ServiceBusSubscription" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -242,7 +276,11 @@
         <param name="skip"> Skip is only used if a previous operation returned a partial result. If a previous response contains a nextLink element, the value of the nextLink element will include a skip parameter that specifies a starting point to use for subsequent calls. </param>
         <param name="top"> May be used to limit the number of results to the most recent N usageDetails. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> List all the subscriptions under a specified topic. </summary>
+        <summary>
+            List all the subscriptions under a specified topic.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceBus/namespaces/{namespaceName}/topics/{topicName}/subscriptions
+            Operation Id: Subscriptions_ListByTopic
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.ServiceBus.ServiceBusSubscription" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -268,9 +306,15 @@
       <Docs>
         <param name="subscriptionName"> The subscription name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Returns a subscription description for the specified topic. </summary>
+        <summary>
+            Returns a subscription description for the specified topic.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceBus/namespaces/{namespaceName}/topics/{topicName}/subscriptions/{subscriptionName}
+            Operation Id: Subscriptions_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="subscriptionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionName" /> is null. </exception>
       </Docs>
@@ -296,9 +340,15 @@
       <Docs>
         <param name="subscriptionName"> The subscription name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceBus/namespaces/{namespaceName}/topics/{topicName}/subscriptions/{subscriptionName}
+            Operation Id: Subscriptions_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="subscriptionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionName" /> is null. </exception>
       </Docs>
@@ -324,9 +374,15 @@
       <Docs>
         <param name="subscriptionName"> The subscription name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceBus/namespaces/{namespaceName}/topics/{topicName}/subscriptions/{subscriptionName}
+            Operation Id: Subscriptions_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="subscriptionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionName" /> is null. </exception>
       </Docs>
@@ -403,26 +459,6 @@
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidResourceType">
-      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ResourceType ValidResourceType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ResourceType ValidResourceType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionCollection.ValidResourceType" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ValidResourceType As ResourceType" />
-      <MemberSignature Language="F#" Value="member this.ValidResourceType : Azure.ResourceManager.ResourceType" Usage="Azure.ResourceManager.ServiceBus.ServiceBusSubscriptionCollection.ValidResourceType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.ServiceBus</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ResourceType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Gets the valid resource type for this object. </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

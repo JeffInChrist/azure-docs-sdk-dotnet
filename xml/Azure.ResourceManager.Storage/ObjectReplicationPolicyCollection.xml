@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Storage.Models.ObjectReplicationPolicyCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string objectReplicationPolicyId, Azure.ResourceManager.Storage.ObjectReplicationPolicyData properties, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Storage.Models.ObjectReplicationPolicyCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string objectReplicationPolicyId, class Azure.ResourceManager.Storage.ObjectReplicationPolicyData properties, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.ObjectReplicationPolicy&gt; CreateOrUpdate (bool waitForCompletion, string objectReplicationPolicyId, Azure.ResourceManager.Storage.ObjectReplicationPolicyData properties, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Storage.ObjectReplicationPolicy&gt; CreateOrUpdate(bool waitForCompletion, string objectReplicationPolicyId, class Azure.ResourceManager.Storage.ObjectReplicationPolicyData properties, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.ObjectReplicationPolicyCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Storage.ObjectReplicationPolicyData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, objectReplicationPolicyId As String, properties As ObjectReplicationPolicyData, Optional cancellationToken As CancellationToken = Nothing) As ObjectReplicationPolicyCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Storage.ObjectReplicationPolicyData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Storage.Models.ObjectReplicationPolicyCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Storage.ObjectReplicationPolicyData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Storage.Models.ObjectReplicationPolicyCreateOrUpdateOperation" Usage="objectReplicationPolicyCollection.CreateOrUpdate (waitForCompletion, objectReplicationPolicyId, properties, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, objectReplicationPolicyId As String, properties As ObjectReplicationPolicyData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of ObjectReplicationPolicy)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Storage.ObjectReplicationPolicyData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.ObjectReplicationPolicy&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Storage.ObjectReplicationPolicyData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.ObjectReplicationPolicy&gt;" Usage="objectReplicationPolicyCollection.CreateOrUpdate (waitForCompletion, objectReplicationPolicyId, properties, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Storage.Models.ObjectReplicationPolicyCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.ObjectReplicationPolicy&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -68,28 +68,32 @@
         <param name="objectReplicationPolicyId"> For the destination account, provide the value 'default'. Configure the policy on the destination account first. For the source account, provide the value of the policy ID that is returned when you download the policy that was defined on the destination account. The policy is downloaded as a JSON file. </param>
         <param name="properties"> The object replication policy set to a storage account. A unique policy ID will be created if absent. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Create or update the object replication policy of the storage account. </summary>
+        <summary>
+            Create or update the object replication policy of the storage account.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/objectReplicationPolicies/{objectReplicationPolicyId}
+            Operation Id: ObjectReplicationPolicies_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="objectReplicationPolicyId" /> is empty. </exception>
+          <paramref name="objectReplicationPolicyId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="objectReplicationPolicyId" /> or <paramref name="properties" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Storage.Models.ObjectReplicationPolicyCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string objectReplicationPolicyId, Azure.ResourceManager.Storage.ObjectReplicationPolicyData properties, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Storage.Models.ObjectReplicationPolicyCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string objectReplicationPolicyId, class Azure.ResourceManager.Storage.ObjectReplicationPolicyData properties, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.ObjectReplicationPolicy&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string objectReplicationPolicyId, Azure.ResourceManager.Storage.ObjectReplicationPolicyData properties, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Storage.ObjectReplicationPolicy&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string objectReplicationPolicyId, class Azure.ResourceManager.Storage.ObjectReplicationPolicyData properties, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.ObjectReplicationPolicyCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Storage.ObjectReplicationPolicyData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, objectReplicationPolicyId As String, properties As ObjectReplicationPolicyData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ObjectReplicationPolicyCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Storage.ObjectReplicationPolicyData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Storage.Models.ObjectReplicationPolicyCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Storage.ObjectReplicationPolicyData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Storage.Models.ObjectReplicationPolicyCreateOrUpdateOperation&gt;" Usage="objectReplicationPolicyCollection.CreateOrUpdateAsync (waitForCompletion, objectReplicationPolicyId, properties, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, objectReplicationPolicyId As String, properties As ObjectReplicationPolicyData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of ObjectReplicationPolicy))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Storage.ObjectReplicationPolicyData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.ObjectReplicationPolicy&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Storage.ObjectReplicationPolicyData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.ObjectReplicationPolicy&gt;&gt;" Usage="objectReplicationPolicyCollection.CreateOrUpdateAsync (waitForCompletion, objectReplicationPolicyId, properties, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Storage.Models.ObjectReplicationPolicyCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.ObjectReplicationPolicy&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -102,11 +106,15 @@
         <param name="objectReplicationPolicyId"> For the destination account, provide the value 'default'. Configure the policy on the destination account first. For the source account, provide the value of the policy ID that is returned when you download the policy that was defined on the destination account. The policy is downloaded as a JSON file. </param>
         <param name="properties"> The object replication policy set to a storage account. A unique policy ID will be created if absent. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Create or update the object replication policy of the storage account. </summary>
+        <summary>
+            Create or update the object replication policy of the storage account.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/objectReplicationPolicies/{objectReplicationPolicyId}
+            Operation Id: ObjectReplicationPolicies_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="objectReplicationPolicyId" /> is empty. </exception>
+          <paramref name="objectReplicationPolicyId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="objectReplicationPolicyId" /> or <paramref name="properties" /> is null. </exception>
       </Docs>
@@ -132,11 +140,15 @@
       <Docs>
         <param name="objectReplicationPolicyId"> For the destination account, provide the value 'default'. Configure the policy on the destination account first. For the source account, provide the value of the policy ID that is returned when you download the policy that was defined on the destination account. The policy is downloaded as a JSON file. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/objectReplicationPolicies/{objectReplicationPolicyId}
+            Operation Id: ObjectReplicationPolicies_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="objectReplicationPolicyId" /> is empty. </exception>
+          <paramref name="objectReplicationPolicyId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="objectReplicationPolicyId" /> is null. </exception>
       </Docs>
@@ -162,11 +174,15 @@
       <Docs>
         <param name="objectReplicationPolicyId"> For the destination account, provide the value 'default'. Configure the policy on the destination account first. For the source account, provide the value of the policy ID that is returned when you download the policy that was defined on the destination account. The policy is downloaded as a JSON file. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/objectReplicationPolicies/{objectReplicationPolicyId}
+            Operation Id: ObjectReplicationPolicies_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="objectReplicationPolicyId" /> is empty. </exception>
+          <paramref name="objectReplicationPolicyId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="objectReplicationPolicyId" /> is null. </exception>
       </Docs>
@@ -192,11 +208,15 @@
       <Docs>
         <param name="objectReplicationPolicyId"> For the destination account, provide the value 'default'. Configure the policy on the destination account first. For the source account, provide the value of the policy ID that is returned when you download the policy that was defined on the destination account. The policy is downloaded as a JSON file. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Get the object replication policy of the storage account by policy ID. </summary>
+        <summary>
+            Get the object replication policy of the storage account by policy ID.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/objectReplicationPolicies/{objectReplicationPolicyId}
+            Operation Id: ObjectReplicationPolicies_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="objectReplicationPolicyId" /> is empty. </exception>
+          <paramref name="objectReplicationPolicyId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="objectReplicationPolicyId" /> is null. </exception>
       </Docs>
@@ -220,7 +240,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> List the object replication policies associated with the storage account. </summary>
+        <summary>
+            List the object replication policies associated with the storage account.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/objectReplicationPolicies
+            Operation Id: ObjectReplicationPolicies_List
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Storage.ObjectReplicationPolicy" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -244,7 +268,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> List the object replication policies associated with the storage account. </summary>
+        <summary>
+            List the object replication policies associated with the storage account.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/objectReplicationPolicies
+            Operation Id: ObjectReplicationPolicies_List
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Storage.ObjectReplicationPolicy" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -270,11 +298,15 @@
       <Docs>
         <param name="objectReplicationPolicyId"> For the destination account, provide the value 'default'. Configure the policy on the destination account first. For the source account, provide the value of the policy ID that is returned when you download the policy that was defined on the destination account. The policy is downloaded as a JSON file. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Get the object replication policy of the storage account by policy ID. </summary>
+        <summary>
+            Get the object replication policy of the storage account by policy ID.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/objectReplicationPolicies/{objectReplicationPolicyId}
+            Operation Id: ObjectReplicationPolicies_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="objectReplicationPolicyId" /> is empty. </exception>
+          <paramref name="objectReplicationPolicyId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="objectReplicationPolicyId" /> is null. </exception>
       </Docs>
@@ -300,11 +332,15 @@
       <Docs>
         <param name="objectReplicationPolicyId"> For the destination account, provide the value 'default'. Configure the policy on the destination account first. For the source account, provide the value of the policy ID that is returned when you download the policy that was defined on the destination account. The policy is downloaded as a JSON file. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/objectReplicationPolicies/{objectReplicationPolicyId}
+            Operation Id: ObjectReplicationPolicies_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="objectReplicationPolicyId" /> is empty. </exception>
+          <paramref name="objectReplicationPolicyId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="objectReplicationPolicyId" /> is null. </exception>
       </Docs>
@@ -330,11 +366,15 @@
       <Docs>
         <param name="objectReplicationPolicyId"> For the destination account, provide the value 'default'. Configure the policy on the destination account first. For the source account, provide the value of the policy ID that is returned when you download the policy that was defined on the destination account. The policy is downloaded as a JSON file. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/objectReplicationPolicies/{objectReplicationPolicyId}
+            Operation Id: ObjectReplicationPolicies_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="objectReplicationPolicyId" /> is empty. </exception>
+          <paramref name="objectReplicationPolicyId" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="objectReplicationPolicyId" /> is null. </exception>
       </Docs>

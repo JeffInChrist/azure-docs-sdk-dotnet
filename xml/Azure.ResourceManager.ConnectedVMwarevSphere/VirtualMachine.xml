@@ -55,10 +55,16 @@
       <Docs>
         <param name="key"> The key for the tag. </param>
         <param name="value"> The value for the tag. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Add a tag to the current resource. </summary>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Add a tag to the current resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/virtualMachines/{virtualMachineName}
+            Operation Id: VirtualMachines_Get
+            </summary>
         <returns> The updated resource with the tag added. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="AddTagAsync">
@@ -83,10 +89,16 @@
       <Docs>
         <param name="key"> The key for the tag. </param>
         <param name="value"> The value for the tag. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Add a tag to the current resource. </summary>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Add a tag to the current resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/virtualMachines/{virtualMachineName}
+            Operation Id: VirtualMachines_Get
+            </summary>
         <returns> The updated resource with the tag added. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateResourceIdentifier">
@@ -139,18 +151,18 @@
       </Docs>
     </Member>
     <Member MemberName="Delete">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineDeleteOperation Delete (bool waitForCompletion, bool? force = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineDeleteOperation Delete(bool waitForCompletion, valuetype System.Nullable`1&lt;bool&gt; force, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Delete (bool waitForCompletion, bool? force = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Delete(bool waitForCompletion, valuetype System.Nullable`1&lt;bool&gt; force, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachine.Delete(System.Boolean,System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (waitForCompletion As Boolean, Optional force As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineDeleteOperation" />
-      <MemberSignature Language="F#" Value="abstract member Delete : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineDeleteOperation&#xA;override this.Delete : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineDeleteOperation" Usage="virtualMachine.Delete (waitForCompletion, force, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (waitForCompletion As Boolean, Optional force As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Delete : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Delete : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="virtualMachine.Delete (waitForCompletion, force, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ConnectedVMwarevSphere</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineDeleteOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -161,24 +173,28 @@
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="force"> Whether force delete was specified. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Implements virtual machine DELETE method. </summary>
+        <summary>
+            Implements virtual machine DELETE method.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/virtualMachines/{virtualMachineName}
+            Operation Id: VirtualMachines_Delete
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineDeleteOperation&gt; DeleteAsync (bool waitForCompletion, bool? force = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineDeleteOperation&gt; DeleteAsync(bool waitForCompletion, valuetype System.Nullable`1&lt;bool&gt; force, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; DeleteAsync (bool waitForCompletion, bool? force = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; DeleteAsync(bool waitForCompletion, valuetype System.Nullable`1&lt;bool&gt; force, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachine.DeleteAsync(System.Boolean,System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (waitForCompletion As Boolean, Optional force As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineDeleteOperation)" />
-      <MemberSignature Language="F#" Value="abstract member DeleteAsync : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineDeleteOperation&gt;&#xA;override this.DeleteAsync : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineDeleteOperation&gt;" Usage="virtualMachine.DeleteAsync (waitForCompletion, force, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (waitForCompletion As Boolean, Optional force As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAsync : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.DeleteAsync : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="virtualMachine.DeleteAsync (waitForCompletion, force, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ConnectedVMwarevSphere</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineDeleteOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -189,7 +205,11 @@
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="force"> Whether force delete was specified. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Implements virtual machine DELETE method. </summary>
+        <summary>
+            Implements virtual machine DELETE method.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/virtualMachines/{virtualMachineName}
+            Operation Id: VirtualMachines_Delete
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -213,7 +233,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Implements virtual machine GET method. </summary>
+        <summary>
+            Implements virtual machine GET method.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/virtualMachines/{virtualMachineName}
+            Operation Id: VirtualMachines_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -234,8 +258,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of HybridIdentityMetadata in the VirtualMachine. </summary>
-        <returns> An object representing collection of HybridIdentityMetadata and their operations over a VirtualMachine. </returns>
+        <summary> Gets a collection of HybridIdentityMetadata in the HybridIdentityMetadata. </summary>
+        <returns> An object representing collection of HybridIdentityMetadata and their operations over a HybridIdentityMetadata. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,56 +282,12 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Implements virtual machine GET method. </summary>
+        <summary>
+            Implements virtual machine GET method.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/virtualMachines/{virtualMachineName}
+            Operation Id: VirtualMachines_Get
+            </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetAvailableLocations">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt; GetAvailableLocations (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt; GetAvailableLocations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachine.GetAvailableLocations(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocations (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of AzureLocation)" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;&#xA;override this.GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;" Usage="virtualMachine.GetAvailableLocations cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.ConnectedVMwarevSphere</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Lists all available geo-locations. </summary>
-        <returns> A collection of locations that may take multiple service requests to iterate over. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetAvailableLocationsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachine.GetAvailableLocationsAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocationsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of AzureLocation))" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;&#xA;override this.GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;" Usage="virtualMachine.GetAvailableLocationsAsync cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.ConnectedVMwarevSphere</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Lists all available geo-locations. </summary>
-        <returns> A collection of locations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -327,8 +307,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of GuestAgents in the VirtualMachine. </summary>
-        <returns> An object representing collection of GuestAgents and their operations over a VirtualMachine. </returns>
+        <summary> Gets a collection of GuestAgents in the GuestAgent. </summary>
+        <returns> An object representing collection of GuestAgents and their operations over a GuestAgent. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -348,8 +328,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of MachineExtensions in the VirtualMachine. </summary>
-        <returns> An object representing collection of MachineExtensions and their operations over a VirtualMachine. </returns>
+        <summary> Gets a collection of MachineExtensions in the MachineExtension. </summary>
+        <returns> An object representing collection of MachineExtensions and their operations over a MachineExtension. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -392,11 +372,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="key"> The key of the tag to remove. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Removes a tag by key from the resource. </summary>
+        <param name="key"> The key for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Removes a tag by key from the resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/virtualMachines/{virtualMachineName}
+            Operation Id: VirtualMachines_Get
+            </summary>
         <returns> The updated resource with the tag removed. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveTagAsync">
@@ -418,11 +404,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="key"> The key of the tag to remove. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Removes a tag by key from the resource. </summary>
+        <param name="key"> The key for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Removes a tag by key from the resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/virtualMachines/{virtualMachineName}
+            Operation Id: VirtualMachines_Get
+            </summary>
         <returns> The updated resource with the tag removed. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ResourceType">
@@ -445,18 +437,18 @@
       </Docs>
     </Member>
     <Member MemberName="Restart">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineRestartOperation Restart (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineRestartOperation Restart(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Restart (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Restart(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachine.Restart(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Restart (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineRestartOperation" />
-      <MemberSignature Language="F#" Value="abstract member Restart : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineRestartOperation&#xA;override this.Restart : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineRestartOperation" Usage="virtualMachine.Restart (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Restart (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Restart : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Restart : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="virtualMachine.Restart (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ConnectedVMwarevSphere</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineRestartOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -465,24 +457,28 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Restart virtual machine. </summary>
+        <summary>
+            Restart virtual machine.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/virtualMachines/{virtualMachineName}/restart
+            Operation Id: VirtualMachines_Restart
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RestartAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineRestartOperation&gt; RestartAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineRestartOperation&gt; RestartAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; RestartAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; RestartAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachine.RestartAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RestartAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineRestartOperation)" />
-      <MemberSignature Language="F#" Value="abstract member RestartAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineRestartOperation&gt;&#xA;override this.RestartAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineRestartOperation&gt;" Usage="virtualMachine.RestartAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RestartAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member RestartAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.RestartAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="virtualMachine.RestartAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ConnectedVMwarevSphere</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineRestartOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -491,7 +487,11 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Restart virtual machine. </summary>
+        <summary>
+            Restart virtual machine.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/virtualMachines/{virtualMachineName}/restart
+            Operation Id: VirtualMachines_Restart
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -516,10 +516,16 @@
       </Parameters>
       <Docs>
         <param name="tags"> The set of tags to use as replacement. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Replace the tags on the resource with the given set. </summary>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Replace the tags on the resource with the given set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/virtualMachines/{virtualMachineName}
+            Operation Id: VirtualMachines_Get
+            </summary>
         <returns> The updated resource with the tags replaced. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tags" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="SetTagsAsync">
@@ -542,25 +548,31 @@
       </Parameters>
       <Docs>
         <param name="tags"> The set of tags to use as replacement. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Replace the tags on the resource with the given set. </summary>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Replace the tags on the resource with the given set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/virtualMachines/{virtualMachineName}
+            Operation Id: VirtualMachines_Get
+            </summary>
         <returns> The updated resource with the tags replaced. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tags" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="Start">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineStartOperation Start (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineStartOperation Start(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Start (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Start(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachine.Start(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Start (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineStartOperation" />
-      <MemberSignature Language="F#" Value="abstract member Start : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineStartOperation&#xA;override this.Start : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineStartOperation" Usage="virtualMachine.Start (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Start (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Start : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Start : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="virtualMachine.Start (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ConnectedVMwarevSphere</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineStartOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -569,24 +581,28 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Start virtual machine. </summary>
+        <summary>
+            Start virtual machine.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/virtualMachines/{virtualMachineName}/start
+            Operation Id: VirtualMachines_Start
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StartAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineStartOperation&gt; StartAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineStartOperation&gt; StartAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; StartAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; StartAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachine.StartAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineStartOperation)" />
-      <MemberSignature Language="F#" Value="abstract member StartAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineStartOperation&gt;&#xA;override this.StartAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineStartOperation&gt;" Usage="virtualMachine.StartAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.StartAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="virtualMachine.StartAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ConnectedVMwarevSphere</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineStartOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -595,24 +611,28 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Start virtual machine. </summary>
+        <summary>
+            Start virtual machine.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/virtualMachines/{virtualMachineName}/start
+            Operation Id: VirtualMachines_Start
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Stop">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineStopOperation Stop (bool waitForCompletion, Azure.ResourceManager.ConnectedVMwarevSphere.Models.StopVirtualMachineOptions body = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineStopOperation Stop(bool waitForCompletion, class Azure.ResourceManager.ConnectedVMwarevSphere.Models.StopVirtualMachineOptions body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Stop (bool waitForCompletion, Azure.ResourceManager.ConnectedVMwarevSphere.Models.StopVirtualMachineOptions body = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Stop(bool waitForCompletion, class Azure.ResourceManager.ConnectedVMwarevSphere.Models.StopVirtualMachineOptions body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachine.Stop(System.Boolean,Azure.ResourceManager.ConnectedVMwarevSphere.Models.StopVirtualMachineOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Stop (waitForCompletion As Boolean, Optional body As StopVirtualMachineOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineStopOperation" />
-      <MemberSignature Language="F#" Value="abstract member Stop : bool * Azure.ResourceManager.ConnectedVMwarevSphere.Models.StopVirtualMachineOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineStopOperation&#xA;override this.Stop : bool * Azure.ResourceManager.ConnectedVMwarevSphere.Models.StopVirtualMachineOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineStopOperation" Usage="virtualMachine.Stop (waitForCompletion, body, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Stop (waitForCompletion As Boolean, Optional body As StopVirtualMachineOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Stop : bool * Azure.ResourceManager.ConnectedVMwarevSphere.Models.StopVirtualMachineOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Stop : bool * Azure.ResourceManager.ConnectedVMwarevSphere.Models.StopVirtualMachineOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="virtualMachine.Stop (waitForCompletion, body, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ConnectedVMwarevSphere</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineStopOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -623,24 +643,28 @@
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="body"> Virtualmachine stop action payload. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Stop virtual machine. </summary>
+        <summary>
+            Stop virtual machine.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/virtualMachines/{virtualMachineName}/stop
+            Operation Id: VirtualMachines_Stop
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StopAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineStopOperation&gt; StopAsync (bool waitForCompletion, Azure.ResourceManager.ConnectedVMwarevSphere.Models.StopVirtualMachineOptions body = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineStopOperation&gt; StopAsync(bool waitForCompletion, class Azure.ResourceManager.ConnectedVMwarevSphere.Models.StopVirtualMachineOptions body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; StopAsync (bool waitForCompletion, Azure.ResourceManager.ConnectedVMwarevSphere.Models.StopVirtualMachineOptions body = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; StopAsync(bool waitForCompletion, class Azure.ResourceManager.ConnectedVMwarevSphere.Models.StopVirtualMachineOptions body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachine.StopAsync(System.Boolean,Azure.ResourceManager.ConnectedVMwarevSphere.Models.StopVirtualMachineOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function StopAsync (waitForCompletion As Boolean, Optional body As StopVirtualMachineOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineStopOperation)" />
-      <MemberSignature Language="F#" Value="abstract member StopAsync : bool * Azure.ResourceManager.ConnectedVMwarevSphere.Models.StopVirtualMachineOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineStopOperation&gt;&#xA;override this.StopAsync : bool * Azure.ResourceManager.ConnectedVMwarevSphere.Models.StopVirtualMachineOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineStopOperation&gt;" Usage="virtualMachine.StopAsync (waitForCompletion, body, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StopAsync (waitForCompletion As Boolean, Optional body As StopVirtualMachineOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StopAsync : bool * Azure.ResourceManager.ConnectedVMwarevSphere.Models.StopVirtualMachineOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.StopAsync : bool * Azure.ResourceManager.ConnectedVMwarevSphere.Models.StopVirtualMachineOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="virtualMachine.StopAsync (waitForCompletion, body, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ConnectedVMwarevSphere</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineStopOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -651,63 +675,75 @@
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="body"> Virtualmachine stop action payload. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Stop virtual machine. </summary>
+        <summary>
+            Stop virtual machine.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/virtualMachines/{virtualMachineName}/stop
+            Operation Id: VirtualMachines_Stop
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdateOperation Update (bool waitForCompletion, Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdate body = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdateOperation Update(bool waitForCompletion, class Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdate body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachine.Update(System.Boolean,Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdate,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (waitForCompletion As Boolean, Optional body As VirtualMachineUpdate = Nothing, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member Update : bool * Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdate * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdateOperation&#xA;override this.Update : bool * Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdate * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdateOperation" Usage="virtualMachine.Update (waitForCompletion, body, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachine&gt; Update (bool waitForCompletion, Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdateOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachine&gt; Update(bool waitForCompletion, class Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdateOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachine.Update(System.Boolean,Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdateOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (waitForCompletion As Boolean, Optional options As VirtualMachineUpdateOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of VirtualMachine)" />
+      <MemberSignature Language="F#" Value="abstract member Update : bool * Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdateOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachine&gt;&#xA;override this.Update : bool * Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdateOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachine&gt;" Usage="virtualMachine.Update (waitForCompletion, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ConnectedVMwarevSphere</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachine&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
-        <Parameter Name="body" Type="Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdate" />
+        <Parameter Name="options" Type="Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdateOptions" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
-        <param name="body"> Resource properties to update. </param>
+        <param name="options"> Resource properties to update. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> API to update certain properties of the virtual machine resource. </summary>
+        <summary>
+            API to update certain properties of the virtual machine resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/virtualMachines/{virtualMachineName}
+            Operation Id: VirtualMachines_Update
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdateOperation&gt; UpdateAsync (bool waitForCompletion, Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdate body = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdateOperation&gt; UpdateAsync(bool waitForCompletion, class Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdate body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachine.UpdateAsync(System.Boolean,Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdate,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (waitForCompletion As Boolean, Optional body As VirtualMachineUpdate = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member UpdateAsync : bool * Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdateOperation&gt;&#xA;override this.UpdateAsync : bool * Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdateOperation&gt;" Usage="virtualMachine.UpdateAsync (waitForCompletion, body, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachine&gt;&gt; UpdateAsync (bool waitForCompletion, Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdateOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachine&gt;&gt; UpdateAsync(bool waitForCompletion, class Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdateOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachine.UpdateAsync(System.Boolean,Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdateOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (waitForCompletion As Boolean, Optional options As VirtualMachineUpdateOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of VirtualMachine))" />
+      <MemberSignature Language="F#" Value="abstract member UpdateAsync : bool * Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdateOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachine&gt;&gt;&#xA;override this.UpdateAsync : bool * Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdateOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachine&gt;&gt;" Usage="virtualMachine.UpdateAsync (waitForCompletion, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ConnectedVMwarevSphere</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachine&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
-        <Parameter Name="body" Type="Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdate" />
+        <Parameter Name="options" Type="Azure.ResourceManager.ConnectedVMwarevSphere.Models.VirtualMachineUpdateOptions" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
-        <param name="body"> Resource properties to update. </param>
+        <param name="options"> Resource properties to update. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> API to update certain properties of the virtual machine resource. </summary>
+        <summary>
+            API to update certain properties of the virtual machine resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/virtualMachines/{virtualMachineName}
+            Operation Id: VirtualMachines_Update
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

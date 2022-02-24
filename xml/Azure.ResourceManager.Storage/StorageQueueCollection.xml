@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Storage.Models.StorageQueueCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string queueName, Azure.ResourceManager.Storage.StorageQueueData queue, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Storage.Models.StorageQueueCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string queueName, class Azure.ResourceManager.Storage.StorageQueueData queue, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.StorageQueue&gt; CreateOrUpdate (bool waitForCompletion, string queueName, Azure.ResourceManager.Storage.StorageQueueData queue, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Storage.StorageQueue&gt; CreateOrUpdate(bool waitForCompletion, string queueName, class Azure.ResourceManager.Storage.StorageQueueData queue, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageQueueCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Storage.StorageQueueData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, queueName As String, queue As StorageQueueData, Optional cancellationToken As CancellationToken = Nothing) As StorageQueueCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Storage.StorageQueueData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Storage.Models.StorageQueueCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Storage.StorageQueueData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Storage.Models.StorageQueueCreateOrUpdateOperation" Usage="storageQueueCollection.CreateOrUpdate (waitForCompletion, queueName, queue, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, queueName As String, queue As StorageQueueData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of StorageQueue)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Storage.StorageQueueData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.StorageQueue&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Storage.StorageQueueData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.StorageQueue&gt;" Usage="storageQueueCollection.CreateOrUpdate (waitForCompletion, queueName, queue, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Storage.Models.StorageQueueCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.StorageQueue&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -68,28 +68,32 @@
         <param name="queueName"> A queue name must be unique within a storage account and must be between 3 and 63 characters.The name must comprise of lowercase alphanumeric and dash(-) characters only, it should begin and end with an alphanumeric character and it cannot have two consecutive dash(-) characters. </param>
         <param name="queue"> Queue properties and metadata to be created with. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Creates a new queue with the specified queue name, under the specified account. </summary>
+        <summary>
+            Creates a new queue with the specified queue name, under the specified account.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/queueServices/default/queues/{queueName}
+            Operation Id: Queue_Create
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="queueName" /> is empty. </exception>
+          <paramref name="queueName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="queueName" /> or <paramref name="queue" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Storage.Models.StorageQueueCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string queueName, Azure.ResourceManager.Storage.StorageQueueData queue, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Storage.Models.StorageQueueCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string queueName, class Azure.ResourceManager.Storage.StorageQueueData queue, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.StorageQueue&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string queueName, Azure.ResourceManager.Storage.StorageQueueData queue, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Storage.StorageQueue&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string queueName, class Azure.ResourceManager.Storage.StorageQueueData queue, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Storage.StorageQueueCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Storage.StorageQueueData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, queueName As String, queue As StorageQueueData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of StorageQueueCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Storage.StorageQueueData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Storage.Models.StorageQueueCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Storage.StorageQueueData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Storage.Models.StorageQueueCreateOrUpdateOperation&gt;" Usage="storageQueueCollection.CreateOrUpdateAsync (waitForCompletion, queueName, queue, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, queueName As String, queue As StorageQueueData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of StorageQueue))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Storage.StorageQueueData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.StorageQueue&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Storage.StorageQueueData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.StorageQueue&gt;&gt;" Usage="storageQueueCollection.CreateOrUpdateAsync (waitForCompletion, queueName, queue, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Storage.Models.StorageQueueCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Storage.StorageQueue&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -102,11 +106,15 @@
         <param name="queueName"> A queue name must be unique within a storage account and must be between 3 and 63 characters.The name must comprise of lowercase alphanumeric and dash(-) characters only, it should begin and end with an alphanumeric character and it cannot have two consecutive dash(-) characters. </param>
         <param name="queue"> Queue properties and metadata to be created with. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Creates a new queue with the specified queue name, under the specified account. </summary>
+        <summary>
+            Creates a new queue with the specified queue name, under the specified account.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/queueServices/default/queues/{queueName}
+            Operation Id: Queue_Create
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="queueName" /> is empty. </exception>
+          <paramref name="queueName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="queueName" /> or <paramref name="queue" /> is null. </exception>
       </Docs>
@@ -132,11 +140,15 @@
       <Docs>
         <param name="queueName"> A queue name must be unique within a storage account and must be between 3 and 63 characters.The name must comprise of lowercase alphanumeric and dash(-) characters only, it should begin and end with an alphanumeric character and it cannot have two consecutive dash(-) characters. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/queueServices/default/queues/{queueName}
+            Operation Id: Queue_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="queueName" /> is empty. </exception>
+          <paramref name="queueName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="queueName" /> is null. </exception>
       </Docs>
@@ -162,11 +174,15 @@
       <Docs>
         <param name="queueName"> A queue name must be unique within a storage account and must be between 3 and 63 characters.The name must comprise of lowercase alphanumeric and dash(-) characters only, it should begin and end with an alphanumeric character and it cannot have two consecutive dash(-) characters. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/queueServices/default/queues/{queueName}
+            Operation Id: Queue_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="queueName" /> is empty. </exception>
+          <paramref name="queueName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="queueName" /> is null. </exception>
       </Docs>
@@ -192,11 +208,15 @@
       <Docs>
         <param name="queueName"> A queue name must be unique within a storage account and must be between 3 and 63 characters.The name must comprise of lowercase alphanumeric and dash(-) characters only, it should begin and end with an alphanumeric character and it cannot have two consecutive dash(-) characters. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the queue with the specified queue name, under the specified account if it exists. </summary>
+        <summary>
+            Gets the queue with the specified queue name, under the specified account if it exists.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/queueServices/default/queues/{queueName}
+            Operation Id: Queue_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="queueName" /> is empty. </exception>
+          <paramref name="queueName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="queueName" /> is null. </exception>
       </Docs>
@@ -224,7 +244,11 @@
         <param name="maxpagesize"> Optional, a maximum number of queues that should be included in a list queue response. </param>
         <param name="filter"> Optional, When specified, only the queues with a name starting with the given filter will be listed. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a list of all the queues under the specified storage account. </summary>
+        <summary>
+            Gets a list of all the queues under the specified storage account
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/queueServices/default/queues
+            Operation Id: Queue_List
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Storage.StorageQueue" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -252,7 +276,11 @@
         <param name="maxpagesize"> Optional, a maximum number of queues that should be included in a list queue response. </param>
         <param name="filter"> Optional, When specified, only the queues with a name starting with the given filter will be listed. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a list of all the queues under the specified storage account. </summary>
+        <summary>
+            Gets a list of all the queues under the specified storage account
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/queueServices/default/queues
+            Operation Id: Queue_List
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Storage.StorageQueue" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -278,11 +306,15 @@
       <Docs>
         <param name="queueName"> A queue name must be unique within a storage account and must be between 3 and 63 characters.The name must comprise of lowercase alphanumeric and dash(-) characters only, it should begin and end with an alphanumeric character and it cannot have two consecutive dash(-) characters. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the queue with the specified queue name, under the specified account if it exists. </summary>
+        <summary>
+            Gets the queue with the specified queue name, under the specified account if it exists.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/queueServices/default/queues/{queueName}
+            Operation Id: Queue_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="queueName" /> is empty. </exception>
+          <paramref name="queueName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="queueName" /> is null. </exception>
       </Docs>
@@ -308,11 +340,15 @@
       <Docs>
         <param name="queueName"> A queue name must be unique within a storage account and must be between 3 and 63 characters.The name must comprise of lowercase alphanumeric and dash(-) characters only, it should begin and end with an alphanumeric character and it cannot have two consecutive dash(-) characters. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/queueServices/default/queues/{queueName}
+            Operation Id: Queue_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="queueName" /> is empty. </exception>
+          <paramref name="queueName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="queueName" /> is null. </exception>
       </Docs>
@@ -338,11 +374,15 @@
       <Docs>
         <param name="queueName"> A queue name must be unique within a storage account and must be between 3 and 63 characters.The name must comprise of lowercase alphanumeric and dash(-) characters only, it should begin and end with an alphanumeric character and it cannot have two consecutive dash(-) characters. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/queueServices/default/queues/{queueName}
+            Operation Id: Queue_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="queueName" /> is empty. </exception>
+          <paramref name="queueName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="queueName" /> is null. </exception>
       </Docs>

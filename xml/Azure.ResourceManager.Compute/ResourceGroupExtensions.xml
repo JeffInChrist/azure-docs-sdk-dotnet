@@ -36,8 +36,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a AvailabilitySetCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Compute.AvailabilitySetCollection" /> object. </returns>
+        <summary> Gets a collection of AvailabilitySets in the AvailabilitySet. </summary>
+        <returns> An object representing collection of AvailabilitySets and their operations over a AvailabilitySet. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,8 +60,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a CapacityReservationGroupCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Compute.CapacityReservationGroupCollection" /> object. </returns>
+        <summary> Gets a collection of CapacityReservationGroups in the CapacityReservationGroup. </summary>
+        <returns> An object representing collection of CapacityReservationGroups and their operations over a CapacityReservationGroup. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +84,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a CloudServiceCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Compute.CloudServiceCollection" /> object. </returns>
+        <summary> Gets a collection of CloudServices in the CloudService. </summary>
+        <returns> An object representing collection of CloudServices and their operations over a CloudService. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,8 +108,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a DedicatedHostGroupCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Compute.DedicatedHostGroupCollection" /> object. </returns>
+        <summary> Gets a collection of DedicatedHostGroups in the DedicatedHostGroup. </summary>
+        <returns> An object representing collection of DedicatedHostGroups and their operations over a DedicatedHostGroup. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,8 +132,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a DiskAccessCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Compute.DiskAccessCollection" /> object. </returns>
+        <summary> Gets a collection of DiskAccesses in the DiskAccess. </summary>
+        <returns> An object representing collection of DiskAccesses and their operations over a DiskAccess. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,8 +156,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a DiskEncryptionSetCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Compute.DiskEncryptionSetCollection" /> object. </returns>
+        <summary> Gets a collection of DiskEncryptionSets in the DiskEncryptionSet. </summary>
+        <returns> An object representing collection of DiskEncryptionSets and their operations over a DiskEncryptionSet. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,8 +180,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a DiskCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Compute.DiskCollection" /> object. </returns>
+        <summary> Gets a collection of Disks in the Disk. </summary>
+        <returns> An object representing collection of Disks and their operations over a Disk. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,8 +204,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a GalleryCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Compute.GalleryCollection" /> object. </returns>
+        <summary> Gets a collection of Galleries in the Gallery. </summary>
+        <returns> An object representing collection of Galleries and their operations over a Gallery. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,8 +228,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a ImageCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Compute.ImageCollection" /> object. </returns>
+        <summary> Gets a collection of Images in the Image. </summary>
+        <returns> An object representing collection of Images and their operations over a Image. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -252,8 +252,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a ProximityPlacementGroupCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Compute.ProximityPlacementGroupCollection" /> object. </returns>
+        <summary> Gets a collection of ProximityPlacementGroups in the ProximityPlacementGroup. </summary>
+        <returns> An object representing collection of ProximityPlacementGroups and their operations over a ProximityPlacementGroup. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,8 +276,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a RestorePointGroupCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Compute.RestorePointGroupCollection" /> object. </returns>
+        <summary> Gets a collection of RestorePointGroups in the RestorePointGroup. </summary>
+        <returns> An object representing collection of RestorePointGroups and their operations over a RestorePointGroup. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -300,8 +300,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a SnapshotCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Compute.SnapshotCollection" /> object. </returns>
+        <summary> Gets a collection of Snapshots in the Snapshot. </summary>
+        <returns> An object representing collection of Snapshots and their operations over a Snapshot. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,8 +324,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a SshPublicKeyCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Compute.SshPublicKeyCollection" /> object. </returns>
+        <summary> Gets a collection of SshPublicKeys in the SshPublicKey. </summary>
+        <returns> An object representing collection of SshPublicKeys and their operations over a SshPublicKey. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -348,8 +348,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a VirtualMachineCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Compute.VirtualMachineCollection" /> object. </returns>
+        <summary> Gets a collection of VirtualMachines in the VirtualMachine. </summary>
+        <returns> An object representing collection of VirtualMachines and their operations over a VirtualMachine. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -372,8 +372,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a VirtualMachineScaleSetCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Compute.VirtualMachineScaleSetCollection" /> object. </returns>
+        <summary> Gets a collection of VirtualMachineScaleSets in the VirtualMachineScaleSet. </summary>
+        <returns> An object representing collection of VirtualMachineScaleSets and their operations over a VirtualMachineScaleSet. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

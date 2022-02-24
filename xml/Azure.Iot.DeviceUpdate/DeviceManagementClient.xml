@@ -58,7 +58,7 @@
         <summary> Initializes a new instance of DeviceManagementClient. </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="endpoint" />, <paramref name="instanceId" />, or <paramref name="credential" /> is null. </exception>
+          <paramref name="endpoint" />, <paramref name="instanceId" /> or <paramref name="credential" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CollectLogs">
@@ -136,6 +136,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="operationId" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="operationId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="CollectLogsAsync">
@@ -213,6 +215,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="operationId" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="operationId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateDeployment">
@@ -289,7 +293,9 @@
             }
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="groupId" />, <paramref name="deploymentId" />, or <paramref name="content" /> is null. </exception>
+          <paramref name="groupId" />, <paramref name="deploymentId" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupId" /> or <paramref name="deploymentId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateDeploymentAsync">
@@ -366,7 +372,9 @@
             }
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="groupId" />, <paramref name="deploymentId" />, or <paramref name="content" /> is null. </exception>
+          <paramref name="groupId" />, <paramref name="deploymentId" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupId" /> or <paramref name="deploymentId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateGroup">
@@ -436,6 +444,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateGroupAsync">
@@ -505,6 +515,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="DeleteDeployment">
@@ -552,6 +564,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> or <paramref name="deploymentId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupId" /> or <paramref name="deploymentId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="DeleteDeploymentAsync">
@@ -599,6 +613,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> or <paramref name="deploymentId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupId" /> or <paramref name="deploymentId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="DeleteGroup">
@@ -644,6 +660,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="DeleteGroupAsync">
@@ -689,6 +707,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetBestUpdatesForGroups">
@@ -751,6 +771,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetBestUpdatesForGroupsAsync">
@@ -813,6 +835,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeployment">
@@ -874,6 +898,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> or <paramref name="deploymentId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupId" /> or <paramref name="deploymentId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeploymentAsync">
@@ -935,6 +961,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> or <paramref name="deploymentId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupId" /> or <paramref name="deploymentId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeploymentDevices">
@@ -998,6 +1026,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> or <paramref name="deploymentId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupId" /> or <paramref name="deploymentId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeploymentDevicesAsync">
@@ -1061,6 +1091,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> or <paramref name="deploymentId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupId" /> or <paramref name="deploymentId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeploymentsForGroups">
@@ -1127,6 +1159,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeploymentsForGroupsAsync">
@@ -1193,6 +1227,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeploymentStatus">
@@ -1250,6 +1286,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> or <paramref name="deploymentId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupId" /> or <paramref name="deploymentId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeploymentStatusAsync">
@@ -1307,6 +1345,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> or <paramref name="deploymentId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupId" /> or <paramref name="deploymentId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDevice">
@@ -1385,6 +1425,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="deviceId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="deviceId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeviceAsync">
@@ -1463,6 +1505,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="deviceId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="deviceId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeviceClass">
@@ -1519,6 +1563,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="deviceClassId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="deviceClassId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeviceClassAsync">
@@ -1575,6 +1621,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="deviceClassId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="deviceClassId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeviceClasses">
@@ -1769,6 +1817,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="deviceId" /> or <paramref name="moduleId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="deviceId" /> or <paramref name="moduleId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeviceModuleAsync">
@@ -1849,6 +1899,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="deviceId" /> or <paramref name="moduleId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="deviceId" /> or <paramref name="moduleId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDevices">
@@ -2062,6 +2114,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="tagName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="tagName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeviceTagAsync">
@@ -2113,6 +2167,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="tagName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="tagName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeviceTags">
@@ -2273,6 +2329,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetGroupAsync">
@@ -2329,6 +2387,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetGroups">
@@ -2496,6 +2556,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetGroupUpdateComplianceAsync">
@@ -2549,6 +2611,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="groupId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetInstallableUpdatesForDeviceClasses">
@@ -2606,6 +2670,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="deviceClassId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="deviceClassId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetInstallableUpdatesForDeviceClassesAsync">
@@ -2663,6 +2729,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="deviceClassId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="deviceClassId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetLogCollectionOperation">
@@ -2723,6 +2791,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="operationId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="operationId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetLogCollectionOperationAsync">
@@ -2783,6 +2853,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="operationId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="operationId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetLogCollectionOperationDetailedStatus">
@@ -2847,6 +2919,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="operationId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="operationId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetLogCollectionOperationDetailedStatusAsync">
@@ -2911,6 +2985,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="operationId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="operationId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetLogCollectionOperations">
@@ -3103,6 +3179,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="operationId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="operationId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetOperationAsync">
@@ -3173,6 +3251,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="operationId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="operationId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetOperations">
@@ -3597,7 +3677,9 @@
             }
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="groupId" />, <paramref name="deploymentId" />, or <paramref name="action" /> is null. </exception>
+          <paramref name="groupId" />, <paramref name="deploymentId" /> or <paramref name="action" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupId" /> or <paramref name="deploymentId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="RetryDeploymentAsync">
@@ -3660,7 +3742,9 @@
             }
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="groupId" />, <paramref name="deploymentId" />, or <paramref name="action" /> is null. </exception>
+          <paramref name="groupId" />, <paramref name="deploymentId" /> or <paramref name="action" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupId" /> or <paramref name="deploymentId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="StopDeployment">
@@ -3723,7 +3807,9 @@
             }
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="groupId" />, <paramref name="deploymentId" />, or <paramref name="action" /> is null. </exception>
+          <paramref name="groupId" />, <paramref name="deploymentId" /> or <paramref name="action" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupId" /> or <paramref name="deploymentId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="StopDeploymentAsync">
@@ -3786,7 +3872,9 @@
             }
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="groupId" />, <paramref name="deploymentId" />, or <paramref name="action" /> is null. </exception>
+          <paramref name="groupId" />, <paramref name="deploymentId" /> or <paramref name="action" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="groupId" /> or <paramref name="deploymentId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
   </Members>

@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachineCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string vmName, Azure.ResourceManager.Compute.VirtualMachineData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachineCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string vmName, class Azure.ResourceManager.Compute.VirtualMachineData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachine&gt; CreateOrUpdate (bool waitForCompletion, string vmName, Azure.ResourceManager.Compute.VirtualMachineData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.VirtualMachine&gt; CreateOrUpdate(bool waitForCompletion, string vmName, class Azure.ResourceManager.Compute.VirtualMachineData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Compute.VirtualMachineData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, vmName As String, parameters As VirtualMachineData, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.VirtualMachineData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.VirtualMachineData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineCreateOrUpdateOperation" Usage="virtualMachineCollection.CreateOrUpdate (waitForCompletion, vmName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, vmName As String, parameters As VirtualMachineData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of VirtualMachine)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.VirtualMachineData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachine&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.VirtualMachineData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachine&gt;" Usage="virtualMachineCollection.CreateOrUpdate (waitForCompletion, vmName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachine&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -68,28 +68,32 @@
         <param name="vmName"> The name of the virtual machine. </param>
         <param name="parameters"> Parameters supplied to the Create Virtual Machine operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> The operation to create or update a virtual machine. Please note some properties can be set only during virtual machine creation. </summary>
+        <summary>
+            The operation to create or update a virtual machine. Please note some properties can be set only during virtual machine creation.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachines/{vmName}
+            Operation Id: VirtualMachines_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="vmName" /> is empty. </exception>
+          <paramref name="vmName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="vmName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string vmName, Azure.ResourceManager.Compute.VirtualMachineData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string vmName, class Azure.ResourceManager.Compute.VirtualMachineData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachine&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string vmName, Azure.ResourceManager.Compute.VirtualMachineData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.VirtualMachine&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string vmName, class Azure.ResourceManager.Compute.VirtualMachineData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Compute.VirtualMachineData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, vmName As String, parameters As VirtualMachineData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.VirtualMachineData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.VirtualMachineData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineCreateOrUpdateOperation&gt;" Usage="virtualMachineCollection.CreateOrUpdateAsync (waitForCompletion, vmName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, vmName As String, parameters As VirtualMachineData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of VirtualMachine))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.VirtualMachineData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachine&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.VirtualMachineData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachine&gt;&gt;" Usage="virtualMachineCollection.CreateOrUpdateAsync (waitForCompletion, vmName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.VirtualMachine&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -102,11 +106,15 @@
         <param name="vmName"> The name of the virtual machine. </param>
         <param name="parameters"> Parameters supplied to the Create Virtual Machine operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> The operation to create or update a virtual machine. Please note some properties can be set only during virtual machine creation. </summary>
+        <summary>
+            The operation to create or update a virtual machine. Please note some properties can be set only during virtual machine creation.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachines/{vmName}
+            Operation Id: VirtualMachines_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="vmName" /> is empty. </exception>
+          <paramref name="vmName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="vmName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -134,11 +142,15 @@
         <param name="vmName"> The name of the virtual machine. </param>
         <param name="expand"> The expand expression to apply on the operation. 'InstanceView' retrieves a snapshot of the runtime properties of the virtual machine that is managed by the platform and can change outside of control plane operations. 'UserData' retrieves the UserData property as part of the VM model view that was provided by the user during the VM Create/Update operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachines/{vmName}
+            Operation Id: VirtualMachines_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="vmName" /> is empty. </exception>
+          <paramref name="vmName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="vmName" /> is null. </exception>
       </Docs>
@@ -166,11 +178,15 @@
         <param name="vmName"> The name of the virtual machine. </param>
         <param name="expand"> The expand expression to apply on the operation. 'InstanceView' retrieves a snapshot of the runtime properties of the virtual machine that is managed by the platform and can change outside of control plane operations. 'UserData' retrieves the UserData property as part of the VM model view that was provided by the user during the VM Create/Update operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachines/{vmName}
+            Operation Id: VirtualMachines_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="vmName" /> is empty. </exception>
+          <paramref name="vmName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="vmName" /> is null. </exception>
       </Docs>
@@ -198,11 +214,15 @@
         <param name="vmName"> The name of the virtual machine. </param>
         <param name="expand"> The expand expression to apply on the operation. 'InstanceView' retrieves a snapshot of the runtime properties of the virtual machine that is managed by the platform and can change outside of control plane operations. 'UserData' retrieves the UserData property as part of the VM model view that was provided by the user during the VM Create/Update operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Retrieves information about the model view or the instance view of a virtual machine. </summary>
+        <summary>
+            Retrieves information about the model view or the instance view of a virtual machine.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachines/{vmName}
+            Operation Id: VirtualMachines_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="vmName" /> is empty. </exception>
+          <paramref name="vmName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="vmName" /> is null. </exception>
       </Docs>
@@ -226,7 +246,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists all of the virtual machines in the specified resource group. Use the nextLink property in the response to get the next page of virtual machines. </summary>
+        <summary>
+            Lists all of the virtual machines in the specified resource group. Use the nextLink property in the response to get the next page of virtual machines.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachines
+            Operation Id: VirtualMachines_List
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.VirtualMachine" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -250,7 +274,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists all of the virtual machines in the specified resource group. Use the nextLink property in the response to get the next page of virtual machines. </summary>
+        <summary>
+            Lists all of the virtual machines in the specified resource group. Use the nextLink property in the response to get the next page of virtual machines.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachines
+            Operation Id: VirtualMachines_List
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.VirtualMachine" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -278,11 +306,15 @@
         <param name="vmName"> The name of the virtual machine. </param>
         <param name="expand"> The expand expression to apply on the operation. 'InstanceView' retrieves a snapshot of the runtime properties of the virtual machine that is managed by the platform and can change outside of control plane operations. 'UserData' retrieves the UserData property as part of the VM model view that was provided by the user during the VM Create/Update operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Retrieves information about the model view or the instance view of a virtual machine. </summary>
+        <summary>
+            Retrieves information about the model view or the instance view of a virtual machine.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachines/{vmName}
+            Operation Id: VirtualMachines_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="vmName" /> is empty. </exception>
+          <paramref name="vmName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="vmName" /> is null. </exception>
       </Docs>
@@ -310,11 +342,15 @@
         <param name="vmName"> The name of the virtual machine. </param>
         <param name="expand"> The expand expression to apply on the operation. 'InstanceView' retrieves a snapshot of the runtime properties of the virtual machine that is managed by the platform and can change outside of control plane operations. 'UserData' retrieves the UserData property as part of the VM model view that was provided by the user during the VM Create/Update operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachines/{vmName}
+            Operation Id: VirtualMachines_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="vmName" /> is empty. </exception>
+          <paramref name="vmName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="vmName" /> is null. </exception>
       </Docs>
@@ -342,11 +378,15 @@
         <param name="vmName"> The name of the virtual machine. </param>
         <param name="expand"> The expand expression to apply on the operation. 'InstanceView' retrieves a snapshot of the runtime properties of the virtual machine that is managed by the platform and can change outside of control plane operations. 'UserData' retrieves the UserData property as part of the VM model view that was provided by the user during the VM Create/Update operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachines/{vmName}
+            Operation Id: VirtualMachines_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="vmName" /> is empty. </exception>
+          <paramref name="vmName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="vmName" /> is null. </exception>
       </Docs>

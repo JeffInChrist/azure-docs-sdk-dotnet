@@ -18,18 +18,18 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ApplicationNotificationEndpoint (string uri);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string uri) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Models.ApplicationNotificationEndpoint.#ctor(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (uri As String)" />
-      <MemberSignature Language="F#" Value="new Azure.ResourceManager.Resources.Models.ApplicationNotificationEndpoint : string -&gt; Azure.ResourceManager.Resources.Models.ApplicationNotificationEndpoint" Usage="new Azure.ResourceManager.Resources.Models.ApplicationNotificationEndpoint uri" />
+      <MemberSignature Language="C#" Value="public ApplicationNotificationEndpoint (Uri uri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Models.ApplicationNotificationEndpoint.#ctor(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (uri As Uri)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.Resources.Models.ApplicationNotificationEndpoint : Uri -&gt; Azure.ResourceManager.Resources.Models.ApplicationNotificationEndpoint" Usage="new Azure.ResourceManager.Resources.Models.ApplicationNotificationEndpoint uri" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="uri" Type="System.String" />
+        <Parameter Name="uri" Type="System.Uri" />
       </Parameters>
       <Docs>
         <param name="uri"> The managed application notification endpoint uri. </param>
@@ -40,18 +40,18 @@
       </Docs>
     </Member>
     <Member MemberName="Uri">
-      <MemberSignature Language="C#" Value="public string Uri { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string Uri" />
+      <MemberSignature Language="C#" Value="public Uri Uri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Uri" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.ApplicationNotificationEndpoint.Uri" />
-      <MemberSignature Language="VB.NET" Value="Public Property Uri As String" />
-      <MemberSignature Language="F#" Value="member this.Uri : string with get, set" Usage="Azure.ResourceManager.Resources.Models.ApplicationNotificationEndpoint.Uri" />
+      <MemberSignature Language="VB.NET" Value="Public Property Uri As Uri" />
+      <MemberSignature Language="F#" Value="member this.Uri : Uri with get, set" Usage="Azure.ResourceManager.Resources.Models.ApplicationNotificationEndpoint.Uri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The managed application notification endpoint uri. </summary>

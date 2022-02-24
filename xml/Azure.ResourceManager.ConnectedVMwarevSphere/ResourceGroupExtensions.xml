@@ -36,8 +36,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a ResourcePoolCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePoolCollection" /> object. </returns>
+        <summary> Gets a collection of ResourcePools in the ResourcePool. </summary>
+        <returns> An object representing collection of ResourcePools and their operations over a ResourcePool. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,8 +60,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a VCenterCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.ConnectedVMwarevSphere.VCenterCollection" /> object. </returns>
+        <summary> Gets a collection of VCenters in the VCenter. </summary>
+        <returns> An object representing collection of VCenters and their operations over a VCenter. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +84,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a VirtualMachineCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineCollection" /> object. </returns>
+        <summary> Gets a collection of VirtualMachines in the VirtualMachine. </summary>
+        <returns> An object representing collection of VirtualMachines and their operations over a VirtualMachine. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,8 +108,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a VirtualMachineTemplateCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplateCollection" /> object. </returns>
+        <summary> Gets a collection of VirtualMachineTemplates in the VirtualMachineTemplate. </summary>
+        <returns> An object representing collection of VirtualMachineTemplates and their operations over a VirtualMachineTemplate. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,8 +132,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a VirtualNetworkCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualNetworkCollection" /> object. </returns>
+        <summary> Gets a collection of VirtualNetworks in the VirtualNetwork. </summary>
+        <returns> An object representing collection of VirtualNetworks and their operations over a VirtualNetwork. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,8 +156,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a VMwareClusterCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.ConnectedVMwarevSphere.VMwareClusterCollection" /> object. </returns>
+        <summary> Gets a collection of VMwareClusters in the VMwareCluster. </summary>
+        <returns> An object representing collection of VMwareClusters and their operations over a VMwareCluster. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,8 +180,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a VMwareDatastoreCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.ConnectedVMwarevSphere.VMwareDatastoreCollection" /> object. </returns>
+        <summary> Gets a collection of VMwareDatastores in the VMwareDatastore. </summary>
+        <returns> An object representing collection of VMwareDatastores and their operations over a VMwareDatastore. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,8 +204,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a VMwareHostCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHostCollection" /> object. </returns>
+        <summary> Gets a collection of VMwareHosts in the VMwareHost. </summary>
+        <returns> An object representing collection of VMwareHosts and their operations over a VMwareHost. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

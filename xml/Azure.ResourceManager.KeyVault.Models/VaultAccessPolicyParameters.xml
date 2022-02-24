@@ -1,15 +1,15 @@
 <Type Name="VaultAccessPolicyParameters" FullName="Azure.ResourceManager.KeyVault.Models.VaultAccessPolicyParameters">
-  <TypeSignature Language="C#" Value="public class VaultAccessPolicyParameters : Azure.ResourceManager.Models.Resource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VaultAccessPolicyParameters extends Azure.ResourceManager.Models.Resource" />
+  <TypeSignature Language="C#" Value="public class VaultAccessPolicyParameters : Azure.ResourceManager.Models.ResourceData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VaultAccessPolicyParameters extends Azure.ResourceManager.Models.ResourceData" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.KeyVault.Models.VaultAccessPolicyParameters" />
-  <TypeSignature Language="VB.NET" Value="Public Class VaultAccessPolicyParameters&#xA;Inherits Resource" />
-  <TypeSignature Language="F#" Value="type VaultAccessPolicyParameters = class&#xA;    inherit Resource" />
+  <TypeSignature Language="VB.NET" Value="Public Class VaultAccessPolicyParameters&#xA;Inherits ResourceData" />
+  <TypeSignature Language="F#" Value="type VaultAccessPolicyParameters = class&#xA;    inherit ResourceData" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.Models.Resource</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.Models.ResourceData</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
