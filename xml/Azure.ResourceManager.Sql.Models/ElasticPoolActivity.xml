@@ -1,15 +1,15 @@
 <Type Name="ElasticPoolActivity" FullName="Azure.ResourceManager.Sql.Models.ElasticPoolActivity">
-  <TypeSignature Language="C#" Value="public class ElasticPoolActivity : Azure.ResourceManager.Models.Resource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ElasticPoolActivity extends Azure.ResourceManager.Models.Resource" />
+  <TypeSignature Language="C#" Value="public class ElasticPoolActivity : Azure.ResourceManager.Models.ResourceData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ElasticPoolActivity extends Azure.ResourceManager.Models.ResourceData" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Sql.Models.ElasticPoolActivity" />
-  <TypeSignature Language="VB.NET" Value="Public Class ElasticPoolActivity&#xA;Inherits Resource" />
-  <TypeSignature Language="F#" Value="type ElasticPoolActivity = class&#xA;    inherit Resource" />
+  <TypeSignature Language="VB.NET" Value="Public Class ElasticPoolActivity&#xA;Inherits ResourceData" />
+  <TypeSignature Language="F#" Value="type ElasticPoolActivity = class&#xA;    inherit ResourceData" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.Models.Resource</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.Models.ResourceData</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>

@@ -55,10 +55,16 @@
       <Docs>
         <param name="key"> The key for the tag. </param>
         <param name="value"> The value for the tag. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Add a tag to the current resource. </summary>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Add a tag to the current resource.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers/{publisherName}/artifacttypes/vmextension/types/{type}/versions/{version}
+            Operation Id: VirtualMachineExtensionImages_Get
+            </summary>
         <returns> The updated resource with the tag added. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="AddTagAsync">
@@ -83,10 +89,16 @@
       <Docs>
         <param name="key"> The key for the tag. </param>
         <param name="value"> The value for the tag. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Add a tag to the current resource. </summary>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Add a tag to the current resource.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers/{publisherName}/artifacttypes/vmextension/types/{type}/versions/{version}
+            Operation Id: VirtualMachineExtensionImages_Get
+            </summary>
         <returns> The updated resource with the tag added. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateResourceIdentifier">
@@ -161,7 +173,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a virtual machine extension image. </summary>
+        <summary>
+            Gets a virtual machine extension image.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers/{publisherName}/artifacttypes/vmextension/types/{type}/versions/{version}
+            Operation Id: VirtualMachineExtensionImages_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -185,56 +201,12 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a virtual machine extension image. </summary>
+        <summary>
+            Gets a virtual machine extension image.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers/{publisherName}/artifacttypes/vmextension/types/{type}/versions/{version}
+            Operation Id: VirtualMachineExtensionImages_Get
+            </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetAvailableLocations">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt; GetAvailableLocations (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt; GetAvailableLocations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineExtensionImage.GetAvailableLocations(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocations (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of AzureLocation)" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;&#xA;override this.GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;" Usage="virtualMachineExtensionImage.GetAvailableLocations cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Lists all available geo-locations. </summary>
-        <returns> A collection of locations that may take multiple service requests to iterate over. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetAvailableLocationsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineExtensionImage.GetAvailableLocationsAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocationsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of AzureLocation))" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;&#xA;override this.GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;" Usage="virtualMachineExtensionImage.GetAvailableLocationsAsync cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Lists all available geo-locations. </summary>
-        <returns> A collection of locations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -277,11 +249,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="key"> The key of the tag to remove. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Removes a tag by key from the resource. </summary>
+        <param name="key"> The key for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Removes a tag by key from the resource.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers/{publisherName}/artifacttypes/vmextension/types/{type}/versions/{version}
+            Operation Id: VirtualMachineExtensionImages_Get
+            </summary>
         <returns> The updated resource with the tag removed. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveTagAsync">
@@ -303,11 +281,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="key"> The key of the tag to remove. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Removes a tag by key from the resource. </summary>
+        <param name="key"> The key for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Removes a tag by key from the resource.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers/{publisherName}/artifacttypes/vmextension/types/{type}/versions/{version}
+            Operation Id: VirtualMachineExtensionImages_Get
+            </summary>
         <returns> The updated resource with the tag removed. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ResourceType">
@@ -349,10 +333,16 @@
       </Parameters>
       <Docs>
         <param name="tags"> The set of tags to use as replacement. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Replace the tags on the resource with the given set. </summary>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Replace the tags on the resource with the given set.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers/{publisherName}/artifacttypes/vmextension/types/{type}/versions/{version}
+            Operation Id: VirtualMachineExtensionImages_Get
+            </summary>
         <returns> The updated resource with the tags replaced. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tags" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="SetTagsAsync">
@@ -375,10 +365,16 @@
       </Parameters>
       <Docs>
         <param name="tags"> The set of tags to use as replacement. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Replace the tags on the resource with the given set. </summary>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Replace the tags on the resource with the given set.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers/{publisherName}/artifacttypes/vmextension/types/{type}/versions/{version}
+            Operation Id: VirtualMachineExtensionImages_Get
+            </summary>
         <returns> The updated resource with the tags replaced. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tags" /> is null. </exception>
       </Docs>
     </Member>
   </Members>

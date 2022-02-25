@@ -55,10 +55,16 @@
       <Docs>
         <param name="key"> The key for the tag. </param>
         <param name="value"> The value for the tag. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Add a tag to the current resource. </summary>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Add a tag to the current resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}
+            Operation Id: VirtualMachineScaleSetVMs_Get
+            </summary>
         <returns> The updated resource with the tag added. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="AddTagAsync">
@@ -83,10 +89,16 @@
       <Docs>
         <param name="key"> The key for the tag. </param>
         <param name="value"> The value for the tag. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Add a tag to the current resource. </summary>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Add a tag to the current resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}
+            Operation Id: VirtualMachineScaleSetVMs_Get
+            </summary>
         <returns> The updated resource with the tag added. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateResourceIdentifier">
@@ -141,18 +153,18 @@
       </Docs>
     </Member>
     <Member MemberName="Deallocate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmDeallocateOperation Deallocate (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmDeallocateOperation Deallocate(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Deallocate (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Deallocate(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetVm.Deallocate(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Deallocate (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineScaleSetVmDeallocateOperation" />
-      <MemberSignature Language="F#" Value="abstract member Deallocate : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmDeallocateOperation&#xA;override this.Deallocate : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmDeallocateOperation" Usage="virtualMachineScaleSetVm.Deallocate (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Deallocate (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Deallocate : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Deallocate : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="virtualMachineScaleSetVm.Deallocate (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmDeallocateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -161,24 +173,28 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Deallocates a specific virtual machine in a VM scale set. Shuts down the virtual machine and releases the compute resources it uses. You are not billed for the compute resources of this virtual machine once it is deallocated. </summary>
+        <summary>
+            Deallocates a specific virtual machine in a VM scale set. Shuts down the virtual machine and releases the compute resources it uses. You are not billed for the compute resources of this virtual machine once it is deallocated.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}/deallocate
+            Operation Id: VirtualMachineScaleSetVMs_Deallocate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeallocateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmDeallocateOperation&gt; DeallocateAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmDeallocateOperation&gt; DeallocateAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; DeallocateAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; DeallocateAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetVm.DeallocateAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeallocateAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineScaleSetVmDeallocateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member DeallocateAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmDeallocateOperation&gt;&#xA;override this.DeallocateAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmDeallocateOperation&gt;" Usage="virtualMachineScaleSetVm.DeallocateAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeallocateAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member DeallocateAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.DeallocateAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="virtualMachineScaleSetVm.DeallocateAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmDeallocateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -187,24 +203,28 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Deallocates a specific virtual machine in a VM scale set. Shuts down the virtual machine and releases the compute resources it uses. You are not billed for the compute resources of this virtual machine once it is deallocated. </summary>
+        <summary>
+            Deallocates a specific virtual machine in a VM scale set. Shuts down the virtual machine and releases the compute resources it uses. You are not billed for the compute resources of this virtual machine once it is deallocated.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}/deallocate
+            Operation Id: VirtualMachineScaleSetVMs_Deallocate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmDeleteOperation Delete (bool waitForCompletion, bool? forceDeletion = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmDeleteOperation Delete(bool waitForCompletion, valuetype System.Nullable`1&lt;bool&gt; forceDeletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Delete (bool waitForCompletion, bool? forceDeletion = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Delete(bool waitForCompletion, valuetype System.Nullable`1&lt;bool&gt; forceDeletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetVm.Delete(System.Boolean,System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (waitForCompletion As Boolean, Optional forceDeletion As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineScaleSetVmDeleteOperation" />
-      <MemberSignature Language="F#" Value="abstract member Delete : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmDeleteOperation&#xA;override this.Delete : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmDeleteOperation" Usage="virtualMachineScaleSetVm.Delete (waitForCompletion, forceDeletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (waitForCompletion As Boolean, Optional forceDeletion As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Delete : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Delete : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="virtualMachineScaleSetVm.Delete (waitForCompletion, forceDeletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmDeleteOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -215,24 +235,28 @@
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="forceDeletion"> Optional parameter to force delete a virtual machine from a VM scale set. (Feature in Preview). </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Deletes a virtual machine from a VM scale set. </summary>
+        <summary>
+            Deletes a virtual machine from a VM scale set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}
+            Operation Id: VirtualMachineScaleSetVMs_Delete
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmDeleteOperation&gt; DeleteAsync (bool waitForCompletion, bool? forceDeletion = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmDeleteOperation&gt; DeleteAsync(bool waitForCompletion, valuetype System.Nullable`1&lt;bool&gt; forceDeletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; DeleteAsync (bool waitForCompletion, bool? forceDeletion = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; DeleteAsync(bool waitForCompletion, valuetype System.Nullable`1&lt;bool&gt; forceDeletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetVm.DeleteAsync(System.Boolean,System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (waitForCompletion As Boolean, Optional forceDeletion As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineScaleSetVmDeleteOperation)" />
-      <MemberSignature Language="F#" Value="abstract member DeleteAsync : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmDeleteOperation&gt;&#xA;override this.DeleteAsync : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmDeleteOperation&gt;" Usage="virtualMachineScaleSetVm.DeleteAsync (waitForCompletion, forceDeletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (waitForCompletion As Boolean, Optional forceDeletion As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAsync : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.DeleteAsync : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="virtualMachineScaleSetVm.DeleteAsync (waitForCompletion, forceDeletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmDeleteOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -243,7 +267,11 @@
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="forceDeletion"> Optional parameter to force delete a virtual machine from a VM scale set. (Feature in Preview). </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Deletes a virtual machine from a VM scale set. </summary>
+        <summary>
+            Deletes a virtual machine from a VM scale set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}
+            Operation Id: VirtualMachineScaleSetVMs_Delete
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -269,7 +297,11 @@
       <Docs>
         <param name="expand"> The expand expression to apply on the operation. 'InstanceView' will retrieve the instance view of the virtual machine. 'UserData' will retrieve the UserData of the virtual machine. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a virtual machine from a VM scale set. </summary>
+        <summary>
+            Gets a virtual machine from a VM scale set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}
+            Operation Id: VirtualMachineScaleSetVMs_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -295,56 +327,12 @@
       <Docs>
         <param name="expand"> The expand expression to apply on the operation. 'InstanceView' will retrieve the instance view of the virtual machine. 'UserData' will retrieve the UserData of the virtual machine. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets a virtual machine from a VM scale set. </summary>
+        <summary>
+            Gets a virtual machine from a VM scale set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}
+            Operation Id: VirtualMachineScaleSetVMs_Get
+            </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetAvailableLocations">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt; GetAvailableLocations (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt; GetAvailableLocations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetVm.GetAvailableLocations(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocations (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of AzureLocation)" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;&#xA;override this.GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;" Usage="virtualMachineScaleSetVm.GetAvailableLocations cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Lists all available geo-locations. </summary>
-        <returns> A collection of locations that may take multiple service requests to iterate over. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetAvailableLocationsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetVm.GetAvailableLocationsAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocationsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of AzureLocation))" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;&#xA;override this.GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;" Usage="virtualMachineScaleSetVm.GetAvailableLocationsAsync cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Lists all available geo-locations. </summary>
-        <returns> A collection of locations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -367,7 +355,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the status of a virtual machine from a VM scale set. </summary>
+        <summary>
+            Gets the status of a virtual machine from a VM scale set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}/instanceView
+            Operation Id: VirtualMachineScaleSetVMs_GetInstanceView
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -391,7 +383,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the status of a virtual machine from a VM scale set. </summary>
+        <summary>
+            Gets the status of a virtual machine from a VM scale set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}/instanceView
+            Operation Id: VirtualMachineScaleSetVMs_GetInstanceView
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -412,8 +408,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of VirtualMachineScaleSetVirtualMachineRunCommands in the VirtualMachineScaleSetVm. </summary>
-        <returns> An object representing collection of VirtualMachineScaleSetVirtualMachineRunCommands and their operations over a VirtualMachineScaleSetVm. </returns>
+        <summary> Gets a collection of VirtualMachineScaleSetVirtualMachineRunCommands in the VirtualMachineScaleSetVirtualMachineRunCommand. </summary>
+        <returns> An object representing collection of VirtualMachineScaleSetVirtualMachineRunCommands and their operations over a VirtualMachineScaleSetVirtualMachineRunCommand. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -433,8 +429,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of VirtualMachineScaleSetVmExtensions in the VirtualMachineScaleSetVm. </summary>
-        <returns> An object representing collection of VirtualMachineScaleSetVmExtensions and their operations over a VirtualMachineScaleSetVm. </returns>
+        <summary> Gets a collection of VirtualMachineScaleSetVmExtensions in the VirtualMachineScaleSetVmExtension. </summary>
+        <returns> An object representing collection of VirtualMachineScaleSetVmExtensions and their operations over a VirtualMachineScaleSetVmExtension. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -459,18 +455,18 @@
       </Docs>
     </Member>
     <Member MemberName="PerformMaintenance">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPerformMaintenanceOperation PerformMaintenance (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPerformMaintenanceOperation PerformMaintenance(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation PerformMaintenance (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation PerformMaintenance(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetVm.PerformMaintenance(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function PerformMaintenance (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineScaleSetVmPerformMaintenanceOperation" />
-      <MemberSignature Language="F#" Value="abstract member PerformMaintenance : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPerformMaintenanceOperation&#xA;override this.PerformMaintenance : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPerformMaintenanceOperation" Usage="virtualMachineScaleSetVm.PerformMaintenance (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PerformMaintenance (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member PerformMaintenance : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.PerformMaintenance : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="virtualMachineScaleSetVm.PerformMaintenance (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPerformMaintenanceOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -479,24 +475,28 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Performs maintenance on a virtual machine in a VM scale set. </summary>
+        <summary>
+            Performs maintenance on a virtual machine in a VM scale set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}/performMaintenance
+            Operation Id: VirtualMachineScaleSetVMs_PerformMaintenance
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PerformMaintenanceAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPerformMaintenanceOperation&gt; PerformMaintenanceAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPerformMaintenanceOperation&gt; PerformMaintenanceAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; PerformMaintenanceAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; PerformMaintenanceAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetVm.PerformMaintenanceAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function PerformMaintenanceAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineScaleSetVmPerformMaintenanceOperation)" />
-      <MemberSignature Language="F#" Value="abstract member PerformMaintenanceAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPerformMaintenanceOperation&gt;&#xA;override this.PerformMaintenanceAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPerformMaintenanceOperation&gt;" Usage="virtualMachineScaleSetVm.PerformMaintenanceAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PerformMaintenanceAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member PerformMaintenanceAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.PerformMaintenanceAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="virtualMachineScaleSetVm.PerformMaintenanceAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPerformMaintenanceOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -505,24 +505,28 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Performs maintenance on a virtual machine in a VM scale set. </summary>
+        <summary>
+            Performs maintenance on a virtual machine in a VM scale set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}/performMaintenance
+            Operation Id: VirtualMachineScaleSetVMs_PerformMaintenance
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PowerOff">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPowerOffOperation PowerOff (bool waitForCompletion, bool? skipShutdown = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPowerOffOperation PowerOff(bool waitForCompletion, valuetype System.Nullable`1&lt;bool&gt; skipShutdown, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation PowerOff (bool waitForCompletion, bool? skipShutdown = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation PowerOff(bool waitForCompletion, valuetype System.Nullable`1&lt;bool&gt; skipShutdown, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetVm.PowerOff(System.Boolean,System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function PowerOff (waitForCompletion As Boolean, Optional skipShutdown As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineScaleSetVmPowerOffOperation" />
-      <MemberSignature Language="F#" Value="abstract member PowerOff : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPowerOffOperation&#xA;override this.PowerOff : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPowerOffOperation" Usage="virtualMachineScaleSetVm.PowerOff (waitForCompletion, skipShutdown, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PowerOff (waitForCompletion As Boolean, Optional skipShutdown As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member PowerOff : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.PowerOff : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="virtualMachineScaleSetVm.PowerOff (waitForCompletion, skipShutdown, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPowerOffOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -533,24 +537,28 @@
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="skipShutdown"> The parameter to request non-graceful VM shutdown. True value for this flag indicates non-graceful shutdown whereas false indicates otherwise. Default value for this flag is false if not specified. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Power off (stop) a virtual machine in a VM scale set. Note that resources are still attached and you are getting charged for the resources. Instead, use deallocate to release resources and avoid charges. </summary>
+        <summary>
+            Power off (stop) a virtual machine in a VM scale set. Note that resources are still attached and you are getting charged for the resources. Instead, use deallocate to release resources and avoid charges.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}/poweroff
+            Operation Id: VirtualMachineScaleSetVMs_PowerOff
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PowerOffAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPowerOffOperation&gt; PowerOffAsync (bool waitForCompletion, bool? skipShutdown = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPowerOffOperation&gt; PowerOffAsync(bool waitForCompletion, valuetype System.Nullable`1&lt;bool&gt; skipShutdown, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; PowerOffAsync (bool waitForCompletion, bool? skipShutdown = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; PowerOffAsync(bool waitForCompletion, valuetype System.Nullable`1&lt;bool&gt; skipShutdown, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetVm.PowerOffAsync(System.Boolean,System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function PowerOffAsync (waitForCompletion As Boolean, Optional skipShutdown As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineScaleSetVmPowerOffOperation)" />
-      <MemberSignature Language="F#" Value="abstract member PowerOffAsync : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPowerOffOperation&gt;&#xA;override this.PowerOffAsync : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPowerOffOperation&gt;" Usage="virtualMachineScaleSetVm.PowerOffAsync (waitForCompletion, skipShutdown, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PowerOffAsync (waitForCompletion As Boolean, Optional skipShutdown As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member PowerOffAsync : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.PowerOffAsync : bool * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="virtualMachineScaleSetVm.PowerOffAsync (waitForCompletion, skipShutdown, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPowerOffOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -561,24 +569,28 @@
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="skipShutdown"> The parameter to request non-graceful VM shutdown. True value for this flag indicates non-graceful shutdown whereas false indicates otherwise. Default value for this flag is false if not specified. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Power off (stop) a virtual machine in a VM scale set. Note that resources are still attached and you are getting charged for the resources. Instead, use deallocate to release resources and avoid charges. </summary>
+        <summary>
+            Power off (stop) a virtual machine in a VM scale set. Note that resources are still attached and you are getting charged for the resources. Instead, use deallocate to release resources and avoid charges.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}/poweroff
+            Operation Id: VirtualMachineScaleSetVMs_PowerOff
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PowerOn">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPowerOnOperation PowerOn (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPowerOnOperation PowerOn(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation PowerOn (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation PowerOn(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetVm.PowerOn(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function PowerOn (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineScaleSetVmPowerOnOperation" />
-      <MemberSignature Language="F#" Value="abstract member PowerOn : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPowerOnOperation&#xA;override this.PowerOn : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPowerOnOperation" Usage="virtualMachineScaleSetVm.PowerOn (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PowerOn (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member PowerOn : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.PowerOn : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="virtualMachineScaleSetVm.PowerOn (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPowerOnOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -587,24 +599,28 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Starts a virtual machine in a VM scale set. </summary>
+        <summary>
+            Starts a virtual machine in a VM scale set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}/start
+            Operation Id: VirtualMachineScaleSetVMs_Start
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PowerOnAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPowerOnOperation&gt; PowerOnAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPowerOnOperation&gt; PowerOnAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; PowerOnAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; PowerOnAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetVm.PowerOnAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function PowerOnAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineScaleSetVmPowerOnOperation)" />
-      <MemberSignature Language="F#" Value="abstract member PowerOnAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPowerOnOperation&gt;&#xA;override this.PowerOnAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPowerOnOperation&gt;" Usage="virtualMachineScaleSetVm.PowerOnAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PowerOnAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member PowerOnAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.PowerOnAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="virtualMachineScaleSetVm.PowerOnAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmPowerOnOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -613,24 +629,28 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Starts a virtual machine in a VM scale set. </summary>
+        <summary>
+            Starts a virtual machine in a VM scale set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}/start
+            Operation Id: VirtualMachineScaleSetVMs_Start
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Redeploy">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRedeployOperation Redeploy (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRedeployOperation Redeploy(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Redeploy (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Redeploy(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetVm.Redeploy(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Redeploy (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineScaleSetVmRedeployOperation" />
-      <MemberSignature Language="F#" Value="abstract member Redeploy : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRedeployOperation&#xA;override this.Redeploy : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRedeployOperation" Usage="virtualMachineScaleSetVm.Redeploy (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Redeploy (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Redeploy : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Redeploy : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="virtualMachineScaleSetVm.Redeploy (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRedeployOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -639,24 +659,28 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Shuts down the virtual machine in the virtual machine scale set, moves it to a new node, and powers it back on. </summary>
+        <summary>
+            Shuts down the virtual machine in the virtual machine scale set, moves it to a new node, and powers it back on.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}/redeploy
+            Operation Id: VirtualMachineScaleSetVMs_Redeploy
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RedeployAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRedeployOperation&gt; RedeployAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRedeployOperation&gt; RedeployAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; RedeployAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; RedeployAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetVm.RedeployAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RedeployAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineScaleSetVmRedeployOperation)" />
-      <MemberSignature Language="F#" Value="abstract member RedeployAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRedeployOperation&gt;&#xA;override this.RedeployAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRedeployOperation&gt;" Usage="virtualMachineScaleSetVm.RedeployAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RedeployAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member RedeployAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.RedeployAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="virtualMachineScaleSetVm.RedeployAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRedeployOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -665,24 +689,28 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Shuts down the virtual machine in the virtual machine scale set, moves it to a new node, and powers it back on. </summary>
+        <summary>
+            Shuts down the virtual machine in the virtual machine scale set, moves it to a new node, and powers it back on.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}/redeploy
+            Operation Id: VirtualMachineScaleSetVMs_Redeploy
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Reimage">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOperation Reimage (bool waitForCompletion, Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOptions vmScaleSetVMReimageInput = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOperation Reimage(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOptions vmScaleSetVMReimageInput, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Reimage (bool waitForCompletion, Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOptions vmScaleSetVMReimageInput = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Reimage(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOptions vmScaleSetVMReimageInput, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetVm.Reimage(System.Boolean,Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Reimage (waitForCompletion As Boolean, Optional vmScaleSetVMReimageInput As VirtualMachineScaleSetVmReimageOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineScaleSetVmReimageOperation" />
-      <MemberSignature Language="F#" Value="abstract member Reimage : bool * Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOperation&#xA;override this.Reimage : bool * Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOperation" Usage="virtualMachineScaleSetVm.Reimage (waitForCompletion, vmScaleSetVMReimageInput, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Reimage (waitForCompletion As Boolean, Optional vmScaleSetVMReimageInput As VirtualMachineScaleSetVmReimageOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Reimage : bool * Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Reimage : bool * Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="virtualMachineScaleSetVm.Reimage (waitForCompletion, vmScaleSetVMReimageInput, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -693,24 +721,28 @@
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="vmScaleSetVMReimageInput"> Parameters for the Reimaging Virtual machine in ScaleSet. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Reimages (upgrade the operating system) a specific virtual machine in a VM scale set. </summary>
+        <summary>
+            Reimages (upgrade the operating system) a specific virtual machine in a VM scale set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}/reimage
+            Operation Id: VirtualMachineScaleSetVMs_Reimage
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReimageAll">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageAllOperation ReimageAll (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageAllOperation ReimageAll(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation ReimageAll (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation ReimageAll(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetVm.ReimageAll(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReimageAll (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineScaleSetVmReimageAllOperation" />
-      <MemberSignature Language="F#" Value="abstract member ReimageAll : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageAllOperation&#xA;override this.ReimageAll : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageAllOperation" Usage="virtualMachineScaleSetVm.ReimageAll (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReimageAll (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member ReimageAll : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.ReimageAll : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="virtualMachineScaleSetVm.ReimageAll (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageAllOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -719,24 +751,28 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Allows you to re-image all the disks ( including data disks ) in the a VM scale set instance. This operation is only supported for managed disks. </summary>
+        <summary>
+            Allows you to re-image all the disks ( including data disks ) in the a VM scale set instance. This operation is only supported for managed disks.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}/reimageall
+            Operation Id: VirtualMachineScaleSetVMs_ReimageAll
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReimageAllAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageAllOperation&gt; ReimageAllAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageAllOperation&gt; ReimageAllAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; ReimageAllAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; ReimageAllAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetVm.ReimageAllAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReimageAllAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineScaleSetVmReimageAllOperation)" />
-      <MemberSignature Language="F#" Value="abstract member ReimageAllAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageAllOperation&gt;&#xA;override this.ReimageAllAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageAllOperation&gt;" Usage="virtualMachineScaleSetVm.ReimageAllAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReimageAllAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member ReimageAllAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.ReimageAllAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="virtualMachineScaleSetVm.ReimageAllAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageAllOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -745,24 +781,28 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Allows you to re-image all the disks ( including data disks ) in the a VM scale set instance. This operation is only supported for managed disks. </summary>
+        <summary>
+            Allows you to re-image all the disks ( including data disks ) in the a VM scale set instance. This operation is only supported for managed disks.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}/reimageall
+            Operation Id: VirtualMachineScaleSetVMs_ReimageAll
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReimageAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOperation&gt; ReimageAsync (bool waitForCompletion, Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOptions vmScaleSetVMReimageInput = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOperation&gt; ReimageAsync(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOptions vmScaleSetVMReimageInput, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; ReimageAsync (bool waitForCompletion, Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOptions vmScaleSetVMReimageInput = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; ReimageAsync(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOptions vmScaleSetVMReimageInput, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetVm.ReimageAsync(System.Boolean,Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReimageAsync (waitForCompletion As Boolean, Optional vmScaleSetVMReimageInput As VirtualMachineScaleSetVmReimageOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineScaleSetVmReimageOperation)" />
-      <MemberSignature Language="F#" Value="abstract member ReimageAsync : bool * Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOperation&gt;&#xA;override this.ReimageAsync : bool * Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOperation&gt;" Usage="virtualMachineScaleSetVm.ReimageAsync (waitForCompletion, vmScaleSetVMReimageInput, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReimageAsync (waitForCompletion As Boolean, Optional vmScaleSetVMReimageInput As VirtualMachineScaleSetVmReimageOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member ReimageAsync : bool * Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.ReimageAsync : bool * Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="virtualMachineScaleSetVm.ReimageAsync (waitForCompletion, vmScaleSetVMReimageInput, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmReimageOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -773,7 +813,11 @@
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="vmScaleSetVMReimageInput"> Parameters for the Reimaging Virtual machine in ScaleSet. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Reimages (upgrade the operating system) a specific virtual machine in a VM scale set. </summary>
+        <summary>
+            Reimages (upgrade the operating system) a specific virtual machine in a VM scale set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}/reimage
+            Operation Id: VirtualMachineScaleSetVMs_Reimage
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -797,11 +841,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="key"> The key of the tag to remove. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Removes a tag by key from the resource. </summary>
+        <param name="key"> The key for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Removes a tag by key from the resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}
+            Operation Id: VirtualMachineScaleSetVMs_Get
+            </summary>
         <returns> The updated resource with the tag removed. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveTagAsync">
@@ -823,11 +873,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="key"> The key of the tag to remove. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Removes a tag by key from the resource. </summary>
+        <param name="key"> The key for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Removes a tag by key from the resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}
+            Operation Id: VirtualMachineScaleSetVMs_Get
+            </summary>
         <returns> The updated resource with the tag removed. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ResourceType">
@@ -850,18 +906,18 @@
       </Docs>
     </Member>
     <Member MemberName="Restart">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRestartOperation Restart (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRestartOperation Restart(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Restart (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Restart(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetVm.Restart(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Restart (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineScaleSetVmRestartOperation" />
-      <MemberSignature Language="F#" Value="abstract member Restart : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRestartOperation&#xA;override this.Restart : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRestartOperation" Usage="virtualMachineScaleSetVm.Restart (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Restart (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Restart : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Restart : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="virtualMachineScaleSetVm.Restart (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRestartOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -870,24 +926,28 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Restarts a virtual machine in a VM scale set. </summary>
+        <summary>
+            Restarts a virtual machine in a VM scale set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}/restart
+            Operation Id: VirtualMachineScaleSetVMs_Restart
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RestartAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRestartOperation&gt; RestartAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRestartOperation&gt; RestartAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; RestartAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; RestartAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetVm.RestartAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RestartAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineScaleSetVmRestartOperation)" />
-      <MemberSignature Language="F#" Value="abstract member RestartAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRestartOperation&gt;&#xA;override this.RestartAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRestartOperation&gt;" Usage="virtualMachineScaleSetVm.RestartAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RestartAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member RestartAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.RestartAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="virtualMachineScaleSetVm.RestartAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRestartOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -896,7 +956,11 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Restarts a virtual machine in a VM scale set. </summary>
+        <summary>
+            Restarts a virtual machine in a VM scale set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}/restart
+            Operation Id: VirtualMachineScaleSetVMs_Restart
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -922,7 +986,11 @@
       <Docs>
         <param name="sasUriExpirationTimeInMinutes"> Expiration duration in minutes for the SAS URIs with a value between 1 to 1440 minutes. &lt;br&gt;&lt;br&gt;NOTE: If not specified, SAS URIs will be generated with a default expiration duration of 120 minutes. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> The operation to retrieve SAS URIs of boot diagnostic logs for a virtual machine in a VM scale set. </summary>
+        <summary>
+            The operation to retrieve SAS URIs of boot diagnostic logs for a virtual machine in a VM scale set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}/retrieveBootDiagnosticsData
+            Operation Id: VirtualMachineScaleSetVMs_RetrieveBootDiagnosticsData
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -948,24 +1016,28 @@
       <Docs>
         <param name="sasUriExpirationTimeInMinutes"> Expiration duration in minutes for the SAS URIs with a value between 1 to 1440 minutes. &lt;br&gt;&lt;br&gt;NOTE: If not specified, SAS URIs will be generated with a default expiration duration of 120 minutes. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> The operation to retrieve SAS URIs of boot diagnostic logs for a virtual machine in a VM scale set. </summary>
+        <summary>
+            The operation to retrieve SAS URIs of boot diagnostic logs for a virtual machine in a VM scale set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}/retrieveBootDiagnosticsData
+            Operation Id: VirtualMachineScaleSetVMs_RetrieveBootDiagnosticsData
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RunCommand">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRunCommandOperation RunCommand (bool waitForCompletion, Azure.ResourceManager.Compute.Models.RunCommandInput parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRunCommandOperation RunCommand(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.RunCommandInput parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.RunCommandResult&gt; RunCommand (bool waitForCompletion, Azure.ResourceManager.Compute.Models.RunCommandInput parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.Models.RunCommandResult&gt; RunCommand(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.RunCommandInput parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetVm.RunCommand(System.Boolean,Azure.ResourceManager.Compute.Models.RunCommandInput,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RunCommand (waitForCompletion As Boolean, parameters As RunCommandInput, Optional cancellationToken As CancellationToken = Nothing) As VirtualMachineScaleSetVmRunCommandOperation" />
-      <MemberSignature Language="F#" Value="abstract member RunCommand : bool * Azure.ResourceManager.Compute.Models.RunCommandInput * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRunCommandOperation&#xA;override this.RunCommand : bool * Azure.ResourceManager.Compute.Models.RunCommandInput * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRunCommandOperation" Usage="virtualMachineScaleSetVm.RunCommand (waitForCompletion, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RunCommand (waitForCompletion As Boolean, parameters As RunCommandInput, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of RunCommandResult)" />
+      <MemberSignature Language="F#" Value="abstract member RunCommand : bool * Azure.ResourceManager.Compute.Models.RunCommandInput * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.RunCommandResult&gt;&#xA;override this.RunCommand : bool * Azure.ResourceManager.Compute.Models.RunCommandInput * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.RunCommandResult&gt;" Usage="virtualMachineScaleSetVm.RunCommand (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRunCommandOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.RunCommandResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -976,7 +1048,11 @@
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="parameters"> Parameters supplied to the Run command operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Run command on a virtual machine in a VM scale set. </summary>
+        <summary>
+            Run command on a virtual machine in a VM scale set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}/runCommand
+            Operation Id: VirtualMachineScaleSetVMs_RunCommand
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -984,18 +1060,18 @@
       </Docs>
     </Member>
     <Member MemberName="RunCommandAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRunCommandOperation&gt; RunCommandAsync (bool waitForCompletion, Azure.ResourceManager.Compute.Models.RunCommandInput parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRunCommandOperation&gt; RunCommandAsync(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.RunCommandInput parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.RunCommandResult&gt;&gt; RunCommandAsync (bool waitForCompletion, Azure.ResourceManager.Compute.Models.RunCommandInput parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.Models.RunCommandResult&gt;&gt; RunCommandAsync(bool waitForCompletion, class Azure.ResourceManager.Compute.Models.RunCommandInput parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.VirtualMachineScaleSetVm.RunCommandAsync(System.Boolean,Azure.ResourceManager.Compute.Models.RunCommandInput,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RunCommandAsync (waitForCompletion As Boolean, parameters As RunCommandInput, Optional cancellationToken As CancellationToken = Nothing) As Task(Of VirtualMachineScaleSetVmRunCommandOperation)" />
-      <MemberSignature Language="F#" Value="abstract member RunCommandAsync : bool * Azure.ResourceManager.Compute.Models.RunCommandInput * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRunCommandOperation&gt;&#xA;override this.RunCommandAsync : bool * Azure.ResourceManager.Compute.Models.RunCommandInput * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRunCommandOperation&gt;" Usage="virtualMachineScaleSetVm.RunCommandAsync (waitForCompletion, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RunCommandAsync (waitForCompletion As Boolean, parameters As RunCommandInput, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of RunCommandResult))" />
+      <MemberSignature Language="F#" Value="abstract member RunCommandAsync : bool * Azure.ResourceManager.Compute.Models.RunCommandInput * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.RunCommandResult&gt;&gt;&#xA;override this.RunCommandAsync : bool * Azure.ResourceManager.Compute.Models.RunCommandInput * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.RunCommandResult&gt;&gt;" Usage="virtualMachineScaleSetVm.RunCommandAsync (waitForCompletion, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.VirtualMachineScaleSetVmRunCommandOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Models.RunCommandResult&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -1006,7 +1082,11 @@
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="parameters"> Parameters supplied to the Run command operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Run command on a virtual machine in a VM scale set. </summary>
+        <summary>
+            Run command on a virtual machine in a VM scale set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}/runCommand
+            Operation Id: VirtualMachineScaleSetVMs_RunCommand
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1033,10 +1113,16 @@
       </Parameters>
       <Docs>
         <param name="tags"> The set of tags to use as replacement. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Replace the tags on the resource with the given set. </summary>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Replace the tags on the resource with the given set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}
+            Operation Id: VirtualMachineScaleSetVMs_Get
+            </summary>
         <returns> The updated resource with the tags replaced. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tags" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="SetTagsAsync">
@@ -1059,10 +1145,16 @@
       </Parameters>
       <Docs>
         <param name="tags"> The set of tags to use as replacement. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Replace the tags on the resource with the given set. </summary>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Replace the tags on the resource with the given set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}
+            Operation Id: VirtualMachineScaleSetVMs_Get
+            </summary>
         <returns> The updated resource with the tags replaced. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tags" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="SimulateEviction">
@@ -1084,7 +1176,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> The operation to simulate the eviction of spot virtual machine in a VM scale set. </summary>
+        <summary>
+            The operation to simulate the eviction of spot virtual machine in a VM scale set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualMachines/{instanceId}/simulateEviction
+            Operation Id: VirtualMachineScaleSetVMs_SimulateEviction
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1108,7 +1204,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> The operation to simulate the eviction of spot virtual machine in a VM scale set. </summary>
+        <summary>
+            The operation to simulate the eviction of spot virtual machine in a VM scale set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualMachines/{instanceId}/simulateEviction
+            Operation Id: VirtualMachineScaleSetVMs_SimulateEviction
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

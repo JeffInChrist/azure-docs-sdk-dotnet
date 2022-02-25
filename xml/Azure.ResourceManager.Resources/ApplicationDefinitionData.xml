@@ -280,18 +280,18 @@
       </Docs>
     </Member>
     <Member MemberName="PackageFileUri">
-      <MemberSignature Language="C#" Value="public string PackageFileUri { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string PackageFileUri" />
+      <MemberSignature Language="C#" Value="public Uri PackageFileUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri PackageFileUri" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.ApplicationDefinitionData.PackageFileUri" />
-      <MemberSignature Language="VB.NET" Value="Public Property PackageFileUri As String" />
-      <MemberSignature Language="F#" Value="member this.PackageFileUri : string with get, set" Usage="Azure.ResourceManager.Resources.ApplicationDefinitionData.PackageFileUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property PackageFileUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.PackageFileUri : Uri with get, set" Usage="Azure.ResourceManager.Resources.ApplicationDefinitionData.PackageFileUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The managed application definition package file Uri. Use this element. </summary>

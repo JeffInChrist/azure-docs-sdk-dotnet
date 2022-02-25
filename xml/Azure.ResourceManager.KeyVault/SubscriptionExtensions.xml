@@ -40,7 +40,11 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="vaultName"> The name of the vault. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
+        <summary>
+            Checks that the vault name is valid and is not already in use.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/checkNameAvailability
+            Operation Id: Vaults_CheckNameAvailability
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -70,7 +74,11 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="vaultName"> The name of the vault. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
+        <summary>
+            Checks that the vault name is valid and is not already in use.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/checkNameAvailability
+            Operation Id: Vaults_CheckNameAvailability
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -96,8 +104,8 @@
       </Parameters>
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a DeletedManagedHsmCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.KeyVault.DeletedManagedHsmCollection" /> object. </returns>
+        <summary> Gets a collection of DeletedManagedHsms in the DeletedManagedHsm. </summary>
+        <returns> An object representing collection of DeletedManagedHsms and their operations over a DeletedManagedHsm. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,8 +130,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the DeletedManagedHsmData for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            The List operation gets information about the deleted managed HSMs associated with the subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/deletedManagedHSMs
+            Operation Id: ManagedHsms_ListDeleted
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.KeyVault.DeletedManagedHsm" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,8 +160,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the DeletedManagedHsmData for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            The List operation gets information about the deleted managed HSMs associated with the subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/deletedManagedHSMs
+            Operation Id: ManagedHsms_ListDeleted
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.KeyVault.DeletedManagedHsm" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,8 +188,8 @@
       </Parameters>
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a DeletedVaultCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.KeyVault.DeletedVaultCollection" /> object. </returns>
+        <summary> Gets a collection of DeletedVaults in the DeletedVault. </summary>
+        <returns> An object representing collection of DeletedVaults and their operations over a DeletedVault. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,8 +214,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the DeletedVaultData for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets information about the deleted vaults in a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/deletedVaults
+            Operation Id: Vaults_ListDeleted
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.KeyVault.DeletedVault" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,8 +244,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the DeletedVaultData for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Gets information about the deleted vaults in a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/deletedVaults
+            Operation Id: Vaults_ListDeleted
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.KeyVault.DeletedVault" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -252,8 +276,12 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="top"> Maximum number of results to return. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the ManagedHsms for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            The List operation gets information about the managed HSM Pools associated with the subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/managedHSMs
+            Operation Id: ManagedHsms_ListBySubscription
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.KeyVault.ManagedHsm" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -280,8 +308,12 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="top"> Maximum number of results to return. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the ManagedHsms for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            The List operation gets information about the managed HSM Pools associated with the subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/managedHSMs
+            Operation Id: ManagedHsms_ListBySubscription
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.KeyVault.ManagedHsm" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,8 +340,12 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="top"> Maximum number of results to return. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the Vaults for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            The List operation gets information about the vaults associated with the subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/vaults
+            Operation Id: Vaults_ListBySubscription
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.KeyVault.Vault" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -336,8 +372,12 @@
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="top"> Maximum number of results to return. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the Vaults for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            The List operation gets information about the vaults associated with the subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/vaults
+            Operation Id: Vaults_ListBySubscription
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.KeyVault.Vault" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

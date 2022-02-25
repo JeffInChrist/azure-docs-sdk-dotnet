@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.DiskEncryptionSetCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string diskEncryptionSetName, Azure.ResourceManager.Compute.DiskEncryptionSetData diskEncryptionSet, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.DiskEncryptionSetCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string diskEncryptionSetName, class Azure.ResourceManager.Compute.DiskEncryptionSetData diskEncryptionSet, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.DiskEncryptionSet&gt; CreateOrUpdate (bool waitForCompletion, string diskEncryptionSetName, Azure.ResourceManager.Compute.DiskEncryptionSetData diskEncryptionSet, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.DiskEncryptionSet&gt; CreateOrUpdate(bool waitForCompletion, string diskEncryptionSetName, class Azure.ResourceManager.Compute.DiskEncryptionSetData diskEncryptionSet, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.DiskEncryptionSetCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Compute.DiskEncryptionSetData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, diskEncryptionSetName As String, diskEncryptionSet As DiskEncryptionSetData, Optional cancellationToken As CancellationToken = Nothing) As DiskEncryptionSetCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.DiskEncryptionSetData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.DiskEncryptionSetCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.DiskEncryptionSetData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.DiskEncryptionSetCreateOrUpdateOperation" Usage="diskEncryptionSetCollection.CreateOrUpdate (waitForCompletion, diskEncryptionSetName, diskEncryptionSet, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, diskEncryptionSetName As String, diskEncryptionSet As DiskEncryptionSetData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of DiskEncryptionSet)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.DiskEncryptionSetData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.DiskEncryptionSet&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.DiskEncryptionSetData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.DiskEncryptionSet&gt;" Usage="diskEncryptionSetCollection.CreateOrUpdate (waitForCompletion, diskEncryptionSetName, diskEncryptionSet, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.DiskEncryptionSetCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.DiskEncryptionSet&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -68,28 +68,32 @@
         <param name="diskEncryptionSetName"> The name of the disk encryption set that is being created. The name can't be changed after the disk encryption set is created. Supported characters for the name are a-z, A-Z, 0-9, _ and -. The maximum name length is 80 characters. </param>
         <param name="diskEncryptionSet"> disk encryption set object supplied in the body of the Put disk encryption set operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Creates or updates a disk encryption set. </summary>
+        <summary>
+            Creates or updates a disk encryption set
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/diskEncryptionSets/{diskEncryptionSetName}
+            Operation Id: DiskEncryptionSets_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="diskEncryptionSetName" /> is empty. </exception>
+          <paramref name="diskEncryptionSetName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="diskEncryptionSetName" /> or <paramref name="diskEncryptionSet" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.DiskEncryptionSetCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string diskEncryptionSetName, Azure.ResourceManager.Compute.DiskEncryptionSetData diskEncryptionSet, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.DiskEncryptionSetCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string diskEncryptionSetName, class Azure.ResourceManager.Compute.DiskEncryptionSetData diskEncryptionSet, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.DiskEncryptionSet&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string diskEncryptionSetName, Azure.ResourceManager.Compute.DiskEncryptionSetData diskEncryptionSet, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.DiskEncryptionSet&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string diskEncryptionSetName, class Azure.ResourceManager.Compute.DiskEncryptionSetData diskEncryptionSet, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.DiskEncryptionSetCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Compute.DiskEncryptionSetData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, diskEncryptionSetName As String, diskEncryptionSet As DiskEncryptionSetData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of DiskEncryptionSetCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.DiskEncryptionSetData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.DiskEncryptionSetCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.DiskEncryptionSetData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.DiskEncryptionSetCreateOrUpdateOperation&gt;" Usage="diskEncryptionSetCollection.CreateOrUpdateAsync (waitForCompletion, diskEncryptionSetName, diskEncryptionSet, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, diskEncryptionSetName As String, diskEncryptionSet As DiskEncryptionSetData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of DiskEncryptionSet))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.DiskEncryptionSetData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.DiskEncryptionSet&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.DiskEncryptionSetData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.DiskEncryptionSet&gt;&gt;" Usage="diskEncryptionSetCollection.CreateOrUpdateAsync (waitForCompletion, diskEncryptionSetName, diskEncryptionSet, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.DiskEncryptionSetCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.DiskEncryptionSet&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -102,11 +106,15 @@
         <param name="diskEncryptionSetName"> The name of the disk encryption set that is being created. The name can't be changed after the disk encryption set is created. Supported characters for the name are a-z, A-Z, 0-9, _ and -. The maximum name length is 80 characters. </param>
         <param name="diskEncryptionSet"> disk encryption set object supplied in the body of the Put disk encryption set operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Creates or updates a disk encryption set. </summary>
+        <summary>
+            Creates or updates a disk encryption set
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/diskEncryptionSets/{diskEncryptionSetName}
+            Operation Id: DiskEncryptionSets_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="diskEncryptionSetName" /> is empty. </exception>
+          <paramref name="diskEncryptionSetName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="diskEncryptionSetName" /> or <paramref name="diskEncryptionSet" /> is null. </exception>
       </Docs>
@@ -132,11 +140,15 @@
       <Docs>
         <param name="diskEncryptionSetName"> The name of the disk encryption set that is being created. The name can't be changed after the disk encryption set is created. Supported characters for the name are a-z, A-Z, 0-9, _ and -. The maximum name length is 80 characters. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/diskEncryptionSets/{diskEncryptionSetName}
+            Operation Id: DiskEncryptionSets_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="diskEncryptionSetName" /> is empty. </exception>
+          <paramref name="diskEncryptionSetName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="diskEncryptionSetName" /> is null. </exception>
       </Docs>
@@ -162,11 +174,15 @@
       <Docs>
         <param name="diskEncryptionSetName"> The name of the disk encryption set that is being created. The name can't be changed after the disk encryption set is created. Supported characters for the name are a-z, A-Z, 0-9, _ and -. The maximum name length is 80 characters. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/diskEncryptionSets/{diskEncryptionSetName}
+            Operation Id: DiskEncryptionSets_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="diskEncryptionSetName" /> is empty. </exception>
+          <paramref name="diskEncryptionSetName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="diskEncryptionSetName" /> is null. </exception>
       </Docs>
@@ -192,11 +208,15 @@
       <Docs>
         <param name="diskEncryptionSetName"> The name of the disk encryption set that is being created. The name can't be changed after the disk encryption set is created. Supported characters for the name are a-z, A-Z, 0-9, _ and -. The maximum name length is 80 characters. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets information about a disk encryption set. </summary>
+        <summary>
+            Gets information about a disk encryption set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/diskEncryptionSets/{diskEncryptionSetName}
+            Operation Id: DiskEncryptionSets_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="diskEncryptionSetName" /> is empty. </exception>
+          <paramref name="diskEncryptionSetName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="diskEncryptionSetName" /> is null. </exception>
       </Docs>
@@ -220,7 +240,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists all the disk encryption sets under a resource group. </summary>
+        <summary>
+            Lists all the disk encryption sets under a resource group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/diskEncryptionSets
+            Operation Id: DiskEncryptionSets_ListByResourceGroup
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.DiskEncryptionSet" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -244,7 +268,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists all the disk encryption sets under a resource group. </summary>
+        <summary>
+            Lists all the disk encryption sets under a resource group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/diskEncryptionSets
+            Operation Id: DiskEncryptionSets_ListByResourceGroup
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.DiskEncryptionSet" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -270,11 +298,15 @@
       <Docs>
         <param name="diskEncryptionSetName"> The name of the disk encryption set that is being created. The name can't be changed after the disk encryption set is created. Supported characters for the name are a-z, A-Z, 0-9, _ and -. The maximum name length is 80 characters. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets information about a disk encryption set. </summary>
+        <summary>
+            Gets information about a disk encryption set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/diskEncryptionSets/{diskEncryptionSetName}
+            Operation Id: DiskEncryptionSets_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="diskEncryptionSetName" /> is empty. </exception>
+          <paramref name="diskEncryptionSetName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="diskEncryptionSetName" /> is null. </exception>
       </Docs>
@@ -300,11 +332,15 @@
       <Docs>
         <param name="diskEncryptionSetName"> The name of the disk encryption set that is being created. The name can't be changed after the disk encryption set is created. Supported characters for the name are a-z, A-Z, 0-9, _ and -. The maximum name length is 80 characters. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/diskEncryptionSets/{diskEncryptionSetName}
+            Operation Id: DiskEncryptionSets_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="diskEncryptionSetName" /> is empty. </exception>
+          <paramref name="diskEncryptionSetName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="diskEncryptionSetName" /> is null. </exception>
       </Docs>
@@ -330,11 +366,15 @@
       <Docs>
         <param name="diskEncryptionSetName"> The name of the disk encryption set that is being created. The name can't be changed after the disk encryption set is created. Supported characters for the name are a-z, A-Z, 0-9, _ and -. The maximum name length is 80 characters. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/diskEncryptionSets/{diskEncryptionSetName}
+            Operation Id: DiskEncryptionSets_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="diskEncryptionSetName" /> is empty. </exception>
+          <paramref name="diskEncryptionSetName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="diskEncryptionSetName" /> is null. </exception>
       </Docs>

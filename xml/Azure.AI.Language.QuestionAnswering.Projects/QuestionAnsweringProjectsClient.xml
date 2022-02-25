@@ -115,6 +115,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="AddFeedbackAsync">
@@ -173,6 +175,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateProject">
@@ -244,6 +248,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateProjectAsync">
@@ -315,6 +321,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="DeleteProject">
@@ -362,6 +370,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="DeleteProjectAsync">
@@ -409,6 +419,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="DeployProject">
@@ -458,6 +470,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> or <paramref name="deploymentName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> or <paramref name="deploymentName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="DeployProjectAsync">
@@ -507,6 +521,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> or <paramref name="deploymentName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> or <paramref name="deploymentName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="Export">
@@ -583,6 +599,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="ExportAsync">
@@ -659,6 +677,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeleteStatus">
@@ -728,6 +748,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="jobId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="jobId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeleteStatusAsync">
@@ -797,6 +819,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="jobId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="jobId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeployments">
@@ -859,6 +883,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeploymentsAsync">
@@ -921,6 +947,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeployStatus">
@@ -993,7 +1021,9 @@
             }
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="projectName" />, <paramref name="deploymentName" />, or <paramref name="jobId" /> is null. </exception>
+          <paramref name="projectName" />, <paramref name="deploymentName" /> or <paramref name="jobId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" />, <paramref name="deploymentName" /> or <paramref name="jobId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeployStatusAsync">
@@ -1066,7 +1096,9 @@
             }
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="projectName" />, <paramref name="deploymentName" />, or <paramref name="jobId" /> is null. </exception>
+          <paramref name="projectName" />, <paramref name="deploymentName" /> or <paramref name="jobId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" />, <paramref name="deploymentName" /> or <paramref name="jobId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetExportStatus">
@@ -1139,6 +1171,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> or <paramref name="jobId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> or <paramref name="jobId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetExportStatusAsync">
@@ -1211,6 +1245,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> or <paramref name="jobId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> or <paramref name="jobId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetImportStatus">
@@ -1282,6 +1318,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> or <paramref name="jobId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> or <paramref name="jobId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetImportStatusAsync">
@@ -1353,6 +1391,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> or <paramref name="jobId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> or <paramref name="jobId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetProjectDetails">
@@ -1412,6 +1452,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetProjectDetailsAsync">
@@ -1471,6 +1513,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetProjects">
@@ -1702,6 +1746,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetQnasAsync">
@@ -1801,6 +1847,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetSources">
@@ -1867,6 +1915,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetSourcesAsync">
@@ -1933,6 +1983,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetSynonyms">
@@ -1994,6 +2046,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetSynonymsAsync">
@@ -2055,6 +2109,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetUpdateQnasStatus">
@@ -2126,6 +2182,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> or <paramref name="jobId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> or <paramref name="jobId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetUpdateQnasStatusAsync">
@@ -2197,6 +2255,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> or <paramref name="jobId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> or <paramref name="jobId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetUpdateSourcesStatus">
@@ -2268,6 +2328,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> or <paramref name="jobId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> or <paramref name="jobId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetUpdateSourcesStatusAsync">
@@ -2339,6 +2401,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> or <paramref name="jobId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> or <paramref name="jobId" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="Import">
@@ -2454,6 +2518,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="ImportAsync">
@@ -2569,6 +2635,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="Pipeline">
@@ -2673,6 +2741,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="UpdateQnasAsync">
@@ -2757,6 +2827,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="UpdateSources">
@@ -2819,6 +2891,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="UpdateSourcesAsync">
@@ -2881,6 +2955,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="UpdateSynonyms">
@@ -2938,6 +3014,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="UpdateSynonymsAsync">
@@ -2995,6 +3073,8 @@
             </code></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="projectName" /> or <paramref name="content" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="projectName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
   </Members>

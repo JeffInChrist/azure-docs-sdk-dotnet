@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ConnectedVMwarevSphere.Models.InventoryItemCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string inventoryItemName, Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItemData body = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ConnectedVMwarevSphere.Models.InventoryItemCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string inventoryItemName, class Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItemData body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItem&gt; CreateOrUpdate (bool waitForCompletion, string inventoryItemName, Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItemData body = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItem&gt; CreateOrUpdate(bool waitForCompletion, string inventoryItemName, class Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItemData body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItemCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItemData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, inventoryItemName As String, Optional body As InventoryItemData = Nothing, Optional cancellationToken As CancellationToken = Nothing) As InventoryItemCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItemData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ConnectedVMwarevSphere.Models.InventoryItemCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItemData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ConnectedVMwarevSphere.Models.InventoryItemCreateOrUpdateOperation" Usage="inventoryItemCollection.CreateOrUpdate (waitForCompletion, inventoryItemName, body, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, inventoryItemName As String, Optional body As InventoryItemData = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of InventoryItem)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItemData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItem&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItemData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItem&gt;" Usage="inventoryItemCollection.CreateOrUpdate (waitForCompletion, inventoryItemName, body, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ConnectedVMwarevSphere</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ConnectedVMwarevSphere.Models.InventoryItemCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItem&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -68,28 +68,32 @@
         <param name="inventoryItemName"> Name of the inventoryItem. </param>
         <param name="body"> Request payload. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Create Or Update InventoryItem. </summary>
+        <summary>
+            Create Or Update InventoryItem.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/vcenters/{vcenterName}/inventoryItems/{inventoryItemName}
+            Operation Id: InventoryItems_Create
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="inventoryItemName" /> is empty. </exception>
+          <paramref name="inventoryItemName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="inventoryItemName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.InventoryItemCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string inventoryItemName, Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItemData body = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ConnectedVMwarevSphere.Models.InventoryItemCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string inventoryItemName, class Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItemData body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItem&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string inventoryItemName, Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItemData body = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItem&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string inventoryItemName, class Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItemData body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItemCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItemData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, inventoryItemName As String, Optional body As InventoryItemData = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of InventoryItemCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItemData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.InventoryItemCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItemData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.InventoryItemCreateOrUpdateOperation&gt;" Usage="inventoryItemCollection.CreateOrUpdateAsync (waitForCompletion, inventoryItemName, body, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, inventoryItemName As String, Optional body As InventoryItemData = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of InventoryItem))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItemData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItem&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItemData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItem&gt;&gt;" Usage="inventoryItemCollection.CreateOrUpdateAsync (waitForCompletion, inventoryItemName, body, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ConnectedVMwarevSphere</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ConnectedVMwarevSphere.Models.InventoryItemCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItem&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -102,11 +106,15 @@
         <param name="inventoryItemName"> Name of the inventoryItem. </param>
         <param name="body"> Request payload. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Create Or Update InventoryItem. </summary>
+        <summary>
+            Create Or Update InventoryItem.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/vcenters/{vcenterName}/inventoryItems/{inventoryItemName}
+            Operation Id: InventoryItems_Create
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="inventoryItemName" /> is empty. </exception>
+          <paramref name="inventoryItemName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="inventoryItemName" /> is null. </exception>
       </Docs>
@@ -132,11 +140,15 @@
       <Docs>
         <param name="inventoryItemName"> Name of the inventoryItem. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/vcenters/{vcenterName}/inventoryItems/{inventoryItemName}
+            Operation Id: InventoryItems_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="inventoryItemName" /> is empty. </exception>
+          <paramref name="inventoryItemName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="inventoryItemName" /> is null. </exception>
       </Docs>
@@ -162,11 +174,15 @@
       <Docs>
         <param name="inventoryItemName"> Name of the inventoryItem. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/vcenters/{vcenterName}/inventoryItems/{inventoryItemName}
+            Operation Id: InventoryItems_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="inventoryItemName" /> is empty. </exception>
+          <paramref name="inventoryItemName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="inventoryItemName" /> is null. </exception>
       </Docs>
@@ -192,11 +208,15 @@
       <Docs>
         <param name="inventoryItemName"> Name of the inventoryItem. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Implements InventoryItem GET method. </summary>
+        <summary>
+            Implements InventoryItem GET method.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/vcenters/{vcenterName}/inventoryItems/{inventoryItemName}
+            Operation Id: InventoryItems_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="inventoryItemName" /> is empty. </exception>
+          <paramref name="inventoryItemName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="inventoryItemName" /> is null. </exception>
       </Docs>
@@ -220,7 +240,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Returns the list of inventoryItems of the given vCenter. </summary>
+        <summary>
+            Returns the list of inventoryItems of the given vCenter.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/vcenters/{vcenterName}/inventoryItems
+            Operation Id: InventoryItems_ListByVCenter
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItem" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -244,7 +268,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Returns the list of inventoryItems of the given vCenter. </summary>
+        <summary>
+            Returns the list of inventoryItems of the given vCenter.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/vcenters/{vcenterName}/inventoryItems
+            Operation Id: InventoryItems_ListByVCenter
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.ConnectedVMwarevSphere.InventoryItem" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -270,11 +298,15 @@
       <Docs>
         <param name="inventoryItemName"> Name of the inventoryItem. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Implements InventoryItem GET method. </summary>
+        <summary>
+            Implements InventoryItem GET method.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/vcenters/{vcenterName}/inventoryItems/{inventoryItemName}
+            Operation Id: InventoryItems_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="inventoryItemName" /> is empty. </exception>
+          <paramref name="inventoryItemName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="inventoryItemName" /> is null. </exception>
       </Docs>
@@ -300,11 +332,15 @@
       <Docs>
         <param name="inventoryItemName"> Name of the inventoryItem. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/vcenters/{vcenterName}/inventoryItems/{inventoryItemName}
+            Operation Id: InventoryItems_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="inventoryItemName" /> is empty. </exception>
+          <paramref name="inventoryItemName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="inventoryItemName" /> is null. </exception>
       </Docs>
@@ -330,11 +366,15 @@
       <Docs>
         <param name="inventoryItemName"> Name of the inventoryItem. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ConnectedVMwarevSphere/vcenters/{vcenterName}/inventoryItems/{inventoryItemName}
+            Operation Id: InventoryItems_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="inventoryItemName" /> is empty. </exception>
+          <paramref name="inventoryItemName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="inventoryItemName" /> is null. </exception>
       </Docs>
