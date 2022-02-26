@@ -1,15 +1,15 @@
 <Type Name="StorageAccountData" FullName="Azure.ResourceManager.Storage.StorageAccountData">
-  <TypeSignature Language="C#" Value="public class StorageAccountData : Azure.ResourceManager.Models.TrackedResource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StorageAccountData extends Azure.ResourceManager.Models.TrackedResource" />
+  <TypeSignature Language="C#" Value="public class StorageAccountData : Azure.ResourceManager.Models.TrackedResourceData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StorageAccountData extends Azure.ResourceManager.Models.TrackedResourceData" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Storage.StorageAccountData" />
-  <TypeSignature Language="VB.NET" Value="Public Class StorageAccountData&#xA;Inherits TrackedResource" />
-  <TypeSignature Language="F#" Value="type StorageAccountData = class&#xA;    inherit TrackedResource" />
+  <TypeSignature Language="VB.NET" Value="Public Class StorageAccountData&#xA;Inherits TrackedResourceData" />
+  <TypeSignature Language="F#" Value="type StorageAccountData = class&#xA;    inherit TrackedResourceData" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.Models.TrackedResource</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.Models.TrackedResourceData</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -477,22 +477,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="KeyPolicy">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Storage.Models.KeyPolicy KeyPolicy { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Storage.Models.KeyPolicy KeyPolicy" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Storage.StorageAccountData.KeyPolicy" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyPolicy As KeyPolicy" />
-      <MemberSignature Language="F#" Value="member this.KeyPolicy : Azure.ResourceManager.Storage.Models.KeyPolicy" Usage="Azure.ResourceManager.Storage.StorageAccountData.KeyPolicy" />
+    <Member MemberName="KeyExpirationPeriodInDays">
+      <MemberSignature Language="C#" Value="public int KeyExpirationPeriodInDays { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 KeyExpirationPeriodInDays" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Storage.StorageAccountData.KeyExpirationPeriodInDays" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyExpirationPeriodInDays As Integer" />
+      <MemberSignature Language="F#" Value="member this.KeyExpirationPeriodInDays : int with get, set" Usage="Azure.ResourceManager.Storage.StorageAccountData.KeyExpirationPeriodInDays" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Storage.Models.KeyPolicy</ReturnType>
+        <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> KeyPolicy assigned to the storage account. </summary>
+        <summary> The key expiration period in days. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

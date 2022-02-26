@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.KeyVault.Models.MhsmPrivateEndpointConnectionCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string privateEndpointConnectionName, Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnectionData properties, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.KeyVault.Models.MhsmPrivateEndpointConnectionCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string privateEndpointConnectionName, class Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnectionData properties, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnection&gt; CreateOrUpdate (bool waitForCompletion, string privateEndpointConnectionName, Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnectionData properties, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnection&gt; CreateOrUpdate(bool waitForCompletion, string privateEndpointConnectionName, class Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnectionData properties, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnectionCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnectionData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, privateEndpointConnectionName As String, properties As MhsmPrivateEndpointConnectionData, Optional cancellationToken As CancellationToken = Nothing) As MhsmPrivateEndpointConnectionCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnectionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.KeyVault.Models.MhsmPrivateEndpointConnectionCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnectionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.KeyVault.Models.MhsmPrivateEndpointConnectionCreateOrUpdateOperation" Usage="mhsmPrivateEndpointConnectionCollection.CreateOrUpdate (waitForCompletion, privateEndpointConnectionName, properties, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, privateEndpointConnectionName As String, properties As MhsmPrivateEndpointConnectionData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of MhsmPrivateEndpointConnection)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnectionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnection&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnectionData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnection&gt;" Usage="mhsmPrivateEndpointConnectionCollection.CreateOrUpdate (waitForCompletion, privateEndpointConnectionName, properties, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.KeyVault.Models.MhsmPrivateEndpointConnectionCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnection&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -68,28 +68,32 @@
         <param name="privateEndpointConnectionName"> Name of the private endpoint connection associated with the managed hsm pool. </param>
         <param name="properties"> The intended state of private endpoint connection. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Updates the specified private endpoint connection associated with the managed hsm pool. </summary>
+        <summary>
+            Updates the specified private endpoint connection associated with the managed hsm pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/managedHSMs/{name}/privateEndpointConnections/{privateEndpointConnectionName}
+            Operation Id: MHSMPrivateEndpointConnections_Put
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="privateEndpointConnectionName" /> is empty. </exception>
+          <paramref name="privateEndpointConnectionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="privateEndpointConnectionName" /> or <paramref name="properties" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.KeyVault.Models.MhsmPrivateEndpointConnectionCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string privateEndpointConnectionName, Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnectionData properties, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.KeyVault.Models.MhsmPrivateEndpointConnectionCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string privateEndpointConnectionName, class Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnectionData properties, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnection&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string privateEndpointConnectionName, Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnectionData properties, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnection&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string privateEndpointConnectionName, class Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnectionData properties, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnectionCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnectionData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, privateEndpointConnectionName As String, properties As MhsmPrivateEndpointConnectionData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of MhsmPrivateEndpointConnectionCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnectionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.KeyVault.Models.MhsmPrivateEndpointConnectionCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnectionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.KeyVault.Models.MhsmPrivateEndpointConnectionCreateOrUpdateOperation&gt;" Usage="mhsmPrivateEndpointConnectionCollection.CreateOrUpdateAsync (waitForCompletion, privateEndpointConnectionName, properties, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, privateEndpointConnectionName As String, properties As MhsmPrivateEndpointConnectionData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of MhsmPrivateEndpointConnection))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnectionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnection&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnectionData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnection&gt;&gt;" Usage="mhsmPrivateEndpointConnectionCollection.CreateOrUpdateAsync (waitForCompletion, privateEndpointConnectionName, properties, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.KeyVault.Models.MhsmPrivateEndpointConnectionCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnection&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -102,11 +106,15 @@
         <param name="privateEndpointConnectionName"> Name of the private endpoint connection associated with the managed hsm pool. </param>
         <param name="properties"> The intended state of private endpoint connection. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Updates the specified private endpoint connection associated with the managed hsm pool. </summary>
+        <summary>
+            Updates the specified private endpoint connection associated with the managed hsm pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/managedHSMs/{name}/privateEndpointConnections/{privateEndpointConnectionName}
+            Operation Id: MHSMPrivateEndpointConnections_Put
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="privateEndpointConnectionName" /> is empty. </exception>
+          <paramref name="privateEndpointConnectionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="privateEndpointConnectionName" /> or <paramref name="properties" /> is null. </exception>
       </Docs>
@@ -132,11 +140,15 @@
       <Docs>
         <param name="privateEndpointConnectionName"> Name of the private endpoint connection associated with the managed hsm pool. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/managedHSMs/{name}/privateEndpointConnections/{privateEndpointConnectionName}
+            Operation Id: MHSMPrivateEndpointConnections_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="privateEndpointConnectionName" /> is empty. </exception>
+          <paramref name="privateEndpointConnectionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="privateEndpointConnectionName" /> is null. </exception>
       </Docs>
@@ -162,11 +174,15 @@
       <Docs>
         <param name="privateEndpointConnectionName"> Name of the private endpoint connection associated with the managed hsm pool. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/managedHSMs/{name}/privateEndpointConnections/{privateEndpointConnectionName}
+            Operation Id: MHSMPrivateEndpointConnections_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="privateEndpointConnectionName" /> is empty. </exception>
+          <paramref name="privateEndpointConnectionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="privateEndpointConnectionName" /> is null. </exception>
       </Docs>
@@ -192,11 +208,15 @@
       <Docs>
         <param name="privateEndpointConnectionName"> Name of the private endpoint connection associated with the managed hsm pool. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the specified private endpoint connection associated with the managed HSM Pool. </summary>
+        <summary>
+            Gets the specified private endpoint connection associated with the managed HSM Pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/managedHSMs/{name}/privateEndpointConnections/{privateEndpointConnectionName}
+            Operation Id: MHSMPrivateEndpointConnections_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="privateEndpointConnectionName" /> is empty. </exception>
+          <paramref name="privateEndpointConnectionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="privateEndpointConnectionName" /> is null. </exception>
       </Docs>
@@ -220,7 +240,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> The List operation gets information about the private endpoint connections associated with the managed HSM Pool. </summary>
+        <summary>
+            The List operation gets information about the private endpoint connections associated with the managed HSM Pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/managedHSMs/{name}/privateEndpointConnections
+            Operation Id: MHSMPrivateEndpointConnections_ListByResource
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnection" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -244,7 +268,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> The List operation gets information about the private endpoint connections associated with the managed HSM Pool. </summary>
+        <summary>
+            The List operation gets information about the private endpoint connections associated with the managed HSM Pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/managedHSMs/{name}/privateEndpointConnections
+            Operation Id: MHSMPrivateEndpointConnections_ListByResource
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.KeyVault.MhsmPrivateEndpointConnection" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -270,11 +298,15 @@
       <Docs>
         <param name="privateEndpointConnectionName"> Name of the private endpoint connection associated with the managed hsm pool. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the specified private endpoint connection associated with the managed HSM Pool. </summary>
+        <summary>
+            Gets the specified private endpoint connection associated with the managed HSM Pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/managedHSMs/{name}/privateEndpointConnections/{privateEndpointConnectionName}
+            Operation Id: MHSMPrivateEndpointConnections_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="privateEndpointConnectionName" /> is empty. </exception>
+          <paramref name="privateEndpointConnectionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="privateEndpointConnectionName" /> is null. </exception>
       </Docs>
@@ -300,11 +332,15 @@
       <Docs>
         <param name="privateEndpointConnectionName"> Name of the private endpoint connection associated with the managed hsm pool. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/managedHSMs/{name}/privateEndpointConnections/{privateEndpointConnectionName}
+            Operation Id: MHSMPrivateEndpointConnections_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="privateEndpointConnectionName" /> is empty. </exception>
+          <paramref name="privateEndpointConnectionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="privateEndpointConnectionName" /> is null. </exception>
       </Docs>
@@ -330,11 +366,15 @@
       <Docs>
         <param name="privateEndpointConnectionName"> Name of the private endpoint connection associated with the managed hsm pool. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/managedHSMs/{name}/privateEndpointConnections/{privateEndpointConnectionName}
+            Operation Id: MHSMPrivateEndpointConnections_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="privateEndpointConnectionName" /> is empty. </exception>
+          <paramref name="privateEndpointConnectionName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="privateEndpointConnectionName" /> is null. </exception>
       </Docs>

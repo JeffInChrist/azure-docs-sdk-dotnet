@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.Models.ApplicationCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string applicationName, Azure.ResourceManager.Resources.ApplicationData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Models.ApplicationCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string applicationName, class Azure.ResourceManager.Resources.ApplicationData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.Application&gt; CreateOrUpdate (bool waitForCompletion, string applicationName, Azure.ResourceManager.Resources.ApplicationData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Resources.Application&gt; CreateOrUpdate(bool waitForCompletion, string applicationName, class Azure.ResourceManager.Resources.ApplicationData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ApplicationCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Resources.ApplicationData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, applicationName As String, parameters As ApplicationData, Optional cancellationToken As CancellationToken = Nothing) As ApplicationCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.ApplicationData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Resources.Models.ApplicationCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.ApplicationData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Resources.Models.ApplicationCreateOrUpdateOperation" Usage="applicationCollection.CreateOrUpdate (waitForCompletion, applicationName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, applicationName As String, parameters As ApplicationData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of Application)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.ApplicationData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.Application&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Resources.ApplicationData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.Application&gt;" Usage="applicationCollection.CreateOrUpdate (waitForCompletion, applicationName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.ApplicationCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.Application&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -68,28 +68,32 @@
         <param name="applicationName"> The name of the managed application. </param>
         <param name="parameters"> Parameters supplied to the create or update a managed application. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Creates a new managed application. </summary>
+        <summary>
+            Creates a new managed application.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/applications/{applicationName}
+            Operation Id: Applications_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="applicationName" /> is empty. </exception>
+          <paramref name="applicationName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="applicationName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ApplicationCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string applicationName, Azure.ResourceManager.Resources.ApplicationData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Resources.Models.ApplicationCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string applicationName, class Azure.ResourceManager.Resources.ApplicationData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.Application&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string applicationName, Azure.ResourceManager.Resources.ApplicationData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Resources.Application&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string applicationName, class Azure.ResourceManager.Resources.ApplicationData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ApplicationCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Resources.ApplicationData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, applicationName As String, parameters As ApplicationData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ApplicationCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.ApplicationData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ApplicationCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.ApplicationData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ApplicationCreateOrUpdateOperation&gt;" Usage="applicationCollection.CreateOrUpdateAsync (waitForCompletion, applicationName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, applicationName As String, parameters As ApplicationData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of Application))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.ApplicationData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.Application&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Resources.ApplicationData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.Application&gt;&gt;" Usage="applicationCollection.CreateOrUpdateAsync (waitForCompletion, applicationName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.Models.ApplicationCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.Application&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -102,11 +106,15 @@
         <param name="applicationName"> The name of the managed application. </param>
         <param name="parameters"> Parameters supplied to the create or update a managed application. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Creates a new managed application. </summary>
+        <summary>
+            Creates a new managed application.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/applications/{applicationName}
+            Operation Id: Applications_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="applicationName" /> is empty. </exception>
+          <paramref name="applicationName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="applicationName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -132,11 +140,15 @@
       <Docs>
         <param name="applicationName"> The name of the managed application. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/applications/{applicationName}
+            Operation Id: Applications_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="applicationName" /> is empty. </exception>
+          <paramref name="applicationName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="applicationName" /> is null. </exception>
       </Docs>
@@ -162,11 +174,15 @@
       <Docs>
         <param name="applicationName"> The name of the managed application. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/applications/{applicationName}
+            Operation Id: Applications_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="applicationName" /> is empty. </exception>
+          <paramref name="applicationName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="applicationName" /> is null. </exception>
       </Docs>
@@ -192,11 +208,15 @@
       <Docs>
         <param name="applicationName"> The name of the managed application. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the managed application. </summary>
+        <summary>
+            Gets the managed application.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/applications/{applicationName}
+            Operation Id: Applications_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="applicationName" /> is empty. </exception>
+          <paramref name="applicationName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="applicationName" /> is null. </exception>
       </Docs>
@@ -220,7 +240,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets all the applications within a resource group. </summary>
+        <summary>
+            Gets all the applications within a resource group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/applications
+            Operation Id: Applications_ListByResourceGroup
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Resources.Application" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -244,7 +268,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets all the applications within a resource group. </summary>
+        <summary>
+            Gets all the applications within a resource group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/applications
+            Operation Id: Applications_ListByResourceGroup
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Resources.Application" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -270,11 +298,15 @@
       <Docs>
         <param name="applicationName"> The name of the managed application. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the managed application. </summary>
+        <summary>
+            Gets the managed application.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/applications/{applicationName}
+            Operation Id: Applications_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="applicationName" /> is empty. </exception>
+          <paramref name="applicationName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="applicationName" /> is null. </exception>
       </Docs>
@@ -300,11 +332,15 @@
       <Docs>
         <param name="applicationName"> The name of the managed application. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/applications/{applicationName}
+            Operation Id: Applications_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="applicationName" /> is empty. </exception>
+          <paramref name="applicationName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="applicationName" /> is null. </exception>
       </Docs>
@@ -330,11 +366,15 @@
       <Docs>
         <param name="applicationName"> The name of the managed application. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/applications/{applicationName}
+            Operation Id: Applications_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="applicationName" /> is empty. </exception>
+          <paramref name="applicationName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="applicationName" /> is null. </exception>
       </Docs>

@@ -99,22 +99,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="DeploymentPolicy">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.ApplicationDeploymentPolicy DeploymentPolicy { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Resources.Models.ApplicationDeploymentPolicy DeploymentPolicy" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.ApplicationDefinitionData.DeploymentPolicy" />
-      <MemberSignature Language="VB.NET" Value="Public Property DeploymentPolicy As ApplicationDeploymentPolicy" />
-      <MemberSignature Language="F#" Value="member this.DeploymentPolicy : Azure.ResourceManager.Resources.Models.ApplicationDeploymentPolicy with get, set" Usage="Azure.ResourceManager.Resources.ApplicationDefinitionData.DeploymentPolicy" />
+    <Member MemberName="DeploymentMode">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.DeploymentMode DeploymentMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.ResourceManager.Resources.Models.DeploymentMode DeploymentMode" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.ApplicationDefinitionData.DeploymentMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeploymentMode As DeploymentMode" />
+      <MemberSignature Language="F#" Value="member this.DeploymentMode : Azure.ResourceManager.Resources.Models.DeploymentMode with get, set" Usage="Azure.ResourceManager.Resources.ApplicationDefinitionData.DeploymentMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.ApplicationDeploymentPolicy</ReturnType>
+        <ReturnType>Azure.ResourceManager.Resources.Models.DeploymentMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The managed application deployment policy. </summary>
+        <summary> The managed application deployment mode. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -179,22 +179,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="LockingPolicy">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.ApplicationPackageLockingPolicyDefinition LockingPolicy { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Resources.Models.ApplicationPackageLockingPolicyDefinition LockingPolicy" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.ApplicationDefinitionData.LockingPolicy" />
-      <MemberSignature Language="VB.NET" Value="Public Property LockingPolicy As ApplicationPackageLockingPolicyDefinition" />
-      <MemberSignature Language="F#" Value="member this.LockingPolicy : Azure.ResourceManager.Resources.Models.ApplicationPackageLockingPolicyDefinition with get, set" Usage="Azure.ResourceManager.Resources.ApplicationDefinitionData.LockingPolicy" />
+    <Member MemberName="LockingAllowedActions">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; LockingAllowedActions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; LockingAllowedActions" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.ApplicationDefinitionData.LockingAllowedActions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LockingAllowedActions As IList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.LockingAllowedActions : System.Collections.Generic.IList&lt;string&gt;" Usage="Azure.ResourceManager.Resources.ApplicationDefinitionData.LockingAllowedActions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.ApplicationPackageLockingPolicyDefinition</ReturnType>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The managed application locking policy. </summary>
+        <summary> The deny assignment excluded actions. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -239,59 +239,59 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ManagementPolicy">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.ApplicationManagementPolicy ManagementPolicy { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Resources.Models.ApplicationManagementPolicy ManagementPolicy" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.ApplicationDefinitionData.ManagementPolicy" />
-      <MemberSignature Language="VB.NET" Value="Public Property ManagementPolicy As ApplicationManagementPolicy" />
-      <MemberSignature Language="F#" Value="member this.ManagementPolicy : Azure.ResourceManager.Resources.Models.ApplicationManagementPolicy with get, set" Usage="Azure.ResourceManager.Resources.ApplicationDefinitionData.ManagementPolicy" />
+    <Member MemberName="ManagementMode">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.ApplicationManagementMode? ManagementMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.Models.ApplicationManagementMode&gt; ManagementMode" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.ApplicationDefinitionData.ManagementMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property ManagementMode As Nullable(Of ApplicationManagementMode)" />
+      <MemberSignature Language="F#" Value="member this.ManagementMode : Nullable&lt;Azure.ResourceManager.Resources.Models.ApplicationManagementMode&gt; with get, set" Usage="Azure.ResourceManager.Resources.ApplicationDefinitionData.ManagementMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.ApplicationManagementPolicy</ReturnType>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Resources.Models.ApplicationManagementMode&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The managed application management policy that determines publisher's access to the managed resource group. </summary>
+        <summary> The managed application management mode. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="NotificationPolicy">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.ApplicationNotificationPolicy NotificationPolicy { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Resources.Models.ApplicationNotificationPolicy NotificationPolicy" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.ApplicationDefinitionData.NotificationPolicy" />
-      <MemberSignature Language="VB.NET" Value="Public Property NotificationPolicy As ApplicationNotificationPolicy" />
-      <MemberSignature Language="F#" Value="member this.NotificationPolicy : Azure.ResourceManager.Resources.Models.ApplicationNotificationPolicy with get, set" Usage="Azure.ResourceManager.Resources.ApplicationDefinitionData.NotificationPolicy" />
+    <Member MemberName="NotificationEndpoints">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.ResourceManager.Resources.Models.ApplicationNotificationEndpoint&gt; NotificationEndpoints { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.ResourceManager.Resources.Models.ApplicationNotificationEndpoint&gt; NotificationEndpoints" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.ApplicationDefinitionData.NotificationEndpoints" />
+      <MemberSignature Language="VB.NET" Value="Public Property NotificationEndpoints As IList(Of ApplicationNotificationEndpoint)" />
+      <MemberSignature Language="F#" Value="member this.NotificationEndpoints : System.Collections.Generic.IList&lt;Azure.ResourceManager.Resources.Models.ApplicationNotificationEndpoint&gt; with get, set" Usage="Azure.ResourceManager.Resources.ApplicationDefinitionData.NotificationEndpoints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.ApplicationNotificationPolicy</ReturnType>
+        <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.Resources.Models.ApplicationNotificationEndpoint&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The managed application notification policy. </summary>
+        <summary> The managed application notification endpoint. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PackageFileUri">
-      <MemberSignature Language="C#" Value="public string PackageFileUri { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string PackageFileUri" />
+      <MemberSignature Language="C#" Value="public Uri PackageFileUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri PackageFileUri" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.ApplicationDefinitionData.PackageFileUri" />
-      <MemberSignature Language="VB.NET" Value="Public Property PackageFileUri As String" />
-      <MemberSignature Language="F#" Value="member this.PackageFileUri : string with get, set" Usage="Azure.ResourceManager.Resources.ApplicationDefinitionData.PackageFileUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property PackageFileUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.PackageFileUri : Uri with get, set" Usage="Azure.ResourceManager.Resources.ApplicationDefinitionData.PackageFileUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The managed application definition package file Uri. Use this element. </summary>

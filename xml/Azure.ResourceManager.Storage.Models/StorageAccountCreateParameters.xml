@@ -383,22 +383,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="KeyPolicy">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Storage.Models.KeyPolicy KeyPolicy { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Storage.Models.KeyPolicy KeyPolicy" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Storage.Models.StorageAccountCreateParameters.KeyPolicy" />
-      <MemberSignature Language="VB.NET" Value="Public Property KeyPolicy As KeyPolicy" />
-      <MemberSignature Language="F#" Value="member this.KeyPolicy : Azure.ResourceManager.Storage.Models.KeyPolicy with get, set" Usage="Azure.ResourceManager.Storage.Models.StorageAccountCreateParameters.KeyPolicy" />
+    <Member MemberName="KeyExpirationPeriodInDays">
+      <MemberSignature Language="C#" Value="public int KeyExpirationPeriodInDays { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 KeyExpirationPeriodInDays" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Storage.Models.StorageAccountCreateParameters.KeyExpirationPeriodInDays" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyExpirationPeriodInDays As Integer" />
+      <MemberSignature Language="F#" Value="member this.KeyExpirationPeriodInDays : int with get, set" Usage="Azure.ResourceManager.Storage.Models.StorageAccountCreateParameters.KeyExpirationPeriodInDays" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Storage</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Storage.Models.KeyPolicy</ReturnType>
+        <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> KeyPolicy assigned to the storage account. </summary>
+        <summary> The key expiration period in days. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

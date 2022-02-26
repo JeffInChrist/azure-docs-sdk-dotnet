@@ -153,22 +153,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Sku">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.Models.NatGatewaySku Sku { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Network.Models.NatGatewaySku Sku" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.NatGatewayData.Sku" />
-      <MemberSignature Language="VB.NET" Value="Public Property Sku As NatGatewaySku" />
-      <MemberSignature Language="F#" Value="member this.Sku : Azure.ResourceManager.Network.Models.NatGatewaySku with get, set" Usage="Azure.ResourceManager.Network.NatGatewayData.Sku" />
+    <Member MemberName="SkuName">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.Models.NatGatewaySkuName? SkuName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Network.Models.NatGatewaySkuName&gt; SkuName" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.NatGatewayData.SkuName" />
+      <MemberSignature Language="VB.NET" Value="Public Property SkuName As Nullable(Of NatGatewaySkuName)" />
+      <MemberSignature Language="F#" Value="member this.SkuName : Nullable&lt;Azure.ResourceManager.Network.Models.NatGatewaySkuName&gt; with get, set" Usage="Azure.ResourceManager.Network.NatGatewayData.SkuName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Network.Models.NatGatewaySku</ReturnType>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Network.Models.NatGatewaySkuName&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The nat gateway SKU. </summary>
+        <summary> Name of Nat Gateway SKU. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

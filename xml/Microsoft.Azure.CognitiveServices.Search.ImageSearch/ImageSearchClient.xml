@@ -8,6 +8,10 @@
     <AssemblyName>Microsoft.Azure.CognitiveServices.Search.ImageSearch</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.CognitiveServices.Search.BingImageSearch</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Rest.ServiceClient&lt;Microsoft.Azure.CognitiveServices.Search.ImageSearch.ImageSearchClient&gt;</BaseTypeName>
     <BaseTypeArguments>
@@ -45,10 +49,14 @@
         <AssemblyName>Microsoft.Azure.CognitiveServices.Search.ImageSearch</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.CognitiveServices.Search.BingImageSearch</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="azure-dotnet">
               <AttributeName Language="C#">[System.ParamArray]</AttributeName>
               <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
@@ -76,11 +84,15 @@
         <AssemblyName>Microsoft.Azure.CognitiveServices.Search.ImageSearch</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.CognitiveServices.Search.BingImageSearch</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentials" Type="Microsoft.Rest.ServiceClientCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="azure-dotnet">
               <AttributeName Language="C#">[System.ParamArray]</AttributeName>
               <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
@@ -114,6 +126,10 @@
         <AssemblyName>Microsoft.Azure.CognitiveServices.Search.ImageSearch</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.CognitiveServices.Search.BingImageSearch</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
         <Parameter Name="disposeHttpClient" Type="System.Boolean" />
@@ -141,11 +157,15 @@
         <AssemblyName>Microsoft.Azure.CognitiveServices.Search.ImageSearch</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.CognitiveServices.Search.BingImageSearch</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="rootHandler" Type="System.Net.Http.HttpClientHandler" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="azure-dotnet">
               <AttributeName Language="C#">[System.ParamArray]</AttributeName>
               <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
@@ -175,6 +195,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Search.ImageSearch</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.CognitiveServices.Search.BingImageSearch</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentials" Type="Microsoft.Rest.ServiceClientCredentials" />
@@ -210,12 +234,16 @@
         <AssemblyName>Microsoft.Azure.CognitiveServices.Search.ImageSearch</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.CognitiveServices.Search.BingImageSearch</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentials" Type="Microsoft.Rest.ServiceClientCredentials" />
         <Parameter Name="rootHandler" Type="System.Net.Http.HttpClientHandler" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="azure-dotnet">
               <AttributeName Language="C#">[System.ParamArray]</AttributeName>
               <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
@@ -252,6 +280,10 @@
         <AssemblyName>Microsoft.Azure.CognitiveServices.Search.ImageSearch</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.CognitiveServices.Search.BingImageSearch</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.ServiceClientCredentials</ReturnType>
       </ReturnValue>
@@ -273,6 +305,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Search.ImageSearch</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.CognitiveServices.Search.BingImageSearch</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>
@@ -299,6 +335,10 @@
         <AssemblyName>Microsoft.Azure.CognitiveServices.Search.ImageSearch</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.CognitiveServices.Search.BingImageSearch</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -323,6 +363,10 @@
         <AssemblyName>Microsoft.Azure.CognitiveServices.Search.ImageSearch</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.CognitiveServices.Search.BingImageSearch</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.CognitiveServices.Search.ImageSearch.IImagesOperations</ReturnType>
       </ReturnValue>
@@ -344,6 +388,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.CognitiveServices.Search.ImageSearch</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.CognitiveServices.Search.BingImageSearch</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>

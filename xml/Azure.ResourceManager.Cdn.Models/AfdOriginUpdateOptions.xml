@@ -33,22 +33,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="AzureOrigin">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.WritableSubResource AzureOrigin { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Resources.Models.WritableSubResource AzureOrigin" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Cdn.Models.AfdOriginUpdateOptions.AzureOrigin" />
-      <MemberSignature Language="VB.NET" Value="Public Property AzureOrigin As WritableSubResource" />
-      <MemberSignature Language="F#" Value="member this.AzureOrigin : Azure.ResourceManager.Resources.Models.WritableSubResource with get, set" Usage="Azure.ResourceManager.Cdn.Models.AfdOriginUpdateOptions.AzureOrigin" />
+    <Member MemberName="AzureOriginId">
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier AzureOriginId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier AzureOriginId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Cdn.Models.AfdOriginUpdateOptions.AzureOriginId" />
+      <MemberSignature Language="VB.NET" Value="Public Property AzureOriginId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.AzureOriginId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Cdn.Models.AfdOriginUpdateOptions.AzureOriginId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.WritableSubResource</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Resource reference to the Azure origin resource. </summary>
+        <summary> Gets or sets Id. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -69,26 +69,6 @@
       </ReturnValue>
       <Docs>
         <summary> Whether to enable health probes to be made against backends defined under backendPools. Health probes can only be disabled if there is a single enabled backend in single enabled backend pool. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="EnforceCertificateNameCheck">
-      <MemberSignature Language="C#" Value="public bool? EnforceCertificateNameCheck { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; EnforceCertificateNameCheck" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Cdn.Models.AfdOriginUpdateOptions.EnforceCertificateNameCheck" />
-      <MemberSignature Language="VB.NET" Value="Public Property EnforceCertificateNameCheck As Nullable(Of Boolean)" />
-      <MemberSignature Language="F#" Value="member this.EnforceCertificateNameCheck : Nullable&lt;bool&gt; with get, set" Usage="Azure.ResourceManager.Cdn.Models.AfdOriginUpdateOptions.EnforceCertificateNameCheck" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> Whether to enable certificate name check at origin level. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,26 +129,6 @@
       </ReturnValue>
       <Docs>
         <summary> The value of the HTTPS port. Must be between 1 and 65535. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="OriginGroupName">
-      <MemberSignature Language="C#" Value="public string OriginGroupName { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string OriginGroupName" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Cdn.Models.AfdOriginUpdateOptions.OriginGroupName" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginGroupName As String" />
-      <MemberSignature Language="F#" Value="member this.OriginGroupName : string" Usage="Azure.ResourceManager.Cdn.Models.AfdOriginUpdateOptions.OriginGroupName" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.Cdn</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> The name of the origin group which contains this origin. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

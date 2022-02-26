@@ -213,22 +213,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="NatGateway">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.WritableSubResource NatGateway { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Resources.Models.WritableSubResource NatGateway" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.SubnetData.NatGateway" />
-      <MemberSignature Language="VB.NET" Value="Public Property NatGateway As WritableSubResource" />
-      <MemberSignature Language="F#" Value="member this.NatGateway : Azure.ResourceManager.Resources.Models.WritableSubResource with get, set" Usage="Azure.ResourceManager.Network.SubnetData.NatGateway" />
+    <Member MemberName="NatGatewayId">
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier NatGatewayId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier NatGatewayId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.SubnetData.NatGatewayId" />
+      <MemberSignature Language="VB.NET" Value="Public Property NatGatewayId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.NatGatewayId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Network.SubnetData.NatGatewayId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.WritableSubResource</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Nat gateway associated with this subnet. </summary>
+        <summary> Gets or sets Id. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

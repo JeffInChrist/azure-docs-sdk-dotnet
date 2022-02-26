@@ -38,9 +38,13 @@
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
         <param name="locationName"> The name of the region where the resource is located. </param>
-        <summary> Gets an object representing a InstanceFailoverGroupCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.InstanceFailoverGroupCollection" /> object. </returns>
+        <summary> Gets a collection of InstanceFailoverGroups in the InstanceFailoverGroup. </summary>
+        <returns> An object representing collection of InstanceFailoverGroups and their operations over a InstanceFailoverGroup. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="locationName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="locationName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetInstancePools">
@@ -62,24 +66,24 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a InstancePoolCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.InstancePoolCollection" /> object. </returns>
+        <summary> Gets a collection of InstancePools in the InstancePool. </summary>
+        <returns> An object representing collection of InstancePools and their operations over a InstancePool. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLongTermRetentionBackupsByResourceGroupLocation">
-      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Sql.LongTermRetentionBackupData&gt; GetLongTermRetentionBackupsByResourceGroupLocation (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, bool? onlyLatestPerDatabase = default, Azure.ResourceManager.Sql.Models.DatabaseState? databaseState = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.LongTermRetentionBackupData&gt; GetLongTermRetentionBackupsByResourceGroupLocation(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, valuetype System.Nullable`1&lt;bool&gt; onlyLatestPerDatabase, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.DatabaseState&gt; databaseState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Sql.SubscriptionLongTermRetentionBackup&gt; GetLongTermRetentionBackupsByResourceGroupLocation (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, bool? onlyLatestPerDatabase = default, Azure.ResourceManager.Sql.Models.DatabaseState? databaseState = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.SubscriptionLongTermRetentionBackup&gt; GetLongTermRetentionBackupsByResourceGroupLocation(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, valuetype System.Nullable`1&lt;bool&gt; onlyLatestPerDatabase, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.DatabaseState&gt; databaseState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ResourceGroupExtensions.GetLongTermRetentionBackupsByResourceGroupLocation(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Nullable{System.Boolean},System.Nullable{Azure.ResourceManager.Sql.Models.DatabaseState},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetLongTermRetentionBackupsByResourceGroupLocation (resourceGroup As ResourceGroup, locationName As String, Optional onlyLatestPerDatabase As Nullable(Of Boolean) = Nothing, Optional databaseState As Nullable(Of DatabaseState) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of LongTermRetentionBackupData)" />
-      <MemberSignature Language="F#" Value="static member GetLongTermRetentionBackupsByResourceGroupLocation : Azure.ResourceManager.Resources.ResourceGroup * string * Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.Sql.Models.DatabaseState&gt; * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.LongTermRetentionBackupData&gt;" Usage="Azure.ResourceManager.Sql.ResourceGroupExtensions.GetLongTermRetentionBackupsByResourceGroupLocation (resourceGroup, locationName, onlyLatestPerDatabase, databaseState, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetLongTermRetentionBackupsByResourceGroupLocation (resourceGroup As ResourceGroup, locationName As String, Optional onlyLatestPerDatabase As Nullable(Of Boolean) = Nothing, Optional databaseState As Nullable(Of DatabaseState) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of SubscriptionLongTermRetentionBackup)" />
+      <MemberSignature Language="F#" Value="static member GetLongTermRetentionBackupsByResourceGroupLocation : Azure.ResourceManager.Resources.ResourceGroup * string * Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.Sql.Models.DatabaseState&gt; * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.SubscriptionLongTermRetentionBackup&gt;" Usage="Azure.ResourceManager.Sql.ResourceGroupExtensions.GetLongTermRetentionBackupsByResourceGroupLocation (resourceGroup, locationName, onlyLatestPerDatabase, databaseState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.LongTermRetentionBackupData&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.SubscriptionLongTermRetentionBackup&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
@@ -94,26 +98,32 @@
         <param name="onlyLatestPerDatabase"> Whether or not to only get the latest backup for each database. </param>
         <param name="databaseState"> Whether to query against just live databases, just deleted databases, or all databases. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the LongTermRetentionBackupData for this <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists the long term retention backups for a given location.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/locations/{locationName}/longTermRetentionBackups
+            Operation Id: LongTermRetentionBackups_ListByResourceGroupLocation
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.SubscriptionLongTermRetentionBackup" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="locationName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="locationName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetLongTermRetentionBackupsByResourceGroupLocationAsync">
-      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.LongTermRetentionBackupData&gt; GetLongTermRetentionBackupsByResourceGroupLocationAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, bool? onlyLatestPerDatabase = default, Azure.ResourceManager.Sql.Models.DatabaseState? databaseState = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.LongTermRetentionBackupData&gt; GetLongTermRetentionBackupsByResourceGroupLocationAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, valuetype System.Nullable`1&lt;bool&gt; onlyLatestPerDatabase, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.DatabaseState&gt; databaseState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SubscriptionLongTermRetentionBackup&gt; GetLongTermRetentionBackupsByResourceGroupLocationAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, bool? onlyLatestPerDatabase = default, Azure.ResourceManager.Sql.Models.DatabaseState? databaseState = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.SubscriptionLongTermRetentionBackup&gt; GetLongTermRetentionBackupsByResourceGroupLocationAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, valuetype System.Nullable`1&lt;bool&gt; onlyLatestPerDatabase, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.DatabaseState&gt; databaseState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ResourceGroupExtensions.GetLongTermRetentionBackupsByResourceGroupLocationAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Nullable{System.Boolean},System.Nullable{Azure.ResourceManager.Sql.Models.DatabaseState},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetLongTermRetentionBackupsByResourceGroupLocationAsync (resourceGroup As ResourceGroup, locationName As String, Optional onlyLatestPerDatabase As Nullable(Of Boolean) = Nothing, Optional databaseState As Nullable(Of DatabaseState) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of LongTermRetentionBackupData)" />
-      <MemberSignature Language="F#" Value="static member GetLongTermRetentionBackupsByResourceGroupLocationAsync : Azure.ResourceManager.Resources.ResourceGroup * string * Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.Sql.Models.DatabaseState&gt; * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.LongTermRetentionBackupData&gt;" Usage="Azure.ResourceManager.Sql.ResourceGroupExtensions.GetLongTermRetentionBackupsByResourceGroupLocationAsync (resourceGroup, locationName, onlyLatestPerDatabase, databaseState, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetLongTermRetentionBackupsByResourceGroupLocationAsync (resourceGroup As ResourceGroup, locationName As String, Optional onlyLatestPerDatabase As Nullable(Of Boolean) = Nothing, Optional databaseState As Nullable(Of DatabaseState) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of SubscriptionLongTermRetentionBackup)" />
+      <MemberSignature Language="F#" Value="static member GetLongTermRetentionBackupsByResourceGroupLocationAsync : Azure.ResourceManager.Resources.ResourceGroup * string * Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.Sql.Models.DatabaseState&gt; * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SubscriptionLongTermRetentionBackup&gt;" Usage="Azure.ResourceManager.Sql.ResourceGroupExtensions.GetLongTermRetentionBackupsByResourceGroupLocationAsync (resourceGroup, locationName, onlyLatestPerDatabase, databaseState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.LongTermRetentionBackupData&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SubscriptionLongTermRetentionBackup&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
@@ -128,26 +138,32 @@
         <param name="onlyLatestPerDatabase"> Whether or not to only get the latest backup for each database. </param>
         <param name="databaseState"> Whether to query against just live databases, just deleted databases, or all databases. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the LongTermRetentionBackupData for this <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists the long term retention backups for a given location.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/locations/{locationName}/longTermRetentionBackups
+            Operation Id: LongTermRetentionBackups_ListByResourceGroupLocation
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.SubscriptionLongTermRetentionBackup" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="locationName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="locationName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetLongTermRetentionBackupsByResourceGroupServer">
-      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Sql.LongTermRetentionBackupData&gt; GetLongTermRetentionBackupsByResourceGroupServer (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, string longTermRetentionServerName, bool? onlyLatestPerDatabase = default, Azure.ResourceManager.Sql.Models.DatabaseState? databaseState = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.LongTermRetentionBackupData&gt; GetLongTermRetentionBackupsByResourceGroupServer(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, string longTermRetentionServerName, valuetype System.Nullable`1&lt;bool&gt; onlyLatestPerDatabase, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.DatabaseState&gt; databaseState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Sql.SubscriptionLongTermRetentionBackup&gt; GetLongTermRetentionBackupsByResourceGroupServer (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, string longTermRetentionServerName, bool? onlyLatestPerDatabase = default, Azure.ResourceManager.Sql.Models.DatabaseState? databaseState = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.SubscriptionLongTermRetentionBackup&gt; GetLongTermRetentionBackupsByResourceGroupServer(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, string longTermRetentionServerName, valuetype System.Nullable`1&lt;bool&gt; onlyLatestPerDatabase, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.DatabaseState&gt; databaseState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ResourceGroupExtensions.GetLongTermRetentionBackupsByResourceGroupServer(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{Azure.ResourceManager.Sql.Models.DatabaseState},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetLongTermRetentionBackupsByResourceGroupServer (resourceGroup As ResourceGroup, locationName As String, longTermRetentionServerName As String, Optional onlyLatestPerDatabase As Nullable(Of Boolean) = Nothing, Optional databaseState As Nullable(Of DatabaseState) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of LongTermRetentionBackupData)" />
-      <MemberSignature Language="F#" Value="static member GetLongTermRetentionBackupsByResourceGroupServer : Azure.ResourceManager.Resources.ResourceGroup * string * string * Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.Sql.Models.DatabaseState&gt; * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.LongTermRetentionBackupData&gt;" Usage="Azure.ResourceManager.Sql.ResourceGroupExtensions.GetLongTermRetentionBackupsByResourceGroupServer (resourceGroup, locationName, longTermRetentionServerName, onlyLatestPerDatabase, databaseState, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetLongTermRetentionBackupsByResourceGroupServer (resourceGroup As ResourceGroup, locationName As String, longTermRetentionServerName As String, Optional onlyLatestPerDatabase As Nullable(Of Boolean) = Nothing, Optional databaseState As Nullable(Of DatabaseState) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of SubscriptionLongTermRetentionBackup)" />
+      <MemberSignature Language="F#" Value="static member GetLongTermRetentionBackupsByResourceGroupServer : Azure.ResourceManager.Resources.ResourceGroup * string * string * Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.Sql.Models.DatabaseState&gt; * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.SubscriptionLongTermRetentionBackup&gt;" Usage="Azure.ResourceManager.Sql.ResourceGroupExtensions.GetLongTermRetentionBackupsByResourceGroupServer (resourceGroup, locationName, longTermRetentionServerName, onlyLatestPerDatabase, databaseState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.LongTermRetentionBackupData&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.SubscriptionLongTermRetentionBackup&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
@@ -164,26 +180,32 @@
         <param name="onlyLatestPerDatabase"> Whether or not to only get the latest backup for each database. </param>
         <param name="databaseState"> Whether to query against just live databases, just deleted databases, or all databases. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the LongTermRetentionBackupData for this <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists the long term retention backups for a given server.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/locations/{locationName}/longTermRetentionServers/{longTermRetentionServerName}/longTermRetentionBackups
+            Operation Id: LongTermRetentionBackups_ListByResourceGroupServer
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.SubscriptionLongTermRetentionBackup" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="locationName" /> or <paramref name="longTermRetentionServerName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="locationName" /> or <paramref name="longTermRetentionServerName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetLongTermRetentionBackupsByResourceGroupServerAsync">
-      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.LongTermRetentionBackupData&gt; GetLongTermRetentionBackupsByResourceGroupServerAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, string longTermRetentionServerName, bool? onlyLatestPerDatabase = default, Azure.ResourceManager.Sql.Models.DatabaseState? databaseState = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.LongTermRetentionBackupData&gt; GetLongTermRetentionBackupsByResourceGroupServerAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, string longTermRetentionServerName, valuetype System.Nullable`1&lt;bool&gt; onlyLatestPerDatabase, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.DatabaseState&gt; databaseState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SubscriptionLongTermRetentionBackup&gt; GetLongTermRetentionBackupsByResourceGroupServerAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, string longTermRetentionServerName, bool? onlyLatestPerDatabase = default, Azure.ResourceManager.Sql.Models.DatabaseState? databaseState = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.SubscriptionLongTermRetentionBackup&gt; GetLongTermRetentionBackupsByResourceGroupServerAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, string longTermRetentionServerName, valuetype System.Nullable`1&lt;bool&gt; onlyLatestPerDatabase, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.DatabaseState&gt; databaseState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ResourceGroupExtensions.GetLongTermRetentionBackupsByResourceGroupServerAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{Azure.ResourceManager.Sql.Models.DatabaseState},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetLongTermRetentionBackupsByResourceGroupServerAsync (resourceGroup As ResourceGroup, locationName As String, longTermRetentionServerName As String, Optional onlyLatestPerDatabase As Nullable(Of Boolean) = Nothing, Optional databaseState As Nullable(Of DatabaseState) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of LongTermRetentionBackupData)" />
-      <MemberSignature Language="F#" Value="static member GetLongTermRetentionBackupsByResourceGroupServerAsync : Azure.ResourceManager.Resources.ResourceGroup * string * string * Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.Sql.Models.DatabaseState&gt; * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.LongTermRetentionBackupData&gt;" Usage="Azure.ResourceManager.Sql.ResourceGroupExtensions.GetLongTermRetentionBackupsByResourceGroupServerAsync (resourceGroup, locationName, longTermRetentionServerName, onlyLatestPerDatabase, databaseState, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetLongTermRetentionBackupsByResourceGroupServerAsync (resourceGroup As ResourceGroup, locationName As String, longTermRetentionServerName As String, Optional onlyLatestPerDatabase As Nullable(Of Boolean) = Nothing, Optional databaseState As Nullable(Of DatabaseState) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of SubscriptionLongTermRetentionBackup)" />
+      <MemberSignature Language="F#" Value="static member GetLongTermRetentionBackupsByResourceGroupServerAsync : Azure.ResourceManager.Resources.ResourceGroup * string * string * Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.Sql.Models.DatabaseState&gt; * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SubscriptionLongTermRetentionBackup&gt;" Usage="Azure.ResourceManager.Sql.ResourceGroupExtensions.GetLongTermRetentionBackupsByResourceGroupServerAsync (resourceGroup, locationName, longTermRetentionServerName, onlyLatestPerDatabase, databaseState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.LongTermRetentionBackupData&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SubscriptionLongTermRetentionBackup&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
@@ -200,26 +222,32 @@
         <param name="onlyLatestPerDatabase"> Whether or not to only get the latest backup for each database. </param>
         <param name="databaseState"> Whether to query against just live databases, just deleted databases, or all databases. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the LongTermRetentionBackupData for this <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists the long term retention backups for a given server.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/locations/{locationName}/longTermRetentionServers/{longTermRetentionServerName}/longTermRetentionBackups
+            Operation Id: LongTermRetentionBackups_ListByResourceGroupServer
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.SubscriptionLongTermRetentionBackup" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="locationName" /> or <paramref name="longTermRetentionServerName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="locationName" /> or <paramref name="longTermRetentionServerName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetLongTermRetentionManagedInstanceBackupsByResourceGroupInstance">
-      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionBackupData&gt; GetLongTermRetentionManagedInstanceBackupsByResourceGroupInstance (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, string managedInstanceName, bool? onlyLatestPerDatabase = default, Azure.ResourceManager.Sql.Models.DatabaseState? databaseState = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionBackupData&gt; GetLongTermRetentionManagedInstanceBackupsByResourceGroupInstance(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, string managedInstanceName, valuetype System.Nullable`1&lt;bool&gt; onlyLatestPerDatabase, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.DatabaseState&gt; databaseState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Sql.SubscriptionLongTermRetentionManagedInstanceBackup&gt; GetLongTermRetentionManagedInstanceBackupsByResourceGroupInstance (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, string managedInstanceName, bool? onlyLatestPerDatabase = default, Azure.ResourceManager.Sql.Models.DatabaseState? databaseState = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.SubscriptionLongTermRetentionManagedInstanceBackup&gt; GetLongTermRetentionManagedInstanceBackupsByResourceGroupInstance(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, string managedInstanceName, valuetype System.Nullable`1&lt;bool&gt; onlyLatestPerDatabase, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.DatabaseState&gt; databaseState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ResourceGroupExtensions.GetLongTermRetentionManagedInstanceBackupsByResourceGroupInstance(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{Azure.ResourceManager.Sql.Models.DatabaseState},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetLongTermRetentionManagedInstanceBackupsByResourceGroupInstance (resourceGroup As ResourceGroup, locationName As String, managedInstanceName As String, Optional onlyLatestPerDatabase As Nullable(Of Boolean) = Nothing, Optional databaseState As Nullable(Of DatabaseState) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ManagedInstanceLongTermRetentionBackupData)" />
-      <MemberSignature Language="F#" Value="static member GetLongTermRetentionManagedInstanceBackupsByResourceGroupInstance : Azure.ResourceManager.Resources.ResourceGroup * string * string * Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.Sql.Models.DatabaseState&gt; * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionBackupData&gt;" Usage="Azure.ResourceManager.Sql.ResourceGroupExtensions.GetLongTermRetentionManagedInstanceBackupsByResourceGroupInstance (resourceGroup, locationName, managedInstanceName, onlyLatestPerDatabase, databaseState, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetLongTermRetentionManagedInstanceBackupsByResourceGroupInstance (resourceGroup As ResourceGroup, locationName As String, managedInstanceName As String, Optional onlyLatestPerDatabase As Nullable(Of Boolean) = Nothing, Optional databaseState As Nullable(Of DatabaseState) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of SubscriptionLongTermRetentionManagedInstanceBackup)" />
+      <MemberSignature Language="F#" Value="static member GetLongTermRetentionManagedInstanceBackupsByResourceGroupInstance : Azure.ResourceManager.Resources.ResourceGroup * string * string * Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.Sql.Models.DatabaseState&gt; * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.SubscriptionLongTermRetentionManagedInstanceBackup&gt;" Usage="Azure.ResourceManager.Sql.ResourceGroupExtensions.GetLongTermRetentionManagedInstanceBackupsByResourceGroupInstance (resourceGroup, locationName, managedInstanceName, onlyLatestPerDatabase, databaseState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionBackupData&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.SubscriptionLongTermRetentionManagedInstanceBackup&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
@@ -236,26 +264,32 @@
         <param name="onlyLatestPerDatabase"> Whether or not to only get the latest backup for each database. </param>
         <param name="databaseState"> Whether to query against just live databases, just deleted databases, or all databases. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the ManagedInstanceLongTermRetentionBackupData for this <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists the long term retention backups for a given managed instance.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/locations/{locationName}/longTermRetentionManagedInstances/{managedInstanceName}/longTermRetentionManagedInstanceBackups
+            Operation Id: LongTermRetentionManagedInstanceBackups_ListByResourceGroupInstance
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.SubscriptionLongTermRetentionManagedInstanceBackup" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="locationName" /> or <paramref name="managedInstanceName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="locationName" /> or <paramref name="managedInstanceName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetLongTermRetentionManagedInstanceBackupsByResourceGroupInstanceAsync">
-      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionBackupData&gt; GetLongTermRetentionManagedInstanceBackupsByResourceGroupInstanceAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, string managedInstanceName, bool? onlyLatestPerDatabase = default, Azure.ResourceManager.Sql.Models.DatabaseState? databaseState = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionBackupData&gt; GetLongTermRetentionManagedInstanceBackupsByResourceGroupInstanceAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, string managedInstanceName, valuetype System.Nullable`1&lt;bool&gt; onlyLatestPerDatabase, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.DatabaseState&gt; databaseState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SubscriptionLongTermRetentionManagedInstanceBackup&gt; GetLongTermRetentionManagedInstanceBackupsByResourceGroupInstanceAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, string managedInstanceName, bool? onlyLatestPerDatabase = default, Azure.ResourceManager.Sql.Models.DatabaseState? databaseState = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.SubscriptionLongTermRetentionManagedInstanceBackup&gt; GetLongTermRetentionManagedInstanceBackupsByResourceGroupInstanceAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, string managedInstanceName, valuetype System.Nullable`1&lt;bool&gt; onlyLatestPerDatabase, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.DatabaseState&gt; databaseState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ResourceGroupExtensions.GetLongTermRetentionManagedInstanceBackupsByResourceGroupInstanceAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{Azure.ResourceManager.Sql.Models.DatabaseState},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetLongTermRetentionManagedInstanceBackupsByResourceGroupInstanceAsync (resourceGroup As ResourceGroup, locationName As String, managedInstanceName As String, Optional onlyLatestPerDatabase As Nullable(Of Boolean) = Nothing, Optional databaseState As Nullable(Of DatabaseState) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ManagedInstanceLongTermRetentionBackupData)" />
-      <MemberSignature Language="F#" Value="static member GetLongTermRetentionManagedInstanceBackupsByResourceGroupInstanceAsync : Azure.ResourceManager.Resources.ResourceGroup * string * string * Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.Sql.Models.DatabaseState&gt; * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionBackupData&gt;" Usage="Azure.ResourceManager.Sql.ResourceGroupExtensions.GetLongTermRetentionManagedInstanceBackupsByResourceGroupInstanceAsync (resourceGroup, locationName, managedInstanceName, onlyLatestPerDatabase, databaseState, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetLongTermRetentionManagedInstanceBackupsByResourceGroupInstanceAsync (resourceGroup As ResourceGroup, locationName As String, managedInstanceName As String, Optional onlyLatestPerDatabase As Nullable(Of Boolean) = Nothing, Optional databaseState As Nullable(Of DatabaseState) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of SubscriptionLongTermRetentionManagedInstanceBackup)" />
+      <MemberSignature Language="F#" Value="static member GetLongTermRetentionManagedInstanceBackupsByResourceGroupInstanceAsync : Azure.ResourceManager.Resources.ResourceGroup * string * string * Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.Sql.Models.DatabaseState&gt; * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SubscriptionLongTermRetentionManagedInstanceBackup&gt;" Usage="Azure.ResourceManager.Sql.ResourceGroupExtensions.GetLongTermRetentionManagedInstanceBackupsByResourceGroupInstanceAsync (resourceGroup, locationName, managedInstanceName, onlyLatestPerDatabase, databaseState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionBackupData&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SubscriptionLongTermRetentionManagedInstanceBackup&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
@@ -272,26 +306,32 @@
         <param name="onlyLatestPerDatabase"> Whether or not to only get the latest backup for each database. </param>
         <param name="databaseState"> Whether to query against just live databases, just deleted databases, or all databases. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the ManagedInstanceLongTermRetentionBackupData for this <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists the long term retention backups for a given managed instance.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/locations/{locationName}/longTermRetentionManagedInstances/{managedInstanceName}/longTermRetentionManagedInstanceBackups
+            Operation Id: LongTermRetentionManagedInstanceBackups_ListByResourceGroupInstance
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.SubscriptionLongTermRetentionManagedInstanceBackup" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="locationName" /> or <paramref name="managedInstanceName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="locationName" /> or <paramref name="managedInstanceName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetLongTermRetentionManagedInstanceBackupsByResourceGroupLocation">
-      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionBackupData&gt; GetLongTermRetentionManagedInstanceBackupsByResourceGroupLocation (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, bool? onlyLatestPerDatabase = default, Azure.ResourceManager.Sql.Models.DatabaseState? databaseState = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionBackupData&gt; GetLongTermRetentionManagedInstanceBackupsByResourceGroupLocation(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, valuetype System.Nullable`1&lt;bool&gt; onlyLatestPerDatabase, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.DatabaseState&gt; databaseState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.Sql.SubscriptionLongTermRetentionManagedInstanceBackup&gt; GetLongTermRetentionManagedInstanceBackupsByResourceGroupLocation (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, bool? onlyLatestPerDatabase = default, Azure.ResourceManager.Sql.Models.DatabaseState? databaseState = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.Sql.SubscriptionLongTermRetentionManagedInstanceBackup&gt; GetLongTermRetentionManagedInstanceBackupsByResourceGroupLocation(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, valuetype System.Nullable`1&lt;bool&gt; onlyLatestPerDatabase, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.DatabaseState&gt; databaseState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ResourceGroupExtensions.GetLongTermRetentionManagedInstanceBackupsByResourceGroupLocation(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Nullable{System.Boolean},System.Nullable{Azure.ResourceManager.Sql.Models.DatabaseState},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetLongTermRetentionManagedInstanceBackupsByResourceGroupLocation (resourceGroup As ResourceGroup, locationName As String, Optional onlyLatestPerDatabase As Nullable(Of Boolean) = Nothing, Optional databaseState As Nullable(Of DatabaseState) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ManagedInstanceLongTermRetentionBackupData)" />
-      <MemberSignature Language="F#" Value="static member GetLongTermRetentionManagedInstanceBackupsByResourceGroupLocation : Azure.ResourceManager.Resources.ResourceGroup * string * Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.Sql.Models.DatabaseState&gt; * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionBackupData&gt;" Usage="Azure.ResourceManager.Sql.ResourceGroupExtensions.GetLongTermRetentionManagedInstanceBackupsByResourceGroupLocation (resourceGroup, locationName, onlyLatestPerDatabase, databaseState, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetLongTermRetentionManagedInstanceBackupsByResourceGroupLocation (resourceGroup As ResourceGroup, locationName As String, Optional onlyLatestPerDatabase As Nullable(Of Boolean) = Nothing, Optional databaseState As Nullable(Of DatabaseState) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of SubscriptionLongTermRetentionManagedInstanceBackup)" />
+      <MemberSignature Language="F#" Value="static member GetLongTermRetentionManagedInstanceBackupsByResourceGroupLocation : Azure.ResourceManager.Resources.ResourceGroup * string * Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.Sql.Models.DatabaseState&gt; * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Sql.SubscriptionLongTermRetentionManagedInstanceBackup&gt;" Usage="Azure.ResourceManager.Sql.ResourceGroupExtensions.GetLongTermRetentionManagedInstanceBackupsByResourceGroupLocation (resourceGroup, locationName, onlyLatestPerDatabase, databaseState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionBackupData&gt;</ReturnType>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Sql.SubscriptionLongTermRetentionManagedInstanceBackup&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
@@ -306,26 +346,32 @@
         <param name="onlyLatestPerDatabase"> Whether or not to only get the latest backup for each database. </param>
         <param name="databaseState"> Whether to query against just live databases, just deleted databases, or all databases. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the ManagedInstanceLongTermRetentionBackupData for this <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists the long term retention backups for managed databases in a given location.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/locations/{locationName}/longTermRetentionManagedInstanceBackups
+            Operation Id: LongTermRetentionManagedInstanceBackups_ListByResourceGroupLocation
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Sql.SubscriptionLongTermRetentionManagedInstanceBackup" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="locationName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="locationName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetLongTermRetentionManagedInstanceBackupsByResourceGroupLocationAsync">
-      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionBackupData&gt; GetLongTermRetentionManagedInstanceBackupsByResourceGroupLocationAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, bool? onlyLatestPerDatabase = default, Azure.ResourceManager.Sql.Models.DatabaseState? databaseState = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionBackupData&gt; GetLongTermRetentionManagedInstanceBackupsByResourceGroupLocationAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, valuetype System.Nullable`1&lt;bool&gt; onlyLatestPerDatabase, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.DatabaseState&gt; databaseState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SubscriptionLongTermRetentionManagedInstanceBackup&gt; GetLongTermRetentionManagedInstanceBackupsByResourceGroupLocationAsync (this Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, bool? onlyLatestPerDatabase = default, Azure.ResourceManager.Sql.Models.DatabaseState? databaseState = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Sql.SubscriptionLongTermRetentionManagedInstanceBackup&gt; GetLongTermRetentionManagedInstanceBackupsByResourceGroupLocationAsync(class Azure.ResourceManager.Resources.ResourceGroup resourceGroup, string locationName, valuetype System.Nullable`1&lt;bool&gt; onlyLatestPerDatabase, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Sql.Models.DatabaseState&gt; databaseState, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Sql.ResourceGroupExtensions.GetLongTermRetentionManagedInstanceBackupsByResourceGroupLocationAsync(Azure.ResourceManager.Resources.ResourceGroup,System.String,System.Nullable{System.Boolean},System.Nullable{Azure.ResourceManager.Sql.Models.DatabaseState},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetLongTermRetentionManagedInstanceBackupsByResourceGroupLocationAsync (resourceGroup As ResourceGroup, locationName As String, Optional onlyLatestPerDatabase As Nullable(Of Boolean) = Nothing, Optional databaseState As Nullable(Of DatabaseState) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ManagedInstanceLongTermRetentionBackupData)" />
-      <MemberSignature Language="F#" Value="static member GetLongTermRetentionManagedInstanceBackupsByResourceGroupLocationAsync : Azure.ResourceManager.Resources.ResourceGroup * string * Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.Sql.Models.DatabaseState&gt; * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionBackupData&gt;" Usage="Azure.ResourceManager.Sql.ResourceGroupExtensions.GetLongTermRetentionManagedInstanceBackupsByResourceGroupLocationAsync (resourceGroup, locationName, onlyLatestPerDatabase, databaseState, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetLongTermRetentionManagedInstanceBackupsByResourceGroupLocationAsync (resourceGroup As ResourceGroup, locationName As String, Optional onlyLatestPerDatabase As Nullable(Of Boolean) = Nothing, Optional databaseState As Nullable(Of DatabaseState) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of SubscriptionLongTermRetentionManagedInstanceBackup)" />
+      <MemberSignature Language="F#" Value="static member GetLongTermRetentionManagedInstanceBackupsByResourceGroupLocationAsync : Azure.ResourceManager.Resources.ResourceGroup * string * Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.Sql.Models.DatabaseState&gt; * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SubscriptionLongTermRetentionManagedInstanceBackup&gt;" Usage="Azure.ResourceManager.Sql.ResourceGroupExtensions.GetLongTermRetentionManagedInstanceBackupsByResourceGroupLocationAsync (resourceGroup, locationName, onlyLatestPerDatabase, databaseState, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.ManagedInstanceLongTermRetentionBackupData&gt;</ReturnType>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Sql.SubscriptionLongTermRetentionManagedInstanceBackup&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="resourceGroup" Type="Azure.ResourceManager.Resources.ResourceGroup" RefType="this" />
@@ -340,9 +386,15 @@
         <param name="onlyLatestPerDatabase"> Whether or not to only get the latest backup for each database. </param>
         <param name="databaseState"> Whether to query against just live databases, just deleted databases, or all databases. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the ManagedInstanceLongTermRetentionBackupData for this <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            Lists the long term retention backups for managed databases in a given location.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/locations/{locationName}/longTermRetentionManagedInstanceBackups
+            Operation Id: LongTermRetentionManagedInstanceBackups_ListByResourceGroupLocation
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.Sql.SubscriptionLongTermRetentionManagedInstanceBackup" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="locationName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="locationName" /> is null. </exception>
       </Docs>
@@ -366,8 +418,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a ManagedInstanceCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.ManagedInstanceCollection" /> object. </returns>
+        <summary> Gets a collection of ManagedInstances in the ManagedInstance. </summary>
+        <returns> An object representing collection of ManagedInstances and their operations over a ManagedInstance. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -396,9 +448,13 @@
         <param name="locationName"> The location of the database. </param>
         <param name="longTermRetentionServerName"> The name of the server. </param>
         <param name="longTermRetentionDatabaseName"> The name of the database. </param>
-        <summary> Gets an object representing a ResourceGroupLongTermRetentionBackupCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.ResourceGroupLongTermRetentionBackupCollection" /> object. </returns>
+        <summary> Gets a collection of ResourceGroupLongTermRetentionBackups in the ResourceGroupLongTermRetentionBackup. </summary>
+        <returns> An object representing collection of ResourceGroupLongTermRetentionBackups and their operations over a ResourceGroupLongTermRetentionBackup. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="locationName" />, <paramref name="longTermRetentionServerName" /> or <paramref name="longTermRetentionDatabaseName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="locationName" />, <paramref name="longTermRetentionServerName" /> or <paramref name="longTermRetentionDatabaseName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetResourceGroupLongTermRetentionManagedInstanceBackups">
@@ -426,9 +482,13 @@
         <param name="locationName"> The location of the database. </param>
         <param name="managedInstanceName"> The name of the managed instance. </param>
         <param name="databaseName"> The name of the managed database. </param>
-        <summary> Gets an object representing a ResourceGroupLongTermRetentionManagedInstanceBackupCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.ResourceGroupLongTermRetentionManagedInstanceBackupCollection" /> object. </returns>
+        <summary> Gets a collection of ResourceGroupLongTermRetentionManagedInstanceBackups in the ResourceGroupLongTermRetentionManagedInstanceBackup. </summary>
+        <returns> An object representing collection of ResourceGroupLongTermRetentionManagedInstanceBackups and their operations over a ResourceGroupLongTermRetentionManagedInstanceBackup. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="locationName" />, <paramref name="managedInstanceName" /> or <paramref name="databaseName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="locationName" />, <paramref name="managedInstanceName" /> or <paramref name="databaseName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetServerTrustGroups">
@@ -452,9 +512,13 @@
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
         <param name="locationName"> The name of the region where the resource is located. </param>
-        <summary> Gets an object representing a ServerTrustGroupCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.ServerTrustGroupCollection" /> object. </returns>
+        <summary> Gets a collection of ServerTrustGroups in the ServerTrustGroup. </summary>
+        <returns> An object representing collection of ServerTrustGroups and their operations over a ServerTrustGroup. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="locationName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="locationName" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetSqlServers">
@@ -476,8 +540,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a SqlServerCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.SqlServerCollection" /> object. </returns>
+        <summary> Gets a collection of SqlServers in the SqlServer. </summary>
+        <returns> An object representing collection of SqlServers and their operations over a SqlServer. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -500,8 +564,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a VirtualClusterCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Sql.VirtualClusterCollection" /> object. </returns>
+        <summary> Gets a collection of VirtualClusters in the VirtualCluster. </summary>
+        <returns> An object representing collection of VirtualClusters and their operations over a VirtualCluster. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

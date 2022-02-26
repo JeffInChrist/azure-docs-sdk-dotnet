@@ -341,22 +341,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Peer">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.WritableSubResource Peer { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Resources.Models.WritableSubResource Peer" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.VirtualNetworkGatewayConnectionData.Peer" />
-      <MemberSignature Language="VB.NET" Value="Public Property Peer As WritableSubResource" />
-      <MemberSignature Language="F#" Value="member this.Peer : Azure.ResourceManager.Resources.Models.WritableSubResource with get, set" Usage="Azure.ResourceManager.Network.VirtualNetworkGatewayConnectionData.Peer" />
+    <Member MemberName="PeerId">
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier PeerId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier PeerId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.VirtualNetworkGatewayConnectionData.PeerId" />
+      <MemberSignature Language="VB.NET" Value="Public Property PeerId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.PeerId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Network.VirtualNetworkGatewayConnectionData.PeerId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.WritableSubResource</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The reference to peerings resource. </summary>
+        <summary> Gets or sets Id. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

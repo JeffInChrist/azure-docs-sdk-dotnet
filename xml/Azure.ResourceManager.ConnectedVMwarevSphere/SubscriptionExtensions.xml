@@ -38,8 +38,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the ResourcePools for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            List of resourcePools in a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.ConnectedVMwarevSphere/resourcePools
+            Operation Id: ResourcePools_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePool" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +68,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the ResourcePools for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            List of resourcePools in a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.ConnectedVMwarevSphere/resourcePools
+            Operation Id: ResourcePools_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.ConnectedVMwarevSphere.ResourcePool" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +98,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the VCenters for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            List of vCenters in a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.ConnectedVMwarevSphere/vcenters
+            Operation Id: VCenters_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.ConnectedVMwarevSphere.VCenter" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,8 +128,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the VCenters for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            List of vCenters in a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.ConnectedVMwarevSphere/vcenters
+            Operation Id: VCenters_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.ConnectedVMwarevSphere.VCenter" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,8 +158,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the VirtualMachines for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            List of virtualMachines in a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.ConnectedVMwarevSphere/virtualMachines
+            Operation Id: VirtualMachines_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachine" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,8 +188,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the VirtualMachines for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            List of virtualMachines in a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.ConnectedVMwarevSphere/virtualMachines
+            Operation Id: VirtualMachines_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachine" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,8 +218,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the VirtualMachineTemplates for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            List of virtualMachineTemplates in a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.ConnectedVMwarevSphere/virtualMachineTemplates
+            Operation Id: VirtualMachineTemplates_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplate" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,8 +248,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the VirtualMachineTemplates for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            List of virtualMachineTemplates in a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.ConnectedVMwarevSphere/virtualMachineTemplates
+            Operation Id: VirtualMachineTemplates_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualMachineTemplate" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,8 +278,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the VirtualNetworks for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            List of virtualNetworks in a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.ConnectedVMwarevSphere/virtualNetworks
+            Operation Id: VirtualNetworks_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualNetwork" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -272,8 +308,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the VirtualNetworks for this <see cref="T:Azure.ResourceManager.Resources.Subscription" />. </summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            List of virtualNetworks in a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.ConnectedVMwarevSphere/virtualNetworks
+            Operation Id: VirtualNetworks_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.ConnectedVMwarevSphere.VirtualNetwork" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -298,8 +338,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            List of clusters in a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.ConnectedVMwarevSphere/clusters
+            Operation Id: Clusters_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.ConnectedVMwarevSphere.VMwareCluster" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,8 +368,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            List of clusters in a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.ConnectedVMwarevSphere/clusters
+            Operation Id: Clusters_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.ConnectedVMwarevSphere.VMwareCluster" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -350,8 +398,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            List of datastores in a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.ConnectedVMwarevSphere/datastores
+            Operation Id: Datastores_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.ConnectedVMwarevSphere.VMwareDatastore" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -376,8 +428,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            List of datastores in a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.ConnectedVMwarevSphere/datastores
+            Operation Id: Datastores_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.ConnectedVMwarevSphere.VMwareDatastore" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -402,8 +458,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            List of hosts in a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.ConnectedVMwarevSphere/hosts
+            Operation Id: Hosts_List
+            </summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHost" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -428,8 +488,12 @@
       <Docs>
         <param name="subscription"> The <see cref="T:Azure.ResourceManager.Resources.Subscription" /> instance the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>To be added.</summary>
-        <returns> A collection of resource operations that may take multiple service requests to iterate over. </returns>
+        <summary>
+            List of hosts in a subscription.
+            Request Path: /subscriptions/{subscriptionId}/providers/Microsoft.ConnectedVMwarevSphere/hosts
+            Operation Id: Hosts_List
+            </summary>
+        <returns> An async collection of <see cref="T:Azure.ResourceManager.ConnectedVMwarevSphere.VMwareHost" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

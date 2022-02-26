@@ -1,15 +1,15 @@
 <Type Name="CassandraKeyspaceCreateUpdateOptions" FullName="Azure.ResourceManager.CosmosDB.Models.CassandraKeyspaceCreateUpdateOptions">
-  <TypeSignature Language="C#" Value="public class CassandraKeyspaceCreateUpdateOptions : Azure.ResourceManager.Models.TrackedResource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CassandraKeyspaceCreateUpdateOptions extends Azure.ResourceManager.Models.TrackedResource" />
+  <TypeSignature Language="C#" Value="public class CassandraKeyspaceCreateUpdateOptions : Azure.ResourceManager.Models.TrackedResourceData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CassandraKeyspaceCreateUpdateOptions extends Azure.ResourceManager.Models.TrackedResourceData" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.CosmosDB.Models.CassandraKeyspaceCreateUpdateOptions" />
-  <TypeSignature Language="VB.NET" Value="Public Class CassandraKeyspaceCreateUpdateOptions&#xA;Inherits TrackedResource" />
-  <TypeSignature Language="F#" Value="type CassandraKeyspaceCreateUpdateOptions = class&#xA;    inherit TrackedResource" />
+  <TypeSignature Language="VB.NET" Value="Public Class CassandraKeyspaceCreateUpdateOptions&#xA;Inherits TrackedResourceData" />
+  <TypeSignature Language="F#" Value="type CassandraKeyspaceCreateUpdateOptions = class&#xA;    inherit TrackedResourceData" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.Models.TrackedResource</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.Models.TrackedResourceData</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -61,22 +61,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Resource">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.CosmosDB.Models.CassandraKeyspaceResource Resource { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.CosmosDB.Models.CassandraKeyspaceResource Resource" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.CosmosDB.Models.CassandraKeyspaceCreateUpdateOptions.Resource" />
-      <MemberSignature Language="VB.NET" Value="Public Property Resource As CassandraKeyspaceResource" />
-      <MemberSignature Language="F#" Value="member this.Resource : Azure.ResourceManager.CosmosDB.Models.CassandraKeyspaceResource with get, set" Usage="Azure.ResourceManager.CosmosDB.Models.CassandraKeyspaceCreateUpdateOptions.Resource" />
+    <Member MemberName="ResourceId">
+      <MemberSignature Language="C#" Value="public string ResourceId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResourceId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.CosmosDB.Models.CassandraKeyspaceCreateUpdateOptions.ResourceId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResourceId As String" />
+      <MemberSignature Language="F#" Value="member this.ResourceId : string with get, set" Usage="Azure.ResourceManager.CosmosDB.Models.CassandraKeyspaceCreateUpdateOptions.ResourceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.CosmosDB.Models.CassandraKeyspaceResource</ReturnType>
+        <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The standard JSON format of a Cassandra keyspace. </summary>
+        <summary> Name of the Cosmos DB Cassandra keyspace. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -53,22 +53,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="AutoApproval">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.Models.PrivateLinkServicePropertiesAutoApproval AutoApproval { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Network.Models.PrivateLinkServicePropertiesAutoApproval AutoApproval" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.PrivateLinkServiceData.AutoApproval" />
-      <MemberSignature Language="VB.NET" Value="Public Property AutoApproval As PrivateLinkServicePropertiesAutoApproval" />
-      <MemberSignature Language="F#" Value="member this.AutoApproval : Azure.ResourceManager.Network.Models.PrivateLinkServicePropertiesAutoApproval with get, set" Usage="Azure.ResourceManager.Network.PrivateLinkServiceData.AutoApproval" />
+    <Member MemberName="AutoApprovalSubscriptions">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; AutoApprovalSubscriptions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; AutoApprovalSubscriptions" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.PrivateLinkServiceData.AutoApprovalSubscriptions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AutoApprovalSubscriptions As IList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.AutoApprovalSubscriptions : System.Collections.Generic.IList&lt;string&gt;" Usage="Azure.ResourceManager.Network.PrivateLinkServiceData.AutoApprovalSubscriptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Network.Models.PrivateLinkServicePropertiesAutoApproval</ReturnType>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The auto-approval list of the private link service. </summary>
+        <summary> The list of subscriptions. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -253,22 +253,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Visibility">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.Models.PrivateLinkServicePropertiesVisibility Visibility { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Network.Models.PrivateLinkServicePropertiesVisibility Visibility" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.PrivateLinkServiceData.Visibility" />
-      <MemberSignature Language="VB.NET" Value="Public Property Visibility As PrivateLinkServicePropertiesVisibility" />
-      <MemberSignature Language="F#" Value="member this.Visibility : Azure.ResourceManager.Network.Models.PrivateLinkServicePropertiesVisibility with get, set" Usage="Azure.ResourceManager.Network.PrivateLinkServiceData.Visibility" />
+    <Member MemberName="VisibilitySubscriptions">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; VisibilitySubscriptions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; VisibilitySubscriptions" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.PrivateLinkServiceData.VisibilitySubscriptions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VisibilitySubscriptions As IList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.VisibilitySubscriptions : System.Collections.Generic.IList&lt;string&gt;" Usage="Azure.ResourceManager.Network.PrivateLinkServiceData.VisibilitySubscriptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Network.Models.PrivateLinkServicePropertiesVisibility</ReturnType>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The visibility list of the private link service. </summary>
+        <summary> The list of subscriptions. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

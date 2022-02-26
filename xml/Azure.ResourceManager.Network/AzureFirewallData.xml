@@ -93,22 +93,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="FirewallPolicy">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.WritableSubResource FirewallPolicy { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Resources.Models.WritableSubResource FirewallPolicy" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.AzureFirewallData.FirewallPolicy" />
-      <MemberSignature Language="VB.NET" Value="Public Property FirewallPolicy As WritableSubResource" />
-      <MemberSignature Language="F#" Value="member this.FirewallPolicy : Azure.ResourceManager.Resources.Models.WritableSubResource with get, set" Usage="Azure.ResourceManager.Network.AzureFirewallData.FirewallPolicy" />
+    <Member MemberName="FirewallPolicyId">
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier FirewallPolicyId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier FirewallPolicyId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.AzureFirewallData.FirewallPolicyId" />
+      <MemberSignature Language="VB.NET" Value="Public Property FirewallPolicyId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.FirewallPolicyId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Network.AzureFirewallData.FirewallPolicyId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.WritableSubResource</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The firewallPolicy associated with this azure firewall. </summary>
+        <summary> Gets or sets Id. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -293,22 +293,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="VirtualHub">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.WritableSubResource VirtualHub { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Resources.Models.WritableSubResource VirtualHub" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.AzureFirewallData.VirtualHub" />
-      <MemberSignature Language="VB.NET" Value="Public Property VirtualHub As WritableSubResource" />
-      <MemberSignature Language="F#" Value="member this.VirtualHub : Azure.ResourceManager.Resources.Models.WritableSubResource with get, set" Usage="Azure.ResourceManager.Network.AzureFirewallData.VirtualHub" />
+    <Member MemberName="VirtualHubId">
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier VirtualHubId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier VirtualHubId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.AzureFirewallData.VirtualHubId" />
+      <MemberSignature Language="VB.NET" Value="Public Property VirtualHubId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.VirtualHubId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Network.AzureFirewallData.VirtualHubId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.WritableSubResource</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The virtualHub to which the firewall belongs. </summary>
+        <summary> Gets or sets Id. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

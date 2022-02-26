@@ -113,22 +113,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Sku">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.Models.Sku Sku { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Network.Models.Sku Sku" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.BastionHostData.Sku" />
-      <MemberSignature Language="VB.NET" Value="Public Property Sku As Sku" />
-      <MemberSignature Language="F#" Value="member this.Sku : Azure.ResourceManager.Network.Models.Sku with get, set" Usage="Azure.ResourceManager.Network.BastionHostData.Sku" />
+    <Member MemberName="SkuName">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.Models.BastionHostSkuName? SkuName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Network.Models.BastionHostSkuName&gt; SkuName" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.BastionHostData.SkuName" />
+      <MemberSignature Language="VB.NET" Value="Public Property SkuName As Nullable(Of BastionHostSkuName)" />
+      <MemberSignature Language="F#" Value="member this.SkuName : Nullable&lt;Azure.ResourceManager.Network.Models.BastionHostSkuName&gt; with get, set" Usage="Azure.ResourceManager.Network.BastionHostData.SkuName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Network.Models.Sku</ReturnType>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Network.Models.BastionHostSkuName&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The sku of this Bastion Host. </summary>
+        <summary> The name of this Bastion Host. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

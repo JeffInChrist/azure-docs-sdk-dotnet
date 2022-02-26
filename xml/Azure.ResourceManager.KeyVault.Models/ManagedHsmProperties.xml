@@ -94,18 +94,18 @@
       </Docs>
     </Member>
     <Member MemberName="HsmUri">
-      <MemberSignature Language="C#" Value="public string HsmUri { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string HsmUri" />
+      <MemberSignature Language="C#" Value="public Uri HsmUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri HsmUri" />
       <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.KeyVault.Models.ManagedHsmProperties.HsmUri" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HsmUri As String" />
-      <MemberSignature Language="F#" Value="member this.HsmUri : string" Usage="Azure.ResourceManager.KeyVault.Models.ManagedHsmProperties.HsmUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HsmUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.HsmUri : Uri" Usage="Azure.ResourceManager.KeyVault.Models.ManagedHsmProperties.HsmUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The URI of the managed hsm pool for performing operations on keys. </summary>

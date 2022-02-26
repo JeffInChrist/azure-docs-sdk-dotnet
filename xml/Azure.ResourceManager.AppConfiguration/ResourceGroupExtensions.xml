@@ -36,8 +36,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroup"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroup" /> instance the method will execute against. </param>
-        <summary> Gets an object representing a ConfigurationStoreCollection along with the instance operations that can be performed on it. </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.AppConfiguration.ConfigurationStoreCollection" /> object. </returns>
+        <summary> Gets a collection of ConfigurationStores in the ConfigurationStore. </summary>
+        <returns> An object representing collection of ConfigurationStores and their operations over a ConfigurationStore. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

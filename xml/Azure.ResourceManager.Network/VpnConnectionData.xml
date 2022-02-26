@@ -273,22 +273,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="RemoteVpnSite">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.WritableSubResource RemoteVpnSite { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Resources.Models.WritableSubResource RemoteVpnSite" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.VpnConnectionData.RemoteVpnSite" />
-      <MemberSignature Language="VB.NET" Value="Public Property RemoteVpnSite As WritableSubResource" />
-      <MemberSignature Language="F#" Value="member this.RemoteVpnSite : Azure.ResourceManager.Resources.Models.WritableSubResource with get, set" Usage="Azure.ResourceManager.Network.VpnConnectionData.RemoteVpnSite" />
+    <Member MemberName="RemoteVpnSiteId">
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier RemoteVpnSiteId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier RemoteVpnSiteId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.VpnConnectionData.RemoteVpnSiteId" />
+      <MemberSignature Language="VB.NET" Value="Public Property RemoteVpnSiteId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.RemoteVpnSiteId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Network.VpnConnectionData.RemoteVpnSiteId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.WritableSubResource</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Id of the connected vpn site. </summary>
+        <summary> Gets or sets Id. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

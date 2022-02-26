@@ -173,22 +173,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="TargetListener">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.WritableSubResource TargetListener { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Resources.Models.WritableSubResource TargetListener" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.Models.ApplicationGatewayRedirectConfiguration.TargetListener" />
-      <MemberSignature Language="VB.NET" Value="Public Property TargetListener As WritableSubResource" />
-      <MemberSignature Language="F#" Value="member this.TargetListener : Azure.ResourceManager.Resources.Models.WritableSubResource with get, set" Usage="Azure.ResourceManager.Network.Models.ApplicationGatewayRedirectConfiguration.TargetListener" />
+    <Member MemberName="TargetListenerId">
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier TargetListenerId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier TargetListenerId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.Models.ApplicationGatewayRedirectConfiguration.TargetListenerId" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetListenerId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.TargetListenerId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Network.Models.ApplicationGatewayRedirectConfiguration.TargetListenerId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.WritableSubResource</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Reference to a listener to redirect the request to. </summary>
+        <summary> Gets or sets Id. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

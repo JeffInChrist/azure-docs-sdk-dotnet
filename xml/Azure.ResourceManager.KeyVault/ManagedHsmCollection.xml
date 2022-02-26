@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.KeyVault.Models.ManagedHsmCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string name, Azure.ResourceManager.KeyVault.ManagedHsmData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.KeyVault.Models.ManagedHsmCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string name, class Azure.ResourceManager.KeyVault.ManagedHsmData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.ManagedHsm&gt; CreateOrUpdate (bool waitForCompletion, string name, Azure.ResourceManager.KeyVault.ManagedHsmData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.KeyVault.ManagedHsm&gt; CreateOrUpdate(bool waitForCompletion, string name, class Azure.ResourceManager.KeyVault.ManagedHsmData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.ManagedHsmCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.KeyVault.ManagedHsmData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, name As String, parameters As ManagedHsmData, Optional cancellationToken As CancellationToken = Nothing) As ManagedHsmCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.KeyVault.ManagedHsmData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.KeyVault.Models.ManagedHsmCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.KeyVault.ManagedHsmData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.KeyVault.Models.ManagedHsmCreateOrUpdateOperation" Usage="managedHsmCollection.CreateOrUpdate (waitForCompletion, name, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, name As String, parameters As ManagedHsmData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of ManagedHsm)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.KeyVault.ManagedHsmData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.ManagedHsm&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.KeyVault.ManagedHsmData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.ManagedHsm&gt;" Usage="managedHsmCollection.CreateOrUpdate (waitForCompletion, name, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.KeyVault.Models.ManagedHsmCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.ManagedHsm&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -68,28 +68,32 @@
         <param name="name"> Name of the managed HSM Pool. </param>
         <param name="parameters"> Parameters to create or update the managed HSM Pool. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Create or update a managed HSM Pool in the specified subscription. </summary>
+        <summary>
+            Create or update a managed HSM Pool in the specified subscription.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/managedHSMs/{name}
+            Operation Id: ManagedHsms_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is empty. </exception>
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string name, Azure.ResourceManager.KeyVault.ManagedHsmData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.KeyVault.Models.ManagedHsmCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string name, class Azure.ResourceManager.KeyVault.ManagedHsmData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.ManagedHsm&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string name, Azure.ResourceManager.KeyVault.ManagedHsmData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.KeyVault.ManagedHsm&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string name, class Azure.ResourceManager.KeyVault.ManagedHsmData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.ManagedHsmCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.KeyVault.ManagedHsmData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, name As String, parameters As ManagedHsmData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ManagedHsmCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.KeyVault.ManagedHsmData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.KeyVault.ManagedHsmData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmCreateOrUpdateOperation&gt;" Usage="managedHsmCollection.CreateOrUpdateAsync (waitForCompletion, name, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, name As String, parameters As ManagedHsmData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of ManagedHsm))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.KeyVault.ManagedHsmData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.ManagedHsm&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.KeyVault.ManagedHsmData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.ManagedHsm&gt;&gt;" Usage="managedHsmCollection.CreateOrUpdateAsync (waitForCompletion, name, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.KeyVault.ManagedHsm&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -102,11 +106,15 @@
         <param name="name"> Name of the managed HSM Pool. </param>
         <param name="parameters"> Parameters to create or update the managed HSM Pool. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Create or update a managed HSM Pool in the specified subscription. </summary>
+        <summary>
+            Create or update a managed HSM Pool in the specified subscription.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/managedHSMs/{name}
+            Operation Id: ManagedHsms_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is empty. </exception>
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -132,11 +140,15 @@
       <Docs>
         <param name="name"> The name of the managed HSM Pool. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/managedHSMs/{name}
+            Operation Id: ManagedHsms_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is empty. </exception>
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is null. </exception>
       </Docs>
@@ -162,11 +174,15 @@
       <Docs>
         <param name="name"> The name of the managed HSM Pool. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/managedHSMs/{name}
+            Operation Id: ManagedHsms_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is empty. </exception>
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is null. </exception>
       </Docs>
@@ -192,11 +208,15 @@
       <Docs>
         <param name="name"> The name of the managed HSM Pool. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the specified managed HSM Pool. </summary>
+        <summary>
+            Gets the specified managed HSM Pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/managedHSMs/{name}
+            Operation Id: ManagedHsms_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is empty. </exception>
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is null. </exception>
       </Docs>
@@ -222,7 +242,11 @@
       <Docs>
         <param name="top"> Maximum number of results to return. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> The List operation gets information about the managed HSM Pools associated with the subscription and within the specified resource group. </summary>
+        <summary>
+            The List operation gets information about the managed HSM Pools associated with the subscription and within the specified resource group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/managedHSMs
+            Operation Id: ManagedHsms_ListByResourceGroup
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.KeyVault.ManagedHsm" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -248,7 +272,11 @@
       <Docs>
         <param name="top"> Maximum number of results to return. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> The List operation gets information about the managed HSM Pools associated with the subscription and within the specified resource group. </summary>
+        <summary>
+            The List operation gets information about the managed HSM Pools associated with the subscription and within the specified resource group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/managedHSMs
+            Operation Id: ManagedHsms_ListByResourceGroup
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.KeyVault.ManagedHsm" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -274,11 +302,15 @@
       <Docs>
         <param name="name"> The name of the managed HSM Pool. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the specified managed HSM Pool. </summary>
+        <summary>
+            Gets the specified managed HSM Pool.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/managedHSMs/{name}
+            Operation Id: ManagedHsms_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is empty. </exception>
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is null. </exception>
       </Docs>
@@ -304,11 +336,15 @@
       <Docs>
         <param name="name"> The name of the managed HSM Pool. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/managedHSMs/{name}
+            Operation Id: ManagedHsms_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is empty. </exception>
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is null. </exception>
       </Docs>
@@ -334,11 +370,15 @@
       <Docs>
         <param name="name"> The name of the managed HSM Pool. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/managedHSMs/{name}
+            Operation Id: ManagedHsms_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="name" /> is empty. </exception>
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is null. </exception>
       </Docs>

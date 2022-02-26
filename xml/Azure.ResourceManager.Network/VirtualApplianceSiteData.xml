@@ -93,22 +93,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="O365Policy">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.Models.Office365PolicyProperties O365Policy { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Network.Models.Office365PolicyProperties O365Policy" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.VirtualApplianceSiteData.O365Policy" />
-      <MemberSignature Language="VB.NET" Value="Public Property O365Policy As Office365PolicyProperties" />
-      <MemberSignature Language="F#" Value="member this.O365Policy : Azure.ResourceManager.Network.Models.Office365PolicyProperties with get, set" Usage="Azure.ResourceManager.Network.VirtualApplianceSiteData.O365Policy" />
+    <Member MemberName="O365BreakOutCategories">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Network.Models.BreakOutCategoryPolicies O365BreakOutCategories { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Network.Models.BreakOutCategoryPolicies O365BreakOutCategories" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.VirtualApplianceSiteData.O365BreakOutCategories" />
+      <MemberSignature Language="VB.NET" Value="Public Property O365BreakOutCategories As BreakOutCategoryPolicies" />
+      <MemberSignature Language="F#" Value="member this.O365BreakOutCategories : Azure.ResourceManager.Network.Models.BreakOutCategoryPolicies with get, set" Usage="Azure.ResourceManager.Network.VirtualApplianceSiteData.O365BreakOutCategories" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Network.Models.Office365PolicyProperties</ReturnType>
+        <ReturnType>Azure.ResourceManager.Network.Models.BreakOutCategoryPolicies</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Office 365 Policy. </summary>
+        <summary> Office 365 breakout categories. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

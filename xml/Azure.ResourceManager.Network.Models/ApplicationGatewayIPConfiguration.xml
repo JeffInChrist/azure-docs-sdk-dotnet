@@ -93,22 +93,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Subnet">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.WritableSubResource Subnet { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Resources.Models.WritableSubResource Subnet" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.Models.ApplicationGatewayIPConfiguration.Subnet" />
-      <MemberSignature Language="VB.NET" Value="Public Property Subnet As WritableSubResource" />
-      <MemberSignature Language="F#" Value="member this.Subnet : Azure.ResourceManager.Resources.Models.WritableSubResource with get, set" Usage="Azure.ResourceManager.Network.Models.ApplicationGatewayIPConfiguration.Subnet" />
+    <Member MemberName="SubnetId">
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier SubnetId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier SubnetId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.Models.ApplicationGatewayIPConfiguration.SubnetId" />
+      <MemberSignature Language="VB.NET" Value="Public Property SubnetId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.SubnetId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Network.Models.ApplicationGatewayIPConfiguration.SubnetId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.WritableSubResource</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Reference to the subnet resource. A subnet from where application gateway gets its private address. </summary>
+        <summary> Gets or sets Id. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

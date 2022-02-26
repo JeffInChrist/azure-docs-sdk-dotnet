@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string tableName, Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateUpdateOptions createUpdateCassandraTableParameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string tableName, class Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateUpdateOptions createUpdateCassandraTableParameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.CassandraTable&gt; CreateOrUpdate (bool waitForCompletion, string tableName, Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateUpdateOptions createUpdateCassandraTableParameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.CosmosDB.CassandraTable&gt; CreateOrUpdate(bool waitForCompletion, string tableName, class Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateUpdateOptions createUpdateCassandraTableParameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CassandraTableCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateUpdateOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, tableName As String, createUpdateCassandraTableParameters As CassandraTableCreateUpdateOptions, Optional cancellationToken As CancellationToken = Nothing) As CassandraTableCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateUpdateOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateUpdateOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateOrUpdateOperation" Usage="cassandraTableCollection.CreateOrUpdate (waitForCompletion, tableName, createUpdateCassandraTableParameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, tableName As String, createUpdateCassandraTableParameters As CassandraTableCreateUpdateOptions, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of CassandraTable)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateUpdateOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.CassandraTable&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateUpdateOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.CassandraTable&gt;" Usage="cassandraTableCollection.CreateOrUpdate (waitForCompletion, tableName, createUpdateCassandraTableParameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.CassandraTable&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -68,28 +68,32 @@
         <param name="tableName"> Cosmos DB table name. </param>
         <param name="createUpdateCassandraTableParameters"> The parameters to provide for the current Cassandra Table. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Create or update an Azure Cosmos DB Cassandra Table. </summary>
+        <summary>
+            Create or update an Azure Cosmos DB Cassandra Table
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/cassandraKeyspaces/{keyspaceName}/tables/{tableName}
+            Operation Id: CassandraResources_CreateUpdateCassandraTable
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="tableName" /> is empty. </exception>
+          <paramref name="tableName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="tableName" /> or <paramref name="createUpdateCassandraTableParameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string tableName, Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateUpdateOptions createUpdateCassandraTableParameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string tableName, class Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateUpdateOptions createUpdateCassandraTableParameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.CassandraTable&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string tableName, Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateUpdateOptions createUpdateCassandraTableParameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.CosmosDB.CassandraTable&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string tableName, class Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateUpdateOptions createUpdateCassandraTableParameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.CassandraTableCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateUpdateOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, tableName As String, createUpdateCassandraTableParameters As CassandraTableCreateUpdateOptions, Optional cancellationToken As CancellationToken = Nothing) As Task(Of CassandraTableCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateUpdateOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateUpdateOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateOrUpdateOperation&gt;" Usage="cassandraTableCollection.CreateOrUpdateAsync (waitForCompletion, tableName, createUpdateCassandraTableParameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, tableName As String, createUpdateCassandraTableParameters As CassandraTableCreateUpdateOptions, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of CassandraTable))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateUpdateOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.CassandraTable&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateUpdateOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.CassandraTable&gt;&gt;" Usage="cassandraTableCollection.CreateOrUpdateAsync (waitForCompletion, tableName, createUpdateCassandraTableParameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.CassandraTableCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.CassandraTable&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -102,11 +106,15 @@
         <param name="tableName"> Cosmos DB table name. </param>
         <param name="createUpdateCassandraTableParameters"> The parameters to provide for the current Cassandra Table. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Create or update an Azure Cosmos DB Cassandra Table. </summary>
+        <summary>
+            Create or update an Azure Cosmos DB Cassandra Table
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/cassandraKeyspaces/{keyspaceName}/tables/{tableName}
+            Operation Id: CassandraResources_CreateUpdateCassandraTable
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="tableName" /> is empty. </exception>
+          <paramref name="tableName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="tableName" /> or <paramref name="createUpdateCassandraTableParameters" /> is null. </exception>
       </Docs>
@@ -132,11 +140,15 @@
       <Docs>
         <param name="tableName"> Cosmos DB table name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/cassandraKeyspaces/{keyspaceName}/tables/{tableName}
+            Operation Id: CassandraResources_GetCassandraTable
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="tableName" /> is empty. </exception>
+          <paramref name="tableName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="tableName" /> is null. </exception>
       </Docs>
@@ -162,11 +174,15 @@
       <Docs>
         <param name="tableName"> Cosmos DB table name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/cassandraKeyspaces/{keyspaceName}/tables/{tableName}
+            Operation Id: CassandraResources_GetCassandraTable
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="tableName" /> is empty. </exception>
+          <paramref name="tableName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="tableName" /> is null. </exception>
       </Docs>
@@ -192,11 +208,15 @@
       <Docs>
         <param name="tableName"> Cosmos DB table name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the Cassandra table under an existing Azure Cosmos DB database account. </summary>
+        <summary>
+            Gets the Cassandra table under an existing Azure Cosmos DB database account.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/cassandraKeyspaces/{keyspaceName}/tables/{tableName}
+            Operation Id: CassandraResources_GetCassandraTable
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="tableName" /> is empty. </exception>
+          <paramref name="tableName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="tableName" /> is null. </exception>
       </Docs>
@@ -220,7 +240,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the Cassandra table under an existing Azure Cosmos DB database account. </summary>
+        <summary>
+            Lists the Cassandra table under an existing Azure Cosmos DB database account.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/cassandraKeyspaces/{keyspaceName}/tables
+            Operation Id: CassandraResources_ListCassandraTables
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.CosmosDB.CassandraTable" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -244,7 +268,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists the Cassandra table under an existing Azure Cosmos DB database account. </summary>
+        <summary>
+            Lists the Cassandra table under an existing Azure Cosmos DB database account.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/cassandraKeyspaces/{keyspaceName}/tables
+            Operation Id: CassandraResources_ListCassandraTables
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.CosmosDB.CassandraTable" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -270,11 +298,15 @@
       <Docs>
         <param name="tableName"> Cosmos DB table name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the Cassandra table under an existing Azure Cosmos DB database account. </summary>
+        <summary>
+            Gets the Cassandra table under an existing Azure Cosmos DB database account.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/cassandraKeyspaces/{keyspaceName}/tables/{tableName}
+            Operation Id: CassandraResources_GetCassandraTable
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="tableName" /> is empty. </exception>
+          <paramref name="tableName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="tableName" /> is null. </exception>
       </Docs>
@@ -300,11 +332,15 @@
       <Docs>
         <param name="tableName"> Cosmos DB table name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/cassandraKeyspaces/{keyspaceName}/tables/{tableName}
+            Operation Id: CassandraResources_GetCassandraTable
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="tableName" /> is empty. </exception>
+          <paramref name="tableName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="tableName" /> is null. </exception>
       </Docs>
@@ -330,11 +366,15 @@
       <Docs>
         <param name="tableName"> Cosmos DB table name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/cassandraKeyspaces/{keyspaceName}/tables/{tableName}
+            Operation Id: CassandraResources_GetCassandraTable
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="tableName" /> is empty. </exception>
+          <paramref name="tableName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="tableName" /> is null. </exception>
       </Docs>

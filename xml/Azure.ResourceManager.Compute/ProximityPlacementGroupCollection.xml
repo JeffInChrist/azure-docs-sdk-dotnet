@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.ProximityPlacementGroupCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string proximityPlacementGroupName, Azure.ResourceManager.Compute.ProximityPlacementGroupData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.ProximityPlacementGroupCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string proximityPlacementGroupName, class Azure.ResourceManager.Compute.ProximityPlacementGroupData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.ProximityPlacementGroup&gt; CreateOrUpdate (bool waitForCompletion, string proximityPlacementGroupName, Azure.ResourceManager.Compute.ProximityPlacementGroupData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.ProximityPlacementGroup&gt; CreateOrUpdate(bool waitForCompletion, string proximityPlacementGroupName, class Azure.ResourceManager.Compute.ProximityPlacementGroupData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.ProximityPlacementGroupCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Compute.ProximityPlacementGroupData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, proximityPlacementGroupName As String, parameters As ProximityPlacementGroupData, Optional cancellationToken As CancellationToken = Nothing) As ProximityPlacementGroupCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.ProximityPlacementGroupData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.ProximityPlacementGroupCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.ProximityPlacementGroupData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.ProximityPlacementGroupCreateOrUpdateOperation" Usage="proximityPlacementGroupCollection.CreateOrUpdate (waitForCompletion, proximityPlacementGroupName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, proximityPlacementGroupName As String, parameters As ProximityPlacementGroupData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of ProximityPlacementGroup)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.ProximityPlacementGroupData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.ProximityPlacementGroup&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.ProximityPlacementGroupData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.ProximityPlacementGroup&gt;" Usage="proximityPlacementGroupCollection.CreateOrUpdate (waitForCompletion, proximityPlacementGroupName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.ProximityPlacementGroupCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.ProximityPlacementGroup&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -68,28 +68,32 @@
         <param name="proximityPlacementGroupName"> The name of the proximity placement group. </param>
         <param name="parameters"> Parameters supplied to the Create Proximity Placement Group operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Create or update a proximity placement group. </summary>
+        <summary>
+            Create or update a proximity placement group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/proximityPlacementGroups/{proximityPlacementGroupName}
+            Operation Id: ProximityPlacementGroups_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="proximityPlacementGroupName" /> is empty. </exception>
+          <paramref name="proximityPlacementGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="proximityPlacementGroupName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.ProximityPlacementGroupCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string proximityPlacementGroupName, Azure.ResourceManager.Compute.ProximityPlacementGroupData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.ProximityPlacementGroupCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string proximityPlacementGroupName, class Azure.ResourceManager.Compute.ProximityPlacementGroupData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.ProximityPlacementGroup&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string proximityPlacementGroupName, Azure.ResourceManager.Compute.ProximityPlacementGroupData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.ProximityPlacementGroup&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string proximityPlacementGroupName, class Azure.ResourceManager.Compute.ProximityPlacementGroupData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.ProximityPlacementGroupCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Compute.ProximityPlacementGroupData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, proximityPlacementGroupName As String, parameters As ProximityPlacementGroupData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ProximityPlacementGroupCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.ProximityPlacementGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.ProximityPlacementGroupCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.ProximityPlacementGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.ProximityPlacementGroupCreateOrUpdateOperation&gt;" Usage="proximityPlacementGroupCollection.CreateOrUpdateAsync (waitForCompletion, proximityPlacementGroupName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, proximityPlacementGroupName As String, parameters As ProximityPlacementGroupData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of ProximityPlacementGroup))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.ProximityPlacementGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.ProximityPlacementGroup&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.ProximityPlacementGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.ProximityPlacementGroup&gt;&gt;" Usage="proximityPlacementGroupCollection.CreateOrUpdateAsync (waitForCompletion, proximityPlacementGroupName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.ProximityPlacementGroupCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.ProximityPlacementGroup&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -102,11 +106,15 @@
         <param name="proximityPlacementGroupName"> The name of the proximity placement group. </param>
         <param name="parameters"> Parameters supplied to the Create Proximity Placement Group operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Create or update a proximity placement group. </summary>
+        <summary>
+            Create or update a proximity placement group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/proximityPlacementGroups/{proximityPlacementGroupName}
+            Operation Id: ProximityPlacementGroups_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="proximityPlacementGroupName" /> is empty. </exception>
+          <paramref name="proximityPlacementGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="proximityPlacementGroupName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -134,11 +142,15 @@
         <param name="proximityPlacementGroupName"> The name of the proximity placement group. </param>
         <param name="includeColocationStatus"> includeColocationStatus=true enables fetching the colocation status of all the resources in the proximity placement group. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/proximityPlacementGroups/{proximityPlacementGroupName}
+            Operation Id: ProximityPlacementGroups_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="proximityPlacementGroupName" /> is empty. </exception>
+          <paramref name="proximityPlacementGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="proximityPlacementGroupName" /> is null. </exception>
       </Docs>
@@ -166,11 +178,15 @@
         <param name="proximityPlacementGroupName"> The name of the proximity placement group. </param>
         <param name="includeColocationStatus"> includeColocationStatus=true enables fetching the colocation status of all the resources in the proximity placement group. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/proximityPlacementGroups/{proximityPlacementGroupName}
+            Operation Id: ProximityPlacementGroups_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="proximityPlacementGroupName" /> is empty. </exception>
+          <paramref name="proximityPlacementGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="proximityPlacementGroupName" /> is null. </exception>
       </Docs>
@@ -198,11 +214,15 @@
         <param name="proximityPlacementGroupName"> The name of the proximity placement group. </param>
         <param name="includeColocationStatus"> includeColocationStatus=true enables fetching the colocation status of all the resources in the proximity placement group. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Retrieves information about a proximity placement group . </summary>
+        <summary>
+            Retrieves information about a proximity placement group .
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/proximityPlacementGroups/{proximityPlacementGroupName}
+            Operation Id: ProximityPlacementGroups_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="proximityPlacementGroupName" /> is empty. </exception>
+          <paramref name="proximityPlacementGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="proximityPlacementGroupName" /> is null. </exception>
       </Docs>
@@ -226,7 +246,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists all proximity placement groups in a resource group. </summary>
+        <summary>
+            Lists all proximity placement groups in a resource group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/proximityPlacementGroups
+            Operation Id: ProximityPlacementGroups_ListByResourceGroup
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.ProximityPlacementGroup" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -250,7 +274,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Lists all proximity placement groups in a resource group. </summary>
+        <summary>
+            Lists all proximity placement groups in a resource group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/proximityPlacementGroups
+            Operation Id: ProximityPlacementGroups_ListByResourceGroup
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.ProximityPlacementGroup" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -278,11 +306,15 @@
         <param name="proximityPlacementGroupName"> The name of the proximity placement group. </param>
         <param name="includeColocationStatus"> includeColocationStatus=true enables fetching the colocation status of all the resources in the proximity placement group. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Retrieves information about a proximity placement group . </summary>
+        <summary>
+            Retrieves information about a proximity placement group .
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/proximityPlacementGroups/{proximityPlacementGroupName}
+            Operation Id: ProximityPlacementGroups_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="proximityPlacementGroupName" /> is empty. </exception>
+          <paramref name="proximityPlacementGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="proximityPlacementGroupName" /> is null. </exception>
       </Docs>
@@ -310,11 +342,15 @@
         <param name="proximityPlacementGroupName"> The name of the proximity placement group. </param>
         <param name="includeColocationStatus"> includeColocationStatus=true enables fetching the colocation status of all the resources in the proximity placement group. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/proximityPlacementGroups/{proximityPlacementGroupName}
+            Operation Id: ProximityPlacementGroups_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="proximityPlacementGroupName" /> is empty. </exception>
+          <paramref name="proximityPlacementGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="proximityPlacementGroupName" /> is null. </exception>
       </Docs>
@@ -342,11 +378,15 @@
         <param name="proximityPlacementGroupName"> The name of the proximity placement group. </param>
         <param name="includeColocationStatus"> includeColocationStatus=true enables fetching the colocation status of all the resources in the proximity placement group. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/proximityPlacementGroups/{proximityPlacementGroupName}
+            Operation Id: ProximityPlacementGroups_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="proximityPlacementGroupName" /> is empty. </exception>
+          <paramref name="proximityPlacementGroupName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="proximityPlacementGroupName" /> is null. </exception>
       </Docs>

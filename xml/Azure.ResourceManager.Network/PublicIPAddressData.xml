@@ -333,22 +333,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="PublicIPPrefix">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.WritableSubResource PublicIPPrefix { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Resources.Models.WritableSubResource PublicIPPrefix" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.PublicIPAddressData.PublicIPPrefix" />
-      <MemberSignature Language="VB.NET" Value="Public Property PublicIPPrefix As WritableSubResource" />
-      <MemberSignature Language="F#" Value="member this.PublicIPPrefix : Azure.ResourceManager.Resources.Models.WritableSubResource with get, set" Usage="Azure.ResourceManager.Network.PublicIPAddressData.PublicIPPrefix" />
+    <Member MemberName="PublicIPPrefixId">
+      <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier PublicIPPrefixId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier PublicIPPrefixId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Network.PublicIPAddressData.PublicIPPrefixId" />
+      <MemberSignature Language="VB.NET" Value="Public Property PublicIPPrefixId As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="member this.PublicIPPrefixId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.Network.PublicIPAddressData.PublicIPPrefixId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Network</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.Models.WritableSubResource</ReturnType>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The Public IP Prefix this Public IP Address should be allocated from. </summary>
+        <summary> Gets or sets Id. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

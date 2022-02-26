@@ -44,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Compute.Models.ImageCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, string imageName, Azure.ResourceManager.Compute.ImageData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Compute.Models.ImageCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, string imageName, class Azure.ResourceManager.Compute.ImageData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Image&gt; CreateOrUpdate (bool waitForCompletion, string imageName, Azure.ResourceManager.Compute.ImageData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.Image&gt; CreateOrUpdate(bool waitForCompletion, string imageName, class Azure.ResourceManager.Compute.ImageData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.ImageCollection.CreateOrUpdate(System.Boolean,System.String,Azure.ResourceManager.Compute.ImageData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, imageName As String, parameters As ImageData, Optional cancellationToken As CancellationToken = Nothing) As ImageCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.ImageData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.ImageCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.ImageData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.Compute.Models.ImageCreateOrUpdateOperation" Usage="imageCollection.CreateOrUpdate (waitForCompletion, imageName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, imageName As String, parameters As ImageData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of Image)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.ImageData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Image&gt;&#xA;override this.CreateOrUpdate : bool * string * Azure.ResourceManager.Compute.ImageData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Image&gt;" Usage="imageCollection.CreateOrUpdate (waitForCompletion, imageName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Compute.Models.ImageCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Image&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -68,28 +68,32 @@
         <param name="imageName"> The name of the image. </param>
         <param name="parameters"> Parameters supplied to the Create Image operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Create or update an image. </summary>
+        <summary>
+            Create or update an image.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}
+            Operation Id: Images_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="imageName" /> is empty. </exception>
+          <paramref name="imageName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="imageName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.ImageCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, string imageName, Azure.ResourceManager.Compute.ImageData parameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.Compute.Models.ImageCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, string imageName, class Azure.ResourceManager.Compute.ImageData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Image&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, string imageName, Azure.ResourceManager.Compute.ImageData parameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Compute.Image&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, string imageName, class Azure.ResourceManager.Compute.ImageData parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Compute.ImageCollection.CreateOrUpdateAsync(System.Boolean,System.String,Azure.ResourceManager.Compute.ImageData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, imageName As String, parameters As ImageData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ImageCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.ImageData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.ImageCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.ImageData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.ImageCreateOrUpdateOperation&gt;" Usage="imageCollection.CreateOrUpdateAsync (waitForCompletion, imageName, parameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, imageName As String, parameters As ImageData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of Image))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.ImageData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Image&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * string * Azure.ResourceManager.Compute.ImageData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Image&gt;&gt;" Usage="imageCollection.CreateOrUpdateAsync (waitForCompletion, imageName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Compute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Compute.Models.ImageCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Compute.Image&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -102,11 +106,15 @@
         <param name="imageName"> The name of the image. </param>
         <param name="parameters"> Parameters supplied to the Create Image operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Create or update an image. </summary>
+        <summary>
+            Create or update an image.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}
+            Operation Id: Images_CreateOrUpdate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="imageName" /> is empty. </exception>
+          <paramref name="imageName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="imageName" /> or <paramref name="parameters" /> is null. </exception>
       </Docs>
@@ -134,11 +142,15 @@
         <param name="imageName"> The name of the image. </param>
         <param name="expand"> The expand expression to apply on the operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}
+            Operation Id: Images_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="imageName" /> is empty. </exception>
+          <paramref name="imageName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="imageName" /> is null. </exception>
       </Docs>
@@ -166,11 +178,15 @@
         <param name="imageName"> The name of the image. </param>
         <param name="expand"> The expand expression to apply on the operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Checks to see if the resource exists in azure.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}
+            Operation Id: Images_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="imageName" /> is empty. </exception>
+          <paramref name="imageName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="imageName" /> is null. </exception>
       </Docs>
@@ -198,11 +214,15 @@
         <param name="imageName"> The name of the image. </param>
         <param name="expand"> The expand expression to apply on the operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets an image. </summary>
+        <summary>
+            Gets an image.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}
+            Operation Id: Images_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="imageName" /> is empty. </exception>
+          <paramref name="imageName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="imageName" /> is null. </exception>
       </Docs>
@@ -226,7 +246,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the list of images under a resource group. </summary>
+        <summary>
+            Gets the list of images under a resource group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images
+            Operation Id: Images_ListByResourceGroup
+            </summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Compute.Image" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -250,7 +274,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the list of images under a resource group. </summary>
+        <summary>
+            Gets the list of images under a resource group.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images
+            Operation Id: Images_ListByResourceGroup
+            </summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Compute.Image" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -278,11 +306,15 @@
         <param name="imageName"> The name of the image. </param>
         <param name="expand"> The expand expression to apply on the operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets an image. </summary>
+        <summary>
+            Gets an image.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}
+            Operation Id: Images_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="imageName" /> is empty. </exception>
+          <paramref name="imageName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="imageName" /> is null. </exception>
       </Docs>
@@ -310,11 +342,15 @@
         <param name="imageName"> The name of the image. </param>
         <param name="expand"> The expand expression to apply on the operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}
+            Operation Id: Images_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="imageName" /> is empty. </exception>
+          <paramref name="imageName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="imageName" /> is null. </exception>
       </Docs>
@@ -342,11 +378,15 @@
         <param name="imageName"> The name of the image. </param>
         <param name="expand"> The expand expression to apply on the operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Tries to get details for this resource from the service. </summary>
+        <summary>
+            Tries to get details for this resource from the service.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}
+            Operation Id: Images_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="imageName" /> is empty. </exception>
+          <paramref name="imageName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="imageName" /> is null. </exception>
       </Docs>
