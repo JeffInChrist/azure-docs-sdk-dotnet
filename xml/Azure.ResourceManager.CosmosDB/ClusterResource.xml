@@ -33,6 +33,74 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="AddTag">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt; AddTag (string key, string value, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.CosmosDB.ClusterResource&gt; AddTag(string key, string value, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.ClusterResource.AddTag(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AddTag (key As String, value As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ClusterResource)" />
+      <MemberSignature Language="F#" Value="abstract member AddTag : string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;&#xA;override this.AddTag : string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;" Usage="clusterResource.AddTag (key, value, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="key"> The key for the tag. </param>
+        <param name="value"> The value for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Add a tag to the current resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/cassandraClusters/{clusterName}
+            Operation Id: CassandraClusters_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTagAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;&gt; AddTagAsync (string key, string value, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.CosmosDB.ClusterResource&gt;&gt; AddTagAsync(string key, string value, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.ClusterResource.AddTagAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AddTagAsync (key As String, value As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ClusterResource))" />
+      <MemberSignature Language="F#" Value="abstract member AddTagAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;&gt;&#xA;override this.AddTagAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;&gt;" Usage="clusterResource.AddTagAsync (key, value, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="key"> The key for the tag. </param>
+        <param name="value"> The value for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Add a tag to the current resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/cassandraClusters/{clusterName}
+            Operation Id: CassandraClusters_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" /> is null. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="CreateResourceIdentifier">
       <MemberSignature Language="C#" Value="public static Azure.Core.ResourceIdentifier CreateResourceIdentifier (string subscriptionId, string resourceGroupName, string clusterName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Core.ResourceIdentifier CreateResourceIdentifier(string subscriptionId, string resourceGroupName, string clusterName) cil managed" />
@@ -83,18 +151,18 @@
       </Docs>
     </Member>
     <Member MemberName="Deallocate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.CosmosDB.Models.ClusterResourceDeallocateOperation Deallocate (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.CosmosDB.Models.ClusterResourceDeallocateOperation Deallocate(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Deallocate (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Deallocate(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.ClusterResource.Deallocate(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Deallocate (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ClusterResourceDeallocateOperation" />
-      <MemberSignature Language="F#" Value="abstract member Deallocate : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.CosmosDB.Models.ClusterResourceDeallocateOperation&#xA;override this.Deallocate : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.CosmosDB.Models.ClusterResourceDeallocateOperation" Usage="clusterResource.Deallocate (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Deallocate (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Deallocate : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Deallocate : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="clusterResource.Deallocate (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.CosmosDB.Models.ClusterResourceDeallocateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -103,24 +171,28 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Deallocate the Managed Cassandra Cluster and Associated Data Centers. Deallocation will deallocate the host virtual machine of this cluster, and reserved the data disk. This won't do anything on an already deallocated cluster. Use Start to restart the cluster. </summary>
+        <summary>
+            Deallocate the Managed Cassandra Cluster and Associated Data Centers. Deallocation will deallocate the host virtual machine of this cluster, and reserved the data disk. This won't do anything on an already deallocated cluster. Use Start to restart the cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/cassandraClusters/{clusterName}/deallocate
+            Operation Id: CassandraClusters_Deallocate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeallocateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.ClusterResourceDeallocateOperation&gt; DeallocateAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.CosmosDB.Models.ClusterResourceDeallocateOperation&gt; DeallocateAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; DeallocateAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; DeallocateAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.ClusterResource.DeallocateAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeallocateAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ClusterResourceDeallocateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member DeallocateAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.ClusterResourceDeallocateOperation&gt;&#xA;override this.DeallocateAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.ClusterResourceDeallocateOperation&gt;" Usage="clusterResource.DeallocateAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeallocateAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member DeallocateAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.DeallocateAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="clusterResource.DeallocateAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.ClusterResourceDeallocateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -129,24 +201,28 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Deallocate the Managed Cassandra Cluster and Associated Data Centers. Deallocation will deallocate the host virtual machine of this cluster, and reserved the data disk. This won't do anything on an already deallocated cluster. Use Start to restart the cluster. </summary>
+        <summary>
+            Deallocate the Managed Cassandra Cluster and Associated Data Centers. Deallocation will deallocate the host virtual machine of this cluster, and reserved the data disk. This won't do anything on an already deallocated cluster. Use Start to restart the cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/cassandraClusters/{clusterName}/deallocate
+            Operation Id: CassandraClusters_Deallocate
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.CosmosDB.Models.ClusterResourceDeleteOperation Delete (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.CosmosDB.Models.ClusterResourceDeleteOperation Delete(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Delete (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Delete(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.ClusterResource.Delete(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ClusterResourceDeleteOperation" />
-      <MemberSignature Language="F#" Value="abstract member Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.CosmosDB.Models.ClusterResourceDeleteOperation&#xA;override this.Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.CosmosDB.Models.ClusterResourceDeleteOperation" Usage="clusterResource.Delete (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Delete : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="clusterResource.Delete (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.CosmosDB.Models.ClusterResourceDeleteOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -155,24 +231,28 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Deletes a managed Cassandra cluster. </summary>
+        <summary>
+            Deletes a managed Cassandra cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/cassandraClusters/{clusterName}
+            Operation Id: CassandraClusters_Delete
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.ClusterResourceDeleteOperation&gt; DeleteAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.CosmosDB.Models.ClusterResourceDeleteOperation&gt; DeleteAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; DeleteAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; DeleteAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.ClusterResource.DeleteAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ClusterResourceDeleteOperation)" />
-      <MemberSignature Language="F#" Value="abstract member DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.ClusterResourceDeleteOperation&gt;&#xA;override this.DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.ClusterResourceDeleteOperation&gt;" Usage="clusterResource.DeleteAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.DeleteAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="clusterResource.DeleteAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.ClusterResourceDeleteOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -181,7 +261,11 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Deletes a managed Cassandra cluster. </summary>
+        <summary>
+            Deletes a managed Cassandra cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/cassandraClusters/{clusterName}
+            Operation Id: CassandraClusters_Delete
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -205,7 +289,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Get the properties of a managed Cassandra cluster. </summary>
+        <summary>
+            Get the properties of a managed Cassandra cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/cassandraClusters/{clusterName}
+            Operation Id: CassandraClusters_Get
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -229,56 +317,12 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Get the properties of a managed Cassandra cluster. </summary>
+        <summary>
+            Get the properties of a managed Cassandra cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/cassandraClusters/{clusterName}
+            Operation Id: CassandraClusters_Get
+            </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetAvailableLocations">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt; GetAvailableLocations (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt; GetAvailableLocations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.ClusterResource.GetAvailableLocations(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocations (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of AzureLocation)" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;&#xA;override this.GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;" Usage="clusterResource.GetAvailableLocations cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Lists all available geo-locations. </summary>
-        <returns> A collection of locations that may take multiple service requests to iterate over. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetAvailableLocationsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.ClusterResource.GetAvailableLocationsAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocationsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of AzureLocation))" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;&#xA;override this.GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;" Usage="clusterResource.GetAvailableLocationsAsync cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Lists all available geo-locations. </summary>
-        <returns> A collection of locations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -298,8 +342,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of DataCenterResources in the ClusterResource. </summary>
-        <returns> An object representing collection of DataCenterResources and their operations over a ClusterResource. </returns>
+        <summary> Gets a collection of DataCenterResources in the DataCenterResource. </summary>
+        <returns> An object representing collection of DataCenterResources and their operations over a DataCenterResource. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,18 +368,18 @@
       </Docs>
     </Member>
     <Member MemberName="InvokeCommand">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.CosmosDB.Models.ClusterResourceInvokeCommandOperation InvokeCommand (bool waitForCompletion, Azure.ResourceManager.CosmosDB.Models.CommandPostBody body, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.CosmosDB.Models.ClusterResourceInvokeCommandOperation InvokeCommand(bool waitForCompletion, class Azure.ResourceManager.CosmosDB.Models.CommandPostBody body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.Models.CommandOutput&gt; InvokeCommand (bool waitForCompletion, Azure.ResourceManager.CosmosDB.Models.CommandPostBody body, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.CosmosDB.Models.CommandOutput&gt; InvokeCommand(bool waitForCompletion, class Azure.ResourceManager.CosmosDB.Models.CommandPostBody body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.ClusterResource.InvokeCommand(System.Boolean,Azure.ResourceManager.CosmosDB.Models.CommandPostBody,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function InvokeCommand (waitForCompletion As Boolean, body As CommandPostBody, Optional cancellationToken As CancellationToken = Nothing) As ClusterResourceInvokeCommandOperation" />
-      <MemberSignature Language="F#" Value="abstract member InvokeCommand : bool * Azure.ResourceManager.CosmosDB.Models.CommandPostBody * System.Threading.CancellationToken -&gt; Azure.ResourceManager.CosmosDB.Models.ClusterResourceInvokeCommandOperation&#xA;override this.InvokeCommand : bool * Azure.ResourceManager.CosmosDB.Models.CommandPostBody * System.Threading.CancellationToken -&gt; Azure.ResourceManager.CosmosDB.Models.ClusterResourceInvokeCommandOperation" Usage="clusterResource.InvokeCommand (waitForCompletion, body, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function InvokeCommand (waitForCompletion As Boolean, body As CommandPostBody, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of CommandOutput)" />
+      <MemberSignature Language="F#" Value="abstract member InvokeCommand : bool * Azure.ResourceManager.CosmosDB.Models.CommandPostBody * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.Models.CommandOutput&gt;&#xA;override this.InvokeCommand : bool * Azure.ResourceManager.CosmosDB.Models.CommandPostBody * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.Models.CommandOutput&gt;" Usage="clusterResource.InvokeCommand (waitForCompletion, body, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.CosmosDB.Models.ClusterResourceInvokeCommandOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.Models.CommandOutput&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -346,7 +390,11 @@
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="body"> Specification which command to run where. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Invoke a command like nodetool for cassandra maintenance. </summary>
+        <summary>
+            Invoke a command like nodetool for cassandra maintenance 
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/cassandraClusters/{clusterName}/invokeCommand
+            Operation Id: CassandraClusters_InvokeCommand
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -354,18 +402,18 @@
       </Docs>
     </Member>
     <Member MemberName="InvokeCommandAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.ClusterResourceInvokeCommandOperation&gt; InvokeCommandAsync (bool waitForCompletion, Azure.ResourceManager.CosmosDB.Models.CommandPostBody body, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.CosmosDB.Models.ClusterResourceInvokeCommandOperation&gt; InvokeCommandAsync(bool waitForCompletion, class Azure.ResourceManager.CosmosDB.Models.CommandPostBody body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.Models.CommandOutput&gt;&gt; InvokeCommandAsync (bool waitForCompletion, Azure.ResourceManager.CosmosDB.Models.CommandPostBody body, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.CosmosDB.Models.CommandOutput&gt;&gt; InvokeCommandAsync(bool waitForCompletion, class Azure.ResourceManager.CosmosDB.Models.CommandPostBody body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.ClusterResource.InvokeCommandAsync(System.Boolean,Azure.ResourceManager.CosmosDB.Models.CommandPostBody,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function InvokeCommandAsync (waitForCompletion As Boolean, body As CommandPostBody, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ClusterResourceInvokeCommandOperation)" />
-      <MemberSignature Language="F#" Value="abstract member InvokeCommandAsync : bool * Azure.ResourceManager.CosmosDB.Models.CommandPostBody * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.ClusterResourceInvokeCommandOperation&gt;&#xA;override this.InvokeCommandAsync : bool * Azure.ResourceManager.CosmosDB.Models.CommandPostBody * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.ClusterResourceInvokeCommandOperation&gt;" Usage="clusterResource.InvokeCommandAsync (waitForCompletion, body, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function InvokeCommandAsync (waitForCompletion As Boolean, body As CommandPostBody, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of CommandOutput))" />
+      <MemberSignature Language="F#" Value="abstract member InvokeCommandAsync : bool * Azure.ResourceManager.CosmosDB.Models.CommandPostBody * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.Models.CommandOutput&gt;&gt;&#xA;override this.InvokeCommandAsync : bool * Azure.ResourceManager.CosmosDB.Models.CommandPostBody * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.Models.CommandOutput&gt;&gt;" Usage="clusterResource.InvokeCommandAsync (waitForCompletion, body, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.ClusterResourceInvokeCommandOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.Models.CommandOutput&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -376,11 +424,79 @@
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="body"> Specification which command to run where. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Invoke a command like nodetool for cassandra maintenance. </summary>
+        <summary>
+            Invoke a command like nodetool for cassandra maintenance 
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/cassandraClusters/{clusterName}/invokeCommand
+            Operation Id: CassandraClusters_InvokeCommand
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="body" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveTag">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt; RemoveTag (string key, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.CosmosDB.ClusterResource&gt; RemoveTag(string key, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.ClusterResource.RemoveTag(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RemoveTag (key As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ClusterResource)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveTag : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;&#xA;override this.RemoveTag : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;" Usage="clusterResource.RemoveTag (key, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="key"> The key for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Removes a tag by key from the resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/cassandraClusters/{clusterName}
+            Operation Id: CassandraClusters_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveTagAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;&gt; RemoveTagAsync (string key, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.CosmosDB.ClusterResource&gt;&gt; RemoveTagAsync(string key, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.ClusterResource.RemoveTagAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RemoveTagAsync (key As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ClusterResource))" />
+      <MemberSignature Language="F#" Value="abstract member RemoveTagAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;&gt;&#xA;override this.RemoveTagAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;&gt;" Usage="clusterResource.RemoveTagAsync (key, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="key"> The key for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Removes a tag by key from the resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/cassandraClusters/{clusterName}
+            Operation Id: CassandraClusters_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ResourceType">
@@ -402,19 +518,83 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Start">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.CosmosDB.Models.ClusterResourceStartOperation Start (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.CosmosDB.Models.ClusterResourceStartOperation Start(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.ClusterResource.Start(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Start (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ClusterResourceStartOperation" />
-      <MemberSignature Language="F#" Value="abstract member Start : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.CosmosDB.Models.ClusterResourceStartOperation&#xA;override this.Start : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.CosmosDB.Models.ClusterResourceStartOperation" Usage="clusterResource.Start (waitForCompletion, cancellationToken)" />
+    <Member MemberName="SetTags">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt; SetTags (System.Collections.Generic.IDictionary&lt;string,string&gt; tags, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.CosmosDB.ClusterResource&gt; SetTags(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.ClusterResource.SetTags(System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SetTags (tags As IDictionary(Of String, String), Optional cancellationToken As CancellationToken = Nothing) As Response(Of ClusterResource)" />
+      <MemberSignature Language="F#" Value="abstract member SetTags : System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;&#xA;override this.SetTags : System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;" Usage="clusterResource.SetTags (tags, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.CosmosDB.Models.ClusterResourceStartOperation</ReturnType>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="tags"> The set of tags to use as replacement. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Replace the tags on the resource with the given set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/cassandraClusters/{clusterName}
+            Operation Id: CassandraClusters_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tags" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTagsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;&gt; SetTagsAsync (System.Collections.Generic.IDictionary&lt;string,string&gt; tags, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.CosmosDB.ClusterResource&gt;&gt; SetTagsAsync(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.ClusterResource.SetTagsAsync(System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SetTagsAsync (tags As IDictionary(Of String, String), Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ClusterResource))" />
+      <MemberSignature Language="F#" Value="abstract member SetTagsAsync : System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;&gt;&#xA;override this.SetTagsAsync : System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;&gt;" Usage="clusterResource.SetTagsAsync (tags, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="tags"> The set of tags to use as replacement. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Replace the tags on the resource with the given set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/cassandraClusters/{clusterName}
+            Operation Id: CassandraClusters_Get
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tags" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Start (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Start(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.ClusterResource.Start(System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Start (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Start : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Start : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="clusterResource.Start (waitForCompletion, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -423,24 +603,28 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Start the Managed Cassandra Cluster and Associated Data Centers. Start will start the host virtual machine of this cluster with reserved data disk. This won't do anything on an already running cluster. Use Deallocate to deallocate the cluster. </summary>
+        <summary>
+            Start the Managed Cassandra Cluster and Associated Data Centers. Start will start the host virtual machine of this cluster with reserved data disk. This won't do anything on an already running cluster. Use Deallocate to deallocate the cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/cassandraClusters/{clusterName}/start
+            Operation Id: CassandraClusters_Start
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StartAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.ClusterResourceStartOperation&gt; StartAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.CosmosDB.Models.ClusterResourceStartOperation&gt; StartAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; StartAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; StartAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.ClusterResource.StartAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ClusterResourceStartOperation)" />
-      <MemberSignature Language="F#" Value="abstract member StartAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.ClusterResourceStartOperation&gt;&#xA;override this.StartAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.ClusterResourceStartOperation&gt;" Usage="clusterResource.StartAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member StartAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.StartAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="clusterResource.StartAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.ClusterResourceStartOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -449,7 +633,11 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Start the Managed Cassandra Cluster and Associated Data Centers. Start will start the host virtual machine of this cluster with reserved data disk. This won't do anything on an already running cluster. Use Deallocate to deallocate the cluster. </summary>
+        <summary>
+            Start the Managed Cassandra Cluster and Associated Data Centers. Start will start the host virtual machine of this cluster with reserved data disk. This won't do anything on an already running cluster. Use Deallocate to deallocate the cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/cassandraClusters/{clusterName}/start
+            Operation Id: CassandraClusters_Start
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -473,7 +661,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the CPU, memory, and disk usage statistics for each Cassandra node in a cluster. </summary>
+        <summary>
+            Gets the CPU, memory, and disk usage statistics for each Cassandra node in a cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/cassandraClusters/{clusterName}/status
+            Operation Id: CassandraClusters_Status
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -497,24 +689,28 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the CPU, memory, and disk usage statistics for each Cassandra node in a cluster. </summary>
+        <summary>
+            Gets the CPU, memory, and disk usage statistics for each Cassandra node in a cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/cassandraClusters/{clusterName}/status
+            Operation Id: CassandraClusters_Status
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.CosmosDB.Models.ClusterResourceUpdateOperation Update (bool waitForCompletion, Azure.ResourceManager.CosmosDB.ClusterResourceData body, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.CosmosDB.Models.ClusterResourceUpdateOperation Update(bool waitForCompletion, class Azure.ResourceManager.CosmosDB.ClusterResourceData body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt; Update (bool waitForCompletion, Azure.ResourceManager.CosmosDB.ClusterResourceData body, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.CosmosDB.ClusterResource&gt; Update(bool waitForCompletion, class Azure.ResourceManager.CosmosDB.ClusterResourceData body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.ClusterResource.Update(System.Boolean,Azure.ResourceManager.CosmosDB.ClusterResourceData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (waitForCompletion As Boolean, body As ClusterResourceData, Optional cancellationToken As CancellationToken = Nothing) As ClusterResourceUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member Update : bool * Azure.ResourceManager.CosmosDB.ClusterResourceData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.CosmosDB.Models.ClusterResourceUpdateOperation&#xA;override this.Update : bool * Azure.ResourceManager.CosmosDB.ClusterResourceData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.CosmosDB.Models.ClusterResourceUpdateOperation" Usage="clusterResource.Update (waitForCompletion, body, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (waitForCompletion As Boolean, body As ClusterResourceData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of ClusterResource)" />
+      <MemberSignature Language="F#" Value="abstract member Update : bool * Azure.ResourceManager.CosmosDB.ClusterResourceData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;&#xA;override this.Update : bool * Azure.ResourceManager.CosmosDB.ClusterResourceData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;" Usage="clusterResource.Update (waitForCompletion, body, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.CosmosDB.Models.ClusterResourceUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -525,7 +721,11 @@
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="body"> Parameters to provide for specifying the managed Cassandra cluster. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Updates some of the properties of a managed Cassandra cluster. </summary>
+        <summary>
+            Updates some of the properties of a managed Cassandra cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/cassandraClusters/{clusterName}
+            Operation Id: CassandraClusters_Update
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -533,18 +733,18 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.ClusterResourceUpdateOperation&gt; UpdateAsync (bool waitForCompletion, Azure.ResourceManager.CosmosDB.ClusterResourceData body, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.CosmosDB.Models.ClusterResourceUpdateOperation&gt; UpdateAsync(bool waitForCompletion, class Azure.ResourceManager.CosmosDB.ClusterResourceData body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;&gt; UpdateAsync (bool waitForCompletion, Azure.ResourceManager.CosmosDB.ClusterResourceData body, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.CosmosDB.ClusterResource&gt;&gt; UpdateAsync(bool waitForCompletion, class Azure.ResourceManager.CosmosDB.ClusterResourceData body, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.ClusterResource.UpdateAsync(System.Boolean,Azure.ResourceManager.CosmosDB.ClusterResourceData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (waitForCompletion As Boolean, body As ClusterResourceData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ClusterResourceUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member UpdateAsync : bool * Azure.ResourceManager.CosmosDB.ClusterResourceData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.ClusterResourceUpdateOperation&gt;&#xA;override this.UpdateAsync : bool * Azure.ResourceManager.CosmosDB.ClusterResourceData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.ClusterResourceUpdateOperation&gt;" Usage="clusterResource.UpdateAsync (waitForCompletion, body, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (waitForCompletion As Boolean, body As ClusterResourceData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of ClusterResource))" />
+      <MemberSignature Language="F#" Value="abstract member UpdateAsync : bool * Azure.ResourceManager.CosmosDB.ClusterResourceData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;&gt;&#xA;override this.UpdateAsync : bool * Azure.ResourceManager.CosmosDB.ClusterResourceData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;&gt;" Usage="clusterResource.UpdateAsync (waitForCompletion, body, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.ClusterResourceUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.ClusterResource&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -555,7 +755,11 @@
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="body"> Parameters to provide for specifying the managed Cassandra cluster. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Updates some of the properties of a managed Cassandra cluster. </summary>
+        <summary>
+            Updates some of the properties of a managed Cassandra cluster.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/cassandraClusters/{clusterName}
+            Operation Id: CassandraClusters_Update
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

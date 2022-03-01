@@ -1,15 +1,15 @@
 <Type Name="DiskPoolCreate" FullName="Azure.ResourceManager.StoragePool.Models.DiskPoolCreate">
-  <TypeSignature Language="C#" Value="public class DiskPoolCreate : Azure.ResourceManager.Models.Resource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DiskPoolCreate extends Azure.ResourceManager.Models.Resource" />
+  <TypeSignature Language="C#" Value="public class DiskPoolCreate : Azure.ResourceManager.Models.ResourceData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DiskPoolCreate extends Azure.ResourceManager.Models.ResourceData" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.StoragePool.Models.DiskPoolCreate" />
-  <TypeSignature Language="VB.NET" Value="Public Class DiskPoolCreate&#xA;Inherits Resource" />
-  <TypeSignature Language="F#" Value="type DiskPoolCreate = class&#xA;    inherit Resource" />
+  <TypeSignature Language="VB.NET" Value="Public Class DiskPoolCreate&#xA;Inherits ResourceData" />
+  <TypeSignature Language="F#" Value="type DiskPoolCreate = class&#xA;    inherit ResourceData" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.StoragePool</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.ResourceManager.Models.Resource</BaseTypeName>
+    <BaseTypeName>Azure.ResourceManager.Models.ResourceData</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -40,7 +40,7 @@
         <summary> Initializes a new instance of DiskPoolCreate. </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="sku" />, <paramref name="location" />, or <paramref name="subnetId" /> is null. </exception>
+          <paramref name="sku" />, <paramref name="location" /> or <paramref name="subnetId" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="AdditionalCapabilities">

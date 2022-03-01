@@ -1,0 +1,101 @@
+<Type Name="UserAgentValue" FullName="Azure.Core.Pipeline.UserAgentValue">
+  <TypeSignature Language="C#" Value="public class UserAgentValue" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UserAgentValue extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.Core.Pipeline.UserAgentValue" />
+  <TypeSignature Language="VB.NET" Value="Public Class UserAgentValue" />
+  <TypeSignature Language="F#" Value="type UserAgentValue = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Core</AssemblyName>
+    <AssemblyVersion>1.23.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Information about the package to be included in UserAgent telemetry
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UserAgentValue (Type type, string? applicationId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string applicationId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Core.Pipeline.UserAgentValue.#ctor(System.Type,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As Type, Optional applicationId As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.Core.Pipeline.UserAgentValue : Type * string -&gt; Azure.Core.Pipeline.UserAgentValue" Usage="new Azure.Core.Pipeline.UserAgentValue (type, applicationId)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Core</AssemblyName>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="applicationId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">The <see cref="T:System.Type" /> used to generate the package name and version information for the <see cref="T:Azure.Core.Pipeline.UserAgentValue" /> value.</param>
+        <param name="applicationId">An optional value to be prepended to the <see cref="T:Azure.Core.Pipeline.UserAgentValue" />.
+            This value overrides the behavior of the <see cref="P:Azure.Core.DiagnosticsOptions.ApplicationId" /> property for the <see cref="T:Azure.Core.HttpMessage" /> it is applied to.</param>
+        <summary>
+            Initialize an instance of <see cref="T:Azure.Core.Pipeline.UserAgentValue" /> by extracting the name and version information from the <see cref="T:System.Reflection.Assembly" /> associated with the <paramref name="type" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromType&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Azure.Core.Pipeline.UserAgentValue FromType&lt;T&gt; (string? applicationId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Core.Pipeline.UserAgentValue FromType&lt;T&gt;(string applicationId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Core.Pipeline.UserAgentValue.FromType``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromType(Of T) (Optional applicationId As String = Nothing) As UserAgentValue" />
+      <MemberSignature Language="F#" Value="static member FromType : string -&gt; Azure.Core.Pipeline.UserAgentValue" Usage="Azure.Core.Pipeline.UserAgentValue.FromType applicationId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Core</AssemblyName>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Core.Pipeline.UserAgentValue</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="applicationId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type contained by the Assembly used to generate package name and version information.</typeparam>
+        <param name="applicationId" />
+        <summary>
+            Creates an instance of a <see cref="T:Azure.Core.Pipeline.UserAgentValue" /> based on the Type provided.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Core.Pipeline.UserAgentValue.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="userAgentValue.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Core</AssemblyName>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Returns a formatted UserAgent string
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

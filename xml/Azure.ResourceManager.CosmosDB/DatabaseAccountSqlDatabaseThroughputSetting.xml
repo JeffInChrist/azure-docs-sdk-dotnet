@@ -55,10 +55,16 @@
       <Docs>
         <param name="key"> The key for the tag. </param>
         <param name="value"> The value for the tag. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Add a tag to the current resource. </summary>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Add a tag to the current resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/sqlDatabases/{databaseName}/throughputSettings/default
+            Operation Id: SqlResources_GetSqlDatabaseThroughput
+            </summary>
         <returns> The updated resource with the tag added. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="AddTagAsync">
@@ -83,25 +89,31 @@
       <Docs>
         <param name="key"> The key for the tag. </param>
         <param name="value"> The value for the tag. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Add a tag to the current resource. </summary>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Add a tag to the current resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/sqlDatabases/{databaseName}/throughputSettings/default
+            Operation Id: SqlResources_GetSqlDatabaseThroughput
+            </summary>
         <returns> The updated resource with the tag added. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingCreateOrUpdateOperation CreateOrUpdate (bool waitForCompletion, Azure.ResourceManager.CosmosDB.Models.ThroughputSettingsUpdateOptions updateThroughputParameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingCreateOrUpdateOperation CreateOrUpdate(bool waitForCompletion, class Azure.ResourceManager.CosmosDB.Models.ThroughputSettingsUpdateOptions updateThroughputParameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt; CreateOrUpdate (bool waitForCompletion, Azure.ResourceManager.CosmosDB.Models.ThroughputSettingsUpdateOptions updateThroughputParameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt; CreateOrUpdate(bool waitForCompletion, class Azure.ResourceManager.CosmosDB.Models.ThroughputSettingsUpdateOptions updateThroughputParameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting.CreateOrUpdate(System.Boolean,Azure.ResourceManager.CosmosDB.Models.ThroughputSettingsUpdateOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, updateThroughputParameters As ThroughputSettingsUpdateOptions, Optional cancellationToken As CancellationToken = Nothing) As DatabaseAccountSqlDatabaseThroughputSettingCreateOrUpdateOperation" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * Azure.ResourceManager.CosmosDB.Models.ThroughputSettingsUpdateOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingCreateOrUpdateOperation&#xA;override this.CreateOrUpdate : bool * Azure.ResourceManager.CosmosDB.Models.ThroughputSettingsUpdateOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingCreateOrUpdateOperation" Usage="databaseAccountSqlDatabaseThroughputSetting.CreateOrUpdate (waitForCompletion, updateThroughputParameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitForCompletion As Boolean, updateThroughputParameters As ThroughputSettingsUpdateOptions, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of DatabaseAccountSqlDatabaseThroughputSetting)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : bool * Azure.ResourceManager.CosmosDB.Models.ThroughputSettingsUpdateOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt;&#xA;override this.CreateOrUpdate : bool * Azure.ResourceManager.CosmosDB.Models.ThroughputSettingsUpdateOptions * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt;" Usage="databaseAccountSqlDatabaseThroughputSetting.CreateOrUpdate (waitForCompletion, updateThroughputParameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingCreateOrUpdateOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -112,7 +124,11 @@
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="updateThroughputParameters"> The parameters to provide for the RUs per second of the current SQL database. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Update RUs per second of an Azure Cosmos DB SQL database. </summary>
+        <summary>
+            Update RUs per second of an Azure Cosmos DB SQL database
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/sqlDatabases/{databaseName}/throughputSettings/default
+            Operation Id: SqlResources_UpdateSqlDatabaseThroughput
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -120,18 +136,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingCreateOrUpdateOperation&gt; CreateOrUpdateAsync (bool waitForCompletion, Azure.ResourceManager.CosmosDB.Models.ThroughputSettingsUpdateOptions updateThroughputParameters, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingCreateOrUpdateOperation&gt; CreateOrUpdateAsync(bool waitForCompletion, class Azure.ResourceManager.CosmosDB.Models.ThroughputSettingsUpdateOptions updateThroughputParameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt;&gt; CreateOrUpdateAsync (bool waitForCompletion, Azure.ResourceManager.CosmosDB.Models.ThroughputSettingsUpdateOptions updateThroughputParameters, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt;&gt; CreateOrUpdateAsync(bool waitForCompletion, class Azure.ResourceManager.CosmosDB.Models.ThroughputSettingsUpdateOptions updateThroughputParameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting.CreateOrUpdateAsync(System.Boolean,Azure.ResourceManager.CosmosDB.Models.ThroughputSettingsUpdateOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, updateThroughputParameters As ThroughputSettingsUpdateOptions, Optional cancellationToken As CancellationToken = Nothing) As Task(Of DatabaseAccountSqlDatabaseThroughputSettingCreateOrUpdateOperation)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * Azure.ResourceManager.CosmosDB.Models.ThroughputSettingsUpdateOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingCreateOrUpdateOperation&gt;&#xA;override this.CreateOrUpdateAsync : bool * Azure.ResourceManager.CosmosDB.Models.ThroughputSettingsUpdateOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingCreateOrUpdateOperation&gt;" Usage="databaseAccountSqlDatabaseThroughputSetting.CreateOrUpdateAsync (waitForCompletion, updateThroughputParameters, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitForCompletion As Boolean, updateThroughputParameters As ThroughputSettingsUpdateOptions, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of DatabaseAccountSqlDatabaseThroughputSetting))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : bool * Azure.ResourceManager.CosmosDB.Models.ThroughputSettingsUpdateOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt;&gt;&#xA;override this.CreateOrUpdateAsync : bool * Azure.ResourceManager.CosmosDB.Models.ThroughputSettingsUpdateOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt;&gt;" Usage="databaseAccountSqlDatabaseThroughputSetting.CreateOrUpdateAsync (waitForCompletion, updateThroughputParameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingCreateOrUpdateOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -142,7 +158,11 @@
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="updateThroughputParameters"> The parameters to provide for the RUs per second of the current SQL database. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Update RUs per second of an Azure Cosmos DB SQL database. </summary>
+        <summary>
+            Update RUs per second of an Azure Cosmos DB SQL database
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/sqlDatabases/{databaseName}/throughputSettings/default
+            Operation Id: SqlResources_UpdateSqlDatabaseThroughput
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -219,7 +239,11 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the RUs per second of the SQL database under an existing Azure Cosmos DB database account with the provided name. </summary>
+        <summary>
+            Gets the RUs per second of the SQL database under an existing Azure Cosmos DB database account with the provided name.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/sqlDatabases/{databaseName}/throughputSettings/default
+            Operation Id: SqlResources_GetSqlDatabaseThroughput
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -243,56 +267,12 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Gets the RUs per second of the SQL database under an existing Azure Cosmos DB database account with the provided name. </summary>
+        <summary>
+            Gets the RUs per second of the SQL database under an existing Azure Cosmos DB database account with the provided name.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/sqlDatabases/{databaseName}/throughputSettings/default
+            Operation Id: SqlResources_GetSqlDatabaseThroughput
+            </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetAvailableLocations">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt; GetAvailableLocations (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt; GetAvailableLocations(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting.GetAvailableLocations(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocations (Optional cancellationToken As CancellationToken = Nothing) As IEnumerable(Of AzureLocation)" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;&#xA;override this.GetAvailableLocations : System.Threading.CancellationToken -&gt; seq&lt;Azure.Core.AzureLocation&gt;" Usage="databaseAccountSqlDatabaseThroughputSetting.GetAvailableLocations cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Lists all available geo-locations. </summary>
-        <returns> A collection of locations that may take multiple service requests to iterate over. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetAvailableLocationsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Core.AzureLocation&gt;&gt; GetAvailableLocationsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting.GetAvailableLocationsAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAvailableLocationsAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of AzureLocation))" />
-      <MemberSignature Language="F#" Value="abstract member GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;&#xA;override this.GetAvailableLocationsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Azure.Core.AzureLocation&gt;&gt;" Usage="databaseAccountSqlDatabaseThroughputSetting.GetAvailableLocationsAsync cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Azure.Core.AzureLocation&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Lists all available geo-locations. </summary>
-        <returns> A collection of locations that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -317,18 +297,18 @@
       </Docs>
     </Member>
     <Member MemberName="MigrateSqlDatabaseToAutoscale">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingMigrateSqlDatabaseToAutoscaleOperation MigrateSqlDatabaseToAutoscale (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingMigrateSqlDatabaseToAutoscaleOperation MigrateSqlDatabaseToAutoscale(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt; MigrateSqlDatabaseToAutoscale (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt; MigrateSqlDatabaseToAutoscale(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting.MigrateSqlDatabaseToAutoscale(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function MigrateSqlDatabaseToAutoscale (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As DatabaseAccountSqlDatabaseThroughputSettingMigrateSqlDatabaseToAutoscaleOperation" />
-      <MemberSignature Language="F#" Value="abstract member MigrateSqlDatabaseToAutoscale : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingMigrateSqlDatabaseToAutoscaleOperation&#xA;override this.MigrateSqlDatabaseToAutoscale : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingMigrateSqlDatabaseToAutoscaleOperation" Usage="databaseAccountSqlDatabaseThroughputSetting.MigrateSqlDatabaseToAutoscale (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function MigrateSqlDatabaseToAutoscale (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of DatabaseAccountSqlDatabaseThroughputSetting)" />
+      <MemberSignature Language="F#" Value="abstract member MigrateSqlDatabaseToAutoscale : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt;&#xA;override this.MigrateSqlDatabaseToAutoscale : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt;" Usage="databaseAccountSqlDatabaseThroughputSetting.MigrateSqlDatabaseToAutoscale (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingMigrateSqlDatabaseToAutoscaleOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -337,24 +317,28 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Migrate an Azure Cosmos DB SQL database from manual throughput to autoscale. </summary>
+        <summary>
+            Migrate an Azure Cosmos DB SQL database from manual throughput to autoscale
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/sqlDatabases/{databaseName}/throughputSettings/default/migrateToAutoscale
+            Operation Id: SqlResources_MigrateSqlDatabaseToAutoscale
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MigrateSqlDatabaseToAutoscaleAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingMigrateSqlDatabaseToAutoscaleOperation&gt; MigrateSqlDatabaseToAutoscaleAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingMigrateSqlDatabaseToAutoscaleOperation&gt; MigrateSqlDatabaseToAutoscaleAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt;&gt; MigrateSqlDatabaseToAutoscaleAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt;&gt; MigrateSqlDatabaseToAutoscaleAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting.MigrateSqlDatabaseToAutoscaleAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function MigrateSqlDatabaseToAutoscaleAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of DatabaseAccountSqlDatabaseThroughputSettingMigrateSqlDatabaseToAutoscaleOperation)" />
-      <MemberSignature Language="F#" Value="abstract member MigrateSqlDatabaseToAutoscaleAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingMigrateSqlDatabaseToAutoscaleOperation&gt;&#xA;override this.MigrateSqlDatabaseToAutoscaleAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingMigrateSqlDatabaseToAutoscaleOperation&gt;" Usage="databaseAccountSqlDatabaseThroughputSetting.MigrateSqlDatabaseToAutoscaleAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function MigrateSqlDatabaseToAutoscaleAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of DatabaseAccountSqlDatabaseThroughputSetting))" />
+      <MemberSignature Language="F#" Value="abstract member MigrateSqlDatabaseToAutoscaleAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt;&gt;&#xA;override this.MigrateSqlDatabaseToAutoscaleAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt;&gt;" Usage="databaseAccountSqlDatabaseThroughputSetting.MigrateSqlDatabaseToAutoscaleAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingMigrateSqlDatabaseToAutoscaleOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -363,24 +347,28 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Migrate an Azure Cosmos DB SQL database from manual throughput to autoscale. </summary>
+        <summary>
+            Migrate an Azure Cosmos DB SQL database from manual throughput to autoscale
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/sqlDatabases/{databaseName}/throughputSettings/default/migrateToAutoscale
+            Operation Id: SqlResources_MigrateSqlDatabaseToAutoscale
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MigrateSqlDatabaseToManualThroughput">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingMigrateSqlDatabaseToManualThroughputOperation MigrateSqlDatabaseToManualThroughput (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingMigrateSqlDatabaseToManualThroughputOperation MigrateSqlDatabaseToManualThroughput(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt; MigrateSqlDatabaseToManualThroughput (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt; MigrateSqlDatabaseToManualThroughput(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting.MigrateSqlDatabaseToManualThroughput(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function MigrateSqlDatabaseToManualThroughput (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As DatabaseAccountSqlDatabaseThroughputSettingMigrateSqlDatabaseToManualThroughputOperation" />
-      <MemberSignature Language="F#" Value="abstract member MigrateSqlDatabaseToManualThroughput : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingMigrateSqlDatabaseToManualThroughputOperation&#xA;override this.MigrateSqlDatabaseToManualThroughput : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingMigrateSqlDatabaseToManualThroughputOperation" Usage="databaseAccountSqlDatabaseThroughputSetting.MigrateSqlDatabaseToManualThroughput (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function MigrateSqlDatabaseToManualThroughput (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of DatabaseAccountSqlDatabaseThroughputSetting)" />
+      <MemberSignature Language="F#" Value="abstract member MigrateSqlDatabaseToManualThroughput : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt;&#xA;override this.MigrateSqlDatabaseToManualThroughput : bool * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt;" Usage="databaseAccountSqlDatabaseThroughputSetting.MigrateSqlDatabaseToManualThroughput (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingMigrateSqlDatabaseToManualThroughputOperation</ReturnType>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -389,24 +377,28 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Migrate an Azure Cosmos DB SQL database from autoscale to manual throughput. </summary>
+        <summary>
+            Migrate an Azure Cosmos DB SQL database from autoscale to manual throughput
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/sqlDatabases/{databaseName}/throughputSettings/default/migrateToManualThroughput
+            Operation Id: SqlResources_MigrateSqlDatabaseToManualThroughput
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MigrateSqlDatabaseToManualThroughputAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingMigrateSqlDatabaseToManualThroughputOperation&gt; MigrateSqlDatabaseToManualThroughputAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingMigrateSqlDatabaseToManualThroughputOperation&gt; MigrateSqlDatabaseToManualThroughputAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt;&gt; MigrateSqlDatabaseToManualThroughputAsync (bool waitForCompletion, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt;&gt; MigrateSqlDatabaseToManualThroughputAsync(bool waitForCompletion, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting.MigrateSqlDatabaseToManualThroughputAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function MigrateSqlDatabaseToManualThroughputAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of DatabaseAccountSqlDatabaseThroughputSettingMigrateSqlDatabaseToManualThroughputOperation)" />
-      <MemberSignature Language="F#" Value="abstract member MigrateSqlDatabaseToManualThroughputAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingMigrateSqlDatabaseToManualThroughputOperation&gt;&#xA;override this.MigrateSqlDatabaseToManualThroughputAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingMigrateSqlDatabaseToManualThroughputOperation&gt;" Usage="databaseAccountSqlDatabaseThroughputSetting.MigrateSqlDatabaseToManualThroughputAsync (waitForCompletion, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function MigrateSqlDatabaseToManualThroughputAsync (waitForCompletion As Boolean, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of DatabaseAccountSqlDatabaseThroughputSetting))" />
+      <MemberSignature Language="F#" Value="abstract member MigrateSqlDatabaseToManualThroughputAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt;&gt;&#xA;override this.MigrateSqlDatabaseToManualThroughputAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt;&gt;" Usage="databaseAccountSqlDatabaseThroughputSetting.MigrateSqlDatabaseToManualThroughputAsync (waitForCompletion, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.CosmosDB.Models.DatabaseAccountSqlDatabaseThroughputSettingMigrateSqlDatabaseToManualThroughputOperation&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.CosmosDB.DatabaseAccountSqlDatabaseThroughputSetting&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="waitForCompletion" Type="System.Boolean" />
@@ -415,7 +407,11 @@
       <Docs>
         <param name="waitForCompletion"> Waits for the completion of the long running operations. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Migrate an Azure Cosmos DB SQL database from autoscale to manual throughput. </summary>
+        <summary>
+            Migrate an Azure Cosmos DB SQL database from autoscale to manual throughput
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/sqlDatabases/{databaseName}/throughputSettings/default/migrateToManualThroughput
+            Operation Id: SqlResources_MigrateSqlDatabaseToManualThroughput
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -439,11 +435,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="key"> The key of the tag to remove. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Removes a tag by key from the resource. </summary>
+        <param name="key"> The key for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Removes a tag by key from the resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/sqlDatabases/{databaseName}/throughputSettings/default
+            Operation Id: SqlResources_GetSqlDatabaseThroughput
+            </summary>
         <returns> The updated resource with the tag removed. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveTagAsync">
@@ -465,11 +467,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="key"> The key of the tag to remove. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Removes a tag by key from the resource. </summary>
+        <param name="key"> The key for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Removes a tag by key from the resource.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/sqlDatabases/{databaseName}/throughputSettings/default
+            Operation Id: SqlResources_GetSqlDatabaseThroughput
+            </summary>
         <returns> The updated resource with the tag removed. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ResourceType">
@@ -511,10 +519,16 @@
       </Parameters>
       <Docs>
         <param name="tags"> The set of tags to use as replacement. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Replace the tags on the resource with the given set. </summary>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Replace the tags on the resource with the given set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/sqlDatabases/{databaseName}/throughputSettings/default
+            Operation Id: SqlResources_GetSqlDatabaseThroughput
+            </summary>
         <returns> The updated resource with the tags replaced. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tags" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="SetTagsAsync">
@@ -537,10 +551,16 @@
       </Parameters>
       <Docs>
         <param name="tags"> The set of tags to use as replacement. </param>
-        <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="P:System.Threading.CancellationToken.None" />. </param>
-        <summary> Replace the tags on the resource with the given set. </summary>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Replace the tags on the resource with the given set.
+            Request Path: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/sqlDatabases/{databaseName}/throughputSettings/default
+            Operation Id: SqlResources_GetSqlDatabaseThroughput
+            </summary>
         <returns> The updated resource with the tags replaced. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tags" /> is null. </exception>
       </Docs>
     </Member>
   </Members>

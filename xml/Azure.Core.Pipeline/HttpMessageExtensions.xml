@@ -1,0 +1,51 @@
+<Type Name="HttpMessageExtensions" FullName="Azure.Core.Pipeline.HttpMessageExtensions">
+  <TypeSignature Language="C#" Value="public static class HttpMessageExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit HttpMessageExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.Core.Pipeline.HttpMessageExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module HttpMessageExtensions" />
+  <TypeSignature Language="F#" Value="type HttpMessageExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Core</AssemblyName>
+    <AssemblyVersion>1.23.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Extension methods for <see cref="T:Azure.Core.HttpMessage" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SetUserAgentString">
+      <MemberSignature Language="C#" Value="public static void SetUserAgentString (this Azure.Core.HttpMessage message, Azure.Core.Pipeline.UserAgentValue userAgentValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetUserAgentString(class Azure.Core.HttpMessage message, class Azure.Core.Pipeline.UserAgentValue userAgentValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Core.Pipeline.HttpMessageExtensions.SetUserAgentString(Azure.Core.HttpMessage,Azure.Core.Pipeline.UserAgentValue)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub SetUserAgentString (message As HttpMessage, userAgentValue As UserAgentValue)" />
+      <MemberSignature Language="F#" Value="static member SetUserAgentString : Azure.Core.HttpMessage * Azure.Core.Pipeline.UserAgentValue -&gt; unit" Usage="Azure.Core.Pipeline.HttpMessageExtensions.SetUserAgentString (message, userAgentValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Core</AssemblyName>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="Azure.Core.HttpMessage" RefType="this" />
+        <Parameter Name="userAgentValue" Type="Azure.Core.Pipeline.UserAgentValue" />
+      </Parameters>
+      <Docs>
+        <param name="message">The <see cref="T:Azure.Core.HttpMessage" />.</param>
+        <param name="userAgentValue">The <see cref="M:Azure.Core.Pipeline.HttpMessageExtensions.SetUserAgentString(Azure.Core.HttpMessage,Azure.Core.Pipeline.UserAgentValue)" />.</param>
+        <summary>
+            Sets the package name and version portion of the UserAgent telemetry value.
+            Note: If <see cref="P:Azure.Core.DiagnosticsOptions.IsTelemetryEnabled" /> is false, this value is never used.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
