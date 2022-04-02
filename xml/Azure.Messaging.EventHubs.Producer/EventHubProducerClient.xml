@@ -27,20 +27,11 @@
                A client responsible for publishing <see cref="T:Azure.Messaging.EventHubs.EventData" /> to a specific Event Hub,
                grouped together in batches.  Depending on the options specified when sending, events may
                be automatically assigned an available partition or may request a specific partition.
-            
-               The <see cref="T:Azure.Messaging.EventHubs.Producer.EventHubProducerClient" /> publishes immediately, ensuring a deterministic
-               outcome for each send operation, though requires that callers own the responsibility of
-               building and managing batches.
-            
-               In scenarios where it is not important to have events published immediately and where
-               maximizing partition availability is not a requirement, it is recommended to consider
-               using the <see cref="T:Azure.Messaging.EventHubs.Producer.EventHubBufferedProducerClient" />, which takes responsibility for
-               building and managing batches to reduce the complexity of doing so in application code.
              </summary>
     <remarks>
       <list type="bullet">
         <listheader>
-          <description>Allowing partition assignment is recommended when:</description>
+          <description>Allowing automatic routing of partitions is recommended when:</description>
         </listheader>
         <item>
           <description>The sending of events needs to be highly available.</description>
@@ -435,8 +426,8 @@
              </summary>
         <returns>An <see cref="T:Azure.Messaging.EventHubs.Producer.EventDataBatch" /> with the default batch options.</returns>
         <remarks>To be added.</remarks>
-        <altmember cref="M:Azure.Messaging.EventHubs.Producer.EventHubProducerClient.CreateBatchAsync(Azure.Messaging.EventHubs.Producer.CreateBatchOptions,System.Threading.CancellationToken)" />
         <altmember cref="M:Azure.Messaging.EventHubs.Producer.EventHubProducerClient.SendAsync(Azure.Messaging.EventHubs.Producer.EventDataBatch,System.Threading.CancellationToken)" />
+        <altmember cref="M:Azure.Messaging.EventHubs.Producer.EventHubProducerClient.CreateBatchAsync(Azure.Messaging.EventHubs.Producer.CreateBatchOptions,System.Threading.CancellationToken)" />
       </Docs>
     </Member>
     <Member MemberName="CreateBatchAsync">
@@ -476,9 +467,9 @@
              </summary>
         <returns>An <see cref="T:Azure.Messaging.EventHubs.Producer.EventDataBatch" /> with the requested <paramref name="options" />.</returns>
         <remarks>To be added.</remarks>
-        <altmember cref="M:Azure.Messaging.EventHubs.Producer.EventHubProducerClient.SendAsync(Azure.Messaging.EventHubs.Producer.EventDataBatch,System.Threading.CancellationToken)" />
-        <exception cref="T:System.InvalidOperationException">Occurs when both a partition identifier and partition key have been specified in the <paramref name="options" />.</exception>
         <altmember cref="M:Azure.Messaging.EventHubs.Producer.EventHubProducerClient.CreateBatchAsync(System.Threading.CancellationToken)" />
+        <exception cref="T:System.InvalidOperationException">Occurs when both a partition identifier and partition key have been specified in the <paramref name="options" />.</exception>
+        <altmember cref="M:Azure.Messaging.EventHubs.Producer.EventHubProducerClient.SendAsync(Azure.Messaging.EventHubs.Producer.EventDataBatch,System.Threading.CancellationToken)" />
       </Docs>
     </Member>
     <Member MemberName="DisposeAsync">
@@ -922,13 +913,13 @@
                When published, the result is atomic; either all events that belong to the set were successful or all
                have failed.  Partial success is not possible.
              </remarks>
-        <altmember cref="M:Azure.Messaging.EventHubs.Producer.EventHubProducerClient.SendAsync(Azure.Messaging.EventHubs.Producer.EventDataBatch,System.Threading.CancellationToken)" />
         <altmember cref="M:Azure.Messaging.EventHubs.Producer.EventHubProducerClient.CreateBatchAsync(System.Threading.CancellationToken)" />
+        <altmember cref="M:Azure.Messaging.EventHubs.Producer.EventHubProducerClient.SendAsync(System.Collections.Generic.IEnumerable{Azure.Messaging.EventHubs.EventData},Azure.Messaging.EventHubs.Producer.SendEventOptions,System.Threading.CancellationToken)" />
         <exception cref="T:Azure.Messaging.EventHubs.EventHubsException">
                Occurs when the set of events exceeds the maximum size allowed in a single batch, as determined by the Event Hubs service.  The <see cref="P:Azure.Messaging.EventHubs.EventHubsException.Reason" /> will be set to
                <see cref="F:Azure.Messaging.EventHubs.EventHubsException.FailureReason.MessageSizeExceeded" /> in this case.
              </exception>
-        <altmember cref="M:Azure.Messaging.EventHubs.Producer.EventHubProducerClient.SendAsync(System.Collections.Generic.IEnumerable{Azure.Messaging.EventHubs.EventData},Azure.Messaging.EventHubs.Producer.SendEventOptions,System.Threading.CancellationToken)" />
+        <altmember cref="M:Azure.Messaging.EventHubs.Producer.EventHubProducerClient.SendAsync(Azure.Messaging.EventHubs.Producer.EventDataBatch,System.Threading.CancellationToken)" />
       </Docs>
     </Member>
     <Member MemberName="SendAsync">
@@ -976,14 +967,14 @@
                When published, the result is atomic; either all events that belong to the set were successful or all
                have failed.  Partial success is not possible.
              </remarks>
-        <altmember cref="M:Azure.Messaging.EventHubs.Producer.EventHubProducerClient.SendAsync(Azure.Messaging.EventHubs.Producer.EventDataBatch,System.Threading.CancellationToken)" />
         <altmember cref="M:Azure.Messaging.EventHubs.Producer.EventHubProducerClient.CreateBatchAsync(Azure.Messaging.EventHubs.Producer.CreateBatchOptions,System.Threading.CancellationToken)" />
+        <altmember cref="M:Azure.Messaging.EventHubs.Producer.EventHubProducerClient.SendAsync(System.Collections.Generic.IEnumerable{Azure.Messaging.EventHubs.EventData},System.Threading.CancellationToken)" />
         <exception cref="T:System.InvalidOperationException">Occurs when both a partition identifier and partition key have been specified in the <paramref name="options" />.</exception>
         <exception cref="T:Azure.Messaging.EventHubs.EventHubsException">
                Occurs when the set of events exceeds the maximum size allowed in a single batch, as determined by the Event Hubs service.  The <see cref="P:Azure.Messaging.EventHubs.EventHubsException.Reason" /> will be set to
                <see cref="F:Azure.Messaging.EventHubs.EventHubsException.FailureReason.MessageSizeExceeded" /> in this case.
              </exception>
-        <altmember cref="M:Azure.Messaging.EventHubs.Producer.EventHubProducerClient.SendAsync(System.Collections.Generic.IEnumerable{Azure.Messaging.EventHubs.EventData},System.Threading.CancellationToken)" />
+        <altmember cref="M:Azure.Messaging.EventHubs.Producer.EventHubProducerClient.SendAsync(Azure.Messaging.EventHubs.Producer.EventDataBatch,System.Threading.CancellationToken)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">

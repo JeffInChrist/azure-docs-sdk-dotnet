@@ -573,12 +573,9 @@
              </summary>
         <returns>The checkpoint for the processor to take into account when initializing partition.</returns>
         <remarks>
-               Should a partition not have a corresponding checkpoint, the <see cref="P:Azure.Messaging.EventHubs.Primitives.EventProcessorOptions.DefaultStartingPosition" /> will
+               Should a partition not have a corresponding checkpoint, the default starting position set by the <see cref="E:Azure.Messaging.EventHubs.EventProcessorClient.PartitionInitializingAsync" /> handler
+               will be applied.  If no partition-specific starting point was specified, the <see cref="P:Azure.Messaging.EventHubs.Primitives.EventProcessorOptions.DefaultStartingPosition" /> will
                be used to initialize the partition for processing.
-            
-               In the event that a custom starting point is desired for a single partition, or each partition should start at a unique place,
-               it is recommended that this method express that intent by returning checkpoints for those partitions with the desired custom
-               starting location set.
              </remarks>
       </Docs>
     </Member>
@@ -1273,7 +1270,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task UpdateCheckpointAsync(string partitionId, int64 offset, valuetype System.Nullable`1&lt;int64&gt; sequenceNumber, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Messaging.EventHubs.EventProcessorClient.UpdateCheckpointAsync(System.String,System.Int64,System.Nullable{System.Int64},System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function UpdateCheckpointAsync (partitionId As String, offset As Long, sequenceNumber As Nullable(Of Long), cancellationToken As CancellationToken) As Task" />
-      <MemberSignature Language="F#" Value="override this.UpdateCheckpointAsync : string * int64 * Nullable&lt;int64&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="eventProcessorClient.UpdateCheckpointAsync (partitionId, offset, sequenceNumber, cancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateCheckpointAsync : string * int64 * Nullable&lt;int64&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.UpdateCheckpointAsync : string * int64 * Nullable&lt;int64&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="eventProcessorClient.UpdateCheckpointAsync (partitionId, offset, sequenceNumber, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Messaging.EventHubs.Processor</AssemblyName>

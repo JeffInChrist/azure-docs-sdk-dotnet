@@ -1,0 +1,101 @@
+<Type Name="HealthcareFhirResourceEventBaseProperties" FullName="Azure.Messaging.EventGrid.SystemEvents.HealthcareFhirResourceEventBaseProperties">
+  <TypeSignature Language="C#" Value="public class HealthcareFhirResourceEventBaseProperties" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HealthcareFhirResourceEventBaseProperties extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.Messaging.EventGrid.SystemEvents.HealthcareFhirResourceEventBaseProperties" />
+  <TypeSignature Language="VB.NET" Value="Public Class HealthcareFhirResourceEventBaseProperties" />
+  <TypeSignature Language="F#" Value="type HealthcareFhirResourceEventBaseProperties = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Messaging.EventGrid</AssemblyName>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> Schema of common properties of all FhirResource events. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ResourceFhirAccount">
+      <MemberSignature Language="C#" Value="public string ResourceFhirAccount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResourceFhirAccount" />
+      <MemberSignature Language="DocId" Value="P:Azure.Messaging.EventGrid.SystemEvents.HealthcareFhirResourceEventBaseProperties.ResourceFhirAccount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceFhirAccount As String" />
+      <MemberSignature Language="F#" Value="member this.ResourceFhirAccount : string" Usage="Azure.Messaging.EventGrid.SystemEvents.HealthcareFhirResourceEventBaseProperties.ResourceFhirAccount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Messaging.EventGrid</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Domain name of FHIR account for this resource. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceFhirId">
+      <MemberSignature Language="C#" Value="public string ResourceFhirId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResourceFhirId" />
+      <MemberSignature Language="DocId" Value="P:Azure.Messaging.EventGrid.SystemEvents.HealthcareFhirResourceEventBaseProperties.ResourceFhirId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceFhirId As String" />
+      <MemberSignature Language="F#" Value="member this.ResourceFhirId : string" Usage="Azure.Messaging.EventGrid.SystemEvents.HealthcareFhirResourceEventBaseProperties.ResourceFhirId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Messaging.EventGrid</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Id of HL7 FHIR resource. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceType">
+      <MemberSignature Language="C#" Value="public Azure.Messaging.EventGrid.SystemEvents.HealthcareFhirResourceType? ResourceType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.Messaging.EventGrid.SystemEvents.HealthcareFhirResourceType&gt; ResourceType" />
+      <MemberSignature Language="DocId" Value="P:Azure.Messaging.EventGrid.SystemEvents.HealthcareFhirResourceEventBaseProperties.ResourceType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceType As Nullable(Of HealthcareFhirResourceType)" />
+      <MemberSignature Language="F#" Value="member this.ResourceType : Nullable&lt;Azure.Messaging.EventGrid.SystemEvents.HealthcareFhirResourceType&gt;" Usage="Azure.Messaging.EventGrid.SystemEvents.HealthcareFhirResourceEventBaseProperties.ResourceType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Messaging.EventGrid</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.Messaging.EventGrid.SystemEvents.HealthcareFhirResourceType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Type of HL7 FHIR resource. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceVersionId">
+      <MemberSignature Language="C#" Value="public long? ResourceVersionId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; ResourceVersionId" />
+      <MemberSignature Language="DocId" Value="P:Azure.Messaging.EventGrid.SystemEvents.HealthcareFhirResourceEventBaseProperties.ResourceVersionId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceVersionId As Nullable(Of Long)" />
+      <MemberSignature Language="F#" Value="member this.ResourceVersionId : Nullable&lt;int64&gt;" Usage="Azure.Messaging.EventGrid.SystemEvents.HealthcareFhirResourceEventBaseProperties.ResourceVersionId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Messaging.EventGrid</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> VersionId of HL7 FHIR resource. It changes when the resource is created, updated, or deleted(soft-deletion). </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

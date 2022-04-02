@@ -11,6 +11,7 @@
     <AssemblyVersion>12.7.0.0</AssemblyVersion>
     <AssemblyVersion>12.8.0.0</AssemblyVersion>
     <AssemblyVersion>12.9.0.0</AssemblyVersion>
+    <AssemblyVersion>12.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.Core.ClientOptions</BaseTypeName>
@@ -37,6 +38,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="version" Type="Azure.Storage.Files.DataLake.DataLakeClientOptions+ServiceVersion" />
@@ -53,6 +55,28 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CustomerProvidedKey">
+      <MemberSignature Language="C#" Value="public Azure.Storage.Files.DataLake.Models.DataLakeCustomerProvidedKey? CustomerProvidedKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.Storage.Files.DataLake.Models.DataLakeCustomerProvidedKey&gt; CustomerProvidedKey" />
+      <MemberSignature Language="DocId" Value="P:Azure.Storage.Files.DataLake.DataLakeClientOptions.CustomerProvidedKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomerProvidedKey As Nullable(Of DataLakeCustomerProvidedKey)" />
+      <MemberSignature Language="F#" Value="member this.CustomerProvidedKey : Nullable&lt;Azure.Storage.Files.DataLake.Models.DataLakeCustomerProvidedKey&gt; with get, set" Usage="Azure.Storage.Files.DataLake.DataLakeClientOptions.CustomerProvidedKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Storage.Files.DataLake</AssemblyName>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.Storage.Files.DataLake.Models.DataLakeCustomerProvidedKey&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the <see cref="P:Azure.Storage.Files.DataLake.DataLakeClientOptions.CustomerProvidedKey" /> to be used when making requests.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="EnableTenantDiscovery">
       <MemberSignature Language="C#" Value="public bool EnableTenantDiscovery { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableTenantDiscovery" />
@@ -64,6 +88,7 @@
         <AssemblyName>Azure.Storage.Files.DataLake</AssemblyName>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -91,6 +116,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -124,6 +150,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Storage.Files.DataLake.DataLakeClientOptions+ServiceVersion</ReturnType>
