@@ -38,18 +38,18 @@
       </Docs>
     </Member>
     <Member MemberName="Confidence">
-      <MemberSignature Language="C#" Value="public double Confidence { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance float64 Confidence" />
+      <MemberSignature Language="C#" Value="public float Confidence { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Confidence" />
       <MemberSignature Language="DocId" Value="P:Azure.AI.Language.Conversations.TargetIntentResult.Confidence" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Confidence As Double" />
-      <MemberSignature Language="F#" Value="member this.Confidence : double" Usage="Azure.AI.Language.Conversations.TargetIntentResult.Confidence" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Confidence As Single" />
+      <MemberSignature Language="F#" Value="member this.Confidence : single" Usage="Azure.AI.Language.Conversations.TargetIntentResult.Confidence" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Language.Conversations</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
+        <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
         <summary> The prediction score and it ranges from 0.0 to 1.0. </summary>

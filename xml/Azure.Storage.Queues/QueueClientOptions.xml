@@ -11,6 +11,7 @@
     <AssemblyVersion>12.7.0.0</AssemblyVersion>
     <AssemblyVersion>12.8.0.0</AssemblyVersion>
     <AssemblyVersion>12.9.0.0</AssemblyVersion>
+    <AssemblyVersion>12.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.Core.ClientOptions</BaseTypeName>
@@ -38,6 +39,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="version" Type="Azure.Storage.Queues.QueueClientOptions+ServiceVersion" />
@@ -65,6 +67,7 @@
         <AssemblyName>Azure.Storage.Queues</AssemblyName>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -92,6 +95,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -123,6 +127,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.SyncAsyncEventHandler&lt;Azure.Storage.Queues.QueueMessageDecodingFailedEventArgs&gt;</ReturnType>
@@ -185,6 +190,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Storage.Queues.QueueMessageEncoding</ReturnType>
@@ -212,6 +218,7 @@
         <AssemblyVersion>12.7.0.0</AssemblyVersion>
         <AssemblyVersion>12.8.0.0</AssemblyVersion>
         <AssemblyVersion>12.9.0.0</AssemblyVersion>
+        <AssemblyVersion>12.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Storage.Queues.QueueClientOptions+ServiceVersion</ReturnType>
