@@ -212,7 +212,7 @@ azureaiformrecognizer,[tfm=netstandard2.0]Azure.AI.FormRecognizer,3.1.1
 microsoftazureapplicationinsightsquery,[tfm=netstandard2.0]Microsoft.Azure.ApplicationInsights.Query
 microsoftazureeventhubs,[tfm=netstandard2.0]Microsoft.Azure.EventHubs
 microsoftazureeventhubsprocessor,[tfm=netstandard2.0]Microsoft.Azure.EventHubs.Processor
-systemmemorydata,[tfm=netstandard2.0]System.Memory.Data,1.0.2
+systemmemorydata,[tfm=netstandard2.0]System.Memory.Data
 azurestackhci,Microsoft.Azure.Management.AzureStackHCI
 azurecoreamqp,[tfm=netstandard2.0]Azure.Core.Amqp,1.2.0
 azuremessagingservicebus,[tfm=netstandard2.0]Azure.Messaging.ServiceBus,7.7.0
@@ -257,3 +257,5 @@ kubernetesconfiguration,Microsoft.Azure.Management.KubernetesConfiguration
 azurecontainerscontainerregistry,[tfm=netstandard2.0]Azure.Containers.ContainerRegistry,1.0.0
 azurecommunicationnetworktraversal,[tfm=netstandard2.0]Azure.Communication.NetworkTraversal,1.0.0
 azuremgmtsubscription,Microsoft.Azure.Management.Subscription
+azureresourcemanager,[tfm=netstandard2.0;customSource=https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-net/nuget/v3/index.json]Azure.ResourceManager,1.0.0
+azureresourcemanagerresources,[tfm=netstandard2.0;customSource=https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-net/nuget/v3/index.json]Azure.ResourceManager.Resources,1.0.0
