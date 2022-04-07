@@ -19,6 +19,8 @@
     <AssemblyVersion>1.21.0.0</AssemblyVersion>
     <AssemblyVersion>1.22.0.0</AssemblyVersion>
     <AssemblyVersion>1.23.0.0</AssemblyVersion>
+    <AssemblyVersion>1.24.0.0</AssemblyVersion>
+    <AssemblyVersion>1.25.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -51,6 +53,8 @@
         <AssemblyVersion>1.21.0.0</AssemblyVersion>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.GeoJson.GeoObjectType</ReturnType>
@@ -84,6 +88,8 @@
         <AssemblyVersion>1.21.0.0</AssemblyVersion>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.GeoJson.GeoObjectType</ReturnType>
@@ -117,6 +123,8 @@
         <AssemblyVersion>1.21.0.0</AssemblyVersion>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.GeoJson.GeoObjectType</ReturnType>
@@ -150,6 +158,8 @@
         <AssemblyVersion>1.21.0.0</AssemblyVersion>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.GeoJson.GeoObjectType</ReturnType>
@@ -183,6 +193,8 @@
         <AssemblyVersion>1.21.0.0</AssemblyVersion>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.GeoJson.GeoObjectType</ReturnType>
@@ -216,6 +228,8 @@
         <AssemblyVersion>1.21.0.0</AssemblyVersion>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.GeoJson.GeoObjectType</ReturnType>
@@ -249,6 +263,8 @@
         <AssemblyVersion>1.21.0.0</AssemblyVersion>
         <AssemblyVersion>1.22.0.0</AssemblyVersion>
         <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.GeoJson.GeoObjectType</ReturnType>

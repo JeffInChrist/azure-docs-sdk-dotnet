@@ -503,11 +503,11 @@
       </Docs>
     </Member>
     <Member MemberName="Update">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Monitor.ActionGroupResource&gt; Update (Azure.ResourceManager.Monitor.Models.PatchableActionGroupData data, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Monitor.ActionGroupResource&gt; Update(class Azure.ResourceManager.Monitor.Models.PatchableActionGroupData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.ActionGroupResource.Update(Azure.ResourceManager.Monitor.Models.PatchableActionGroupData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (data As PatchableActionGroupData, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ActionGroupResource)" />
-      <MemberSignature Language="F#" Value="abstract member Update : Azure.ResourceManager.Monitor.Models.PatchableActionGroupData * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Monitor.ActionGroupResource&gt;&#xA;override this.Update : Azure.ResourceManager.Monitor.Models.PatchableActionGroupData * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Monitor.ActionGroupResource&gt;" Usage="actionGroupResource.Update (data, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Monitor.ActionGroupResource&gt; Update (Azure.ResourceManager.Monitor.Models.ActionGroupPatch patch, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Monitor.ActionGroupResource&gt; Update(class Azure.ResourceManager.Monitor.Models.ActionGroupPatch patch, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.ActionGroupResource.Update(Azure.ResourceManager.Monitor.Models.ActionGroupPatch,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (patch As ActionGroupPatch, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ActionGroupResource)" />
+      <MemberSignature Language="F#" Value="abstract member Update : Azure.ResourceManager.Monitor.Models.ActionGroupPatch * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Monitor.ActionGroupResource&gt;&#xA;override this.Update : Azure.ResourceManager.Monitor.Models.ActionGroupPatch * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Monitor.ActionGroupResource&gt;" Usage="actionGroupResource.Update (patch, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
@@ -517,11 +517,11 @@
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Monitor.ActionGroupResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="data" Type="Azure.ResourceManager.Monitor.Models.PatchableActionGroupData" />
+        <Parameter Name="patch" Type="Azure.ResourceManager.Monitor.Models.ActionGroupPatch" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="data"> Parameters supplied to the operation. </param>
+        <param name="patch"> Parameters supplied to the operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Updates an existing action group's tags. To update other fields use the CreateOrUpdate method.
@@ -531,15 +531,15 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="data" /> is null. </exception>
+          <paramref name="patch" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Monitor.ActionGroupResource&gt;&gt; UpdateAsync (Azure.ResourceManager.Monitor.Models.PatchableActionGroupData data, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Monitor.ActionGroupResource&gt;&gt; UpdateAsync(class Azure.ResourceManager.Monitor.Models.PatchableActionGroupData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.ActionGroupResource.UpdateAsync(Azure.ResourceManager.Monitor.Models.PatchableActionGroupData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (data As PatchableActionGroupData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ActionGroupResource))" />
-      <MemberSignature Language="F#" Value="abstract member UpdateAsync : Azure.ResourceManager.Monitor.Models.PatchableActionGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Monitor.ActionGroupResource&gt;&gt;&#xA;override this.UpdateAsync : Azure.ResourceManager.Monitor.Models.PatchableActionGroupData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Monitor.ActionGroupResource&gt;&gt;" Usage="actionGroupResource.UpdateAsync (data, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Monitor.ActionGroupResource&gt;&gt; UpdateAsync (Azure.ResourceManager.Monitor.Models.ActionGroupPatch patch, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Monitor.ActionGroupResource&gt;&gt; UpdateAsync(class Azure.ResourceManager.Monitor.Models.ActionGroupPatch patch, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Monitor.ActionGroupResource.UpdateAsync(Azure.ResourceManager.Monitor.Models.ActionGroupPatch,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (patch As ActionGroupPatch, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ActionGroupResource))" />
+      <MemberSignature Language="F#" Value="abstract member UpdateAsync : Azure.ResourceManager.Monitor.Models.ActionGroupPatch * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Monitor.ActionGroupResource&gt;&gt;&#xA;override this.UpdateAsync : Azure.ResourceManager.Monitor.Models.ActionGroupPatch * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Monitor.ActionGroupResource&gt;&gt;" Usage="actionGroupResource.UpdateAsync (patch, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Monitor</AssemblyName>
@@ -549,11 +549,11 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Monitor.ActionGroupResource&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="data" Type="Azure.ResourceManager.Monitor.Models.PatchableActionGroupData" />
+        <Parameter Name="patch" Type="Azure.ResourceManager.Monitor.Models.ActionGroupPatch" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="data"> Parameters supplied to the operation. </param>
+        <param name="patch"> Parameters supplied to the operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Updates an existing action group's tags. To update other fields use the CreateOrUpdate method.
@@ -563,7 +563,7 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="data" /> is null. </exception>
+          <paramref name="patch" /> is null. </exception>
       </Docs>
     </Member>
   </Members>

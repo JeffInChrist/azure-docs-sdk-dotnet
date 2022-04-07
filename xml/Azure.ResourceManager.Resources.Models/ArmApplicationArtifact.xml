@@ -17,12 +17,12 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
-    <Member MemberName="ArmApplicationArtifactType">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.ArmApplicationArtifactType ArmApplicationArtifactType { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.ResourceManager.Resources.Models.ArmApplicationArtifactType ArmApplicationArtifactType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.ArmApplicationArtifact.ArmApplicationArtifactType" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ArmApplicationArtifactType As ArmApplicationArtifactType" />
-      <MemberSignature Language="F#" Value="member this.ArmApplicationArtifactType : Azure.ResourceManager.Resources.Models.ArmApplicationArtifactType" Usage="Azure.ResourceManager.Resources.Models.ArmApplicationArtifact.ArmApplicationArtifactType" />
+    <Member MemberName="ArtifactType">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.ArmApplicationArtifactType ArtifactType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.ResourceManager.Resources.Models.ArmApplicationArtifactType ArtifactType" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.ArmApplicationArtifact.ArtifactType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ArtifactType As ArmApplicationArtifactType" />
+      <MemberSignature Language="F#" Value="member this.ArtifactType : Azure.ResourceManager.Resources.Models.ArmApplicationArtifactType" Usage="Azure.ResourceManager.Resources.Models.ArmApplicationArtifact.ArtifactType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>

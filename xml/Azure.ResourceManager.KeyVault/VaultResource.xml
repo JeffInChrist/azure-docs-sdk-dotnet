@@ -762,11 +762,11 @@
       </Docs>
     </Member>
     <Member MemberName="Update">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.KeyVault.VaultResource&gt; Update (Azure.ResourceManager.KeyVault.Models.PatchableVaultData data, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.KeyVault.VaultResource&gt; Update(class Azure.ResourceManager.KeyVault.Models.PatchableVaultData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.VaultResource.Update(Azure.ResourceManager.KeyVault.Models.PatchableVaultData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (data As PatchableVaultData, Optional cancellationToken As CancellationToken = Nothing) As Response(Of VaultResource)" />
-      <MemberSignature Language="F#" Value="abstract member Update : Azure.ResourceManager.KeyVault.Models.PatchableVaultData * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.KeyVault.VaultResource&gt;&#xA;override this.Update : Azure.ResourceManager.KeyVault.Models.PatchableVaultData * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.KeyVault.VaultResource&gt;" Usage="vaultResource.Update (data, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.KeyVault.VaultResource&gt; Update (Azure.ResourceManager.KeyVault.Models.VaultPatch patch, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.KeyVault.VaultResource&gt; Update(class Azure.ResourceManager.KeyVault.Models.VaultPatch patch, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.VaultResource.Update(Azure.ResourceManager.KeyVault.Models.VaultPatch,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (patch As VaultPatch, Optional cancellationToken As CancellationToken = Nothing) As Response(Of VaultResource)" />
+      <MemberSignature Language="F#" Value="abstract member Update : Azure.ResourceManager.KeyVault.Models.VaultPatch * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.KeyVault.VaultResource&gt;&#xA;override this.Update : Azure.ResourceManager.KeyVault.Models.VaultPatch * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.KeyVault.VaultResource&gt;" Usage="vaultResource.Update (patch, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
@@ -776,11 +776,11 @@
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.KeyVault.VaultResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="data" Type="Azure.ResourceManager.KeyVault.Models.PatchableVaultData" />
+        <Parameter Name="patch" Type="Azure.ResourceManager.KeyVault.Models.VaultPatch" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="data"> Parameters to patch the vault. </param>
+        <param name="patch"> Parameters to patch the vault. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Update a key vault in the specified subscription.
@@ -790,7 +790,7 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="data" /> is null. </exception>
+          <paramref name="patch" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="UpdateAccessPolicy">
@@ -862,11 +862,11 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.KeyVault.VaultResource&gt;&gt; UpdateAsync (Azure.ResourceManager.KeyVault.Models.PatchableVaultData data, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.KeyVault.VaultResource&gt;&gt; UpdateAsync(class Azure.ResourceManager.KeyVault.Models.PatchableVaultData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.VaultResource.UpdateAsync(Azure.ResourceManager.KeyVault.Models.PatchableVaultData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (data As PatchableVaultData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of VaultResource))" />
-      <MemberSignature Language="F#" Value="abstract member UpdateAsync : Azure.ResourceManager.KeyVault.Models.PatchableVaultData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.KeyVault.VaultResource&gt;&gt;&#xA;override this.UpdateAsync : Azure.ResourceManager.KeyVault.Models.PatchableVaultData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.KeyVault.VaultResource&gt;&gt;" Usage="vaultResource.UpdateAsync (data, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.KeyVault.VaultResource&gt;&gt; UpdateAsync (Azure.ResourceManager.KeyVault.Models.VaultPatch patch, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.KeyVault.VaultResource&gt;&gt; UpdateAsync(class Azure.ResourceManager.KeyVault.Models.VaultPatch patch, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.VaultResource.UpdateAsync(Azure.ResourceManager.KeyVault.Models.VaultPatch,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (patch As VaultPatch, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of VaultResource))" />
+      <MemberSignature Language="F#" Value="abstract member UpdateAsync : Azure.ResourceManager.KeyVault.Models.VaultPatch * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.KeyVault.VaultResource&gt;&gt;&#xA;override this.UpdateAsync : Azure.ResourceManager.KeyVault.Models.VaultPatch * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.KeyVault.VaultResource&gt;&gt;" Usage="vaultResource.UpdateAsync (patch, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
@@ -876,11 +876,11 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.KeyVault.VaultResource&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="data" Type="Azure.ResourceManager.KeyVault.Models.PatchableVaultData" />
+        <Parameter Name="patch" Type="Azure.ResourceManager.KeyVault.Models.VaultPatch" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="data"> Parameters to patch the vault. </param>
+        <param name="patch"> Parameters to patch the vault. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Update a key vault in the specified subscription.
@@ -890,7 +890,7 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="data" /> is null. </exception>
+          <paramref name="patch" /> is null. </exception>
       </Docs>
     </Member>
   </Members>

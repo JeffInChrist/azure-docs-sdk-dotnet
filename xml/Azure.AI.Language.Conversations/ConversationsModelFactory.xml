@@ -220,11 +220,11 @@
       </Docs>
     </Member>
     <Member MemberName="ConversationTargetIntentResult">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.ConversationTargetIntentResult ConversationTargetIntentResult (Azure.AI.Language.Conversations.TargetKind targetKind = default, string apiVersion = default, double confidence = 0, Azure.AI.Language.Conversations.ConversationResult result = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.ConversationTargetIntentResult ConversationTargetIntentResult(valuetype Azure.AI.Language.Conversations.TargetKind targetKind, string apiVersion, float64 confidence, class Azure.AI.Language.Conversations.ConversationResult result) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.ConversationsModelFactory.ConversationTargetIntentResult(Azure.AI.Language.Conversations.TargetKind,System.String,System.Double,Azure.AI.Language.Conversations.ConversationResult)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ConversationTargetIntentResult (Optional targetKind As TargetKind = Nothing, Optional apiVersion As String = Nothing, Optional confidence As Double = 0, Optional result As ConversationResult = Nothing) As ConversationTargetIntentResult" />
-      <MemberSignature Language="F#" Value="static member ConversationTargetIntentResult : Azure.AI.Language.Conversations.TargetKind * string * double * Azure.AI.Language.Conversations.ConversationResult -&gt; Azure.AI.Language.Conversations.ConversationTargetIntentResult" Usage="Azure.AI.Language.Conversations.ConversationsModelFactory.ConversationTargetIntentResult (targetKind, apiVersion, confidence, result)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.ConversationTargetIntentResult ConversationTargetIntentResult (Azure.AI.Language.Conversations.TargetKind targetKind = default, string apiVersion = default, float confidence = 0, Azure.AI.Language.Conversations.ConversationResult result = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.ConversationTargetIntentResult ConversationTargetIntentResult(valuetype Azure.AI.Language.Conversations.TargetKind targetKind, string apiVersion, float32 confidence, class Azure.AI.Language.Conversations.ConversationResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.ConversationsModelFactory.ConversationTargetIntentResult(Azure.AI.Language.Conversations.TargetKind,System.String,System.Single,Azure.AI.Language.Conversations.ConversationResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConversationTargetIntentResult (Optional targetKind As TargetKind = Nothing, Optional apiVersion As String = Nothing, Optional confidence As Single = 0, Optional result As ConversationResult = Nothing) As ConversationTargetIntentResult" />
+      <MemberSignature Language="F#" Value="static member ConversationTargetIntentResult : Azure.AI.Language.Conversations.TargetKind * string * single * Azure.AI.Language.Conversations.ConversationResult -&gt; Azure.AI.Language.Conversations.ConversationTargetIntentResult" Usage="Azure.AI.Language.Conversations.ConversationsModelFactory.ConversationTargetIntentResult (targetKind, apiVersion, confidence, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Language.Conversations</AssemblyName>
@@ -236,7 +236,7 @@
       <Parameters>
         <Parameter Name="targetKind" Type="Azure.AI.Language.Conversations.TargetKind" />
         <Parameter Name="apiVersion" Type="System.String" />
-        <Parameter Name="confidence" Type="System.Double" />
+        <Parameter Name="confidence" Type="System.Single" />
         <Parameter Name="result" Type="Azure.AI.Language.Conversations.ConversationResult" />
       </Parameters>
       <Docs>
@@ -366,11 +366,11 @@
       </Docs>
     </Member>
     <Member MemberName="LuisTargetIntentResult">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.LuisTargetIntentResult LuisTargetIntentResult (Azure.AI.Language.Conversations.TargetKind targetKind = default, string apiVersion = default, double confidenceScore = 0, object result = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.LuisTargetIntentResult LuisTargetIntentResult(valuetype Azure.AI.Language.Conversations.TargetKind targetKind, string apiVersion, float64 confidenceScore, object result) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.ConversationsModelFactory.LuisTargetIntentResult(Azure.AI.Language.Conversations.TargetKind,System.String,System.Double,System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function LuisTargetIntentResult (Optional targetKind As TargetKind = Nothing, Optional apiVersion As String = Nothing, Optional confidenceScore As Double = 0, Optional result As Object = Nothing) As LuisTargetIntentResult" />
-      <MemberSignature Language="F#" Value="static member LuisTargetIntentResult : Azure.AI.Language.Conversations.TargetKind * string * double * obj -&gt; Azure.AI.Language.Conversations.LuisTargetIntentResult" Usage="Azure.AI.Language.Conversations.ConversationsModelFactory.LuisTargetIntentResult (targetKind, apiVersion, confidenceScore, result)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.LuisTargetIntentResult LuisTargetIntentResult (Azure.AI.Language.Conversations.TargetKind targetKind = default, string apiVersion = default, float confidenceScore = 0, object result = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.LuisTargetIntentResult LuisTargetIntentResult(valuetype Azure.AI.Language.Conversations.TargetKind targetKind, string apiVersion, float32 confidenceScore, object result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.ConversationsModelFactory.LuisTargetIntentResult(Azure.AI.Language.Conversations.TargetKind,System.String,System.Single,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LuisTargetIntentResult (Optional targetKind As TargetKind = Nothing, Optional apiVersion As String = Nothing, Optional confidenceScore As Single = 0, Optional result As Object = Nothing) As LuisTargetIntentResult" />
+      <MemberSignature Language="F#" Value="static member LuisTargetIntentResult : Azure.AI.Language.Conversations.TargetKind * string * single * obj -&gt; Azure.AI.Language.Conversations.LuisTargetIntentResult" Usage="Azure.AI.Language.Conversations.ConversationsModelFactory.LuisTargetIntentResult (targetKind, apiVersion, confidenceScore, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Language.Conversations</AssemblyName>
@@ -382,7 +382,7 @@
       <Parameters>
         <Parameter Name="targetKind" Type="Azure.AI.Language.Conversations.TargetKind" />
         <Parameter Name="apiVersion" Type="System.String" />
-        <Parameter Name="confidenceScore" Type="System.Double" />
+        <Parameter Name="confidenceScore" Type="System.Single" />
         <Parameter Name="result" Type="System.Object" />
       </Parameters>
       <Docs>
@@ -391,16 +391,16 @@
         <param name="confidenceScore"> The prediction score and it ranges from 0.0 to 1.0. </param>
         <param name="result"> The actual response from a LUIS Generally Available application. </param>
         <summary> Initializes a new instance of LuisTargetIntentResult. </summary>
-        <returns> A new <see cref="M:Azure.AI.Language.Conversations.ConversationsModelFactory.LuisTargetIntentResult(Azure.AI.Language.Conversations.TargetKind,System.String,System.Double,System.Object)" /> instance for mocking. </returns>
+        <returns> A new <see cref="M:Azure.AI.Language.Conversations.ConversationsModelFactory.LuisTargetIntentResult(Azure.AI.Language.Conversations.TargetKind,System.String,System.Single,System.Object)" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NoneLinkedTargetIntentResult">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.NoneLinkedTargetIntentResult NoneLinkedTargetIntentResult (Azure.AI.Language.Conversations.TargetKind targetKind = default, string apiVersion = default, double confidence = 0, Azure.AI.Language.Conversations.ConversationResult result = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.NoneLinkedTargetIntentResult NoneLinkedTargetIntentResult(valuetype Azure.AI.Language.Conversations.TargetKind targetKind, string apiVersion, float64 confidence, class Azure.AI.Language.Conversations.ConversationResult result) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.ConversationsModelFactory.NoneLinkedTargetIntentResult(Azure.AI.Language.Conversations.TargetKind,System.String,System.Double,Azure.AI.Language.Conversations.ConversationResult)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function NoneLinkedTargetIntentResult (Optional targetKind As TargetKind = Nothing, Optional apiVersion As String = Nothing, Optional confidence As Double = 0, Optional result As ConversationResult = Nothing) As NoneLinkedTargetIntentResult" />
-      <MemberSignature Language="F#" Value="static member NoneLinkedTargetIntentResult : Azure.AI.Language.Conversations.TargetKind * string * double * Azure.AI.Language.Conversations.ConversationResult -&gt; Azure.AI.Language.Conversations.NoneLinkedTargetIntentResult" Usage="Azure.AI.Language.Conversations.ConversationsModelFactory.NoneLinkedTargetIntentResult (targetKind, apiVersion, confidence, result)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.NoneLinkedTargetIntentResult NoneLinkedTargetIntentResult (Azure.AI.Language.Conversations.TargetKind targetKind = default, string apiVersion = default, float confidence = 0, Azure.AI.Language.Conversations.ConversationResult result = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.NoneLinkedTargetIntentResult NoneLinkedTargetIntentResult(valuetype Azure.AI.Language.Conversations.TargetKind targetKind, string apiVersion, float32 confidence, class Azure.AI.Language.Conversations.ConversationResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.ConversationsModelFactory.NoneLinkedTargetIntentResult(Azure.AI.Language.Conversations.TargetKind,System.String,System.Single,Azure.AI.Language.Conversations.ConversationResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NoneLinkedTargetIntentResult (Optional targetKind As TargetKind = Nothing, Optional apiVersion As String = Nothing, Optional confidence As Single = 0, Optional result As ConversationResult = Nothing) As NoneLinkedTargetIntentResult" />
+      <MemberSignature Language="F#" Value="static member NoneLinkedTargetIntentResult : Azure.AI.Language.Conversations.TargetKind * string * single * Azure.AI.Language.Conversations.ConversationResult -&gt; Azure.AI.Language.Conversations.NoneLinkedTargetIntentResult" Usage="Azure.AI.Language.Conversations.ConversationsModelFactory.NoneLinkedTargetIntentResult (targetKind, apiVersion, confidence, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Language.Conversations</AssemblyName>
@@ -412,7 +412,7 @@
       <Parameters>
         <Parameter Name="targetKind" Type="Azure.AI.Language.Conversations.TargetKind" />
         <Parameter Name="apiVersion" Type="System.String" />
-        <Parameter Name="confidence" Type="System.Double" />
+        <Parameter Name="confidence" Type="System.Single" />
         <Parameter Name="result" Type="Azure.AI.Language.Conversations.ConversationResult" />
       </Parameters>
       <Docs>
@@ -454,11 +454,11 @@
       </Docs>
     </Member>
     <Member MemberName="QuestionAnsweringTargetIntentResult">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.QuestionAnsweringTargetIntentResult QuestionAnsweringTargetIntentResult (Azure.AI.Language.Conversations.TargetKind targetKind = default, string apiVersion = default, double confidence = 0, Azure.AI.Language.Conversations.KnowledgeBaseAnswers result = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.QuestionAnsweringTargetIntentResult QuestionAnsweringTargetIntentResult(valuetype Azure.AI.Language.Conversations.TargetKind targetKind, string apiVersion, float64 confidence, class Azure.AI.Language.Conversations.KnowledgeBaseAnswers result) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.ConversationsModelFactory.QuestionAnsweringTargetIntentResult(Azure.AI.Language.Conversations.TargetKind,System.String,System.Double,Azure.AI.Language.Conversations.KnowledgeBaseAnswers)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function QuestionAnsweringTargetIntentResult (Optional targetKind As TargetKind = Nothing, Optional apiVersion As String = Nothing, Optional confidence As Double = 0, Optional result As KnowledgeBaseAnswers = Nothing) As QuestionAnsweringTargetIntentResult" />
-      <MemberSignature Language="F#" Value="static member QuestionAnsweringTargetIntentResult : Azure.AI.Language.Conversations.TargetKind * string * double * Azure.AI.Language.Conversations.KnowledgeBaseAnswers -&gt; Azure.AI.Language.Conversations.QuestionAnsweringTargetIntentResult" Usage="Azure.AI.Language.Conversations.ConversationsModelFactory.QuestionAnsweringTargetIntentResult (targetKind, apiVersion, confidence, result)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.QuestionAnsweringTargetIntentResult QuestionAnsweringTargetIntentResult (Azure.AI.Language.Conversations.TargetKind targetKind = default, string apiVersion = default, float confidence = 0, Azure.AI.Language.Conversations.KnowledgeBaseAnswers result = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.QuestionAnsweringTargetIntentResult QuestionAnsweringTargetIntentResult(valuetype Azure.AI.Language.Conversations.TargetKind targetKind, string apiVersion, float32 confidence, class Azure.AI.Language.Conversations.KnowledgeBaseAnswers result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.ConversationsModelFactory.QuestionAnsweringTargetIntentResult(Azure.AI.Language.Conversations.TargetKind,System.String,System.Single,Azure.AI.Language.Conversations.KnowledgeBaseAnswers)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function QuestionAnsweringTargetIntentResult (Optional targetKind As TargetKind = Nothing, Optional apiVersion As String = Nothing, Optional confidence As Single = 0, Optional result As KnowledgeBaseAnswers = Nothing) As QuestionAnsweringTargetIntentResult" />
+      <MemberSignature Language="F#" Value="static member QuestionAnsweringTargetIntentResult : Azure.AI.Language.Conversations.TargetKind * string * single * Azure.AI.Language.Conversations.KnowledgeBaseAnswers -&gt; Azure.AI.Language.Conversations.QuestionAnsweringTargetIntentResult" Usage="Azure.AI.Language.Conversations.ConversationsModelFactory.QuestionAnsweringTargetIntentResult (targetKind, apiVersion, confidence, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Language.Conversations</AssemblyName>
@@ -470,7 +470,7 @@
       <Parameters>
         <Parameter Name="targetKind" Type="Azure.AI.Language.Conversations.TargetKind" />
         <Parameter Name="apiVersion" Type="System.String" />
-        <Parameter Name="confidence" Type="System.Double" />
+        <Parameter Name="confidence" Type="System.Single" />
         <Parameter Name="result" Type="Azure.AI.Language.Conversations.KnowledgeBaseAnswers" />
       </Parameters>
       <Docs>
@@ -484,11 +484,11 @@
       </Docs>
     </Member>
     <Member MemberName="TargetIntentResult">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.TargetIntentResult TargetIntentResult (Azure.AI.Language.Conversations.TargetKind targetKind = default, string apiVersion = default, double confidence = 0);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.TargetIntentResult TargetIntentResult(valuetype Azure.AI.Language.Conversations.TargetKind targetKind, string apiVersion, float64 confidence) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.ConversationsModelFactory.TargetIntentResult(Azure.AI.Language.Conversations.TargetKind,System.String,System.Double)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TargetIntentResult (Optional targetKind As TargetKind = Nothing, Optional apiVersion As String = Nothing, Optional confidence As Double = 0) As TargetIntentResult" />
-      <MemberSignature Language="F#" Value="static member TargetIntentResult : Azure.AI.Language.Conversations.TargetKind * string * double -&gt; Azure.AI.Language.Conversations.TargetIntentResult" Usage="Azure.AI.Language.Conversations.ConversationsModelFactory.TargetIntentResult (targetKind, apiVersion, confidence)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.Language.Conversations.TargetIntentResult TargetIntentResult (Azure.AI.Language.Conversations.TargetKind targetKind = default, string apiVersion = default, float confidence = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Language.Conversations.TargetIntentResult TargetIntentResult(valuetype Azure.AI.Language.Conversations.TargetKind targetKind, string apiVersion, float32 confidence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Language.Conversations.ConversationsModelFactory.TargetIntentResult(Azure.AI.Language.Conversations.TargetKind,System.String,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TargetIntentResult (Optional targetKind As TargetKind = Nothing, Optional apiVersion As String = Nothing, Optional confidence As Single = 0) As TargetIntentResult" />
+      <MemberSignature Language="F#" Value="static member TargetIntentResult : Azure.AI.Language.Conversations.TargetKind * string * single -&gt; Azure.AI.Language.Conversations.TargetIntentResult" Usage="Azure.AI.Language.Conversations.ConversationsModelFactory.TargetIntentResult (targetKind, apiVersion, confidence)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Language.Conversations</AssemblyName>
@@ -500,7 +500,7 @@
       <Parameters>
         <Parameter Name="targetKind" Type="Azure.AI.Language.Conversations.TargetKind" />
         <Parameter Name="apiVersion" Type="System.String" />
-        <Parameter Name="confidence" Type="System.Double" />
+        <Parameter Name="confidence" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="targetKind"> This discriminator property specifies the type of the target project that returns the response. </param>
