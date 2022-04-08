@@ -33,12 +33,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ArmDeploymentScriptManagedIdentityType">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.ArmDeploymentScriptManagedIdentityType? ArmDeploymentScriptManagedIdentityType { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.Models.ArmDeploymentScriptManagedIdentityType&gt; ArmDeploymentScriptManagedIdentityType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.ArmDeploymentScriptManagedIdentity.ArmDeploymentScriptManagedIdentityType" />
-      <MemberSignature Language="VB.NET" Value="Public Property ArmDeploymentScriptManagedIdentityType As Nullable(Of ArmDeploymentScriptManagedIdentityType)" />
-      <MemberSignature Language="F#" Value="member this.ArmDeploymentScriptManagedIdentityType : Nullable&lt;Azure.ResourceManager.Resources.Models.ArmDeploymentScriptManagedIdentityType&gt; with get, set" Usage="Azure.ResourceManager.Resources.Models.ArmDeploymentScriptManagedIdentity.ArmDeploymentScriptManagedIdentityType" />
+    <Member MemberName="IdentityType">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Models.ArmDeploymentScriptManagedIdentityType? IdentityType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.Models.ArmDeploymentScriptManagedIdentityType&gt; IdentityType" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Models.ArmDeploymentScriptManagedIdentity.IdentityType" />
+      <MemberSignature Language="VB.NET" Value="Public Property IdentityType As Nullable(Of ArmDeploymentScriptManagedIdentityType)" />
+      <MemberSignature Language="F#" Value="member this.IdentityType : Nullable&lt;Azure.ResourceManager.Resources.Models.ArmDeploymentScriptManagedIdentityType&gt; with get, set" Usage="Azure.ResourceManager.Resources.Models.ArmDeploymentScriptManagedIdentity.IdentityType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Resources</AssemblyName>
